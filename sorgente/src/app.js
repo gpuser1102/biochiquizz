@@ -105,10 +105,10 @@
     return `${cardsInTopic(id)} card · ${LEVEL_NAME[LEVELS[st.open]]}`;
   };
 
-  /* ---------------- Ripetizione spaziata: algoritmo di Anki (SM-2) ----------------
+  /* ---------------- Ripetizione spaziata: algoritmo SM-2 ----------------
      Card nuove → passi di apprendimento (1 min, 10 min) → ripasso a giorni con intervallo × facilità.
      Errore su una card imparata = "lapse": facilità −20%, intervallo azzerato a 1 giorno, ripasso tra 10 min.
-     La giornata, come in Anki, inizia alle 4 di mattina. */
+     La giornata inizia alle 4 di mattina. */
   const MIN = 60e3, HOUR = 36e5, DAY = 864e5;
   const CFG = { learn: [1 * MIN, 10 * MIN], relearn: [10 * MIN], gradIvl: 1, easyIvl: 4, startEase: 2.5, minEase: 1.3,
     easyBonus: 1.3, hardMult: 1.2, learnAhead: 20 * MIN, leech: 8, mature: 21 };
@@ -407,7 +407,7 @@
     const last = false;
     let rate = null;
     if (g && ok && !g.extra) {
-      // come in Anki: dopo una risposta giusta puoi dire quanto è stata facile (Buono è già applicato)
+      // dopo una risposta giusta puoi dire quanto è stata facile (Buono è già applicato)
       rate = h("div", { class: "rate", role: "group", "aria-label": "Quanto è stata facile" });
       [[2, "Difficile"], [3, "Buono"], [4, "Facile"]].forEach(([r, l]) => {
         const b = h("button", { type: "button", class: "rate-b", "aria-pressed": String(r === 3) }, h("span", {}, l), h("small", {}, fmtIvl(g.preview(r))));
@@ -764,7 +764,7 @@
       });
       root.append(wb);
     }
-    root.append(h("p", { class: "lead", style: "font-size:13px" }, `Come in Anki: "mature" sono le card con intervallo di almeno ${CFG.mature} giorni. Una card diventa "ostica" dopo ${CFG.leech} errori su card già imparate.`));
+    root.append(h("p", { class: "lead", style: "font-size:13px" }, `Le card "mature" sono quelle con intervallo di almeno ${CFG.mature} giorni. Una card diventa "ostica" dopo ${CFG.leech} errori su card già imparate.`));
   }
 
 
@@ -822,7 +822,7 @@
       h("div", { style: "padding:0 12px 12px" }, modeSeg),
       h("div", { class: "row" }, h("div", { class: "tile t-lilac" }, svgIcon("moon")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Tema"))),
       h("div", { style: "padding:0 12px 12px" }, themeSeg),
-      h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Card nuove al giorno"), h("div", { class: "row-sub" }, "Come in Anki: i ripassi in scadenza vengono sempre prima"))),
+      h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Card nuove al giorno"), h("div", { class: "row-sub" }, "I ripassi in scadenza vengono sempre prima"))),
       h("div", { style: "padding:0 12px 12px" }, newSeg)));
 
     root.append(h("div", { class: "h2" }, "Livelli di difficoltà"));

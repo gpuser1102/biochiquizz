@@ -2412,6 +2412,1914 @@
   "fixed": false
  },
  {
+  "id": "m3k-01",
+  "topic": "m3-krebs",
+  "level": "f",
+  "page": "74",
+  "src": "Biochimica II",
+  "q": "Dove avviene il ciclo di Krebs?",
+  "opts": [
+   "Nella matrice mitocondriale",
+   "Nel citosol",
+   "Nello spazio intermembrana",
+   "Nel reticolo endoplasmatico"
+  ],
+  "ans": 0,
+  "why": "Tutti gli enzimi sono nella matrice tranne la succinato deidrogenasi, che è nella membrana interna.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-02",
+  "topic": "m3-krebs",
+  "level": "f",
+  "page": "76",
+  "src": "Biochimica II",
+  "q": "Quale enzima unisce acetil-CoA e ossalacetato?",
+  "opts": [
+   "Citrato sintasi",
+   "Aconitasi",
+   "Isocitrato deidrogenasi",
+   "Piruvato carbossilasi"
+  ],
+  "ans": 0,
+  "why": "È una condensazione di Claisen che forma citrato e libera CoA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-03",
+  "topic": "m3-krebs",
+  "level": "f",
+  "page": "74",
+  "src": "Biochimica II",
+  "q": "Che cosa produce un giro del ciclo di Krebs per acetil-CoA?",
+  "opts": [
+   "3 NADH, 1 FADH₂, 1 GTP, 2 CO₂",
+   "2 NADH, 2 FADH₂, 1 ATP, 2 CO₂",
+   "4 NADH, 1 GTP, 1 CO₂",
+   "3 NADH, 1 FADH₂, 2 ATP"
+  ],
+  "ans": 0,
+  "why": "NADH da isocitrato DH, α-chetoglutarato DH e malato DH; FADH₂ dalla succinato DH; GTP dalla succinil-CoA sintetasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-04",
+  "topic": "m3-krebs",
+  "level": "f",
+  "page": "83",
+  "src": "Biochimica II",
+  "q": "Quale enzima del ciclo di Krebs è anche il complesso II della catena respiratoria?",
+  "opts": [
+   "Succinato deidrogenasi",
+   "Malato deidrogenasi",
+   "Fumarasi",
+   "Isocitrato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "È l'unico enzima del ciclo integrato nella membrana mitocondriale interna.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-05",
+  "topic": "m3-krebs",
+  "level": "m",
+  "page": "79",
+  "src": "Biochimica II",
+  "q": "Perché la citrato sintasi lega prima l'ossalacetato e poi l'acetil-CoA (meccanismo sequenziale ordinato)?",
+  "opts": [
+   "Perché l'ossalacetato è presente in quantità minime: l'enzima si assicura che ci sia prima di usare l'acetil-CoA",
+   "Perché l'acetil-CoA è più grande",
+   "Perché l'ossalacetato è il prodotto",
+   "Perché così consuma meno ATP"
+  ],
+  "ans": 0,
+  "why": "L'adattamento indotto evita anche l'idrolisi improduttiva del tioestere dell'acetil-CoA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-06",
+  "topic": "m3-krebs",
+  "level": "m",
+  "page": "84",
+  "src": "Biochimica II",
+  "q": "Quali sono le tre reazioni del ciclo con ΔG fortemente negativo, quindi regolate?",
+  "opts": [
+   "Citrato sintasi, isocitrato deidrogenasi, α-chetoglutarato deidrogenasi",
+   "Aconitasi, fumarasi, malato deidrogenasi",
+   "Succinil-CoA sintetasi, succinato DH, fumarasi",
+   "Tutte le otto reazioni"
+  ],
+  "ans": 0,
+  "why": "Le altre sono vicine all'equilibrio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-07",
+  "topic": "m3-krebs",
+  "level": "m",
+  "page": "84–85",
+  "src": "Biochimica II",
+  "q": "Come viene regolato il ciclo di Krebs?",
+  "opts": [
+   "NADH e ATP lo rallentano, ADP e Ca²⁺ lo accelerano",
+   "Solo dall'insulina",
+   "È attivato dal NADH",
+   "Non è regolato"
+  ],
+  "ans": 0,
+  "why": "È il controllo «da parte dell'accettore»: se c'è ADP la cellula ha bisogno di ATP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-08",
+  "topic": "m3-krebs",
+  "level": "m",
+  "page": "87",
+  "src": "Biochimica II",
+  "q": "Qual è la reazione anaplerotica più importante?",
+  "opts": [
+   "Piruvato → ossalacetato (piruvato carbossilasi)",
+   "Citrato → isocitrato",
+   "Malato → ossalacetato",
+   "Acetil-CoA → citrato"
+  ],
+  "ans": 0,
+  "why": "Riempie il ciclo di intermedi; è attivata dall'acetil-CoA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-09",
+  "topic": "m3-krebs",
+  "level": "a",
+  "page": "84",
+  "src": "Biochimica II",
+  "q": "Le due CO₂ che escono in un giro del ciclo provengono dai carboni dell'acetil-CoA appena entrato?",
+  "opts": [
+   "No: vengono dall'ossalacetato; i carboni dell'acetile escono nei giri successivi",
+   "Sì, entrambe",
+   "Una sì e una no",
+   "No, vengono dal CoA"
+  ],
+  "ans": 0,
+  "why": "Per eliminare completamente i carboni di un acetile servono due giri.",
+  "note": "Sbobina di Biochimica II, p. 77: dopo la seconda decarbossilazione c'è scritto che «abbiamo così ossidato l'acetato». A p. 84 la stessa sbobina chiarisce che le CO₂ escono dai carboni dell'ossalacetato.",
+  "fixed": false
+ },
+ {
+  "id": "m3k-10",
+  "topic": "m3-krebs",
+  "level": "a",
+  "page": "86",
+  "src": "Biochimica II",
+  "q": "Perché il beri-beri colpisce soprattutto sistema nervoso e cuore?",
+  "opts": [
+   "La TPP serve a PDH (cervello, che usa glucosio) e ad α-chetoglutarato DH (cuore, che dipende dal ciclo di Krebs)",
+   "Perché la tiamina serve alla sintesi di acetilcolina",
+   "Perché la tiamina è un antiossidante",
+   "Perché manca il NAD"
+  ],
+  "ans": 0,
+  "why": "Senza TPP si bloccano le due decarbossilazioni ossidative.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-11",
+  "topic": "m3-krebs",
+  "level": "a",
+  "page": "86",
+  "src": "Biochimica II",
+  "q": "Come agiscono arsenico e mercurio sul metabolismo energetico?",
+  "opts": [
+   "Legano i gruppi SH del lipoato, bloccando PDH e α-chetoglutarato DH",
+   "Inibiscono l'ATP sintasi",
+   "Bloccano il complesso IV",
+   "Ossidano il NADH"
+  ],
+  "ans": 0,
+  "why": "I composti con ditioli possono liberare l'enzima legando l'arsenico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-12",
+  "topic": "m3-krebs",
+  "level": "a",
+  "page": "89",
+  "src": "Biochimica II",
+  "q": "Perché per ossidare completamente gli acidi grassi serve anche il glucosio?",
+  "opts": [
+   "Perché l'acetil-CoA ha bisogno di ossalacetato, che si forma dal piruvato",
+   "Perché gli acidi grassi si ossidano solo nel citosol",
+   "Perché la β-ossidazione consuma glucosio",
+   "Perché servono i GLUT"
+  ],
+  "ans": 0,
+  "why": "Si dice che i grassi «bruciano al fuoco dei carboidrati».",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-13",
+  "topic": "m3-krebs",
+  "level": "a",
+  "page": "85",
+  "src": "Biochimica II",
+  "q": "Pellagra: quale coenzima manca e perché in Veneto era endemica?",
+  "opts": [
+   "NAD (niacina, B3): l'alimentazione si basava sul mais, in cui la niacina non è disponibile senza trattamento alcalino",
+   "FAD (riboflavina): carenza di latte",
+   "TPP (tiamina): riso brillato",
+   "CoA (B5): carenza di carne"
+  ],
+  "ans": 0,
+  "why": "In America Latina la nixtamalizzazione (calce viva) rendeva disponibile la niacina. Sintomi: dermatite, diarrea, demenza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-14",
+  "topic": "m3-krebs",
+  "level": "l",
+  "page": "78, 82",
+  "src": "Biochimica II",
+  "q": "Come si chiama correttamente l'enzima che forma GTP dal succinil-CoA?",
+  "opts": [
+   "Succinil-CoA sintetasi",
+   "Succinil-CoA sintasi",
+   "Succinato chinasi",
+   "Succinato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Si chiama sintetasi perché la reazione coinvolge un nucleotide trifosfato.",
+  "note": "Sbobina di Biochimica II, p. 78: l'enzima è chiamato «succinil-CoA sintasi (perché utilizziamo GDP)», contro la definizione data poco prima. A p. 82 è chiamato correttamente sintetasi.",
+  "fixed": false
+ },
+ {
+  "id": "m3k-15",
+  "topic": "m3-krebs",
+  "level": "l",
+  "page": "80",
+  "src": "Biochimica II",
+  "q": "Qual è l'intermedio della reazione dell'aconitasi?",
+  "opts": [
+   "cis-Aconitato",
+   "trans-Aconitato",
+   "Citril-CoA",
+   "Ossalsuccinato"
+  ],
+  "ans": 0,
+  "why": "Deidratazione e reidratazione: citrato → cis-aconitato → isocitrato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-16",
+  "topic": "m3-krebs",
+  "level": "l",
+  "page": "80",
+  "src": "Biochimica II",
+  "q": "Che tipo di centro ha l'aconitasi nel sito attivo?",
+  "opts": [
+   "Un centro 4Fe-4S",
+   "Un eme",
+   "Un atomo di zinco",
+   "Un centro rame"
+  ],
+  "ans": 0,
+  "why": "Se perde un ferro diventa inattiva; l'isoforma citosolica è la IRP1, che regola ferritina e recettore della transferrina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-17",
+  "topic": "m3-krebs",
+  "level": "l",
+  "page": "82",
+  "src": "Biochimica II",
+  "q": "Come si chiama l'E2 del complesso dell'α-chetoglutarato deidrogenasi?",
+  "opts": [
+   "Diidrolipoil transsuccinilasi",
+   "Diidrolipoil transacetilasi",
+   "Succinil-CoA sintetasi",
+   "Diidrolipoil deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Trasferisce un gruppo succinile invece che acetile; l'E3 è uguale a quello della PDH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3k-18",
+  "topic": "m3-krebs",
+  "level": "l",
+  "page": "83",
+  "src": "Biochimica II",
+  "q": "Quale stereoisomero del malato forma la fumarasi?",
+  "opts": [
+   "L-malato",
+   "D-malato",
+   "Meso-malato",
+   "Racemo"
+  ],
+  "ans": 0,
+  "why": "L'idratazione del fumarato è stereospecifica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-01",
+  "topic": "m3-catena",
+  "level": "f",
+  "page": "90",
+  "src": "Biochimica II",
+  "q": "Qual è l'accettore finale degli elettroni nella catena respiratoria?",
+  "opts": [
+   "O₂",
+   "NAD⁺",
+   "Coenzima Q",
+   "Citocromo c"
+  ],
+  "ans": 0,
+  "why": "L'ossigeno viene ridotto ad acqua nel complesso IV.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-02",
+  "topic": "m3-catena",
+  "level": "f",
+  "page": "91",
+  "src": "Biochimica II",
+  "q": "Dove si trova la catena respiratoria?",
+  "opts": [
+   "Nella membrana mitocondriale interna",
+   "Nella membrana esterna",
+   "Nella matrice",
+   "Nel citosol"
+  ],
+  "ans": 0,
+  "why": "Le creste aumentano la superficie disponibile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-03",
+  "topic": "m3-catena",
+  "level": "f",
+  "page": "95",
+  "src": "Biochimica II",
+  "q": "Quale complesso non pompa protoni?",
+  "opts": [
+   "Complesso II",
+   "Complesso I",
+   "Complesso III",
+   "Complesso IV"
+  ],
+  "ans": 0,
+  "why": "Il ΔE tra succinato e coenzima Q è troppo piccolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-04",
+  "topic": "m3-catena",
+  "level": "m",
+  "page": "90",
+  "src": "Biochimica II",
+  "q": "Quanti ATP si ottengono circa dalla riossidazione di un NADH e di un FADH₂?",
+  "opts": [
+   "2,5 e 1,5",
+   "3 e 2",
+   "1,5 e 2,5",
+   "2 e 1"
+  ],
+  "ans": 0,
+  "why": "Il FADH₂ entra al coenzima Q, saltando il complesso I.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-05",
+  "topic": "m3-catena",
+  "level": "m",
+  "page": "92",
+  "src": "Biochimica II",
+  "q": "Come sono disposti i trasportatori della catena?",
+  "opts": [
+   "In ordine di potenziale di riduzione crescente, dal NADH (−0,32 V) all'O₂ (+0,81 V)",
+   "In ordine di massa",
+   "In ordine casuale",
+   "In ordine di potenziale decrescente"
+  ],
+  "ans": 0,
+  "why": "Gli elettroni scendono «in discesa» verso l'accettore più affine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-06",
+  "topic": "m3-catena",
+  "level": "m",
+  "page": "95",
+  "src": "Biochimica II",
+  "q": "Da quali fonti il coenzima Q riceve elettroni?",
+  "opts": [
+   "Complesso I, complesso II, glicerolo 3-P deidrogenasi della navetta, β-ossidazione",
+   "Solo dal complesso I",
+   "Dal citocromo c",
+   "Dal complesso IV"
+  ],
+  "ans": 0,
+  "why": "Convoglia gli elettroni di tutti gli enzimi flavinici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-07",
+  "topic": "m3-catena",
+  "level": "a",
+  "page": "104",
+  "src": "Biochimica II",
+  "q": "Se blocchi il complesso III con antimicina A, in che stato saranno i trasportatori?",
+  "opts": [
+   "Ridotti quelli a monte (NADH, complesso I, Q), ossidati quelli a valle (citocromo c, complesso IV)",
+   "Tutti ossidati",
+   "Tutti ridotti",
+   "Ossidati a monte, ridotti a valle"
+  ],
+  "ans": 0,
+  "why": "È il metodo con cui è stata ricostruita la sequenza dei trasportatori.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-08",
+  "topic": "m3-catena",
+  "level": "a",
+  "page": "96–97",
+  "src": "Biochimica II",
+  "q": "A che cosa serve il ciclo del Q nel complesso III?",
+  "opts": [
+   "A passare da un trasportatore a 2 elettroni (QH₂) a uno a 1 elettrone (citocromo c), un elettrone per volta",
+   "A produrre ATP",
+   "A ridurre l'ossigeno",
+   "A trasportare NADH"
+  ],
+  "ans": 0,
+  "why": "Un elettrone va al citocromo c1 → c, l'altro torna attraverso i citocromi b a un Q.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-09",
+  "topic": "m3-catena",
+  "level": "a",
+  "page": "99",
+  "src": "Biochimica II",
+  "q": "Quanta energia libera si libera nel trasferimento di 2 elettroni dal NADH all'O₂?",
+  "opts": [
+   "Circa −218 kJ/mol",
+   "Circa −30 kJ/mol",
+   "Circa −61 kJ/mol",
+   "Circa −1000 kJ/mol"
+  ],
+  "ans": 0,
+  "why": "ΔG°' = −nFΔE°' con ΔE°' = 0,81 − (−0,32) = 1,13 V.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-10",
+  "topic": "m3-catena",
+  "level": "a",
+  "page": "104",
+  "src": "Biochimica II",
+  "q": "Il cianuro blocca il complesso IV. Cosa succede ai trasportatori?",
+  "opts": [
+   "Restano tutti ridotti",
+   "Restano tutti ossidati",
+   "Si riduce solo il citocromo c",
+   "Il coenzima Q si ossida"
+  ],
+  "ans": 0,
+  "why": "Gli elettroni non possono uscire verso l'ossigeno. Lo stesso fanno CO e sodio azide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-11",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "92",
+  "src": "Biochimica II",
+  "q": "Come si chiama il complesso I secondo la nomenclatura usata nella sbobina?",
+  "opts": [
+   "NADH-Q reduttasi",
+   "NADH ossidasi",
+   "Ubichinone deidrogenasi",
+   "Citocromo b reduttasi"
+  ],
+  "ans": 0,
+  "why": "Si scrive prima chi si ossida, poi chi si riduce, poi «reduttasi». Il complesso IV sarebbe correttamente citocromo c-ossigeno reduttasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-12",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "93",
+  "src": "Biochimica II",
+  "q": "Quale gruppo prostetico flavinico contiene il complesso I?",
+  "opts": [
+   "FMN (flavin mononucleotide)",
+   "FAD",
+   "Biotina",
+   "Lipoato"
+  ],
+  "ans": 0,
+  "why": "L'FMN prende due elettroni dal NADH e li cede uno alla volta ai centri Fe-S.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-13",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "96",
+  "src": "Biochimica II",
+  "q": "Come si chiama la proteina Fe-S del complesso III, con due cisteine e due istidine?",
+  "opts": [
+   "Proteina di Rieske",
+   "Adrenodossina",
+   "Ferredossina",
+   "Citocromo c1"
+  ],
+  "ans": 0,
+  "why": "A differenza delle Fe-S classiche, due ligandi del ferro sono istidine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-14",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "98",
+  "src": "Biochimica II",
+  "q": "Quali sono i centri metallici del complesso IV?",
+  "opts": [
+   "Eme a, eme a3, CuA e CuB",
+   "Eme b e c1",
+   "Solo eme a3",
+   "Fe-S e FMN"
+  ],
+  "ans": 0,
+  "why": "L'ossigeno viene ridotto nel centro binucleare eme a3–CuB.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-15",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "97",
+  "src": "Biochimica II",
+  "q": "Che cosa coordina il ferro del citocromo c nella sesta posizione?",
+  "opts": [
+   "Lo zolfo di una metionina",
+   "Un'istidina distale",
+   "L'ossigeno",
+   "Una cisteina"
+  ],
+  "ans": 0,
+  "why": "Ferro coordinato da 4 N della porfirina, un'istidina e una metionina: tutte le posizioni sono occupate e non lega O₂.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3c-16",
+  "topic": "m3-catena",
+  "level": "l",
+  "page": "94",
+  "src": "Biochimica II",
+  "q": "Il coenzima Q si trova:",
+  "opts": [
+   "Nella membrana mitocondriale interna",
+   "Nella membrana plasmatica",
+   "Nella matrice",
+   "Nello spazio intermembrana"
+  ],
+  "ans": 0,
+  "why": "Ha una coda di 10 unità isopreniche che lo tiene nel doppio strato.",
+  "note": "Sbobina di Biochimica II, p. 94: c'è scritto che il coenzima Q è presente «nella membrana plasmatica». Si trova nella membrana mitocondriale interna.",
+  "fixed": false
+ },
+ {
+  "id": "m3s-01",
+  "topic": "m3-atpsintasi",
+  "level": "f",
+  "page": "100",
+  "src": "Biochimica II",
+  "q": "Come si chiama la teoria che spiega la sintesi di ATP nel mitocondrio?",
+  "opts": [
+   "Teoria chemiosmotica di Mitchell",
+   "Teoria dell'adattamento indotto",
+   "Teoria chiave-serratura",
+   "Teoria del cambio di legame di Michaelis"
+  ],
+  "ans": 0,
+  "why": "Il gradiente protonico creato dalla catena alimenta l'ATP sintasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-02",
+  "topic": "m3-atpsintasi",
+  "level": "f",
+  "page": "100",
+  "src": "Biochimica II",
+  "q": "Da quali parti è formata l'ATP sintasi?",
+  "opts": [
+   "F₀ nella membrana e F₁ verso la matrice",
+   "F₁ nella membrana e F₀ nella matrice",
+   "Solo F₁",
+   "Complessi I e IV"
+  ],
+  "ans": 0,
+  "why": "F₀ è il canale e rotore per i protoni, F₁ catalizza la sintesi di ATP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-03",
+  "topic": "m3-atpsintasi",
+  "level": "m",
+  "page": "100",
+  "src": "Biochimica II",
+  "q": "Da quali due componenti è formata la forza motrice protonica?",
+  "opts": [
+   "Gradiente elettrico (potenziale di membrana) e gradiente chimico (ΔpH)",
+   "Gradiente di Na⁺ e K⁺",
+   "ATP e ADP",
+   "Temperatura e pressione"
+  ],
+  "ans": 0,
+  "why": "I protoni pompati fuori rendono il lato P positivo e più acido.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-04",
+  "topic": "m3-atpsintasi",
+  "level": "m",
+  "page": "102",
+  "src": "Biochimica II",
+  "q": "Come funziona il meccanismo di «cambio di legame» delle subunità β?",
+  "opts": [
+   "Le tre β passano a turno per le conformazioni L (lega ADP + Pi), T (forma ATP) e O (rilascia ATP)",
+   "Ogni β sintetizza ATP indipendentemente",
+   "Le β ruotano con l'anello c",
+   "Le α fanno la catalisi"
+  ],
+  "ans": 0,
+  "why": "La rotazione di γ cambia la conformazione delle β; il passaggio che costa più energia è il rilascio dell'ATP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-05",
+  "topic": "m3-atpsintasi",
+  "level": "m",
+  "page": "103–104",
+  "src": "Biochimica II",
+  "q": "Che cosa fa l'ATP/ADP traslocasi?",
+  "opts": [
+   "Scambia ATP della matrice con ADP del citosol, sfruttando il potenziale di membrana",
+   "Sintetizza ATP",
+   "Trasporta fosfato",
+   "Trasporta NADH"
+  ],
+  "ans": 0,
+  "why": "ATP⁴⁻ esce e ADP³⁻ entra: si sposta una carica negativa netta verso l'esterno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-06",
+  "topic": "m3-atpsintasi",
+  "level": "a",
+  "page": "105",
+  "src": "Biochimica II",
+  "q": "Che effetto ha il 2,4-dinitrofenolo?",
+  "opts": [
+   "Riporta protoni nella matrice scavalcando l'ATP sintasi: gli elettroni fluiscono ma l'energia diventa calore",
+   "Blocca il complesso IV",
+   "Blocca l'ATP sintasi",
+   "Aumenta la sintesi di ATP"
+  ],
+  "ans": 0,
+  "why": "È un disaccoppiante; usato in passato come dimagrante, con molti decessi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-07",
+  "topic": "m3-atpsintasi",
+  "level": "a",
+  "page": "105",
+  "src": "Biochimica II",
+  "q": "Con l'oligomicina, che succede al consumo di ossigeno?",
+  "opts": [
+   "Diminuisce: il gradiente non si scarica e il trasporto di elettroni rallenta",
+   "Aumenta",
+   "Non cambia",
+   "Si azzera la glicolisi"
+  ],
+  "ans": 0,
+  "why": "Trasporto di elettroni e sintesi di ATP sono accoppiati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-08",
+  "topic": "m3-atpsintasi",
+  "level": "a",
+  "page": "106",
+  "src": "Biochimica II",
+  "q": "A che cosa serve la termogenina (UCP1) nel tessuto adiposo bruno?",
+  "opts": [
+   "Lascia rientrare i protoni nella matrice producendo calore invece di ATP",
+   "Sintetizza ATP",
+   "Trasporta acidi grassi",
+   "Pompa protoni fuori"
+  ],
+  "ans": 0,
+  "why": "È un disaccoppiante fisiologico, importante per la termoregolazione del neonato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-09",
+  "topic": "m3-atpsintasi",
+  "level": "a",
+  "page": "101–102",
+  "src": "Biochimica II",
+  "q": "Nell'anello c dell'F₀, perché l'aspartato si protona e si deprotona?",
+  "opts": [
+   "Si protona nel semicanale verso lo spazio intermembrana (pH acido) e cede il protone nel semicanale verso la matrice (pH basico): così l'anello ruota",
+   "Perché viene fosforilato",
+   "Perché lega ATP",
+   "Perché ossida il NADH"
+  ],
+  "ans": 0,
+  "why": "Ogni protone che entra fa avanzare il rotore di una subunità c.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3s-10",
+  "topic": "m3-atpsintasi",
+  "level": "l",
+  "page": "102",
+  "src": "Biochimica II",
+  "q": "Che cosa significano le sigle O, L e T delle subunità β?",
+  "opts": [
+   "Open, Loose, Tight",
+   "Open, Light, Tight",
+   "Oxidized, Loaded, Taut",
+   "Open, Locked, Tense"
+  ],
+  "ans": 0,
+  "why": "L = loose: lega ADP e Pi in modo lasso.",
+  "note": "Sbobina di Biochimica II, p. 102: la L è sciolta come «light». La sigla sta per loose.",
+  "fixed": false
+ },
+ {
+  "id": "m3s-11",
+  "topic": "m3-atpsintasi",
+  "level": "l",
+  "page": "101–102",
+  "src": "Biochimica II",
+  "q": "Nell'ATP sintasi, quale parte ruota e quale fa da statore?",
+  "opts": [
+   "Ruotano l'anello c con γ ed ε; la subunità a, b₂ e δ sono lo statore",
+   "Ruota la subunità a",
+   "Ruotano le α e β",
+   "Non ruota nulla"
+  ],
+  "ans": 0,
+  "why": "Le α3β3 stanno ferme, tenute dal braccio periferico.",
+  "note": "Sbobina di Biochimica II, p. 101: c'è scritto che «la proteina a è un rotore che gira». Ruota l'anello delle subunità c; la a fa parte dello statore.",
+  "fixed": false
+ },
+ {
+  "id": "m3s-12",
+  "topic": "m3-atpsintasi",
+  "level": "l",
+  "page": "100",
+  "src": "Biochimica II",
+  "q": "La prima ipotesi sul meccanismo dell'ATP sintasi prevedeva intermedi ad alta energia (accoppiamento chimico). Chi è il premio Nobel della teoria chemiosmotica?",
+  "opts": [
+   "Peter Mitchell",
+   "Hans Krebs",
+   "Daniel Koshland",
+   "Carl Cori"
+  ],
+  "ans": 0,
+  "why": "Mitchell la propose nel 1961 e ricevette il Nobel nel 1978.",
+  "note": "Sbobina di Biochimica II, p. 100: l'ipotesi dell'accoppiamento chimico è attribuita a Koshland e quella di Mitchell agli anni '70–'80. L'ipotesi chimica è di Slater (1953); Mitchell propose la teoria chemiosmotica nel 1961. Le date non sono nella sbobina, vengono dai testi di riferimento.",
+  "fixed": false
+ },
+ {
+  "id": "m3r-01",
+  "topic": "m3-radicali",
+  "level": "f",
+  "page": "108",
+  "src": "Biochimica II",
+  "q": "Quale enzima trasforma l'anione superossido in perossido di idrogeno?",
+  "opts": [
+   "Superossido dismutasi",
+   "Catalasi",
+   "Glutatione perossidasi",
+   "NADPH ossidasi"
+  ],
+  "ans": 0,
+  "why": "La catalasi poi scinde H₂O₂ in acqua e ossigeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3r-02",
+  "topic": "m3-radicali",
+  "level": "m",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Che cosa fa la glutatione perossidasi?",
+  "opts": [
+   "Riduce i perossidi ossidando due glutatione (GSH → GSSG)",
+   "Riduce il glutatione ossidato",
+   "Produce superossido",
+   "Ossida il NADPH"
+  ],
+  "ans": 0,
+  "why": "Il GSSG viene poi ridotto dalla glutatione reduttasi con il NADPH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3r-03",
+  "topic": "m3-radicali",
+  "level": "m",
+  "page": "110",
+  "src": "Biochimica II",
+  "q": "Quando la catena respiratoria produce più radicali?",
+  "opts": [
+   "Quando l'ossigeno è scarso: gli elettroni si fermano sui trasportatori (es. ubichinone) e possono ridurre l'O₂ a superossido",
+   "Quando c'è molto ossigeno",
+   "Quando c'è molto ADP",
+   "Mai, la catena è perfetta"
+  ],
+  "ans": 0,
+  "why": "HIF sostituisce la subunità COX4-1 con COX4-2, più affine all'ossigeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3r-04",
+  "topic": "m3-radicali",
+  "level": "a",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Perché il selenio è importante nella difesa antiossidante?",
+  "opts": [
+   "È nel sito attivo della glutatione perossidasi come selenocisteina",
+   "È un cofattore della catalasi",
+   "Ripara il DNA",
+   "Forma il glutatione"
+  ],
+  "ans": 0,
+  "why": "Va però assunto in piccole quantità: in eccesso è tossico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3r-05",
+  "topic": "m3-radicali",
+  "level": "a",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Quali metalli contengono le isoforme della superossido dismutasi?",
+  "opts": [
+   "Cu-Zn nel citosol, Mn nel mitocondrio",
+   "Fe nel citosol, Cu nel mitocondrio",
+   "Solo Zn",
+   "Se e Fe"
+  ],
+  "ans": 0,
+  "why": "Mutazioni della SOD1 (Cu-Zn) sono associate a forme di SLA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3r-06",
+  "topic": "m3-radicali",
+  "level": "l",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Come si chiama il glutatione ossidato?",
+  "opts": [
+   "GSSG (disolfuro di glutatione)",
+   "GSH",
+   "GS-SeH",
+   "Glutatione perossido"
+  ],
+  "ans": 0,
+  "why": "Due GSH legati da un ponte disolfuro tra le cisteine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-01",
+  "topic": "m3-malattie",
+  "level": "f",
+  "page": "111",
+  "src": "Biochimica II",
+  "q": "Da chi si eredita il DNA mitocondriale?",
+  "opts": [
+   "Solo dalla madre",
+   "Solo dal padre",
+   "Da entrambi",
+   "Dipende dal sesso del figlio"
+  ],
+  "ans": 0,
+  "why": "I mitocondri dello spermatozoo non vengono trasmessi allo zigote.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-02",
+  "topic": "m3-malattie",
+  "level": "m",
+  "page": "111",
+  "src": "Biochimica II",
+  "q": "Quante proteine codifica il DNA mitocondriale umano?",
+  "opts": [
+   "13",
+   "37",
+   "1000",
+   "Nessuna"
+  ],
+  "ans": 0,
+  "why": "Tutte subunità della catena respiratoria e dell'ATP sintasi, più rRNA e tRNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-03",
+  "topic": "m3-malattie",
+  "level": "m",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Che cosa si intende per eteroplasmia?",
+  "opts": [
+   "Coesistenza in una cellula di mitocondri mutati e sani in proporzione variabile",
+   "Tutti i mitocondri mutati",
+   "Mitocondri di origine paterna",
+   "DNA nucleare mutato"
+  ],
+  "ans": 0,
+  "why": "L'omoplasmia è quando tutti i mitocondri sono uguali (tutti mutati o tutti sani).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-04",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Una donna ha una malattia da mutazione del mtDNA. Chi tra i suoi figli può ereditarla?",
+  "opts": [
+   "Sia i figli maschi sia le femmine",
+   "Solo le figlie, con il 50% di probabilità",
+   "Solo i maschi",
+   "Nessuno"
+  ],
+  "ans": 0,
+  "why": "Tutti i figli ricevono i mitocondri materni; la gravità dipende dalla quota di mitocondri mutati. Solo le figlie la trasmettono alla generazione successiva.",
+  "note": "Sbobina di Biochimica II, p. 112: c'è scritto che «le figlie hanno il 50% di probabilità di ereditare la malattia, mentre i figli non sono a rischio». Il mtDNA va a tutti i figli, maschi e femmine; sono i maschi a non trasmetterlo.",
+  "fixed": false
+ },
+ {
+  "id": "m3m-05",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Come può l'aumento di UCP2 nelle cellule β contribuire al diabete di tipo 2?",
+  "opts": [
+   "Scarica il gradiente protonico, riduce l'ATP e quindi la secrezione di insulina",
+   "Aumenta la secrezione di glucagone",
+   "Blocca i GLUT4",
+   "Inibisce la glucochinasi"
+  ],
+  "ans": 0,
+  "why": "L'aumento dei radicali (superossido) induce UCP2: meno ATP, canali K⁺ meno chiusi, meno insulina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-06",
+  "topic": "m3-malattie",
+  "level": "l",
+  "page": "113",
+  "src": "Biochimica II",
+  "q": "Qual è l'ipotesi mitocondriale dell'invecchiamento descritta nella sbobina?",
+  "opts": [
+   "I radicali danneggiano il mtDNA (con riparazione limitata), riducendo l'efficienza della catena respiratoria",
+   "I telomeri mitocondriali si accorciano",
+   "I mitocondri paterni si accumulano",
+   "L'ATP sintasi si degrada"
+  ],
+  "ans": 0,
+  "why": "È una delle ipotesi; un'altra chiama in causa difetti della divisione mitocondriale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-01",
+  "topic": "m4-degradazione",
+  "level": "f",
+  "page": "115",
+  "src": "Biochimica II",
+  "q": "Dove si trova soprattutto il glicogeno nell'organismo?",
+  "opts": [
+   "Fegato e muscolo scheletrico",
+   "Cervello e rene",
+   "Tessuto adiposo",
+   "Eritrociti"
+  ],
+  "ans": 0,
+  "why": "Il glicogeno epatico serve alla glicemia, quello muscolare al muscolo stesso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-02",
+  "topic": "m4-degradazione",
+  "level": "f",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Quale enzima stacca le unità di glucosio dal glicogeno?",
+  "opts": [
+   "Glicogeno fosforilasi",
+   "Glicogeno sintasi",
+   "Amilasi",
+   "Esochinasi"
+  ],
+  "ans": 0,
+  "why": "È una fosforolisi: il legame α-1,4 viene scisso dal fosfato inorganico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-03",
+  "topic": "m4-degradazione",
+  "level": "f",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Che prodotto libera la glicogeno fosforilasi?",
+  "opts": [
+   "Glucosio 1-fosfato",
+   "Glucosio libero",
+   "Glucosio 6-fosfato",
+   "UDP-glucosio"
+  ],
+  "ans": 0,
+  "why": "La fosforolisi conserva l'energia del legame sotto forma di estere fosforico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-04",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Che vantaggio ha la fosforolisi rispetto all'idrolisi?",
+  "opts": [
+   "Il glucosio esce già fosforilato, senza spendere ATP, e non può uscire dalla cellula",
+   "Produce più glucosio",
+   "È più veloce",
+   "Non richiede enzimi"
+  ],
+  "ans": 0,
+  "why": "Nel muscolo si risparmia l'ATP dell'esochinasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-05",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Quale enzima trasforma il glucosio 1-fosfato in glucosio 6-fosfato?",
+  "opts": [
+   "Fosfoglucomutasi",
+   "Fosfoglucoisomerasi",
+   "Glucosio 6-fosfatasi",
+   "Esochinasi"
+  ],
+  "ans": 0,
+  "why": "Passa per il glucosio 1,6-bisfosfato.",
+  "note": "Sbobina di Biochimica II, p. 116: l'enzima è chiamato «mutazione». Il nome corretto è fosfoglucomutasi.",
+  "fixed": false
+ },
+ {
+  "id": "m4d-06",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Perché il muscolo non può rilasciare glucosio nel sangue?",
+  "opts": [
+   "Non ha la glucosio 6-fosfatasi",
+   "Non ha la fosforilasi",
+   "Non ha GLUT",
+   "Non ha la fosfoglucomutasi"
+  ],
+  "ans": 0,
+  "why": "Il glucosio 6-P del muscolo entra in glicolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-07",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "117–118",
+  "src": "Biochimica II",
+  "q": "Che cosa fa l'enzima deramificante?",
+  "opts": [
+   "Sposta tre residui di un ramo su una catena vicina (transferasi) e idrolizza l'ultimo legato in α-1,6 come glucosio libero",
+   "Forma i legami α-1,6",
+   "Stacca glucosio 1-P dai rami",
+   "Sintetizza la glicogenina"
+  ],
+  "ans": 0,
+  "why": "La fosforilasi si ferma a 4 residui dal punto di ramificazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-08",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Dove si trova la glucosio 6-fosfatasi e quali organi la possiedono?",
+  "opts": [
+   "Nel lume del reticolo endoplasmatico; fegato e rene",
+   "Nel citosol; solo fegato",
+   "Nel mitocondrio; fegato e muscolo",
+   "Nel lisosoma; tutti i tessuti"
+  ],
+  "ans": 0,
+  "why": "Il G6P entra nel RE tramite un trasportatore (T1); il glucosio esce con GLUT.",
+  "note": "Sbobina di Biochimica II, p. 117: la glucosio 6-fosfatasi è definita «esclusiva del fegato». È presente anche nel rene (e nell'intestino), come la stessa sbobina dice a p. 137.",
+  "fixed": false
+ },
+ {
+  "id": "m4d-09",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Quale cofattore usa la glicogeno fosforilasi?",
+  "opts": [
+   "Piridossal fosfato",
+   "Tiamina pirofosfato",
+   "Biotina",
+   "FAD"
+  ],
+  "ans": 0,
+  "why": "Il PLP qui agisce col gruppo fosfato come catalizzatore acido-base, non con la base di Schiff.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-10",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "118",
+  "src": "Biochimica II",
+  "q": "Quale percentuale circa del glicogeno viene liberata come glucosio libero e non come glucosio 1-P?",
+  "opts": [
+   "Circa il 10%",
+   "Circa il 50%",
+   "Circa il 90%",
+   "Nessuna"
+  ],
+  "ans": 0,
+  "why": "Corrisponde ai residui legati in α-1,6 nei punti di ramificazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-11",
+  "topic": "m4-degradazione",
+  "level": "l",
+  "page": "118",
+  "src": "Biochimica II",
+  "q": "Quale legame idrolizza l'attività α-1,6-glucosidasi del deramificante?",
+  "opts": [
+   "Il legame α-1,6 del residuo rimasto al punto di ramificazione",
+   "I legami α-1,4 terminali",
+   "Il legame con la glicogenina",
+   "Il legame β-1,4"
+  ],
+  "ans": 0,
+  "why": "È un'unica proteina con due attività: transferasi e glucosidasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-01",
+  "topic": "m4-sintesi",
+  "level": "f",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Qual è il donatore di glucosio nella sintesi del glicogeno?",
+  "opts": [
+   "UDP-glucosio",
+   "Glucosio 1-fosfato",
+   "ADP-glucosio",
+   "Glucosio 6-fosfato"
+  ],
+  "ans": 0,
+  "why": "Nelle piante il donatore per l'amido è l'ADP-glucosio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-02",
+  "topic": "m4-sintesi",
+  "level": "f",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Quale enzima allunga le catene del glicogeno con legami α-1,4?",
+  "opts": [
+   "Glicogeno sintasi",
+   "Glicogeno fosforilasi",
+   "Enzima ramificante",
+   "UDP-glucosio pirofosforilasi"
+  ],
+  "ans": 0,
+  "why": "Aggiunge glucosio all'estremità non riducente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-03",
+  "topic": "m4-sintesi",
+  "level": "m",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Perché la formazione di UDP-glucosio è irreversibile?",
+  "opts": [
+   "Il pirofosfato prodotto viene idrolizzato dalla pirofosfatasi inorganica",
+   "Perché consuma GTP",
+   "Perché è nel RE",
+   "Perché l'UTP è un inibitore"
+  ],
+  "ans": 0,
+  "why": "Un trucco comune nelle biosintesi: si sposta l'equilibrio eliminando un prodotto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-04",
+  "topic": "m4-sintesi",
+  "level": "m",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "Che cosa fa la glicogenina?",
+  "opts": [
+   "Fa da innesco: si autoglicosila su una tirosina formando una corta catena di glucosio",
+   "Ramifica il glicogeno",
+   "Degrada il glicogeno",
+   "Trasporta glucosio nel fegato"
+  ],
+  "ans": 0,
+  "why": "La glicogeno sintasi non può partire da zero, ha bisogno di un primer.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-05",
+  "topic": "m4-sintesi",
+  "level": "m",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "Come lavora l'enzima ramificante?",
+  "opts": [
+   "Stacca un pezzo di circa 7 residui e lo attacca con legame α-1,6 più all'interno della catena",
+   "Aggiunge un glucosio con legame α-1,6",
+   "Idrolizza i legami α-1,6",
+   "Forma legami β"
+  ],
+  "ans": 0,
+  "why": "Le ramificazioni aumentano solubilità ed estremità non riducenti per sintesi e degradazione rapide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-06",
+  "topic": "m4-sintesi",
+  "level": "a",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Quanti legami fosfoanidridici costa aggiungere un glucosio al glicogeno partendo da glucosio 6-P?",
+  "opts": [
+   "Due (UTP → UDP + PPi, poi PPi → 2 Pi)",
+   "Uno",
+   "Tre",
+   "Nessuno"
+  ],
+  "ans": 0,
+  "why": "L'UDP poi viene rifosforilato a UTP spendendo un ATP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-07",
+  "topic": "m4-sintesi",
+  "level": "a",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "A quale residuo della glicogenina si lega il primo glucosio?",
+  "opts": [
+   "Tirosina",
+   "Serina",
+   "Treonina",
+   "Asparagina"
+  ],
+  "ans": 0,
+  "why": "Il legame si forma con l'ossidrile fenolico della Tyr194.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-08",
+  "topic": "m4-sintesi",
+  "level": "l",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Qual è il nome esatto dell'enzima che forma UDP-glucosio?",
+  "opts": [
+   "UDP-glucosio pirofosforilasi",
+   "UDP-glucosio sintasi",
+   "Glucosio 1-P uridiltransferasi chinasi",
+   "Glicogeno sintasi"
+  ],
+  "ans": 0,
+  "why": "Il nome viene dalla reazione inversa (pirofosforolisi).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-09",
+  "topic": "m4-sintesi",
+  "level": "l",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "Come si chiama il nome tecnico dell'enzima ramificante?",
+  "opts": [
+   "Amilo-(1,4→1,6)-transglicosilasi",
+   "Amilo-1,6-glucosidasi",
+   "Oligo-(1,4→1,4)-glucantransferasi",
+   "α-amilasi"
+  ],
+  "ans": 0,
+  "why": "Sposta un segmento da un legame 1,4 a un legame 1,6.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-01",
+  "topic": "m4-regolazione",
+  "level": "f",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "La glicogeno fosforilasi è più attiva quando è:",
+  "opts": [
+   "Fosforilata (forma a)",
+   "Defosforilata (forma b)",
+   "Legata a UDP-glucosio",
+   "Legata all'insulina"
+  ],
+  "ans": 0,
+  "why": "La fosforilasi chinasi la fosforila su una serina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-02",
+  "topic": "m4-regolazione",
+  "level": "f",
+  "page": "126",
+  "src": "Biochimica II",
+  "q": "La glicogeno sintasi è più attiva quando è:",
+  "opts": [
+   "Defosforilata",
+   "Fosforilata",
+   "Legata al cAMP",
+   "Legata all'AMP"
+  ],
+  "ans": 0,
+  "why": "Fosforilazione e defosforilazione hanno effetti opposti su sintasi e fosforilasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-03",
+  "topic": "m4-regolazione",
+  "level": "m",
+  "page": "125",
+  "src": "Biochimica II",
+  "q": "Nel muscolo, quale regolatore allosterico attiva la fosforilasi b anche senza fosforilazione?",
+  "opts": [
+   "AMP",
+   "ATP",
+   "Glucosio 6-fosfato",
+   "Glucosio"
+  ],
+  "ans": 0,
+  "why": "AMP alto = poca energia. ATP e glucosio 6-P la inibiscono.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-04",
+  "topic": "m4-regolazione",
+  "level": "m",
+  "page": "125",
+  "src": "Biochimica II",
+  "q": "Nel fegato, quale molecola inattiva la fosforilasi a?",
+  "opts": [
+   "Glucosio",
+   "AMP",
+   "Ca²⁺",
+   "cAMP"
+  ],
+  "ans": 0,
+  "why": "Il glucosio la porta nello stato T ed espone le serine alla fosfatasi PP1: il fegato è un sensore della glicemia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-05",
+  "topic": "m4-regolazione",
+  "level": "m",
+  "page": "126",
+  "src": "Biochimica II",
+  "q": "Come agisce l'insulina sulla glicogeno sintasi?",
+  "opts": [
+   "Attiva PKB, che fosforila e inattiva GSK3: la sintasi resta defosforilata e attiva",
+   "Fosforila direttamente la sintasi",
+   "Attiva la PKA",
+   "Inibisce la PP1"
+  ],
+  "ans": 0,
+  "why": "Inoltre attiva la PP1.",
+  "note": "Sbobina di Biochimica II, p. 126: c'è scritto che la PKB fosforila GSK3 «attivandola» e che così «la glicogeno fosforilasi rimanga defosforilata». La PKB inattiva GSK3 e a restare defosforilata (attiva) è la glicogeno sintasi.",
+  "fixed": false
+ },
+ {
+  "id": "m4r-06",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "124–125",
+  "src": "Biochimica II",
+  "q": "Quali stimoli attivano la fosforilasi chinasi?",
+  "opts": [
+   "Fosforilazione da PKA e Ca²⁺ legato alla subunità δ (calmodulina)",
+   "Solo il glucosio",
+   "L'insulina",
+   "Il glucosio 6-fosfato"
+  ],
+  "ans": 0,
+  "why": "Nel muscolo il Ca²⁺ della contrazione accoppia contrazione e glicogenolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-07",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "126",
+  "src": "Biochimica II",
+  "q": "Perché il glucosio 6-fosfato attiva la glicogeno sintasi?",
+  "opts": [
+   "Rende la sintasi fosforilata (b) un buon substrato per la fosfatasi, e la attiva allostericamente",
+   "Perché è il donatore di glucosio",
+   "Perché inibisce l'insulina",
+   "Perché attiva la PKA"
+  ],
+  "ans": 0,
+  "why": "Se c'è tanto G6P conviene immagazzinarlo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-08",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "127",
+  "src": "Biochimica II",
+  "q": "Che ruolo ha la PP1 legata al glicogeno?",
+  "opts": [
+   "Defosforila fosforilasi, fosforilasi chinasi e sintasi: spegne la degradazione e accende la sintesi",
+   "Fosforila la sintasi",
+   "Degrada il glicogeno",
+   "Sintetizza cAMP"
+  ],
+  "ans": 0,
+  "why": "La subunità GM la ancora al glicogeno; l'insulina ne favorisce l'attività.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-09",
+  "topic": "m4-regolazione",
+  "level": "l",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Quale residuo viene fosforilato nella glicogeno fosforilasi?",
+  "opts": [
+   "Ser14",
+   "Tyr194",
+   "Ser641",
+   "Thr172"
+  ],
+  "ans": 0,
+  "why": "Una sola serina per subunità basta a passare da b ad a.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-10",
+  "topic": "m4-regolazione",
+  "level": "l",
+  "page": "126",
+  "src": "Biochimica II",
+  "q": "Che significa la sigla GSK3?",
+  "opts": [
+   "Glicogeno sintasi chinasi 3",
+   "Glucosio sensore chinasi 3",
+   "Glicogeno sintasi kinasi attivata da glucosio",
+   "Guanosina sintasi chinasi"
+  ],
+  "ans": 0,
+  "why": "Fosforila la sintasi in tre serine dopo un innesco dato dalla CKII (caseina chinasi II).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-01",
+  "topic": "m4-ormoni",
+  "level": "f",
+  "page": "129",
+  "src": "Biochimica II",
+  "q": "Quale ormone stimola la degradazione del glicogeno nel fegato a digiuno?",
+  "opts": [
+   "Glucagone",
+   "Insulina",
+   "Leptina",
+   "Ossitocina"
+  ],
+  "ans": 0,
+  "why": "Il glucagone agisce sul fegato, non sul muscolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-02",
+  "topic": "m4-ormoni",
+  "level": "m",
+  "page": "129–130",
+  "src": "Biochimica II",
+  "q": "Quale secondo messaggero media l'effetto del glucagone e dell'adrenalina (via β)?",
+  "opts": [
+   "cAMP",
+   "cGMP",
+   "IP₃",
+   "NO"
+  ],
+  "ans": 0,
+  "why": "Il cAMP attiva la PKA, che fosforila la fosforilasi chinasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-03",
+  "topic": "m4-ormoni",
+  "level": "m",
+  "page": "130",
+  "src": "Biochimica II",
+  "q": "Perché il glucagone non agisce sul muscolo?",
+  "opts": [
+   "Il muscolo non ha recettori per il glucagone",
+   "Il muscolo non ha cAMP",
+   "Il muscolo non ha glicogeno",
+   "Il glucagone è degradato nel sangue"
+  ],
+  "ans": 0,
+  "why": "Il muscolo risponde invece all'adrenalina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-04",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "131",
+  "src": "Biochimica II",
+  "q": "Come agisce l'adrenalina sui recettori α1 epatici?",
+  "opts": [
+   "Via IP₃ e Ca²⁺, attivando la fosforilasi chinasi",
+   "Via cAMP",
+   "Via tirosin-chinasi",
+   "Inibendo la PKA"
+  ],
+  "ans": 0,
+  "why": "Ca²⁺ si lega alla calmodulina della fosforilasi chinasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-05",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "131",
+  "src": "Biochimica II",
+  "q": "Nel fegato, che effetto ha il glucagone sulla glicogeno sintasi?",
+  "opts": [
+   "Aumenta il cAMP; la PKA fosforila e inattiva la sintasi, mentre attiva la degradazione",
+   "La attiva tramite PKB",
+   "Non ha effetto sulla sintasi",
+   "La defosforila tramite PP1"
+  ],
+  "ans": 0,
+  "why": "Sintesi e degradazione sono regolate in modo reciproco: non girano mai insieme a pieno regime.",
+  "note": "Sbobina di Biochimica II, p. 131: c'è scritto che il glucagone aumenta «i livelli di AMP» dove si intende cAMP, e si parla di inibizione «della distruzione del glicogeno» dove si intende la sintesi.",
+  "fixed": false
+ },
+ {
+  "id": "m4o-06",
+  "topic": "m4-ormoni",
+  "level": "l",
+  "page": "132",
+  "src": "Biochimica II",
+  "q": "Che cosa sono PKB e Akt?",
+  "opts": [
+   "Due nomi della stessa chinasi attivata dall'insulina",
+   "Una proteasi e una chinasi",
+   "Due fosfatasi",
+   "Recettori dell'insulina"
+  ],
+  "ans": 0,
+  "why": "La PKB/Akt è una serina/treonina chinasi.",
+  "note": "Sbobina di Biochimica II, p. 132: la PKB è chiamata «proteasi». È una chinasi.",
+  "fixed": false
+ },
+ {
+  "id": "m4e-01",
+  "topic": "m4-attivita",
+  "level": "f",
+  "page": "134",
+  "src": "Biochimica II",
+  "q": "Durante uno sprint, da dove ricava energia il muscolo?",
+  "opts": [
+   "Dal glicogeno muscolare via glicolisi anaerobia",
+   "Dagli acidi grassi",
+   "Dai corpi chetonici",
+   "Dalle proteine"
+  ],
+  "ans": 0,
+  "why": "Lo sforzo intenso e breve usa la fermentazione lattica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4e-02",
+  "topic": "m4-attivita",
+  "level": "m",
+  "page": "134–135",
+  "src": "Biochimica II",
+  "q": "Nella maratona, che cosa cambia rispetto allo sprint?",
+  "opts": [
+   "Il metabolismo è aerobio e usa sempre più acidi grassi, risparmiando glicogeno",
+   "Usa solo glicogeno",
+   "Usa solo creatina fosfato",
+   "Produce più lattato"
+  ],
+  "ans": 0,
+  "why": "Quando il glicogeno si esaurisce si ha il «muro».",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4e-03",
+  "topic": "m4-attivita",
+  "level": "a",
+  "page": "135",
+  "src": "Biochimica II",
+  "q": "Quale enzima rallenta l'uso del glucosio quando il muscolo usa acidi grassi?",
+  "opts": [
+   "La piruvato deidrogenasi, inibita da acetil-CoA e NADH",
+   "La piruvato carbossilasi",
+   "La glicogeno sintasi",
+   "La lattato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "È uno dei meccanismi del ciclo di Randle.",
+  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che la «piruvato carbossilasi» è irreversibile e inibita. Dal contesto si tratta della piruvato deidrogenasi.",
+  "fixed": false
+ },
+ {
+  "id": "m4e-04",
+  "topic": "m4-attivita",
+  "level": "l",
+  "page": "134",
+  "src": "Biochimica II",
+  "q": "Quanto dura indicativamente la riserva di fosfocreatina in uno sforzo massimale?",
+  "opts": [
+   "Pochi secondi",
+   "Circa 10 minuti",
+   "Circa un'ora",
+   "Un giorno"
+  ],
+  "ans": 0,
+  "why": "Dopo pochi secondi subentra la glicolisi anaerobia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-01",
+  "topic": "m4-glicogenosi",
+  "level": "f",
+  "page": "136",
+  "src": "Biochimica II",
+  "q": "Che cosa sono le glicogenosi?",
+  "opts": [
+   "Malattie da difetti enzimatici del metabolismo del glicogeno",
+   "Infezioni del fegato",
+   "Forme di diabete",
+   "Malattie del glucagone"
+  ],
+  "ans": 0,
+  "why": "Sono malattie ereditarie, quasi tutte autosomiche recessive.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-02",
+  "topic": "m4-glicogenosi",
+  "level": "m",
+  "page": "137",
+  "src": "Biochimica II",
+  "q": "Quale enzima manca nella malattia di von Gierke (tipo I)?",
+  "opts": [
+   "Glucosio 6-fosfatasi",
+   "Fosforilasi muscolare",
+   "Enzima deramificante",
+   "α-glucosidasi lisosomiale"
+  ],
+  "ans": 0,
+  "why": "Ipoglicemia grave a digiuno, epatomegalia, acidosi lattica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-03",
+  "topic": "m4-glicogenosi",
+  "level": "m",
+  "page": "138",
+  "src": "Biochimica II",
+  "q": "Quale enzima manca nella malattia di McArdle (tipo V)?",
+  "opts": [
+   "Glicogeno fosforilasi muscolare",
+   "Glucosio 6-fosfatasi",
+   "Enzima ramificante",
+   "Fosfofruttochinasi epatica"
+  ],
+  "ans": 0,
+  "why": "Crampi e intolleranza all'esercizio; la glicemia è normale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-04",
+  "topic": "m4-glicogenosi",
+  "level": "a",
+  "page": "137",
+  "src": "Biochimica II",
+  "q": "Perché nella von Gierke si dà amido di mais crudo?",
+  "opts": [
+   "Viene digerito lentamente e libera glucosio in modo graduale, evitando l'ipoglicemia notturna",
+   "Perché contiene fruttosio",
+   "Perché blocca la glicolisi",
+   "Perché fornisce glucosio 6-fosfatasi"
+  ],
+  "ans": 0,
+  "why": "Si danno anche pasti frequenti.",
+  "note": "Sbobina di Biochimica II, p. 137: c'è scritto che l'amido crudo rilascia glucosio in modo massiccio. Il senso è l'opposto: lo rilascia lentamente e a lungo.",
+  "fixed": false
+ },
+ {
+  "id": "m4g-05",
+  "topic": "m4-glicogenosi",
+  "level": "a",
+  "page": "137",
+  "src": "Biochimica II",
+  "q": "Perché nella von Gierke c'è iperuricemia e iperlipidemia?",
+  "opts": [
+   "Il glucosio 6-P accumulato va in glicolisi e nella via dei pentoso fosfati: più lattato, acetil-CoA (grassi) e ribosio 5-P (purine → acido urico)",
+   "Perché manca l'insulina",
+   "Perché il rene non filtra",
+   "Perché c'è troppo glucagone"
+  ],
+  "ans": 0,
+  "why": "Anche il lattato compete con l'urato per l'escrezione renale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-06",
+  "topic": "m4-glicogenosi",
+  "level": "a",
+  "page": "138",
+  "src": "Biochimica II",
+  "q": "Nella McArdle, che cosa succede al lattato durante lo sforzo?",
+  "opts": [
+   "Non aumenta, perché il muscolo non può usare il glicogeno",
+   "Aumenta molto",
+   "Diventa glucosio",
+   "Si accumula nel fegato"
+  ],
+  "ans": 0,
+  "why": "È alla base del test da sforzo ischemico dell'avambraccio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4g-07",
+  "topic": "m4-glicogenosi",
+  "level": "l",
+  "page": "138",
+  "src": "Biochimica II",
+  "q": "Che cos'è la mioglobinuria che si vede nella McArdle?",
+  "opts": [
+   "Presenza di mioglobina nelle urine dopo danno muscolare",
+   "Mioglobina nel sangue",
+   "Carenza di mioglobina",
+   "Mioglobina nel fegato"
+  ],
+  "ans": 0,
+  "why": "Le urine diventano scure dopo sforzi intensi.",
+  "note": "Sbobina di Biochimica II, p. 138: la mioglobinuria è definita «presenza di mioglobina nel sangue». È la presenza di mioglobina nelle urine (la mioglobina nel sangue è la mioglobinemia).",
+  "fixed": false
+ },
+ {
+  "id": "m4g-08",
+  "topic": "m4-glicogenosi",
+  "level": "l",
+  "page": "136",
+  "src": "Biochimica II",
+  "q": "Come si chiama la glicogenosi di tipo II e quale enzima manca?",
+  "opts": [
+   "Malattia di Pompe, α-glucosidasi acida lisosomiale",
+   "Malattia di Cori, deramificante",
+   "Malattia di Andersen, ramificante",
+   "Malattia di Hers, fosforilasi epatica"
+  ],
+  "ans": 0,
+  "why": "È anche una malattia da accumulo lisosomiale.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "m5f-01",
   "topic": "m5-fonti",
   "level": "f",
@@ -3093,6 +5001,546 @@
   "ans": 0,
   "why": "Glucagone → cAMP → PKA → fosforilasi chinasi → fosforilasi a.",
   "note": "Sbobina di Biochimica II, p. 156: c'è scritto che il cAMP «fosforila enzimi chiave come la PKA». Il cAMP attiva la PKA legandosi alle subunità regolatrici; a fosforilare è la PKA.",
+  "fixed": false
+ },
+ {
+  "id": "m6r-01",
+  "topic": "m6-reazioni",
+  "level": "f",
+  "page": "159",
+  "src": "Biochimica II",
+  "q": "Quali sono i due prodotti principali della via dei pentoso fosfati?",
+  "opts": [
+   "NADPH e ribosio 5-fosfato",
+   "ATP e NADH",
+   "Lattato e CO₂",
+   "Acetil-CoA e FADH₂"
+  ],
+  "ans": 0,
+  "why": "Il NADPH serve alle biosintesi riduttive e alla difesa antiossidante; il ribosio 5-P ai nucleotidi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-02",
+  "topic": "m6-reazioni",
+  "level": "f",
+  "page": "159",
+  "src": "Biochimica II",
+  "q": "Dove avviene la via dei pentoso fosfati?",
+  "opts": [
+   "Nel citosol",
+   "Nella matrice mitocondriale",
+   "Nel reticolo endoplasmatico",
+   "Nel nucleo"
+  ],
+  "ans": 0,
+  "why": "Come la glicolisi, con cui condivide intermedi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-03",
+  "topic": "m6-reazioni",
+  "level": "f",
+  "page": "160",
+  "src": "Biochimica II",
+  "q": "Quale enzima catalizza la prima reazione della via?",
+  "opts": [
+   "Glucosio 6-fosfato deidrogenasi",
+   "Transchetolasi",
+   "Esochinasi",
+   "6-fosfogluconato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Ossida il glucosio 6-P a 6-fosfoglucono-δ-lattone, riducendo NADP⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-04",
+  "topic": "m6-reazioni",
+  "level": "m",
+  "page": "160–161",
+  "src": "Biochimica II",
+  "q": "Quanti NADPH produce la fase ossidativa per glucosio 6-fosfato?",
+  "opts": [
+   "2",
+   "1",
+   "3",
+   "4"
+  ],
+  "ans": 0,
+  "why": "Uno dalla G6PD, uno dalla 6-fosfogluconato deidrogenasi; si libera anche una CO₂.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-05",
+  "topic": "m6-reazioni",
+  "level": "m",
+  "page": "162",
+  "src": "Biochimica II",
+  "q": "Che cosa trasferisce la transchetolasi?",
+  "opts": [
+   "Un frammento di 2 atomi di carbonio",
+   "Un frammento di 3 atomi di carbonio",
+   "Un gruppo fosfato",
+   "Un'unità di CO₂"
+  ],
+  "ans": 0,
+  "why": "La transaldolasi trasferisce invece 3 carboni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-06",
+  "topic": "m6-reazioni",
+  "level": "m",
+  "page": "162",
+  "src": "Biochimica II",
+  "q": "Quale coenzima usa la transchetolasi?",
+  "opts": [
+   "Tiamina pirofosfato",
+   "Piridossal fosfato",
+   "Biotina",
+   "NADP⁺"
+  ],
+  "ans": 0,
+  "why": "Per questo l'attività della transchetolasi eritrocitaria si usa per valutare la carenza di tiamina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-07",
+  "topic": "m6-reazioni",
+  "level": "a",
+  "page": "161",
+  "src": "Biochimica II",
+  "q": "Quale enzima converte il ribulosio 5-P in ribosio 5-P?",
+  "opts": [
+   "Ribosio 5-fosfato isomerasi",
+   "Ribulosio 5-fosfato epimerasi",
+   "Transaldolasi",
+   "Fosfopentosio mutasi"
+  ],
+  "ans": 0,
+  "why": "L'epimerasi forma invece lo xilulosio 5-P.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-08",
+  "topic": "m6-reazioni",
+  "level": "a",
+  "page": "163",
+  "src": "Biochimica II",
+  "q": "Se la cellula ha bisogno solo di NADPH e non di ribosio, che cosa succede ai pentosi?",
+  "opts": [
+   "Transchetolasi e transaldolasi li riconvertono in fruttosio 6-P e gliceraldeide 3-P, che possono rigenerare glucosio 6-P",
+   "Vengono escreti",
+   "Si accumulano",
+   "Vanno nel ciclo di Krebs direttamente"
+  ],
+  "ans": 0,
+  "why": "Riciclando, in teoria tutto il glucosio può essere ossidato a CO₂ producendo 12 NADPH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-09",
+  "topic": "m6-reazioni",
+  "level": "a",
+  "page": "164",
+  "src": "Biochimica II",
+  "q": "Se la cellula ha bisogno di ribosio e non di NADPH?",
+  "opts": [
+   "Usa solo la fase non ossidativa al contrario, partendo da fruttosio 6-P e gliceraldeide 3-P della glicolisi",
+   "Non può produrre ribosio",
+   "Usa la gluconeogenesi",
+   "Usa solo la G6PD"
+  ],
+  "ans": 0,
+  "why": "La fase non ossidativa è completamente reversibile.",
+  "note": "Sbobina di Biochimica II, p. 164: c'è scritto che «questa via è detta gluconeogenesi». Riformare glucosio 6-P dai pentosi non è la gluconeogenesi vera e propria, che parte da precursori non glucidici.",
+  "fixed": false
+ },
+ {
+  "id": "m6r-10",
+  "topic": "m6-reazioni",
+  "level": "l",
+  "page": "160",
+  "src": "Biochimica II",
+  "q": "Come si chiama il prodotto della glucosio 6-fosfato deidrogenasi?",
+  "opts": [
+   "6-Fosfoglucono-δ-lattone",
+   "6-Fosfogluconato",
+   "Ribulosio 5-fosfato",
+   "Gluconolattone 1-fosfato"
+  ],
+  "ans": 0,
+  "why": "Una lattonasi lo idrolizza poi a 6-fosfogluconato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-11",
+  "topic": "m6-reazioni",
+  "level": "l",
+  "page": "160",
+  "src": "Biochimica II",
+  "q": "Quale enzima idrolizza il lattone in 6-fosfogluconato?",
+  "opts": [
+   "6-Fosfogluconolattonasi",
+   "Glucosio 6-fosfatasi",
+   "Lattato deidrogenasi",
+   "6-Fosfogluconato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "La reazione avverrebbe anche spontaneamente, ma più lentamente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6r-12",
+  "topic": "m6-reazioni",
+  "level": "l",
+  "page": "162",
+  "src": "Biochimica II",
+  "q": "Quale zucchero a 7 atomi di carbonio si forma nella fase non ossidativa?",
+  "opts": [
+   "Sedoeptulosio 7-fosfato",
+   "Eritrosio 7-fosfato",
+   "Xilulosio 7-fosfato",
+   "Ribulosio 7-fosfato"
+  ],
+  "ans": 0,
+  "why": "L'eritrosio 4-P invece ha 4 carboni ed è precursore degli amminoacidi aromatici nelle piante.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6g-01",
+  "topic": "m6-regolazione",
+  "level": "f",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "Qual è l'enzima regolatore della via dei pentoso fosfati?",
+  "opts": [
+   "Glucosio 6-fosfato deidrogenasi",
+   "Transaldolasi",
+   "Ribosio 5-P isomerasi",
+   "Transchetolasi"
+  ],
+  "ans": 0,
+  "why": "Catalizza la prima reazione, irreversibile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6g-02",
+  "topic": "m6-regolazione",
+  "level": "m",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "Che cosa regola principalmente la G6PD?",
+  "opts": [
+   "Il rapporto NADP⁺/NADPH",
+   "Il livello di ATP",
+   "Il glucagone",
+   "Il calcio"
+  ],
+  "ans": 0,
+  "why": "Il NADPH la inibisce; quando viene consumato, il NADP⁺ la attiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6g-03",
+  "topic": "m6-regolazione",
+  "level": "a",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "In quali tessuti la via dei pentoso fosfati è particolarmente attiva?",
+  "opts": [
+   "Fegato, tessuto adiposo, ghiandola mammaria in lattazione, surrene, eritrociti",
+   "Muscolo scheletrico",
+   "Cervello",
+   "Osso"
+  ],
+  "ans": 0,
+  "why": "Sono tessuti con molta sintesi di acidi grassi o steroidi, o con forte stress ossidativo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6g-04",
+  "topic": "m6-regolazione",
+  "level": "a",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "Che cosa decide il destino del glucosio 6-P tra glicolisi e via dei pentosi?",
+  "opts": [
+   "Le richieste di NADPH, ribosio 5-P e ATP della cellula",
+   "La sola concentrazione di glucosio",
+   "Solo l'insulina",
+   "La temperatura"
+  ],
+  "ans": 0,
+  "why": "Ci sono quattro modalità a seconda di cosa serve.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-01",
+  "topic": "m6-nadph",
+  "level": "f",
+  "page": "166",
+  "src": "Biochimica II",
+  "q": "Perché il NADPH è indispensabile all'eritrocita?",
+  "opts": [
+   "Mantiene ridotto il glutatione, che protegge dagli ossidanti",
+   "Produce ATP",
+   "Sintetizza emoglobina",
+   "Trasporta ossigeno"
+  ],
+  "ans": 0,
+  "why": "L'eritrocita non ha mitocondri: la via dei pentosi è l'unica fonte di NADPH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-02",
+  "topic": "m6-nadph",
+  "level": "f",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Che cos'è il favismo?",
+  "opts": [
+   "Una crisi emolitica da deficit di G6PD scatenata dalle fave",
+   "Un'allergia alle fave",
+   "Un deficit di vitamina B12",
+   "Una malattia del fegato"
+  ],
+  "ans": 0,
+  "why": "Il deficit di G6PD è legato al cromosoma X.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-03",
+  "topic": "m6-nadph",
+  "level": "m",
+  "page": "167",
+  "src": "Biochimica II",
+  "q": "In quali biosintesi serve NADPH?",
+  "opts": [
+   "Acidi grassi, colesterolo e steroidi, deossiribonucleotidi",
+   "Glicogeno",
+   "Proteine",
+   "Urea"
+  ],
+  "ans": 0,
+  "why": "Il NADPH è il trasportatore di elettroni per le reazioni riduttive.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-04",
+  "topic": "m6-nadph",
+  "level": "m",
+  "page": "167",
+  "src": "Biochimica II",
+  "q": "A che cosa serve il NADPH nei neutrofili?",
+  "opts": [
+   "Alla NADPH ossidasi, che produce superossido per uccidere i batteri (burst respiratorio)",
+   "A produrre ATP",
+   "A sintetizzare anticorpi",
+   "Al movimento"
+  ],
+  "ans": 0,
+  "why": "Difetti della NADPH ossidasi causano la malattia granulomatosa cronica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-05",
+  "topic": "m6-nadph",
+  "level": "m",
+  "page": "168",
+  "src": "Biochimica II",
+  "q": "A che cosa servono i citocromi P450?",
+  "opts": [
+   "A idrossilare farmaci e steroidi usando O₂ e NADPH",
+   "A trasportare elettroni nella catena respiratoria",
+   "A trasportare ossigeno",
+   "A produrre glucosio"
+  ],
+  "ans": 0,
+  "why": "Sono monossigenasi: un atomo di O va nel substrato, l'altro forma acqua.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-06",
+  "topic": "m6-nadph",
+  "level": "a",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Perché il deficit di G6PD è diffuso nelle zone malariche?",
+  "opts": [
+   "Dà una certa protezione contro il Plasmodium falciparum",
+   "Per mutazioni indotte dalla malaria",
+   "Perché le fave crescono lì",
+   "Per caso"
+  ],
+  "ans": 0,
+  "why": "Il parassita sopporta male lo stress ossidativo dei globuli rossi carenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-07",
+  "topic": "m6-nadph",
+  "level": "a",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Che cosa sono i corpi di Heinz?",
+  "opts": [
+   "Precipitati di emoglobina ossidata e denaturata negli eritrociti",
+   "Frammenti di nucleo",
+   "Granuli di ferro",
+   "Inclusioni batteriche"
+  ],
+  "ans": 0,
+  "why": "Si vedono nelle crisi emolitiche da deficit di G6PD.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-08",
+  "topic": "m6-nadph",
+  "level": "a",
+  "page": "168",
+  "src": "Biochimica II",
+  "q": "Perché un sovradosaggio di paracetamolo danneggia il fegato?",
+  "opts": [
+   "Il P450 lo trasforma in NAPQI, che normalmente è coniugato al glutatione; quando il glutatione si esaurisce, il NAPQI lega le proteine epatiche",
+   "Perché inibisce la G6PD",
+   "Perché blocca il complesso IV",
+   "Perché consuma tutto il glicogeno"
+  ],
+  "ans": 0,
+  "why": "L'antidoto è la N-acetilcisteina, che rigenera il glutatione.",
+  "note": "Sbobina di Biochimica II, p. 168: il metabolita tossico e il citocromo sono scritti in modo storpiato («cye2I»). Si tratta del NAPQI (N-acetil-p-benzochinone imina) prodotto soprattutto dal CYP2E1.",
+  "fixed": false
+ },
+ {
+  "id": "m6n-09",
+  "topic": "m6-nadph",
+  "level": "a",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Quali sostanze nelle fave scatenano l'emolisi nel deficit di G6PD?",
+  "opts": [
+   "Vicina e convicina",
+   "Solanina e caffeina",
+   "Lattosio e galattosio",
+   "Amilasi e lectine"
+  ],
+  "ans": 0,
+  "why": "Generano specie reattive dell'ossigeno. Anche farmaci come primachina e sulfamidici possono scatenarla.",
+  "note": "Sbobina di Biochimica II, p. 169: c'è scritto che è «il polline di fava» ad avere azione ossidativa. La causa principale è l'ingestione delle fave (vicina e convicina); il polline è una causa rara e discussa.",
+  "fixed": false
+ },
+ {
+  "id": "m6n-10",
+  "topic": "m6-nadph",
+  "level": "l",
+  "page": "168",
+  "src": "Biochimica II",
+  "q": "Come si chiama per esteso il metabolita tossico del paracetamolo?",
+  "opts": [
+   "N-acetil-p-benzochinone imina",
+   "N-acetil-p-amminofenolo",
+   "Paracetamolo glucuronide",
+   "Acido acetilsalicilico"
+  ],
+  "ans": 0,
+  "why": "Sigla NAPQI.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-11",
+  "topic": "m6-nadph",
+  "level": "l",
+  "page": "168",
+  "src": "Biochimica II",
+  "q": "Quale isoforma del P450 produce soprattutto il NAPQI, indotta dall'alcol?",
+  "opts": [
+   "CYP2E1",
+   "CYP3A4",
+   "CYP1A2",
+   "CYP2D6"
+  ],
+  "ans": 0,
+  "why": "Per questo chi beve cronicamente è più esposto alla tossicità del paracetamolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m6n-12",
+  "topic": "m6-nadph",
+  "level": "l",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Nei neutrofili, quale enzima trasforma H₂O₂ in acido ipocloroso?",
+  "opts": [
+   "Mieloperossidasi",
+   "Catalasi",
+   "NADPH ossidasi",
+   "Superossido dismutasi"
+  ],
+  "ans": 0,
+  "why": "L'ipoclorito è un ossidante molto potente contro i batteri.",
+  "note": "Sbobina di Biochimica II, p. 169: c'è scritto che i cloruri reagiscono con i radicali formando «ipoclorito di sodio». È la mieloperossidasi a formare acido ipocloroso (HOCl) da H₂O₂ e Cl⁻.",
+  "fixed": false
+ },
+ {
+  "id": "m6n-13",
+  "topic": "m6-nadph",
+  "level": "l",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "Nelle reazioni di coniugazione dei farmaci (fase II), che cosa sono glutatione, UDP-glucuronato e PAPS?",
+  "opts": [
+   "Molecole coniugate al farmaco per renderlo più idrosolubile",
+   "Trasportatori proteici di membrana",
+   "Enzimi del P450",
+   "Ormoni"
+  ],
+  "ans": 0,
+  "why": "Il PAPS (3'-fosfoadenosina 5'-fosfosolfato) è il donatore di solfato.",
+  "note": "Sbobina di Biochimica II, p. 169: glutatione, UDP-glucuronico e PAPS sono definiti «trasportatori proteici». Sono molecole che si coniugano al farmaco, non proteine trasportatrici.",
+  "fixed": false
+ },
+ {
+  "id": "m6n-14",
+  "topic": "m6-nadph",
+  "level": "l",
+  "page": "169",
+  "src": "Biochimica II",
+  "q": "A quale classe di farmaci appartengono le benzodiazepine?",
+  "opts": [
+   "Ansiolitici e ipnotico-sedativi",
+   "Antidepressivi triciclici",
+   "Inibitori della ricaptazione della serotonina",
+   "Antipsicotici"
+  ],
+  "ans": 0,
+  "why": "Agiscono potenziando il recettore GABA-A; con l'alcol l'effetto sedativo si somma.",
+  "note": "Sbobina di Biochimica II, p. 169: le benzodiazepine sono chiamate «farmaci antidepressivi». Sono ansiolitici/ipnotici. Non è nelle sbobine il meccanismo GABA-A.",
   "fixed": false
  }
 ]

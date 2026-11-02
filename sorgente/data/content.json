@@ -1,5 +1,5 @@
 {
- "version": "0.4.0",
+ "version": "0.5.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -102,23 +102,33 @@
      "topics": [
       {
        "id": "m3-krebs",
-       "name": "Ciclo di Krebs"
+       "name": "Ciclo di Krebs",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m3-catena",
-       "name": "Catena respiratoria"
+       "name": "Catena respiratoria",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m3-atpsintasi",
-       "name": "Sintesi dell'ATP"
+       "name": "Sintesi dell'ATP",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m3-radicali",
-       "name": "Radicali liberi"
+       "name": "Radicali liberi",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m3-malattie",
-       "name": "Malattie mitocondriali e invecchiamento"
+       "name": "Malattie mitocondriali e invecchiamento",
+       "ready": true,
+       "added": "2026-11-02"
       }
      ]
     },
@@ -128,27 +138,39 @@
      "topics": [
       {
        "id": "m4-degradazione",
-       "name": "Struttura e degradazione"
+       "name": "Struttura e degradazione",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m4-sintesi",
-       "name": "Sintesi"
+       "name": "Sintesi",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m4-regolazione",
-       "name": "Regolazione"
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m4-ormoni",
-       "name": "Controllo ormonale"
+       "name": "Controllo ormonale",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m4-attivita",
-       "name": "Glicogeno e attività fisica"
+       "name": "Glicogeno e attività fisica",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m4-glicogenosi",
-       "name": "Glicogenosi"
+       "name": "Glicogenosi",
+       "ready": true,
+       "added": "2026-11-02"
       }
      ]
     },
@@ -196,15 +218,21 @@
      "topics": [
       {
        "id": "m6-reazioni",
-       "name": "Localizzazione e reazioni"
+       "name": "Localizzazione e reazioni",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m6-regolazione",
-       "name": "Regolazione"
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m6-nadph",
-       "name": "NADPH"
+       "name": "NADPH",
+       "ready": true,
+       "added": "2026-11-02"
       }
      ]
     },

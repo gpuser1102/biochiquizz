@@ -104,9 +104,11 @@ q("m4e-01", T, "f", "134", "Durante uno sprint, da dove ricava energia il muscol
 q("m4e-02", T, "m", "134–135", "Nella maratona, che cosa cambia rispetto allo sprint?", [
   "Il metabolismo è aerobio e usa sempre più acidi grassi, risparmiando glicogeno", "Usa solo glicogeno", "Usa solo creatina fosfato", "Produce più lattato"], 0,
   "Quando il glicogeno si esaurisce si ha il «muro».")
-q("m4e-03", T, "a", "135", "Quale enzima rallenta l'uso del glucosio quando il muscolo usa acidi grassi?", ["La piruvato deidrogenasi, inibita da acetil-CoA e NADH", "La piruvato carbossilasi", "La glicogeno sintasi", "La lattato deidrogenasi"], 0,
-  "È uno dei meccanismi del ciclo di Randle.",
-  note="Sbobina di Biochimica II, p. 135: c'è scritto che la «piruvato carbossilasi» è irreversibile e inibita. Dal contesto si tratta della piruvato deidrogenasi.")
+q("m4e-03", T, "a", "135", "Perché con una dieta ricca di grassi e povera di carboidrati il glicogeno non si ricostituisce dopo lo sforzo?", [
+  "Gli acidi grassi danno acetil-CoA, ma la piruvato deidrogenasi è irreversibile: dall'acetil-CoA non si torna al piruvato e quindi al glucosio",
+  "Perché i grassi inibiscono la glicogeno sintasi", "Perché gli acidi grassi non entrano nel muscolo", "Perché i grassi consumano tutto l'ATP"], 0,
+  "Serve mangiare carboidrati, subito dopo lo sforzo e poi a intervalli regolari nelle 24 ore successive.",
+  note="Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». L'enzima irreversibile tra piruvato e acetil-CoA è la piruvato deidrogenasi.")
 q("m4e-04", T, "l", "134", "Quanto dura indicativamente la riserva di fosfocreatina in uno sforzo massimale?", ["Pochi secondi", "Circa 10 minuti", "Circa un'ora", "Un giorno"], 0,
   "Dopo pochi secondi subentra la glicolisi anaerobia.")
 

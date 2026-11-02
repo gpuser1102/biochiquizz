@@ -43,14 +43,18 @@
     board: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21l4-4 4 4M7 9h6M7 12h9"/></svg>',
     pen: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>',
   };
+  ICON.flame = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1 3.5 5 5.5 5 10a5 5 0 01-10 0c0-2.2 1-3.7 2-4.8.3 1.8 1.2 2.8 2.3 2.8C11 8.5 11 6 12 3z"/></svg>';
   const svgIcon = n => { const s = h("span", { html: ICON[n] }); return s.firstChild; };
 
   /* ---------------- Stato locale ---------------- */
-  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true }, progressive: true, cards: {}, days: {} });
+  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true }, progressive: true, study: "", hardStats: {}, cards: {}, days: {} });
   let S = blank();
   try { const raw = localStorage.getItem(STORE_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) { /* storage non disponibile */ }
   // dal vecchio sistema a scatole: quelle card ripartono come nuove
   Object.keys(S.cards).forEach(k => { if (!S.cards[k].type) delete S.cards[k]; });
+  // modalità di studio: graduale (sblocco al 70%), libera (scegli i livelli), hard (solo domande toste, si scrive)
+  if (!["grad", "free", "hard"].includes(S.study)) S.study = S.progressive === false ? "free" : "grad";
+  if (!S.hardStats) S.hardStats = {};
   // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
   if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
@@ -76,7 +80,11 @@
      Facile → Medio → Alta → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
      quando almeno il 70% delle card del livello precedente è stato imparato (passato in ripasso). */
   const LEVELS = ["f", "m", "a", "l"];
-  const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode" };
+  const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode", h: "Hard" };
+  const STUDY_NAME = { grad: "Graduale", free: "Libera", hard: "Hard mode" };
+  const isHard = () => S.study === "hard";
+  // in hard mode: domande Alta e 30 e lode (anche verificate) + molecole e reazioni da scrivere senza opzioni
+  const inHard = c => c.kind === "mol" || c.kind === "rx" || (c.kind === "ex" && (c.level === "a" || c.level === "l"));
   const UNLOCK = 0.7;
   const learned = c => { const x = S.cards[c.id]; return !!x && (x.type === "review" || (x.type === "relearn")); };
   function topicLevelState(tid) {
@@ -90,8 +98,9 @@
     return { by, open };
   }
   const levelAllowed = (c, unlockCache) => {
+    if (isHard()) return inHard(c);
     if (!S.levels[c.level]) return false;
-    if (!S.progressive) return true;
+    if (S.study !== "grad") return true;
     return c.topics.some(t => { const st = unlockCache[t] || (unlockCache[t] = topicLevelState(t)); return LEVELS.indexOf(c.level) <= st.open; });
   };
   const eligible = () => {
@@ -100,7 +109,8 @@
   };
   const cardsInTopic = id => CARDS.filter(c => c.topics.includes(id)).length;
   const topicMeta = id => {
-    if (!S.progressive) return `${cardsInTopic(id)} card`;
+    if (isHard()) { const n = CARDS.filter(c => c.topics.includes(id) && inHard(c)).length; return `${n} card in hard mode`; }
+    if (S.study !== "grad") return `${cardsInTopic(id)} card`;
     const st = topicLevelState(id);
     return `${cardsInTopic(id)} card · ${LEVEL_NAME[LEVELS[st.open]]}`;
   };
@@ -111,7 +121,7 @@
      La giornata inizia alle 4 di mattina. */
   const MIN = 60e3, HOUR = 36e5, DAY = 864e5;
   const CFG = { learn: [1 * MIN, 10 * MIN], relearn: [10 * MIN], gradIvl: 1, easyIvl: 4, startEase: 2.5, minEase: 1.3,
-    easyBonus: 1.3, hardMult: 1.2, learnAhead: 20 * MIN, leech: 8, mature: 21 };
+    easyBonus: 1.3, hardMult: 1.2, learnAhead: 20 * MIN, leech: 8, mature: 21, hardRelearn: [1 * MIN, 10 * MIN] };
   const dayStart = t => { const d = new Date(t - 4 * HOUR); d.setHours(4, 0, 0, 0); return d.getTime(); };
   const today = () => { const d = new Date(dayStart(Date.now())); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
   const newState = () => ({ type: "new", step: 0, ease: CFG.startEase, ivl: 0, due: 0, lapses: 0, right: 0, wrong: 0, seen: 0 });
@@ -121,7 +131,7 @@
     const fz = noFuzz ? x => x : fuzz;
     if (st.type !== "review") {
       const relearning = st.type === "relearn";
-      const steps = relearning ? CFG.relearn : CFG.learn;
+      const steps = relearning ? (isHard() ? CFG.hardRelearn : CFG.relearn) : CFG.learn;
       if (st.type === "new") st.type = "learn";
       if (r === 1) { st.step = 0; st.due = now + steps[0]; return; }
       if (r === 2) { const cur = steps[st.step] || steps[0], nxt = steps[st.step + 1]; st.due = now + (nxt ? (cur + nxt) / 2 : cur * 1.5); return; }
@@ -129,7 +139,7 @@
       if (!relearning) st.ivl = r === 4 ? CFG.easyIvl : CFG.gradIvl;
       st.type = "review"; st.step = 0; st.due = dayStart(now) + st.ivl * DAY; return;
     }
-    if (r === 1) { st.lapses++; st.ease = Math.max(CFG.minEase, st.ease - .2); st.ivl = 1; st.type = "relearn"; st.step = 0; st.due = now + CFG.relearn[0]; return; }
+    if (r === 1) { const hd = isHard(); st.lapses++; st.ease = Math.max(CFG.minEase, st.ease - (hd ? .25 : .2)); st.ivl = 1; st.type = "relearn"; st.step = 0; st.due = now + (hd ? CFG.hardRelearn[0] : CFG.relearn[0]); return; }
     let ivl;
     if (r === 2) { ivl = Math.max(st.ivl + 1, st.ivl * CFG.hardMult); st.ease = Math.max(CFG.minEase, st.ease - .15); }
     else if (r === 3) ivl = Math.max(st.ivl + 1, st.ivl * st.ease);
@@ -150,6 +160,7 @@
       S.cards[id] = st;
     };
     apply(r);
+    if (isHard() && CARD[id]) CARD[id].topics.forEach(t => { const x = S.hardStats[t] = S.hardStats[t] || { n: 0, ok: 0 }; x.n++; if (r > 1) x.ok++; });
     pendingNew.delete(id);
     const d = today(); S.days[d] = S.days[d] || { n: 0, ok: 0, new: 0 }; S.days[d].n++; if (r > 1) S.days[d].ok++; if (wasNew) S.days[d].new = (S.days[d].new || 0) + 1;
     save();
@@ -182,8 +193,10 @@
     if (rv.length) return { c: rv[0] };
     if (newToday() < S.newPerDay) {
       let nw = pool.filter(c => fresh(c) && !pendingNew.has(c.id) && (!st(c) || st(c).type === "new"));
-      const minLv = Math.min(...nw.map(c => LEVELS.indexOf(c.level)));
-      nw = nw.filter(c => LEVELS.indexOf(c.level) === minLv);
+      if (!isHard()) {
+        const minLv = Math.min(...nw.map(c => LEVELS.indexOf(c.level)));
+        nw = nw.filter(c => LEVELS.indexOf(c.level) === minLv);
+      }
       if (nw.length) { const c = nw[Math.floor(Math.random() * nw.length)]; pendingNew.add(c.id); return { c }; }
     }
     l = pool.filter(c => fresh(c) && learning(c) && st(c).due <= now + CFG.learnAhead).sort(byDue);
@@ -220,6 +233,28 @@
     return cands.some(c => c.length >= 6 && digits(c) === digits(x) && lev(c, x) <= (c.length >= 12 ? 2 : 1));
   }
   const molName = id => MOL[id].name;
+  // nomi lunghi (enzimi): tollera qualche refuso, ignora le parentesi
+  function matchText(input, answer) {
+    const x = norm(input); if (!x) return false;
+    const cands = [answer, answer.replace(/\s*\(.*?\)/g, "")].map(norm);
+    if (cands.includes(x)) return true;
+    return cands.some(c => c.length >= 6 && digits(c) === digits(x) && lev(c, x) <= (c.length >= 20 ? 3 : c.length >= 12 ? 2 : 1));
+  }
+  // casella per scrivere la risposta (hard mode)
+  function writeBox(c, placeholder, test, onDone) {
+    const inp = h("input", { type: "text", id: "ans-" + c.id.replace(/\W/g, "-") + "-" + shown, placeholder, autocomplete: "off", autocapitalize: "off", spellcheck: "false", enterkeyhint: "done", "aria-label": placeholder });
+    const go = h("button", { class: "btn btn-primary", type: "button" }, "Verifica");
+    const form = h("div", { class: "write" }, inp, go);
+    const check = () => {
+      if (!inp.value.trim()) { inp.focus(); return; }
+      const ok = test(inp.value); inp.disabled = go.disabled = true; inp.blur();
+      form.classList.add(ok ? "right" : "wrong");
+      onDone(ok, form);
+    };
+    go.addEventListener("click", check);
+    inp.addEventListener("keydown", e => { if (e.key === "Enter") check(); });
+    return form;
+  }
   const subjectOf = topic => ((TOPICS[topic] || {}).subject || "Biochimica II");
   const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, p. ${page}` : null;
   // "dal glucosio", "dall'ossalacetato", "sull'1,3-bisfosfoglicerato"
@@ -390,12 +425,13 @@
     return a;
   }
   function shell(c, kicker, tileClass, icon) {
-    const card = h("article", { class: "card", "data-card": c.id });
+    const card = h("article", { class: "card" + (isHard() ? " hard" : ""), "data-card": c.id });
     const body = h("div", { class: "card-body" });
     body.append(h("div", { class: "card-head" },
       h("div", { class: "tile " + tileClass }, svgIcon(icon)),
       h("div", { style: "flex:1;min-width:0" }, h("div", { class: "card-kicker" }, kicker), h("div", { class: "card-topic" }, topicLabel(c))),
-      c.level ? h("span", { class: "lv lv-" + c.level }, LEVEL_NAME[c.level]) : null));
+      isHard() && (c.kind === "mol" || c.kind === "rx") ? h("span", { class: "lv lv-h" }, "Hard")
+        : c.level ? h("span", { class: "lv lv-" + c.level }, LEVEL_NAME[c.level]) : null));
     const foot = h("div", { class: "card-foot" }, reportLink(c.id), h("span", { class: "next-hint" }, "Scorri", svgIcon("down")));
     card.append(body, foot);
     return { card, body };
@@ -459,7 +495,7 @@
     const pool = others.length >= 4 ? others : D.molecules.filter(x => x.id !== m.id).map(x => x.name);
     const opts = shuffle([m.name, ...sample(pool, 4)]);
     const showOptions = () => body.append(optionList(opts, m.name, done));
-    if (S.mode === "choice") showOptions();
+    if (S.mode === "choice" && !isHard()) showOptions();
     else {
       const inp = h("input", { type: "text", id: "ans-" + c.id.replace(/\W/g, "-") + "-" + shown, placeholder: "Scrivi il nome (va bene anche la sigla)", autocomplete: "off", autocapitalize: "off", spellcheck: "false", enterkeyhint: "done", "aria-label": "Nome della molecola" });
       const go = h("button", { class: "btn btn-primary", type: "button" }, "Verifica");
@@ -474,7 +510,7 @@
       go.addEventListener("click", check);
       inp.addEventListener("keydown", e => { if (e.key === "Enter") check(); });
       help.addEventListener("click", () => { form.remove(); help.remove(); showOptions(); });
-      body.append(form, help);
+      if (isHard()) { body.append(form); help.remove(); } else body.append(form, help);
     }
     return card;
   }
@@ -517,7 +553,9 @@
     r.right.forEach((x, i) => slots.push({ side: "right", i, kind: x[0] === "m" ? "mol" : "cof", val: x[1] }));
     slots.push({ kind: "enz", val: r.enzyme });
     if (r.coenzyme) slots.push({ kind: "co", val: r.coenzyme });
-    const hid = slots[Math.floor(Math.random() * slots.length)];
+    // in hard mode si nasconde solo una molecola o l'enzima, e la risposta va scritta
+    const hidable = isHard() ? slots.filter(s => s.kind === "mol" || s.kind === "enz") : slots;
+    const hid = hidable[Math.floor(Math.random() * hidable.length)];
     const question = rxQuestion(r, hid);
     const label = s => s.kind === "mol" ? molName(s.val) : s.val;
     const answer = label(hid);
@@ -547,11 +585,14 @@
     const opts = shuffle([answer, ...sample(pool, 4, [answer, ...present])]);
     let note = r.note || null;
     if (hid.kind === "enz" && r.enzymeNotInNotes && !note) note = "Il nome dell'enzima non è nelle sbobine.";
-    body.append(optionList(opts, answer, (ok, btn) => {
+    const done = (ok, btn) => {
       const g = grade(c.id, ok ? 3 : 1, c.extra);
       patch.textContent = answer; patch.classList.add("revealed"); if (!ok) patch.classList.add("miss");
       finish(card, btn, ok, `${r.enzyme}: ${eqText(r)}`, ref(subjectOf(r.topic), r.page), note, g);
-    }));
+    };
+    if (isHard()) body.append(writeBox(c, hid.kind === "mol" ? "Scrivi il nome della molecola" : "Scrivi il nome dell'enzima",
+      v => hid.kind === "mol" ? matchName(v, MOL[hid.val]) : matchText(v, answer), done));
+    else body.append(optionList(opts, answer, done));
     return card;
   }
 
@@ -648,6 +689,66 @@
       if (b.scrollHeight > b.clientHeight + 2) card.classList.add("tight");
     });
   }
+  /* ---------------- Modalità di studio ---------------- */
+  const MODE_INFO = {
+    grad: "Parti dalle domande facili. In ogni argomento il livello successivo si sblocca quando hai imparato il 70% di quello prima.",
+    free: "Scegli tu quali livelli includere, tutti già sbloccati.",
+    hard: "Solo domande Alta e 30 e lode, comprese quelle verificate. Molecole e reazioni si scrivono senza opzioni, e se sbagli la domanda torna dopo un minuto.",
+  };
+  function setStudy(v) {
+    S.study = v; S.progressive = v === "grad"; save(); renderModebar(); resetFeed();
+    if (!$("#view-info").hidden) renderInfo();
+    if (!$("#view-topics").hidden) renderTopics();
+  }
+  function levelChips() {
+    const chips = h("div", { class: "chips" });
+    LEVELS.forEach(l => {
+      const b = h("button", { type: "button", class: "chip lv-chip lvc-" + l, "aria-pressed": String(!!S.levels[l]) }, LEVEL_NAME[l]);
+      b.addEventListener("click", () => {
+        const next = !S.levels[l];
+        if (!next && LEVELS.filter(x => S.levels[x]).length === 1) { toast("Lascia attivo almeno un livello"); return; }
+        S.levels[l] = next; b.setAttribute("aria-pressed", String(next)); save(); resetFeed();
+      });
+      chips.append(b);
+    });
+    return chips;
+  }
+  function studyPicker(onPick) {
+    const list = h("div", { class: "mode-list", role: "group", "aria-label": "Modalità di studio" });
+    ["grad", "free", "hard"].forEach(v => {
+      const b = h("button", { type: "button", class: "mode-opt", "aria-pressed": String(S.study === v) },
+        h("div", { class: "tile " + ({ grad: "t-sage", free: "t-sky", hard: "t-peach" })[v] }, svgIcon(({ grad: "path", free: "topics", hard: "flame" })[v])),
+        h("div", { class: "row-text" }, h("div", { class: "row-title" }, STUDY_NAME[v]), h("div", { class: "row-sub" }, MODE_INFO[v])));
+      b.addEventListener("click", () => onPick(v));
+      list.append(b);
+    });
+    return list;
+  }
+  function openModeSheet(focusLevels) {
+    const overlay = h("div", { class: "sheet-wrap", role: "dialog", "aria-modal": "true", "aria-label": "Modalità di studio" });
+    const close = () => overlay.remove();
+    overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+    const draw = () => {
+      const sheet = h("div", { class: "sheet" }, h("div", { class: "sheet-grip", "aria-hidden": "true" }),
+        h("div", { class: "row-title", style: "font-size:18px" }, "Come vuoi studiare?"),
+        studyPicker(v => { setStudy(v); if (v === "free") draw(); else close(); }));
+      if (S.study === "free") sheet.append(h("div", { class: "h2", style: "margin:4px 0 0" }, "Livelli inclusi"), levelChips());
+      sheet.append(h("div", { class: "sheet-btns" }, h("button", { class: "btn btn-ghost", type: "button", onclick: close }, "Fatto")));
+      overlay.innerHTML = ""; overlay.append(sheet);
+    };
+    draw(); document.body.append(overlay);
+  }
+  function renderModebar() {
+    const bar = $("#modebar"); if (!bar) return; bar.innerHTML = "";
+    const seg = h("div", { class: "seg", role: "group", "aria-label": "Modalità di studio" },
+      ...["grad", "free", "hard"].map(v => {
+        const b = h("button", { type: "button", class: v === "hard" ? "hard-b" : "", "aria-pressed": String(S.study === v) },
+          v === "hard" ? svgIcon("flame") : null, v === "free" && S.study === "free" ? "Libera ▾" : v === "hard" ? "Hard" : STUDY_NAME[v]);
+        b.addEventListener("click", () => { if (v === S.study) openModeSheet(); else { setStudy(v); if (v === "free") openModeSheet(); else toast(STUDY_NAME[v] + (v === "hard" ? ": solo domande toste" : ": livelli a sblocco")); } });
+        return b;
+      }));
+    bar.append(seg);
+  }
   function resetFeed() {
     shown = 0; recent = []; extraMode = false; doneShown = false; pendingNew.clear();
     const f = feed(); f.innerHTML = ""; f.scrollTop = 0;
@@ -741,7 +842,9 @@
       const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
       const nnew = cs.length - mature - young;
       const ls = topicLevelState(t.id);
-      const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.progressive && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
+      const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.study === "grad" && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
+      const hs = S.hardStats[t.id];
+      if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Hard ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
       box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
         h("div", { class: "row-title" }, t.name), lvRow,
         h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
@@ -825,25 +928,9 @@
       h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Card nuove al giorno"), h("div", { class: "row-sub" }, "I ripassi in scadenza vengono sempre prima"))),
       h("div", { style: "padding:0 12px 12px" }, newSeg)));
 
-    root.append(h("div", { class: "h2" }, "Livelli di difficoltà"));
-    const lvBox = h("div", { class: "box" });
-    const prog = h("input", { type: "checkbox", id: "progressive", role: "switch" }); prog.checked = !!S.progressive;
-    prog.addEventListener("change", () => { S.progressive = prog.checked; save(); resetFeed(); renderInfo(); });
-    lvBox.append(h("div", { class: "switch-row" }, h("div", { class: "tile t-sage" }, svgIcon("path")),
-      h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Sblocco progressivo"),
-        h("div", { class: "row-sub" }, `In ogni argomento il livello successivo si apre quando hai imparato il ${Math.round(UNLOCK * 100)}% di quello prima`)),
-      h("label", { class: "switch" }, prog, h("span"))));
-    const chips = h("div", { class: "chips", style: "padding:0 12px 12px" });
-    LEVELS.forEach(l => {
-      const b = h("button", { type: "button", class: "chip lv-chip lvc-" + l, "aria-pressed": String(!!S.levels[l]) }, LEVEL_NAME[l]);
-      b.addEventListener("click", () => {
-        const next = !S.levels[l];
-        if (!next && LEVELS.filter(x => S.levels[x]).length === 1) { toast("Lascia attivo almeno un livello"); return; }
-        S.levels[l] = next; save(); resetFeed(); renderInfo();
-      });
-      chips.append(b);
-    });
-    lvBox.append(h("div", { class: "row-sub", style: "padding:0 12px 8px" }, "Livelli inclusi nel ripasso:"), chips);
+    root.append(h("div", { class: "h2" }, "Modalità di studio"));
+    const lvBox = h("div", { class: "box", style: "padding:12px" }, studyPicker(v => setStudy(v)));
+    if (S.study === "free") lvBox.append(h("div", { class: "row-sub", style: "margin:12px 0 8px" }, "Livelli inclusi nel ripasso:"), levelChips());
     root.append(lvBox);
 
     root.append(h("div", { class: "h2" }, "Installa sul telefono"));
@@ -879,7 +966,7 @@
     const askReset = () => {
       resetBox.innerHTML = "";
       resetBox.append(h("div", { class: "confirm" }, h("div", { class: "row-title" }, "Cancellare tutti i progressi?"), h("div", { class: "row-sub" }, "Argomenti spuntati, errori e statistiche di questo telefono. Non si può annullare."),
-        h("div", { class: "btns" }, h("button", { class: "btn btn-danger", type: "button", onclick: () => { const keep = { welcomed: true, theme: S.theme }; S = Object.assign(blank(), keep); save(); applyTheme(); renderAll(); toast("Progressi cancellati"); } }, "Cancella tutto"),
+        h("div", { class: "btns" }, h("button", { class: "btn btn-danger", type: "button", onclick: () => { const keep = { welcomed: true, theme: S.theme, study: "grad" }; S = Object.assign(blank(), keep); save(); applyTheme(); renderAll(); toast("Progressi cancellati"); } }, "Cancella tutto"),
           h("button", { class: "btn btn-ghost", type: "button", onclick: renderInfo }, "Annulla"))));
     };
     resetBox.append(h("button", { class: "row", type: "button", style: "width:100%;background:none;border:0;text-align:left;cursor:pointer", onclick: askReset },
@@ -891,7 +978,7 @@
   }
 
   /* ---------------- Backup dei progressi ---------------- */
-  const BACKUP_FIELDS = ["selected", "lastChecked", "onlyLast", "mode", "theme", "newPerDay", "cards", "days"];
+  const BACKUP_FIELDS = ["selected", "lastChecked", "onlyLast", "mode", "theme", "newPerDay", "levels", "progressive", "study", "hardStats", "cards", "days"];
   function backupBox() {
     const box = h("div", { class: "box" });
     const status = h("div", { class: "row-sub", style: "padding:0 12px 12px" }); status.hidden = true;
@@ -958,7 +1045,7 @@
     const meta = $('meta[name="theme-color"]'); if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
     redrawMolecules();
   }
-  function renderAll() { renderTopics(); resetFeed(); go(S.selected.length ? "feed" : "topics"); }
+  function renderAll() { renderModebar(); renderTopics(); resetFeed(); go(S.selected.length ? "feed" : "topics"); }
 
   /* ---------------- Aggiornamenti (solo app installata / GitHub Pages) ---------------- */
   const isHosted = () => location.protocol === "https:" && !/claude/.test(location.hostname);

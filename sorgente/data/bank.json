@@ -4145,16 +4145,16 @@
   "level": "a",
   "page": "135",
   "src": "Biochimica II",
-  "q": "Quale enzima rallenta l'uso del glucosio quando il muscolo usa acidi grassi?",
+  "q": "Perché con una dieta ricca di grassi e povera di carboidrati il glicogeno non si ricostituisce dopo lo sforzo?",
   "opts": [
-   "La piruvato deidrogenasi, inibita da acetil-CoA e NADH",
-   "La piruvato carbossilasi",
-   "La glicogeno sintasi",
-   "La lattato deidrogenasi"
+   "Gli acidi grassi danno acetil-CoA, ma la piruvato deidrogenasi è irreversibile: dall'acetil-CoA non si torna al piruvato e quindi al glucosio",
+   "Perché i grassi inibiscono la glicogeno sintasi",
+   "Perché gli acidi grassi non entrano nel muscolo",
+   "Perché i grassi consumano tutto l'ATP"
   ],
   "ans": 0,
-  "why": "È uno dei meccanismi del ciclo di Randle.",
-  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che la «piruvato carbossilasi» è irreversibile e inibita. Dal contesto si tratta della piruvato deidrogenasi.",
+  "why": "Serve mangiare carboidrati, subito dopo lo sforzo e poi a intervalli regolari nelle 24 ore successive.",
+  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». L'enzima irreversibile tra piruvato e acetil-CoA è la piruvato deidrogenasi.",
   "fixed": false
  },
  {
@@ -5541,6 +5541,960 @@
   "ans": 0,
   "why": "Agiscono potenziando il recettore GABA-A; con l'alcol l'effetto sedativo si somma.",
   "note": "Sbobina di Biochimica II, p. 169: le benzodiazepine sono chiamate «farmaci antidepressivi». Sono ansiolitici/ipnotici. Non è nelle sbobine il meccanismo GABA-A.",
+  "fixed": false
+ },
+ {
+  "id": "x1c-01",
+  "topic": "m1-catabolismo",
+  "level": "a",
+  "page": "6–7",
+  "src": "Biochimica II",
+  "q": "Dopo un pasto, a che cosa servono soprattutto il NADPH e l'ATP prodotti dal catabolismo?",
+  "opts": [
+   "A sostenere le biosintesi riduttive (anabolismo), che consumano ATP e potere riducente",
+   "A produrre altro glucosio",
+   "A essere eliminati con le urine",
+   "A ridurre l'ossigeno nel citosol"
+  ],
+  "ans": 0,
+  "why": "Catabolismo ossidativo e anabolismo riduttivo sono accoppiati da ATP e coenzimi ridotti.",
+  "note": "Sbobina di Biochimica II, p. 6: c'è scritto che per potere riducente delle biosintesi si intende «soprattutto NADH». Il coenzima delle biosintesi riduttive è il NADPH; il NADH serve soprattutto al catabolismo (lo dice la stessa sbobina a p. 159).",
+  "fixed": false
+ },
+ {
+  "id": "x1c-02",
+  "topic": "m1-catabolismo",
+  "level": "a",
+  "page": "6",
+  "src": "Biochimica II",
+  "q": "Perché vitamine e sali minerali sono indispensabili pur non fornendo energia?",
+  "opts": [
+   "Perché da molte vitamine derivano i coenzimi (es. NAD, FAD) delle reazioni di ossidoriduzione",
+   "Perché vengono ossidati nel ciclo di Krebs",
+   "Perché formano ATP direttamente",
+   "Perché sono metaboliti terminali"
+  ],
+  "ans": 0,
+  "why": "Sono micronutrienti: servono in piccole quantità come cofattori.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1c-03",
+  "topic": "m1-catabolismo",
+  "level": "l",
+  "page": "6",
+  "src": "Biochimica II",
+  "q": "Come viene eliminato l'azoto in eccesso degli amminoacidi, secondo lo schema del catabolismo?",
+  "opts": [
+   "L'ammoniaca viene trasformata in urea nel fegato e poi eliminata con le urine",
+   "Viene espirata come NH₃",
+   "Viene eliminata come acido urico",
+   "Viene immagazzinata nel muscolo"
+  ],
+  "ans": 0,
+  "why": "CO₂ con la respirazione, H₂O nel bilancio idrico, NH₃ come urea.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1c-04",
+  "topic": "m1-catabolismo",
+  "level": "l",
+  "page": "7",
+  "src": "Biochimica II",
+  "q": "In una cellula che si prepara alla mitosi, quali precursori servono per le nuove membrane?",
+  "opts": [
+   "Acidi grassi, glicerolo e i composti delle teste polari dei fosfolipidi",
+   "Solo colesterolo",
+   "Amminoacidi e basi azotate",
+   "Glicogeno"
+  ],
+  "ans": 0,
+  "why": "È l'esempio della sbobina: per duplicare la cellula servono DNA nuovo e fosfolipidi nuovi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1t-01",
+  "topic": "m1-termodinamica",
+  "level": "a",
+  "page": "11–12",
+  "src": "Biochimica II",
+  "q": "Una reazione ha ΔG°' = −20 kJ/mol ma nella cellula ha ΔG ≈ 0. Che cosa significa?",
+  "opts": [
+   "Le concentrazioni reali sono vicine a quelle di equilibrio: la reazione è reversibile e non è un buon punto di regolazione",
+   "Che la reazione è irreversibile",
+   "Che l'enzima manca",
+   "Che il ΔG°' è sbagliato"
+  ],
+  "ans": 0,
+  "why": "Conta il ΔG reale, che dipende dal rapporto [prodotti]/[reagenti].",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1t-02",
+  "topic": "m1-termodinamica",
+  "level": "a",
+  "page": "11",
+  "src": "Biochimica II",
+  "q": "Se il ΔG°' di una reazione è 0, quanto vale la Keq?",
+  "opts": [
+   "1",
+   "0",
+   "10",
+   "Infinito"
+  ],
+  "ans": 0,
+  "why": "ΔG°' = −RT ln Keq: ln 1 = 0.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1t-03",
+  "topic": "m1-termodinamica",
+  "level": "a",
+  "page": "12",
+  "src": "Biochimica II",
+  "q": "Perché due reazioni consecutive possono procedere anche se la prima ha ΔG°' positivo?",
+  "opts": [
+   "Perché i ΔG°' di reazioni accoppiate si sommano: conta il ΔG complessivo",
+   "Perché l'enzima cambia il ΔG",
+   "Perché la temperatura aumenta",
+   "Non possono"
+  ],
+  "ans": 0,
+  "why": "È il principio dell'accoppiamento energetico (es. aldolasi seguita dalle reazioni a valle).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1t-04",
+  "topic": "m1-termodinamica",
+  "level": "l",
+  "page": "11",
+  "src": "Biochimica II",
+  "q": "Qual è la relazione tra ΔG e la concentrazione dei reagenti e dei prodotti?",
+  "opts": [
+   "ΔG = ΔG°' + RT ln([prodotti]/[reagenti])",
+   "ΔG = ΔG°' − RT ln([prodotti]/[reagenti])",
+   "ΔG = −nFΔE + RT",
+   "ΔG = ΔH + TΔS"
+  ],
+  "ans": 0,
+  "why": "Con il rapporto pari a Keq, ΔG = 0 (equilibrio).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1e-01",
+  "topic": "m1-enzimologia",
+  "level": "a",
+  "page": "27",
+  "src": "Biochimica II",
+  "q": "Un inibitore competitivo come modifica KM e Vmax?",
+  "opts": [
+   "Aumenta la KM apparente, Vmax invariata",
+   "Diminuisce la Vmax, KM invariata",
+   "Diminuisce entrambe",
+   "Aumenta entrambe"
+  ],
+  "ans": 0,
+  "why": "Aumentando il substrato si supera l'inibizione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x1e-02",
+  "topic": "m1-enzimologia",
+  "level": "a",
+  "page": "29–30",
+  "src": "Biochimica II",
+  "q": "Qual è la differenza tra regolazione allosterica e controllo della quantità di enzima?",
+  "opts": [
+   "L'allosterica è rapida (secondi); la sintesi o degradazione dell'enzima è lenta (ore)",
+   "Sono ugualmente rapide",
+   "L'allosterica è lenta",
+   "La quantità di enzima non è regolabile"
+  ],
+  "ans": 0,
+  "why": "La modificazione covalente (fosforilazione) sta in mezzo: minuti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x2f-01",
+  "topic": "m2-fosforilazione",
+  "level": "a",
+  "page": "37–38",
+  "src": "Biochimica II",
+  "q": "Perché il glucosio 6-fosfato inibisce l'esochinasi ma non la glucochinasi?",
+  "opts": [
+   "Il fegato deve continuare a fosforilare il glucosio dopo il pasto per immagazzinarlo, anche quando il G6P è alto",
+   "Perché la glucochinasi non lega il glucosio",
+   "Perché il G6P non entra nel fegato",
+   "Perché la glucochinasi è mitocondriale"
+  ],
+  "ans": 0,
+  "why": "La glucochinasi è invece regolata dalla proteina regolatrice, che la sequestra nel nucleo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x2f-02",
+  "topic": "m2-fosforilazione",
+  "level": "l",
+  "page": "55–56",
+  "src": "Biochimica II",
+  "q": "Dove porta la glucochinasi la sua proteina regolatrice (GKRP) in presenza di fruttosio 6-fosfato?",
+  "opts": [
+   "Nel nucleo, dove resta inattiva",
+   "Nel mitocondrio",
+   "Sulla membrana plasmatica",
+   "Nel reticolo endoplasmatico"
+  ],
+  "ans": 0,
+  "why": "Il glucosio alto la libera e la fa tornare nel citosol.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x2n-01",
+  "topic": "m2-navette",
+  "level": "a",
+  "page": "53–54",
+  "src": "Biochimica II",
+  "q": "Perché il NADH prodotto nel citosol dalla glicolisi non entra direttamente nel mitocondrio?",
+  "opts": [
+   "La membrana mitocondriale interna è impermeabile al NADH: entrano solo i suoi elettroni, tramite le navette",
+   "Perché viene distrutto",
+   "Perché si ossida da solo",
+   "Entra liberamente"
+  ],
+  "ans": 0,
+  "why": "Gli elettroni passano tramite molecole trasportatrici (glicerolo 3-P, malato).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x2n-02",
+  "topic": "m2-navette",
+  "level": "a",
+  "page": "54",
+  "src": "Biochimica II",
+  "q": "Nella navetta malato-aspartato, quale molecola attraversa la membrana interna portando gli elettroni?",
+  "opts": [
+   "Il malato",
+   "L'ossalacetato",
+   "Il NADH",
+   "Il glicerolo 3-fosfato"
+  ],
+  "ans": 0,
+  "why": "L'ossalacetato non attraversa la membrana: torna fuori come aspartato dopo una transaminazione. Il dettaglio della navetta malato-aspartato non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x2n-03",
+  "topic": "m2-navette",
+  "level": "l",
+  "page": "54",
+  "src": "Biochimica II",
+  "q": "Quale abbreviazione è corretta per il glicerolo 3-fosfato della navetta?",
+  "opts": [
+   "Gro3P (o G3P)",
+   "3-PG",
+   "GAP",
+   "DHAP"
+  ],
+  "ans": 0,
+  "why": "3-PG è la sigla del 3-fosfoglicerato, un intermedio diverso della glicolisi.",
+  "note": "Sbobina di Biochimica II, p. 54: il glicerolo 3-fosfato è abbreviato «3-PG», che è la sigla del 3-fosfoglicerato. Attenzione a non confonderli.",
+  "fixed": false
+ },
+ {
+  "id": "x2n-04",
+  "topic": "m2-navette",
+  "level": "l",
+  "page": "54",
+  "src": "Biochimica II",
+  "q": "Dove si trova la glicerolo 3-fosfato deidrogenasi mitocondriale?",
+  "opts": [
+   "Sulla faccia esterna della membrana mitocondriale interna, e cede gli elettroni al coenzima Q tramite FAD",
+   "Nella matrice",
+   "Nel citosol",
+   "Nella membrana esterna"
+  ],
+  "ans": 0,
+  "why": "Per questo il glicerolo 3-P non deve entrare nella matrice.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3r-01",
+  "topic": "m3-radicali",
+  "level": "a",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Come viene rigenerato il glutatione ridotto dopo l'azione della glutatione perossidasi?",
+  "opts": [
+   "Dalla glutatione reduttasi, che usa NADPH",
+   "Dalla catalasi",
+   "Dalla superossido dismutasi",
+   "Dal NADH della catena respiratoria"
+  ],
+  "ans": 0,
+  "why": "Per questo la via dei pentoso fosfati è fondamentale contro lo stress ossidativo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3r-02",
+  "topic": "m3-radicali",
+  "level": "a",
+  "page": "110",
+  "src": "Biochimica II",
+  "q": "Che cosa fa il fattore HIF nelle cellule tumorali ipossiche?",
+  "opts": [
+   "Aumenta gli enzimi glicolitici, la LDH e la PDH chinasi (che blocca la PDH), e sostituisce COX4-1 con COX4-2",
+   "Aumenta la β-ossidazione",
+   "Inibisce la glicolisi",
+   "Attiva la piruvato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Spinge la cellula verso la glicolisi e riduce la produzione di radicali.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3r-03",
+  "topic": "m3-radicali",
+  "level": "l",
+  "page": "109",
+  "src": "Biochimica II",
+  "q": "Perché la glutatione perossidasi ha la selenocisteina invece della cisteina?",
+  "opts": [
+   "Il selenolato (Se⁻) è più facilmente ionizzato e più reattivo verso i perossidi del tiolato",
+   "Perché il selenio lega l'ossigeno",
+   "Perché è più stabile",
+   "Perché trasporta elettroni"
+  ],
+  "ans": 0,
+  "why": "Il selenio sta nello stesso gruppo di O e S e cede più facilmente l'H⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3r-04",
+  "topic": "m3-radicali",
+  "level": "l",
+  "page": "108",
+  "src": "Biochimica II",
+  "q": "Quali vitamine sono classicamente considerate antiossidanti?",
+  "opts": [
+   "C, E e il β-carotene (provitamina A)",
+   "K e B12",
+   "B1 e B2",
+   "D e K"
+  ],
+  "ans": 0,
+  "why": "La vitamina E protegge le membrane, la C agisce in ambiente acquoso.",
+  "note": "Sbobina di Biochimica II, p. 108: tra le vitamine antiossidanti è inclusa anche la K. Le antiossidanti classiche sono C, E e A/β-carotene; la K serve alla coagulazione.",
+  "fixed": false
+ },
+ {
+  "id": "x3m-01",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Nella cellula β, qual è la sequenza che porta alla secrezione di insulina?",
+  "opts": [
+   "Glucosio (GLUT2) → glicolisi e Krebs → ATP ↑ → chiusura canali K⁺ → depolarizzazione → ingresso di Ca²⁺ → esocitosi",
+   "Glucosio → cAMP → PKA → esocitosi",
+   "Glucosio → apertura canali K⁺ → iperpolarizzazione",
+   "Insulina → GLUT4 → ATP"
+  ],
+  "ans": 0,
+  "why": "Se l'ATP cala (es. per UCP2), la secrezione si riduce.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3m-02",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Perché la gravità delle malattie mitocondriali varia tra i figli della stessa madre?",
+  "opts": [
+   "Per l'eteroplasmia: ogni figlio riceve una quota diversa di mitocondri mutati",
+   "Perché il padre trasmette mitocondri sani",
+   "Per mutazioni nucleari diverse",
+   "Perché il mtDNA si ricombina"
+  ],
+  "ans": 0,
+  "why": "Sotto una soglia di mitocondri mutati i sintomi possono mancare.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x3m-03",
+  "topic": "m3-malattie",
+  "level": "l",
+  "page": "113",
+  "src": "Biochimica II",
+  "q": "Il DNA mitocondriale è più esposto al danno ossidativo del DNA nucleare. Perché?",
+  "opts": [
+   "È vicino alla catena respiratoria (fonte di radicali), non ha istoni e i suoi sistemi di riparazione sono limitati",
+   "Perché è lineare",
+   "Perché è più lungo",
+   "Perché ha gli istoni"
+  ],
+  "ans": 0,
+  "why": "Questa è la base dell'ipotesi mitocondriale dell'invecchiamento.",
+  "note": "Sbobina di Biochimica II, p. 113: c'è scritto che il DNA mitocondriale «non può ripararsi». È una semplificazione: ha meccanismi di riparazione, ma più limitati di quelli nucleari.",
+  "fixed": false
+ },
+ {
+  "id": "x4d-01",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "116–117",
+  "src": "Biochimica II",
+  "q": "La glicogeno fosforilasi lavora finché trova un punto di ramificazione. A quanti residui si ferma?",
+  "opts": [
+   "A 4 residui dal punto di ramificazione",
+   "A 1 residuo",
+   "A 10 residui",
+   "Non si ferma"
+  ],
+  "ans": 0,
+  "why": "Resta una «destrina limite» che va sistemata dall'enzima deramificante.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4d-02",
+  "topic": "m4-degradazione",
+  "level": "l",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Perché la fosforolisi del glicogeno nel muscolo rende più ATP per glucosio rispetto al glucosio del sangue?",
+  "opts": [
+   "Il glucosio 1-P diventa G6P senza consumare l'ATP dell'esochinasi: 3 ATP netti in glicolisi anaerobia invece di 2",
+   "Perché produce più NADH",
+   "Perché salta la fosfofruttochinasi",
+   "Non è vero"
+  ],
+  "ans": 0,
+  "why": "È un vantaggio della fosforolisi rispetto all'idrolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4d-03",
+  "topic": "m4-degradazione",
+  "level": "l",
+  "page": "115",
+  "src": "Biochimica II",
+  "q": "Che tipo di legami ha il glicogeno nelle catene e nelle ramificazioni?",
+  "opts": [
+   "α-1,4 nelle catene e α-1,6 nelle ramificazioni",
+   "β-1,4 e α-1,6",
+   "α-1,4 e β-1,6",
+   "Solo α-1,4"
+  ],
+  "ans": 0,
+  "why": "Un'unica estremità riducente (legata alla glicogenina) e tante estremità non riducenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4s-01",
+  "topic": "m4-sintesi",
+  "level": "a",
+  "page": "122–123",
+  "src": "Biochimica II",
+  "q": "Perché la sintesi e la degradazione del glicogeno usano enzimi diversi?",
+  "opts": [
+   "Così le due vie sono regolate separatamente e in modo reciproco, evitando un ciclo futile",
+   "Perché la fosforilasi non è reversibile in vitro",
+   "Perché avvengono in organelli diversi",
+   "Per caso"
+  ],
+  "ans": 0,
+  "why": "Lo stesso principio vale per glicolisi e gluconeogenesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4s-02",
+  "topic": "m4-sintesi",
+  "level": "l",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Su quale estremità del glicogeno lavora la glicogeno sintasi?",
+  "opts": [
+   "Sulle estremità non riducenti",
+   "Sull'estremità riducente",
+   "Sui punti di ramificazione",
+   "Sulla glicogenina"
+  ],
+  "ans": 0,
+  "why": "Anche la fosforilasi lavora sulle estremità non riducenti: più rami = più velocità.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4s-03",
+  "topic": "m4-sintesi",
+  "level": "l",
+  "page": "122",
+  "src": "Biochimica II",
+  "q": "Quale nucleotide viene rigenerato dall'UDP con un ATP dopo la sintesi del glicogeno?",
+  "opts": [
+   "UTP, dalla nucleoside difosfato chinasi",
+   "GTP, dalla succinil-CoA sintetasi",
+   "CTP, dalla CTP sintetasi",
+   "ATP, dall'adenilato chinasi"
+  ],
+  "ans": 0,
+  "why": "UDP + ATP → UTP + ADP. Il nome dell'enzima non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4o-01",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "129–131",
+  "src": "Biochimica II",
+  "q": "Perché la cascata del glucagone amplifica il segnale?",
+  "opts": [
+   "Ogni enzima attivato (adenilato ciclasi, PKA, fosforilasi chinasi) attiva molte molecole del passaggio successivo",
+   "Perché il glucagone è molto concentrato",
+   "Perché il glucagone entra nella cellula",
+   "Perché agisce sul DNA"
+  ],
+  "ans": 0,
+  "why": "Poche molecole di ormone liberano moltissimo glucosio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4o-02",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "132",
+  "src": "Biochimica II",
+  "q": "Come porta l'insulina allo stoccaggio di glicogeno nel muscolo?",
+  "opts": [
+   "Aumenta GLUT4 in membrana e, tramite PKB, inattiva GSK3 lasciando attiva la glicogeno sintasi",
+   "Attiva la fosforilasi",
+   "Aumenta il cAMP",
+   "Inibisce l'esochinasi"
+  ],
+  "ans": 0,
+  "why": "Attiva anche la PP1.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4o-03",
+  "topic": "m4-ormoni",
+  "level": "l",
+  "page": "129–130",
+  "src": "Biochimica II",
+  "q": "Quale proteina G accoppia il recettore del glucagone all'adenilato ciclasi?",
+  "opts": [
+   "Gs",
+   "Gi",
+   "Gq",
+   "Gt (transducina)"
+  ],
+  "ans": 0,
+  "why": "I recettori α1 dell'adrenalina usano Gq (fosfolipasi C, IP₃, Ca²⁺).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4e-01",
+  "topic": "m4-attivita",
+  "level": "a",
+  "page": "135",
+  "src": "Biochimica II",
+  "q": "Che cos'è la supercompensazione del glicogeno?",
+  "opts": [
+   "Dopo averlo esaurito con lo sforzo, una dieta ricca di carboidrati lo riporta in circa due giorni a livelli superiori a quelli iniziali",
+   "Il fegato produce glicogeno dai grassi",
+   "Il glicogeno resta sempre alto",
+   "È una malattia da accumulo"
+  ],
+  "ans": 0,
+  "why": "A digiuno o con una dieta povera di carboidrati il glicogeno non si ricostituisce.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4e-02",
+  "topic": "m4-attivita",
+  "level": "a",
+  "page": "134",
+  "src": "Biochimica II",
+  "q": "In uno sforzo leggero e prolungato, quanto glicogeno muscolare si consuma?",
+  "opts": [
+   "Poco: il muscolo usa soprattutto acidi grassi e glucosio del sangue",
+   "Tutto in pochi minuti",
+   "Solo quello epatico",
+   "Nessuna energia viene da fonti esterne"
+  ],
+  "ans": 0,
+  "why": "Sforzo moderato e soprattutto intenso consumano invece molto glicogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4e-03",
+  "topic": "m4-attivita",
+  "level": "l",
+  "page": "135",
+  "src": "Biochimica II",
+  "q": "Quando conviene assumere carboidrati per recuperare dopo lo sforzo?",
+  "opts": [
+   "Subito dopo lo sforzo e poi a intervalli regolari nelle 24 ore successive",
+   "Solo il giorno dopo",
+   "Solo prima dello sforzo",
+   "Mai, bastano le proteine"
+  ],
+  "ans": 0,
+  "why": "Subito dopo l'esercizio la sintesi del glicogeno muscolare è più rapida.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x4e-04",
+  "topic": "m4-attivita",
+  "level": "l",
+  "page": "133",
+  "src": "Biochimica II",
+  "q": "Il grafico delle fonti di energia nello sforzo mostra la quota di metabolismo aerobio e anaerobio. Come si chiamano correttamente?",
+  "opts": [
+   "Metabolismo aerobio e anaerobio (catabolismo)",
+   "Anabolismo aerobio e anaerobio",
+   "Gluconeogenesi aerobia",
+   "Glicogenosintesi"
+  ],
+  "ans": 0,
+  "why": "Sono vie che producono energia: catabolismo.",
+  "note": "Sbobina di Biochimica II, p. 133: le curve sono chiamate «anabolismo aerobio» e «anabolismo anaerobio». Sono vie cataboliche: metabolismo (o catabolismo) aerobio e anaerobio.",
+  "fixed": false
+ },
+ {
+  "id": "x4g-01",
+  "topic": "m4-glicogenosi",
+  "level": "a",
+  "page": "137",
+  "src": "Biochimica II",
+  "q": "Nella von Gierke, perché il glucagone non alza la glicemia?",
+  "opts": [
+   "La glicogenolisi epatica produce glucosio 6-P, che senza glucosio 6-fosfatasi non diventa glucosio libero",
+   "Perché manca il recettore",
+   "Perché il fegato non ha glicogeno",
+   "Perché il glucagone non viene prodotto"
+  ],
+  "ans": 0,
+  "why": "Anzi: il G6P accumulato alimenta lattato, lipidi e acido urico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5f-01",
+  "topic": "m5-fonti",
+  "level": "a",
+  "page": "140",
+  "src": "Biochimica II",
+  "q": "Circa quanto glucosio consuma l'organismo al giorno e quanto ne usa il cervello?",
+  "opts": [
+   "Circa 160 g, di cui circa il 70% dal cervello",
+   "Circa 50 g, tutto dal muscolo",
+   "Circa 500 g, metà dal fegato",
+   "Circa 20 g"
+  ],
+  "ans": 0,
+  "why": "Il glicogeno epatico non basta per più di circa un giorno: serve la gluconeogenesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5f-02",
+  "topic": "m5-fonti",
+  "level": "a",
+  "page": "141",
+  "src": "Biochimica II",
+  "q": "Tra mezzanotte e colazione, come cambiano glicogenolisi e gluconeogenesi?",
+  "opts": [
+   "La gluconeogenesi aumenta, la glicogenolisi diminuisce man mano che il glicogeno si esaurisce",
+   "Entrambe si azzerano",
+   "Aumenta solo la glicogenolisi",
+   "Si attiva la glicogeno sintesi"
+  ],
+  "ans": 0,
+  "why": "Dopo i pasti la gluconeogenesi si azzera e riparte la glicogeno sintesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5f-03",
+  "topic": "m5-fonti",
+  "level": "l",
+  "page": "142",
+  "src": "Biochimica II",
+  "q": "Come agisce il cortisolo sulla gluconeogenesi?",
+  "opts": [
+   "È uno steroide: lega un recettore intracellulare che dimerizza, entra nel nucleo e aumenta la trascrizione degli enzimi (es. PEPCK)",
+   "Attiva l'adenilato ciclasi",
+   "Fosforila la PFK2",
+   "Inibisce l'insulina nel sangue"
+  ],
+  "ans": 0,
+  "why": "Sul muscolo ha effetto catabolico: libera amminoacidi come substrati.",
+  "note": "Sbobina di Biochimica II, p. 142: il cortisolo è definito «ormone anabolizzante». Stimola la sintesi di enzimi epatici, ma a livello dell'organismo è catabolico (degrada le proteine muscolari, come dice la sbobina a p. 157).",
+  "fixed": false
+ },
+ {
+  "id": "x5f-04",
+  "topic": "m5-fonti",
+  "level": "l",
+  "page": "140",
+  "src": "Biochimica II",
+  "q": "Quale percentuale della gluconeogenesi avviene nel rene secondo la sbobina?",
+  "opts": [
+   "Circa il 10%",
+   "Circa il 50%",
+   "Circa il 90%",
+   "Nessuna"
+  ],
+  "ans": 0,
+  "why": "Il resto (circa 90%) avviene nel fegato. Nel digiuno prolungato la quota renale aumenta (questo non è nelle sbobine).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5g-01",
+  "topic": "m5-glicerolo",
+  "level": "a",
+  "page": "141, 147",
+  "src": "Biochimica II",
+  "q": "Quali due enzimi portano il glicerolo a diidrossiacetone fosfato?",
+  "opts": [
+   "Glicerolo chinasi e glicerolo 3-fosfato deidrogenasi",
+   "Esochinasi e aldolasi",
+   "Trioso fosfato isomerasi e PEPCK",
+   "Glicerolo fosfatasi e aldolasi"
+  ],
+  "ans": 0,
+  "why": "Il DHAP entra poi nella gluconeogenesi a livello dei triosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5g-02",
+  "topic": "m5-glicerolo",
+  "level": "a",
+  "page": "147",
+  "src": "Biochimica II",
+  "q": "Da quale tappa della gluconeogenesi entra il glicerolo?",
+  "opts": [
+   "Dai triosi fosfati (DHAP), saltando le reazioni del piruvato e del PEP",
+   "Dal piruvato",
+   "Dall'ossalacetato",
+   "Dal glucosio 6-P"
+  ],
+  "ans": 0,
+  "why": "Non servono piruvato carbossilasi e PEPCK.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5g-03",
+  "topic": "m5-glicerolo",
+  "level": "l",
+  "page": "147",
+  "src": "Biochimica II",
+  "q": "Il propionil-CoA (dagli acidi grassi a numero dispari di carboni) è glucogenico perché:",
+  "opts": [
+   "Diventa succinil-CoA e quindi ossalacetato",
+   "Diventa acetil-CoA",
+   "Diventa glicerolo",
+   "Diventa lattato"
+  ],
+  "ans": 0,
+  "why": "Gli acidi grassi a numero pari invece non danno glucosio. Il passaggio per il succinil-CoA non è nella sbobina in questo punto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5g-04",
+  "topic": "m5-glicerolo",
+  "level": "l",
+  "page": "148",
+  "src": "Biochimica II",
+  "q": "Perché il lattato si forma nel muscolo e diventa glucosio nel fegato?",
+  "opts": [
+   "Nel muscolo sotto sforzo NAD⁺/NADH è basso (lattato); nel fegato è alto, e la LDH lo riossida a piruvato",
+   "Perché il fegato non ha LDH",
+   "Perché il muscolo ha la G6Pasi",
+   "Perché il lattato non entra nel muscolo"
+  ],
+  "ans": 0,
+  "why": "È il ciclo di Cori. Il cuore usa invece il lattato come combustibile (LDH1).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5a-01",
+  "topic": "m5-approfondimenti",
+  "level": "a",
+  "page": "157",
+  "src": "Biochimica II",
+  "q": "Perché nel digiuno prolungato i corpi chetonici «salvano» le proteine muscolari?",
+  "opts": [
+   "Il cervello li usa come combustibile, quindi serve meno glucosio dalla gluconeogenesi (che usa amminoacidi muscolari)",
+   "Perché si trasformano in glucosio",
+   "Perché inibiscono la proteolisi direttamente",
+   "Perché attivano la sintesi proteica"
+  ],
+  "ans": 0,
+  "why": "Per questo dopo alcuni giorni la gluconeogenesi si dimezza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5a-02",
+  "topic": "m5-approfondimenti",
+  "level": "a",
+  "page": "158",
+  "src": "Biochimica II",
+  "q": "L'alcol inibisce la gluconeogenesi. Quali due reazioni vengono bloccate dall'aumento di NADH?",
+  "opts": [
+   "Lattato → piruvato (LDH) e malato → ossalacetato (malato DH citosolica)",
+   "PEP → piruvato e G6P → glucosio",
+   "Piruvato → acetil-CoA e citrato → isocitrato",
+   "Glicerolo → DHAP e F6P → F1,6BP"
+  ],
+  "ans": 0,
+  "why": "Entrambe richiedono NAD⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5a-03",
+  "topic": "m5-approfondimenti",
+  "level": "l",
+  "page": "153",
+  "src": "Biochimica II",
+  "q": "I topi con PEPCK sovraespressa nel muscolo, oltre a correre di più, avevano:",
+  "opts": [
+   "Più mitocondri, più uso di acidi grassi, meno lattato e maggiore sensibilità all'insulina (ma erano aggressivi)",
+   "Più lattato e più tessuto adiposo",
+   "Meno mitocondri",
+   "Diabete"
+  ],
+  "ans": 0,
+  "why": "La sbobina la cita per mostrare che un solo enzima può cambiare tutto il metabolismo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x5a-04",
+  "topic": "m5-approfondimenti",
+  "level": "l",
+  "page": "159",
+  "src": "Biochimica II",
+  "q": "Che cosa succede alla zonazione del lobulo epatico in caso di danno?",
+  "opts": [
+   "È un gradiente plastico: gli epatociti di una zona possono assumere le funzioni di un'altra",
+   "È fissa e non cambia",
+   "Il lobulo smette di fare gluconeogenesi",
+   "Gli epatociti perivenosi muoiono"
+  ],
+  "ans": 0,
+  "why": "Non è una divisione netta ma un gradiente tra vena porta e vena centrale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x6g-01",
+  "topic": "m6-regolazione",
+  "level": "a",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "Se la cellula sintetizza acidi grassi, che cosa succede alla via dei pentoso fosfati?",
+  "opts": [
+   "Accelera: la sintesi consuma NADPH, sale il NADP⁺ e la G6PD si attiva",
+   "Si blocca",
+   "Non cambia",
+   "Diventa gluconeogenesi"
+  ],
+  "ans": 0,
+  "why": "Se il NADPH non viene consumato si accumula e blocca la G6PD.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x6g-02",
+  "topic": "m6-regolazione",
+  "level": "a",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "In una cellula in divisione che ha bisogno sia di ribosio sia di NADPH, quale modalità prevale?",
+  "opts": [
+   "Fase ossidativa completa: il ribulosio 5-P diventa ribosio 5-P, producendo 2 NADPH per glucosio 6-P",
+   "Solo la fase non ossidativa",
+   "Solo la glicolisi",
+   "Il riciclo completo a CO₂"
+  ],
+  "ans": 0,
+  "why": "Le altre modalità servono quando prevale il bisogno di uno solo dei due prodotti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x6g-03",
+  "topic": "m6-regolazione",
+  "level": "l",
+  "page": "165",
+  "src": "Biochimica II",
+  "q": "Quale enzima, oltre alla G6PD, produce NADPH nel citosol per la sintesi degli acidi grassi?",
+  "opts": [
+   "L'enzima malico",
+   "La lattato deidrogenasi",
+   "La gliceraldeide 3-P deidrogenasi",
+   "La piruvato carbossilasi"
+  ],
+  "ans": 0,
+  "why": "Malato + NADP⁺ → piruvato + CO₂ + NADPH. Anche l'isocitrato deidrogenasi citosolica usa NADP⁺. L'enzima malico non è in questa parte della sbobina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "x6g-04",
+  "topic": "m6-regolazione",
+  "level": "l",
+  "page": "159",
+  "src": "Biochimica II",
+  "q": "Che cosa distingue strutturalmente il NADPH dal NADH?",
+  "opts": [
+   "Un fosfato sul 2' del ribosio dell'adenosina",
+   "Un fosfato sul 5' del nicotinammide",
+   "Un anello in più",
+   "Lo zolfo"
+  ],
+  "ans": 0,
+  "why": "Il fosfato fa sì che gli enzimi distinguano nettamente i due coenzimi.",
+  "note": null,
   "fixed": false
  }
 ]

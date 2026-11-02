@@ -1,0 +1,1344 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biochiquiz</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="theme-color" content="#f4f6fa">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Biochiquiz">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<link rel="icon" type="image/png" href="icons/icon-192.png">
+<style>
+/* Layout: app a una schermata — feed a scroll verticale con snap, una card per schermata,
+   tab bar blu notte fissa in basso con voce attiva a pillola corallo. Palette B: corallo e blu notte. */
+:root {
+  --bg: #f4f6fa;
+  --surface: #ffffff;
+  --surface-2: #f4f6fa;
+  --line: #dde3ee;
+  --ink: #0e1a33;
+  --muted: #5a6782;
+  --accent: #f24e2a;
+  --accent-ink: #ffffff;
+  --accent-soft: #ffe6df;
+  --tabbar-bg: #0e1a33;
+  --tabbar-ink: #8a97b3;
+  --tabbar-on: #ffffff;
+  --tile-rose: #ffe6df;
+  --tile-peach: #e2f5f3;
+  --tile-sage: #e2f4ea;
+  --tile-sky: #e3ecfb;
+  --tile-lilac: #ece8fb;
+  --good: #16884a;
+  --good-soft: #e3f6ea;
+  --bad: #d23a2a;
+  --bad-soft: #fde7e3;
+  --warn: #5b3fd6;
+  --warn-soft: #efebff;
+  --patch: #ffe6df;
+  --patch-line: #f24e2a;
+  --young: #8ea3d6;
+  --tile-ring: transparent;
+  --key-bg: rgba(48, 82, 156, .74);
+  --key-hi: rgba(255, 255, 255, .42);
+  --key-ring: rgba(255, 255, 255, .5);
+  --mol-ink: #0e1a33;
+  --shadow: 0 1px 2px rgba(14, 26, 51, .05), 0 10px 28px rgba(14, 26, 51, .08);
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --r-card: 28px;
+  --r-ctl: 16px;
+  --tabbar-h: 64px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #050608; --surface: #0e1014; --surface-2: #15181e; --line: #2e333e;
+    --ink: #f1f3f7; --muted: #9aa1b0; --accent: #ff6a47; --accent-ink: #ffffff; --accent-soft: #3a1a14;
+    --tabbar-bg: #000000; --tabbar-ink: #7d8494; --tabbar-on: #ffffff;
+    --tile-rose: #33171a; --tile-peach: #0f2a28; --tile-sage: #10291c; --tile-sky: #142035; --tile-lilac: #211c3a;
+    --tile-ring: rgba(255, 255, 255, .14);
+    --key-bg: rgba(150, 170, 220, .24); --key-hi: rgba(255, 255, 255, .24); --key-ring: rgba(255, 255, 255, .26);
+    --good: #5ed493; --good-soft: #0f2a1b; --bad: #ff8575; --bad-soft: #33130f; --warn: #b9a8ff; --warn-soft: #1d1833;
+    --patch: #3a1a14; --patch-line: #ff6a47; --young: #5f7bc0; --mol-ink: #f1f3f7;
+    --shadow: 0 0 0 1px rgba(255,255,255,.04), 0 10px 28px rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+    --bg: #050608; --surface: #0e1014; --surface-2: #15181e; --line: #2e333e;
+    --ink: #f1f3f7; --muted: #9aa1b0; --accent: #ff6a47; --accent-ink: #ffffff; --accent-soft: #3a1a14;
+    --tabbar-bg: #000000; --tabbar-ink: #7d8494; --tabbar-on: #ffffff;
+    --tile-rose: #33171a; --tile-peach: #0f2a28; --tile-sage: #10291c; --tile-sky: #142035; --tile-lilac: #211c3a;
+    --tile-ring: rgba(255, 255, 255, .14);
+    --key-bg: rgba(150, 170, 220, .24); --key-hi: rgba(255, 255, 255, .24); --key-ring: rgba(255, 255, 255, .26);
+    --good: #5ed493; --good-soft: #0f2a1b; --bad: #ff8575; --bad-soft: #33130f; --warn: #b9a8ff; --warn-soft: #1d1833;
+    --patch: #3a1a14; --patch-line: #ff6a47; --young: #5f7bc0; --mol-ink: #f1f3f7;
+    --shadow: 0 0 0 1px rgba(255,255,255,.04), 0 10px 28px rgba(0,0,0,.6);
+    color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.4 var(--font);
+  -webkit-font-smoothing: antialiased; overflow: hidden; overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+
+.app { position: fixed; inset: 0; display: flex; flex-direction: column; padding-top: env(safe-area-inset-top, 0px); }
+.view { flex: 1; min-height: 0; position: relative; }
+.view[hidden] { display: none !important; }
+
+/* ---------- Tab bar ---------- */
+.tabbar {
+  display: flex; justify-content: space-around; align-items: center; gap: 4px;
+  padding: 8px max(12px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px));
+  background: var(--tabbar-bg);
+}
+.tab {
+  flex: 1; max-width: 120px; display: flex; flex-direction: column; align-items: center; gap: 3px;
+  background: none; border: 0; padding: 4px 0; color: var(--tabbar-ink); font-size: 11px; font-weight: 600; cursor: pointer;
+}
+.tab .pill { display: grid; place-items: center; width: 56px; height: 30px; border-radius: 999px; transition: background .2s; }
+.tab svg { width: 22px; height: 22px; }
+.tab[aria-selected="true"] { color: var(--tabbar-on); }
+.tab[aria-selected="true"] .pill { background: var(--accent); }
+
+/* ---------- Pagine scrollabili (argomenti, statistiche, info) ---------- */
+.page {
+  height: 100%; overflow-y: auto; -webkit-overflow-scrolling: touch;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 12px 28px;
+}
+.page-inner { max-width: 560px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.h1 { font: 800 30px/1.1 var(--font-display); letter-spacing: -.02em; margin: 6px 0 0; text-wrap: balance; }
+.lead { color: var(--muted); margin: 0; font-size: 15px; }
+.h2 { font: 700 13px/1.2 var(--font); text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 10px 4px 0; }
+
+.box { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); padding: 6px; }
+.row { display: flex; align-items: center; gap: 12px; padding: 12px; border-radius: 20px; min-width: 0; }
+.row + .row { border-top: 1px solid var(--line); border-radius: 0; }
+.tile { flex: none; width: 40px; height: 40px; border-radius: 12px; display: grid; place-items: center; color: var(--ink); box-shadow: inset 0 0 0 1px var(--tile-ring); }
+.tile svg { width: 21px; height: 21px; }
+.t-rose { background: var(--tile-rose); } .t-peach { background: var(--tile-peach); } .t-sage { background: var(--tile-sage); }
+.t-sky { background: var(--tile-sky); } .t-lilac { background: var(--tile-lilac); }
+.row-text { flex: 1; min-width: 0; }
+.row-title { font-weight: 700; font-size: 16px; }
+.row-sub { color: var(--muted); font-size: 13px; margin-top: 1px; }
+
+/* Argomenti */
+.block-head { width: 100%; background: none; border: 0; text-align: left; cursor: pointer; }
+.block-head .chev { transition: transform .2s; color: var(--muted); }
+.block-head[aria-expanded="true"] .chev { transform: rotate(90deg); }
+.topics { padding: 0 6px 6px 64px; display: flex; flex-direction: column; gap: 2px; }
+.topic { display: flex; align-items: center; gap: 12px; padding: 10px 8px; border-radius: 14px; cursor: pointer; }
+.topic input { position: absolute; opacity: 0; pointer-events: none; }
+.check { flex: none; width: 24px; height: 24px; border-radius: 8px; border: 1.5px solid var(--line); display: grid; place-items: center; background: var(--surface); }
+.check svg { width: 16px; height: 16px; opacity: 0; color: var(--accent-ink); }
+.topic input:checked + .check { background: var(--accent); border-color: var(--accent); }
+.topic input:checked + .check svg { opacity: 1; }
+.topic input:focus-visible + .check { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+.topic .tname { flex: 1; min-width: 0; font-size: 15px; }
+.topic .tmeta { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.topic.soon { cursor: default; opacity: .5; }
+.topic.soon .check { border-style: dashed; }
+.badge { font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 999px; background: var(--surface-2); color: var(--muted); }
+.badge.new { background: var(--accent-soft); color: var(--accent); }
+
+.switch-row { display: flex; align-items: center; gap: 12px; padding: 12px; }
+.switch { position: relative; flex: none; width: 50px; height: 30px; }
+.switch input { position: absolute; inset: 0; opacity: 0; margin: 0; cursor: pointer; z-index: 1; }
+.switch span { position: absolute; inset: 0; border-radius: 999px; background: var(--line); transition: background .2s; }
+.switch span::after { content: ""; position: absolute; top: 3px; left: 3px; width: 24px; height: 24px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,.25); transition: transform .2s; }
+.switch input:checked + span { background: var(--accent); }
+.switch input:checked + span::after { transform: translateX(20px); }
+.switch input:focus-visible + span { outline: 2.5px solid var(--accent); outline-offset: 2px; }
+
+.seg { display: flex; background: var(--surface-2); border-radius: 14px; padding: 3px; gap: 3px; }
+.seg button { flex: 1; border: 0; background: none; padding: 8px 6px; border-radius: 11px; font-size: 14px; font-weight: 600; color: var(--muted); cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 0; border-radius: var(--r-ctl); padding: 14px 18px; font-weight: 700; font-size: 16px; cursor: pointer; text-decoration: none; }
+.btn-primary { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { background: var(--surface-2); color: var(--ink); }
+.btn-danger { background: var(--bad-soft); color: var(--bad); }
+.btn[disabled] { opacity: .45; cursor: default; }
+
+/* ---------- Feed ---------- */
+.feed {
+  height: 100%; overflow-y: auto; scroll-snap-type: y mandatory; -webkit-overflow-scrolling: touch; overscroll-behavior-y: contain;
+}
+.slide {
+  height: 100%; scroll-snap-align: start; scroll-snap-stop: always;
+  padding-left: max(14px, env(safe-area-inset-left, 0px)); padding-right: max(14px, env(safe-area-inset-right, 0px));
+  padding-block: 10px 14px; display: flex;
+}
+.card {
+  flex: 1; max-width: 560px; margin: 0 auto; min-width: 0; min-height: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-card); box-shadow: var(--shadow);
+  display: flex; flex-direction: column; overflow: hidden;
+}
+.card-body { flex: 1; min-height: 0; overflow: hidden; padding: 14px 16px 10px; display: flex; flex-direction: column; gap: clamp(8px, 1.6vh, 14px); }
+.card-body > * { flex-shrink: 0; }
+.card-head { display: flex; align-items: center; gap: 10px; }
+.card-kicker { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.card-topic { font-size: 13px; color: var(--muted); margin-top: 1px; }
+.q { font: 800 clamp(18px, 2.6vh, 22px)/1.2 var(--font-display); letter-spacing: -.01em; margin: 0; text-wrap: balance; }
+
+.mol-box { background: var(--surface-2); border-radius: 22px; display: flex; align-items: center; justify-content: center; padding: 8px; position: relative; }
+.card-body > .mol-box { flex: 1 1 0; min-height: 96px; }
+.mol-box svg { width: 100%; height: 100%; max-height: 300px; display: block; }
+.mol-box .fallback { color: var(--muted); font-size: 14px; text-align: center; padding: 20px; }
+.mol-tag { position: absolute; left: 12px; top: 10px; font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+
+.options { display: flex; flex-direction: column; gap: clamp(5px, .9vh, 8px); }
+.opt {
+  display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; cursor: pointer;
+  background: var(--surface); border: 1.5px solid var(--line); border-radius: 16px; padding: clamp(8px, 1.35vh, 12px) 12px; font-size: 15px; font-weight: 600;
+}
+.opt .key { flex: none; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; font-size: 13px; font-weight: 800; background: var(--surface-2); color: var(--muted); }
+.opt:not([disabled]):active { transform: scale(.99); }
+.opt.right { border-color: var(--good); background: var(--good-soft); }
+.opt.right .key { background: var(--good); color: var(--surface); }
+.opt.wrong { border-color: var(--bad); background: var(--bad-soft); }
+.opt.wrong .key { background: var(--bad); color: var(--surface); }
+.opt[disabled] { cursor: default; }
+
+.write { display: flex; gap: 8px; }
+.write input {
+  flex: 1; min-width: 0; font: inherit; font-size: 17px; padding: 13px 14px; border-radius: var(--r-ctl);
+  border: 1.5px solid var(--line); background: var(--surface); color: var(--ink);
+}
+.write input:focus { outline: none; border-color: var(--accent); }
+.linkish { background: none; border: 0; color: var(--accent); font-weight: 600; font-size: 14px; padding: 4px 0; cursor: pointer; align-self: flex-start; }
+
+/* Reazione da completare */
+.rx { background: var(--surface-2); border-radius: 22px; padding: clamp(10px, 1.6vh, 16px) 14px; display: flex; flex-direction: column; gap: 10px; }
+.rx-side { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.rx-item { padding: 7px 11px; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); font-weight: 650; font-size: 15px; }
+.rx-item.cof { font-weight: 600; color: var(--muted); }
+.rx-plus { color: var(--muted); font-weight: 700; }
+.rx-arrow { display: flex; align-items: center; gap: 10px; padding-left: 4px; }
+.rx-arrow .stem { flex: none; width: 2px; height: clamp(28px, 4.5vh, 46px); background: var(--ink); position: relative; margin-left: 10px; }
+.rx-arrow .stem::after { content: ""; position: absolute; left: -5px; bottom: -2px; border: 6px solid transparent; border-top: 9px solid var(--ink); border-bottom: 0; }
+.rx-arrow .stem.rev::before { content: ""; position: absolute; left: -5px; top: -2px; border: 6px solid transparent; border-bottom: 9px solid var(--ink); border-top: 0; }
+.rx-enz { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.rx-enz .enz { font-weight: 700; color: var(--accent); font-size: 15px; }
+.rx-enz .co { font-size: 13px; color: var(--muted); }
+.patch {
+  display: inline-flex; align-items: center; gap: 6px; padding: 7px 14px; border-radius: 12px; font-weight: 800; font-size: 15px;
+  background: var(--patch); min-width: 64px; justify-content: center;
+  border: 1.5px dashed var(--patch-line); color: var(--patch-line);
+}
+.patch.revealed { transform: none; background: var(--good-soft); border: 1.5px solid var(--good); color: var(--ink); }
+.patch.revealed.miss { background: var(--bad-soft); border-color: var(--bad); }
+
+.feedback { border-radius: 20px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
+.feedback.ok { background: var(--good-soft); }
+.feedback.ko { background: var(--bad-soft); }
+.feedback .verdict { font-weight: 800; font-size: 17px; }
+.feedback.ok .verdict { color: var(--good); }
+.feedback.ko .verdict { color: var(--bad); }
+.feedback .meta { color: var(--muted); font-size: 13px; }
+.note { background: var(--warn-soft); border-radius: 18px; padding: 12px 14px; font-size: 14px; display: flex; gap: 10px; }
+.note b { color: var(--warn); }
+
+.card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px 12px 18px; border-top: 1px solid var(--line); }
+.report { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--muted); background: none; border: 0; cursor: pointer; padding: 6px 0; text-decoration: none; }
+.report svg { width: 16px; height: 16px; }
+.next-hint { font-size: 13px; font-weight: 700; color: var(--accent); display: inline-flex; align-items: center; gap: 4px; opacity: 0; transition: opacity .3s; }
+.answered .next-hint { opacity: 1; }
+.next-hint svg { width: 16px; height: 16px; animation: nudge 1.6s ease-in-out infinite; }
+@keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
+
+.empty { height: 100%; display: grid; place-items: center; padding: 24px; text-align: center; }
+.empty .box { padding: 26px 22px; max-width: 420px; display: flex; flex-direction: column; gap: 12px; align-items: center; }
+
+/* Statistiche */
+.stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 22px; padding: 14px 12px; }
+.stat .num { font: 800 26px/1 var(--font-display); font-variant-numeric: tabular-nums; }
+.stat .lbl { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.bar { height: 8px; border-radius: 99px; background: var(--surface-2); overflow: hidden; margin-top: 6px; }
+.bar i { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+
+/* Benvenuto */
+.welcome {
+  position: fixed; inset: 0; z-index: 50; background: var(--bg); overflow-y: auto;
+  padding: calc(env(safe-area-inset-top, 0px) + 24px) max(20px, env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) max(20px, env(safe-area-inset-left, 0px));
+}
+.welcome-inner { max-width: 480px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px; }
+.hero-mark { width: 64px; height: 64px; border-radius: 20px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; }
+.hero-mark svg { width: 36px; height: 36px; }
+.steps { counter-reset: s; display: flex; flex-direction: column; gap: 2px; }
+.step { display: flex; gap: 12px; align-items: flex-start; padding: 12px; }
+.step + .step { border-top: 1px solid var(--line); }
+.step::before { counter-increment: s; content: counter(s); flex: none; width: 28px; height: 28px; border-radius: 9px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); font-weight: 800; font-size: 14px; }
+.inline-ico { display: inline-block; width: 18px; height: 18px; vertical-align: -3px; color: var(--accent); }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px) + 18px); transform: translateX(-50%);
+  background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 14px; font-size: 14px; font-weight: 600; z-index: 60; max-width: calc(100% - 32px);
+}
+.confirm { display: flex; flex-direction: column; gap: 10px; padding: 12px; }
+.confirm .btns { display: flex; gap: 8px; flex-wrap: wrap; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+  .feed { scroll-behavior: auto; }
+}
+
+
+/* Feedback a pop-up ancorato alla risposta */
+.opt, .write { position: relative; }
+.opt.has-pop, .write.has-pop { z-index: 3; }
+.opt-label { flex: 1; min-width: 0; }
+.write.right input { border-color: var(--good); background: var(--good-soft); }
+.write.wrong input { border-color: var(--bad); background: var(--bad-soft); }
+.pop {
+  position: absolute; left: 10px; right: 10px; top: calc(100% - 4px); z-index: 4;
+  display: flex; flex-direction: column; gap: 3px; text-align: left; cursor: default;
+  padding: 10px 12px; border-radius: 16px; border: 1.5px solid; font-size: 14px; font-weight: 500; line-height: 1.35;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, .16); animation: pop-in .2s cubic-bezier(.2, .9, .3, 1.2) both; transform-origin: 24px 0;
+}
+.pop::before { content: ""; position: absolute; left: 18px; top: -7px; width: 12px; height: 12px; background: inherit; border: inherit; border-right: 0; border-bottom: 0; transform: rotate(45deg); }
+.pop.up { top: auto; bottom: calc(100% - 4px); transform-origin: 24px 100%; }
+.pop.up::before { top: auto; bottom: -7px; transform: rotate(225deg); }
+.pop.ok { background: var(--good-soft); border-color: var(--good); }
+.pop.ko { background: var(--bad-soft); border-color: var(--bad); }
+.pop-verdict { font-weight: 800; font-size: 15px; }
+.pop.ok .pop-verdict { color: var(--good); }
+.pop.ko .pop-verdict { color: var(--bad); }
+.pop-meta { color: var(--muted); font-size: 12.5px; }
+.pop-note { margin-top: 4px; padding-top: 6px; border-top: 1px dashed var(--line); font-size: 13px; }
+.pop-note b { color: var(--warn); }
+
+@keyframes pop-in { from { opacity: 0; transform: scale(.94) translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* Valutazione stile Anki dentro il pop-up */
+.rate { display: flex; gap: 6px; margin-top: 6px; }
+.rate-b { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 6px 4px; border-radius: 11px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-size: 13px; font-weight: 700; cursor: pointer; }
+.rate-b small { font-size: 11px; font-weight: 600; color: var(--muted); }
+.rate-b[aria-pressed="true"] { background: var(--ink); color: var(--surface); border-color: var(--ink); }
+.rate-b[aria-pressed="true"] small { color: var(--surface); opacity: .75; }
+.bar.two { display: flex; }
+.bar.two i { border-radius: 0; }
+.bar.two i.young { background: var(--young); }
+.stats-grid .lbl { line-height: 1.25; }
+
+/* Nessuna barra di scorrimento visibile: si scorre solo tra una card e l'altra */
+.feed, .page { scrollbar-width: none; }
+.feed::-webkit-scrollbar, .page::-webkit-scrollbar { display: none; }
+/* card con molto testo su schermi bassi: si compatta invece di scorrere */
+.card.tight .card-head { display: none; }
+.card.tight .rx-item, .card.tight .patch { padding: 5px 9px; font-size: 14px; }
+.card.tight .opt { padding-block: 7px; }
+.card.tight .opt .key { width: 24px; height: 24px; }
+/* crediti */
+.credit { display: flex; align-items: center; gap: 14px; padding: 14px; }
+.credit .mono { flex: none; width: 52px; height: 52px; border-radius: 16px; background: var(--accent); color: var(--accent-ink); display: grid; place-items: center; font: 800 20px/1 var(--font-display); letter-spacing: .02em; box-shadow: inset 0 0 0 1px var(--tile-ring); }
+.credit .who { font: 800 19px/1.15 var(--font-display); }
+.credit .role { font-size: 12px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+
+/* Domande verificate: testo lungo, opzioni su più righe */
+.ex-q { font-size: clamp(17px, 2.4vh, 20px); line-height: 1.25; }
+.ex-q u { text-decoration-thickness: 2px; text-underline-offset: 3px; text-decoration-color: var(--accent); }
+.opt .opt-label { line-height: 1.3; }
+.card.tight .ex-q { font-size: 16px; }
+.card.tight .opt { font-size: 14px; }
+.pop-note.info b { color: var(--muted); }
+
+/* Segnalazione: foglio dal basso */
+.sheet-wrap { position: fixed; inset: 0; z-index: 70; background: rgba(5, 8, 15, .45); display: flex; align-items: flex-end; justify-content: center; animation: fade .15s ease both; }
+.sheet {
+  width: 100%; max-width: 560px; background: var(--surface); border-radius: 26px 26px 0 0; box-shadow: var(--shadow);
+  display: flex; flex-direction: column; gap: 10px; max-height: 92%; overflow-y: auto; scrollbar-width: none;
+  padding: 10px max(18px, env(safe-area-inset-right, 0px)) calc(16px + env(safe-area-inset-bottom, 0px)) max(18px, env(safe-area-inset-left, 0px));
+  animation: rise .22s cubic-bezier(.2, .9, .3, 1) both;
+}
+.sheet::-webkit-scrollbar { display: none; }
+.sheet-grip { width: 40px; height: 5px; border-radius: 99px; background: var(--line); align-self: center; margin-bottom: 4px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 12px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.sheet textarea, .sheet input[type="text"], .copy-area { width: 100%; font: inherit; font-size: 16px; padding: 12px; border-radius: var(--r-ctl); border: 1.5px solid var(--line); background: var(--surface-2); color: var(--ink); resize: none; }
+.sheet textarea:focus, .sheet input[type="text"]:focus { outline: none; border-color: var(--accent); }
+.sheet input.bad { border-color: var(--bad); }
+.field-err { color: var(--bad); font-size: 13px; font-weight: 600; margin-top: -4px; }
+.copy-area { margin: 0 12px 12px; width: calc(100% - 24px); height: 120px; font-size: 12px; }
+.sheet-btns { display: flex; gap: 8px; }
+.sheet-btns .btn { flex: 1; }
+.update-bar {
+  position: fixed; left: 50%; transform: translateX(-50%); top: calc(env(safe-area-inset-top, 0px) + 10px); z-index: 65;
+  display: flex; align-items: center; gap: 12px; width: calc(100% - 28px); max-width: 520px;
+  background: var(--ink); color: var(--bg); border-radius: 18px; padding: 8px 8px 8px 16px; font-size: 14px; font-weight: 600; box-shadow: var(--shadow);
+}
+.update-bar span { flex: 1; min-width: 0; }
+.update-bar .btn { padding: 9px 14px; font-size: 14px; }
+@keyframes rise { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+</style>
+</head>
+<body>
+<div class="app">
+  <main class="view" id="view-feed" role="tabpanel" aria-label="Studia"><div class="feed" id="feed"></div></main>
+  <section class="view" id="view-topics" role="tabpanel" aria-label="Argomenti" hidden><div class="page"><div class="page-inner" id="topics-inner"></div></div></section>
+  <section class="view" id="view-stats" role="tabpanel" aria-label="Statistiche" hidden><div class="page"><div class="page-inner" id="stats-inner"></div></div></section>
+  <section class="view" id="view-info" role="tabpanel" aria-label="Altro" hidden><div class="page"><div class="page-inner" id="info-inner"></div></div></section>
+  <nav class="tabbar" id="tabbar" role="tablist" aria-label="Sezioni"></nav>
+</div>
+<script>window.BQ_DATA = {"molecules":[{"id":"glc","name":"Glucosio","cid":79025,"formula":"C6H12O6","smiles":"C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O","smilesIon":"C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)O","aliases":["glucosio","d-glucosio","alfa-d-glucosio","α-d-glucosio","glucopiranosio","alfa-d-glucopiranosio","glc","destrosio"],"haworth":{"size":6,"positions":[{"up":"H","down":"OH"},{"up":"H","down":"OH"},{"up":"OH","down":"H"},{"up":"H","down":"OH"},{"up":"CH₂OH","down":"H"}],"firstC":1}},{"id":"g6p","name":"Glucosio 6-fosfato","cid":439284,"formula":"C6H13O9P","smiles":"C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)(O)O","smilesIon":"C([C@@H]1[C@H]([C@@H]([C@H]([C@H](O1)O)O)O)O)OP(=O)([O-])[O-]","aliases":["glucosio 6-fosfato","glucosio-6-p","glucosio 6p","g6p","g-6-p","alfa-d-glucosio 6-fosfato"],"haworth":{"size":6,"positions":[{"up":"H","down":"OH"},{"up":"H","down":"OH"},{"up":"OH","down":"H"},{"up":"H","down":"OH"},{"up":"CH₂OPO₃²⁻","down":"H"}],"firstC":1}},{"id":"f6p","name":"Fruttosio 6-fosfato","cid":440641,"formula":"C6H13O9P","smiles":"C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)(O)O","smilesIon":"C([C@@H]1[C@H]([C@@H]([C@](O1)(CO)O)O)O)OP(=O)([O-])[O-]","aliases":["fruttosio 6-fosfato","fruttosio-6-p","f6p","f-6-p","beta-d-fruttosio 6-fosfato"],"haworth":{"size":5,"positions":[{"up":"OH","down":"CH₂OH"},{"up":"OH","down":"H"},{"up":"H","down":"OH"},{"up":"CH₂OPO₃²⁻","down":"H"}],"firstC":2}},{"id":"fbp","name":"Fruttosio 1,6-bisfosfato","cid":10267,"formula":"C6H14O12P2","smiles":"C([C@@H]1[C@H]([C@@H]([C@](O1)(COP(=O)(O)O)O)O)O)OP(=O)(O)O","smilesIon":"C([C@@H]1[C@H]([C@@H]([C@](O1)(COP(=O)([O-])[O-])O)O)O)OP(=O)([O-])[O-]","aliases":["fruttosio 1,6-bisfosfato","fruttosio 1-6 bisfosfato","fruttosio bisfosfato","fruttosio 1,6-difosfato","fruttosio difosfato","fbp","f1,6bp","f16bp","f-1,6-bp","f1,6p2"],"haworth":{"size":5,"positions":[{"up":"OH","down":"CH₂OPO₃²⁻"},{"up":"OH","down":"H"},{"up":"H","down":"OH"},{"up":"CH₂OPO₃²⁻","down":"H"}],"firstC":2}},{"id":"dhap","name":"Diidrossiacetone fosfato","cid":668,"formula":"C3H7O6P","smiles":"C(C(=O)COP(=O)(O)O)O","smilesIon":"C(C(=O)COP(=O)([O-])[O-])O","aliases":["diidrossiacetone fosfato","diidrossiacetone 3-fosfato","diidrossiacetone-p","dhap","dap"],"fischer":[{"c":"CH₂OPO₃²⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"","r":"O","lb":0,"rb":2,"down":1},{"c":"CH₂OH","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"ga3p","name":"Gliceraldeide 3-fosfato","cid":439168,"formula":"C3H7O6P","smiles":"C([C@H](C=O)O)OP(=O)(O)O","smilesIon":"C([C@H](C=O)O)OP(=O)([O-])[O-]","aliases":["gliceraldeide 3-fosfato","gliceraldeide-3-p","d-gliceraldeide 3-fosfato","ga3p","gap","g3p"],"fischer":[{"c":"C","l":"H","r":"O","lb":1,"rb":2,"down":1},{"c":"C","l":"H","r":"OH","lb":1,"rb":1,"down":1},{"c":"CH₂OPO₃²⁻","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"bpg13","name":"1,3-bisfosfoglicerato","cid":439191,"formula":"C3H8O10P2","smiles":"C([C@H](C(=O)OP(=O)(O)O)O)OP(=O)(O)O","smilesIon":"C([C@H](C(=O)OP(=O)([O-])[O-])O)OP(=O)([O-])[O-]","aliases":["1,3-bisfosfoglicerato","1,3 bisfosfoglicerato","1,3-bpg","13bpg","bpg","1,3-difosfoglicerato","acido 1,3-bisfosfoglicerico"],"fischer":[{"c":"C","l":"O","r":"OPO₃²⁻","lb":2,"rb":1,"down":1},{"c":"C","l":"H","r":"OH","lb":1,"rb":1,"down":1},{"c":"CH₂OPO₃²⁻","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"pg3","name":"3-fosfoglicerato","cid":439183,"formula":"C3H7O7P","smiles":"C([C@H](C(=O)O)O)OP(=O)(O)O","smilesIon":"C([C@H](C(=O)[O-])O)OP(=O)([O-])[O-]","aliases":["3-fosfoglicerato","3 fosfoglicerato","3pg","3-pg","acido 3-fosfoglicerico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"H","r":"OH","lb":1,"rb":1,"down":1},{"c":"CH₂OPO₃²⁻","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"pg2","name":"2-fosfoglicerato","cid":439278,"formula":"C3H7O7P","smiles":"C([C@H](C(=O)O)OP(=O)(O)O)O","smilesIon":"C([C@H](C(=O)[O-])OP(=O)([O-])[O-])O","aliases":["2-fosfoglicerato","2 fosfoglicerato","2pg","2-pg","acido 2-fosfoglicerico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"H","r":"OPO₃²⁻","lb":1,"rb":1,"down":1},{"c":"CH₂OH","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"pep","name":"Fosfoenolpiruvato","cid":1005,"formula":"C3H5O6P","smiles":"C=C(C(=O)O)OP(=O)(O)O","smilesIon":"C=C(C(=O)[O-])OP(=O)([O-])[O-]","aliases":["fosfoenolpiruvato","fosfoenol piruvato","pep","acido fosfoenolpiruvico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"","r":"OPO₃²⁻","lb":0,"rb":1,"down":2},{"c":"CH₂","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"pyr","name":"Piruvato","cid":1060,"formula":"C3H4O3","smiles":"CC(=O)C(=O)O","smilesIon":"CC(=O)C(=O)[O-]","aliases":["piruvato","acido piruvico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"","r":"O","lb":0,"rb":2,"down":1},{"c":"CH₃","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"oaa","name":"Ossalacetato","cid":970,"formula":"C4H4O5","smiles":"C(C(=O)C(=O)O)C(=O)O","smilesIon":"C(C(=O)C(=O)[O-])C(=O)[O-]","aliases":["ossalacetato","ossaloacetato","oaa","acido ossalacetico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"","r":"O","lb":0,"rb":2,"down":1},{"c":"CH₂","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"mal","name":"Malato","cid":222656,"formula":"C4H6O5","smiles":"C([C@@H](C(=O)O)O)C(=O)O","smilesIon":"C([C@@H](C(=O)[O-])O)C(=O)[O-]","aliases":["malato","l-malato","acido malico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"HO","r":"H","lb":1,"rb":1,"down":1},{"c":"CH₂","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"lac","name":"Lattato","cid":107689,"formula":"C3H6O3","smiles":"C[C@@H](C(=O)O)O","smilesIon":"C[C@@H](C(=O)[O-])O","aliases":["lattato","l-lattato","acido lattico"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"HO","r":"H","lb":1,"rb":1,"down":1},{"c":"CH₃","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"ala","name":"Alanina","cid":5950,"formula":"C3H7NO2","smiles":"C[C@@H](C(=O)O)N","smilesIon":"C[C@@H](C(=O)[O-])[NH3+]","aliases":["alanina","l-alanina","ala"],"fischer":[{"c":"COO⁻","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"⁺H₃N","r":"H","lb":1,"rb":1,"down":1},{"c":"CH₃","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"gly","name":"Glicerolo","cid":753,"formula":"C3H8O3","smiles":"C(C(CO)O)O","smilesIon":"C(C(CO)O)O","aliases":["glicerolo","glicerina"],"fischer":[{"c":"CH₂OH","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"H","r":"OH","lb":1,"rb":1,"down":1},{"c":"CH₂OH","l":"","r":"","lb":0,"rb":0,"down":0}]},{"id":"gro3p","name":"Glicerolo 3-fosfato","cid":439162,"formula":"C3H9O6P","smiles":"C([C@H](COP(=O)(O)O)O)O","smilesIon":"C([C@H](COP(=O)([O-])[O-])O)O","aliases":["glicerolo 3-fosfato","glicerolo-3-p","glicerolo 3p","glicerolo fosfato","l-glicerolo 3-fosfato","glicerolo 1-fosfato"],"fischer":[{"c":"CH₂OH","l":"","r":"","lb":0,"rb":0,"down":1},{"c":"C","l":"HO","r":"H","lb":1,"rb":1,"down":1},{"c":"CH₂OPO₃²⁻","l":"","r":"","lb":0,"rb":0,"down":0}]}],"content":{"version":"0.3.0","topics":[{"subject":"Biochimica II","blocks":[{"name":"Ripasso di propedeutica e Biochimica I","pages":"5–30","topics":[{"id":"m1-catabolismo","name":"Catabolismo e anabolismo"},{"id":"m1-termodinamica","name":"Termodinamica","ready":true,"added":"2026-11-02"},{"id":"m1-atp","name":"ATP","ready":true,"added":"2026-11-02"},{"id":"m1-coenzimi","name":"Coenzimi e ossidazioni","ready":true,"added":"2026-11-02"},{"id":"m1-enzimologia","name":"Richiami di enzimologia","ready":true,"added":"2026-11-02"}]},{"name":"Ingresso del glucosio e glicolisi","pages":"31–73","topics":[{"id":"m2-ingresso","name":"Ingresso del glucosio","ready":true,"added":"2026-11-02"},{"id":"m2-fosforilazione","name":"Fosforilazione del glucosio","pages":"37, 40","ready":true,"added":"2026-11-01"},{"id":"m2-glicolisi","name":"Glicolisi","pages":"38–48","ready":true,"added":"2026-11-01"},{"id":"m2-fermentazioni","name":"Fermentazioni","ready":true,"added":"2026-11-02"},{"id":"m2-navette","name":"Sistemi navetta","ready":true,"added":"2026-11-02"},{"id":"m2-regolazione","name":"Regolazione della glicolisi"},{"id":"m2-pasteur","name":"Effetto Pasteur e casi particolari"},{"id":"m2-pdh","name":"Destini del piruvato e piruvato deidrogenasi"}]},{"name":"Ciclo di Krebs e fosforilazione ossidativa","pages":"74–114","topics":[{"id":"m3-krebs","name":"Ciclo di Krebs"},{"id":"m3-catena","name":"Catena respiratoria"},{"id":"m3-atpsintasi","name":"Sintesi dell'ATP"},{"id":"m3-radicali","name":"Radicali liberi"},{"id":"m3-malattie","name":"Malattie mitocondriali e invecchiamento"}]},{"name":"Glicogeno","pages":"115–139","topics":[{"id":"m4-degradazione","name":"Struttura e degradazione"},{"id":"m4-sintesi","name":"Sintesi"},{"id":"m4-regolazione","name":"Regolazione"},{"id":"m4-ormoni","name":"Controllo ormonale"},{"id":"m4-attivita","name":"Glicogeno e attività fisica"},{"id":"m4-glicogenosi","name":"Glicogenosi"}]},{"name":"Gluconeogenesi","pages":"140–158","topics":[{"id":"m5-fonti","name":"Fonti di glucosio ematico"},{"id":"m5-reazioni","name":"Reazioni della gluconeogenesi","pages":"141, 143–150","ready":true,"added":"2026-11-01"},{"id":"m5-glicerolo","name":"Via del glicerolo","pages":"141, 147","ready":true,"added":"2026-11-01"},{"id":"m5-regolazione","name":"Regolazione"},{"id":"m5-approfondimenti","name":"Approfondimenti"}]},{"name":"Via dei pentoso fosfati","pages":"158–170","topics":[{"id":"m6-reazioni","name":"Localizzazione e reazioni"},{"id":"m6-regolazione","name":"Regolazione"},{"id":"m6-nadph","name":"NADPH"}]},{"name":"Metabolismo dei lipidi","pages":"171–225","topics":[{"id":"m7-digestione","name":"Digestione"},{"id":"m7-trasporto","name":"Trasporto e mobilizzazione"},{"id":"m7-betaox","name":"β-ossidazione"},{"id":"m7-chetoni","name":"Corpi chetonici"},{"id":"m7-biosintesi","name":"Biosintesi degli acidi grassi"},{"id":"m7-tg","name":"Trigliceridi"},{"id":"m7-fosfolipidi","name":"Fosfolipidi"},{"id":"m7-colesterolo","name":"Colesterolo"},{"id":"m7-lipoproteine","name":"Lipoproteine"}]},{"name":"Proteine e amminoacidi","pages":"226–278","topics":[{"id":"m8-digestione","name":"Digestione delle proteine"},{"id":"m8-lisosomi","name":"Degradazione intracellulare"},{"id":"m8-transaminazione","name":"Transaminazione"},{"id":"m8-urea","name":"Ciclo dell'urea"},{"id":"m8-scheletri","name":"Scheletri carboniosi"},{"id":"m8-difetti","name":"Difetti del metabolismo amminoacidico"},{"id":"m8-folato","name":"Folato e B12"},{"id":"m8-vie","name":"Vie specializzate"}]},{"name":"Ormoni","pages":"279–309","topics":[{"id":"m9-neuroipofisi","name":"Ormoni della neuroipofisi"},{"id":"m9-adenoipofisi","name":"Ormoni dell'adenoipofisi"},{"id":"m9-adipochine","name":"Adipochine"}]}]},{"subject":"Biologia molecolare","blocks":[]},{"subject":"Biochimica I","blocks":[]}],"reactions":[{"id":"r-esochinasi","topic":"m2-fosforilazione","page":"37, 40","left":[["m","glc"],["c","ATP"]],"right":[["m","g6p"],["c","ADP"]],"enzyme":"Esochinasi (glucochinasi nel fegato)","irreversible":true},{"id":"r-pgi","topic":"m2-glicolisi","page":"39–40","left":[["m","g6p"]],"right":[["m","f6p"]],"enzyme":"Fosfoesoso isomerasi"},{"id":"r-pfk1","topic":"m2-glicolisi","page":"39, 41","left":[["m","f6p"],["c","ATP"]],"right":[["m","fbp"],["c","ADP"]],"enzyme":"Fosfofruttochinasi 1 (PFK1)","irreversible":true,"note":"Sbobina di Biochimica II, p. 39: il prodotto è scritto come «fruttosio 6-fosfato + ADP». È un refuso: il prodotto è il fruttosio 1,6-bisfosfato. A p. 47 l'enzima è chiamato «fruttochinasi»: è la fosfofruttochinasi 1."},{"id":"r-aldolasi","topic":"m2-glicolisi","page":"39, 41","left":[["m","fbp"]],"right":[["m","dhap"],["m","ga3p"]],"enzyme":"Aldolasi"},{"id":"r-tpi","topic":"m2-glicolisi","page":"39, 41","left":[["m","dhap"]],"right":[["m","ga3p"]],"enzyme":"Trioso fosfato isomerasi"},{"id":"r-gapdh","topic":"m2-glicolisi","page":"39, 43","left":[["m","ga3p"],["c","NAD⁺"],["c","Pi"]],"right":[["m","bpg13"],["c","NADH + H⁺"]],"enzyme":"Gliceraldeide 3-fosfato deidrogenasi","note":"Sbobina di Biochimica II, p. 43, meccanismo: c'è scritto che «l'H⁺ sotto forma di idruro» va al NAD⁺ e che «la riduzione» trasforma l'aldeide in carbossile. Al NAD⁺ va un idruro (H⁻), l'aldeide si OSSIDA e si forma un tioestere con la cisteina (acil-enzima), poi attaccato dal fosfato. A p. 39 «enzimi ossidoriduttivi» va letto «coenzimi» (NAD/FAD)."},{"id":"r-pgk","topic":"m2-glicolisi","page":"40, 44","left":[["m","bpg13"],["c","ADP"]],"right":[["m","pg3"],["c","ATP"]],"enzyme":"Fosfoglicerato chinasi"},{"id":"r-pgm","topic":"m2-glicolisi","page":"40, 45","left":[["m","pg3"]],"right":[["m","pg2"]],"enzyme":"Fosfoglicerato mutasi"},{"id":"r-enolasi","topic":"m2-glicolisi","page":"40, 45","left":[["m","pg2"]],"right":[["m","pep"],["c","H₂O"]],"enzyme":"Enolasi"},{"id":"r-pk","topic":"m2-glicolisi","page":"40, 45","left":[["m","pep"],["c","ADP"]],"right":[["m","pyr"],["c","ATP"]],"enzyme":"Piruvato chinasi","irreversible":true},{"id":"r-ldh","topic":"m5-reazioni","page":"141","left":[["m","lac"],["c","NAD⁺"]],"right":[["m","pyr"],["c","NADH + H⁺"]],"enzyme":"Lattico deidrogenasi"},{"id":"r-pc","topic":"m5-reazioni","page":"144","left":[["m","pyr"],["c","HCO₃⁻"],["c","ATP"]],"right":[["m","oaa"],["c","ADP"],["c","Pi"]],"enzyme":"Piruvato carbossilasi","coenzyme":"Biotina","where":"mitocondrio","irreversible":true,"note":"Sbobina di Biochimica II, p. 144: «l'acetil-CoA può attivare la piruvato decarbossilazione». L'acetil-CoA attiva la piruvato CARBOSSILASI (è una carbossilazione)."},{"id":"r-mdh-mito","topic":"m5-reazioni","page":"145","left":[["m","oaa"],["c","NADH + H⁺"]],"right":[["m","mal"],["c","NAD⁺"]],"enzyme":"Malato deidrogenasi mitocondriale","where":"mitocondrio"},{"id":"r-mdh-cito","topic":"m5-reazioni","page":"145","left":[["m","mal"],["c","NAD⁺"]],"right":[["m","oaa"],["c","NADH + H⁺"]],"enzyme":"Malato deidrogenasi citosolica","where":"citosol"},{"id":"r-pepck","topic":"m5-reazioni","page":"145","left":[["m","oaa"],["c","GTP"]],"right":[["m","pep"],["c","GDP"],["c","CO₂"]],"enzyme":"Fosfoenolpiruvato carbossichinasi (PEPCK)","irreversible":true,"note":"Sbobina di Biochimica II, p. 145: c'è scritto che si formano PEP, «ADP» e CO₂. Il nucleotide usato è il GTP (lo dice la stessa frase), quindi si forma GDP."},{"id":"r-fbpasi","topic":"m5-reazioni","page":"146","left":[["m","fbp"],["c","H₂O"]],"right":[["m","f6p"],["c","Pi"]],"enzyme":"Fruttosio 1,6-bisfosfatasi","irreversible":true},{"id":"r-g6pasi","topic":"m5-reazioni","page":"140, 146","left":[["m","g6p"],["c","H₂O"]],"right":[["m","glc"],["c","Pi"]],"enzyme":"Glucosio 6-fosfatasi","where":"reticolo endoplasmatico","irreversible":true},{"id":"r-glicerolo-chinasi","topic":"m5-glicerolo","page":"141, 147","left":[["m","gly"],["c","ATP"]],"right":[["m","gro3p"],["c","ADP"]],"enzyme":"Glicerolo chinasi","enzymeNotInNotes":true,"irreversible":true,"note":"La sbobina non nomina l'enzima (glicerolo chinasi, dal Lehninger). Il prodotto è chiamato «glicerolo 1-P» a p. 141 e «glicerolo-3-fosfato» a p. 147: è la stessa molecola (L-glicerolo 3-fosfato), sono due numerazioni diverse."},{"id":"r-g3pdh","topic":"m5-glicerolo","page":"141, 147","left":[["m","gro3p"],["c","NAD⁺"]],"right":[["m","dhap"],["c","NADH + H⁺"]],"enzyme":"Glicerolo 3-fosfato deidrogenasi","enzymeNotInNotes":true,"note":"La sbobina parla solo di «reazione ossidoriduttiva». Nome dell'enzima e NAD⁺ vengono dal Lehninger."}],"pathways":[{"id":"glicolisi","name":"glicolisi","topic":"m2-glicolisi","steps":[{"from":"glc","to":["g6p"],"enzyme":"Esochinasi (glucochinasi nel fegato)","topic":"m2-fosforilazione"},{"from":"g6p","to":["f6p"],"enzyme":"Fosfoesoso isomerasi"},{"from":"f6p","to":["fbp"],"enzyme":"Fosfofruttochinasi 1 (PFK1)"},{"from":"fbp","to":["dhap","ga3p"],"enzyme":"Aldolasi"},{"from":"dhap","to":["ga3p"],"enzyme":"Trioso fosfato isomerasi"},{"from":"ga3p","to":["bpg13"],"enzyme":"Gliceraldeide 3-fosfato deidrogenasi"},{"from":"bpg13","to":["pg3"],"enzyme":"Fosfoglicerato chinasi"},{"from":"pg3","to":["pg2"],"enzyme":"Fosfoglicerato mutasi"},{"from":"pg2","to":["pep"],"enzyme":"Enolasi"},{"from":"pep","to":["pyr"],"enzyme":"Piruvato chinasi"}]},{"id":"gluconeogenesi","name":"gluconeogenesi","topic":"m5-reazioni","steps":[{"from":"pyr","to":["oaa"],"enzyme":"Piruvato carbossilasi","where":"nel mitocondrio"},{"from":"oaa","to":["mal"],"enzyme":"Malato deidrogenasi mitocondriale","where":"nel mitocondrio"},{"from":"mal","to":["oaa"],"enzyme":"Malato deidrogenasi citosolica","where":"nel citosol"},{"from":"oaa","to":["pep"],"enzyme":"Fosfoenolpiruvato carbossichinasi (PEPCK)","where":"nel citosol"},{"from":"pep","to":["pg2"],"enzyme":"Enolasi"},{"from":"pg2","to":["pg3"],"enzyme":"Fosfoglicerato mutasi","note":"A p. 146 l'elenco degli enzimi glicolitici reversibili usati dalla gluconeogenesi salta la fosfoglicerato mutasi, che invece serve (2-PG → 3-PG)."},{"from":"pg3","to":["bpg13"],"enzyme":"Fosfoglicerato chinasi"},{"from":"bpg13","to":["ga3p"],"enzyme":"Gliceraldeide 3-fosfato deidrogenasi"},{"from":"ga3p","to":["fbp"],"enzyme":"Aldolasi","with":"dhap"},{"from":"fbp","to":["f6p"],"enzyme":"Fruttosio 1,6-bisfosfatasi"},{"from":"f6p","to":["g6p"],"enzyme":"Fosfoesoso isomerasi"},{"from":"g6p","to":["glc"],"enzyme":"Glucosio 6-fosfatasi","where":"nel reticolo endoplasmatico"}]},{"id":"glicerolo","name":"via del glicerolo","topic":"m5-glicerolo","steps":[{"from":"gly","to":["gro3p"],"enzyme":"Glicerolo chinasi"},{"from":"gro3p","to":["dhap"],"enzyme":"Glicerolo 3-fosfato deidrogenasi"},{"from":"dhap","to":["ga3p"],"enzyme":"Trioso fosfato isomerasi"}]}],"moleculeTopics":{"glc":["m2-fosforilazione","m2-glicolisi","m5-reazioni"],"g6p":["m2-fosforilazione","m2-glicolisi","m5-reazioni"],"f6p":["m2-glicolisi","m5-reazioni"],"fbp":["m2-glicolisi","m5-reazioni"],"dhap":["m2-glicolisi","m5-glicerolo"],"ga3p":["m2-glicolisi"],"bpg13":["m2-glicolisi"],"pg3":["m2-glicolisi"],"pg2":["m2-glicolisi"],"pep":["m2-glicolisi","m5-reazioni"],"pyr":["m2-glicolisi","m5-reazioni"],"oaa":["m5-reazioni"],"mal":["m5-reazioni"],"lac":["m5-reazioni"],"ala":["m5-reazioni"],"gly":["m5-glicerolo"],"gro3p":["m5-glicerolo"]},"cofactorPool":["ATP","ADP","AMP","GTP","GDP","NAD⁺","NADH + H⁺","NADP⁺","FAD","FADH₂","Pi","PPi","H₂O","CO₂","HCO₃⁻","Biotina","Tiamina pirofosfato","Coenzima A","Mg²⁺"],"extraEnzymes":["Glucosio 6-fosfato deidrogenasi","Glicogeno fosforilasi","Fosfoglucomutasi","Piruvato deidrogenasi","Citrato sintasi","Fosfofruttochinasi 2","Lattico deidrogenasi","Transaminasi"],"exam":[{"id":"eq","topic":"m1-termodinamica","page":"10–12","src":"Biochimica II","q":"La definizione migliore per una reazione vicina all'equilibrio è:","opts":["avviene sempre con una variazione di energia libera","ha una variazione di energia libera vicina a zero","di solito è un punto di controllo di una via metabolica","avviene molto lentamente"],"ans":1,"why":"Vicino all'equilibrio ΔG ≈ 0: la reazione è reversibile e il verso dipende solo dalle concentrazioni. I punti di controllo sono invece le reazioni con ΔG molto negativo.","note":null,"times":2,"pending":false},{"id":"dg-dg0","topic":"m1-termodinamica","page":"11–12","src":"Biochimica II","q":"Il ΔG differisce dal ΔG°' quando si ha:","opts":["una variazione della concentrazione di enzima","una variazione della concentrazione degli ioni divalenti","una variazione del Keq","una diversa concentrazione dei reagenti e prodotti"],"ans":3,"why":"ΔG = ΔG°' + RT ln([prodotti]/[reagenti]): cambia con le concentrazioni. L'enzima cambia solo la velocità e la Keq è una costante.","note":null,"times":2,"pending":false},{"id":"atp-ph","topic":"m1-atp","page":"15","src":"Biochimica II","q":"L'energia libera standard della scissione dell'ATP in ADP e fosfato è −30 kJ/mole. Al pH fisiologico questo valore:","opts":["diviene più negativo","diviene più positivo","resta invariato","dipende dalla concentrazione del magnesio"],"ans":0,"why":"Più alto è il pH, più l'idrolisi è favorita: a pH 7,4 il ΔG scende sotto −30 kJ/mol. Il magnesio stabilizza l'ATP, ma la domanda chiede l'effetto del pH.","note":null,"times":2,"pending":false},{"id":"atp-legami","topic":"m1-atp","page":"14, 25","src":"Biochimica II","q":"Quale di questi legami non è presente nell'ATP?","opts":["N-glicosidico","Emiacetalico","Fosfodiestere","Fosfoestere"],"ans":2,"why":"Nell'ATP ci sono il legame N-glicosidico (adenina–ribosio), il fosfoestere (ribosio–fosfato α) e due fosfoanidridici. Il fosfodiestere lega i nucleotidi negli acidi nucleici.","note":"Sbobina di Biochimica II, p. 25: dice che il legame emiacetalico si trova «nel ribosio e nell'ATP». Nell'ATP il C1' del ribosio è legato all'adenina, quindi è un N-glicoside e non più un emiacetale. All'esame la risposta attesa resta fosfodiestere.","times":2,"pending":false},{"id":"slp-def","topic":"m1-atp","page":"19, 44","src":"Biochimica II","q":"Che cos'è la fosforilazione dell'ATP a livello del substrato?","opts":["Il trasferimento del fosfato in gamma dell'ATP ad una molecola con formazione di un legame estere","La formazione dell'ATP dall'ADP e Pi mediante riossidazione del NADH","L'idrolisi dell'ATP","La formazione dell'ATP dall'ADP e Pi mediante energia rilasciata dalla scissione di un composto con un ΔG°' minore di −30 kJ/mole"],"ans":3,"why":"Un composto con potenziale di trasferimento più alto dell'ATP (1,3-BPG, PEP) cede il fosfato all'ADP. La B è la fosforilazione ossidativa, la A una normale reazione chinasica.","note":null,"times":2,"pending":false},{"id":"ndpk","topic":"m1-atp","page":"17–18","src":"Biochimica II","q":"Quale di queste affermazioni è falsa riguardo alla nucleotide difosfato chinasi?","opts":["Trasferisce il fosfato in gamma da un trinucleotide ad un dinucleotide","Ha un'energia libera standard vicina allo zero","La sua azione favorisce i processi catabolici","La reazione dipende dal consumo degli NTP"],"ans":2,"why":"Forma GTP, UTP e CTP per le biosintesi (proteine, zuccheri, lipidi): favorisce l'anabolismo. Ha ΔG°' ≈ 0 e va avanti perché gli NTP vengono consumati. «Trinucleotide/dinucleotide» sta per nucleoside trifosfato/difosfato.","note":null,"times":2,"pending":false},{"id":"carica","topic":"m1-atp","page":"16–17","src":"Biochimica II","q":"In una cellula le concentrazioni di ATP ed ADP sono equivalenti e quella dell'AMP è trascurabile. In queste condizioni:","opts":["Prevarrà il catabolismo","Prevarrà l'anabolismo","I due processi sono equivalenti","Il ΔG°' di idrolisi aumenta"],"ans":0,"why":"Carica energetica = ([ATP] + ½[ADP]) / ([ATP] + [ADP] + [AMP]) = 1,5/2 = 0,75. Sotto il valore normale di 0,9 aumentano le vie che generano ATP.","note":null,"times":2,"pending":false},{"id":"no-atp","topic":"m2-ingresso","page":"32–33","src":"Biochimica II","q":"Quale di questi processi non richiede ATP?","opts":["Fosforilazione del glucosio","Trasporto del glucosio dal sangue alle cellule","Pompa sodio potassio","Pompa del calcio"],"ans":1,"why":"I GLUT fanno diffusione facilitata secondo gradiente. Esochinasi, Na⁺/K⁺-ATPasi e Ca²⁺-ATPasi consumano ATP.","note":"Sbobina di Biochimica II, p. 32: l'SGLT1 (scritto «SGLUT1») è descritto prima come «trasportatore attivo che utilizza ATP» e poi come simporto senza ATP. È un trasporto attivo secondario: l'ATP lo consuma la pompa Na⁺/K⁺, non l'SGLT1.","times":2,"pending":false},{"id":"legami-energia","topic":"m1-atp","page":"19–20","src":"Biochimica II","q":"Ordina per energia libera, dalla più positiva alla più negativa, la scissione di: fosfoguanidinico della creatina fosfato (A), fosfoestere (B), tioestere (C), fosfoanidridico (D).","opts":["A-B-C-D","B-D-C-A","C-D-B-A","B-C-A-D"],"ans":1,"why":"ΔG°' di idrolisi: fosfoestere (es. glucosio 6-P) ≈ −14 kJ/mol, fosfoanidridico dell'ATP ≈ −30, tioestere dell'acetil-CoA −31,4, fosfocreatina ≈ −43.","note":null,"times":1,"pending":false},{"id":"pk-base","topic":"m1-coenzimi","page":"24","src":"Biochimica II","q":"La base B ha un pK pari a 9,0. A pH 9,0 in soluzione si avrà:","opts":["Uguale concentrazione di B e B⁻","Uguale concentrazione di B e B⁺","Prevalenza della forma B","Prevalenza della forma B⁺"],"ans":1,"why":"A pH = pK le due forme sono in uguale concentrazione. La base B accetta un protone e diventa BH⁺ (B⁺).","note":null,"times":2,"pending":false},{"id":"etanolo-nad","topic":"m1-coenzimi","page":"53","src":"Biochimica II","q":"L'etanolo, in presenza degli enzimi necessari, reagisce con due molecole di NAD⁺. Il prodotto finale è:","opts":["Etano","Acetaldeide","Acetato","Anidride carbonica"],"ans":2,"why":"Etanolo → acetaldeide (alcol deidrogenasi, 1 NAD⁺) → acetato (aldeide deidrogenasi, 1 NAD⁺).","note":null,"times":2,"pending":false},{"id":"chetoacido","topic":"m1-coenzimi","page":"23–24, 49","src":"Biochimica II","q":"La riduzione di un alfa-chetoacido produce:","opts":["un composto con un alcol primario e un gruppo aldeidico","un composto con alcol secondario e un gruppo carbossilico","un composto con un chetone ed un gruppo carbossilico","un composto con due gruppi carbossilici"],"ans":1,"why":"Il chetone in α si riduce ad alcol secondario e il carbossile resta: piruvato → lattato.","note":null,"times":2,"pending":false},{"id":"elettroni-glc","topic":"m1-coenzimi","page":"22","src":"Biochimica II","q":"Quanti elettroni vengono persi per la completa ossidazione della molecola di glucosio ad anidride carbonica ed acqua?","opts":["8","12","24","32"],"ans":2,"why":"Ogni carbonio del glucosio passa in media da 0 a +4: 6 × 4 = 24 elettroni, cioè le 12 coppie raccolte da 10 NADH e 2 FADH₂.","note":null,"times":1,"pending":false},{"id":"ox-carbossile","topic":"m1-coenzimi","page":"22","src":"Biochimica II","q":"Quale di queste affermazioni è vera riguardo l'ossidazione di un gruppo carbossilico?","opts":["Non è possibile","Riguarda solo la forma deprotonata","Viene rilasciato come CO₂","È una reazione reversibile"],"ans":2,"why":"Il carbonio carbossilico è il più ossidato di una molecola organica: l'ultimo passaggio possibile è la sua eliminazione come CO₂, come nelle decarbossilazioni del ciclo di Krebs.","note":null,"times":1,"pending":false},{"id":"elettroni-acoa","topic":"m1-coenzimi","page":"22","src":"Biochimica II","q":"L'acetil-CoA (CH₃COSCoA) viene ossidato nel ciclo di Krebs a 2 molecole di CO₂. Quanti elettroni vengono persi nell'ossidazione?","opts":["2","4","6","8"],"ans":3,"why":"I due carboni dell'acetile passano in totale da 0 a +8: 8 elettroni, raccolti da 3 NADH e 1 FADH₂ (4 coppie).","note":null,"times":1,"pending":false},{"id":"c-secondario","topic":"m1-coenzimi","page":"23","src":"Biochimica II","q":"Per ossidare un carbonio secondario saturo a chetone quali passaggi sono necessari?","opts":["Ossidazione NAD dipendente con aggiunta di una molecola d'acqua","Idratazione seguita da un'ossidazione","Ossidazione, idratazione ed un ulteriore ossidazione","Non è possibile la trasformazione"],"ans":2,"why":"Ossidazione FAD-dipendente a doppio legame (succinato → fumarato), idratazione ad alcol secondario (→ malato), ossidazione NAD-dipendente a chetone (→ ossalacetato).","note":null,"times":1,"pending":false},{"id":"no-acqua","topic":"m1-coenzimi","page":"25","src":"Biochimica II","q":"Quale tra questi legami non richiede la perdita di una molecola d'acqua per la sua formazione?","opts":["Estere","Fosfoanidridico","Emiacetalico","Glicosidico"],"ans":2,"why":"L'emiacetale si forma per addizione dell'OH al carbonile (C5–OH sul C1 del glucosio). Estere, fosfoanidride e glicoside sono condensazioni.","note":null,"times":1,"pending":false},{"id":"glc-fru","topic":"m1-enzimologia","page":"23, 40","src":"Biochimica II","q":"La trasformazione da glucosio a fruttosio è catalizzata da:","opts":["Idrolasi","Ossidoreduttasi","Chinasi","Isomerasi"],"ans":3,"why":"Glucosio (aldoso) e fruttosio (chetoso) sono isomeri: la conversione non cambia lo stato di ossidazione (es. fosfoesoso isomerasi, G6P → F6P).","note":null,"times":2,"pending":false},{"id":"idrolasi","topic":"m1-enzimologia","page":"31","src":"Biochimica II","q":"Quali di questi enzimi appartiene alla classe delle idrolasi?","opts":["Proteasi","Amilasi","Lipasi","Tutte e tre"],"ans":3,"why":"Proteasi, amilasi e lipasi scindono legami usando l'acqua: sono tutte idrolasi.","note":null,"times":1,"pending":false},{"id":"es-saturante","topic":"m1-enzimologia","page":"27","src":"Biochimica II","q":"Se in una reazione enzimatica tutto l'enzima è nella forma ES vuol dire che:","opts":["Il substrato è uguale alla KM","La concentrazione dell'enzima è uguale a quella del substrato","Si è raggiunta metà della Vmax","Il substrato è saturante"],"ans":3,"why":"Con tutto l'enzima legato come ES si lavora a Vmax: il substrato è saturante.","note":null,"times":1,"pending":false},{"id":"primaria","topic":"m1-enzimologia","page":"25","src":"Biochimica I","q":"In quale livello di struttura di una proteina non intervengono legami deboli?","opts":["Primaria","Secondaria","Terziaria","Quaternaria"],"ans":0,"why":"La primaria è la sequenza unita da legami peptidici covalenti. Secondaria, terziaria e quaternaria dipendono da legami deboli (idrogeno, ionici, idrofobici).","note":null,"times":1,"pending":false},{"id":"piu-enzima","topic":"m1-enzimologia","page":"27","src":"Biochimica II","q":"In una reazione enzimatica un ulteriore aumento dell'enzima provoca:","opts":["Aumento della KM","Aumento della Vmax","Diminuzione della KM","Aumento della kcat"],"ans":1,"why":"Vmax = k₂[E]: cresce con l'enzima. KM e kcat sono costanti.","note":null,"times":1,"pending":false},{"id":"km-unita","topic":"m1-enzimologia","page":"27","src":"Biochimica II","q":"Le dimensioni della KM sono:","opts":["s⁻¹","M","s M⁻¹","M⁻¹"],"ans":1,"why":"La KM è la concentrazione di substrato a cui v = ½ Vmax: si misura in M.","note":null,"times":1,"pending":false},{"id":"k05-neg","topic":"m1-enzimologia","page":"28","src":"Biochimica II","q":"La K0,5 (KM apparente) di un enzima allosterico, in presenza di un effettore allosterico negativo:","opts":["Non subisce variazioni","Diminuisce","Aumenta","Dipende dalla concentrazione del substrato"],"ans":2,"why":"L'effettore negativo sposta l'equilibrio verso T: la sigmoide va a destra e la K0,5 aumenta.","note":null,"times":2,"pending":false},{"id":"t-r","topic":"m1-enzimologia","page":"28","src":"Biochimica II","q":"In un enzima allosterico la transizione dalla forma T alla forma R è inibita da:","opts":["Effettore omotropico negativo","Effettore eterotropico negativo","Effettore eterotropico positivo","Gli effettori allosterici non hanno influenza"],"ans":1,"why":"La inibisce un effettore negativo diverso dal substrato (eterotropico). L'effettore omotropico è il substrato stesso e di solito è positivo.","note":null,"times":1,"pending":false},{"id":"s-km","topic":"m1-enzimologia","page":"27","src":"Biochimica II","q":"Quando la concentrazione di substrato è uguale alla KM:","opts":["La velocità è uguale alla velocità massima","Tutto l'enzima è legato al substrato","La velocità è metà della velocità massima","Diminuisce la formazione del prodotto"],"ans":2,"why":"È la definizione di KM: la concentrazione di substrato a cui v = ½ Vmax.","note":null,"times":1,"pending":false},{"id":"serina","topic":"m1-enzimologia","page":"29","src":"Biochimica II","q":"Quale tra questi residui aminoacidici si può trovare nel sito di fosforilazione di una proteina substrato di una protein chinasi?","opts":["Fenilalanina","Serina","Aspartato","Lisina"],"ans":1,"why":"Le protein chinasi fosforilano l'OH di serina e treonina (e tirosina).","note":null,"times":1,"pending":false},{"id":"lento","topic":"m1-enzimologia","page":"30","src":"Biochimica II","q":"Tra i meccanismi di regolazione, quale tra questi rientra in un meccanismo lento?","opts":["Controllo allosterico","Espressione dell'enzima","Fosforilazione dell'enzima","Nessuno dei tre"],"ans":1,"why":"Allosteria e fosforilazione sono rapide. Cambiare la quantità di enzima (sintesi o degradazione) richiede ore.","note":null,"times":1,"pending":false},{"id":"acqua-sub","topic":"m1-enzimologia","page":"146","src":"Biochimica II","q":"Quali tra questi enzimi ha l'acqua come substrato?","opts":["Isomerasi","Chinasi","Ossidoreduttasi (deidrogenasi)","Fosfatasi"],"ans":3,"why":"La fosfatasi idrolizza l'estere fosforico (es. glucosio 6-fosfatasi). Le chinasi usano ATP, le deidrogenasi NAD/FAD.","note":null,"times":1,"pending":false},{"id":"mutasi","topic":"m1-enzimologia","page":"45","src":"Biochimica II","q":"Enzimi che trasferiscono gruppi sostituenti in posizioni diverse della stessa molecola si chiamano:","opts":["Isomerasi","Fosforilasi","Chinasi","Mutasi"],"ans":3,"why":"Le mutasi spostano un gruppo nella stessa molecola: 3-fosfoglicerato → 2-fosfoglicerato.","note":null,"times":1,"pending":false},{"id":"glut-fegato","topic":"m2-ingresso","page":"32–33","src":"Biochimica II","q":"Quali sono i trasportatori di glucosio nell'epatocita?","opts":["GLUT1","GLUT2","GLUT3","GLUT4"],"ans":1,"why":"GLUT2: fegato, pancreas e membrana basolaterale dell'enterocita. Kt 17 mM, alta capacità: lavora dopo i pasti.","note":null,"times":1,"pending":false},{"id":"glut4","topic":"m2-ingresso","page":"33, 35","src":"Biochimica II","q":"In quali tra queste cellule l'insulina permette il trasferimento sulla superficie dei trasportatori GLUT4?","opts":["Neuroni","Globuli rossi","Epatociti","Adipociti"],"ans":3,"why":"GLUT4: muscolo scheletrico, cuore e tessuto adiposo.","note":null,"times":1,"pending":false},{"id":"glut-entero","topic":"m2-ingresso","page":"32","src":"Biochimica II","q":"Quale trasportatore del glucosio si trova sulla membrana basolaterale degli enterociti?","opts":["GLUT1","GLUT2","GLUT3","GLUT4"],"ans":1,"why":"Dal lume il glucosio entra con l'SGLT1, verso il sangue esce con il GLUT2 basolaterale.","note":null,"times":1,"pending":false},{"id":"glut-bidir","topic":"m2-ingresso","page":"33","src":"Biochimica II","q":"I trasportatori GLUT sono:","opts":["unidirezionali","bidirezionali","possono assumere una sola conformazione","sono tutti sotto controllo ormonale"],"ans":1,"why":"Diffusione facilitata: il verso dipende solo dal gradiente (il fegato a digiuno libera glucosio con il GLUT2). Hanno due conformazioni, T1 e T2, e solo il GLUT4 è sotto controllo ormonale.","note":null,"times":1,"pending":false},{"id":"glut-tumore","topic":"m2-ingresso","page":"64 e seguenti (pagine non numerate, effetto Warburg)","src":"Biochimica II","q":"In una cellula tumorale aumenta l'espressione di GLUT. Si tratterà di:","opts":["GLUT1","GLUT2","GLUT3","GLUT4"],"ans":0,"why":"Nelle cellule tumorali il fattore HIF è attivo anche con l'ossigeno e fa trascrivere enzimi glicolitici, LDH e trasportatori: soprattutto il GLUT1, ad alta affinità, che lavora già a glicemia basale (effetto Warburg).","note":"La sbobina cita sia GLUT1 sia GLUT3 tra i geni attivati da HIF: la risposta attesa è GLUT1. Se a lezione è stato detto diversamente, fallo presente segnalandolo.","times":1,"pending":false},{"id":"gr-insulina","topic":"m2-ingresso","page":"33","src":"Biochimica II","q":"Quale di queste cellule non ha il recettore per l'insulina?","opts":["Epatocita","Miocita","Adipocita","Globulo rosso"],"ans":3,"why":"Il globulo rosso prende il glucosio con il GLUT1, indipendente dall'insulina. Esistono pochi recettori anche sugli eritrociti, ma la risposta attesa è questa.","note":null,"times":1,"pending":false},{"id":"insulina-sec","topic":"m2-ingresso","page":"34","src":"Biochimica II","q":"Quali di questi eventi non è coinvolto nella secrezione dell'insulina?","opts":["Fosforilazione del glucosio per opera della glucochinasi","Fosforilazione ossidativa","Ingresso di ioni potassio","Ingresso del calcio"],"ans":2,"why":"L'ATP chiude i canali del K⁺: il potassio smette di uscire, la membrana si depolarizza, entra Ca²⁺ e partono le vescicole di insulina.","note":null,"times":1,"pending":false},{"id":"glut1-neonati","topic":"m2-ingresso","page":"33","src":"Biochimica II","q":"Quali di questi eventi è più probabile che avvengano in neonati che presentano mutazioni del gene che codifica per GLUT1? (E come intervenire?)","opts":["Ipoglicemia","Problemi neurologici","Insufficienza renale","Insufficienza cardiaca"],"ans":1,"why":"Il GLUT1 porta il glucosio oltre la barriera ematoencefalica: il deficit dà convulsioni e ritardo dello sviluppo con glicemia normale. Si interviene con la dieta chetogenica, perché i corpi chetonici entrano nel cervello con altri trasportatori.","note":"Il nome della sindrome (deficit di GLUT1) e la dieta chetogenica non sono nelle sbobine.","times":1,"pending":false},{"id":"glut-placenta","topic":"m2-ingresso","page":null,"src":"Biochimica II","q":"Quale trasportatore del glucosio vi aspettate di trovare nelle cellule della placenta?","opts":["GLUT1","GLUT2","GLUT3","GLUT4"],"ans":0,"why":"Nella placenta il trasportatore principale è il GLUT1: come nella barriera ematoencefalica, deve far passare glucosio già a glicemia basale.","note":"Non è nelle sbobine (Lehninger).","times":1,"pending":false},{"id":"peptide-c","topic":"m2-ingresso","page":"36","src":"Biochimica II","q":"Un paziente con iperglicemia presenta nel sangue valori normali del peptide C originato dal taglio della proinsulina. Questo dato indica che:","opts":["L'insulina non viene prodotta dalle cellule del pancreas","L'insulina non trasporta i GLUT4 sulle membrane delle cellule muscolari","Il trasporto del glucosio nel fegato è rallentato","La glucochinasi del pancreas è c… (fine illeggibile nella foto)"],"ans":1,"why":"Peptide C normale = l'insulina viene prodotta. L'iperglicemia dipende dall'insulino-resistenza: i GLUT4 non vengono esposti sulla membrana.","note":null,"times":1,"pending":false},{"id":"glc-atp","topic":"m2-fosforilazione","page":"37, 40","src":"Biochimica II","q":"Nella reazione: Glucosio + ATP → Glucosio 6P + ADP","opts":["Il fosfato in alfa dell'ATP è trasferito al glucosio","La scissione dell'ATP spinge la reazione verso destra","Si forma un legame anidridico","Il ΔG°' è ampiamente positivo"],"ans":1,"why":"Viene trasferito il fosfato γ e si forma un fosfoestere. La reazione è accoppiata all'idrolisi dell'ATP, che rende il ΔG negativo.","note":null,"times":2,"pending":false},{"id":"glucochinasi","topic":"m2-fosforilazione","page":"37","src":"Biochimica II","q":"Quale delle seguenti affermazioni è vera per la glucochinasi?","opts":["È un enzima ubiquitario","Trasforma il glucosio in glucosio 1-P","Ha una KM superiore a quella dell'esochinasi","Forma un legame fosfoanidridico tra il glucosio ed il fosfato"],"ans":2,"why":"La glucochinasi (esochinasi IV) è solo in fegato e pancreas, ha una KM circa 100 volte più alta dell'esochinasi e forma glucosio 6-P con un fosfoestere.","note":null,"times":1,"pending":false},{"id":"g6p-falsa","topic":"m2-fosforilazione","page":"38, 65","src":"Biochimica II","q":"Quale tra queste affermazioni non è vera per il glucosio 6P?","opts":["È il precursore del ribosio","Può essere immagazzinato sotto forma di glicogeno","Passa liberamente nel mitocondrio","Nell'epatocita può essere convertito in glucosio"],"ans":2,"why":"La membrana mitocondriale interna è impermeabile: il G6P resta nel citosol. Dà ribosio (pentoso fosfati), glicogeno e, nel fegato, glucosio libero (glucosio 6-fosfatasi).","note":null,"times":1,"pending":false},{"id":"bilancio-g6p","topic":"m2-glicolisi","page":"47","src":"Biochimica II","q":"Il bilancio della glicolisi a partire dal glucosio-6P dà:","opts":["La riduzione di una molecola di NAD⁺","La produzione di anidride carbonica","Un aumento del pH","La formazione di 3 molecole di ATP"],"ans":3,"why":"Partendo dal G6P non si spende l'ATP dell'esochinasi: 4 prodotti − 1 (PFK1) = 3 ATP. Si riducono 2 NAD⁺, non si forma CO₂ e il pH scende.","note":null,"times":1,"pending":false},{"id":"glut5","topic":"m2-glicolisi","page":"64 e seguenti (pagine non numerate)","src":"Biochimica II","q":"Le cellule testicolari posseggono trasportatori GLUT5. Quanti ATP si formano nella glicolisi?","opts":["1","2","3","4"],"ans":1,"why":"Il GLUT5 trasporta fruttosio. Nel muscolo il fruttosio diventa fruttosio 6-P con l'esochinasi; nel fegato fruttosio 1-P con la fruttochinasi, poi DHAP e gliceraldeide. In entrambi i casi il bilancio è di 2 ATP netti per esoso (4 prodotti, 2 spesi).","note":"Sbobina di Biochimica II, pagine non numerate dopo p. 64: la triosio chinasi fosforila la gliceraldeide a «gliceraldeide 2-fosfato». Il prodotto è la gliceraldeide 3-fosfato, come mostra anche la figura accanto.","times":1,"pending":false},{"id":"gapdh-legame","topic":"m2-glicolisi","page":"43","src":"Biochimica II","q":"Durante la catalisi della gliceraldeide 3P deidrogenasi quale legame non si forma?","opts":["Fosfoanidridico","Tioemiacetale","Fosfoestere","Tioestere"],"ans":2,"why":"Si formano il tioemiacetale (Cys–aldeide), il tioestere dopo l'ossidazione e il fosfoanidridico misto dell'1,3-BPG. Il fosfoestere in C3 c'era già nella GA3P.","note":"Sbobina di Biochimica II, p. 43: il meccanismo dice che va al NAD⁺ «l'H⁺ sotto forma di idruro» e che «la riduzione» trasforma l'aldeide. Va al NAD⁺ un idruro (H⁻), l'aldeide si ossida e si forma il tioestere con la cisteina.","times":1,"pending":false},{"id":"gapdh-cys","topic":"m2-glicolisi","page":"43","src":"Biochimica II","q":"Quale residuo aminoacidico è coinvolto nella catalisi della gliceraldeide 3-fosfato deidrogenasi?","opts":["Serina","Cisteina","Lisina","Metionina"],"ans":1,"why":"Il gruppo SH della cisteina attacca l'aldeide; per questo lo iodoacetato, che lo alchila, blocca la glicolisi.","note":null,"times":1,"pending":false},{"id":"gapdh-nadh","topic":"m2-glicolisi","page":"43","src":"Biochimica II","q":"Nella reazione GA3P + Pi + NAD⁺ ⇌ 1,3-BPG + NADH + H⁺, un aumento del NADH produce:","opts":["Una diminuzione del NAD⁺","Un aumento della GA3P","Una diminuzione del pH","Nessun cambiamento"],"ans":1,"why":"Più NADH sposta l'equilibrio a sinistra (Le Chatelier): si riforma GA3P e aumenta il NAD⁺.","note":null,"times":1,"pending":false},{"id":"slp-reazione","topic":"m2-glicolisi","page":"44","src":"Biochimica II","q":"Quale delle seguenti reazioni è una fosforilazione a livello del substrato?","opts":["Conversione della gliceraldeide in 1,3 bisfosfoglicerato","Conversione del 1,3 bisfosfoglicerato in 3-fosfoglicerato","Formazione del 2-fosfoglicerato","Formazione del fosfoenolpiruvato"],"ans":1,"why":"La fosfoglicerato chinasi: l'1,3-BPG cede il fosfato all'ADP. L'altra della glicolisi è la piruvato chinasi.","note":null,"times":1,"pending":false},{"id":"dg-negativo","topic":"m2-glicolisi","page":"47","src":"Biochimica II","q":"Quale delle seguenti reazioni della glicolisi procede con un ΔG negativo?","opts":["Conversione del glucosio 6P in fruttosio 6P","Reazione della gliceraldeide 3 fosfato deidrogenasi","Reazione dell'enolasi","Reazione della piruvato chinasi"],"ans":3,"why":"Le tre reazioni con ΔG fortemente negativo sono esochinasi/glucochinasi, PFK1 e piruvato chinasi. Le altre sono vicine all'equilibrio.","note":null,"times":2,"pending":false},{"id":"bpg-falsa","topic":"m2-glicolisi","page":"43–44","src":"Biochimica II","q":"Quale di queste affermazioni è falsa per l'1,3 bisfosfoglicerato?","opts":["Contiene un legame fosfoanidridico","Contiene un legame fosfoesterico","È meno ossidato del 3-fosfoglicerato","Ha un potenziale di trasferimento maggiore dell'ATP"],"ans":2,"why":"1,3-BPG e 3-fosfoglicerato hanno lo stesso stato di ossidazione (C1 a livello di acido): la fosfoglicerato chinasi sposta solo il fosfato.","note":null,"times":1,"pending":false},{"id":"non-glicolisi","topic":"m2-glicolisi","page":"39","src":"Biochimica II","q":"Quali tra questi composti non partecipa alla glicolisi?","opts":["Esteri fosforici","Esosi","Acidi dicarbossilici","Fosfoanidridi"],"ans":2,"why":"Nella glicolisi ci sono esosi, esteri fosforici e fosfoanidridi (ATP, 1,3-BPG). Gli acidi dicarbossilici (malato, ossalacetato, succinato) sono del ciclo di Krebs.","note":null,"times":1,"pending":false},{"id":"doppio-legame","topic":"m2-glicolisi","page":"45","src":"Biochimica II","q":"Quale dei seguenti composti della glicolisi ha un doppio legame?","opts":["2-fosfoglicerato","Fosfoenolpiruvato","Fruttosio 1,6-bisfosfato","Piruvato"],"ans":1,"why":"Il PEP ha un doppio legame C=C (forma enolica). Carbossili e chetoni hanno C=O, ma la domanda intende il doppio legame tra carboni.","note":null,"times":1,"pending":false},{"id":"ga3p-fbp","topic":"m2-glicolisi","page":"41","src":"Biochimica II","q":"Una soluzione contiene gliceraldeide 3-P. Quali enzimi bisogna aggiungere per formare fruttosio 1,6 bisfosfato?","opts":["Gliceraldeide 3-P deidrogenasi + aldolasi","Gliceraldeide 3-P deidrogenasi + aldolasi + triosofosfato isomerasi","Triosofosfato isomerasi + diidrossiacetone 3-P deidrogenasi","Aldolasi + triosofosfato isomerasi"],"ans":3,"why":"La trioso fosfato isomerasi forma DHAP da una parte della GA3P, poi l'aldolasi (reversibile) condensa DHAP + GA3P in FBP.","note":null,"times":1,"pending":false},{"id":"fbp-f6p","topic":"m2-glicolisi","page":"41, 146","src":"Biochimica II","q":"Una soluzione contiene gliceraldeide 3-P, aldolasi e triosofosfato isomerasi, quindi si forma fruttosio 1,6-bisfosfato. Quale ulteriore enzima della via glicolitica, aggiunto, permetterà la formazione del fruttosio 6-P?","opts":["Nessuno","Bastano quelli presenti","Fosfofruttochinasi 1","Fosfoesoso isomerasi"],"ans":0,"why":"Per FBP → F6P serve la fruttosio 1,6-bisfosfatasi, che è della gluconeogenesi. La PFK1 è irreversibile e la fosfoesoso isomerasi agisce su F6P/G6P.","note":"Nel foglio la domanda dice «alla soluzione precedente»: qui è collegata a quella sulla gliceraldeide 3-P. Se a lezione la soluzione era un'altra, fallo presente segnalandolo.","times":1,"pending":false},{"id":"ferm-irrev","topic":"m2-fermentazioni","page":"53","src":"Biochimica II","q":"La fermentazione etanolica non è un processo reversibile. Perché?","opts":["Perché avviene in due tappe","Non ci sono nei microrganismi gli enzimi per le reazioni inverse","La prima tappa della fermentazione alcolica è una decarbossilazione","L'acetaldeide si ossida velocemente in acetato"],"ans":2,"why":"Piruvato → acetaldeide + CO₂: la decarbossilazione è irreversibile. La riduzione ad etanolo (alcol deidrogenasi) invece è reversibile.","note":null,"times":1,"pending":false},{"id":"etanolo-vera","topic":"m2-fermentazioni","page":"53","src":"Biochimica II","q":"Quale di queste affermazioni è vera per l'etanolo?","opts":["La conversione in acetato richiede 1 NADH","La conversione in acetato richiede l'aldeide deidrogenasi","In eccesso di etanolo, diminuisce la formazione di lattato","È consigliabile assumere etanolo prima di una attività sportiva"],"ans":1,"why":"Etanolo → acetaldeide (alcol deidrogenasi) → acetato (aldeide deidrogenasi): si producono 2 NADH. L'NADH in eccesso spinge il piruvato a lattato, quindi il lattato aumenta.","note":null,"times":1,"pending":false},{"id":"etanolo-falsa","topic":"m2-fermentazioni","page":"53, 169","src":"Biochimica II","q":"Quale affermazione è falsa per l'etanolo?","opts":["Passa la barriera ematoencefalica","La sua conversione in acetato avviene nel fegato","La produzione di acido acetico è un processo fermentativo","L'alcol deidrogenasi è un enzima costitutivo"],"ans":2,"why":"Nel fegato l'etanolo viene ossidato con NAD⁺: è un'ossidazione, non una fermentazione (che serve a riossidare NADH). L'alcol deidrogenasi è costitutiva; inducibile è il citocromo P450.","note":null,"times":1,"pending":false},{"id":"ldh-falsa","topic":"m2-fermentazioni","page":"50","src":"Biochimica II","q":"Quale affermazione è falsa per la lattico deidrogenasi?","opts":["È un enzima a chiralità selettiva","È sempre un omotetramero","È un enzima dipendente dal pH","È presente nei globuli rossi"],"ans":1,"why":"È un tetramero di subunità H e M: solo H4 e M4 sono omotetrameri, M3H, M2H2 e MH3 sono eterotetrameri.","note":"Sbobina di Biochimica II, p. 49: c'è scritto che la LDH forma solo l'isomero «R». L'L-lattato è (S)-lattato.","times":1,"pending":false},{"id":"ldh1","topic":"m2-fermentazioni","page":"50, 52","src":"Biochimica II","q":"La presenza nel sangue dell'isoenzima LDH1 può essere indice di:","opts":["Strappi muscolari","Fragilità dei globuli rossi","Infarto del miocardio","Cirrosi epatica"],"ans":2,"why":"LDH1 = H4, isoenzima cardiaco: marker tardivo di infarto (circa 48 ore). Sale anche nell'emolisi, ma la risposta attesa è l'infarto.","note":null,"times":1,"pending":false},{"id":"cori","topic":"m2-fermentazioni","page":"51, 148","src":"Biochimica II","q":"Quale di queste condizioni deve essere soddisfatta dal fegato per il ciclo di Cori?","opts":["Deve essere attiva la via glicolitica","Ci deve essere un alto rapporto NAD⁺/NADH","Deve essere attiva la trasduzione del segnale dell'insulina","Deve essere attiva la glucochinasi"],"ans":1,"why":"Il fegato ossida il lattato a piruvato con la LDH: serve molto NAD⁺. Glicolisi e glucochinasi devono essere ferme, perché si fa gluconeogenesi.","note":null,"times":1,"pending":false},{"id":"anion-gap","topic":"m2-fermentazioni","page":"52","src":"Biochimica II","q":"L'anion gap (AG) in biochimica clinica è dato da AG = [Na⁺] − ([Cl⁻] + [HCO₃⁻]). In presenza di lattato il valore dell'AG:","opts":["Rimane invariato","Aumenta","Diminuisce","Si annulla"],"ans":1,"why":"Il lattato è un anione non misurato: il bicarbonato cala per tamponare l'H⁺, quindi l'AG aumenta (acidosi lattica ad anion gap aumentato).","note":"L'anion gap non è nelle sbobine.","times":1,"pending":false},{"id":"dhap-rid","topic":"m2-navette","page":"54","src":"Biochimica II","q":"Quale composto si forma dalla riduzione NADH dipendente del diidrossiacetone fosfato?","opts":["Non può essere ridotto","Gliceraldeide 3-P","Un alfachetoacido","Glicerolo fosfato"],"ans":3,"why":"Il chetone del DHAP si riduce ad alcol secondario: glicerolo 3-fosfato. È il primo passo della navetta del glicerolo fosfato.","note":"Sbobina di Biochimica II, p. 54: chiama il glicerolo 3-fosfato «3-fosfoglicerolo (3-PG)». Non confonderlo con il 3-fosfoglicerato, che altrove è abbreviato 3-PG.","times":2,"pending":false},{"id":"navetta-fad","topic":"m2-navette","page":"54","src":"Biochimica II","q":"Nel sistema navetta del glicerolo fosfato:","opts":["Il FADH₂ è ossidato dal diidrossiacetone fosfato","Il NADH cede gli elettroni direttamente al FAD","Il glicerolo fosfato è ossidato dal FAD","Il FADH₂ cede gli elettroni direttamente all'ossigeno"],"ans":2,"why":"La glicerolo 3-fosfato deidrogenasi mitocondriale, FAD-dipendente, ossida il glicerolo fosfato a DHAP; il FADH₂ passa gli elettroni alla catena respiratoria (coenzima Q).","note":null,"times":1,"pending":false},{"id":"navetta-atp","topic":"m2-navette","page":"47, 54","src":"Biochimica II","q":"Se la riossidazione del NADH produce 2,5 ATP e quella del FADH₂ 1,5 ATP, quante ATP si formano in totale da glucosio a piruvato se il sistema navetta è quello del glicerolo fosfato?","opts":["3","4","5","7"],"ans":2,"why":"2 ATP netti + 2 NADH citosolici che, con la navetta del glicerolo fosfato, diventano FADH₂: 2 + 2 × 1,5 = 5.","note":null,"times":1,"pending":false}]}};</script>
+<script>
+/* Biochiquiz — logica dell'app. Dati in window.BQ_DATA = {molecules, content}. */
+(function () {
+  "use strict";
+  const D = window.BQ_DATA;
+  const MOL = Object.fromEntries(D.molecules.map(m => [m.id, m]));
+  const C = D.content;
+  // Indirizzo della web app di Google Apps Script che scrive le segnalazioni nel foglio Google.
+  // Vuoto = le segnalazioni restano sul telefono e si possono copiare da Altro.
+  const REPORT_URL = "";
+  const REPORT_KEY = "bq.reports";
+  const STORE_KEY = "bq.v1";
+  const $ = (s, el = document) => el.querySelector(s);
+  const h = (tag, attrs = {}, ...kids) => {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k === "html") el.innerHTML = v;
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v === true ? "" : v);
+    }
+    for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid.nodeType ? kid : document.createTextNode(kid));
+    return el;
+  };
+  const ICON = {
+    feed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="4"/><path d="M9 9h6M9 13h4"/></svg>',
+    topics: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h2M4 12h2M4 18h2M10 6h10M10 12h10M10 18h10"/></svg>',
+    stats: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>',
+    info: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></svg>',
+    check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+    chev: '<svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
+    down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>',
+    flag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
+    flask: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 006.2 21.5h11.6a2 2 0 001.7-3L14 9V3"/><path d="M7.5 15h9"/></svg>',
+    hex: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z"/></svg>',
+    rxn: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h14M13 8l4 4-4 4"/><path d="M20 6v12"/></svg>',
+    path: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v4a4 4 0 004 4h4a4 4 0 014 4"/></svg>',
+    share: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M8 7l4-4 4 4"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/></svg>',
+    dots: '<svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="5" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="12" cy="19" r="2"/></svg>',
+    book: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2z"/><path d="M4 19V5M8 7h7"/></svg>',
+    moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 019.5 4a8 8 0 1010.5 10.5z"/></svg>',
+    board: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21l4-4 4 4M7 9h6M7 12h9"/></svg>',
+    pen: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/></svg>',
+  };
+  const svgIcon = n => { const s = h("span", { html: ICON[n] }); return s.firstChild; };
+
+  /* ---------------- Stato locale ---------------- */
+  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", cards: {}, days: {} });
+  let S = blank();
+  try { const raw = localStorage.getItem(STORE_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) { /* storage non disponibile */ }
+  // dal vecchio sistema a scatole: quelle card ripartono come nuove
+  Object.keys(S.cards).forEach(k => { if (!S.cards[k].type) delete S.cards[k]; });
+  // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
+  if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
+  const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
+
+  /* ---------------- Argomenti ---------------- */
+  const TOPICS = {};
+  C.topics.forEach(sub => sub.blocks.forEach(b => b.topics.forEach(t => { TOPICS[t.id] = Object.assign({ subject: sub.subject, block: b.name }, t); })));
+
+  /* ---------------- Mazzo di card ---------------- */
+  const CARDS = [];
+  D.molecules.forEach(m => CARDS.push({ id: "mol:" + m.id, kind: "mol", mol: m.id, topics: C.moleculeTopics[m.id] || [] }));
+  C.reactions.forEach(r => CARDS.push({ id: "rx:" + r.id, kind: "rx", rx: r, topics: [r.topic] }));
+  (C.exam || []).forEach(x => CARDS.push({ id: "ex:" + x.id, kind: "ex", ex: x, topics: [x.topic] }));
+  C.pathways.forEach(p => p.steps.forEach((st, i) => CARDS.push({ id: `nx:${p.id}:${i}`, kind: "nx", path: p, step: st, idx: i, topics: [st.topic || p.topic] })));
+  const CARD = Object.fromEntries(CARDS.map(c => [c.id, c]));
+
+  const activeTopics = () => {
+    if (S.onlyLast && S.lastChecked && S.selected.includes(S.lastChecked)) return [S.lastChecked];
+    return S.selected.filter(t => TOPICS[t] && TOPICS[t].ready);
+  };
+  const eligible = () => { const a = new Set(activeTopics()); return CARDS.filter(c => c.topics.some(t => a.has(t))); };
+  const cardsInTopic = id => CARDS.filter(c => c.topics.includes(id)).length;
+
+  /* ---------------- Ripetizione spaziata: algoritmo di Anki (SM-2) ----------------
+     Card nuove → passi di apprendimento (1 min, 10 min) → ripasso a giorni con intervallo × facilità.
+     Errore su una card imparata = "lapse": facilità −20%, intervallo azzerato a 1 giorno, ripasso tra 10 min.
+     La giornata, come in Anki, inizia alle 4 di mattina. */
+  const MIN = 60e3, HOUR = 36e5, DAY = 864e5;
+  const CFG = { learn: [1 * MIN, 10 * MIN], relearn: [10 * MIN], gradIvl: 1, easyIvl: 4, startEase: 2.5, minEase: 1.3,
+    easyBonus: 1.3, hardMult: 1.2, learnAhead: 20 * MIN, leech: 8, mature: 21 };
+  const dayStart = t => { const d = new Date(t - 4 * HOUR); d.setHours(4, 0, 0, 0); return d.getTime(); };
+  const today = () => { const d = new Date(dayStart(Date.now())); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  const newState = () => ({ type: "new", step: 0, ease: CFG.startEase, ivl: 0, due: 0, lapses: 0, right: 0, wrong: 0, seen: 0 });
+  const fuzz = ivl => { if (ivl < 3) return ivl; const f = Math.max(1, Math.round(ivl * .05)); return ivl + Math.round((Math.random() * 2 - 1) * f); };
+  // r: 1 = Di nuovo, 2 = Difficile, 3 = Buono, 4 = Facile
+  function schedule(st, r, now, noFuzz) {
+    const fz = noFuzz ? x => x : fuzz;
+    if (st.type !== "review") {
+      const relearning = st.type === "relearn";
+      const steps = relearning ? CFG.relearn : CFG.learn;
+      if (st.type === "new") st.type = "learn";
+      if (r === 1) { st.step = 0; st.due = now + steps[0]; return; }
+      if (r === 2) { const cur = steps[st.step] || steps[0], nxt = steps[st.step + 1]; st.due = now + (nxt ? (cur + nxt) / 2 : cur * 1.5); return; }
+      if (r === 3 && st.step + 1 < steps.length) { st.step++; st.due = now + steps[st.step]; return; }
+      if (!relearning) st.ivl = r === 4 ? CFG.easyIvl : CFG.gradIvl;
+      st.type = "review"; st.step = 0; st.due = dayStart(now) + st.ivl * DAY; return;
+    }
+    if (r === 1) { st.lapses++; st.ease = Math.max(CFG.minEase, st.ease - .2); st.ivl = 1; st.type = "relearn"; st.step = 0; st.due = now + CFG.relearn[0]; return; }
+    let ivl;
+    if (r === 2) { ivl = Math.max(st.ivl + 1, st.ivl * CFG.hardMult); st.ease = Math.max(CFG.minEase, st.ease - .15); }
+    else if (r === 3) ivl = Math.max(st.ivl + 1, st.ivl * st.ease);
+    else { ivl = Math.max(st.ivl + 1, st.ivl * st.ease * CFG.easyBonus); st.ease += .15; }
+    st.ivl = fz(Math.round(ivl)); st.due = dayStart(now) + st.ivl * DAY;
+  }
+  const pendingNew = new Set(); // card nuove già messe nel feed ma non ancora risposte
+  function grade(id, r, extra) {
+    const prev = S.cards[id] ? Object.assign({}, S.cards[id]) : null;
+    const now = Date.now();
+    const wasNew = !prev || prev.type === "new";
+    const apply = rr => {
+      const st = Object.assign(newState(), prev || {});
+      st.seen++; st.last = now; if (rr === 1) st.wrong++; else st.right++;
+      // ripasso extra (card non ancora in scadenza): solo gli errori spostano la programmazione
+      if (!(extra && rr > 1)) schedule(st, rr, now);
+      st.leech = st.lapses >= CFG.leech;
+      S.cards[id] = st;
+    };
+    apply(r);
+    pendingNew.delete(id);
+    const d = today(); S.days[d] = S.days[d] || { n: 0, ok: 0, new: 0 }; S.days[d].n++; if (r > 1) S.days[d].ok++; if (wasNew) S.days[d].new = (S.days[d].new || 0) + 1;
+    save();
+    return {
+      extra, rating: r,
+      regrade(rr) { this.rating = rr; apply(rr); save(); },
+      preview(rr) { if (extra && rr > 1) return null; const st = Object.assign(newState(), prev || {}); schedule(st, rr, now, true); return st.due - now; },
+    };
+  }
+  const fmtIvl = ms => {
+    if (ms == null) return "";
+    if (ms < HOUR) return `${Math.max(1, Math.round(ms / MIN))} min`;
+    if (ms < DAY * .9) return `${Math.round(ms / HOUR)} h`;
+    const d = Math.round(ms / DAY);
+    if (d < 30) return d === 1 ? "domani" : `${d} g`;
+    return `${(d / 30).toFixed(d < 300 ? 1 : 0).replace(".", ",")} mesi`;
+  };
+  let shown = 0, recent = [], extraMode = false, doneShown = false;
+  const newToday = () => ((S.days[today()] || {}).new || 0) + pendingNew.size;
+  function pickNext() {
+    const pool = eligible(); if (!pool.length) return null;
+    const now = Date.now();
+    const fresh = c => !recent.includes(c.id);
+    const st = c => S.cards[c.id];
+    const learning = c => st(c) && (st(c).type === "learn" || st(c).type === "relearn");
+    const byDue = (a, b) => st(a).due - st(b).due;
+    let l = pool.filter(c => fresh(c) && learning(c) && st(c).due <= now).sort(byDue);
+    if (l.length) return { c: l[0] };
+    const rv = pool.filter(c => fresh(c) && st(c) && st(c).type === "review" && st(c).due <= now).sort(byDue);
+    if (rv.length) return { c: rv[0] };
+    if (newToday() < S.newPerDay) {
+      const nw = pool.filter(c => fresh(c) && !pendingNew.has(c.id) && (!st(c) || st(c).type === "new"));
+      if (nw.length) { const c = nw[Math.floor(Math.random() * nw.length)]; pendingNew.add(c.id); return { c }; }
+    }
+    l = pool.filter(c => fresh(c) && learning(c) && st(c).due <= now + CFG.learnAhead).sort(byDue);
+    if (l.length) return { c: l[0] };
+    if (extraMode) {
+      // ripasso extra: più probabili le card con facilità bassa o molti errori
+      const list = pool.filter(c => fresh(c) && st(c));
+      const src = list.length ? list : pool.filter(fresh).length ? pool.filter(fresh) : pool;
+      const w = src.map(c => st(c) ? (3.2 - st(c).ease) + st(c).lapses * .5 + (st(c).wrong > st(c).right ? 1 : 0) + .2 : 1);
+      let x = Math.random() * w.reduce((a, b) => a + b, 0);
+      for (let i = 0; i < src.length; i++) { x -= w[i]; if (x <= 0) return { c: src[i], extra: true }; }
+      return { c: src[src.length - 1], extra: true };
+    }
+    return { done: true };
+  }
+
+  /* ---------------- Utilità ---------------- */
+  const shuffle = a => { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+  const sample = (arr, n, not = []) => shuffle(arr.filter(x => !not.includes(x))).slice(0, n);
+  const norm = s => s.toLowerCase().replace(/α/g, "alfa").replace(/β/g, "beta").normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/\bacido\s+/g, "").replace(/[^a-z0-9]/g, "");
+  const digits = s => s.replace(/[^0-9]/g, "");
+  function lev(a, b) {
+    const m = a.length, n = b.length; if (Math.abs(m - n) > 2) return 9;
+    let prev = Array.from({ length: n + 1 }, (_, j) => j);
+    for (let i = 1; i <= m; i++) { const cur = [i]; for (let j = 1; j <= n; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1)); prev = cur; }
+    return prev[n];
+  }
+  function matchName(input, mol) {
+    const x = norm(input); if (!x) return false;
+    const cands = [mol.name, ...mol.aliases].map(norm);
+    if (cands.includes(x)) return true;
+    // tolleranza sui refusi solo se i numeri coincidono (2-PG ≠ 3-PG)
+    return cands.some(c => c.length >= 6 && digits(c) === digits(x) && lev(c, x) <= (c.length >= 12 ? 2 : 1));
+  }
+  const molName = id => MOL[id].name;
+  const subjectOf = topic => ((TOPICS[topic] || {}).subject || "Biochimica II");
+  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, p. ${page}` : null;
+  // "dal glucosio", "dall'ossalacetato", "sull'1,3-bisfosfoglicerato"
+  const prep = (p, id) => { const n = molName(id).toLowerCase(); return /^[aeiou1]|^8|^11/.test(n) ? `${p}ll'${n}` : `${p}l ${n}`; };
+  const ALL_ENZYMES = [...new Set([...C.reactions.map(r => r.enzyme), ...C.pathways.flatMap(p => p.steps.map(s => s.enzyme)), ...C.extraEnzymes])];
+  const topicLabel = c => { const t = TOPICS[c.topics.find(x => activeTopics().includes(x)) || c.topics[0]]; return t ? t.name : ""; };
+  let toastTimer;
+  function toast(msg) {
+    let t = $(".toast"); if (!t) { t = h("div", { class: "toast", role: "status" }); document.body.append(t); }
+    t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => t.hidden = true, 2600);
+  }
+
+  /* ---------------- Disegno delle molecole ---------------- */
+  const isDark = () => document.documentElement.dataset.theme === "dark" ||
+    (document.documentElement.dataset.theme !== "light" && matchMedia("(prefers-color-scheme: dark)").matches);
+  const molInk = () => getComputedStyle(document.documentElement).getPropertyValue("--mol-ink").trim() || "#222";
+  const SVGNS = "http://www.w3.org/2000/svg";
+  const svgEl = (tag, a) => { const e = document.createElementNS(SVGNS, tag); for (const k in a) e.setAttribute(k, a[k]); return e; };
+
+  function drawHaworth(m) {
+    const hw = m.haworth, ink = molInk();
+    const W = 380, H = 236, X = 20;
+    const svg = svgEl("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Struttura in proiezione di Haworth" });
+    const pyr = hw.size === 6;
+    // vertici: [O, C anomerico, ... ] in senso orario visto dall'alto
+    const P = pyr
+      ? { O: [218 + X, 84], ring: [[262 + X, 120], [222 + X, 158], [128 + X, 158], [86 + X, 120], [124 + X, 84]] }
+      : { O: [170 + X, 74], ring: [[250 + X, 116], [214 + X, 160], [126 + X, 160], [90 + X, 116]] };
+    const verts = [P.O, ...P.ring];
+    const front = pyr ? [[1, 2], [2, 3], [3, 4]] : [[1, 2], [2, 3], [3, 4]];
+    for (let i = 0; i < verts.length; i++) {
+      const a = verts[i], b = verts[(i + 1) % verts.length];
+      const isFront = front.some(([x, y]) => (i === x && (i + 1) % verts.length === y));
+      svg.append(svgEl("line", { x1: a[0], y1: a[1], x2: b[0], y2: b[1], stroke: ink, "stroke-width": isFront ? 6 : 2, "stroke-linecap": "round" }));
+    }
+    const txt = (x, y, s, anchor = "middle", size = 16, weight = 600) => {
+      const t = svgEl("text", { x, y, "text-anchor": anchor, "font-size": size, "font-weight": weight, fill: ink, "font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" });
+      t.textContent = s; return t;
+    };
+    // O dell'anello su fondo pieno per interrompere le linee
+    svg.append(svgEl("circle", { cx: P.O[0], cy: P.O[1], r: 11, fill: getComputedStyle(document.documentElement).getPropertyValue("--surface-2").trim() }));
+    svg.append(txt(P.O[0], P.O[1] + 6, "O", "middle", 17, 700));
+    const L = 34;
+    hw.positions.forEach((pos, i) => {
+      const [x, y] = P.ring[i];
+      const cnum = hw.firstC + i;
+      // numerazione del carbonio, discreta, all'interno dell'anello
+      const cx = (pyr ? 175 : 170) + X, cy = 124;
+      const nx = x + (cx - x) * .2, ny = y + (cy - y) * .2 + 4;
+      const n = txt(nx, ny, String(cnum), "middle", 10, 600); n.setAttribute("opacity", ".55"); svg.append(n);
+      const sub = (lbl, dir) => {
+        if (!lbl) return;
+        const y2 = y + dir * L;
+        svg.append(svgEl("line", { x1: x, y1: y, x2: x, y2: y2 + (dir < 0 ? 6 : -6), stroke: ink, "stroke-width": 2, "stroke-linecap": "round" }));
+        const isH = lbl === "H";
+        let anchor = "middle", dx = 0;
+        if (lbl.length > 3) { anchor = x < 190 ? "end" : "start"; dx = x < 190 ? 12 : -12; }
+        svg.append(txt(x + dx, dir < 0 ? y2 - 2 : y2 + 14, lbl, anchor, isH ? 14 : 16, isH ? 500 : 600));
+      };
+      sub(pos.up, -1); sub(pos.down, 1);
+    });
+    return svg;
+  }
+
+  // Formula condensata verticale (stile Lehninger): una riga per carbonio
+  function drawFischer(m) {
+    const rows = m.fischer, ink = molInk();
+    const FS = 21, STEP = 58, TOP = 30, CX = 190, CW = 7.2, BOND = 26, GAP = 5;
+    const H = TOP * 2 + (rows.length - 1) * STEP + 8;
+    const svg = svgEl("svg", { viewBox: `0 0 380 ${H}`, role: "img", "aria-label": "Formula di struttura condensata" });
+    const font = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif";
+    const text = (x, y, s, anchor) => { const t = svgEl("text", { x, y, "text-anchor": anchor, "font-size": FS, "font-weight": 600, fill: ink, "font-family": font }); t.textContent = s; return t; };
+    const line = (x1, y1, x2, y2) => svgEl("line", { x1, y1, x2, y2, stroke: ink, "stroke-width": 2, "stroke-linecap": "round" });
+    const hbond = (x1, x2, y, order) => {
+      if (order === 2) { svg.append(line(x1, y - 3.5, x2, y - 3.5), line(x1, y + 3.5, x2, y + 3.5)); }
+      else svg.append(line(x1, y, x2, y));
+    };
+    rows.forEach((r, i) => {
+      const y = TOP + i * STEP, base = y + FS * .36;
+      svg.append(text(CX - CW, base, r.c, "start"));
+      if (r.l) { const x1 = CX - CW - GAP, x2 = x1 - BOND; hbond(x1, x2, y, r.lb); svg.append(text(x2 - GAP, base, r.l, "end")); }
+      if (r.r) { const x1 = CX + CW + GAP, x2 = x1 + BOND; hbond(x1, x2, y, r.rb); svg.append(text(x2 + GAP, base, r.r, "start")); }
+      if (r.down) {
+        const y1 = y + FS * .62, y2 = y + STEP - FS * .62;
+        if (r.down === 2) svg.append(line(CX - 3.5, y1, CX - 3.5, y2), line(CX + 3.5, y1, CX + 3.5, y2));
+        else svg.append(line(CX, y1, CX, y2));
+      }
+    });
+    return svg;
+  }
+  function molBox(id) {
+    const m = MOL[id];
+    const box = h("div", { class: "mol-box", "data-mol": id });
+    box.append(h("div", { class: "mol-tag" }, m.haworth ? "Haworth" : "Formula condensata"));
+    box.append(m.haworth ? drawHaworth(m) : drawFischer(m));
+    return box;
+  }
+  function redrawMolecules() {
+    document.querySelectorAll(".mol-box[data-mol]").forEach(box => box.replaceWith(molBox(box.dataset.mol)));
+  }
+
+  /* ---------------- Card ---------------- */
+  /* ---------------- Segnalazioni ---------------- */
+  const REASONS = ["Risposta sbagliata", "Spiegazione sbagliata o poco chiara", "Formula o struttura sbagliata", "Domanda ambigua", "Errore di battitura", "Altro"];
+  const loadReports = () => { try { return JSON.parse(localStorage.getItem(REPORT_KEY) || "[]"); } catch (e) { return []; } };
+  const saveReports = r => { try { localStorage.setItem(REPORT_KEY, JSON.stringify(r)); } catch (e) { } };
+  let sending = false;
+  async function flushReports() {
+    if (!REPORT_URL || sending || !navigator.onLine) return;
+    sending = true;
+    try {
+      for (const r of loadReports().filter(x => !x.sent)) {
+        try {
+          // text/plain evita il preflight CORS; la risposta è opaca ma la richiesta arriva
+          await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(r) });
+          const all = loadReports(); const x = all.find(y => y.reportId === r.reportId); if (x) { x.sent = Date.now(); saveReports(all); }
+        } catch (e) { break; }
+      }
+    } finally { sending = false; }
+  }
+  function cardSnapshot(card, cardId) {
+    const c = CARD[cardId] || {};
+    const opts = [...card.querySelectorAll(".opt-label")].map(x => x.textContent);
+    const right = card.querySelector(".opt.right .opt-label"), wrong = card.querySelector(".opt.wrong .opt-label");
+    const inp = card.querySelector(".write input");
+    let correct = right ? right.textContent : "", given = wrong ? wrong.textContent : right ? right.textContent : "";
+    if (c.kind === "mol") correct = MOL[c.mol].name;
+    if (inp && inp.value) given = inp.value;
+    const q = card.querySelector(".q");
+    return { cardId, topic: (c.topics || [])[0] || "", question: (q ? q.textContent : "") + (c.kind === "mol" ? ` [${MOL[c.mol].name}]` : ""), options: opts, correct, given: card.classList.contains("answered") ? given : "" };
+  }
+  function openReport(card, cardId) {
+    const snap = cardSnapshot(card, cardId);
+    let reason = null;
+    const overlay = h("div", { class: "sheet-wrap", role: "dialog", "aria-modal": "true", "aria-label": "Segnala un errore" });
+    const close = () => overlay.remove();
+    overlay.addEventListener("click", e => { if (e.target === overlay) close(); });
+    const chips = h("div", { class: "chips" });
+    const send = h("button", { class: "btn btn-primary", type: "button", disabled: true }, "Invia");
+    REASONS.forEach(r => {
+      const b = h("button", { type: "button", class: "chip", "aria-pressed": "false" }, r);
+      b.addEventListener("click", () => { reason = r; chips.querySelectorAll(".chip").forEach(x => x.setAttribute("aria-pressed", String(x === b))); send.disabled = false; });
+      chips.append(b);
+    });
+    const note = h("textarea", { id: "report-note", rows: "3", maxlength: "800", placeholder: "Cosa non torna? Se puoi, scrivi la versione giusta e la pagina della sbobina." });
+    const err = h("div", { class: "field-err", role: "alert" }); err.hidden = true;
+    send.addEventListener("click", () => {
+      const r = Object.assign({ reportId: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), ts: new Date().toISOString(), version: C.version, device: S.device, reason, note: note.value.trim(),
+        mode: S.mode, platform: platform() }, snap);
+      const all = loadReports(); all.push(r); saveReports(all);
+      close();
+      toast(REPORT_URL ? (navigator.onLine ? "Segnalazione inviata, grazie" : "Segnalazione salvata: parte appena sei online") : "Segnalazione salvata sul telefono");
+      flushReports();
+    });
+    overlay.append(h("div", { class: "sheet" },
+      h("div", { class: "sheet-grip", "aria-hidden": "true" }),
+      h("div", { class: "row-title", style: "font-size:18px" }, "Segnala un errore"),
+      h("div", { class: "row-sub" }, snap.question.length > 110 ? snap.question.slice(0, 108) + "…" : snap.question),
+      h("div", { class: "h2", style: "margin:4px 0 0" }, "Che tipo di errore?"), chips,
+      h("label", { class: "h2", for: "report-note", style: "margin:4px 0 0" }, "Dettagli (facoltativo)"), note,
+      err,
+      h("div", { class: "sheet-btns" }, h("button", { class: "btn btn-ghost", type: "button", onclick: close }, "Annulla"), send)));
+    document.body.append(overlay);
+  }
+  function reportLink(cardId) {
+    const a = h("button", { class: "report", type: "button" }, svgIcon("flag"), "Segnala errore");
+    a.addEventListener("click", () => openReport(a.closest(".card"), cardId));
+    return a;
+  }
+  function shell(c, kicker, tileClass, icon) {
+    const card = h("article", { class: "card", "data-card": c.id });
+    const body = h("div", { class: "card-body" });
+    body.append(h("div", { class: "card-head" },
+      h("div", { class: "tile " + tileClass }, svgIcon(icon)),
+      h("div", {}, h("div", { class: "card-kicker" }, kicker), h("div", { class: "card-topic" }, topicLabel(c)))));
+    const foot = h("div", { class: "card-foot" }, reportLink(c.id), h("span", { class: "next-hint" }, "Scorri", svgIcon("down")));
+    card.append(body, foot);
+    return { card, body };
+  }
+  function noteEl(text) { return h("div", { class: "note" }, h("div", {}, h("b", {}, "⚠ Sbobina · "), text)); }
+  // Feedback a pop-up: si apre dalla risposta toccata e si sovrappone un po' alle opzioni sotto
+  function finish(card, anchor, ok, text, meta, note, g) {
+    card.classList.add("answered");
+    const last = false;
+    let rate = null;
+    if (g && ok && !g.extra) {
+      // come in Anki: dopo una risposta giusta puoi dire quanto è stata facile (Buono è già applicato)
+      rate = h("div", { class: "rate", role: "group", "aria-label": "Quanto è stata facile" });
+      [[2, "Difficile"], [3, "Buono"], [4, "Facile"]].forEach(([r, l]) => {
+        const b = h("button", { type: "button", class: "rate-b", "aria-pressed": String(r === 3) }, h("span", {}, l), h("small", {}, fmtIvl(g.preview(r))));
+        b.addEventListener("click", e => { e.stopPropagation(); g.regrade(r); rate.querySelectorAll(".rate-b").forEach(x => x.setAttribute("aria-pressed", String(x === b))); });
+        rate.append(b);
+      });
+    }
+    const when = g && !ok ? `Torna tra ${fmtIvl(g.preview(1))}` : g && g.extra ? "Ripasso extra: la programmazione non cambia" : null;
+    const pop = h("div", { class: "pop " + (ok ? "ok" : "ko") + (last ? " up" : ""), role: "status" },
+      h("div", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
+      text ? h("div", { class: "pop-text" }, text) : null,
+      meta ? h("div", { class: "pop-meta" }, meta) : null,
+      when ? h("div", { class: "pop-meta" }, when) : null,
+      note ? (/^Sbobina /.test(note)
+        ? h("div", { class: "pop-note" }, h("b", {}, "⚠ " + note.split(":")[0] + ":"), note.slice(note.indexOf(":") + 1))
+        : h("div", { class: "pop-note info" }, h("b", {}, "Nota · "), note)) : null,
+      rate);
+    anchor.classList.add("has-pop");
+    anchor.append(pop);
+    // sotto la risposta se c'è spazio nella card, altrimenti sopra
+    const body = card.querySelector(".card-body");
+    if (body) {
+      const pr = pop.getBoundingClientRect(), br = body.getBoundingClientRect(), ar = anchor.getBoundingClientRect();
+      if (pr.bottom > br.bottom - 4 && ar.top - br.top > br.bottom - ar.bottom) pop.classList.add("up");
+    }
+  }
+  function optionList(opts, correct, onDone) {
+    const wrap = h("div", { class: "options", role: "group" });
+    opts.forEach((o, i) => {
+      const b = h("button", { class: "opt", type: "button" }, h("span", { class: "key" }, "ABCDE"[i]), h("span", { class: "opt-label" }, o));
+      b.addEventListener("click", () => {
+        const ok = o === correct;
+        wrap.querySelectorAll(".opt").forEach(x => { x.disabled = true; if (x.querySelector(".opt-label").textContent === correct) x.classList.add("right"); });
+        if (!ok) b.classList.add("wrong");
+        onDone(ok, b);
+      });
+      wrap.append(b);
+    });
+    return wrap;
+  }
+
+  function molCard(c) {
+    const m = MOL[c.mol];
+    const { card, body } = shell(c, "Riconosci la molecola", "t-rose", "hex");
+    body.append(h("h2", { class: "q" }, "Che molecola è?"), molBox(m.id));
+    const detail = `${m.formula} · PubChem CID ${m.cid}`;
+    const done = (ok, anchor) => { const g = grade(c.id, ok ? 3 : 1, c.extra); finish(card, anchor, ok, ok ? m.name : `È ${m.name}.`, detail, null, g); };
+    const others = D.molecules.filter(x => x.id !== m.id && (C.moleculeTopics[x.id] || []).some(t => c.topics.includes(t))).map(x => x.name);
+    const pool = others.length >= 4 ? others : D.molecules.filter(x => x.id !== m.id).map(x => x.name);
+    const opts = shuffle([m.name, ...sample(pool, 4)]);
+    const showOptions = () => body.append(optionList(opts, m.name, done));
+    if (S.mode === "choice") showOptions();
+    else {
+      const inp = h("input", { type: "text", id: "ans-" + c.id.replace(/\W/g, "-") + "-" + shown, placeholder: "Scrivi il nome (va bene anche la sigla)", autocomplete: "off", autocapitalize: "off", spellcheck: "false", enterkeyhint: "done", "aria-label": "Nome della molecola" });
+      const go = h("button", { class: "btn btn-primary", type: "button" }, "Verifica");
+      const form = h("div", { class: "write" }, inp, go);
+      const help = h("button", { class: "linkish", type: "button" }, "Non mi viene: mostra 5 opzioni");
+      const check = () => {
+        if (!inp.value.trim()) { inp.focus(); return; }
+        const ok = matchName(inp.value, m); inp.disabled = go.disabled = true; help.remove(); inp.blur();
+        form.classList.add(ok ? "right" : "wrong");
+        done(ok, form);
+      };
+      go.addEventListener("click", check);
+      inp.addEventListener("keydown", e => { if (e.key === "Enter") check(); });
+      help.addEventListener("click", () => { form.remove(); help.remove(); showOptions(); });
+      body.append(form, help);
+    }
+    return card;
+  }
+
+  // Domanda specifica in base a cosa manca nella reazione
+  function rxQuestion(r, hid) {
+    if (hid.kind === "enz") return "Quale enzima catalizza questa reazione?";
+    if (hid.kind === "co") return "Quale coenzima usa questo enzima?";
+    const left = hid.side === "left", v = hid.val;
+    if (hid.kind === "mol") {
+      const sameSide = (left ? r.left : r.right).filter(x => x[0] === "m").length;
+      if (left) return sameSide > 1 ? "Quale altro substrato manca?" : "Qual è il substrato di questa reazione?";
+      return sameSide > 1 ? "Qual è l'altro prodotto della scissione?" : "Qual è il prodotto di questa reazione?";
+    }
+    const Q = {
+      "ATP": left ? "Quale nucleotide cede il fosfato?" : "Quale nucleotide si forma?",
+      "GTP": left ? "Quale nucleotide cede il fosfato?" : "Quale nucleotide si forma?",
+      "ADP": left ? "Quale nucleotide accetta il fosfato?" : "Quale nucleotide resta dopo il trasferimento del fosfato?",
+      "GDP": left ? "Quale nucleotide accetta il fosfato?" : "Quale nucleotide resta dopo il trasferimento del fosfato?",
+      "NAD⁺": left ? "Quale coenzima accetta gli elettroni (si riduce)?" : "In che forma torna il coenzima dopo aver ceduto gli elettroni?",
+      "NADH + H⁺": left ? "Quale coenzima cede gli elettroni (si ossida)?" : "In che forma esce il coenzima ridotto?",
+      "Pi": left ? "Cosa viene incorporato nel prodotto senza consumare ATP?" : "Cosa viene liberato dall'idrolisi?",
+      "H₂O": left ? "Quale molecola serve per l'idrolisi?" : "Quale molecola viene eliminata?",
+      "CO₂": "Cosa viene liberato con la decarbossilazione?",
+      "HCO₃⁻": "Da dove viene il carbonio aggiunto al piruvato?",
+    };
+    if (v === "ATP" && left && r.left.some(x => x[1] === "HCO₃⁻")) return "Quale nucleotide viene idrolizzato per attivare il bicarbonato?";
+    return Q[v] || "Cosa manca per completare la reazione?";
+  }
+  const eqText = r => {
+    const t = x => x[0] === "m" ? molName(x[1]) : x[1];
+    return `${r.left.map(t).join(" + ")} ${r.irreversible ? "→" : "⇌"} ${r.right.map(t).join(" + ")}`;
+  };
+  function rxCard(c) {
+    const r = c.rx;
+    const { card, body } = shell(c, "Completa la reazione", "t-peach", "rxn");
+    // elementi nascondibili: molecole, cofattori, enzima, coenzima
+    const slots = [];
+    r.left.forEach((x, i) => slots.push({ side: "left", i, kind: x[0] === "m" ? "mol" : "cof", val: x[1] }));
+    r.right.forEach((x, i) => slots.push({ side: "right", i, kind: x[0] === "m" ? "mol" : "cof", val: x[1] }));
+    slots.push({ kind: "enz", val: r.enzyme });
+    if (r.coenzyme) slots.push({ kind: "co", val: r.coenzyme });
+    const hid = slots[Math.floor(Math.random() * slots.length)];
+    const question = rxQuestion(r, hid);
+    const label = s => s.kind === "mol" ? molName(s.val) : s.val;
+    const answer = label(hid);
+    const patch = h("span", { class: "patch" }, "?");
+    const side = (arr, sideName) => {
+      const row = h("div", { class: "rx-side" });
+      arr.forEach((x, i) => {
+        if (i) row.append(h("span", { class: "rx-plus" }, "+"));
+        const isHid = hid.side === sideName && hid.i === i;
+        row.append(isHid ? patch : h("span", { class: "rx-item" + (x[0] === "c" ? " cof" : "") }, x[0] === "m" ? molName(x[1]) : x[1]));
+      });
+      return row;
+    };
+    const enz = hid.kind === "enz" ? patch : h("span", { class: "enz" }, r.enzyme);
+    const co = r.coenzyme ? h("span", { class: "co" }, "coenzima: ", hid.kind === "co" ? patch : r.coenzyme) : null;
+    const where = r.where ? h("span", { class: "co" }, "sede: ", r.where) : null;
+    body.append(
+      h("h2", { class: "q" }, question),
+      h("div", { class: "rx" }, side(r.left, "left"),
+        h("div", { class: "rx-arrow" }, h("span", { class: "stem" + (r.irreversible ? "" : " rev"), "aria-label": r.irreversible ? "irreversibile" : "reversibile" }), h("div", { class: "rx-enz" }, enz, co, where)),
+        side(r.right, "right")));
+    let pool;
+    if (hid.kind === "mol") pool = D.molecules.map(m => m.name);
+    else if (hid.kind === "enz") pool = ALL_ENZYMES;
+    else pool = C.cofactorPool;
+    const present = slots.filter(s => s !== hid).map(label);
+    const opts = shuffle([answer, ...sample(pool, 4, [answer, ...present])]);
+    let note = r.note || null;
+    if (hid.kind === "enz" && r.enzymeNotInNotes && !note) note = "Il nome dell'enzima non è nelle sbobine.";
+    body.append(optionList(opts, answer, (ok, btn) => {
+      const g = grade(c.id, ok ? 3 : 1, c.extra);
+      patch.textContent = answer; patch.classList.add("revealed"); if (!ok) patch.classList.add("miss");
+      finish(card, btn, ok, `${r.enzyme}: ${eqText(r)}`, ref(subjectOf(r.topic), r.page), note, g);
+    }));
+    return card;
+  }
+
+  function nxCard(c) {
+    const p = c.path, st = c.step;
+    const { card, body } = shell(c, "Cosa succede dopo", "t-sage", "path");
+    const askEnzyme = Math.random() < .4;
+    const where = st.where ? ` ${st.where}` : "";
+    const withTxt = st.with ? ` (insieme al ${MOL[st.with].name.toLowerCase()})` : "";
+    const pathName = p.name.charAt(0).toUpperCase() + p.name.slice(1);
+    body.append(
+      h("h2", { class: "q" }, askEnzyme
+        ? `${pathName}: quale enzima agisce ${prep("su", st.from)}${where}?`
+        : `${pathName}: cosa si forma ${prep("da", st.from)}${withTxt}${where}?`),
+      molBox(st.from));
+    const answer = askEnzyme ? st.enzyme : st.to.map(molName).join(" + ");
+    let pool;
+    if (askEnzyme) pool = ALL_ENZYMES;
+    else {
+      const inPath = [...new Set(p.steps.flatMap(s => [s.from, ...s.to]))].map(molName);
+      pool = [...new Set([...inPath, ...D.molecules.map(m => m.name)])];
+      if (st.to.length > 1) pool = ["2 Piruvato", "Glucosio 6-fosfato + Pi", "Fosfoenolpiruvato + Gliceraldeide 3-fosfato", "Diidrossiacetone fosfato + 3-fosfoglicerato", "2 Gliceraldeide 3-fosfato + ATP"];
+    }
+    const opts = shuffle([answer, ...sample(pool, 4, [answer, molName(st.from)])]);
+    body.append(optionList(opts, answer, (ok, btn) => {
+      const g = grade(c.id, ok ? 3 : 1, c.extra);
+      const full = `${molName(st.from)} → ${st.to.map(molName).join(" + ")} · ${st.enzyme}`;
+      const tp = st.topic || p.topic;
+      finish(card, btn, ok, full, [ok ? null : `Risposta giusta: ${answer}`, ref(subjectOf(tp), (TOPICS[tp] || {}).pages)].filter(Boolean).join(" · ") || null, st.note || null, g);
+    }));
+    return card;
+  }
+
+  // Domanda verificata (proposta a lezione): opzioni nell'ordine originale (alcune rimandano alle altre: "Tutte e tre", "Nessuno")
+  function examCard(c) {
+    const x = c.ex;
+    const { card, body } = shell(c, x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata", "t-sky", "board");
+    const qEl = h("h2", { class: "q ex-q" });
+    // evidenzia le negazioni, come si fa a penna sul compito
+    x.q.split(/(\bnon\b|\bfalsa\b)/i).forEach(part => qEl.append(/^(non|falsa)$/i.test(part) ? h("u", {}, part) : part));
+    body.append(qEl);
+    const correct = x.opts[x.ans];
+    body.append(optionList(x.opts, correct, (ok, btn) => {
+      const g = grade(c.id, ok ? 3 : 1, c.extra);
+      finish(card, btn, ok, ok ? x.why : `Risposta: ${"ABCD"[x.ans]}. ${x.why}`, x.page ? ref(x.src || subjectOf(x.topic), x.page) : "Non è nelle sbobine", x.note, g);
+    }));
+    return card;
+  }
+
+  /* ---------------- Feed ---------------- */
+  const feed = () => $("#feed");
+  function emptyFeed() {
+    const f = feed(); f.innerHTML = "";
+    const any = Object.values(TOPICS).some(t => t.ready);
+    f.append(h("div", { class: "empty" }, h("div", { class: "box" },
+      h("div", { class: "tile t-lilac" }, svgIcon("topics")),
+      h("div", { class: "row-title" }, "Scegli cosa ripassare"),
+      h("div", { class: "lead" }, any ? "Spunta gli argomenti che hai già studiato: le domande usciranno solo da quelli." : "Nessun argomento disponibile."),
+      h("button", { class: "btn btn-primary", type: "button", onclick: () => go("topics") }, "Vai agli argomenti"))));
+  }
+  function doneSlide() {
+    const pool = eligible();
+    const next = pool.map(c => S.cards[c.id]).filter(Boolean).filter(x => x.type !== "new").map(x => x.due).sort((a, b) => a - b)[0];
+    const d = S.days[today()] || { n: 0, ok: 0 };
+    const extraBtn = h("button", { class: "btn btn-ghost", type: "button" }, "Ripasso extra");
+    extraBtn.addEventListener("click", () => { extraMode = true; doneShown = false; extraBtn.disabled = true; if (appendSlide()) setTimeout(() => feed().scrollBy({ top: feed().clientHeight, behavior: "smooth" }), 50); });
+    return h("article", { class: "card done-card" }, h("div", { class: "card-body", style: "justify-content:center;align-items:center;text-align:center" },
+      h("div", { class: "tile t-sage", style: "width:56px;height:56px;border-radius:18px" }, svgIcon("check")),
+      h("h2", { class: "q" }, "Per oggi hai finito"),
+      h("p", { class: "lead" }, `${d.n} risposte oggi, ${d.n ? Math.round(d.ok / d.n * 100) : 0}% giuste. ` + (next ? `Prossimo ripasso: tra ${fmtIvl(next - Date.now())}.` : "")),
+      h("p", { class: "lead", style: "font-size:13px" }, `Card nuove: ${Math.min(newToday(), S.newPerDay)}/${S.newPerDay} oggi. Il limite si cambia in Altro.`),
+      extraBtn));
+  }
+  function appendSlide() {
+    const pick = pickNext(); if (!pick) return false;
+    if (pick.done) {
+      if (doneShown) return false;
+      doneShown = true; feed().append(h("section", { class: "slide" }, doneSlide())); return true;
+    }
+    doneShown = false;
+    const c = Object.assign({}, pick.c, { extra: !!pick.extra });
+    shown++; recent.push(c.id); if (recent.length > Math.min(4, Math.max(1, eligible().length - 1))) recent.shift();
+    const el = c.kind === "mol" ? molCard(c) : c.kind === "rx" ? rxCard(c) : c.kind === "ex" ? examCard(c) : nxCard(c);
+    feed().append(h("section", { class: "slide" }, el));
+    fitCard(el);
+    return true;
+  }
+  function fitCard(card) {
+    requestAnimationFrame(() => {
+      const b = card.querySelector(".card-body"); if (!b || !b.clientHeight) return;
+      if (b.scrollHeight > b.clientHeight + 2) card.classList.add("tight");
+    });
+  }
+  function resetFeed() {
+    shown = 0; recent = []; extraMode = false; doneShown = false; pendingNew.clear();
+    const f = feed(); f.innerHTML = ""; f.scrollTop = 0;
+    if (!eligible().length) { emptyFeed(); return; }
+    appendSlide(); appendSlide();
+  }
+  function onFeedScroll() {
+    const f = feed(); const slides = f.querySelectorAll(".slide"); if (!slides.length) return;
+    const idx = Math.round(f.scrollTop / f.clientHeight);
+    if (idx >= slides.length - 2) appendSlide();
+  }
+
+  /* ---------------- Argomenti ---------------- */
+  function renderTopics() {
+    const root = $("#topics-inner"); root.innerHTML = "";
+    const last = S.lastChecked && TOPICS[S.lastChecked];
+    root.append(h("h1", { class: "h1" }, "Argomenti"),
+      h("p", { class: "lead" }, "Spunta quello che hai già studiato. Le domande escono solo da qui."));
+    const onlyLast = h("input", { type: "checkbox", id: "only-last", role: "switch", "aria-label": "Solo l'ultimo argomento spuntato" });
+    onlyLast.checked = !!S.onlyLast;
+    onlyLast.addEventListener("change", () => { S.onlyLast = onlyLast.checked; save(); resetFeed(); });
+    root.append(h("div", { class: "box" }, h("div", { class: "switch-row" },
+      h("div", { class: "tile t-sky" }, svgIcon("pen")),
+      h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Solo l'ultimo spuntato"), h("div", { class: "row-sub" }, last ? last.name : "Nessun argomento spuntato")),
+      h("label", { class: "switch" }, onlyLast, h("span")))));
+    const tiles = ["t-rose", "t-peach", "t-sage", "t-sky", "t-lilac"];
+    C.topics.forEach(sub => {
+      root.append(h("div", { class: "h2" }, sub.subject));
+      if (!sub.blocks.length) { root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-lilac" }, svgIcon("book")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "In preparazione"), h("div", { class: "row-sub" }, "Arriva dopo Biochimica II"))))); return; }
+      const box = h("div", { class: "box" });
+      sub.blocks.forEach((b, bi) => {
+        const readyN = b.topics.filter(t => t.ready).length;
+        const selN = b.topics.filter(t => S.selected.includes(t.id)).length;
+        const head = h("button", { class: "row block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
+          h("div", { class: "tile " + tiles[bi % tiles.length] }, h("span", { style: "font-weight:800;font-size:15px" }, String(bi + 1))),
+          h("div", { class: "row-text" }, h("div", { class: "row-title" }, b.name),
+            h("div", { class: "row-sub" }, `p. ${b.pages} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
+          h("span", { class: "chev", html: ICON.chev }));
+        const list = h("div", { class: "topics" }); list.hidden = !readyN;
+        head.addEventListener("click", () => { list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden)); });
+        b.topics.forEach(t => {
+          const id = "tp-" + t.id;
+          if (!t.ready) { list.append(h("div", { class: "topic soon" }, h("span", { class: "check" }), h("span", { class: "tname" }, t.name), h("span", { class: "tmeta" }, "presto"))); return; }
+          const cb = h("input", { type: "checkbox", id });
+          cb.checked = S.selected.includes(t.id);
+          cb.addEventListener("change", () => {
+            S.selected = S.selected.filter(x => x !== t.id);
+            if (cb.checked) { S.selected.push(t.id); S.lastChecked = t.id; }
+            else if (S.lastChecked === t.id) S.lastChecked = S.selected[S.selected.length - 1] || null;
+            save(); renderTopics(); resetFeed();
+          });
+          const isNew = t.added && (Date.now() - new Date(t.added).getTime()) < 14 * DAY;
+          list.append(h("label", { class: "topic", for: id }, cb, h("span", { class: "check", html: ICON.check }),
+            h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, `${cardsInTopic(t.id)} card`)));
+        });
+        box.append(head, list);
+      });
+      root.append(box);
+    });
+  }
+
+  /* ---------------- Statistiche ---------------- */
+  function renderStats() {
+    const root = $("#stats-inner"); root.innerHTML = "";
+    const pool = eligible(), now = Date.now(), eod = dayStart(now) + DAY;
+    const st = Object.values(S.cards);
+    const tot = st.reduce((a, s) => a + s.seen, 0), ok = st.reduce((a, s) => a + s.right, 0);
+    const dueToday = pool.filter(c => S.cards[c.id] && S.cards[c.id].type !== "new" && S.cards[c.id].due < eod).length;
+    const dayKeys = new Set(Object.keys(S.days));
+    let streak = 0;
+    for (let t = dayStart(now); ; t -= DAY) {
+      const d = new Date(t), k = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+      if (dayKeys.has(k)) streak++; else if (t !== dayStart(now)) break;
+      if (streak > 999) break;
+    }
+    const nd = (S.days[today()] || {}).new || 0;
+    root.append(h("h1", { class: "h1" }, "Statistiche"), h("p", { class: "lead" }, "Salvate solo su questo telefono."),
+      h("div", { class: "stats-grid" },
+        h("div", { class: "stat" }, h("div", { class: "num" }, String(dueToday)), h("div", { class: "lbl" }, "da ripassare oggi")),
+        h("div", { class: "stat" }, h("div", { class: "num" }, `${Math.min(nd, S.newPerDay)}/${S.newPerDay}`), h("div", { class: "lbl" }, "nuove oggi")),
+        h("div", { class: "stat" }, h("div", { class: "num" }, String(streak)), h("div", { class: "lbl" }, streak === 1 ? "giorno di fila" : "giorni di fila")),
+        h("div", { class: "stat" }, h("div", { class: "num" }, String(tot)), h("div", { class: "lbl" }, "risposte in tutto")),
+        h("div", { class: "stat" }, h("div", { class: "num" }, tot ? Math.round(ok / tot * 100) + "%" : "–"), h("div", { class: "lbl" }, "corrette")),
+        h("div", { class: "stat" }, h("div", { class: "num" }, String(st.filter(s => s.leech).length)), h("div", { class: "lbl" }, "ostiche"))));
+    root.append(h("div", { class: "h2" }, "Per argomento"));
+    const box = h("div", { class: "box" });
+    Object.values(TOPICS).filter(t => t.ready).forEach(t => {
+      const cs = CARDS.filter(c => c.topics.includes(t.id));
+      const s_ = c => S.cards[c.id];
+      const mature = cs.filter(c => s_(c) && s_(c).type === "review" && s_(c).ivl >= CFG.mature).length;
+      const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
+      const nnew = cs.length - mature - young;
+      box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
+        h("div", { class: "row-title" }, t.name),
+        h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
+        h("div", { class: "bar two", "aria-hidden": "true" },
+          h("i", { style: `width:${Math.round(mature / cs.length * 100)}%` }),
+          h("i", { class: "young", style: `width:${Math.round(young / cs.length * 100)}%` })))));
+    });
+    root.append(box);
+    const weak = Object.entries(S.cards).filter(([id, s]) => CARD[id] && (s.lapses > 0 || s.wrong > 0))
+      .sort((a, b) => (b[1].lapses - a[1].lapses) || (a[1].ease - b[1].ease) || (b[1].wrong - a[1].wrong)).slice(0, 6);
+    if (weak.length) {
+      root.append(h("div", { class: "h2" }, "Da rinforzare"));
+      const wb = h("div", { class: "box" });
+      weak.forEach(([id, s]) => {
+        const c = CARD[id];
+        const name = c.kind === "mol" ? MOL[c.mol].name : c.kind === "rx" ? c.rx.enzyme : c.kind === "ex" ? (c.ex.q.length > 70 ? c.ex.q.slice(0, 68) + "…" : c.ex.q) : `${MOL[c.step.from].name} → ${c.step.to.map(molName).join(" + ")}`;
+        wb.append(h("div", { class: "row" }, h("div", { class: "tile " + ({ mol: "t-rose", rx: "t-peach", ex: "t-sky" }[c.kind] || "t-sage") }, svgIcon({ mol: "hex", rx: "rxn", ex: "board" }[c.kind] || "path")),
+          h("div", { class: "row-text" }, h("div", { class: "row-title" }, name),
+            h("div", { class: "row-sub" }, `${s.wrong} errori · facilità ${Math.round(s.ease * 100)}%` + (s.leech ? " · ostica" : "")))));
+      });
+      root.append(wb);
+    }
+    root.append(h("p", { class: "lead", style: "font-size:13px" }, `Come in Anki: "mature" sono le card con intervallo di almeno ${CFG.mature} giorni. Una card diventa "ostica" dopo ${CFG.leech} errori su card già imparate.`));
+  }
+
+
+  /* ---------------- Info e impostazioni ---------------- */
+  function platform() {
+    const ua = navigator.userAgent;
+    const ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+    return ios ? "ios" : /Android/.test(ua) ? "android" : "other";
+  }
+  const standalone = () => matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+  function installSteps(pf) {
+    const steps = h("div", { class: "box steps" });
+    const S_ = (...k) => steps.append(h("div", { class: "step" }, h("div", {}, ...k)));
+    if (pf === "ios") {
+      S_("Apri questa pagina in ", h("b", {}, "Safari"), ".");
+      S_("Tocca ", h("b", {}, "Condividi "), h("span", { class: "inline-ico", html: ICON.share }), " in basso (su iPad è in alto).");
+      S_("Scorri e scegli ", h("b", {}, "Aggiungi alla schermata Home"), ", poi ", h("b", {}, "Aggiungi"), ".");
+      S_("Apri l'app dall'icona: parte a schermo intero e funziona anche offline.");
+    } else if (pf === "android") {
+      S_("Apri questa pagina in ", h("b", {}, "Chrome"), ".");
+      S_("Tocca il menu ", h("span", { class: "inline-ico", html: ICON.dots }), " in alto a destra.");
+      S_("Scegli ", h("b", {}, "Installa app"), " oppure ", h("b", {}, "Aggiungi a schermata Home"), ".");
+      S_("Apri l'app dall'icona: parte a schermo intero e funziona anche offline.");
+    } else {
+      S_("Apri questo link dal telefono.");
+      S_("Su iPhone usa Safari → Condividi → Aggiungi alla schermata Home. Su Android usa Chrome → menu ⋮ → Installa app.");
+    }
+    return steps;
+  }
+  let deferredPrompt = null;
+  window.addEventListener("beforeinstallprompt", e => { e.preventDefault(); deferredPrompt = e; });
+  function renderInfo() {
+    const root = $("#info-inner"); root.innerHTML = "";
+    root.append(h("h1", { class: "h1" }, "Impostazioni"));
+    const modeSeg = h("div", { class: "seg", role: "group", "aria-label": "Modalità risposta" },
+      ...[["write", "Scrivo il nome"], ["choice", "Scelta multipla"]].map(([v, l]) => {
+        const b = h("button", { type: "button", "aria-pressed": String(S.mode === v) }, l);
+        b.addEventListener("click", () => { S.mode = v; save(); renderInfo(); });
+        return b;
+      }));
+    const themeSeg = h("div", { class: "seg", role: "group", "aria-label": "Tema" },
+      ...[["system", "Sistema"], ["light", "Chiaro"], ["dark", "Scuro"]].map(([v, l]) => {
+        const b = h("button", { type: "button", "aria-pressed": String(S.theme === v) }, l);
+        b.addEventListener("click", () => { S.theme = v; save(); applyTheme(); renderInfo(); });
+        return b;
+      }));
+    const newSeg = h("div", { class: "seg", role: "group", "aria-label": "Card nuove al giorno" },
+      ...[10, 20, 30, 50].map(v => {
+        const b = h("button", { type: "button", "aria-pressed": String(S.newPerDay === v) }, String(v));
+        b.addEventListener("click", () => { S.newPerDay = v; save(); renderInfo(); resetFeed(); });
+        return b;
+      }));
+    root.append(h("div", { class: "box" },
+      h("div", { class: "row" }, h("div", { class: "tile t-rose" }, svgIcon("hex")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Riconosci la molecola"), h("div", { class: "row-sub" }, "Come vuoi rispondere"))),
+      h("div", { style: "padding:0 12px 12px" }, modeSeg),
+      h("div", { class: "row" }, h("div", { class: "tile t-lilac" }, svgIcon("moon")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Tema"))),
+      h("div", { style: "padding:0 12px 12px" }, themeSeg),
+      h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Card nuove al giorno"), h("div", { class: "row-sub" }, "Come in Anki: i ripassi in scadenza vengono sempre prima"))),
+      h("div", { style: "padding:0 12px 12px" }, newSeg)));
+
+    root.append(h("div", { class: "h2" }, "Installa sul telefono"));
+    if (standalone()) root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-sage" }, svgIcon("check")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "App già installata")))));
+    else {
+      if (deferredPrompt) root.append(h("button", { class: "btn btn-primary", type: "button", onclick: async () => { deferredPrompt.prompt(); deferredPrompt = null; } }, "Installa l'app"));
+      root.append(installSteps(platform()));
+    }
+
+    root.append(h("div", { class: "h2" }, "Da dove vengono le domande"));
+    root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("book")), h("div", { class: "row-text" },
+      h("div", { class: "row-title" }, "Sbobine del corso"),
+      h("div", { class: "row-sub" }, "Sbobine di Biochimica II e domande d'esame proposte a lezione. Strutture da PubChem, zuccheri in Haworth, gruppi ionizzati a pH fisiologico. Dove la sbobina sbaglia, la card lo segnala con ⚠.")))));
+
+    const reps = loadReports(), pending = reps.filter(x => !x.sent);
+    root.append(h("div", { class: "h2" }, "Segnalazioni"));
+    const repBox = h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-rose" }, svgIcon("flag")),
+      h("div", { class: "row-text" }, h("div", { class: "row-title" }, reps.length ? `${reps.length} ${reps.length === 1 ? "segnalazione" : "segnalazioni"} da questo telefono` : "Nessuna segnalazione"),
+        h("div", { class: "row-sub" }, pending.length ? (REPORT_URL ? `${pending.length} in attesa di connessione` : `${pending.length} salvate qui: copiale e mandale a chi cura l'app`) : "Usa «Segnala errore» sotto ogni card"))));
+    if (pending.length && !REPORT_URL) {
+      const copy = h("button", { class: "btn btn-ghost", type: "button", style: "margin:0 12px 12px" }, "Copia segnalazioni");
+      copy.addEventListener("click", async () => {
+        const txt = JSON.stringify(pending, null, 1);
+        try { await navigator.clipboard.writeText(txt); toast("Copiate negli appunti"); }
+        catch (e) { const ta = h("textarea", { class: "copy-area", readonly: true, id: "copy-reports" }); ta.value = txt; repBox.append(ta); ta.select(); toast("Seleziona il testo e copialo"); }
+      });
+      repBox.append(copy);
+    }
+    root.append(repBox);
+    root.append(h("div", { class: "h2" }, "Dati"));
+    root.append(backupBox());
+    const resetBox = h("div", { class: "box" });
+    const askReset = () => {
+      resetBox.innerHTML = "";
+      resetBox.append(h("div", { class: "confirm" }, h("div", { class: "row-title" }, "Cancellare tutti i progressi?"), h("div", { class: "row-sub" }, "Argomenti spuntati, errori e statistiche di questo telefono. Non si può annullare."),
+        h("div", { class: "btns" }, h("button", { class: "btn btn-danger", type: "button", onclick: () => { const keep = { welcomed: true, theme: S.theme }; S = Object.assign(blank(), keep); save(); applyTheme(); renderAll(); toast("Progressi cancellati"); } }, "Cancella tutto"),
+          h("button", { class: "btn btn-ghost", type: "button", onclick: renderInfo }, "Annulla"))));
+    };
+    resetBox.append(h("button", { class: "row", type: "button", style: "width:100%;background:none;border:0;text-align:left;cursor:pointer", onclick: askReset },
+      h("div", { class: "tile t-rose" }, svgIcon("flag")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Azzera i progressi"), h("div", { class: "row-sub" }, "Tutto è salvato solo su questo telefono"))));
+    root.append(resetBox,
+      h("div", { class: "box credit" }, h("div", { class: "mono", "aria-hidden": "true" }, "GP"),
+        h("div", { class: "row-text" }, h("div", { class: "role" }, "Creata da"), h("div", { class: "who" }, "Gabriele Polonio"),
+          h("div", { class: "row-sub" }, `Corso di Laurea in Medicina e Chirurgia · Sapienza Università di Roma, Polo Pontino · 2026 · versione ${C.version}`))));
+  }
+
+  /* ---------------- Backup dei progressi ---------------- */
+  const BACKUP_FIELDS = ["selected", "lastChecked", "onlyLast", "mode", "theme", "newPerDay", "cards", "days"];
+  function backupBox() {
+    const box = h("div", { class: "box" });
+    const status = h("div", { class: "row-sub", style: "padding:0 12px 12px" }); status.hidden = true;
+    const say = t => { status.textContent = t; status.hidden = false; };
+    const exp = h("button", { class: "row", type: "button", style: "width:100%;background:none;border:0;text-align:left;cursor:pointer" },
+      h("div", { class: "tile t-sky" }, svgIcon("share")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Esporta i progressi"), h("div", { class: "row-sub" }, "Salva un file da riaprire su un altro telefono")));
+    exp.addEventListener("click", async () => {
+      const data = {}; BACKUP_FIELDS.forEach(k => data[k] = S[k]);
+      const txt = JSON.stringify({ app: "biochiquiz", v: 1, date: new Date().toISOString(), data });
+      const name = `biochiquiz-progressi-${today()}.json`;
+      const file = typeof File === "function" ? new File([txt], name, { type: "application/json" }) : null;
+      try {
+        if (file && navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: "Progressi Biochiquiz" }); say("File pronto: salvalo in File o mandalo all'altro telefono."); return; }
+      } catch (e) { if (e && e.name === "AbortError") return; }
+      if (isHosted()) {
+        const a = h("a", { href: URL.createObjectURL(new Blob([txt], { type: "application/json" })), download: name }); document.body.append(a); a.click(); a.remove();
+        say("File scaricato: " + name);
+      } else say("Il file si può salvare solo dall'app installata.");
+    });
+    const inp = h("input", { type: "file", accept: ".json,application/json", id: "import-file", class: "visually-hidden" });
+    const imp = h("label", { class: "row", for: "import-file", style: "cursor:pointer;border-top:1px solid var(--line)" },
+      h("div", { class: "tile t-lilac" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Importa i progressi"), h("div", { class: "row-sub" }, "Apri un file esportato: sostituisce i progressi di questo telefono")));
+    inp.addEventListener("change", async () => {
+      const f = inp.files && inp.files[0]; inp.value = ""; if (!f) return;
+      try {
+        const j = JSON.parse(await f.text());
+        if (j.app !== "biochiquiz" || !j.data || typeof j.data.cards !== "object") throw new Error("formato");
+        BACKUP_FIELDS.forEach(k => { if (k in j.data) S[k] = j.data[k]; });
+        save(); applyTheme(); renderTopics(); resetFeed();
+        toast(`Progressi importati: ${Object.keys(S.cards).length} card`); renderInfo();
+      } catch (e) { say("Questo file non è un backup di Biochiquiz. Scegli il file che hai esportato."); }
+    });
+    box.append(exp, inp, imp, status);
+    return box;
+  }
+
+  /* ---------------- Benvenuto ---------------- */
+  function showWelcome() {
+    const w = h("div", { class: "welcome", role: "dialog", "aria-modal": "true", "aria-label": "Benvenuto" });
+    const inner = h("div", { class: "welcome-inner" });
+    const pf = platform();
+    inner.append(h("div", { class: "hero-mark", html: ICON.flask }),
+      h("h1", { class: "h1" }, "Ripassa Biochimica dalle sbobine"),
+      h("p", { class: "lead" }, "Una domanda per schermata: rispondi e scorri giù. Le card che sbagli tornano più spesso. I progressi restano solo sul tuo telefono, senza account."));
+    if (!standalone()) {
+      inner.append(h("div", { class: "h2" }, pf === "ios" ? "Installala su iPhone" : pf === "android" ? "Installala su Android" : "Installala sul telefono"), installSteps(pf));
+      if (/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) inner.append(h("p", { class: "lead", style: "font-size:13px" }, "Questa è l'anteprima di prova: l'installazione con funzionamento offline sarà attiva nella versione pubblicata."));
+    }
+    inner.append(h("button", { class: "btn btn-primary", type: "button", onclick: () => { S.welcomed = true; save(); w.remove(); go(S.selected.length ? "feed" : "topics"); } }, "Inizia"));
+    w.append(inner); document.body.append(w);
+  }
+
+  /* ---------------- Navigazione e tema ---------------- */
+  const VIEWS = ["feed", "topics", "stats", "info"];
+  function go(v) {
+    VIEWS.forEach(x => { $("#view-" + x).hidden = x !== v; $("#tab-" + x).setAttribute("aria-selected", String(x === v)); });
+    if (v === "stats") renderStats();
+    if (v === "info") renderInfo();
+    if (v === "topics") renderTopics();
+  }
+  function applyTheme() {
+    if (S.theme === "system") delete document.documentElement.dataset.theme;
+    else document.documentElement.dataset.theme = S.theme;
+    const meta = $('meta[name="theme-color"]'); if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+    redrawMolecules();
+  }
+  function renderAll() { renderTopics(); resetFeed(); go(S.selected.length ? "feed" : "topics"); }
+
+  /* ---------------- Aggiornamenti (solo app installata / GitHub Pages) ---------------- */
+  const isHosted = () => location.protocol === "https:" && !/claude/.test(location.hostname);
+  let updateShown = false;
+  async function checkUpdate() {
+    if (!isHosted() || updateShown || !navigator.onLine) return;
+    try {
+      const r = await fetch("version.json?t=" + Date.now(), { cache: "no-store" });
+      const v = (await r.json()).version;
+      if (v && v !== C.version) {
+        updateShown = true;
+        const bar = h("div", { class: "update-bar", role: "status" }, h("span", {}, "Nuova versione con domande aggiornate"),
+          h("button", { type: "button", class: "btn btn-primary", onclick: async () => {
+            try { const reg = await navigator.serviceWorker.getRegistration(); if (reg) await reg.update(); } catch (e) { }
+            location.reload();
+          } }, "Aggiorna"));
+        document.body.append(bar);
+      }
+    } catch (e) { }
+  }
+
+  function init() {
+    const tabbar = $("#tabbar");
+    [["feed", "Studia"], ["topics", "Argomenti"], ["stats", "Statistiche"], ["info", "Altro"]].forEach(([v, l]) => {
+      tabbar.append(h("button", { class: "tab", id: "tab-" + v, type: "button", role: "tab", "aria-selected": "false", "aria-controls": "view-" + v, onclick: () => go(v) },
+        h("span", { class: "pill", html: ICON[v] }), l));
+    });
+    feed().addEventListener("scroll", () => requestAnimationFrame(onFeedScroll), { passive: true });
+    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (S.theme === "system") applyTheme(); });
+    applyTheme();
+    renderAll();
+    if (!S.welcomed) showWelcome();
+    if ("serviceWorker" in navigator && isHosted()) navigator.serviceWorker.register("sw.js").catch(() => { });
+    flushReports(); checkUpdate();
+    window.addEventListener("online", () => { flushReports(); checkUpdate(); });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { flushReports(); checkUpdate(); } });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+})();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1244 @@
+[
+ {
+  "id": "eq",
+  "topic": "m1-termodinamica",
+  "page": "10–12",
+  "src": "Biochimica II",
+  "q": "La definizione migliore per una reazione vicina all'equilibrio è:",
+  "opts": [
+   "avviene sempre con una variazione di energia libera",
+   "ha una variazione di energia libera vicina a zero",
+   "di solito è un punto di controllo di una via metabolica",
+   "avviene molto lentamente"
+  ],
+  "ans": 1,
+  "why": "Vicino all'equilibrio ΔG ≈ 0: la reazione è reversibile e il verso dipende solo dalle concentrazioni. I punti di controllo sono invece le reazioni con ΔG molto negativo.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "dg-dg0",
+  "topic": "m1-termodinamica",
+  "page": "11–12",
+  "src": "Biochimica II",
+  "q": "Il ΔG differisce dal ΔG°' quando si ha:",
+  "opts": [
+   "una variazione della concentrazione di enzima",
+   "una variazione della concentrazione degli ioni divalenti",
+   "una variazione del Keq",
+   "una diversa concentrazione dei reagenti e prodotti"
+  ],
+  "ans": 3,
+  "why": "ΔG = ΔG°' + RT ln([prodotti]/[reagenti]): cambia con le concentrazioni. L'enzima cambia solo la velocità e la Keq è una costante.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "atp-ph",
+  "topic": "m1-atp",
+  "page": "15",
+  "src": "Biochimica II",
+  "q": "L'energia libera standard della scissione dell'ATP in ADP e fosfato è −30 kJ/mole. Al pH fisiologico questo valore:",
+  "opts": [
+   "diviene più negativo",
+   "diviene più positivo",
+   "resta invariato",
+   "dipende dalla concentrazione del magnesio"
+  ],
+  "ans": 0,
+  "why": "Più alto è il pH, più l'idrolisi è favorita: a pH 7,4 il ΔG scende sotto −30 kJ/mol. Il magnesio stabilizza l'ATP, ma la domanda chiede l'effetto del pH.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "atp-legami",
+  "topic": "m1-atp",
+  "page": "14, 25",
+  "src": "Biochimica II",
+  "q": "Quale di questi legami non è presente nell'ATP?",
+  "opts": [
+   "N-glicosidico",
+   "Emiacetalico",
+   "Fosfodiestere",
+   "Fosfoestere"
+  ],
+  "ans": 2,
+  "why": "Nell'ATP ci sono il legame N-glicosidico (adenina–ribosio), il fosfoestere (ribosio–fosfato α) e due fosfoanidridici. Il fosfodiestere lega i nucleotidi negli acidi nucleici.",
+  "note": "Sbobina di Biochimica II, p. 25: dice che il legame emiacetalico si trova «nel ribosio e nell'ATP». Nell'ATP il C1' del ribosio è legato all'adenina, quindi è un N-glicoside e non più un emiacetale. All'esame la risposta attesa resta fosfodiestere.",
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "slp-def",
+  "topic": "m1-atp",
+  "page": "19, 44",
+  "src": "Biochimica II",
+  "q": "Che cos'è la fosforilazione dell'ATP a livello del substrato?",
+  "opts": [
+   "Il trasferimento del fosfato in gamma dell'ATP ad una molecola con formazione di un legame estere",
+   "La formazione dell'ATP dall'ADP e Pi mediante riossidazione del NADH",
+   "L'idrolisi dell'ATP",
+   "La formazione dell'ATP dall'ADP e Pi mediante energia rilasciata dalla scissione di un composto con un ΔG°' minore di −30 kJ/mole"
+  ],
+  "ans": 3,
+  "why": "Un composto con potenziale di trasferimento più alto dell'ATP (1,3-BPG, PEP) cede il fosfato all'ADP. La B è la fosforilazione ossidativa, la A una normale reazione chinasica.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "ndpk",
+  "topic": "m1-atp",
+  "page": "17–18",
+  "src": "Biochimica II",
+  "q": "Quale di queste affermazioni è falsa riguardo alla nucleotide difosfato chinasi?",
+  "opts": [
+   "Trasferisce il fosfato in gamma da un trinucleotide ad un dinucleotide",
+   "Ha un'energia libera standard vicina allo zero",
+   "La sua azione favorisce i processi catabolici",
+   "La reazione dipende dal consumo degli NTP"
+  ],
+  "ans": 2,
+  "why": "Forma GTP, UTP e CTP per le biosintesi (proteine, zuccheri, lipidi): favorisce l'anabolismo. Ha ΔG°' ≈ 0 e va avanti perché gli NTP vengono consumati. «Trinucleotide/dinucleotide» sta per nucleoside trifosfato/difosfato.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "carica",
+  "topic": "m1-atp",
+  "page": "16–17",
+  "src": "Biochimica II",
+  "q": "In una cellula le concentrazioni di ATP ed ADP sono equivalenti e quella dell'AMP è trascurabile. In queste condizioni:",
+  "opts": [
+   "Prevarrà il catabolismo",
+   "Prevarrà l'anabolismo",
+   "I due processi sono equivalenti",
+   "Il ΔG°' di idrolisi aumenta"
+  ],
+  "ans": 0,
+  "why": "Carica energetica = ([ATP] + ½[ADP]) / ([ATP] + [ADP] + [AMP]) = 1,5/2 = 0,75. Sotto il valore normale di 0,9 aumentano le vie che generano ATP.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "no-atp",
+  "topic": "m2-ingresso",
+  "page": "32–33",
+  "src": "Biochimica II",
+  "q": "Quale di questi processi non richiede ATP?",
+  "opts": [
+   "Fosforilazione del glucosio",
+   "Trasporto del glucosio dal sangue alle cellule",
+   "Pompa sodio potassio",
+   "Pompa del calcio"
+  ],
+  "ans": 1,
+  "why": "I GLUT fanno diffusione facilitata secondo gradiente. Esochinasi, Na⁺/K⁺-ATPasi e Ca²⁺-ATPasi consumano ATP.",
+  "note": "Sbobina di Biochimica II, p. 32: l'SGLT1 (scritto «SGLUT1») è descritto prima come «trasportatore attivo che utilizza ATP» e poi come simporto senza ATP. È un trasporto attivo secondario: l'ATP lo consuma la pompa Na⁺/K⁺, non l'SGLT1.",
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "legami-energia",
+  "topic": "m1-atp",
+  "page": "19–20",
+  "src": "Biochimica II",
+  "q": "Ordina per energia libera, dalla più positiva alla più negativa, la scissione di: fosfoguanidinico della creatina fosfato (A), fosfoestere (B), tioestere (C), fosfoanidridico (D).",
+  "opts": [
+   "A-B-C-D",
+   "B-D-C-A",
+   "C-D-B-A",
+   "B-C-A-D"
+  ],
+  "ans": 1,
+  "why": "ΔG°' di idrolisi: fosfoestere (es. glucosio 6-P) ≈ −14 kJ/mol, fosfoanidridico dell'ATP ≈ −30, tioestere dell'acetil-CoA −31,4, fosfocreatina ≈ −43.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "pk-base",
+  "topic": "m1-coenzimi",
+  "page": "24",
+  "src": "Biochimica II",
+  "q": "La base B ha un pK pari a 9,0. A pH 9,0 in soluzione si avrà:",
+  "opts": [
+   "Uguale concentrazione di B e B⁻",
+   "Uguale concentrazione di B e B⁺",
+   "Prevalenza della forma B",
+   "Prevalenza della forma B⁺"
+  ],
+  "ans": 1,
+  "why": "A pH = pK le due forme sono in uguale concentrazione. La base B accetta un protone e diventa BH⁺ (B⁺).",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "etanolo-nad",
+  "topic": "m1-coenzimi",
+  "page": "53",
+  "src": "Biochimica II",
+  "q": "L'etanolo, in presenza degli enzimi necessari, reagisce con due molecole di NAD⁺. Il prodotto finale è:",
+  "opts": [
+   "Etano",
+   "Acetaldeide",
+   "Acetato",
+   "Anidride carbonica"
+  ],
+  "ans": 2,
+  "why": "Etanolo → acetaldeide (alcol deidrogenasi, 1 NAD⁺) → acetato (aldeide deidrogenasi, 1 NAD⁺).",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "chetoacido",
+  "topic": "m1-coenzimi",
+  "page": "23–24, 49",
+  "src": "Biochimica II",
+  "q": "La riduzione di un alfa-chetoacido produce:",
+  "opts": [
+   "un composto con un alcol primario e un gruppo aldeidico",
+   "un composto con alcol secondario e un gruppo carbossilico",
+   "un composto con un chetone ed un gruppo carbossilico",
+   "un composto con due gruppi carbossilici"
+  ],
+  "ans": 1,
+  "why": "Il chetone in α si riduce ad alcol secondario e il carbossile resta: piruvato → lattato.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "elettroni-glc",
+  "topic": "m1-coenzimi",
+  "page": "22",
+  "src": "Biochimica II",
+  "q": "Quanti elettroni vengono persi per la completa ossidazione della molecola di glucosio ad anidride carbonica ed acqua?",
+  "opts": [
+   "8",
+   "12",
+   "24",
+   "32"
+  ],
+  "ans": 2,
+  "why": "Ogni carbonio del glucosio passa in media da 0 a +4: 6 × 4 = 24 elettroni, cioè le 12 coppie raccolte da 10 NADH e 2 FADH₂.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ox-carbossile",
+  "topic": "m1-coenzimi",
+  "page": "22",
+  "src": "Biochimica II",
+  "q": "Quale di queste affermazioni è vera riguardo l'ossidazione di un gruppo carbossilico?",
+  "opts": [
+   "Non è possibile",
+   "Riguarda solo la forma deprotonata",
+   "Viene rilasciato come CO₂",
+   "È una reazione reversibile"
+  ],
+  "ans": 2,
+  "why": "Il carbonio carbossilico è il più ossidato di una molecola organica: l'ultimo passaggio possibile è la sua eliminazione come CO₂, come nelle decarbossilazioni del ciclo di Krebs.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "elettroni-acoa",
+  "topic": "m1-coenzimi",
+  "page": "22",
+  "src": "Biochimica II",
+  "q": "L'acetil-CoA (CH₃COSCoA) viene ossidato nel ciclo di Krebs a 2 molecole di CO₂. Quanti elettroni vengono persi nell'ossidazione?",
+  "opts": [
+   "2",
+   "4",
+   "6",
+   "8"
+  ],
+  "ans": 3,
+  "why": "I due carboni dell'acetile passano in totale da 0 a +8: 8 elettroni, raccolti da 3 NADH e 1 FADH₂ (4 coppie).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "c-secondario",
+  "topic": "m1-coenzimi",
+  "page": "23",
+  "src": "Biochimica II",
+  "q": "Per ossidare un carbonio secondario saturo a chetone quali passaggi sono necessari?",
+  "opts": [
+   "Ossidazione NAD dipendente con aggiunta di una molecola d'acqua",
+   "Idratazione seguita da un'ossidazione",
+   "Ossidazione, idratazione ed un ulteriore ossidazione",
+   "Non è possibile la trasformazione"
+  ],
+  "ans": 2,
+  "why": "Ossidazione FAD-dipendente a doppio legame (succinato → fumarato), idratazione ad alcol secondario (→ malato), ossidazione NAD-dipendente a chetone (→ ossalacetato).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "no-acqua",
+  "topic": "m1-coenzimi",
+  "page": "25",
+  "src": "Biochimica II",
+  "q": "Quale tra questi legami non richiede la perdita di una molecola d'acqua per la sua formazione?",
+  "opts": [
+   "Estere",
+   "Fosfoanidridico",
+   "Emiacetalico",
+   "Glicosidico"
+  ],
+  "ans": 2,
+  "why": "L'emiacetale si forma per addizione dell'OH al carbonile (C5–OH sul C1 del glucosio). Estere, fosfoanidride e glicoside sono condensazioni.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glc-fru",
+  "topic": "m1-enzimologia",
+  "page": "23, 40",
+  "src": "Biochimica II",
+  "q": "La trasformazione da glucosio a fruttosio è catalizzata da:",
+  "opts": [
+   "Idrolasi",
+   "Ossidoreduttasi",
+   "Chinasi",
+   "Isomerasi"
+  ],
+  "ans": 3,
+  "why": "Glucosio (aldoso) e fruttosio (chetoso) sono isomeri: la conversione non cambia lo stato di ossidazione (es. fosfoesoso isomerasi, G6P → F6P).",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "idrolasi",
+  "topic": "m1-enzimologia",
+  "page": "31",
+  "src": "Biochimica II",
+  "q": "Quali di questi enzimi appartiene alla classe delle idrolasi?",
+  "opts": [
+   "Proteasi",
+   "Amilasi",
+   "Lipasi",
+   "Tutte e tre"
+  ],
+  "ans": 3,
+  "why": "Proteasi, amilasi e lipasi scindono legami usando l'acqua: sono tutte idrolasi.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "es-saturante",
+  "topic": "m1-enzimologia",
+  "page": "27",
+  "src": "Biochimica II",
+  "q": "Se in una reazione enzimatica tutto l'enzima è nella forma ES vuol dire che:",
+  "opts": [
+   "Il substrato è uguale alla KM",
+   "La concentrazione dell'enzima è uguale a quella del substrato",
+   "Si è raggiunta metà della Vmax",
+   "Il substrato è saturante"
+  ],
+  "ans": 3,
+  "why": "Con tutto l'enzima legato come ES si lavora a Vmax: il substrato è saturante.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "primaria",
+  "topic": "m1-enzimologia",
+  "page": "25",
+  "src": "Biochimica I",
+  "q": "In quale livello di struttura di una proteina non intervengono legami deboli?",
+  "opts": [
+   "Primaria",
+   "Secondaria",
+   "Terziaria",
+   "Quaternaria"
+  ],
+  "ans": 0,
+  "why": "La primaria è la sequenza unita da legami peptidici covalenti. Secondaria, terziaria e quaternaria dipendono da legami deboli (idrogeno, ionici, idrofobici).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "piu-enzima",
+  "topic": "m1-enzimologia",
+  "page": "27",
+  "src": "Biochimica II",
+  "q": "In una reazione enzimatica un ulteriore aumento dell'enzima provoca:",
+  "opts": [
+   "Aumento della KM",
+   "Aumento della Vmax",
+   "Diminuzione della KM",
+   "Aumento della kcat"
+  ],
+  "ans": 1,
+  "why": "Vmax = k₂[E]: cresce con l'enzima. KM e kcat sono costanti.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "km-unita",
+  "topic": "m1-enzimologia",
+  "page": "27",
+  "src": "Biochimica II",
+  "q": "Le dimensioni della KM sono:",
+  "opts": [
+   "s⁻¹",
+   "M",
+   "s M⁻¹",
+   "M⁻¹"
+  ],
+  "ans": 1,
+  "why": "La KM è la concentrazione di substrato a cui v = ½ Vmax: si misura in M.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "k05-neg",
+  "topic": "m1-enzimologia",
+  "page": "28",
+  "src": "Biochimica II",
+  "q": "La K0,5 (KM apparente) di un enzima allosterico, in presenza di un effettore allosterico negativo:",
+  "opts": [
+   "Non subisce variazioni",
+   "Diminuisce",
+   "Aumenta",
+   "Dipende dalla concentrazione del substrato"
+  ],
+  "ans": 2,
+  "why": "L'effettore negativo sposta l'equilibrio verso T: la sigmoide va a destra e la K0,5 aumenta.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "t-r",
+  "topic": "m1-enzimologia",
+  "page": "28",
+  "src": "Biochimica II",
+  "q": "In un enzima allosterico la transizione dalla forma T alla forma R è inibita da:",
+  "opts": [
+   "Effettore omotropico negativo",
+   "Effettore eterotropico negativo",
+   "Effettore eterotropico positivo",
+   "Gli effettori allosterici non hanno influenza"
+  ],
+  "ans": 1,
+  "why": "La inibisce un effettore negativo diverso dal substrato (eterotropico). L'effettore omotropico è il substrato stesso e di solito è positivo.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "s-km",
+  "topic": "m1-enzimologia",
+  "page": "27",
+  "src": "Biochimica II",
+  "q": "Quando la concentrazione di substrato è uguale alla KM:",
+  "opts": [
+   "La velocità è uguale alla velocità massima",
+   "Tutto l'enzima è legato al substrato",
+   "La velocità è metà della velocità massima",
+   "Diminuisce la formazione del prodotto"
+  ],
+  "ans": 2,
+  "why": "È la definizione di KM: la concentrazione di substrato a cui v = ½ Vmax.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "serina",
+  "topic": "m1-enzimologia",
+  "page": "29",
+  "src": "Biochimica II",
+  "q": "Quale tra questi residui aminoacidici si può trovare nel sito di fosforilazione di una proteina substrato di una protein chinasi?",
+  "opts": [
+   "Fenilalanina",
+   "Serina",
+   "Aspartato",
+   "Lisina"
+  ],
+  "ans": 1,
+  "why": "Le protein chinasi fosforilano l'OH di serina e treonina (e tirosina).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "lento",
+  "topic": "m1-enzimologia",
+  "page": "30",
+  "src": "Biochimica II",
+  "q": "Tra i meccanismi di regolazione, quale tra questi rientra in un meccanismo lento?",
+  "opts": [
+   "Controllo allosterico",
+   "Espressione dell'enzima",
+   "Fosforilazione dell'enzima",
+   "Nessuno dei tre"
+  ],
+  "ans": 1,
+  "why": "Allosteria e fosforilazione sono rapide. Cambiare la quantità di enzima (sintesi o degradazione) richiede ore.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "acqua-sub",
+  "topic": "m1-enzimologia",
+  "page": "146",
+  "src": "Biochimica II",
+  "q": "Quali tra questi enzimi ha l'acqua come substrato?",
+  "opts": [
+   "Isomerasi",
+   "Chinasi",
+   "Ossidoreduttasi (deidrogenasi)",
+   "Fosfatasi"
+  ],
+  "ans": 3,
+  "why": "La fosfatasi idrolizza l'estere fosforico (es. glucosio 6-fosfatasi). Le chinasi usano ATP, le deidrogenasi NAD/FAD.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "mutasi",
+  "topic": "m1-enzimologia",
+  "page": "45",
+  "src": "Biochimica II",
+  "q": "Enzimi che trasferiscono gruppi sostituenti in posizioni diverse della stessa molecola si chiamano:",
+  "opts": [
+   "Isomerasi",
+   "Fosforilasi",
+   "Chinasi",
+   "Mutasi"
+  ],
+  "ans": 3,
+  "why": "Le mutasi spostano un gruppo nella stessa molecola: 3-fosfoglicerato → 2-fosfoglicerato.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut-fegato",
+  "topic": "m2-ingresso",
+  "page": "32–33",
+  "src": "Biochimica II",
+  "q": "Quali sono i trasportatori di glucosio nell'epatocita?",
+  "opts": [
+   "GLUT1",
+   "GLUT2",
+   "GLUT3",
+   "GLUT4"
+  ],
+  "ans": 1,
+  "why": "GLUT2: fegato, pancreas e membrana basolaterale dell'enterocita. Kt 17 mM, alta capacità: lavora dopo i pasti.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "amilasi",
+  "topic": "m2-ingresso",
+  "page": "31",
+  "src": "Biochimica II",
+  "q": "È maggiore il glucosio rilasciato per unità di tempo dall'alfa-amilasi dall'amilosio o dall'amilopectina?",
+  "opts": [
+   "È equivalente",
+   "Amilosio",
+   "Amilopectina",
+   "Per rispondere c'è bisogno dei valori di KM per i due substrati"
+  ],
+  "ans": 2,
+  "why": "Da confermare.",
+  "note": null,
+  "times": 1,
+  "pending": true
+ },
+ {
+  "id": "glut4",
+  "topic": "m2-ingresso",
+  "page": "33, 35",
+  "src": "Biochimica II",
+  "q": "In quali tra queste cellule l'insulina permette il trasferimento sulla superficie dei trasportatori GLUT4?",
+  "opts": [
+   "Neuroni",
+   "Globuli rossi",
+   "Epatociti",
+   "Adipociti"
+  ],
+  "ans": 3,
+  "why": "GLUT4: muscolo scheletrico, cuore e tessuto adiposo.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut-entero",
+  "topic": "m2-ingresso",
+  "page": "32",
+  "src": "Biochimica II",
+  "q": "Quale trasportatore del glucosio si trova sulla membrana basolaterale degli enterociti?",
+  "opts": [
+   "GLUT1",
+   "GLUT2",
+   "GLUT3",
+   "GLUT4"
+  ],
+  "ans": 1,
+  "why": "Dal lume il glucosio entra con l'SGLT1, verso il sangue esce con il GLUT2 basolaterale.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut-bidir",
+  "topic": "m2-ingresso",
+  "page": "33",
+  "src": "Biochimica II",
+  "q": "I trasportatori GLUT sono:",
+  "opts": [
+   "unidirezionali",
+   "bidirezionali",
+   "possono assumere una sola conformazione",
+   "sono tutti sotto controllo ormonale"
+  ],
+  "ans": 1,
+  "why": "Diffusione facilitata: il verso dipende solo dal gradiente (il fegato a digiuno libera glucosio con il GLUT2). Hanno due conformazioni, T1 e T2, e solo il GLUT4 è sotto controllo ormonale.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut-tumore",
+  "topic": "m2-ingresso",
+  "page": "64 e seguenti (pagine non numerate, effetto Warburg)",
+  "src": "Biochimica II",
+  "q": "In una cellula tumorale aumenta l'espressione di GLUT. Si tratterà di:",
+  "opts": [
+   "GLUT1",
+   "GLUT2",
+   "GLUT3",
+   "GLUT4"
+  ],
+  "ans": 0,
+  "why": "Nelle cellule tumorali il fattore HIF è attivo anche con l'ossigeno e fa trascrivere enzimi glicolitici, LDH e trasportatori: soprattutto il GLUT1, ad alta affinità, che lavora già a glicemia basale (effetto Warburg).",
+  "note": "La sbobina cita sia GLUT1 sia GLUT3 tra i geni attivati da HIF: la risposta attesa è GLUT1. Se a lezione è stato detto diversamente, fallo presente segnalandolo.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "gr-postprandiale",
+  "topic": "m2-ingresso",
+  "page": "33–34",
+  "src": "Biochimica II",
+  "q": "Ai valori di glicemia post-prandiale, la velocità di ingresso del glucosio nel globulo rosso:",
+  "opts": [
+   "Aumenta",
+   "Diminuisce",
+   "Resta invariata",
+   "Resta invariata ma aumenta la concentrazione"
+  ],
+  "ans": 0,
+  "why": "Da confermare.",
+  "note": null,
+  "times": 1,
+  "pending": true
+ },
+ {
+  "id": "gr-insulina",
+  "topic": "m2-ingresso",
+  "page": "33",
+  "src": "Biochimica II",
+  "q": "Quale di queste cellule non ha il recettore per l'insulina?",
+  "opts": [
+   "Epatocita",
+   "Miocita",
+   "Adipocita",
+   "Globulo rosso"
+  ],
+  "ans": 3,
+  "why": "Il globulo rosso prende il glucosio con il GLUT1, indipendente dall'insulina. Esistono pochi recettori anche sugli eritrociti, ma la risposta attesa è questa.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "insulina-sec",
+  "topic": "m2-ingresso",
+  "page": "34",
+  "src": "Biochimica II",
+  "q": "Quali di questi eventi non è coinvolto nella secrezione dell'insulina?",
+  "opts": [
+   "Fosforilazione del glucosio per opera della glucochinasi",
+   "Fosforilazione ossidativa",
+   "Ingresso di ioni potassio",
+   "Ingresso del calcio"
+  ],
+  "ans": 2,
+  "why": "L'ATP chiude i canali del K⁺: il potassio smette di uscire, la membrana si depolarizza, entra Ca²⁺ e partono le vescicole di insulina.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut1-neonati",
+  "topic": "m2-ingresso",
+  "page": "33",
+  "src": "Biochimica II",
+  "q": "Quali di questi eventi è più probabile che avvengano in neonati che presentano mutazioni del gene che codifica per GLUT1? (E come intervenire?)",
+  "opts": [
+   "Ipoglicemia",
+   "Problemi neurologici",
+   "Insufficienza renale",
+   "Insufficienza cardiaca"
+  ],
+  "ans": 1,
+  "why": "Il GLUT1 porta il glucosio oltre la barriera ematoencefalica: il deficit dà convulsioni e ritardo dello sviluppo con glicemia normale. Si interviene con la dieta chetogenica, perché i corpi chetonici entrano nel cervello con altri trasportatori.",
+  "note": "Il nome della sindrome (deficit di GLUT1) e la dieta chetogenica non sono nelle sbobine.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut-placenta",
+  "topic": "m2-ingresso",
+  "page": null,
+  "src": "Biochimica II",
+  "q": "Quale trasportatore del glucosio vi aspettate di trovare nelle cellule della placenta?",
+  "opts": [
+   "GLUT1",
+   "GLUT2",
+   "GLUT3",
+   "GLUT4"
+  ],
+  "ans": 0,
+  "why": "Nella placenta il trasportatore principale è il GLUT1: come nella barriera ematoencefalica, deve far passare glucosio già a glicemia basale.",
+  "note": "Non è nelle sbobine (Lehninger).",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "peptide-c",
+  "topic": "m2-ingresso",
+  "page": "36",
+  "src": "Biochimica II",
+  "q": "Un paziente con iperglicemia presenta nel sangue valori normali del peptide C originato dal taglio della proinsulina. Questo dato indica che:",
+  "opts": [
+   "L'insulina non viene prodotta dalle cellule del pancreas",
+   "L'insulina non trasporta i GLUT4 sulle membrane delle cellule muscolari",
+   "Il trasporto del glucosio nel fegato è rallentato",
+   "La glucochinasi del pancreas è c… (fine illeggibile nella foto)"
+  ],
+  "ans": 1,
+  "why": "Peptide C normale = l'insulina viene prodotta. L'iperglicemia dipende dall'insulino-resistenza: i GLUT4 non vengono esposti sulla membrana.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glc-atp",
+  "topic": "m2-fosforilazione",
+  "page": "37, 40",
+  "src": "Biochimica II",
+  "q": "Nella reazione: Glucosio + ATP → Glucosio 6P + ADP",
+  "opts": [
+   "Il fosfato in alfa dell'ATP è trasferito al glucosio",
+   "La scissione dell'ATP spinge la reazione verso destra",
+   "Si forma un legame anidridico",
+   "Il ΔG°' è ampiamente positivo"
+  ],
+  "ans": 1,
+  "why": "Viene trasferito il fosfato γ e si forma un fosfoestere. La reazione è accoppiata all'idrolisi dell'ATP, che rende il ΔG negativo.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "glucochinasi",
+  "topic": "m2-fosforilazione",
+  "page": "37",
+  "src": "Biochimica II",
+  "q": "Quale delle seguenti affermazioni è vera per la glucochinasi?",
+  "opts": [
+   "È un enzima ubiquitario",
+   "Trasforma il glucosio in glucosio 1-P",
+   "Ha una KM superiore a quella dell'esochinasi",
+   "Forma un legame fosfoanidridico tra il glucosio ed il fosfato"
+  ],
+  "ans": 2,
+  "why": "La glucochinasi (esochinasi IV) è solo in fegato e pancreas, ha una KM circa 100 volte più alta dell'esochinasi e forma glucosio 6-P con un fosfoestere.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "g6p-falsa",
+  "topic": "m2-fosforilazione",
+  "page": "38, 65",
+  "src": "Biochimica II",
+  "q": "Quale tra queste affermazioni non è vera per il glucosio 6P?",
+  "opts": [
+   "È il precursore del ribosio",
+   "Può essere immagazzinato sotto forma di glicogeno",
+   "Passa liberamente nel mitocondrio",
+   "Nell'epatocita può essere convertito in glucosio"
+  ],
+  "ans": 2,
+  "why": "La membrana mitocondriale interna è impermeabile: il G6P resta nel citosol. Dà ribosio (pentoso fosfati), glicogeno e, nel fegato, glucosio libero (glucosio 6-fosfatasi).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "bilancio-g6p",
+  "topic": "m2-glicolisi",
+  "page": "47",
+  "src": "Biochimica II",
+  "q": "Il bilancio della glicolisi a partire dal glucosio-6P dà:",
+  "opts": [
+   "La riduzione di una molecola di NAD⁺",
+   "La produzione di anidride carbonica",
+   "Un aumento del pH",
+   "La formazione di 3 molecole di ATP"
+  ],
+  "ans": 3,
+  "why": "Partendo dal G6P non si spende l'ATP dell'esochinasi: 4 prodotti − 1 (PFK1) = 3 ATP. Si riducono 2 NAD⁺, non si forma CO₂ e il pH scende.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "glut5",
+  "topic": "m2-glicolisi",
+  "page": "64 e seguenti (pagine non numerate)",
+  "src": "Biochimica II",
+  "q": "Le cellule testicolari posseggono trasportatori GLUT5. Quanti ATP si formano nella glicolisi?",
+  "opts": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "ans": 1,
+  "why": "Il GLUT5 trasporta fruttosio. Nel muscolo il fruttosio diventa fruttosio 6-P con l'esochinasi; nel fegato fruttosio 1-P con la fruttochinasi, poi DHAP e gliceraldeide. In entrambi i casi il bilancio è di 2 ATP netti per esoso (4 prodotti, 2 spesi).",
+  "note": "Sbobina di Biochimica II, pagine non numerate dopo p. 64: la triosio chinasi fosforila la gliceraldeide a «gliceraldeide 2-fosfato». Il prodotto è la gliceraldeide 3-fosfato, come mostra anche la figura accanto.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "gapdh-legame",
+  "topic": "m2-glicolisi",
+  "page": "43",
+  "src": "Biochimica II",
+  "q": "Durante la catalisi della gliceraldeide 3P deidrogenasi quale legame non si forma?",
+  "opts": [
+   "Fosfoanidridico",
+   "Tioemiacetale",
+   "Fosfoestere",
+   "Tioestere"
+  ],
+  "ans": 2,
+  "why": "Si formano il tioemiacetale (Cys–aldeide), il tioestere dopo l'ossidazione e il fosfoanidridico misto dell'1,3-BPG. Il fosfoestere in C3 c'era già nella GA3P.",
+  "note": "Sbobina di Biochimica II, p. 43: il meccanismo dice che va al NAD⁺ «l'H⁺ sotto forma di idruro» e che «la riduzione» trasforma l'aldeide. Va al NAD⁺ un idruro (H⁻), l'aldeide si ossida e si forma il tioestere con la cisteina.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "gapdh-cys",
+  "topic": "m2-glicolisi",
+  "page": "43",
+  "src": "Biochimica II",
+  "q": "Quale residuo aminoacidico è coinvolto nella catalisi della gliceraldeide 3-fosfato deidrogenasi?",
+  "opts": [
+   "Serina",
+   "Cisteina",
+   "Lisina",
+   "Metionina"
+  ],
+  "ans": 1,
+  "why": "Il gruppo SH della cisteina attacca l'aldeide; per questo lo iodoacetato, che lo alchila, blocca la glicolisi.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "gapdh-nadh",
+  "topic": "m2-glicolisi",
+  "page": "43",
+  "src": "Biochimica II",
+  "q": "Nella reazione GA3P + Pi + NAD⁺ ⇌ 1,3-BPG + NADH + H⁺, un aumento del NADH produce:",
+  "opts": [
+   "Una diminuzione del NAD⁺",
+   "Un aumento della GA3P",
+   "Una diminuzione del pH",
+   "Nessun cambiamento"
+  ],
+  "ans": 1,
+  "why": "Più NADH sposta l'equilibrio a sinistra (Le Chatelier): si riforma GA3P e aumenta il NAD⁺.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "slp-reazione",
+  "topic": "m2-glicolisi",
+  "page": "44",
+  "src": "Biochimica II",
+  "q": "Quale delle seguenti reazioni è una fosforilazione a livello del substrato?",
+  "opts": [
+   "Conversione della gliceraldeide in 1,3 bisfosfoglicerato",
+   "Conversione del 1,3 bisfosfoglicerato in 3-fosfoglicerato",
+   "Formazione del 2-fosfoglicerato",
+   "Formazione del fosfoenolpiruvato"
+  ],
+  "ans": 1,
+  "why": "La fosfoglicerato chinasi: l'1,3-BPG cede il fosfato all'ADP. L'altra della glicolisi è la piruvato chinasi.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "dg-negativo",
+  "topic": "m2-glicolisi",
+  "page": "47",
+  "src": "Biochimica II",
+  "q": "Quale delle seguenti reazioni della glicolisi procede con un ΔG negativo?",
+  "opts": [
+   "Conversione del glucosio 6P in fruttosio 6P",
+   "Reazione della gliceraldeide 3 fosfato deidrogenasi",
+   "Reazione dell'enolasi",
+   "Reazione della piruvato chinasi"
+  ],
+  "ans": 3,
+  "why": "Le tre reazioni con ΔG fortemente negativo sono esochinasi/glucochinasi, PFK1 e piruvato chinasi. Le altre sono vicine all'equilibrio.",
+  "note": null,
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "bpg-falsa",
+  "topic": "m2-glicolisi",
+  "page": "43–44",
+  "src": "Biochimica II",
+  "q": "Quale di queste affermazioni è falsa per l'1,3 bisfosfoglicerato?",
+  "opts": [
+   "Contiene un legame fosfoanidridico",
+   "Contiene un legame fosfoesterico",
+   "È meno ossidato del 3-fosfoglicerato",
+   "Ha un potenziale di trasferimento maggiore dell'ATP"
+  ],
+  "ans": 2,
+  "why": "1,3-BPG e 3-fosfoglicerato hanno lo stesso stato di ossidazione (C1 a livello di acido): la fosfoglicerato chinasi sposta solo il fosfato.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "non-glicolisi",
+  "topic": "m2-glicolisi",
+  "page": "39",
+  "src": "Biochimica II",
+  "q": "Quali tra questi composti non partecipa alla glicolisi?",
+  "opts": [
+   "Esteri fosforici",
+   "Esosi",
+   "Acidi dicarbossilici",
+   "Fosfoanidridi"
+  ],
+  "ans": 2,
+  "why": "Nella glicolisi ci sono esosi, esteri fosforici e fosfoanidridi (ATP, 1,3-BPG). Gli acidi dicarbossilici (malato, ossalacetato, succinato) sono del ciclo di Krebs.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "doppio-legame",
+  "topic": "m2-glicolisi",
+  "page": "45",
+  "src": "Biochimica II",
+  "q": "Quale dei seguenti composti della glicolisi ha un doppio legame?",
+  "opts": [
+   "2-fosfoglicerato",
+   "Fosfoenolpiruvato",
+   "Fruttosio 1,6-bisfosfato",
+   "Piruvato"
+  ],
+  "ans": 1,
+  "why": "Il PEP ha un doppio legame C=C (forma enolica). Carbossili e chetoni hanno C=O, ma la domanda intende il doppio legame tra carboni.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ga3p-fbp",
+  "topic": "m2-glicolisi",
+  "page": "41",
+  "src": "Biochimica II",
+  "q": "Una soluzione contiene gliceraldeide 3-P. Quali enzimi bisogna aggiungere per formare fruttosio 1,6 bisfosfato?",
+  "opts": [
+   "Gliceraldeide 3-P deidrogenasi + aldolasi",
+   "Gliceraldeide 3-P deidrogenasi + aldolasi + triosofosfato isomerasi",
+   "Triosofosfato isomerasi + diidrossiacetone 3-P deidrogenasi",
+   "Aldolasi + triosofosfato isomerasi"
+  ],
+  "ans": 3,
+  "why": "La trioso fosfato isomerasi forma DHAP da una parte della GA3P, poi l'aldolasi (reversibile) condensa DHAP + GA3P in FBP.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "fbp-f6p",
+  "topic": "m2-glicolisi",
+  "page": "41, 146",
+  "src": "Biochimica II",
+  "q": "Una soluzione contiene gliceraldeide 3-P, aldolasi e triosofosfato isomerasi, quindi si forma fruttosio 1,6-bisfosfato. Quale ulteriore enzima della via glicolitica, aggiunto, permetterà la formazione del fruttosio 6-P?",
+  "opts": [
+   "Nessuno",
+   "Bastano quelli presenti",
+   "Fosfofruttochinasi 1",
+   "Fosfoesoso isomerasi"
+  ],
+  "ans": 0,
+  "why": "Per FBP → F6P serve la fruttosio 1,6-bisfosfatasi, che è della gluconeogenesi. La PFK1 è irreversibile e la fosfoesoso isomerasi agisce su F6P/G6P.",
+  "note": "Nel foglio la domanda dice «alla soluzione precedente»: qui è collegata a quella sulla gliceraldeide 3-P. Se a lezione la soluzione era un'altra, fallo presente segnalandolo.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ferm-irrev",
+  "topic": "m2-fermentazioni",
+  "page": "53",
+  "src": "Biochimica II",
+  "q": "La fermentazione etanolica non è un processo reversibile. Perché?",
+  "opts": [
+   "Perché avviene in due tappe",
+   "Non ci sono nei microrganismi gli enzimi per le reazioni inverse",
+   "La prima tappa della fermentazione alcolica è una decarbossilazione",
+   "L'acetaldeide si ossida velocemente in acetato"
+  ],
+  "ans": 2,
+  "why": "Piruvato → acetaldeide + CO₂: la decarbossilazione è irreversibile. La riduzione ad etanolo (alcol deidrogenasi) invece è reversibile.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "etanolo-vera",
+  "topic": "m2-fermentazioni",
+  "page": "53",
+  "src": "Biochimica II",
+  "q": "Quale di queste affermazioni è vera per l'etanolo?",
+  "opts": [
+   "La conversione in acetato richiede 1 NADH",
+   "La conversione in acetato richiede l'aldeide deidrogenasi",
+   "In eccesso di etanolo, diminuisce la formazione di lattato",
+   "È consigliabile assumere etanolo prima di una attività sportiva"
+  ],
+  "ans": 1,
+  "why": "Etanolo → acetaldeide (alcol deidrogenasi) → acetato (aldeide deidrogenasi): si producono 2 NADH. L'NADH in eccesso spinge il piruvato a lattato, quindi il lattato aumenta.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "etanolo-falsa",
+  "topic": "m2-fermentazioni",
+  "page": "53, 169",
+  "src": "Biochimica II",
+  "q": "Quale affermazione è falsa per l'etanolo?",
+  "opts": [
+   "Passa la barriera ematoencefalica",
+   "La sua conversione in acetato avviene nel fegato",
+   "La produzione di acido acetico è un processo fermentativo",
+   "L'alcol deidrogenasi è un enzima costitutivo"
+  ],
+  "ans": 2,
+  "why": "Nel fegato l'etanolo viene ossidato con NAD⁺: è un'ossidazione, non una fermentazione (che serve a riossidare NADH). L'alcol deidrogenasi è costitutiva; inducibile è il citocromo P450.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ldh-fattore",
+  "topic": "m2-fermentazioni",
+  "page": "49–52",
+  "src": "Biochimica II",
+  "q": "Quale dei seguenti fattori non è influente per la conversione del piruvato in lattato?",
+  "opts": [
+   "pH cellulare",
+   "Consumo dell'ATP per la contrazione muscolare",
+   "Velocità dell'ingresso del glucosio nella cellula",
+   "Rapporto citoplasmatico NAD⁺/NADH"
+  ],
+  "ans": 2,
+  "why": "Da confermare.",
+  "note": null,
+  "times": 1,
+  "pending": true
+ },
+ {
+  "id": "ldh-falsa",
+  "topic": "m2-fermentazioni",
+  "page": "50",
+  "src": "Biochimica II",
+  "q": "Quale affermazione è falsa per la lattico deidrogenasi?",
+  "opts": [
+   "È un enzima a chiralità selettiva",
+   "È sempre un omotetramero",
+   "È un enzima dipendente dal pH",
+   "È presente nei globuli rossi"
+  ],
+  "ans": 1,
+  "why": "È un tetramero di subunità H e M: solo H4 e M4 sono omotetrameri, M3H, M2H2 e MH3 sono eterotetrameri.",
+  "note": "Sbobina di Biochimica II, p. 49: c'è scritto che la LDH forma solo l'isomero «R». L'L-lattato è (S)-lattato.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ldh1",
+  "topic": "m2-fermentazioni",
+  "page": "50, 52",
+  "src": "Biochimica II",
+  "q": "La presenza nel sangue dell'isoenzima LDH1 può essere indice di:",
+  "opts": [
+   "Strappi muscolari",
+   "Fragilità dei globuli rossi",
+   "Infarto del miocardio",
+   "Cirrosi epatica"
+  ],
+  "ans": 2,
+  "why": "LDH1 = H4, isoenzima cardiaco: marker tardivo di infarto (circa 48 ore). Sale anche nell'emolisi, ma la risposta attesa è l'infarto.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "ldh-struttura",
+  "topic": "m2-fermentazioni",
+  "page": "50",
+  "src": "Biochimica II",
+  "q": "Gli isoenzimi della lattato deidrogenasi differiscono per la KM. Quale livello della struttura proteica è responsabile della variazione?",
+  "opts": [
+   "Primaria",
+   "Secondaria",
+   "Terziaria",
+   "Quaternaria"
+  ],
+  "ans": 3,
+  "why": "Da confermare.",
+  "note": null,
+  "times": 1,
+  "pending": true
+ },
+ {
+  "id": "cori",
+  "topic": "m2-fermentazioni",
+  "page": "51, 148",
+  "src": "Biochimica II",
+  "q": "Quale di queste condizioni deve essere soddisfatta dal fegato per il ciclo di Cori?",
+  "opts": [
+   "Deve essere attiva la via glicolitica",
+   "Ci deve essere un alto rapporto NAD⁺/NADH",
+   "Deve essere attiva la trasduzione del segnale dell'insulina",
+   "Deve essere attiva la glucochinasi"
+  ],
+  "ans": 1,
+  "why": "Il fegato ossida il lattato a piruvato con la LDH: serve molto NAD⁺. Glicolisi e glucochinasi devono essere ferme, perché si fa gluconeogenesi.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "anion-gap",
+  "topic": "m2-fermentazioni",
+  "page": "52",
+  "src": "Biochimica II",
+  "q": "L'anion gap (AG) in biochimica clinica è dato da AG = [Na⁺] − ([Cl⁻] + [HCO₃⁻]). In presenza di lattato il valore dell'AG:",
+  "opts": [
+   "Rimane invariato",
+   "Aumenta",
+   "Diminuisce",
+   "Si annulla"
+  ],
+  "ans": 1,
+  "why": "Il lattato è un anione non misurato: il bicarbonato cala per tamponare l'H⁺, quindi l'AG aumenta (acidosi lattica ad anion gap aumentato).",
+  "note": "L'anion gap non è nelle sbobine.",
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "dhap-rid",
+  "topic": "m2-navette",
+  "page": "54",
+  "src": "Biochimica II",
+  "q": "Quale composto si forma dalla riduzione NADH dipendente del diidrossiacetone fosfato?",
+  "opts": [
+   "Non può essere ridotto",
+   "Gliceraldeide 3-P",
+   "Un alfachetoacido",
+   "Glicerolo fosfato"
+  ],
+  "ans": 3,
+  "why": "Il chetone del DHAP si riduce ad alcol secondario: glicerolo 3-fosfato. È il primo passo della navetta del glicerolo fosfato.",
+  "note": "Sbobina di Biochimica II, p. 54: chiama il glicerolo 3-fosfato «3-fosfoglicerolo (3-PG)». Non confonderlo con il 3-fosfoglicerato, che altrove è abbreviato 3-PG.",
+  "times": 2,
+  "pending": false
+ },
+ {
+  "id": "navetta-fad",
+  "topic": "m2-navette",
+  "page": "54",
+  "src": "Biochimica II",
+  "q": "Nel sistema navetta del glicerolo fosfato:",
+  "opts": [
+   "Il FADH₂ è ossidato dal diidrossiacetone fosfato",
+   "Il NADH cede gli elettroni direttamente al FAD",
+   "Il glicerolo fosfato è ossidato dal FAD",
+   "Il FADH₂ cede gli elettroni direttamente all'ossigeno"
+  ],
+  "ans": 2,
+  "why": "La glicerolo 3-fosfato deidrogenasi mitocondriale, FAD-dipendente, ossida il glicerolo fosfato a DHAP; il FADH₂ passa gli elettroni alla catena respiratoria (coenzima Q).",
+  "note": null,
+  "times": 1,
+  "pending": false
+ },
+ {
+  "id": "navetta-atp",
+  "topic": "m2-navette",
+  "page": "47, 54",
+  "src": "Biochimica II",
+  "q": "Se la riossidazione del NADH produce 2,5 ATP e quella del FADH₂ 1,5 ATP, quante ATP si formano in totale da glucosio a piruvato se il sistema navetta è quello del glicerolo fosfato?",
+  "opts": [
+   "3",
+   "4",
+   "5",
+   "7"
+  ],
+  "ans": 2,
+  "why": "2 ATP netti + 2 NADH citosolici che, con la navetta del glicerolo fosfato, diventano FADH₂: 2 + 2 × 1,5 = 5.",
+  "note": null,
+  "times": 1,
+  "pending": false
+ }
+]

@@ -1,5 +1,5 @@
 {
- "version": "0.3.0",
+ "version": "0.4.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -10,7 +10,9 @@
      "topics": [
       {
        "id": "m1-catabolismo",
-       "name": "Catabolismo e anabolismo"
+       "name": "Catabolismo e anabolismo",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m1-termodinamica",
@@ -76,15 +78,21 @@
       },
       {
        "id": "m2-regolazione",
-       "name": "Regolazione della glicolisi"
+       "name": "Regolazione della glicolisi",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m2-pasteur",
-       "name": "Effetto Pasteur e casi particolari"
+       "name": "Effetto Pasteur e casi particolari",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m2-pdh",
-       "name": "Destini del piruvato e piruvato deidrogenasi"
+       "name": "Destini del piruvato e piruvato deidrogenasi",
+       "ready": true,
+       "added": "2026-11-02"
       }
      ]
     },
@@ -150,7 +158,9 @@
      "topics": [
       {
        "id": "m5-fonti",
-       "name": "Fonti di glucosio ematico"
+       "name": "Fonti di glucosio ematico",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m5-reazioni",
@@ -168,11 +178,15 @@
       },
       {
        "id": "m5-regolazione",
-       "name": "Regolazione"
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
       },
       {
        "id": "m5-approfondimenti",
-       "name": "Approfondimenti"
+       "name": "Approfondimenti",
+       "ready": true,
+       "added": "2026-11-02"
       }
      ]
     },

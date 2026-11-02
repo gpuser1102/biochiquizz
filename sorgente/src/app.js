@@ -32,6 +32,7 @@
     down: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>',
     flag: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg>',
     flask: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6L4.5 18.5A2 2 0 006.2 21.5h11.6a2 2 0 001.7-3L14 9V3"/><path d="M7.5 15h9"/></svg>',
+    star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg>',
     hex: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 3l7.8 4.5v9L12 21l-7.8-4.5v-9z"/></svg>',
     rxn: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h14M13 8l4 4-4 4"/><path d="M20 6v12"/></svg>',
     path: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M6 7v4a4 4 0 004 4h4a4 4 0 014 4"/></svg>',
@@ -45,7 +46,7 @@
   const svgIcon = n => { const s = h("span", { html: ICON[n] }); return s.firstChild; };
 
   /* ---------------- Stato locale ---------------- */
-  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", cards: {}, days: {} });
+  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true }, progressive: true, cards: {}, days: {} });
   let S = blank();
   try { const raw = localStorage.getItem(STORE_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) { /* storage non disponibile */ }
   // dal vecchio sistema a scatole: quelle card ripartono come nuove
@@ -60,18 +61,49 @@
 
   /* ---------------- Mazzo di card ---------------- */
   const CARDS = [];
-  D.molecules.forEach(m => CARDS.push({ id: "mol:" + m.id, kind: "mol", mol: m.id, topics: C.moleculeTopics[m.id] || [] }));
-  C.reactions.forEach(r => CARDS.push({ id: "rx:" + r.id, kind: "rx", rx: r, topics: [r.topic] }));
-  (C.exam || []).forEach(x => CARDS.push({ id: "ex:" + x.id, kind: "ex", ex: x, topics: [x.topic] }));
-  C.pathways.forEach(p => p.steps.forEach((st, i) => CARDS.push({ id: `nx:${p.id}:${i}`, kind: "nx", path: p, step: st, idx: i, topics: [st.topic || p.topic] })));
+  D.molecules.forEach(m => CARDS.push({ id: "mol:" + m.id, kind: "mol", mol: m.id, topics: C.moleculeTopics[m.id] || [], level: "f" }));
+  C.reactions.forEach(r => CARDS.push({ id: "rx:" + r.id, kind: "rx", rx: r, topics: [r.topic], level: "m" }));
+  (C.exam || []).forEach(x => CARDS.push({ id: "ex:" + x.id, kind: "ex", ex: x, topics: [x.topic], level: x.level || "m" }));
+  (C.bank || []).forEach(x => CARDS.push({ id: "q:" + x.id, kind: "ex", ex: x, bank: true, topics: [x.topic], level: x.level }));
+  C.pathways.forEach(p => p.steps.forEach((st, i) => CARDS.push({ id: `nx:${p.id}:${i}`, kind: "nx", path: p, step: st, idx: i, topics: [st.topic || p.topic], level: "m" })));
   const CARD = Object.fromEntries(CARDS.map(c => [c.id, c]));
 
   const activeTopics = () => {
     if (S.onlyLast && S.lastChecked && S.selected.includes(S.lastChecked)) return [S.lastChecked];
     return S.selected.filter(t => TOPICS[t] && TOPICS[t].ready);
   };
-  const eligible = () => { const a = new Set(activeTopics()); return CARDS.filter(c => c.topics.some(t => a.has(t))); };
+  /* ---------------- Livelli ----------------
+     Facile → Medio → Alta → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
+     quando almeno il 70% delle card del livello precedente è stato imparato (passato in ripasso). */
+  const LEVELS = ["f", "m", "a", "l"];
+  const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode" };
+  const UNLOCK = 0.7;
+  const learned = c => { const x = S.cards[c.id]; return !!x && (x.type === "review" || (x.type === "relearn")); };
+  function topicLevelState(tid) {
+    const cs = CARDS.filter(c => c.topics.includes(tid));
+    const by = {}; LEVELS.forEach(l => { const a = cs.filter(c => c.level === l); by[l] = { n: a.length, ok: a.filter(learned).length }; });
+    let open = 0; // indice del livello più alto sbloccato
+    for (let i = 0; i < LEVELS.length - 1; i++) {
+      const cur = by[LEVELS[i]];
+      if (cur.n === 0 || cur.ok / cur.n >= UNLOCK) open = i + 1; else break;
+    }
+    return { by, open };
+  }
+  const levelAllowed = (c, unlockCache) => {
+    if (!S.levels[c.level]) return false;
+    if (!S.progressive) return true;
+    return c.topics.some(t => { const st = unlockCache[t] || (unlockCache[t] = topicLevelState(t)); return LEVELS.indexOf(c.level) <= st.open; });
+  };
+  const eligible = () => {
+    const a = new Set(activeTopics()), cache = {};
+    return CARDS.filter(c => c.topics.some(t => a.has(t)) && levelAllowed(c, cache));
+  };
   const cardsInTopic = id => CARDS.filter(c => c.topics.includes(id)).length;
+  const topicMeta = id => {
+    if (!S.progressive) return `${cardsInTopic(id)} card`;
+    const st = topicLevelState(id);
+    return `${cardsInTopic(id)} card · ${LEVEL_NAME[LEVELS[st.open]]}`;
+  };
 
   /* ---------------- Ripetizione spaziata: algoritmo di Anki (SM-2) ----------------
      Card nuove → passi di apprendimento (1 min, 10 min) → ripasso a giorni con intervallo × facilità.
@@ -149,7 +181,9 @@
     const rv = pool.filter(c => fresh(c) && st(c) && st(c).type === "review" && st(c).due <= now).sort(byDue);
     if (rv.length) return { c: rv[0] };
     if (newToday() < S.newPerDay) {
-      const nw = pool.filter(c => fresh(c) && !pendingNew.has(c.id) && (!st(c) || st(c).type === "new"));
+      let nw = pool.filter(c => fresh(c) && !pendingNew.has(c.id) && (!st(c) || st(c).type === "new"));
+      const minLv = Math.min(...nw.map(c => LEVELS.indexOf(c.level)));
+      nw = nw.filter(c => LEVELS.indexOf(c.level) === minLv);
       if (nw.length) { const c = nw[Math.floor(Math.random() * nw.length)]; pendingNew.add(c.id); return { c }; }
     }
     l = pool.filter(c => fresh(c) && learning(c) && st(c).due <= now + CFG.learnAhead).sort(byDue);
@@ -360,7 +394,8 @@
     const body = h("div", { class: "card-body" });
     body.append(h("div", { class: "card-head" },
       h("div", { class: "tile " + tileClass }, svgIcon(icon)),
-      h("div", {}, h("div", { class: "card-kicker" }, kicker), h("div", { class: "card-topic" }, topicLabel(c)))));
+      h("div", { style: "flex:1;min-width:0" }, h("div", { class: "card-kicker" }, kicker), h("div", { class: "card-topic" }, topicLabel(c))),
+      c.level ? h("span", { class: "lv lv-" + c.level }, LEVEL_NAME[c.level]) : null));
     const foot = h("div", { class: "card-foot" }, reportLink(c.id), h("span", { class: "next-hint" }, "Scorri", svgIcon("down")));
     card.append(body, foot);
     return { card, body };
@@ -553,15 +588,18 @@
   // Domanda verificata (proposta a lezione): opzioni nell'ordine originale (alcune rimandano alle altre: "Tutte e tre", "Nessuno")
   function examCard(c) {
     const x = c.ex;
-    const { card, body } = shell(c, x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata", "t-sky", "board");
+    const kicker = c.bank ? (x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
+    const { card, body } = shell(c, kicker, c.bank ? (x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "l" ? "star" : "hex") : "board");
     const qEl = h("h2", { class: "q ex-q" });
     // evidenzia le negazioni, come si fa a penna sul compito
-    x.q.split(/(\bnon\b|\bfalsa\b)/i).forEach(part => qEl.append(/^(non|falsa)$/i.test(part) ? h("u", {}, part) : part));
+    x.q.split(/(\bnon\b|\bfalsa\b|\btranne\b)/i).forEach(part => qEl.append(/^(non|falsa|tranne)$/i.test(part) ? h("u", {}, part) : part));
     body.append(qEl);
     const correct = x.opts[x.ans];
-    body.append(optionList(x.opts, correct, (ok, btn) => {
+    const opts = c.bank && !x.fixed ? shuffle(x.opts) : x.opts;
+    const letter = "ABCDE"[opts.indexOf(correct)];
+    body.append(optionList(opts, correct, (ok, btn) => {
       const g = grade(c.id, ok ? 3 : 1, c.extra);
-      finish(card, btn, ok, ok ? x.why : `Risposta: ${"ABCD"[x.ans]}. ${x.why}`, x.page ? ref(x.src || subjectOf(x.topic), x.page) : "Non è nelle sbobine", x.note, g);
+      finish(card, btn, ok, ok ? x.why : `Risposta: ${letter}. ${x.why}`, x.page ? ref(x.src || subjectOf(x.topic), x.page) : "Non è nelle sbobine", x.note, g);
     }));
     return card;
   }
@@ -663,7 +701,7 @@
           });
           const isNew = t.added && (Date.now() - new Date(t.added).getTime()) < 14 * DAY;
           list.append(h("label", { class: "topic", for: id }, cb, h("span", { class: "check", html: ICON.check }),
-            h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, `${cardsInTopic(t.id)} card`)));
+            h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, topicMeta(t.id))));
         });
         box.append(head, list);
       });
@@ -702,8 +740,10 @@
       const mature = cs.filter(c => s_(c) && s_(c).type === "review" && s_(c).ivl >= CFG.mature).length;
       const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
       const nnew = cs.length - mature - young;
+      const ls = topicLevelState(t.id);
+      const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.progressive && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
       box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
-        h("div", { class: "row-title" }, t.name),
+        h("div", { class: "row-title" }, t.name), lvRow,
         h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
         h("div", { class: "bar two", "aria-hidden": "true" },
           h("i", { style: `width:${Math.round(mature / cs.length * 100)}%` }),
@@ -784,6 +824,27 @@
       h("div", { style: "padding:0 12px 12px" }, themeSeg),
       h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("feed")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Card nuove al giorno"), h("div", { class: "row-sub" }, "Come in Anki: i ripassi in scadenza vengono sempre prima"))),
       h("div", { style: "padding:0 12px 12px" }, newSeg)));
+
+    root.append(h("div", { class: "h2" }, "Livelli di difficoltà"));
+    const lvBox = h("div", { class: "box" });
+    const prog = h("input", { type: "checkbox", id: "progressive", role: "switch" }); prog.checked = !!S.progressive;
+    prog.addEventListener("change", () => { S.progressive = prog.checked; save(); resetFeed(); renderInfo(); });
+    lvBox.append(h("div", { class: "switch-row" }, h("div", { class: "tile t-sage" }, svgIcon("path")),
+      h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Sblocco progressivo"),
+        h("div", { class: "row-sub" }, `In ogni argomento il livello successivo si apre quando hai imparato il ${Math.round(UNLOCK * 100)}% di quello prima`)),
+      h("label", { class: "switch" }, prog, h("span"))));
+    const chips = h("div", { class: "chips", style: "padding:0 12px 12px" });
+    LEVELS.forEach(l => {
+      const b = h("button", { type: "button", class: "chip lv-chip lvc-" + l, "aria-pressed": String(!!S.levels[l]) }, LEVEL_NAME[l]);
+      b.addEventListener("click", () => {
+        const next = !S.levels[l];
+        if (!next && LEVELS.filter(x => S.levels[x]).length === 1) { toast("Lascia attivo almeno un livello"); return; }
+        S.levels[l] = next; save(); resetFeed(); renderInfo();
+      });
+      chips.append(b);
+    });
+    lvBox.append(h("div", { class: "row-sub", style: "padding:0 12px 8px" }, "Livelli inclusi nel ripasso:"), chips);
+    root.append(lvBox);
 
     root.append(h("div", { class: "h2" }, "Installa sul telefono"));
     if (standalone()) root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-sage" }, svgIcon("check")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "App già installata")))));

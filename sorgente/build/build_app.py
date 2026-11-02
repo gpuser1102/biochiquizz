@@ -7,6 +7,7 @@ src = lambda *p: open(os.path.join(ROOT, *p), encoding="utf-8").read()
 mols = json.loads(src("data", "molecules.json"))
 content = json.loads(src("data", "content.json"))
 content["exam"] = [x for x in json.loads(src("data", "exam.json")) if not x["pending"]]
+content["bank"] = json.loads(src("data", "bank.json"))
 data = json.dumps({"molecules": mols, "content": content}, ensure_ascii=False, separators=(",", ":"))
 
 page = (src("src", "index.template.html")

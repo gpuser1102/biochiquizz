@@ -28,6 +28,7 @@
   --patch-line: #f24e2a;
   --young: #8ea3d6;
   --tile-ring: transparent;
+  --lv-m: #2c5ea8;
   --key-bg: rgba(48, 82, 156, .74);
   --key-hi: rgba(255, 255, 255, .42);
   --key-ring: rgba(255, 255, 255, .5);
@@ -45,7 +46,7 @@
     --ink: #f1f3f7; --muted: #9aa1b0; --accent: #ff6a47; --accent-ink: #ffffff; --accent-soft: #3a1a14;
     --tabbar-bg: #000000; --tabbar-ink: #7d8494; --tabbar-on: #ffffff;
     --tile-rose: #33171a; --tile-peach: #0f2a28; --tile-sage: #10291c; --tile-sky: #142035; --tile-lilac: #211c3a;
-    --tile-ring: rgba(255, 255, 255, .14);
+    --tile-ring: rgba(255, 255, 255, .14); --lv-m: #8fb4f0;
     --key-bg: rgba(150, 170, 220, .24); --key-hi: rgba(255, 255, 255, .24); --key-ring: rgba(255, 255, 255, .26);
     --good: #5ed493; --good-soft: #0f2a1b; --bad: #ff8575; --bad-soft: #33130f; --warn: #b9a8ff; --warn-soft: #1d1833;
     --patch: #3a1a14; --patch-line: #ff6a47; --young: #5f7bc0; --mol-ink: #f1f3f7;
@@ -58,7 +59,7 @@
     --ink: #f1f3f7; --muted: #9aa1b0; --accent: #ff6a47; --accent-ink: #ffffff; --accent-soft: #3a1a14;
     --tabbar-bg: #000000; --tabbar-ink: #7d8494; --tabbar-on: #ffffff;
     --tile-rose: #33171a; --tile-peach: #0f2a28; --tile-sage: #10291c; --tile-sky: #142035; --tile-lilac: #211c3a;
-    --tile-ring: rgba(255, 255, 255, .14);
+    --tile-ring: rgba(255, 255, 255, .14); --lv-m: #8fb4f0;
     --key-bg: rgba(150, 170, 220, .24); --key-hi: rgba(255, 255, 255, .24); --key-ring: rgba(255, 255, 255, .26);
     --good: #5ed493; --good-soft: #0f2a1b; --bad: #ff8575; --bad-soft: #33130f; --warn: #b9a8ff; --warn-soft: #1d1833;
     --patch: #3a1a14; --patch-line: #ff6a47; --young: #5f7bc0; --mol-ink: #f1f3f7;
@@ -370,3 +371,17 @@ button { font: inherit; color: inherit; }
 @keyframes rise { from { transform: translateY(40px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Livelli */
+.lv { flex: none; font-size: 11px; font-weight: 800; letter-spacing: .02em; padding: 4px 9px; border-radius: 999px; white-space: nowrap; }
+.lv-f { background: var(--good-soft); color: var(--good); }
+.lv-m { background: var(--tile-sky); color: var(--lv-m); }
+.lv-a { background: var(--accent-soft); color: var(--accent); }
+.lv-l { background: var(--ink); color: var(--surface); }
+.lv.locked { opacity: .45; }
+.lv-row { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 4px; }
+.lv-chip[aria-pressed="false"] { background: var(--surface); color: var(--muted); border-color: var(--line); text-decoration: line-through; }
+.lv-chip.lvc-f[aria-pressed="true"] { background: var(--good-soft); border-color: var(--good); color: var(--good); }
+.lv-chip.lvc-m[aria-pressed="true"] { background: var(--tile-sky); border-color: var(--lv-m); color: var(--lv-m); }
+.lv-chip.lvc-a[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.lv-chip.lvc-l[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }

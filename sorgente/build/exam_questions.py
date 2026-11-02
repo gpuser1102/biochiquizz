@@ -238,6 +238,21 @@ q("navetta-fad", "m2-navette", "54", "Nel sistema navetta del glicerolo fosfato:
 q("navetta-atp", "m2-navette", "47, 54", "Se la riossidazione del NADH produce 2,5 ATP e quella del FADH₂ 1,5 ATP, quante ATP si formano in totale da glucosio a piruvato se il sistema navetta è quello del glicerolo fosfato?",
   ["3", "4", "5", "7"], 2, "2 ATP netti + 2 NADH citosolici che, con la navetta del glicerolo fosfato, diventano FADH₂: 2 + 2 × 1,5 = 5.")
 
+LEVELS = dict(
+  eq="f", **{"dg-dg0": "f", "atp-ph": "m", "atp-legami": "m", "slp-def": "m", "ndpk": "a", "carica": "a", "no-atp": "f",
+  "legami-energia": "l", "pk-base": "m", "etanolo-nad": "m", "chetoacido": "m", "elettroni-glc": "a", "ox-carbossile": "m",
+  "elettroni-acoa": "a", "c-secondario": "a", "no-acqua": "m", "glc-fru": "f", "idrolasi": "f", "es-saturante": "f",
+  "primaria": "f", "piu-enzima": "f", "km-unita": "m", "k05-neg": "m", "t-r": "m", "s-km": "f", "serina": "f", "lento": "f",
+  "acqua-sub": "m", "mutasi": "f", "glut-fegato": "f", "amilasi": "a", "glut4": "f", "glut-entero": "f", "glut-bidir": "m",
+  "glut-tumore": "a", "gr-postprandiale": "a", "gr-insulina": "m", "insulina-sec": "m", "glut1-neonati": "a",
+  "glut-placenta": "m", "peptide-c": "m", "glc-atp": "m", "glucochinasi": "m", "g6p-falsa": "m", "bilancio-g6p": "a",
+  "glut5": "a", "gapdh-legame": "l", "gapdh-cys": "m", "gapdh-nadh": "a", "slp-reazione": "f", "dg-negativo": "m",
+  "bpg-falsa": "a", "non-glicolisi": "m", "doppio-legame": "m", "ga3p-fbp": "a", "fbp-f6p": "a", "ferm-irrev": "m",
+  "etanolo-vera": "a", "etanolo-falsa": "a", "ldh-fattore": "a", "ldh-falsa": "m", "ldh1": "m", "ldh-struttura": "a",
+  "cori": "m", "anion-gap": "a", "dhap-rid": "m", "navetta-fad": "m", "navetta-atp": "a"})
+for x in Q:
+    x["level"] = LEVELS[x["id"]]
+
 out = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "exam.json")
 json.dump(Q, open(out, "w"), ensure_ascii=False, indent=1)
 print(len(Q), "domande,", sum(not x["pending"] for x in Q), "nel feed,", sum(x["pending"] for x in Q), "da confermare")

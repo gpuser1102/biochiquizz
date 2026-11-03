@@ -362,6 +362,16 @@
   const loadReports = () => { try { return JSON.parse(localStorage.getItem(REPORT_KEY) || "[]"); } catch (e) { return []; } };
   const saveReports = r => { try { localStorage.setItem(REPORT_KEY, JSON.stringify(r)); } catch (e) { } };
   let sending = false;
+  // conteggio anonimo degli accessi: al massimo un segnale al giorno, solo codice casuale, versione e sistema
+  async function pingUsage() {
+    if (!REPORT_URL || !navigator.onLine) return;
+    const d = today(); if (S.lastPing === d) return;
+    try {
+      await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
+        body: JSON.stringify({ kind: "ping", device: S.device, version: C.version, platform: platform(), standalone: standalone() }) });
+      S.lastPing = d; save();
+    } catch (e) { }
+  }
   async function flushReports() {
     if (!REPORT_URL || sending || !navigator.onLine) return;
     sending = true;
@@ -944,6 +954,10 @@
     root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-peach" }, svgIcon("book")), h("div", { class: "row-text" },
       h("div", { class: "row-title" }, "Sbobine del corso"),
       h("div", { class: "row-sub" }, "Sbobine di Biochimica II e domande d'esame proposte a lezione. Strutture da PubChem, zuccheri in Haworth, gruppi ionizzati a pH fisiologico. Dove la sbobina sbaglia, la card lo segnala con ⚠.")))));
+    root.append(h("div", { class: "h2" }, "Privacy"));
+    root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-sage" }, svgIcon("check")), h("div", { class: "row-text" },
+      h("div", { class: "row-title" }, "Niente account, niente dati personali"),
+      h("div", { class: "row-sub" }, `I progressi restano su questo telefono. Una volta al giorno l'app invia solo un codice casuale (${S.device}), la versione e il sistema, per contare quante persone la usano. Le segnalazioni contengono la domanda e la tua nota.`)))));
 
     const reps = loadReports(), pending = reps.filter(x => !x.sent);
     root.append(h("div", { class: "h2" }, "Segnalazioni"));
@@ -1079,9 +1093,9 @@
     renderAll();
     if (!S.welcomed) showWelcome();
     if ("serviceWorker" in navigator && isHosted()) navigator.serviceWorker.register("sw.js").catch(() => { });
-    flushReports(); checkUpdate();
-    window.addEventListener("online", () => { flushReports(); checkUpdate(); });
-    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { flushReports(); checkUpdate(); } });
+    flushReports(); checkUpdate(); pingUsage();
+    window.addEventListener("online", () => { flushReports(); checkUpdate(); pingUsage(); });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { flushReports(); checkUpdate(); pingUsage(); } });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();

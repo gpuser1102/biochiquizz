@@ -12,3 +12,5 @@ Per rigenerare il sito (dalla cartella `sorgente/`):
     python3 build/build_app.py
 
 Poi copiare il contenuto di `dist/pwa/` nella radice del repository. Gli ID delle card non vanno mai rinominati: sono la chiave dei progressi salvati sui telefoni.
+
+La banca domande (`data/bank.json`) si rigenera con `python3 build/build_bank.py`. Le domande Hard (livello `h`, 5 opzioni, ragionate in stile esame) stanno in `build/bank_mh*.py` e sono le sole usate dalla Hard mode.

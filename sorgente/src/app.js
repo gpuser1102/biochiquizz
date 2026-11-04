@@ -257,7 +257,8 @@
     return form;
   }
   const subjectOf = topic => ((TOPICS[topic] || {}).subject || "Biochimica II");
-  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, p. ${page}` : null;
+  const pg = p => (/^\d/.test(String(p)) ? "p. " : "") + p; // le lezioni senza numeri di pagina si citano per nome
+  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, ${pg(page)}` : null;
   // "dal glucosio", "dall'ossalacetato", "sull'1,3-bisfosfoglicerato"
   const prep = (p, id) => { const n = molName(id).toLowerCase(); return /^[aeiou1]|^8|^11/.test(n) ? `${p}ll'${n}` : `${p}l ${n}`; };
   const ALL_ENZYMES = [...new Set([...C.reactions.map(r => r.enzyme), ...C.pathways.flatMap(p => p.steps.map(s => s.enzyme)), ...C.extraEnzymes])];
@@ -796,7 +797,7 @@
         const head = h("button", { class: "row block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
           h("div", { class: "tile " + tiles[bi % tiles.length] }, h("span", { style: "font-weight:800;font-size:15px" }, String(bi + 1))),
           h("div", { class: "row-text" }, h("div", { class: "row-title" }, b.name),
-            h("div", { class: "row-sub" }, `p. ${b.pages} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
+            h("div", { class: "row-sub" }, `${pg(b.pages)} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
           h("span", { class: "chev", html: ICON.chev }));
         const list = h("div", { class: "topics" }); list.hidden = !readyN;
         head.addEventListener("click", () => { list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden)); });

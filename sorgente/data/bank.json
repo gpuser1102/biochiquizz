@@ -7034,6 +7034,1060 @@
   "fixed": false
  },
  {
+  "id": "b3m-01",
+  "topic": "bm3-cgmp",
+  "level": "f",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quale enzima produce il cGMP?",
+  "opts": [
+   "Guanilato ciclasi",
+   "Adenilato ciclasi",
+   "Fosfolipasi C",
+   "Fosfodiesterasi 5"
+  ],
+  "ans": 0,
+  "why": "GTP → cGMP + PPi; la fosfodiesterasi lo degrada a GMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-02",
+  "topic": "bm3-cgmp",
+  "level": "f",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quale chinasi è attivata dal cGMP?",
+  "opts": [
+   "PKG",
+   "PKA",
+   "PKC",
+   "PKB"
+  ],
+  "ans": 0,
+  "why": "La PKG è un omodimero, in due isoforme (PKG-1 e PKG-2).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-03",
+  "topic": "bm3-cgmp",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Dove si trova il recettore dell'NO e perché?",
+  "opts": [
+   "Nel citosol: l'NO è un gas che attraversa la membrana",
+   "Sulla membrana plasmatica, con 7 eliche",
+   "Nel nucleo, come gli steroidi",
+   "Nel reticolo endoplasmatico"
+  ],
+  "ans": 0,
+  "why": "È una guanilato ciclasi solubile con un gruppo eme: l'NO si lega al ferro e la attiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-04",
+  "topic": "bm3-cgmp",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Qual è il recettore del peptide natriuretico atriale?",
+  "opts": [
+   "Un recettore di membrana con attività guanilato ciclasica",
+   "Un GPCR accoppiato a Gs",
+   "La guanilato ciclasi solubile del citosol",
+   "Un recettore canale"
+  ],
+  "ans": 0,
+  "why": "Le due vie del cGMP: recettore di membrana catalitico (ANP) e recettore citosolico per l'NO.",
+  "note": "Sbobina di Biologia molecolare, lezione 3: tra le due vie parla di «peptidi che portano alla formazione di NO (es. peptide natriuretico atriale)». L'ANP agisce invece sul proprio recettore di membrana con attività guanilato ciclasica, senza passare per l'NO.",
+  "fixed": false
+ },
+ {
+  "id": "b3m-05",
+  "topic": "bm3-cgmp",
+  "level": "a",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Come fa l'NO a provocare vasodilatazione?",
+  "opts": [
+   "↑cGMP → PKG → abbassa il Ca²⁺ e attiva la fosfatasi delle catene leggere della miosina → rilassamento",
+   "↑cAMP → PKA → contrazione",
+   "Apre i canali del Ca²⁺",
+   "Attiva la PKC"
+  ],
+  "ans": 0,
+  "why": "La PKG apre anche canali K⁺ (iperpolarizzazione) e inibisce i canali del Ca²⁺ voltaggio-dipendenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-06",
+  "topic": "bm3-cgmp",
+  "level": "a",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Come agisce il sildenafil (Viagra)?",
+  "opts": [
+   "Inibisce la fosfodiesterasi 5, mantenendo alto più a lungo il cGMP nella muscolatura dei vasi",
+   "Attiva la guanilato ciclasi",
+   "Libera NO",
+   "Blocca la PKG"
+  ],
+  "ans": 0,
+  "why": "La vasodilatazione aumenta l'afflusso di sangue nel tessuto erettile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-07",
+  "topic": "bm3-cgmp",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Perché una seconda stimolazione con NO a breve distanza produce molto meno cGMP?",
+  "opts": [
+   "La PKG ha attivato una fosfodiesterasi del cGMP che resta attiva",
+   "Perché l'NO non attraversa più la membrana",
+   "Perché la guanilato ciclasi è stata degradata",
+   "Perché il GTP è esaurito"
+  ],
+  "ans": 0,
+  "why": "Lo spegnimento è intrinseco alla via: picco rapido di cGMP e poi calo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b3m-08",
+  "topic": "bm3-cgmp",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quale gruppo prostetico lega l'NO nella guanilato ciclasi solubile?",
+  "opts": [
+   "Eme",
+   "FAD",
+   "Biotina",
+   "Centro Fe-S"
+  ],
+  "ans": 0,
+  "why": "L'NO si coordina al ferro in sesta posizione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh3m-01",
+  "topic": "bm3-cgmp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Una cellula muscolare liscia vascolare riceve NO. Quale sequenza è corretta?",
+  "opts": [
+   "NO → guanilato ciclasi citosolica → cGMP → PKG → ↓Ca²⁺ e defosforilazione delle catene leggere → rilassamento",
+   "NO → GPCR → Gs → cAMP → PKA → contrazione",
+   "NO → recettore di membrana → PLC → IP₃ → contrazione",
+   "NO → PKC → fosforilazione della miosina → contrazione",
+   "NO → fosfodiesterasi 5 → più cGMP"
+  ],
+  "ans": 0,
+  "why": "La PDE5 degrada il cGMP: inibirla prolunga l'effetto.",
+  "note": "Sbobina di Biologia molecolare, lezione 3: nel riepilogo scrive «Il GMP ciclico attiva la proteina G» e «la proteina G fosforila i suoi bersagli»; si intende la PKG (protein chinasi G).",
+  "fixed": false
+ },
+ {
+  "id": "b4c-01",
+  "topic": "bm4-calcio",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Qual è la concentrazione di Ca²⁺ nel citosol a riposo?",
+  "opts": [
+   "≈ 10⁻⁷–10⁻⁸ M",
+   "≈ 10⁻³ M",
+   "≈ 1 M",
+   "≈ 10⁻¹ M"
+  ],
+  "ans": 0,
+  "why": "Fuori dalla cellula e negli organuli (RE, mitocondrio) è circa 10⁻³ M.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-02",
+  "topic": "bm4-calcio",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come viene portato fuori dalla cellula il Ca²⁺?",
+  "opts": [
+   "Con la Ca²⁺-ATPasi e con l'antiporto Na⁺/Ca²⁺",
+   "Per diffusione semplice",
+   "Con i recettori per l'IP₃",
+   "Con i recettori per la rianodina"
+  ],
+  "ans": 0,
+  "why": "Altre Ca²⁺-ATPasi lo pompano nel reticolo sarcoplasmatico e nei mitocondri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-03",
+  "topic": "bm4-calcio",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quali processi controlla il Ca²⁺ come secondo messaggero?",
+  "opts": [
+   "Contrazione muscolare, secrezione di ormoni e neurotrasmettitori, divisione cellulare, metabolismo, espressione genica",
+   "Solo la contrazione muscolare",
+   "Solo la trascrizione",
+   "Solo la sintesi di ATP"
+  ],
+  "ans": 0,
+  "why": "Il segnale è la variazione della sua concentrazione citosolica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-04",
+  "topic": "bm4-calcio",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto il recettore per l'IP₃?",
+  "opts": [
+   "Un canale del RE formato da 4 subunità, ognuna con 6 eliche, con residui acidi nel poro (selettività per il Ca²⁺)",
+   "Un GPCR a 7 eliche",
+   "Un recettore tirosin-chinasico",
+   "Un canale a 5 subunità come il nicotinico"
+  ],
+  "ans": 0,
+  "why": "Legando l'IP₃ si apre e lascia uscire il Ca²⁺ dal RE.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-05",
+  "topic": "bm4-calcio",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa apre fisiologicamente il recettore per la rianodina?",
+  "opts": [
+   "Il Ca²⁺ stesso (rilascio di Ca²⁺ indotto da Ca²⁺)",
+   "La rianodina endogena",
+   "L'IP₃",
+   "Il cAMP"
+  ],
+  "ans": 0,
+  "why": "La rianodina è un alcaloide vegetale insetticida, non una molecola endogena.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-06",
+  "topic": "bm4-calcio",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che effetto ha la rianodina a basse e ad alte concentrazioni?",
+  "opts": [
+   "Bassa: blocca il canale semiaperto (contrazione massiva). Alta (µM): lo chiude (paralisi)",
+   "Bassa: lo chiude; alta: lo apre",
+   "Lo apre sempre",
+   "Non agisce sul canale"
+  ],
+  "ans": 0,
+  "why": "Effetto opposto in base alla dose.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4c-07",
+  "topic": "bm4-calcio",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Dove sono espressi RyR1, RyR2 e RyR3?",
+  "opts": [
+   "Muscolo scheletrico, miocardio, cervello",
+   "Cervello, fegato, rene",
+   "Miocardio, muscolo scheletrico, fegato",
+   "Tutti e tre nel muscolo liscio"
+  ],
+  "ans": 0,
+  "why": "Tutti consentono la fuoriuscita del Ca²⁺ dal reticolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh4c-01",
+  "topic": "bm4-calcio",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Perché un piccolo rilascio di Ca²⁺ dall'IP₃ può diventare un grande aumento di Ca²⁺ citosolico?",
+  "opts": [
+   "Il Ca²⁺ rilasciato apre i recettori per la rianodina e i canali voltaggio-dipendenti, amplificando il segnale",
+   "Perché l'IP₃ apre la Ca²⁺-ATPasi",
+   "Perché il Ca²⁺ blocca l'antiporto Na⁺/Ca²⁺ in modo permanente",
+   "Perché la calmodulina rilascia il Ca²⁺ legato",
+   "Perché il mitocondrio non accumula più Ca²⁺"
+  ],
+  "ans": 0,
+  "why": "Anche la calmodulina-Ca²⁺ può riaprire i recettori per la rianodina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-01",
+  "topic": "bm4-calmodulina",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quanti ioni Ca²⁺ lega la calmodulina?",
+  "opts": [
+   "4",
+   "2",
+   "1",
+   "7"
+  ],
+  "ans": 0,
+  "why": "Due domini a mano EF, ciascuno con due siti, separati da una lunga α-elica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-02",
+  "topic": "bm4-calmodulina",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto un dominio a mano EF?",
+  "opts": [
+   "Due α-eliche unite da un loop che coordina il Ca²⁺",
+   "Un foglietto β a barile",
+   "Un dito di zinco",
+   "Un dominio SH2"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ forma 7 legami di coordinazione con residui acidi (bipiramide pentagonale).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-03",
+  "topic": "bm4-calmodulina",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa succede alla calmodulina quando lega il Ca²⁺?",
+  "opts": [
+   "Cambia conformazione, si richiude e lega e attiva proteine bersaglio come la CaM chinasi",
+   "Viene degradata",
+   "Entra nel RE",
+   "Si lega al DNA"
+  ],
+  "ans": 0,
+  "why": "Modula anche fosfodiesterasi, adenilato ciclasi, Ca²⁺-ATPasi e chinasi delle catene leggere della miosina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-04",
+  "topic": "bm4-calmodulina",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come il Ca²⁺ favorisce la degradazione del glicogeno nel muscolo?",
+  "opts": [
+   "Ca²⁺-calmodulina attiva la fosforilasi chinasi, che fosforila e attiva la glicogeno fosforilasi",
+   "Il Ca²⁺ attiva la glicogeno sintasi",
+   "Il Ca²⁺ inibisce la fosforilasi chinasi",
+   "Il Ca²⁺ attiva la PP1"
+  ],
+  "ans": 0,
+  "why": "Contemporaneamente viene bloccata la sintesi del glicogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-05",
+  "topic": "bm4-calmodulina",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come può il Ca²⁺ cambiare l'espressione genica?",
+  "opts": [
+   "Ca²⁺-calmodulina attiva la CaM chinasi, che fosforila fattori di trascrizione come CREB",
+   "Il Ca²⁺ si lega direttamente al DNA",
+   "Il Ca²⁺ attiva STAT",
+   "Il Ca²⁺ inibisce la RNA polimerasi"
+  ],
+  "ans": 0,
+  "why": "CREB è fosforilato anche dalla PKA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4m-06",
+  "topic": "bm4-calmodulina",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quale stato della glicogeno sintasi e della glicogeno fosforilasi corrisponde alla fosforilazione?",
+  "opts": [
+   "Sintasi fosforilata inattiva, fosforilasi fosforilata attiva",
+   "Entrambe attive",
+   "Entrambe inattive",
+   "Sintasi attiva, fosforilasi inattiva"
+  ],
+  "ans": 0,
+  "why": "Così una stessa cascata di fosforilazioni favorisce la degradazione e blocca la sintesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh4m-01",
+  "topic": "bm4-calmodulina",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Durante la contrazione il Ca²⁺ sale nel muscolo. Quale effetto coordinato ha sul glicogeno?",
+  "opts": [
+   "Attiva la fosforilasi chinasi (degradazione) e una chinasi che inattiva la glicogeno sintasi: più glucosio per la glicolisi",
+   "Attiva la sintesi e blocca la degradazione",
+   "Non ha effetti sul glicogeno",
+   "Attiva la PP1 che defosforila entrambi gli enzimi",
+   "Blocca la glicolisi per risparmiare ATP"
+  ],
+  "ans": 0,
+  "why": "Il muscolo che si contrae ha bisogno di ATP dalla glicolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-01",
+  "topic": "bm4-fosfoinositidi",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa libera la fosfolipasi C dal PIP₂?",
+  "opts": [
+   "IP₃ e DAG",
+   "Acido arachidonico",
+   "Acido fosfatidico",
+   "PIP₃"
+  ],
+  "ans": 0,
+  "why": "Il DAG resta in membrana; l'IP₃ diffonde fino al reticolo endoplasmatico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-02",
+  "topic": "bm4-fosfoinositidi",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quale fosfolipasi libera di solito l'acido arachidonico?",
+  "opts": [
+   "Fosfolipasi A2",
+   "Fosfolipasi A1",
+   "Fosfolipasi C",
+   "Fosfolipasi D"
+  ],
+  "ans": 0,
+  "why": "Taglia l'estere in posizione 2 del glicerolo; la D libera l'acido fosfatidico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-03",
+  "topic": "bm4-fosfoinositidi",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quale isoforma di PLC è attivata dai GPCR e quale dagli RTK?",
+  "opts": [
+   "PLCβ da Gq, PLCγ da RTK",
+   "PLCγ da Gq, PLCβ da RTK",
+   "PLCδ da entrambi",
+   "Solo PLCβ da entrambi"
+  ],
+  "ans": 0,
+  "why": "La PLCβ può essere attivata anche dalle βγ delle proteine Gi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-04",
+  "topic": "bm4-fosfoinositidi",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa serve per attivare la PKC?",
+  "opts": [
+   "DAG e Ca²⁺ (più fosfatidilserina di membrana)",
+   "Solo cAMP",
+   "Solo IP₃",
+   "cGMP"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ porta la PKC in membrana sulla fosfatidilserina, il DAG scopre il sito catalitico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-05",
+  "topic": "bm4-fosfoinositidi",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quale di questi processi è attivato dall'aumento di Ca²⁺ via IP₃?",
+  "opts": [
+   "La secrezione di enzimi digestivi pancreatici indotta dall'acetilcolina",
+   "La sintesi di glicogeno epatico",
+   "La produzione di cGMP da NO",
+   "La degradazione del cAMP"
+  ],
+  "ans": 0,
+  "why": "Anche secrezione di amilasi salivare e di insulina, contrazione della muscolatura liscia, glicogenolisi epatica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-06",
+  "topic": "bm4-fosfoinositidi",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa produce la PI3-chinasi e che cosa attiva?",
+  "opts": [
+   "PIP₃ (fosfato in posizione 3), che attiva la PKB",
+   "IP₃, che apre il RE",
+   "DAG, che attiva la PKC",
+   "cAMP, che attiva la PKA"
+  ],
+  "ans": 0,
+  "why": "Il PIP₃ non è substrato della PLC; la PKB favorisce sopravvivenza, captazione di glucosio e sintesi di glicogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-07",
+  "topic": "bm4-fosfoinositidi",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Dove taglia la fosfolipasi C?",
+  "opts": [
+   "Tra il carbonio 3 del glicerolo e il gruppo fosfato",
+   "Tra il C1 e l'acido grasso",
+   "Tra il fosfato e la testa polare",
+   "Tra il C2 e l'acido grasso"
+  ],
+  "ans": 0,
+  "why": "Così si stacca la testa polare (IP₃) con il suo fosfato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4p-08",
+  "topic": "bm4-fosfoinositidi",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quali proteine attivate dalla PKB controllano la proliferazione secondo la sbobina?",
+  "opts": [
+   "c-Myc, Bcl-2, Bad",
+   "fos e jun",
+   "Smad",
+   "STAT"
+  ],
+  "ans": 0,
+  "why": "fos e jun sono a valle della MAP chinasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh4p-01",
+  "topic": "bm4-fosfoinositidi",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Un ormone lega un GPCR accoppiato a Gq. Quale sequenza è corretta?",
+  "opts": [
+   "Gq-GTP → PLCβ → PIP₂ → IP₃ (rilascio di Ca²⁺ dal RE) + DAG → Ca²⁺ e DAG attivano la PKC",
+   "Gq → adenilato ciclasi → cAMP → PKA",
+   "Gq → PI3K → PIP₃ → PKC",
+   "Gq → PLCγ → PIP₃ → PKB",
+   "Gq → guanilato ciclasi → PKG"
+  ],
+  "ans": 0,
+  "why": "Lo stesso esito (PLC → IP₃ + DAG) si ottiene da un RTK attraverso la PLCγ.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh4p-02",
+  "topic": "bm4-fosfoinositidi",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "In una cellula manca la PI3-chinasi. Quale via dell'insulina resta più compromessa?",
+  "opts": [
+   "Quella Ras-indipendente: niente PIP₃, niente PKB, quindi meno traslocazione di GLUT4 e meno sintesi di glicogeno",
+   "Quella Ras-MAPK",
+   "La via del cAMP",
+   "La via JAK-STAT",
+   "Nessuna, il PIP₂ basta"
+  ],
+  "ans": 0,
+  "why": "Gli effetti immediati dell'insulina passano per IRS1 → PI3K → PIP₃ → PKB.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-01",
+  "topic": "bm4-asse",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Dove agiscono gli ormoni di rilascio prodotti dall'ipotalamo?",
+  "opts": [
+   "Sull'ipofisi anteriore",
+   "Direttamente sui tessuti bersaglio",
+   "Sul pancreas",
+   "Sulla midollare del surrene"
+  ],
+  "ans": 0,
+  "why": "L'ipofisi anteriore produce poi ACTH, TSH, LH, FSH, GH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-02",
+  "topic": "bm4-asse",
+  "level": "f",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quali ormoni rilascia l'ipofisi posteriore?",
+  "opts": [
+   "Ossitocina e vasopressina",
+   "ACTH e TSH",
+   "Insulina e glucagone",
+   "LH e FSH"
+  ],
+  "ans": 0,
+  "why": "L'ossitocina agisce su utero e ghiandola mammaria, la vasopressina sul riassorbimento renale di acqua.",
+  "note": "Sbobina di Biologia molecolare, lezione 4: dice che la vasopressina controlla il riassorbimento di acqua «a livello delle arteriole renali»; agisce sui tubuli distali e sui dotti collettori (acquaporine).",
+  "fixed": false
+ },
+ {
+  "id": "b4a-03",
+  "topic": "bm4-asse",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cosa sono i feedback ultrabreve, breve e lungo?",
+  "opts": [
+   "L'ormone ipotalamico inibisce l'ipotalamo; l'ormone ipofisario inibisce l'ipotalamo; l'ormone periferico inibisce ipofisi e ipotalamo",
+   "Tre ormoni diversi della tiroide",
+   "Tre tempi di risposta degli steroidi",
+   "Tre tipi di recettore"
+  ],
+  "ans": 0,
+  "why": "Esempio: T3 e T4 inibiscono TSH e TRH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-04",
+  "topic": "bm4-asse",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "In una tiroidite con T3 e T4 bassi, come sarà il TSH?",
+  "opts": [
+   "Alto, perché manca il feedback negativo",
+   "Basso",
+   "Normale",
+   "Assente"
+  ],
+  "ans": 0,
+  "why": "È uno dei criteri diagnostici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-05",
+  "topic": "bm4-asse",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto il TRH?",
+  "opts": [
+   "Tripeptide: piroglutammato, istidina, prolina ammidata al C-terminale",
+   "Dipeptide di glicina e tirosina",
+   "Proteina di 51 aa",
+   "Derivato del colesterolo"
+  ],
+  "ans": 0,
+  "why": "La sua identificazione valse il Nobel a Guillemin e Schally: gli ormoni di rilascio sono prodotti in quantità di nanogrammi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-06",
+  "topic": "bm4-asse",
+  "level": "a",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come funziona un dosaggio radioimmunologico di un ormone?",
+  "opts": [
+   "L'ormone non marcato del campione compete con quello radioattivo per l'anticorpo; con una curva standard si ricava la concentrazione",
+   "Si misura la radioattività dell'ormone endogeno",
+   "Si conta il numero di recettori",
+   "Si misura l'assorbanza a 280 nm"
+  ],
+  "ans": 0,
+  "why": "Più ormone non marcato c'è, meno ormone marcato resta legato all'anticorpo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-07",
+  "topic": "bm4-asse",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Nel test ELISA, che cosa rivela la presenza dell'ormone?",
+  "opts": [
+   "Un anticorpo secondario coniugato a un enzima che trasforma un substrato in un prodotto colorato",
+   "La radioattività",
+   "La fluorescenza dell'ormone",
+   "Il precipitato di proteine"
+  ],
+  "ans": 0,
+  "why": "L'intensità del colore è proporzionale alla quantità di ormone.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b4a-08",
+  "topic": "bm4-asse",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come si dosa l'acetilcolina con enzimi accoppiati?",
+  "opts": [
+   "Acetilcolinesterasi → colina; colina ossidasi → betaina + H₂O₂; perossidasi usa H₂O₂ per un prodotto colorato",
+   "Con un anticorpo marcato",
+   "Misurando il pH",
+   "Con la colina acetiltransferasi"
+  ],
+  "ans": 0,
+  "why": "Il colore è proporzionale all'H₂O₂ e quindi all'acetilcolina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh4a-01",
+  "topic": "bm4-asse",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Un paziente ha TSH molto basso e T3/T4 alti. Quale interpretazione è coerente con l'asse?",
+  "opts": [
+   "Eccesso di ormoni tiroidei di origine tiroidea che, con il feedback negativo, sopprime TSH e TRH",
+   "Deficit di TRH ipotalamico",
+   "Tiroidite con distruzione della ghiandola",
+   "Recettori ipofisari del TRH iperattivi",
+   "Mancanza di iodio"
+  ],
+  "ans": 0,
+  "why": "Se il problema fosse ipofisario (TSH alto) avremmo TSH e ormoni tiroidei entrambi alti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-01",
+  "topic": "bm5-insulina",
+  "level": "f",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quali cellule producono l'insulina?",
+  "opts": [
+   "Cellule β delle isole di Langerhans",
+   "Cellule α",
+   "Cellule δ",
+   "Cellule acinose"
+  ],
+  "ans": 0,
+  "why": "Le α producono glucagone, le δ somatostatina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-02",
+  "topic": "bm5-insulina",
+  "level": "f",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Da quanti amminoacidi è formata l'insulina matura?",
+  "opts": [
+   "51 (21 + 30)",
+   "29",
+   "86",
+   "110"
+  ],
+  "ans": 0,
+  "why": "PM ≈ 5808. Il glucagone ha 29 aa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-03",
+  "topic": "bm5-insulina",
+  "level": "m",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Come matura l'insulina?",
+  "opts": [
+   "Preproinsulina → (taglio del peptide segnale nel RE) proinsulina → (taglio del peptide C) insulina",
+   "Viene sintetizzata già matura",
+   "Proinsulina → preproinsulina → insulina",
+   "Per glicosilazione nel Golgi"
+  ],
+  "ans": 0,
+  "why": "Il taglio avviene vicino ad amminoacidi basici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-04",
+  "topic": "bm5-insulina",
+  "level": "m",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quali fattori stimolano la secrezione di insulina?",
+  "opts": [
+   "Glucosio, amminoacidi (arginina), acidi grassi, ormoni gastrointestinali, parasimpatico, sulfoniluree",
+   "Adrenalina e simpatico",
+   "Solo il glucosio",
+   "Glucagone e cortisolo soltanto"
+  ],
+  "ans": 0,
+  "why": "Simpatico e adrenalina (stress) la inibiscono.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-05",
+  "topic": "bm5-insulina",
+  "level": "m",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Qual è la proteina bersaglio fosforilata dal recettore dell'insulina, comune alle due vie?",
+  "opts": [
+   "IRS1 (substrato 1 del recettore dell'insulina)",
+   "SOS",
+   "PKA",
+   "STAT"
+  ],
+  "ans": 0,
+  "why": "Da IRS1 partono la via Ras-dipendente e quella Ras-indipendente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-06",
+  "topic": "bm5-insulina",
+  "level": "a",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Che differenza c'è tra effetti immediati e tardivi dell'insulina?",
+  "opts": [
+   "Immediati (minuti, 10⁻⁹–10⁻¹⁰ M): GLUT4 ed enzimi del glicogeno. Tardivi (ore, 10⁻⁸ M): espressione genica (meno gluconeogenesi, più sintesi di trigliceridi)",
+   "Sono identici",
+   "Gli immediati richiedono più insulina",
+   "I tardivi passano per il cAMP"
+  ],
+  "ans": 0,
+  "why": "I tardivi usano la via Ras-MAPK, gli immediati la via PI3K-PKB.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-07",
+  "topic": "bm5-insulina",
+  "level": "a",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Come la PKB favorisce la sintesi di glicogeno?",
+  "opts": [
+   "Fosforila e inattiva la GSK3, così la glicogeno sintasi resta defosforilata e attiva",
+   "Fosforila e attiva la glicogeno sintasi",
+   "Attiva la glicogeno fosforilasi",
+   "Aumenta il cAMP"
+  ],
+  "ans": 0,
+  "why": "In più attiva la PP1 e la traslocazione dei GLUT4.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-08",
+  "topic": "bm5-insulina",
+  "level": "a",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Come l'insulina contrasta l'azione del glucagone sulla PKA?",
+  "opts": [
+   "Attiva una fosfodiesterasi che abbassa il cAMP",
+   "Blocca il recettore del glucagone",
+   "Fosforila la PKA",
+   "Aumenta l'adenilato ciclasi"
+  ],
+  "ans": 0,
+  "why": "Con meno cAMP la PKA è meno attiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-09",
+  "topic": "bm5-insulina",
+  "level": "l",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Come riconosce la GSK3 il suo substrato?",
+  "opts": [
+   "Lega una fosfoserina di innesco (priming) introdotta dalla caseina chinasi II e poi fosforila le serine successive",
+   "Lega il glucosio",
+   "Riconosce una sequenza ricca di prolina",
+   "Lega l'UDP-glucosio"
+  ],
+  "ans": 0,
+  "why": "La PKB fosforila un sito di pseudosubstrato all'N-terminale della GSK3, che si ripiega su sé stessa e si inattiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-10",
+  "topic": "bm5-insulina",
+  "level": "l",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quale proteina nel muscolo, fosforilata dall'insulina, porta la PP1 sul granulo di glicogeno?",
+  "opts": [
+   "GM",
+   "IRS1",
+   "AKAP",
+   "Calmodulina"
+  ],
+  "ans": 0,
+  "why": "La PKA (adrenalina) fosforila la GM in un altro sito e la PP1 si stacca; un inibitore fosforilato dalla PKA la blocca.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "b5i-11",
+  "topic": "bm5-insulina",
+  "level": "l",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Perché il dosaggio del peptide C è utile in un diabetico trattato con insulina?",
+  "opts": [
+   "L'insulina farmaco non ha peptide C: il peptide C misura solo l'insulina endogena",
+   "Perché il peptide C abbassa la glicemia",
+   "Perché il peptide C è l'insulina attiva",
+   "Perché misura la resistenza all'insulina"
+  ],
+  "ans": 0,
+  "why": "È prodotto in quantità equimolare all'insulina endogena.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh5i-01",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Dopo un pasto, nel muscolo, la glicogeno sintasi è attiva e la fosforilasi inattiva. Quale combinazione di eventi dovuti all'insulina lo spiega?",
+  "opts": [
+   "PKB inattiva la GSK3 e la PP1 (portata da GM) defosforila sia la sintasi (attivandola) sia la fosforilasi (inattivandola)",
+   "La PKA fosforila entrambi gli enzimi",
+   "Il Ca²⁺ attiva la fosforilasi chinasi",
+   "La GSK3 fosforila e attiva la glicogeno sintasi",
+   "Il cAMP sale e attiva la PP1"
+  ],
+  "ans": 0,
+  "why": "Sintasi attiva da defosforilata, fosforilasi attiva da fosforilata: la PP1 sposta entrambe verso la sintesi.",
+  "note": "Sbobina di Biologia molecolare, lezione 5: in un passaggio scrive «la glicogeno sintasi è defosforilata (inattiva)»: defosforilata è attiva, come dice la sbobina stessa poco prima.",
+  "fixed": false
+ },
+ {
+  "id": "bh5i-02",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Un paziente ha glicemia alta, insulina alta e peptide C alto. Quale meccanismo è più probabile?",
+  "opts": [
+   "Resistenza all'insulina, per esempio per ridotta espressione o internalizzazione del recettore",
+   "Deficit di secrezione delle cellule β",
+   "Eccesso di somatostatina",
+   "Insulina esogena in eccesso",
+   "Mutazione del peptide C"
+  ],
+  "ans": 0,
+  "why": "Nel diabete di tipo 2 l'insulina c'è ma i tessuti non rispondono; nel tipo 1 manca la secrezione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh5i-03",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quale via mediata dall'insulina porta alla trascrizione di geni per glicolisi, glicogeno e acidi grassi?",
+  "opts": [
+   "IRS1 → Grb2 → SOS → Ras → Raf → MEK → MAP chinasi → fattori di trascrizione",
+   "IRS1 → PI3K → PIP₃ → PKB → GLUT4",
+   "Recettore → Gs → cAMP → CREB",
+   "Recettore → JAK → STAT",
+   "Recettore → PLCβ → IP₃ → Ca²⁺"
+  ],
+  "ans": 0,
+  "why": "È la via Ras-dipendente, responsabile degli effetti anabolici a lungo termine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "bh5i-04",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Perché le sulfoniluree aumentano la secrezione di insulina?",
+  "opts": [
+   "Chiudono i canali K⁺-ATP della cellula β, depolarizzando la membrana e facendo entrare Ca²⁺",
+   "Attivano direttamente il recettore dell'insulina",
+   "Inibiscono il glucagone",
+   "Aumentano i GLUT4",
+   "Bloccano la GSK3"
+  ],
+  "ans": 0,
+  "why": "La sbobina cita le sulfoniluree tra i farmaci che stimolano la secrezione.",
+  "note": "Il meccanismo sui canali K⁺-ATP non è spiegato nella sbobina, ma è lo stesso passaggio che usa il glucosio (ATP → chiusura dei canali K⁺ → depolarizzazione → Ca²⁺).",
+  "fixed": false
+ },
+ {
   "id": "d1c-01",
   "topic": "d1-chimica",
   "level": "f",
@@ -8846,6 +9900,333 @@
   "ans": 0,
   "why": "Se l'eliminazione fallisce si formano oligomeri e aggregati.",
   "note": "Sbobina di Biochimica I, p. 62: dice che l'ubiquitina «riconosce» le proteine misfoldate; la riconoscono gli enzimi della via di ubiquitinazione (E3 ligasi), che poi attaccano l'ubiquitina. Semplificazione accettabile.",
+  "fixed": false
+ },
+ {
+  "id": "d3q-01",
+  "topic": "d3-quaternaria",
+  "level": "f",
+  "page": "64",
+  "src": "Biochimica I",
+  "q": "Che cos'è la struttura quaternaria?",
+  "opts": [
+   "L'associazione di due o più catene polipeptidiche (subunità) in un complesso",
+   "Il ripiegamento 3D di una singola catena",
+   "La sequenza degli amminoacidi",
+   "L'insieme di α-eliche e foglietti β"
+  ],
+  "ans": 0,
+  "why": "Le subunità sono tenute insieme da interazioni deboli, interazioni idrofobiche e talvolta ponti disolfuro.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-02",
+  "topic": "d3-quaternaria",
+  "level": "f",
+  "page": "67",
+  "src": "Biochimica I",
+  "q": "Come si chiama una proteina formata da più subunità uguali?",
+  "opts": [
+   "Omo-oligomero",
+   "Etero-oligomero",
+   "Protomero",
+   "Monomero"
+  ],
+  "ans": 0,
+  "why": "Se le subunità sono diverse è un etero-oligomero (es. l'anticorpo).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-03",
+  "topic": "d3-quaternaria",
+  "level": "m",
+  "page": "66",
+  "src": "Biochimica I",
+  "q": "Quali sono i vantaggi della struttura quaternaria?",
+  "opts": [
+   "Stabilità, economia genetica, siti attivi tra subunità, cooperatività",
+   "Solo una maggiore solubilità",
+   "Maggiore velocità di traduzione di un gene lungo",
+   "Resistenza alle proteasi e niente altro"
+  ],
+  "ans": 0,
+  "why": "Un gene per 100 aa è più piccolo e si trascrive e traduce in modo più efficiente di uno per 700 aa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-04",
+  "topic": "d3-quaternaria",
+  "level": "m",
+  "page": "66",
+  "src": "Biochimica I",
+  "q": "Che cos'è la cooperatività in una proteina multimerica?",
+  "opts": [
+   "Il cambio conformazionale di una subunità si trasmette alle altre tramite i contatti tra subunità",
+   "La capacità di legare più substrati diversi",
+   "La formazione di ponti disolfuro tra subunità",
+   "La polimerizzazione in fibre"
+  ],
+  "ans": 0,
+  "why": "È alla base del comportamento dell'emoglobina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-05",
+  "topic": "d3-quaternaria",
+  "level": "a",
+  "page": "65",
+  "src": "Biochimica I",
+  "q": "Perché una proteina fatta di L-amminoacidi non può avere subunità disposte come immagini speculari?",
+  "opts": [
+   "L'immagine speculare richiederebbe una subunità fatta di D-amminoacidi",
+   "Perché i ponti disolfuro lo impediscono",
+   "Perché le subunità sono sempre diverse",
+   "Perché la simmetria ciclica è vietata"
+  ],
+  "ans": 0,
+  "why": "Sono possibili solo simmetrie di rotazione (ciclica, diedrica), non di inversione o riflessione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-06",
+  "topic": "d3-quaternaria",
+  "level": "a",
+  "page": "67",
+  "src": "Biochimica I",
+  "q": "Perché i microtubuli polimerizzano e depolimerizzano molto rapidamente?",
+  "opts": [
+   "I protomeri di tubulina (dimeri αβ) sono associati in modo stabile ma non covalente",
+   "Perché le tubuline sono unite da ponti disolfuro",
+   "Perché la tubulina è una proteina fibrosa a tripla elica",
+   "Perché ogni protomero è un monomero"
+  ],
+  "ans": 0,
+  "why": "Il protomero è l'unità che si ripete: per la tubulina è il dimero αβ.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-07",
+  "topic": "d3-quaternaria",
+  "level": "l",
+  "page": "64",
+  "src": "Biochimica I",
+  "q": "In quale tipo di associazione due subunità si affacciano con la stessa superficie in modo complementare?",
+  "opts": [
+   "Isologa",
+   "Eterologa",
+   "Eterologa aperta",
+   "Diedrica"
+  ],
+  "ans": 0,
+  "why": "Nell'eterologa le subunità si concatenano traslando lungo un asse; due associazioni isologhe ruotate danno il tetramero isologo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3q-08",
+  "topic": "d3-quaternaria",
+  "level": "l",
+  "page": "67",
+  "src": "Biochimica I",
+  "q": "Quante subunità ha GroES e come si definisce?",
+  "opts": [
+   "7, è un eptamero a simmetria ciclica",
+   "14, è un tetradecamero",
+   "4, è un tetramero diedrico",
+   "2, è un dimero isologo"
+  ],
+  "ans": 0,
+  "why": "Visto dal basso forma un coperchio regolare: esempio di simmetria ciclica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "dh3q-01",
+  "topic": "d3-quaternaria",
+  "level": "h",
+  "page": "65",
+  "src": "Biochimica I",
+  "q": "Un tetramero di subunità identiche ha due assi di rotazione di ordine 2 perpendicolari tra loro. Che simmetria ha?",
+  "opts": [
+   "Diedrica D2, la più comune nei tetrameri",
+   "Ciclica C4",
+   "Speculare",
+   "Elicoidale",
+   "Nessuna simmetria"
+  ],
+  "ans": 0,
+  "why": "La simmetria diedrica si ha quando un asse di rotazione è perpendicolare a un asse doppio: tipica dei tetrameri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "dh3q-02",
+  "topic": "d3-quaternaria",
+  "level": "h",
+  "page": "66",
+  "src": "Biochimica I",
+  "q": "Un anticorpo è formato da 2 catene pesanti e 2 leggere unite da ponti disolfuro. Come si classifica?",
+  "opts": [
+   "Etero-oligomero tetramerico, con ponti disolfuro intermolecolari che ne impediscono la dissociazione",
+   "Omo-tetramero a simmetria ciclica",
+   "Proteina monomerica con quattro domini",
+   "Dimero isologo",
+   "Polimero di protomeri come la tubulina"
+  ],
+  "ans": 0,
+  "why": "Le catene sono diverse a due a due; i ponti disolfuro stabilizzano anche i singoli domini, tipico delle proteine extracellulari.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-01",
+  "topic": "d3-tecniche",
+  "level": "f",
+  "page": "53",
+  "src": "Biochimica I",
+  "q": "Che cos'è il proteoma?",
+  "opts": [
+   "L'insieme delle proteine espresse da una cellula in un dato momento",
+   "L'insieme dei geni",
+   "L'insieme delle proteine di tutti i tessuti, sempre uguale",
+   "La sequenza di una proteina"
+  ],
+  "ans": 0,
+  "why": "Cambia con il tipo cellulare, lo sviluppo e il ciclo cellulare: è l'espressione funzionale del genoma.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-02",
+  "topic": "d3-tecniche",
+  "level": "f",
+  "page": "53",
+  "src": "Biochimica I",
+  "q": "Su quali proprietà si basano le strategie di purificazione delle proteine?",
+  "opts": [
+   "Solubilità, carica, dimensione, capacità di legare altre molecole",
+   "Solo la sequenza",
+   "Solo il colore",
+   "Il numero di ponti disolfuro"
+  ],
+  "ans": 0,
+  "why": "Si parte da un estratto cellulare totale e si separa sfruttando queste differenze.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-03",
+  "topic": "d3-tecniche",
+  "level": "m",
+  "page": "53",
+  "src": "Biochimica I",
+  "q": "Che rapporto c'è tra purezza e resa in una purificazione?",
+  "opts": [
+   "Più alta è la purezza richiesta, più bassa è la resa",
+   "Purezza e resa crescono insieme",
+   "La resa è sempre il 100%",
+   "Non c'è relazione"
+  ],
+  "ans": 0,
+  "why": "A ogni passaggio si perde un po' di proteina; per la cristallografia serve una purezza altissima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-04",
+  "topic": "d3-tecniche",
+  "level": "m",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Che cosa si separa con una centrifugazione a bassa velocità (500 g per 10 min) dell'omogenato?",
+  "opts": [
+   "Cellule non lisate e frammenti grossolani, che vanno sul fondo",
+   "I ribosomi",
+   "Le proteine solubili",
+   "I microsomi"
+  ],
+  "ans": 0,
+  "why": "Nel sopranatante restano membrane, organuli più piccoli e molecole solubili.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-05",
+  "topic": "d3-tecniche",
+  "level": "a",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Perché per la cristallografia ai raggi X serve una proteina estremamente pura?",
+  "opts": [
+   "Un cristallo si ottiene solo da sostanze molto pure",
+   "Perché le impurità assorbono i raggi X",
+   "Perché la proteina va denaturata",
+   "Perché serve una grande resa"
+  ],
+  "ans": 0,
+  "why": "Il grado di purezza dipende dagli studi che si vogliono fare.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-06",
+  "topic": "d3-tecniche",
+  "level": "l",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Che caratteristiche ha un'ultracentrifuga?",
+  "opts": [
+   "Fino a ~80.000 rpm e 600.000 g, camera sotto vuoto, refrigerata e blindata",
+   "Fino a 3000 rpm, a temperatura ambiente",
+   "Usa un campo elettrico",
+   "Funziona solo con proteine precipitate"
+  ],
+  "ans": 0,
+  "why": "Si usa per separare organuli e macromolecole; le centrifughe comuni per cellule, batteri e precipitati con solfato d'ammonio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "d3x-07",
+  "topic": "d3-tecniche",
+  "level": "l",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "In quale ordine sedimentano le frazioni con centrifugazioni via via più forti?",
+  "opts": [
+   "Nuclei e cellule intere → mitocondri → microsomi → citosol (sopranatante finale)",
+   "Microsomi → mitocondri → nuclei",
+   "Citosol → nuclei → mitocondri",
+   "Tutte insieme a 500 g"
+  ],
+  "ans": 0,
+  "why": "È il principio della centrifugazione differenziale.",
+  "note": "Sbobina di Biochimica I, p. 54: indica 100.000 g per separare i mitocondri. Di norma i mitocondri sedimentano già a ~10.000–20.000 g; a 100.000 g si raccoglie la frazione microsomiale.",
+  "fixed": false
+ },
+ {
+  "id": "dh3x-01",
+  "topic": "d3-tecniche",
+  "level": "h",
+  "page": "53–54",
+  "src": "Biochimica I",
+  "q": "Vuoi studiare un enzima della matrice mitocondriale. Quale primo passaggio ha più senso dopo l'omogeneizzazione?",
+  "opts": [
+   "Centrifugazione differenziale per isolare la frazione mitocondriale, poi purificazione per carica, dimensione o affinità",
+   "Cristallizzare subito l'omogenato",
+   "Ultracentrifugare a 600.000 g e usare il sopranatante",
+   "Precipitare tutte le proteine con urea 8 M",
+   "Ridurre i ponti disolfuro con β-mercaptoetanolo"
+  ],
+  "ans": 0,
+  "why": "Separare prima l'organulo riduce molto il numero di proteine da cui purificare; l'urea denaturerebbe l'enzima.",
+  "note": null,
   "fixed": false
  },
  {

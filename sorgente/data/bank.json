@@ -4320,6 +4320,744 @@
   "fixed": false
  },
  {
+  "id": "m3m-07",
+  "topic": "m3-malattie",
+  "level": "f",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Come si chiama la condizione in cui tutti i mitocondri di una cellula sono mutati?",
+  "opts": [
+   "Omoplasmia",
+   "Eteroplasmia",
+   "Aneuploidia",
+   "Mosaicismo nucleare"
+  ],
+  "ans": 0,
+  "why": "Con una proporzione variabile di mitocondri mutati e sani si parla di eteroplasmia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-08",
+  "topic": "m3-malattie",
+  "level": "f",
+  "page": "111",
+  "src": "Biochimica II",
+  "q": "Perché lo zigote non contiene mitocondri paterni?",
+  "opts": [
+   "Lo spermatozoo ne ha pochi e vengono degradati subito dopo la fecondazione",
+   "Lo spermatozoo non ha mitocondri",
+   "Vengono espulsi con il corpo polare",
+   "Il DNA mitocondriale paterno è identico a quello materno"
+  ],
+  "ans": 0,
+  "why": "Per questo l'eredità del mtDNA è esclusivamente materna.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-09",
+  "topic": "m3-malattie",
+  "level": "m",
+  "page": "111",
+  "src": "Biochimica II",
+  "q": "Oltre alle 13 proteine, che cosa codifica il DNA mitocondriale?",
+  "opts": [
+   "rRNA e tRNA",
+   "Tutti gli enzimi del ciclo di Krebs",
+   "Le proteine del poro mitocondriale",
+   "Gli istoni mitocondriali"
+  ],
+  "ans": 0,
+  "why": "Le malattie mitocondriali possono dipendere anche da geni nucleari che regolano la funzione dei mitocondri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-10",
+  "topic": "m3-malattie",
+  "level": "m",
+  "page": "112",
+  "src": "Biochimica II",
+  "q": "Nella cellula β, perché serve tanto ATP per secernere insulina?",
+  "opts": [
+   "L'ATP chiude i canali K⁺, la membrana si depolarizza ed entra Ca²⁺ che fa uscire l'insulina",
+   "L'ATP serve a sintetizzare il glucosio",
+   "L'ATP apre i GLUT2",
+   "L'ATP fosforila direttamente l'insulina"
+  ],
+  "ans": 0,
+  "why": "Glucosio → GLUT2 → glicolisi e Krebs → ATP → chiusura dei canali K⁺ → Ca²⁺ → esocitosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-11",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "113",
+  "src": "Biochimica II",
+  "q": "Secondo la sbobina, come insulino-resistenza e disfunzione β si collegano nel diabete di tipo 2?",
+  "opts": [
+   "L'insulino-resistenza aumenta i radicali, che inducono UCP2 nelle cellule β: meno ATP e meno secrezione di insulina",
+   "L'insulino-resistenza distrugge le cellule β per autoimmunità",
+   "L'UCP2 aumenta la sintesi di ATP",
+   "I radicali aumentano la secrezione di insulina"
+  ],
+  "ans": 0,
+  "why": "La somma di disfunzione β e insulino-resistenza produce il diabete di tipo 2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-12",
+  "topic": "m3-malattie",
+  "level": "a",
+  "page": "114",
+  "src": "Biochimica II",
+  "q": "Perché nell'anziano si pensa che aumentino i radicali liberi?",
+  "opts": [
+   "Aumenta l'infiammazione generale (parametri infiammatori più alti), che produce radicali",
+   "Perché diminuisce il numero di mitocondri a zero",
+   "Perché il mtDNA paterno si attiva",
+   "Perché cala l'ossigeno nel sangue"
+  ],
+  "ans": 0,
+  "why": "Per questo con l'età si consiglia di aumentare gli antiossidanti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-13",
+  "topic": "m3-malattie",
+  "level": "l",
+  "page": "113",
+  "src": "Biochimica II",
+  "q": "Qual è l'ipotesi alternativa a quella del danno al mtDNA per spiegare l'invecchiamento?",
+  "opts": [
+   "Un difetto della divisione dei mitocondri",
+   "L'accumulo di mitocondri paterni",
+   "La perdita dell'ATP sintasi",
+   "Un eccesso di UCP1"
+  ],
+  "ans": 0,
+  "why": "Tutte le ipotesi concordano sul ruolo centrale del mitocondrio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m3m-14",
+  "topic": "m3-malattie",
+  "level": "l",
+  "page": "111",
+  "src": "Biochimica II",
+  "q": "Quali sintomi possono dare le malattie mitocondriali?",
+  "opts": [
+   "Disturbi neurologici, disabilità fisiche, problemi di crescita, disturbi metabolici e di fertilità",
+   "Solo anemia",
+   "Solo cecità",
+   "Solo infezioni ricorrenti"
+  ],
+  "ans": 0,
+  "why": "Possono colpire qualsiasi organo; non c'è una cura, si gestiscono i sintomi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-12",
+  "topic": "m4-degradazione",
+  "level": "f",
+  "page": "115",
+  "src": "Biochimica II",
+  "q": "Che tipo di polisaccaride è il glicogeno?",
+  "opts": [
+   "Omopolisaccaride ramificato di glucosio",
+   "Eteropolisaccaride di glucosio e galattosio",
+   "Polimero lineare di fruttosio",
+   "Disaccaride"
+  ],
+  "ans": 0,
+  "why": "Legami α-1,4 nelle catene e α-1,6 nelle ramificazioni; al centro c'è la glicogenina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-13",
+  "topic": "m4-degradazione",
+  "level": "f",
+  "page": "116",
+  "src": "Biochimica II",
+  "q": "Da quale estremità la glicogeno fosforilasi stacca il glucosio?",
+  "opts": [
+   "Estremità non riducenti",
+   "Estremità riducente",
+   "Dal centro della molecola",
+   "Dalla glicogenina"
+  ],
+  "ans": 0,
+  "why": "Ogni ramificazione termina con un'estremità non riducente: tanti punti d'attacco.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-14",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "115",
+  "src": "Biochimica II",
+  "q": "Quali sono i tre enzimi della degradazione del glicogeno?",
+  "opts": [
+   "Glicogeno fosforilasi, transferasi, α-1,6-glucosidasi",
+   "Glicogeno sintasi, ramificante, glicogenina",
+   "Amilasi, maltasi, lattasi",
+   "Esochinasi, glucochinasi, fosfoglucomutasi"
+  ],
+  "ans": 0,
+  "why": "Transferasi e α-1,6-glucosidasi sono le due attività dell'enzima deramificante.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-15",
+  "topic": "m4-degradazione",
+  "level": "m",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Che cosa succede al glucosio 6-P nel muscolo e nel fegato dopo la glicogenolisi?",
+  "opts": [
+   "Muscolo: solo glicolisi. Fegato: diventa glucosio libero che va nel sangue",
+   "In entrambi va nel sangue",
+   "Muscolo: va nel sangue. Fegato: glicolisi",
+   "In entrambi diventa UDP-glucosio"
+  ],
+  "ans": 0,
+  "why": "Il glicogeno muscolare ha funzione energetica, quello epatico mantiene la glicemia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-16",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Perché le cellule extraepatiche, anche con una glucosio 6-fosfatasi, non riuscirebbero a esportare glucosio?",
+  "opts": [
+   "L'esochinasi, a Km molto bassa, rifosforilerebbe subito il glucosio libero",
+   "Perché non hanno GLUT",
+   "Perché il glucosio libero è tossico",
+   "Perché la fosforilasi non funziona fuori dal fegato"
+  ],
+  "ans": 0,
+  "why": "Nel fegato la glucochinasi fosforila il glucosio solo quando la sua concentrazione è alta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-17",
+  "topic": "m4-degradazione",
+  "level": "a",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Come lavora il sistema della glucosio 6-fosfatasi nel reticolo endoplasmatico?",
+  "opts": [
+   "T1 porta dentro il G6P, l'enzima lo idrolizza nel lume, T2 fa uscire il fosfato e T3 il glucosio",
+   "L'enzima lavora nel citosol senza trasportatori",
+   "Il glucosio esce dal RE con i GLUT4",
+   "Il G6P viene idrolizzato nel mitocondrio"
+  ],
+  "ans": 0,
+  "why": "Il glucosio esce poi dall'epatocita con i GLUT2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-18",
+  "topic": "m4-degradazione",
+  "level": "l",
+  "page": "118",
+  "src": "Biochimica II",
+  "q": "Com'è fatta la glicogeno fosforilasi e come è legato il suo coenzima?",
+  "opts": [
+   "Omodimero; il piridossal fosfato è legato a un residuo di lisina",
+   "Monomero; PLP legato a una serina",
+   "Tetramero αβγδ; PLP libero",
+   "Omodimero; FAD legato a una cisteina"
+  ],
+  "ans": 0,
+  "why": "Qui il PLP usa il suo gruppo fosfato come catalizzatore acido-base, non il gruppo aldeidico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4d-19",
+  "topic": "m4-degradazione",
+  "level": "l",
+  "page": "117",
+  "src": "Biochimica II",
+  "q": "Perché la glicogenolisi deve produrre molto glucosio per farlo uscire dal fegato?",
+  "opts": [
+   "I GLUT2 hanno bassa affinità: funzionano solo con glucosio intracellulare abbondante",
+   "Perché i GLUT2 consumano ATP",
+   "Perché il glucosio esce per esocitosi",
+   "Perché serve a saturare l'esochinasi"
+  ],
+  "ans": 0,
+  "why": "È uno dei motivi delle tante ramificazioni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-10",
+  "topic": "m4-sintesi",
+  "level": "f",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "Quali sono i tre enzimi della sintesi del glicogeno?",
+  "opts": [
+   "Glicogeno sintasi, enzima ramificante, glicogenina",
+   "Fosforilasi, transferasi, glucosidasi",
+   "Esochinasi, fosfoglucomutasi, glucosio 6-fosfatasi",
+   "PP1, PKA, GSK3"
+  ],
+  "ans": 0,
+  "why": "La glicogeno sintasi è l'enzima principale e quello regolato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-11",
+  "topic": "m4-sintesi",
+  "level": "f",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Quale nucleotide fornisce l'energia per aggiungere glucosio al glicogeno?",
+  "opts": [
+   "UTP",
+   "ATP",
+   "GTP",
+   "CTP"
+  ],
+  "ans": 0,
+  "why": "UTP + glucosio 1-P → UDP-glucosio + PPi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-12",
+  "topic": "m4-sintesi",
+  "level": "m",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Che legame forma la glicogeno sintasi?",
+  "opts": [
+   "α-1,4",
+   "α-1,6",
+   "β-1,4",
+   "β-1,6"
+  ],
+  "ans": 0,
+  "why": "I legami α-1,6 delle ramificazioni li forma l'enzima ramificante.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-13",
+  "topic": "m4-sintesi",
+  "level": "m",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Perché la glicogeno sintasi ha bisogno della glicogenina?",
+  "opts": [
+   "Non può iniziare una catena da zero: serve un primer, che la glicogenina costruisce su sé stessa",
+   "Perché la glicogenina fornisce l'UTP",
+   "Perché la glicogenina forma le ramificazioni",
+   "Perché la glicogenina la fosforila"
+  ],
+  "ans": 0,
+  "why": "La glicogenina aggiunge circa 7 glucosi alla propria tirosina e poi resta al centro, senza attività catalitica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-14",
+  "topic": "m4-sintesi",
+  "level": "a",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Perché una struttura ramificata è vantaggiosa per la sintesi e la degradazione?",
+  "opts": [
+   "Le tante estremità permettono di aggiungere o staccare molti glucosi contemporaneamente",
+   "Perché rende il glicogeno più solubile in acqua del glucosio libero",
+   "Perché i rami contengono UTP",
+   "Perché la glicogenina sta su ogni ramo"
+  ],
+  "ans": 0,
+  "why": "Inoltre accumulare glucosio libero creerebbe una pressione osmotica enorme.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-15",
+  "topic": "m4-sintesi",
+  "level": "a",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "In quali situazioni il glicogeno deve essere riformato?",
+  "opts": [
+   "Dopo l'attività fisica (muscolo) e dopo la notte o tra i pasti (fegato), quando arriva glucosio",
+   "Solo durante il digiuno",
+   "Solo durante lo sforzo",
+   "Mai nel muscolo"
+  ],
+  "ans": 0,
+  "why": "La sintesi è stimolata dall'insulina dopo i pasti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4s-16",
+  "topic": "m4-sintesi",
+  "level": "l",
+  "page": "124",
+  "src": "Biochimica II",
+  "q": "Dove si era già incontrato l'UDP-glucosio nel corso?",
+  "opts": [
+   "Nel metabolismo del galattosio",
+   "Nella via dei pentoso fosfati",
+   "Nel ciclo di Krebs",
+   "Nella β-ossidazione"
+  ],
+  "ans": 0,
+  "why": "Lì serve all'UDP-galattosio 4-epimerasi e alla uridiltransferasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-11",
+  "topic": "m4-regolazione",
+  "level": "f",
+  "page": "119",
+  "src": "Biochimica II",
+  "q": "Come si chiamano le due forme della glicogeno fosforilasi?",
+  "opts": [
+   "Fosforilasi a (fosforilata, più attiva) e b (defosforilata, meno attiva)",
+   "Fosforilasi a (defosforilata) e b (fosforilata)",
+   "Fosforilasi R e T, entrambe fosforilate",
+   "Fosforilasi I e D"
+  ],
+  "ans": 0,
+  "why": "Ogni forma esiste negli stati R (attivo) e T (meno attivo).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-12",
+  "topic": "m4-regolazione",
+  "level": "f",
+  "page": "125",
+  "src": "Biochimica II",
+  "q": "Che effetto ha il glucosio 6-fosfato sulla glicogeno sintasi?",
+  "opts": [
+   "La attiva (effettore allosterico positivo)",
+   "La inibisce",
+   "La fosforila",
+   "Nessuno"
+  ],
+  "ans": 0,
+  "why": "Sposta la sintasi b dallo stato T allo stato R.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-13",
+  "topic": "m4-regolazione",
+  "level": "m",
+  "page": "120",
+  "src": "Biochimica II",
+  "q": "Quali molecole inibiscono la fosforilasi b muscolare riportandola nello stato T?",
+  "opts": [
+   "ATP e glucosio 6-P",
+   "AMP e Ca²⁺",
+   "cAMP e glucagone",
+   "Glucosio 1-P e UTP"
+  ],
+  "ans": 0,
+  "why": "Con tanto ATP la glicolisi è inutile; con tanto G6P è inutile degradare il glicogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-14",
+  "topic": "m4-regolazione",
+  "level": "m",
+  "page": "125",
+  "src": "Biochimica II",
+  "q": "Quale forma della glicogeno sintasi è attiva?",
+  "opts": [
+   "Forma a, defosforilata",
+   "Forma b, fosforilata",
+   "Forma a, fosforilata",
+   "Entrambe allo stesso modo"
+  ],
+  "ans": 0,
+  "why": "È l'opposto della fosforilasi: la stessa fosforilazione spegne la sintesi e accende la degradazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-15",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "126",
+  "src": "Biochimica II",
+  "q": "Da che cosa è attivata e da che cosa è inibita la PP1?",
+  "opts": [
+   "Attivata da insulina, glucosio 6-P e glucosio; inibita da glucagone e adrenalina",
+   "Attivata da glucagone; inibita da insulina",
+   "Attivata da AMP; inibita da ATP",
+   "Attivata da Ca²⁺; inibita da glucosio"
+  ],
+  "ans": 0,
+  "why": "La PP1 defosforila fosforilasi a, fosforilasi chinasi e glicogeno sintasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-16",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "127",
+  "src": "Biochimica II",
+  "q": "Che differenza c'è tra glicogeno sintasi e fosforilasi nei siti di fosforilazione?",
+  "opts": [
+   "La sintasi ha siti multipli (più serine fosforilate), la fosforilasi uno solo",
+   "La fosforilasi ha più siti",
+   "Nessuna delle due viene fosforilata",
+   "Hanno gli stessi siti"
+  ],
+  "ans": 0,
+  "why": "La GSK3 fosforila in sequenza più serine dopo l'innesco della caseina chinasi 2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-17",
+  "topic": "m4-regolazione",
+  "level": "a",
+  "page": "130",
+  "src": "Biochimica II",
+  "q": "Nel fegato, perché la fosforilasi a nello stato R blocca la sintesi del glicogeno?",
+  "opts": [
+   "Lega e inibisce la PP1 sulla GL: finché è in R la PP1 non può attivare la sintasi",
+   "Perché consuma tutto l'UDP-glucosio",
+   "Perché fosforila la sintasi",
+   "Perché degrada la glicogenina"
+  ],
+  "ans": 0,
+  "why": "Il glucosio la porta in T, la PP1 si libera e defosforila prima la fosforilasi e poi la sintasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-18",
+  "topic": "m4-regolazione",
+  "level": "l",
+  "page": "129",
+  "src": "Biochimica II",
+  "q": "Quali siti di GM vengono fosforilati e con quale effetto?",
+  "opts": [
+   "P1 (chinasi insulino-sensibile): attiva la PP1. P2 (adrenalina/PKA): la PP1 si stacca",
+   "P1 e P2 dalla GSK3: inattivano la sintasi",
+   "Solo P1, dall'adrenalina",
+   "P2 dall'insulina: attiva la fosforilasi"
+  ],
+  "ans": 0,
+  "why": "L'adrenalina fosforila anche un inibitore che si lega alla PP1 e la blocca del tutto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4r-19",
+  "topic": "m4-regolazione",
+  "level": "l",
+  "page": "119",
+  "src": "Biochimica II",
+  "q": "Fosforilasi muscolare ed epatica sono:",
+  "opts": [
+   "Isoenzimi: stessa reazione, geni diversi, diversa localizzazione e regolazione",
+   "Lo stesso enzima con la stessa regolazione",
+   "Enzimi con reazioni diverse",
+   "Forme a e b dello stesso gene"
+  ],
+  "ans": 0,
+  "why": "L'AMP attiva solo la muscolare, il glucosio inibisce solo l'epatica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-07",
+  "topic": "m4-ormoni",
+  "level": "f",
+  "page": "120",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi ha il glucagone e chi lo produce?",
+  "opts": [
+   "29, cellule α del pancreas",
+   "51, cellule β",
+   "14, cellule δ",
+   "9, ipofisi posteriore"
+  ],
+  "ans": 0,
+  "why": "È prodotto in ipoglicemia, lontano dai pasti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-08",
+  "topic": "m4-ormoni",
+  "level": "f",
+  "page": "121",
+  "src": "Biochimica II",
+  "q": "Chi produce l'adrenalina?",
+  "opts": [
+   "La midollare del surrene",
+   "La corticale del surrene",
+   "Il pancreas",
+   "L'ipofisi"
+  ],
+  "ans": 0,
+  "why": "È l'ormone dell'attacco e della fuga; è un ormone di natura amminoacidica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-09",
+  "topic": "m4-ormoni",
+  "level": "m",
+  "page": "120",
+  "src": "Biochimica II",
+  "q": "Che tipo di recettore ha il glucagone?",
+  "opts": [
+   "Recettore a 7 eliche transmembrana accoppiato a proteine G",
+   "Recettore tirosin-chinasico",
+   "Recettore intracellulare",
+   "Canale ionico"
+  ],
+  "ans": 0,
+  "why": "Gα-GTP attiva l'adenilato ciclasi → cAMP → PKA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-10",
+  "topic": "m4-ormoni",
+  "level": "m",
+  "page": "121",
+  "src": "Biochimica II",
+  "q": "Di quali subunità è formata la fosforilasi chinasi?",
+  "opts": [
+   "(αβγδ)₄",
+   "α₂β₂",
+   "Un solo monomero",
+   "(αβγ)₂"
+  ],
+  "ans": 0,
+  "why": "La δ è simile alla calmodulina e lega il Ca²⁺ con mani EF.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-11",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "121",
+  "src": "Biochimica II",
+  "q": "Che cosa serve per la completa attivazione della fosforilasi chinasi muscolare?",
+  "opts": [
+   "Sia la fosforilazione da PKA sia il Ca²⁺: ciascuno da solo la attiva solo parzialmente",
+   "Solo il cAMP",
+   "Solo l'AMP",
+   "Solo l'insulina"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ rilasciato con la contrazione basta per gli sforzi leggeri, senza adrenalina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-12",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "121–122",
+  "src": "Biochimica II",
+  "q": "Oltre al metabolismo, che cosa fa l'adrenalina per preparare all'azione?",
+  "opts": [
+   "Vasocostrizione cutanea e splancnica, che ridistribuisce il sangue verso i muscoli",
+   "Vasodilatazione cutanea",
+   "Abbassa la glicemia",
+   "Blocca la glicolisi muscolare"
+  ],
+  "ans": 0,
+  "why": "Aumenta energia, ossigeno e zucchero disponibili; nel fegato attiva la glicogenolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-13",
+  "topic": "m4-ormoni",
+  "level": "a",
+  "page": "132",
+  "src": "Biochimica II",
+  "q": "Come l'insulina riduce la degradazione del glicogeno?",
+  "opts": [
+   "Attiva la PP1, che defosforila e spegne fosforilasi chinasi e glicogeno fosforilasi",
+   "Attiva la PKA",
+   "Aumenta il cAMP",
+   "Fosforila la fosforilasi"
+  ],
+  "ans": 0,
+  "why": "In parallelo la PKB inibisce la GSK3 e la sintasi resta attiva.",
+  "note": "Sbobina di Biochimica II, p. 132: la «proteina chinasi insulino sensibile» che attiva la PP1 è chiamata PI3K. La PI3K è una chinasi lipidica (produce PIP₃) a monte della PKB; la chinasi che fosforila GM nel sito 1 è un'altra proteina. Non è nelle sbobine, ma è la versione del Lehninger.",
+  "fixed": false
+ },
+ {
+  "id": "m4o-14",
+  "topic": "m4-ormoni",
+  "level": "l",
+  "page": "123",
+  "src": "Biochimica II",
+  "q": "Che cosa illustra lo schema della cascata glucagone → glucosio nel sangue?",
+  "opts": [
+   "L'amplificazione: poche molecole di ormone producono 10.000 e più molecole di glucosio",
+   "Un ciclo futile",
+   "Un feedback negativo",
+   "Una via senza enzimi"
+  ],
+  "ans": 0,
+  "why": "Ogni enzima attivato ne attiva molti al passaggio successivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m4o-15",
+  "topic": "m4-ormoni",
+  "level": "l",
+  "page": "132",
+  "src": "Biochimica II",
+  "q": "Quando c'è glucagone, oltre a degradare il glicogeno, che cosa fa il fegato con la glicolisi?",
+  "opts": [
+   "La diminuisce: il glucosio formato deve uscire e non essere usato dall'epatocita",
+   "La aumenta",
+   "Non cambia",
+   "La trasferisce nel mitocondrio"
+  ],
+  "ans": 0,
+  "why": "Il fegato in ipoglicemia lavora per il resto dell'organismo.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "m5f-01",
   "topic": "m5-fonti",
   "level": "f",

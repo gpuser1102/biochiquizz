@@ -5,7 +5,6 @@ Livelli:
   m = medio   (collegamenti: perché, bilanci, regolazione di base)
   a = alta    (padronanza: ragionamento su scenari, calcoli, interazioni tra vie)
   l = 30 e lode (rifiniture tecniche: nome esatto di enzimi e composti, numerazioni, sigle, isoenzimi)
-  h = hard (domande ragionate in stile esame, 5 opzioni: scenari, conseguenze, integrazione tra vie). Sono le sole usate in Hard mode.
 
 ans = indice della risposta giusta in opts. fixed=True se l'ordine delle opzioni non va mescolato
 (es. "Tutte le precedenti"). src = sbobina di riferimento.
@@ -16,8 +15,7 @@ BANK = []
 
 
 def q(id, topic, level, page, text, opts, ans, why, note=None, fixed=False, src="Biochimica II"):
-    assert level in "fmalh" and len(level) == 1, id
-    if level == "h": assert len(opts) == 5, id
+    assert level in "fmal" and len(level) == 1, id
     assert 0 <= ans < len(opts), id
     assert len(set(opts)) == len(opts), id
     BANK.append(dict(id=id, topic=topic, level=level, page=page, src=src, q=text, opts=opts, ans=ans,

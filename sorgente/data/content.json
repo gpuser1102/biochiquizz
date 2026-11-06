@@ -1,1755 +1,1210 @@
 {
-  "version": "0.9.1",
-  "topics": [
+ "version": "0.7.0",
+ "topics": [
+  {
+   "subject": "Biochimica II",
+   "blocks": [
     {
-      "subject": "Biochimica II",
-      "blocks": [
-        {
-          "name": "Ripasso di propedeutica e Biochimica I",
-          "pages": "5–30",
-          "topics": [
-            {
-              "id": "m1-catabolismo",
-              "name": "Catabolismo e anabolismo",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m1-termodinamica",
-              "name": "Termodinamica",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m1-atp",
-              "name": "ATP",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m1-coenzimi",
-              "name": "Coenzimi e ossidazioni",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m1-enzimologia",
-              "name": "Richiami di enzimologia",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Ingresso del glucosio e glicolisi",
-          "pages": "31–73",
-          "topics": [
-            {
-              "id": "m2-ingresso",
-              "name": "Ingresso del glucosio",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m2-fosforilazione",
-              "name": "Fosforilazione del glucosio",
-              "pages": "37, 40",
-              "ready": true,
-              "added": "2026-11-01"
-            },
-            {
-              "id": "m2-glicolisi",
-              "name": "Glicolisi",
-              "pages": "38–48",
-              "ready": true,
-              "added": "2026-11-01"
-            },
-            {
-              "id": "m2-fermentazioni",
-              "name": "Fermentazioni",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m2-navette",
-              "name": "Sistemi navetta",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m2-regolazione",
-              "name": "Regolazione della glicolisi",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m2-pasteur",
-              "name": "Effetto Pasteur e casi particolari",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m2-pdh",
-              "name": "Destini del piruvato e piruvato deidrogenasi",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Ciclo di Krebs e fosforilazione ossidativa",
-          "pages": "74–114",
-          "topics": [
-            {
-              "id": "m3-krebs",
-              "name": "Ciclo di Krebs",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m3-catena",
-              "name": "Catena respiratoria",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m3-atpsintasi",
-              "name": "Sintesi dell'ATP",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m3-radicali",
-              "name": "Radicali liberi",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m3-malattie",
-              "name": "Malattie mitocondriali e invecchiamento",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Glicogeno",
-          "pages": "115–139",
-          "topics": [
-            {
-              "id": "m4-degradazione",
-              "name": "Struttura e degradazione",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m4-sintesi",
-              "name": "Sintesi",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m4-regolazione",
-              "name": "Regolazione",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m4-ormoni",
-              "name": "Controllo ormonale",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m4-attivita",
-              "name": "Glicogeno e attività fisica",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m4-glicogenosi",
-              "name": "Glicogenosi",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Gluconeogenesi",
-          "pages": "140–158",
-          "topics": [
-            {
-              "id": "m5-fonti",
-              "name": "Fonti di glucosio ematico",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m5-reazioni",
-              "name": "Reazioni della gluconeogenesi",
-              "pages": "141, 143–150",
-              "ready": true,
-              "added": "2026-11-01"
-            },
-            {
-              "id": "m5-glicerolo",
-              "name": "Via del glicerolo",
-              "pages": "141, 147",
-              "ready": true,
-              "added": "2026-11-01"
-            },
-            {
-              "id": "m5-regolazione",
-              "name": "Regolazione",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m5-approfondimenti",
-              "name": "Approfondimenti",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Via dei pentoso fosfati",
-          "pages": "158–170",
-          "topics": [
-            {
-              "id": "m6-reazioni",
-              "name": "Localizzazione e reazioni",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m6-regolazione",
-              "name": "Regolazione",
-              "ready": true,
-              "added": "2026-11-02"
-            },
-            {
-              "id": "m6-nadph",
-              "name": "NADPH",
-              "ready": true,
-              "added": "2026-11-02"
-            }
-          ]
-        },
-        {
-          "name": "Metabolismo dei lipidi",
-          "pages": "171–225",
-          "topics": [
-            {
-              "id": "m7-digestione",
-              "name": "Digestione"
-            },
-            {
-              "id": "m7-trasporto",
-              "name": "Trasporto e mobilizzazione"
-            },
-            {
-              "id": "m7-betaox",
-              "name": "β-ossidazione"
-            },
-            {
-              "id": "m7-chetoni",
-              "name": "Corpi chetonici"
-            },
-            {
-              "id": "m7-biosintesi",
-              "name": "Biosintesi degli acidi grassi"
-            },
-            {
-              "id": "m7-tg",
-              "name": "Trigliceridi"
-            },
-            {
-              "id": "m7-fosfolipidi",
-              "name": "Fosfolipidi"
-            },
-            {
-              "id": "m7-colesterolo",
-              "name": "Colesterolo"
-            },
-            {
-              "id": "m7-lipoproteine",
-              "name": "Lipoproteine"
-            }
-          ]
-        },
-        {
-          "name": "Proteine e amminoacidi",
-          "pages": "226–278",
-          "topics": [
-            {
-              "id": "m8-digestione",
-              "name": "Digestione delle proteine"
-            },
-            {
-              "id": "m8-lisosomi",
-              "name": "Degradazione intracellulare"
-            },
-            {
-              "id": "m8-transaminazione",
-              "name": "Transaminazione"
-            },
-            {
-              "id": "m8-urea",
-              "name": "Ciclo dell'urea"
-            },
-            {
-              "id": "m8-scheletri",
-              "name": "Scheletri carboniosi"
-            },
-            {
-              "id": "m8-difetti",
-              "name": "Difetti del metabolismo amminoacidico"
-            },
-            {
-              "id": "m8-folato",
-              "name": "Folato e B12"
-            },
-            {
-              "id": "m8-vie",
-              "name": "Vie specializzate"
-            }
-          ]
-        },
-        {
-          "name": "Ormoni",
-          "pages": "279–309",
-          "topics": [
-            {
-              "id": "m9-neuroipofisi",
-              "name": "Ormoni della neuroipofisi"
-            },
-            {
-              "id": "m9-adenoipofisi",
-              "name": "Ormoni dell'adenoipofisi"
-            },
-            {
-              "id": "m9-adipochine",
-              "name": "Adipochine"
-            }
-          ]
-        }
-      ]
+     "name": "Ripasso di propedeutica e Biochimica I",
+     "pages": "5–30",
+     "topics": [
+      {
+       "id": "m1-catabolismo",
+       "name": "Catabolismo e anabolismo",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m1-termodinamica",
+       "name": "Termodinamica",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m1-atp",
+       "name": "ATP",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m1-coenzimi",
+       "name": "Coenzimi e ossidazioni",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m1-enzimologia",
+       "name": "Richiami di enzimologia",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
     },
     {
-      "subject": "Biologia molecolare",
-      "blocks": [
-        {
-          "name": "Principi di comunicazione cellulare",
-          "pages": "lezione 1",
-          "topics": [
-            {
-              "id": "bm1-comunicazione",
-              "name": "Tipi di comunicazione",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm1-recettore-ligando",
-              "name": "Interazione recettore-ligando",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm1-intra-superficie",
-              "name": "Recettori, ligandi ed effettori",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Recettori di membrana",
-          "pages": "lezione 2",
-          "topics": [
-            {
-              "id": "bm2-canali",
-              "name": "Recettori canale",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm2-rtk",
-              "name": "Recettori tirosin-chinasici e via di Ras",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm2-terapia",
-              "name": "Recettori come bersaglio terapeutico",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm2-sertre",
-              "name": "Recettori serin/treonin-chinasici",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm2-citochine",
-              "name": "Recettori per le citochine",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Recettori accoppiati a proteine G",
-          "pages": "lezione 3",
-          "topics": [
-            {
-              "id": "bm3-gpcr",
-              "name": "Struttura dei GPCR e proteine G",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm3-camp",
-              "name": "Via del cAMP",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm3-spegnimento",
-              "name": "Spegnimento e desensibilizzazione",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm3-cgmp",
-              "name": "Via del cGMP",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Calcio e fosfolipidi",
-          "pages": "lezione 4",
-          "topics": [
-            {
-              "id": "bm4-calcio",
-              "name": "Calcio come secondo messaggero",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm4-calmodulina",
-              "name": "Calmodulina",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm4-fosfoinositidi",
-              "name": "Via dei fosfoinositidi",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm4-asse",
-              "name": "Asse ipotalamo-ipofisi",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Ormoni pancreatici",
-          "pages": "lezione 5",
-          "topics": [
-            {
-              "id": "bm5-insulina",
-              "name": "Insulina",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "bm5-glucagone",
-              "name": "Glucagone e somatostatina"
-            }
-          ]
-        },
-        {
-          "name": "Volemia e recettori intracellulari",
-          "pages": "lezione 6",
-          "topics": [
-            {
-              "id": "bm6-vasopressina",
-              "name": "Vasopressina"
-            },
-            {
-              "id": "bm6-anp",
-              "name": "Peptide natriuretico atriale"
-            },
-            {
-              "id": "bm6-raa",
-              "name": "Sistema renina-angiotensina-aldosterone"
-            },
-            {
-              "id": "bm6-idrofobici",
-              "name": "Ormoni idrofobici"
-            }
-          ]
-        },
-        {
-          "name": "Recettori nucleari e organi di senso",
-          "pages": "lezione 7",
-          "topics": [
-            {
-              "id": "bm7-vitd",
-              "name": "Vitamina D3 e VDR"
-            },
-            {
-              "id": "bm7-vista",
-              "name": "Vista"
-            },
-            {
-              "id": "bm7-olfatto",
-              "name": "Olfatto"
-            },
-            {
-              "id": "bm7-gusto",
-              "name": "Gusto"
-            },
-            {
-              "id": "bm7-nucleotidi",
-              "name": "Nucleotidi: struttura e nomenclatura"
-            }
-          ]
-        },
-        {
-          "name": "Sintesi delle purine",
-          "pages": "lezione 8",
-          "topics": [
-            {
-              "id": "bm8-denovo",
-              "name": "Sintesi de novo"
-            },
-            {
-              "id": "bm8-folato",
-              "name": "Acido folico e THF"
-            },
-            {
-              "id": "bm8-regolazione",
-              "name": "Regolazione e farmaci"
-            }
-          ]
-        },
-        {
-          "name": "Degradazione delle purine e vie di salvataggio",
-          "pages": "lezione 9",
-          "topics": [
-            {
-              "id": "bm9-degradazione",
-              "name": "Degradazione"
-            },
-            {
-              "id": "bm9-salvataggio",
-              "name": "Vie di salvataggio"
-            },
-            {
-              "id": "bm9-gotta",
-              "name": "Gotta"
-            },
-            {
-              "id": "bm9-scid",
-              "name": "SCID"
-            }
-          ]
-        },
-        {
-          "name": "Pirimidine e deossiribonucleotidi",
-          "pages": "lezione 10",
-          "topics": [
-            {
-              "id": "bm10-sintesi",
-              "name": "Sintesi de novo delle pirimidine"
-            },
-            {
-              "id": "bm10-degradazione",
-              "name": "Degradazione delle pirimidine"
-            },
-            {
-              "id": "bm10-rnr",
-              "name": "Ribonucleotide reduttasi"
-            },
-            {
-              "id": "bm10-timidilato",
-              "name": "Timidilato sintasi e chemioterapici"
-            }
-          ]
-        },
-        {
-          "name": "Metabolismo del ferro",
-          "pages": "lezione 11",
-          "topics": [
-            {
-              "id": "bm11-ferro",
-              "name": "Funzioni, tossicità, biodisponibilità"
-            },
-            {
-              "id": "bm11-proteine",
-              "name": "Proteine del ferro"
-            },
-            {
-              "id": "bm11-cellule",
-              "name": "Cellule che rilasciano ferro"
-            },
-            {
-              "id": "bm11-ireirp",
-              "name": "Regolazione cellulare (IRE/IRP)"
-            },
-            {
-              "id": "bm11-epcidina",
-              "name": "Regolazione sistemica (epcidina)"
-            }
-          ]
-        }
-      ]
+     "name": "Ingresso del glucosio e glicolisi",
+     "pages": "31–73",
+     "topics": [
+      {
+       "id": "m2-ingresso",
+       "name": "Ingresso del glucosio",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m2-fosforilazione",
+       "name": "Fosforilazione del glucosio",
+       "pages": "37, 40",
+       "ready": true,
+       "added": "2026-11-01"
+      },
+      {
+       "id": "m2-glicolisi",
+       "name": "Glicolisi",
+       "pages": "38–48",
+       "ready": true,
+       "added": "2026-11-01"
+      },
+      {
+       "id": "m2-fermentazioni",
+       "name": "Fermentazioni",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m2-navette",
+       "name": "Sistemi navetta",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m2-regolazione",
+       "name": "Regolazione della glicolisi",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m2-pasteur",
+       "name": "Effetto Pasteur e casi particolari",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m2-pdh",
+       "name": "Destini del piruvato e piruvato deidrogenasi",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
     },
     {
-      "subject": "Biochimica I",
-      "blocks": [
-        {
-          "name": "Ripasso di propedeutica",
-          "pages": "6–10",
-          "topics": [
-            {
-              "id": "d1-chimica",
-              "name": "Fondamenti di chimica",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d1-acqua",
-              "name": "L'acqua",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d1-metabolismo",
-              "name": "Metabolismo e catabolismo",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Amminoacidi e peptidi",
-          "pages": "11–23",
-          "topics": [
-            {
-              "id": "d2-strutturali",
-              "name": "Proprietà strutturali",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d2-classificazione",
-              "name": "Classificazione",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d2-acidobase",
-              "name": "Proprietà acido-base",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d2-nutrizionale",
-              "name": "Classificazione nutrizionale e amminoacidi non comuni",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d2-peptidico",
-              "name": "Legame peptidico",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Struttura delle proteine",
-          "pages": "24–67",
-          "topics": [
-            {
-              "id": "d3-primaria",
-              "name": "Struttura primaria",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-secondaria",
-              "name": "Struttura secondaria",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-collagene",
-              "name": "Proteine fibrose e collagene",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-terziaria",
-              "name": "Struttura terziaria e proteine globulari",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-folding",
-              "name": "Folding",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-quaternaria",
-              "name": "Struttura quaternaria",
-              "ready": true,
-              "added": "2026-11-04"
-            },
-            {
-              "id": "d3-tecniche",
-              "name": "Tecniche per lo studio delle proteine",
-              "ready": true,
-              "added": "2026-11-04"
-            }
-          ]
-        },
-        {
-          "name": "Mioglobina ed emoglobina",
-          "pages": "68–94",
-          "topics": [
-            {
-              "id": "d4-eme",
-              "name": "Eme e mioglobina"
-            },
-            {
-              "id": "d4-hbmb",
-              "name": "Differenze Hb vs Mb"
-            },
-            {
-              "id": "d4-legame",
-              "name": "Legame dell'O₂ all'Hb"
-            },
-            {
-              "id": "d4-modulatori",
-              "name": "Modulatori allosterici"
-            },
-            {
-              "id": "d4-hbf",
-              "name": "HbF e geni delle globine"
-            },
-            {
-              "id": "d4-mutazioni",
-              "name": "Mutazioni dell'emoglobina"
-            }
-          ]
-        },
-        {
-          "name": "Tecniche di purificazione e analisi",
-          "pages": "95–108",
-          "topics": [
-            {
-              "id": "d5-purificazione",
-              "name": "Purificazione"
-            },
-            {
-              "id": "d5-analisi",
-              "name": "Analisi"
-            }
-          ]
-        },
-        {
-          "name": "Enzimi",
-          "pages": "109–155",
-          "topics": [
-            {
-              "id": "d6-classificazione",
-              "name": "Classificazione e termodinamica"
-            },
-            {
-              "id": "d6-caratteristiche",
-              "name": "Caratteristiche e riconoscimento enzima-substrato"
-            },
-            {
-              "id": "d6-cinetica",
-              "name": "Cinetica enzimatica"
-            },
-            {
-              "id": "d6-marcatori",
-              "name": "Localizzazione delle vie ed enzimi come marcatori"
-            },
-            {
-              "id": "d6-meccanismi",
-              "name": "Meccanismi catalitici"
-            },
-            {
-              "id": "d6-inibizione",
-              "name": "Inibizione"
-            },
-            {
-              "id": "d6-regolazione",
-              "name": "Regolazione"
-            }
-          ]
-        },
-        {
-          "name": "Vitamine e coenzimi",
-          "pages": "155–168",
-          "topics": [
-            {
-              "id": "d7-coenzimi",
-              "name": "Coenzimi idrosolubili"
-            }
-          ]
-        },
-        {
-          "name": "Coagulazione del sangue",
-          "pages": "169–181",
-          "topics": [
-            {
-              "id": "d8-cascata",
-              "name": "Cascata coagulativa e piastrine"
-            },
-            {
-              "id": "d8-fibrina",
-              "name": "Formazione del coagulo di fibrina"
-            },
-            {
-              "id": "d8-vitk",
-              "name": "Vitamina K"
-            },
-            {
-              "id": "d8-fibrinolisi",
-              "name": "Inibitori della coagulazione e fibrinolisi"
-            }
-          ]
-        },
-        {
-          "name": "Carboidrati",
-          "pages": "182–197",
-          "topics": [
-            {
-              "id": "d9-mono",
-              "name": "Monosaccaridi"
-            },
-            {
-              "id": "d9-glicosidico",
-              "name": "Legame glicosidico e disaccaridi"
-            },
-            {
-              "id": "d9-poli",
-              "name": "Polisaccaridi"
-            },
-            {
-              "id": "d9-glicoproteine",
-              "name": "Glicoproteine"
-            }
-          ]
-        },
-        {
-          "name": "Lipidi e membrane",
-          "pages": "198–216",
-          "topics": [
-            {
-              "id": "d10-acidigrassi",
-              "name": "Acidi grassi"
-            },
-            {
-              "id": "d10-membrana",
-              "name": "Lipidi di membrana"
-            },
-            {
-              "id": "d10-steroidi",
-              "name": "Terpeni, steroidi e derivati del colesterolo"
-            },
-            {
-              "id": "d10-trasporto",
-              "name": "Membrane e trasporto"
-            }
-          ]
-        },
-        {
-          "name": "Vitamine liposolubili",
-          "pages": "217–218",
-          "topics": [
-            {
-              "id": "d11-vitad",
-              "name": "Vitamina A e vitamina D"
-            }
-          ]
-        },
-        {
-          "name": "Digestione e trasporto dei grassi",
-          "pages": "219–222",
-          "topics": [
-            {
-              "id": "d12-digestione",
-              "name": "Digestione, assorbimento, deposito e trasporto"
-            },
-            {
-              "id": "d12-lipoproteine",
-              "name": "Lipoproteine"
-            }
-          ]
-        },
-        {
-          "name": "Biologia molecolare",
-          "pages": "223–283",
-          "topics": [
-            {
-              "id": "d13-acidi",
-              "name": "Acidi nucleici"
-            },
-            {
-              "id": "d13-studio",
-              "name": "Studio del DNA"
-            },
-            {
-              "id": "d13-topologia",
-              "name": "Topologia del DNA"
-            },
-            {
-              "id": "d13-duplicazione",
-              "name": "Duplicazione"
-            },
-            {
-              "id": "d13-trascrizione",
-              "name": "Trascrizione"
-            },
-            {
-              "id": "d13-espressione",
-              "name": "Controllo dell'espressione genica"
-            },
-            {
-              "id": "d13-rna",
-              "name": "RNA"
-            },
-            {
-              "id": "d13-clonaggio",
-              "name": "Clonaggio genico"
-            },
-            {
-              "id": "d13-pcr",
-              "name": "PCR e applicazioni"
-            },
-            {
-              "id": "d13-editing",
-              "name": "Editing del DNA"
-            }
-          ]
-        }
-      ]
+     "name": "Ciclo di Krebs e fosforilazione ossidativa",
+     "pages": "74–114",
+     "topics": [
+      {
+       "id": "m3-krebs",
+       "name": "Ciclo di Krebs",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m3-catena",
+       "name": "Catena respiratoria",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m3-atpsintasi",
+       "name": "Sintesi dell'ATP",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m3-radicali",
+       "name": "Radicali liberi",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m3-malattie",
+       "name": "Malattie mitocondriali e invecchiamento",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
+    },
+    {
+     "name": "Glicogeno",
+     "pages": "115–139",
+     "topics": [
+      {
+       "id": "m4-degradazione",
+       "name": "Struttura e degradazione",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m4-sintesi",
+       "name": "Sintesi",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m4-regolazione",
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m4-ormoni",
+       "name": "Controllo ormonale",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m4-attivita",
+       "name": "Glicogeno e attività fisica",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m4-glicogenosi",
+       "name": "Glicogenosi",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
+    },
+    {
+     "name": "Gluconeogenesi",
+     "pages": "140–158",
+     "topics": [
+      {
+       "id": "m5-fonti",
+       "name": "Fonti di glucosio ematico",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m5-reazioni",
+       "name": "Reazioni della gluconeogenesi",
+       "pages": "141, 143–150",
+       "ready": true,
+       "added": "2026-11-01"
+      },
+      {
+       "id": "m5-glicerolo",
+       "name": "Via del glicerolo",
+       "pages": "141, 147",
+       "ready": true,
+       "added": "2026-11-01"
+      },
+      {
+       "id": "m5-regolazione",
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m5-approfondimenti",
+       "name": "Approfondimenti",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
+    },
+    {
+     "name": "Via dei pentoso fosfati",
+     "pages": "158–170",
+     "topics": [
+      {
+       "id": "m6-reazioni",
+       "name": "Localizzazione e reazioni",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m6-regolazione",
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-02"
+      },
+      {
+       "id": "m6-nadph",
+       "name": "NADPH",
+       "ready": true,
+       "added": "2026-11-02"
+      }
+     ]
+    },
+    {
+     "name": "Metabolismo dei lipidi",
+     "pages": "171–225",
+     "topics": [
+      {
+       "id": "m7-digestione",
+       "name": "Digestione"
+      },
+      {
+       "id": "m7-trasporto",
+       "name": "Trasporto e mobilizzazione"
+      },
+      {
+       "id": "m7-betaox",
+       "name": "β-ossidazione"
+      },
+      {
+       "id": "m7-chetoni",
+       "name": "Corpi chetonici"
+      },
+      {
+       "id": "m7-biosintesi",
+       "name": "Biosintesi degli acidi grassi"
+      },
+      {
+       "id": "m7-tg",
+       "name": "Trigliceridi"
+      },
+      {
+       "id": "m7-fosfolipidi",
+       "name": "Fosfolipidi"
+      },
+      {
+       "id": "m7-colesterolo",
+       "name": "Colesterolo"
+      },
+      {
+       "id": "m7-lipoproteine",
+       "name": "Lipoproteine"
+      }
+     ]
+    },
+    {
+     "name": "Proteine e amminoacidi",
+     "pages": "226–278",
+     "topics": [
+      {
+       "id": "m8-digestione",
+       "name": "Digestione delle proteine"
+      },
+      {
+       "id": "m8-lisosomi",
+       "name": "Degradazione intracellulare"
+      },
+      {
+       "id": "m8-transaminazione",
+       "name": "Transaminazione"
+      },
+      {
+       "id": "m8-urea",
+       "name": "Ciclo dell'urea"
+      },
+      {
+       "id": "m8-scheletri",
+       "name": "Scheletri carboniosi"
+      },
+      {
+       "id": "m8-difetti",
+       "name": "Difetti del metabolismo amminoacidico"
+      },
+      {
+       "id": "m8-folato",
+       "name": "Folato e B12"
+      },
+      {
+       "id": "m8-vie",
+       "name": "Vie specializzate"
+      }
+     ]
+    },
+    {
+     "name": "Ormoni",
+     "pages": "279–309",
+     "topics": [
+      {
+       "id": "m9-neuroipofisi",
+       "name": "Ormoni della neuroipofisi"
+      },
+      {
+       "id": "m9-adenoipofisi",
+       "name": "Ormoni dell'adenoipofisi"
+      },
+      {
+       "id": "m9-adipochine",
+       "name": "Adipochine"
+      }
+     ]
     }
-  ],
-  "reactions": [
-    {
-      "id": "r-esochinasi",
-      "topic": "m2-fosforilazione",
-      "page": "37, 40",
-      "left": [
-        [
-          "m",
-          "glc"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "g6p"
-        ],
-        [
-          "c",
-          "ADP"
-        ]
-      ],
-      "enzyme": "Esochinasi (glucochinasi nel fegato)",
-      "irreversible": true
-    },
-    {
-      "id": "r-pgi",
-      "topic": "m2-glicolisi",
-      "page": "39–40",
-      "left": [
-        [
-          "m",
-          "g6p"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "f6p"
-        ]
-      ],
-      "enzyme": "Fosfoesoso isomerasi"
-    },
-    {
-      "id": "r-pfk1",
-      "topic": "m2-glicolisi",
-      "page": "39, 41",
-      "left": [
-        [
-          "m",
-          "f6p"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "fbp"
-        ],
-        [
-          "c",
-          "ADP"
-        ]
-      ],
-      "enzyme": "Fosfofruttochinasi 1 (PFK1)",
-      "irreversible": true,
-      "note": "Sbobina di Biochimica II, p. 39: il prodotto è scritto come «fruttosio 6-fosfato + ADP». È un refuso: il prodotto è il fruttosio 1,6-bisfosfato. A p. 47 l'enzima è chiamato «fruttochinasi»: è la fosfofruttochinasi 1."
-    },
-    {
-      "id": "r-aldolasi",
-      "topic": "m2-glicolisi",
-      "page": "39, 41",
-      "left": [
-        [
-          "m",
-          "fbp"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "dhap"
-        ],
-        [
-          "m",
-          "ga3p"
-        ]
-      ],
-      "enzyme": "Aldolasi"
-    },
-    {
-      "id": "r-tpi",
-      "topic": "m2-glicolisi",
-      "page": "39, 41",
-      "left": [
-        [
-          "m",
-          "dhap"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "ga3p"
-        ]
-      ],
-      "enzyme": "Trioso fosfato isomerasi"
-    },
-    {
-      "id": "r-gapdh",
-      "topic": "m2-glicolisi",
-      "page": "39, 43",
-      "left": [
-        [
-          "m",
-          "ga3p"
-        ],
-        [
-          "c",
-          "NAD⁺"
-        ],
-        [
-          "c",
-          "Pi"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "bpg13"
-        ],
-        [
-          "c",
-          "NADH + H⁺"
-        ]
-      ],
-      "enzyme": "Gliceraldeide 3-fosfato deidrogenasi",
-      "note": "Sbobina di Biochimica II, p. 43, meccanismo: c'è scritto che «l'H⁺ sotto forma di idruro» va al NAD⁺ e che «la riduzione» trasforma l'aldeide in carbossile. Al NAD⁺ va un idruro (H⁻), l'aldeide si OSSIDA e si forma un tioestere con la cisteina (acil-enzima), poi attaccato dal fosfato. A p. 39 «enzimi ossidoriduttivi» va letto «coenzimi» (NAD/FAD)."
-    },
-    {
-      "id": "r-pgk",
-      "topic": "m2-glicolisi",
-      "page": "40, 44",
-      "left": [
-        [
-          "m",
-          "bpg13"
-        ],
-        [
-          "c",
-          "ADP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pg3"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "enzyme": "Fosfoglicerato chinasi"
-    },
-    {
-      "id": "r-pgm",
-      "topic": "m2-glicolisi",
-      "page": "40, 45",
-      "left": [
-        [
-          "m",
-          "pg3"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pg2"
-        ]
-      ],
-      "enzyme": "Fosfoglicerato mutasi"
-    },
-    {
-      "id": "r-enolasi",
-      "topic": "m2-glicolisi",
-      "page": "40, 45",
-      "left": [
-        [
-          "m",
-          "pg2"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pep"
-        ],
-        [
-          "c",
-          "H₂O"
-        ]
-      ],
-      "enzyme": "Enolasi"
-    },
-    {
-      "id": "r-pk",
-      "topic": "m2-glicolisi",
-      "page": "40, 45",
-      "left": [
-        [
-          "m",
-          "pep"
-        ],
-        [
-          "c",
-          "ADP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pyr"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "enzyme": "Piruvato chinasi",
-      "irreversible": true
-    },
-    {
-      "id": "r-ldh",
-      "topic": "m5-reazioni",
-      "page": "141",
-      "left": [
-        [
-          "m",
-          "lac"
-        ],
-        [
-          "c",
-          "NAD⁺"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pyr"
-        ],
-        [
-          "c",
-          "NADH + H⁺"
-        ]
-      ],
-      "enzyme": "Lattico deidrogenasi"
-    },
-    {
-      "id": "r-pc",
-      "topic": "m5-reazioni",
-      "page": "144",
-      "left": [
-        [
-          "m",
-          "pyr"
-        ],
-        [
-          "c",
-          "HCO₃⁻"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "oaa"
-        ],
-        [
-          "c",
-          "ADP"
-        ],
-        [
-          "c",
-          "Pi"
-        ]
-      ],
-      "enzyme": "Piruvato carbossilasi",
-      "coenzyme": "Biotina",
-      "where": "mitocondrio",
-      "irreversible": true,
-      "note": "Sbobina di Biochimica II, p. 144: «l'acetil-CoA può attivare la piruvato decarbossilazione». L'acetil-CoA attiva la piruvato CARBOSSILASI (è una carbossilazione)."
-    },
-    {
-      "id": "r-mdh-mito",
-      "topic": "m5-reazioni",
-      "page": "145",
-      "left": [
-        [
-          "m",
-          "oaa"
-        ],
-        [
-          "c",
-          "NADH + H⁺"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "mal"
-        ],
-        [
-          "c",
-          "NAD⁺"
-        ]
-      ],
-      "enzyme": "Malato deidrogenasi mitocondriale",
-      "where": "mitocondrio"
-    },
-    {
-      "id": "r-mdh-cito",
-      "topic": "m5-reazioni",
-      "page": "145",
-      "left": [
-        [
-          "m",
-          "mal"
-        ],
-        [
-          "c",
-          "NAD⁺"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "oaa"
-        ],
-        [
-          "c",
-          "NADH + H⁺"
-        ]
-      ],
-      "enzyme": "Malato deidrogenasi citosolica",
-      "where": "citosol"
-    },
-    {
-      "id": "r-pepck",
-      "topic": "m5-reazioni",
-      "page": "145",
-      "left": [
-        [
-          "m",
-          "oaa"
-        ],
-        [
-          "c",
-          "GTP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "pep"
-        ],
-        [
-          "c",
-          "GDP"
-        ],
-        [
-          "c",
-          "CO₂"
-        ]
-      ],
-      "enzyme": "Fosfoenolpiruvato carbossichinasi (PEPCK)",
-      "irreversible": true,
-      "note": "Sbobina di Biochimica II, p. 145: c'è scritto che si formano PEP, «ADP» e CO₂. Il nucleotide usato è il GTP (lo dice la stessa frase), quindi si forma GDP."
-    },
-    {
-      "id": "r-fbpasi",
-      "topic": "m5-reazioni",
-      "page": "146",
-      "left": [
-        [
-          "m",
-          "fbp"
-        ],
-        [
-          "c",
-          "H₂O"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "f6p"
-        ],
-        [
-          "c",
-          "Pi"
-        ]
-      ],
-      "enzyme": "Fruttosio 1,6-bisfosfatasi",
-      "irreversible": true
-    },
-    {
-      "id": "r-g6pasi",
-      "topic": "m5-reazioni",
-      "page": "140, 146",
-      "left": [
-        [
-          "m",
-          "g6p"
-        ],
-        [
-          "c",
-          "H₂O"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "glc"
-        ],
-        [
-          "c",
-          "Pi"
-        ]
-      ],
-      "enzyme": "Glucosio 6-fosfatasi",
-      "where": "reticolo endoplasmatico",
-      "irreversible": true
-    },
-    {
-      "id": "r-glicerolo-chinasi",
-      "topic": "m5-glicerolo",
-      "page": "141, 147",
-      "left": [
-        [
-          "m",
-          "gly"
-        ],
-        [
-          "c",
-          "ATP"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "gro3p"
-        ],
-        [
-          "c",
-          "ADP"
-        ]
-      ],
-      "enzyme": "Glicerolo chinasi",
-      "enzymeNotInNotes": true,
-      "irreversible": true,
-      "note": "La sbobina non nomina l'enzima (glicerolo chinasi, dal Lehninger). Il prodotto è chiamato «glicerolo 1-P» a p. 141 e «glicerolo-3-fosfato» a p. 147: è la stessa molecola (L-glicerolo 3-fosfato), sono due numerazioni diverse."
-    },
-    {
-      "id": "r-g3pdh",
-      "topic": "m5-glicerolo",
-      "page": "141, 147",
-      "left": [
-        [
-          "m",
-          "gro3p"
-        ],
-        [
-          "c",
-          "NAD⁺"
-        ]
-      ],
-      "right": [
-        [
-          "m",
-          "dhap"
-        ],
-        [
-          "c",
-          "NADH + H⁺"
-        ]
-      ],
-      "enzyme": "Glicerolo 3-fosfato deidrogenasi",
-      "enzymeNotInNotes": true,
-      "note": "La sbobina parla solo di «reazione ossidoriduttiva». Nome dell'enzima e NAD⁺ vengono dal Lehninger."
-    }
-  ],
-  "pathways": [
-    {
-      "id": "glicolisi",
-      "name": "glicolisi",
-      "topic": "m2-glicolisi",
-      "steps": [
-        {
-          "from": "glc",
-          "to": [
-            "g6p"
-          ],
-          "enzyme": "Esochinasi (glucochinasi nel fegato)",
-          "topic": "m2-fosforilazione"
-        },
-        {
-          "from": "g6p",
-          "to": [
-            "f6p"
-          ],
-          "enzyme": "Fosfoesoso isomerasi"
-        },
-        {
-          "from": "f6p",
-          "to": [
-            "fbp"
-          ],
-          "enzyme": "Fosfofruttochinasi 1 (PFK1)"
-        },
-        {
-          "from": "fbp",
-          "to": [
-            "dhap",
-            "ga3p"
-          ],
-          "enzyme": "Aldolasi"
-        },
-        {
-          "from": "dhap",
-          "to": [
-            "ga3p"
-          ],
-          "enzyme": "Trioso fosfato isomerasi"
-        },
-        {
-          "from": "ga3p",
-          "to": [
-            "bpg13"
-          ],
-          "enzyme": "Gliceraldeide 3-fosfato deidrogenasi"
-        },
-        {
-          "from": "bpg13",
-          "to": [
-            "pg3"
-          ],
-          "enzyme": "Fosfoglicerato chinasi"
-        },
-        {
-          "from": "pg3",
-          "to": [
-            "pg2"
-          ],
-          "enzyme": "Fosfoglicerato mutasi"
-        },
-        {
-          "from": "pg2",
-          "to": [
-            "pep"
-          ],
-          "enzyme": "Enolasi"
-        },
-        {
-          "from": "pep",
-          "to": [
-            "pyr"
-          ],
-          "enzyme": "Piruvato chinasi"
-        }
-      ]
-    },
-    {
-      "id": "gluconeogenesi",
-      "name": "gluconeogenesi",
-      "topic": "m5-reazioni",
-      "steps": [
-        {
-          "from": "pyr",
-          "to": [
-            "oaa"
-          ],
-          "enzyme": "Piruvato carbossilasi",
-          "where": "nel mitocondrio"
-        },
-        {
-          "from": "oaa",
-          "to": [
-            "mal"
-          ],
-          "enzyme": "Malato deidrogenasi mitocondriale",
-          "where": "nel mitocondrio"
-        },
-        {
-          "from": "mal",
-          "to": [
-            "oaa"
-          ],
-          "enzyme": "Malato deidrogenasi citosolica",
-          "where": "nel citosol"
-        },
-        {
-          "from": "oaa",
-          "to": [
-            "pep"
-          ],
-          "enzyme": "Fosfoenolpiruvato carbossichinasi (PEPCK)",
-          "where": "nel citosol"
-        },
-        {
-          "from": "pep",
-          "to": [
-            "pg2"
-          ],
-          "enzyme": "Enolasi"
-        },
-        {
-          "from": "pg2",
-          "to": [
-            "pg3"
-          ],
-          "enzyme": "Fosfoglicerato mutasi",
-          "note": "A p. 146 l'elenco degli enzimi glicolitici reversibili usati dalla gluconeogenesi salta la fosfoglicerato mutasi, che invece serve (2-PG → 3-PG)."
-        },
-        {
-          "from": "pg3",
-          "to": [
-            "bpg13"
-          ],
-          "enzyme": "Fosfoglicerato chinasi"
-        },
-        {
-          "from": "bpg13",
-          "to": [
-            "ga3p"
-          ],
-          "enzyme": "Gliceraldeide 3-fosfato deidrogenasi"
-        },
-        {
-          "from": "ga3p",
-          "to": [
-            "fbp"
-          ],
-          "enzyme": "Aldolasi",
-          "with": "dhap"
-        },
-        {
-          "from": "fbp",
-          "to": [
-            "f6p"
-          ],
-          "enzyme": "Fruttosio 1,6-bisfosfatasi"
-        },
-        {
-          "from": "f6p",
-          "to": [
-            "g6p"
-          ],
-          "enzyme": "Fosfoesoso isomerasi"
-        },
-        {
-          "from": "g6p",
-          "to": [
-            "glc"
-          ],
-          "enzyme": "Glucosio 6-fosfatasi",
-          "where": "nel reticolo endoplasmatico"
-        }
-      ]
-    },
-    {
-      "id": "glicerolo",
-      "name": "via del glicerolo",
-      "topic": "m5-glicerolo",
-      "steps": [
-        {
-          "from": "gly",
-          "to": [
-            "gro3p"
-          ],
-          "enzyme": "Glicerolo chinasi"
-        },
-        {
-          "from": "gro3p",
-          "to": [
-            "dhap"
-          ],
-          "enzyme": "Glicerolo 3-fosfato deidrogenasi"
-        },
-        {
-          "from": "dhap",
-          "to": [
-            "ga3p"
-          ],
-          "enzyme": "Trioso fosfato isomerasi"
-        }
-      ]
-    }
-  ],
-  "moleculeTopics": {
-    "glc": [
-      "m2-fosforilazione",
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "g6p": [
-      "m2-fosforilazione",
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "f6p": [
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "fbp": [
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "dhap": [
-      "m2-glicolisi",
-      "m5-glicerolo"
-    ],
-    "ga3p": [
-      "m2-glicolisi"
-    ],
-    "bpg13": [
-      "m2-glicolisi"
-    ],
-    "pg3": [
-      "m2-glicolisi"
-    ],
-    "pg2": [
-      "m2-glicolisi"
-    ],
-    "pep": [
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "pyr": [
-      "m2-glicolisi",
-      "m5-reazioni"
-    ],
-    "oaa": [
-      "m5-reazioni"
-    ],
-    "mal": [
-      "m5-reazioni"
-    ],
-    "lac": [
-      "m5-reazioni"
-    ],
-    "ala": [
-      "m5-reazioni"
-    ],
-    "gly": [
-      "m5-glicerolo"
-    ],
-    "gro3p": [
-      "m5-glicerolo"
-    ]
+   ]
   },
-  "cofactorPool": [
-    "ATP",
-    "ADP",
-    "AMP",
-    "GTP",
-    "GDP",
-    "NAD⁺",
-    "NADH + H⁺",
-    "NADP⁺",
-    "FAD",
-    "FADH₂",
-    "Pi",
-    "PPi",
-    "H₂O",
-    "CO₂",
-    "HCO₃⁻",
-    "Biotina",
-    "Tiamina pirofosfato",
-    "Coenzima A",
-    "Mg²⁺"
+  {
+   "subject": "Biologia molecolare",
+   "blocks": []
+  },
+  {
+   "subject": "Biochimica I",
+   "blocks": []
+  }
+ ],
+ "reactions": [
+  {
+   "id": "r-esochinasi",
+   "topic": "m2-fosforilazione",
+   "page": "37, 40",
+   "left": [
+    [
+     "m",
+     "glc"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "g6p"
+    ],
+    [
+     "c",
+     "ADP"
+    ]
+   ],
+   "enzyme": "Esochinasi (glucochinasi nel fegato)",
+   "irreversible": true
+  },
+  {
+   "id": "r-pgi",
+   "topic": "m2-glicolisi",
+   "page": "39–40",
+   "left": [
+    [
+     "m",
+     "g6p"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "f6p"
+    ]
+   ],
+   "enzyme": "Fosfoesoso isomerasi"
+  },
+  {
+   "id": "r-pfk1",
+   "topic": "m2-glicolisi",
+   "page": "39, 41",
+   "left": [
+    [
+     "m",
+     "f6p"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "fbp"
+    ],
+    [
+     "c",
+     "ADP"
+    ]
+   ],
+   "enzyme": "Fosfofruttochinasi 1 (PFK1)",
+   "irreversible": true,
+   "note": "Sbobina di Biochimica II, p. 39: il prodotto è scritto come «fruttosio 6-fosfato + ADP». È un refuso: il prodotto è il fruttosio 1,6-bisfosfato. A p. 47 l'enzima è chiamato «fruttochinasi»: è la fosfofruttochinasi 1."
+  },
+  {
+   "id": "r-aldolasi",
+   "topic": "m2-glicolisi",
+   "page": "39, 41",
+   "left": [
+    [
+     "m",
+     "fbp"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "dhap"
+    ],
+    [
+     "m",
+     "ga3p"
+    ]
+   ],
+   "enzyme": "Aldolasi"
+  },
+  {
+   "id": "r-tpi",
+   "topic": "m2-glicolisi",
+   "page": "39, 41",
+   "left": [
+    [
+     "m",
+     "dhap"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "ga3p"
+    ]
+   ],
+   "enzyme": "Trioso fosfato isomerasi"
+  },
+  {
+   "id": "r-gapdh",
+   "topic": "m2-glicolisi",
+   "page": "39, 43",
+   "left": [
+    [
+     "m",
+     "ga3p"
+    ],
+    [
+     "c",
+     "NAD⁺"
+    ],
+    [
+     "c",
+     "Pi"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "bpg13"
+    ],
+    [
+     "c",
+     "NADH + H⁺"
+    ]
+   ],
+   "enzyme": "Gliceraldeide 3-fosfato deidrogenasi",
+   "note": "Sbobina di Biochimica II, p. 43, meccanismo: c'è scritto che «l'H⁺ sotto forma di idruro» va al NAD⁺ e che «la riduzione» trasforma l'aldeide in carbossile. Al NAD⁺ va un idruro (H⁻), l'aldeide si OSSIDA e si forma un tioestere con la cisteina (acil-enzima), poi attaccato dal fosfato. A p. 39 «enzimi ossidoriduttivi» va letto «coenzimi» (NAD/FAD)."
+  },
+  {
+   "id": "r-pgk",
+   "topic": "m2-glicolisi",
+   "page": "40, 44",
+   "left": [
+    [
+     "m",
+     "bpg13"
+    ],
+    [
+     "c",
+     "ADP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pg3"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "enzyme": "Fosfoglicerato chinasi"
+  },
+  {
+   "id": "r-pgm",
+   "topic": "m2-glicolisi",
+   "page": "40, 45",
+   "left": [
+    [
+     "m",
+     "pg3"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pg2"
+    ]
+   ],
+   "enzyme": "Fosfoglicerato mutasi"
+  },
+  {
+   "id": "r-enolasi",
+   "topic": "m2-glicolisi",
+   "page": "40, 45",
+   "left": [
+    [
+     "m",
+     "pg2"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pep"
+    ],
+    [
+     "c",
+     "H₂O"
+    ]
+   ],
+   "enzyme": "Enolasi"
+  },
+  {
+   "id": "r-pk",
+   "topic": "m2-glicolisi",
+   "page": "40, 45",
+   "left": [
+    [
+     "m",
+     "pep"
+    ],
+    [
+     "c",
+     "ADP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pyr"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "enzyme": "Piruvato chinasi",
+   "irreversible": true
+  },
+  {
+   "id": "r-ldh",
+   "topic": "m5-reazioni",
+   "page": "141",
+   "left": [
+    [
+     "m",
+     "lac"
+    ],
+    [
+     "c",
+     "NAD⁺"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pyr"
+    ],
+    [
+     "c",
+     "NADH + H⁺"
+    ]
+   ],
+   "enzyme": "Lattico deidrogenasi"
+  },
+  {
+   "id": "r-pc",
+   "topic": "m5-reazioni",
+   "page": "144",
+   "left": [
+    [
+     "m",
+     "pyr"
+    ],
+    [
+     "c",
+     "HCO₃⁻"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "oaa"
+    ],
+    [
+     "c",
+     "ADP"
+    ],
+    [
+     "c",
+     "Pi"
+    ]
+   ],
+   "enzyme": "Piruvato carbossilasi",
+   "coenzyme": "Biotina",
+   "where": "mitocondrio",
+   "irreversible": true,
+   "note": "Sbobina di Biochimica II, p. 144: «l'acetil-CoA può attivare la piruvato decarbossilazione». L'acetil-CoA attiva la piruvato CARBOSSILASI (è una carbossilazione)."
+  },
+  {
+   "id": "r-mdh-mito",
+   "topic": "m5-reazioni",
+   "page": "145",
+   "left": [
+    [
+     "m",
+     "oaa"
+    ],
+    [
+     "c",
+     "NADH + H⁺"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "mal"
+    ],
+    [
+     "c",
+     "NAD⁺"
+    ]
+   ],
+   "enzyme": "Malato deidrogenasi mitocondriale",
+   "where": "mitocondrio"
+  },
+  {
+   "id": "r-mdh-cito",
+   "topic": "m5-reazioni",
+   "page": "145",
+   "left": [
+    [
+     "m",
+     "mal"
+    ],
+    [
+     "c",
+     "NAD⁺"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "oaa"
+    ],
+    [
+     "c",
+     "NADH + H⁺"
+    ]
+   ],
+   "enzyme": "Malato deidrogenasi citosolica",
+   "where": "citosol"
+  },
+  {
+   "id": "r-pepck",
+   "topic": "m5-reazioni",
+   "page": "145",
+   "left": [
+    [
+     "m",
+     "oaa"
+    ],
+    [
+     "c",
+     "GTP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "pep"
+    ],
+    [
+     "c",
+     "GDP"
+    ],
+    [
+     "c",
+     "CO₂"
+    ]
+   ],
+   "enzyme": "Fosfoenolpiruvato carbossichinasi (PEPCK)",
+   "irreversible": true,
+   "note": "Sbobina di Biochimica II, p. 145: c'è scritto che si formano PEP, «ADP» e CO₂. Il nucleotide usato è il GTP (lo dice la stessa frase), quindi si forma GDP."
+  },
+  {
+   "id": "r-fbpasi",
+   "topic": "m5-reazioni",
+   "page": "146",
+   "left": [
+    [
+     "m",
+     "fbp"
+    ],
+    [
+     "c",
+     "H₂O"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "f6p"
+    ],
+    [
+     "c",
+     "Pi"
+    ]
+   ],
+   "enzyme": "Fruttosio 1,6-bisfosfatasi",
+   "irreversible": true
+  },
+  {
+   "id": "r-g6pasi",
+   "topic": "m5-reazioni",
+   "page": "140, 146",
+   "left": [
+    [
+     "m",
+     "g6p"
+    ],
+    [
+     "c",
+     "H₂O"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "glc"
+    ],
+    [
+     "c",
+     "Pi"
+    ]
+   ],
+   "enzyme": "Glucosio 6-fosfatasi",
+   "where": "reticolo endoplasmatico",
+   "irreversible": true
+  },
+  {
+   "id": "r-glicerolo-chinasi",
+   "topic": "m5-glicerolo",
+   "page": "141, 147",
+   "left": [
+    [
+     "m",
+     "gly"
+    ],
+    [
+     "c",
+     "ATP"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "gro3p"
+    ],
+    [
+     "c",
+     "ADP"
+    ]
+   ],
+   "enzyme": "Glicerolo chinasi",
+   "enzymeNotInNotes": true,
+   "irreversible": true,
+   "note": "La sbobina non nomina l'enzima (glicerolo chinasi, dal Lehninger). Il prodotto è chiamato «glicerolo 1-P» a p. 141 e «glicerolo-3-fosfato» a p. 147: è la stessa molecola (L-glicerolo 3-fosfato), sono due numerazioni diverse."
+  },
+  {
+   "id": "r-g3pdh",
+   "topic": "m5-glicerolo",
+   "page": "141, 147",
+   "left": [
+    [
+     "m",
+     "gro3p"
+    ],
+    [
+     "c",
+     "NAD⁺"
+    ]
+   ],
+   "right": [
+    [
+     "m",
+     "dhap"
+    ],
+    [
+     "c",
+     "NADH + H⁺"
+    ]
+   ],
+   "enzyme": "Glicerolo 3-fosfato deidrogenasi",
+   "enzymeNotInNotes": true,
+   "note": "La sbobina parla solo di «reazione ossidoriduttiva». Nome dell'enzima e NAD⁺ vengono dal Lehninger."
+  }
+ ],
+ "pathways": [
+  {
+   "id": "glicolisi",
+   "name": "glicolisi",
+   "topic": "m2-glicolisi",
+   "steps": [
+    {
+     "from": "glc",
+     "to": [
+      "g6p"
+     ],
+     "enzyme": "Esochinasi (glucochinasi nel fegato)",
+     "topic": "m2-fosforilazione"
+    },
+    {
+     "from": "g6p",
+     "to": [
+      "f6p"
+     ],
+     "enzyme": "Fosfoesoso isomerasi"
+    },
+    {
+     "from": "f6p",
+     "to": [
+      "fbp"
+     ],
+     "enzyme": "Fosfofruttochinasi 1 (PFK1)"
+    },
+    {
+     "from": "fbp",
+     "to": [
+      "dhap",
+      "ga3p"
+     ],
+     "enzyme": "Aldolasi"
+    },
+    {
+     "from": "dhap",
+     "to": [
+      "ga3p"
+     ],
+     "enzyme": "Trioso fosfato isomerasi"
+    },
+    {
+     "from": "ga3p",
+     "to": [
+      "bpg13"
+     ],
+     "enzyme": "Gliceraldeide 3-fosfato deidrogenasi"
+    },
+    {
+     "from": "bpg13",
+     "to": [
+      "pg3"
+     ],
+     "enzyme": "Fosfoglicerato chinasi"
+    },
+    {
+     "from": "pg3",
+     "to": [
+      "pg2"
+     ],
+     "enzyme": "Fosfoglicerato mutasi"
+    },
+    {
+     "from": "pg2",
+     "to": [
+      "pep"
+     ],
+     "enzyme": "Enolasi"
+    },
+    {
+     "from": "pep",
+     "to": [
+      "pyr"
+     ],
+     "enzyme": "Piruvato chinasi"
+    }
+   ]
+  },
+  {
+   "id": "gluconeogenesi",
+   "name": "gluconeogenesi",
+   "topic": "m5-reazioni",
+   "steps": [
+    {
+     "from": "pyr",
+     "to": [
+      "oaa"
+     ],
+     "enzyme": "Piruvato carbossilasi",
+     "where": "nel mitocondrio"
+    },
+    {
+     "from": "oaa",
+     "to": [
+      "mal"
+     ],
+     "enzyme": "Malato deidrogenasi mitocondriale",
+     "where": "nel mitocondrio"
+    },
+    {
+     "from": "mal",
+     "to": [
+      "oaa"
+     ],
+     "enzyme": "Malato deidrogenasi citosolica",
+     "where": "nel citosol"
+    },
+    {
+     "from": "oaa",
+     "to": [
+      "pep"
+     ],
+     "enzyme": "Fosfoenolpiruvato carbossichinasi (PEPCK)",
+     "where": "nel citosol"
+    },
+    {
+     "from": "pep",
+     "to": [
+      "pg2"
+     ],
+     "enzyme": "Enolasi"
+    },
+    {
+     "from": "pg2",
+     "to": [
+      "pg3"
+     ],
+     "enzyme": "Fosfoglicerato mutasi",
+     "note": "A p. 146 l'elenco degli enzimi glicolitici reversibili usati dalla gluconeogenesi salta la fosfoglicerato mutasi, che invece serve (2-PG → 3-PG)."
+    },
+    {
+     "from": "pg3",
+     "to": [
+      "bpg13"
+     ],
+     "enzyme": "Fosfoglicerato chinasi"
+    },
+    {
+     "from": "bpg13",
+     "to": [
+      "ga3p"
+     ],
+     "enzyme": "Gliceraldeide 3-fosfato deidrogenasi"
+    },
+    {
+     "from": "ga3p",
+     "to": [
+      "fbp"
+     ],
+     "enzyme": "Aldolasi",
+     "with": "dhap"
+    },
+    {
+     "from": "fbp",
+     "to": [
+      "f6p"
+     ],
+     "enzyme": "Fruttosio 1,6-bisfosfatasi"
+    },
+    {
+     "from": "f6p",
+     "to": [
+      "g6p"
+     ],
+     "enzyme": "Fosfoesoso isomerasi"
+    },
+    {
+     "from": "g6p",
+     "to": [
+      "glc"
+     ],
+     "enzyme": "Glucosio 6-fosfatasi",
+     "where": "nel reticolo endoplasmatico"
+    }
+   ]
+  },
+  {
+   "id": "glicerolo",
+   "name": "via del glicerolo",
+   "topic": "m5-glicerolo",
+   "steps": [
+    {
+     "from": "gly",
+     "to": [
+      "gro3p"
+     ],
+     "enzyme": "Glicerolo chinasi"
+    },
+    {
+     "from": "gro3p",
+     "to": [
+      "dhap"
+     ],
+     "enzyme": "Glicerolo 3-fosfato deidrogenasi"
+    },
+    {
+     "from": "dhap",
+     "to": [
+      "ga3p"
+     ],
+     "enzyme": "Trioso fosfato isomerasi"
+    }
+   ]
+  }
+ ],
+ "moleculeTopics": {
+  "glc": [
+   "m2-fosforilazione",
+   "m2-glicolisi",
+   "m5-reazioni"
   ],
-  "extraEnzymes": [
-    "Glucosio 6-fosfato deidrogenasi",
-    "Glicogeno fosforilasi",
-    "Fosfoglucomutasi",
-    "Piruvato deidrogenasi",
-    "Citrato sintasi",
-    "Fosfofruttochinasi 2",
-    "Lattico deidrogenasi",
-    "Transaminasi"
+  "g6p": [
+   "m2-fosforilazione",
+   "m2-glicolisi",
+   "m5-reazioni"
+  ],
+  "f6p": [
+   "m2-glicolisi",
+   "m5-reazioni"
+  ],
+  "fbp": [
+   "m2-glicolisi",
+   "m5-reazioni"
+  ],
+  "dhap": [
+   "m2-glicolisi",
+   "m5-glicerolo"
+  ],
+  "ga3p": [
+   "m2-glicolisi"
+  ],
+  "bpg13": [
+   "m2-glicolisi"
+  ],
+  "pg3": [
+   "m2-glicolisi"
+  ],
+  "pg2": [
+   "m2-glicolisi"
+  ],
+  "pep": [
+   "m2-glicolisi",
+   "m5-reazioni"
+  ],
+  "pyr": [
+   "m2-glicolisi",
+   "m5-reazioni"
+  ],
+  "oaa": [
+   "m5-reazioni",
+   "m3-krebs"
+  ],
+  "mal": [
+   "m5-reazioni",
+   "m3-krebs"
+  ],
+  "lac": [
+   "m5-reazioni"
+  ],
+  "ala": [
+   "m5-reazioni"
+  ],
+  "gly": [
+   "m5-glicerolo"
+  ],
+  "gro3p": [
+   "m5-glicerolo"
+  ],
+  "cit": [
+   "m3-krebs"
+  ],
+  "icit": [
+   "m3-krebs"
+  ],
+  "akg": [
+   "m3-krebs"
+  ],
+  "suc": [
+   "m3-krebs"
+  ],
+  "fum": [
+   "m3-krebs"
+  ],
+  "g1p": [
+   "m4-degradazione",
+   "m4-sintesi"
+  ],
+  "fru": [
+   "m2-ingresso"
+  ],
+  "gal": [
+   "m2-ingresso"
+  ],
+  "man": [
+   "m2-ingresso"
+  ],
+  "r5p": [
+   "m6-reazioni"
+  ],
+  "ru5p": [
+   "m6-reazioni"
+  ],
+  "xu5p": [
+   "m6-reazioni"
+  ],
+  "pg6": [
+   "m6-reazioni"
+  ],
+  "e4p": [
+   "m6-reazioni"
+  ],
+  "s7p": [
+   "m6-reazioni"
+  ],
+  "acal": [
+   "m2-fermentazioni"
+  ],
+  "etoh": [
+   "m2-fermentazioni"
+  ],
+  "asp": [
+   "m2-navette",
+   "m5-fonti"
+  ],
+  "glu": [
+   "m5-fonti"
   ]
+ },
+ "cofactorPool": [
+  "ATP",
+  "ADP",
+  "AMP",
+  "GTP",
+  "GDP",
+  "NAD⁺",
+  "NADH + H⁺",
+  "NADP⁺",
+  "FAD",
+  "FADH₂",
+  "Pi",
+  "PPi",
+  "H₂O",
+  "CO₂",
+  "HCO₃⁻",
+  "Biotina",
+  "Tiamina pirofosfato",
+  "Coenzima A",
+  "Mg²⁺"
+ ],
+ "extraEnzymes": [
+  "Glucosio 6-fosfato deidrogenasi",
+  "Glicogeno fosforilasi",
+  "Fosfoglucomutasi",
+  "Piruvato deidrogenasi",
+  "Citrato sintasi",
+  "Fosfofruttochinasi 2",
+  "Lattico deidrogenasi",
+  "Transaminasi"
+ ]
 }

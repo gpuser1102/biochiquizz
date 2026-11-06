@@ -83,22 +83,30 @@ def fischer(smiles, top=None):
     def has_P(i):
         return any(isinstance(n, int) and atoms[n]["el"] == "O" and any(isinstance(m, int) and atoms[m]["el"] == "P" for m in atoms[n]["nbrs"]) for n in atoms[i]["nbrs"])
 
+    def nN(i):
+        return sum(1 for n in atoms[i]["nbrs"] if isinstance(n, int) and atoms[n]["el"] == "N")
+
+    def longest(start):
+        """Catena di carboni più lunga a partire da un'estremità (per molecole ramificate come il citrato)."""
+        best = [start]
+        def dfs(path):
+            nonlocal best
+            if len(path) > len(best): best = list(path)
+            for n in cn[path[-1]]:
+                if n not in path: dfs(path + [n])
+        dfs([start])
+        return best
+
     def score(e):
         nb = cn[e][0] if cn[e] else None
-        s = (ox(e), ox(nb) if nb is not None else 0)
+        s = (len(longest(e)), ox(e), ox(nb) if nb is not None else 0, nN(nb) if nb is not None else 0)
         if top == "P":
             s = (has_P(e),) + s
         elif top == "OH":
             s = (not has_P(e),) + s
         return s
     start = max(ends, key=score) if len(ends) > 1 else ends[0]
-    chain, prev = [start], None
-    while True:
-        nxt = [n for n in cn[chain[-1]] if n != prev]
-        if not nxt:
-            break
-        prev = chain[-1]
-        chain.append(nxt[0])
+    chain = longest(start)
 
     def grp(o, side):
         """Etichetta di un sostituente legato con legame singolo (ionizzato a pH 7,4)."""
@@ -110,6 +118,12 @@ def fischer(smiles, top=None):
             return "OH" if side == "R" else "HO"
         if a["el"] == "N":
             return "NH₃⁺" if side == "R" else "⁺H₃N"
+        if a["el"] == "C":
+            oo = [n for n in a["nbrs"] if isinstance(n, int) and atoms[n]["el"] == "O"]
+            if len(oo) == 2:
+                return "COO⁻" if side == "R" else "⁻OOC"
+            hh = a["h"]
+            return ("CH" + (str(hh).translate(SUB) if hh > 1 else "")) if side == "R" else ("H" + (str(hh).translate(SUB) if hh > 1 else "") + "C")
         return a["el"]
 
     rows = []
@@ -143,6 +157,13 @@ def fischer(smiles, top=None):
             row.update(l="H" if right else grp(X, "L"), r=grp(X, "R") if right else "H")
         elif hn == 0 and len(sgl) == 1:                          # es. C2 del PEP
             row["r"] = grp(sgl[0], "R")
+        elif hn == 0 and len(sgl) == 2:                          # es. C3 del citrato: OH e COO⁻
+            o = [n for n in sgl if atoms[n]["el"] == "O"]
+            c = [n for n in sgl if n not in o]
+            if o and c:
+                row.update(l=grp(o[0], "L"), r=grp(c[0], "R"))
+            else:
+                row.update(l=grp(sgl[0], "L"), r=grp(sgl[1], "R"))
         else:
             row["c"] = "C" + ("H" + (str(hn).translate(SUB) if hn > 1 else "") if hn else "")
         if not row["l"]: row["lb"] = 0

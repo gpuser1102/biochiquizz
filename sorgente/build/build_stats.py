@@ -8,7 +8,7 @@ cards = []  # (topic, level, kind)
 mols = M["molecules"] if isinstance(M, dict) and "molecules" in M else (M or [])
 for m in mols:
     t = (C["moleculeTopics"].get(m["id"]) or [None])[0]
-    if t: cards.append((t, "f", "molecola"))
+    if t: cards.append((t, "f", "molecola")); cards.append((t, "m", "molecola-argomento"))
 for r in C["reactions"]: cards.append((r["topic"], "m", "reazione"))
 for p in C["pathways"]:
     for st in p["steps"]: cards.append((st.get("topic") or p["topic"], "m", "via"))
@@ -21,7 +21,7 @@ for sub in C["topics"]:
             cs = [c for c in cards if c[0] == t["id"]]
             n = lambda lv: sum(1 for c in cs if c[1] == lv)
             rows.append(dict(id=t["id"], materia=sub["subject"], blocco=b["name"], argomento=t["name"], pronto="sì" if t.get("ready") else "no",
-                             facile=n("f"), medio=n("m"), alta=n("a"), lode=n("l"), hard=n("h"), verificate=sum(1 for c in cs if c[2] == "verificata"),
+                             facile=n("f"), medio=n("m"), alta=n("a"), lode=n("l"), verificate=sum(1 for c in cs if c[2] == "verificata"),
                              totale=len(cs), aggiunto=t.get("added", "")))
 os.makedirs(os.path.join(ROOT, "dist"), exist_ok=True)
 json.dump(rows, open(os.path.join(ROOT, "dist/stats_argomenti.json"), "w"), ensure_ascii=False)

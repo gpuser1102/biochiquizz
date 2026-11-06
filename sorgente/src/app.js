@@ -47,7 +47,7 @@
   const svgIcon = n => { const s = h("span", { html: ICON[n] }); return s.firstChild; };
 
   /* ---------------- Stato locale ---------------- */
-  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true, h: true }, progressive: true, study: "", hardStats: {}, cards: {}, days: {} });
+  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true }, progressive: true, study: "", hardStats: {}, cards: {}, days: {} });
   let S = blank();
   try { const raw = localStorage.getItem(STORE_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) { /* storage non disponibile */ }
   // dal vecchio sistema a scatole: quelle card ripartono come nuove
@@ -55,7 +55,6 @@
   // modalità di studio: graduale (sblocco al 70%), libera (scegli i livelli), hard (solo domande toste, si scrive)
   if (!["grad", "free", "hard"].includes(S.study)) S.study = S.progressive === false ? "free" : "grad";
   if (!S.hardStats) S.hardStats = {};
-  if (S.levels && S.levels.h === undefined) S.levels.h = true;
   // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
   if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
@@ -66,7 +65,10 @@
 
   /* ---------------- Mazzo di card ---------------- */
   const CARDS = [];
+  const MOL_PATHS_IDS = "glc g6p f6p fbp dhap ga3p bpg13 pg3 pg2 pep pyr oaa mal lac ala gly gro3p cit icit akg suc fum g1p fru gal man r5p ru5p xu5p pg6 e4p s7p acal etoh asp glu".split(" ");
   D.molecules.forEach(m => CARDS.push({ id: "mol:" + m.id, kind: "mol", mol: m.id, topics: C.moleculeTopics[m.id] || [], level: "f" }));
+  // seconda card per molecola: dalla struttura alla via in cui si incontra
+  D.molecules.forEach(m => { if ((C.moleculeTopics[m.id] || []).length && MOL_PATHS_IDS.includes(m.id)) CARDS.push({ id: "mv:" + m.id, kind: "mv", mol: m.id, topics: C.moleculeTopics[m.id], level: "m" }); });
   C.reactions.forEach(r => CARDS.push({ id: "rx:" + r.id, kind: "rx", rx: r, topics: [r.topic], level: "m" }));
   (C.exam || []).forEach(x => CARDS.push({ id: "ex:" + x.id, kind: "ex", ex: x, topics: [x.topic], level: x.level || "m" }));
   (C.bank || []).forEach(x => CARDS.push({ id: "q:" + x.id, kind: "ex", ex: x, bank: true, topics: [x.topic], level: x.level }));
@@ -80,12 +82,12 @@
   /* ---------------- Livelli ----------------
      Facile → Medio → Alta → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
      quando almeno il 70% delle card del livello precedente è stato imparato (passato in ripasso). */
-  const LEVELS = ["f", "m", "a", "l", "h"];
+  const LEVELS = ["f", "m", "a", "l"];
   const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode", h: "Hard" };
   const STUDY_NAME = { grad: "Graduale", free: "Libera", hard: "Hard mode" };
   const isHard = () => S.study === "hard";
-  // in hard mode: solo le domande Hard, ragionate in stile esame (livello h)
-  const inHard = c => c.kind === "ex" && c.level === "h";
+  // in hard mode: domande Alta e 30 e lode (anche verificate) + molecole e reazioni da scrivere senza opzioni
+  const inHard = c => c.kind === "mol" || c.kind === "rx" || (c.kind === "ex" && (c.level === "a" || c.level === "l"));
   const UNLOCK = 0.7;
   const learned = c => { const x = S.cards[c.id]; return !!x && (x.type === "review" || (x.type === "relearn")); };
   function topicLevelState(tid) {
@@ -257,12 +259,11 @@
     return form;
   }
   const subjectOf = topic => ((TOPICS[topic] || {}).subject || "Biochimica II");
-  const pg = p => (/^\d/.test(String(p)) ? "p. " : "") + p; // le lezioni senza numeri di pagina si citano per nome
-  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, ${pg(page)}` : null;
+  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, p. ${page}` : null;
   // "dal glucosio", "dall'ossalacetato", "sull'1,3-bisfosfoglicerato"
   const prep = (p, id) => { const n = molName(id).toLowerCase(); return /^[aeiou1]|^8|^11/.test(n) ? `${p}ll'${n}` : `${p}l ${n}`; };
   const ALL_ENZYMES = [...new Set([...C.reactions.map(r => r.enzyme), ...C.pathways.flatMap(p => p.steps.map(s => s.enzyme)), ...C.extraEnzymes])];
-  const topicLabel = c => { const t = TOPICS[c.topics.find(x => activeTopics().includes(x)) || c.topics[0]]; return t ? t.name : ""; };
+  const topicLabel = c => { if (c.kind === "mv") return "Vie metaboliche"; const t = TOPICS[c.topics.find(x => activeTopics().includes(x)) || c.topics[0]]; return t ? t.name : ""; };
   let toastTimer;
   function toast(msg) {
     let t = $(".toast"); if (!t) { t = h("div", { class: "toast", role: "status" }); document.body.append(t); }
@@ -396,7 +397,7 @@
     if (c.kind === "mol") correct = MOL[c.mol].name;
     if (inp && inp.value) given = inp.value;
     const q = card.querySelector(".q");
-    return { cardId, topic: (c.topics || [])[0] || "", question: (q ? q.textContent : "") + (c.kind === "mol" ? ` [${MOL[c.mol].name}]` : ""), options: opts, correct, given: card.classList.contains("answered") ? given : "" };
+    return { cardId, topic: (c.topics || [])[0] || "", question: (q ? q.textContent : "") + (c.kind === "mol" || c.kind === "mv" ? ` [${MOL[c.mol].name}]` : ""), options: opts, correct, given: card.classList.contains("answered") ? given : "" };
   }
   function openReport(card, cardId) {
     const snap = cardSnapshot(card, cardId);
@@ -497,15 +498,44 @@
     return wrap;
   }
 
+  // vie metaboliche in cui compare ogni molecola: "si" = compare, "forse" = escluso dai distrattori perché discutibile
+  const PATHS = ["Glicolisi", "Gluconeogenesi", "Ciclo di Krebs", "Via dei pentoso fosfati", "Metabolismo del glicogeno", "Fermentazione alcolica",
+    "Navetta malato-aspartato", "Navetta del glicerolo fosfato", "Ciclo di Cori", "Ciclo dell'urea", "β-ossidazione degli acidi grassi", "Chetogenesi"];
+  const [GLI, GNG, TCA, PPP, GLY, FALC, NMA, NGP, CORI, UREA] = PATHS;
+  const MOL_PATHS = {
+    glc: [[GLI, GNG, GLY, CORI], [PPP]], g6p: [[GLI, GNG, GLY, PPP], [CORI]], f6p: [[GLI, GNG, PPP], [CORI]], fbp: [[GLI, GNG], [CORI]],
+    dhap: [[GLI, GNG, NGP], [CORI]], ga3p: [[GLI, GNG, PPP], [CORI]], bpg13: [[GLI, GNG], [CORI]], pg3: [[GLI, GNG], [CORI]], pg2: [[GLI, GNG], [CORI]],
+    pep: [[GLI, GNG], [CORI]], pyr: [[GLI, GNG, FALC, CORI], [TCA]], oaa: [[TCA, GNG, NMA], [UREA, CORI]], mal: [[TCA, GNG, NMA], [CORI]],
+    lac: [[CORI, GNG], [GLI]], ala: [[GNG], [UREA]], gly: [[GNG], []], gro3p: [[NGP, GNG], []],
+    cit: [[TCA], []], icit: [[TCA], []], akg: [[TCA], [NMA, UREA, GNG]], suc: [[TCA], []], fum: [[TCA, UREA], []],
+    g1p: [[GLY], [GNG]], fru: [[GLI], [GNG, GLY]], gal: [[GLI], [GLY]], man: [[GLI], []],
+    r5p: [[PPP], []], ru5p: [[PPP], []], xu5p: [[PPP], []], pg6: [[PPP], []], e4p: [[PPP], []], s7p: [[PPP], []],
+    acal: [[FALC], []], etoh: [[FALC], []], asp: [[NMA, UREA], [GNG, TCA]], glu: [[NMA], [UREA, GNG, TCA]],
+  };
+  function mvCard(c) {
+    const m = MOL[c.mol];
+    const { card, body } = shell(c, "Riconosci la molecola", "t-rose", "hex");
+    body.append(h("h2", { class: "q" }, "In quale di queste vie compare questa molecola?"), molBox(m.id));
+    const [yes, maybe] = MOL_PATHS[m.id];
+    const answer = yes[Math.floor(Math.random() * yes.length)];
+    const pool = PATHS.filter(p => !yes.includes(p) && !maybe.includes(p));
+    const opts = shuffle([answer, ...shuffle(pool).slice(0, 4)]);
+    body.append(optionList(opts, answer, (ok, btn) => {
+      const g = grade(c.id, ok ? 3 : 1, c.extra);
+      finish(card, btn, ok, `È ${m.name}.`, "Compare in: " + yes.join(", ") + ".", null, g);
+    }));
+    return card;
+  }
   function molCard(c) {
     const m = MOL[c.mol];
     const { card, body } = shell(c, "Riconosci la molecola", "t-rose", "hex");
     body.append(h("h2", { class: "q" }, "Che molecola è?"), molBox(m.id));
     const detail = `${m.formula} · PubChem CID ${m.cid}`;
     const done = (ok, anchor) => { const g = grade(c.id, ok ? 3 : 1, c.extra); finish(card, anchor, ok, ok ? m.name : `È ${m.name}.`, detail, null, g); };
-    const others = D.molecules.filter(x => x.id !== m.id && (C.moleculeTopics[x.id] || []).some(t => c.topics.includes(t))).map(x => x.name);
-    const pool = others.length >= 4 ? others : D.molecules.filter(x => x.id !== m.id).map(x => x.name);
-    const opts = shuffle([m.name, ...sample(pool, 4)]);
+    // distrattori: prima le molecole dello stesso argomento, poi le altre
+    const near = shuffle(D.molecules.filter(x => x.id !== m.id && (C.moleculeTopics[x.id] || []).some(t => c.topics.includes(t))).map(x => x.name));
+    const far = shuffle(D.molecules.filter(x => x.id !== m.id && !near.includes(x.name)).map(x => x.name));
+    const opts = shuffle([m.name, ...near.concat(far).slice(0, 4)]);
     const showOptions = () => body.append(optionList(opts, m.name, done));
     if (S.mode === "choice" && !isHard()) showOptions();
     else {
@@ -641,8 +671,8 @@
   // Domanda verificata (proposta a lezione): opzioni nell'ordine originale (alcune rimandano alle altre: "Tutte e tre", "Nessuno")
   function examCard(c) {
     const x = c.ex;
-    const kicker = c.bank ? (x.level === "h" ? "Domanda Hard · da esame" : x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
-    const { card, body } = shell(c, kicker, c.bank ? (x.level === "h" ? "t-peach" : x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "h" ? "flame" : x.level === "l" ? "star" : "hex") : "board");
+    const kicker = c.bank ? (x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
+    const { card, body } = shell(c, kicker, c.bank ? (x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "l" ? "star" : "hex") : "board");
     const qEl = h("h2", { class: "q ex-q" });
     // evidenzia le negazioni, come si fa a penna sul compito
     x.q.split(/(\bnon\b|\bfalsa\b|\btranne\b)/i).forEach(part => qEl.append(/^(non|falsa|tranne)$/i.test(part) ? h("u", {}, part) : part));
@@ -690,7 +720,7 @@
     doneShown = false;
     const c = Object.assign({}, pick.c, { extra: !!pick.extra });
     shown++; recent.push(c.id); if (recent.length > Math.min(4, Math.max(1, eligible().length - 1))) recent.shift();
-    const el = c.kind === "mol" ? molCard(c) : c.kind === "rx" ? rxCard(c) : c.kind === "ex" ? examCard(c) : nxCard(c);
+    const el = c.kind === "mol" ? molCard(c) : c.kind === "mv" ? mvCard(c) : c.kind === "rx" ? rxCard(c) : c.kind === "ex" ? examCard(c) : nxCard(c);
     feed().append(h("section", { class: "slide" }, el));
     fitCard(el);
     return true;
@@ -705,7 +735,7 @@
   const MODE_INFO = {
     grad: "Parti dalle domande facili. In ogni argomento il livello successivo si sblocca quando hai imparato il 70% di quello prima.",
     free: "Scegli tu quali livelli includere, tutti già sbloccati.",
-    hard: "Solo domande Hard: ragionate, in stile esame, a 5 opzioni. Servono per capire se hai davvero capito l'argomento. Se sbagli, la domanda torna dopo un minuto.",
+    hard: "Solo domande Alta e 30 e lode, comprese quelle verificate. Molecole e reazioni si scrivono senza opzioni, e se sbagli la domanda torna dopo un minuto.",
   };
   function setStudy(v) {
     S.study = v; S.progressive = v === "grad"; save(); renderModebar(); resetFeed();
@@ -797,7 +827,7 @@
         const head = h("button", { class: "row block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
           h("div", { class: "tile " + tiles[bi % tiles.length] }, h("span", { style: "font-weight:800;font-size:15px" }, String(bi + 1))),
           h("div", { class: "row-text" }, h("div", { class: "row-title" }, b.name),
-            h("div", { class: "row-sub" }, `${pg(b.pages)} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
+            h("div", { class: "row-sub" }, `p. ${b.pages} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
           h("span", { class: "chev", html: ICON.chev }));
         const list = h("div", { class: "topics" }); list.hidden = !readyN;
         head.addEventListener("click", () => { list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden)); });
@@ -872,7 +902,7 @@
       const wb = h("div", { class: "box" });
       weak.forEach(([id, s]) => {
         const c = CARD[id];
-        const name = c.kind === "mol" ? MOL[c.mol].name : c.kind === "rx" ? c.rx.enzyme : c.kind === "ex" ? (c.ex.q.length > 70 ? c.ex.q.slice(0, 68) + "…" : c.ex.q) : `${MOL[c.step.from].name} → ${c.step.to.map(molName).join(" + ")}`;
+        const name = c.kind === "mol" ? MOL[c.mol].name : c.kind === "mv" ? MOL[c.mol].name + " · argomento" : c.kind === "rx" ? c.rx.enzyme : c.kind === "ex" ? (c.ex.q.length > 70 ? c.ex.q.slice(0, 68) + "…" : c.ex.q) : `${MOL[c.step.from].name} → ${c.step.to.map(molName).join(" + ")}`;
         wb.append(h("div", { class: "row" }, h("div", { class: "tile " + ({ mol: "t-rose", rx: "t-peach", ex: "t-sky" }[c.kind] || "t-sage") }, svgIcon({ mol: "hex", rx: "rxn", ex: "board" }[c.kind] || "path")),
           h("div", { class: "row-text" }, h("div", { class: "row-title" }, name),
             h("div", { class: "row-sub" }, `${s.wrong} errori · facilità ${Math.round(s.ease * 100)}%` + (s.leech ? " · ostica" : "")))));

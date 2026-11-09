@@ -189,7 +189,7 @@ q("m2p-03", T, "m", "63", "Negli eritrociti, quale metabolita della glicolisi ab
 q("m2p-04", T, "a", "63–64", "In un deficit di piruvato chinasi negli eritrociti, la curva di dissociazione dell'emoglobina si sposta:", [
   "A destra, perché si accumulano intermedi a monte e aumenta il 2,3-BPG", "A sinistra, perché manca il 2,3-BPG", "Non si sposta", "A destra, perché aumenta il lattato"], 0,
   "L'Hb cede più O₂, ma la cellula ha poco ATP: la pompa Na⁺/K⁺ funziona male, l'eritrocita si gonfia e viene eliminato (anemia emolitica).")
-q("m2p-05", T, "a", "63", "E in un deficit di esochinasi eritrocitaria?", [
+q("m2p-05", T, "a", "63", "In un deficit di esochinasi negli eritrociti, la curva di dissociazione dell'emoglobina si sposta:", [
   "La curva si sposta a sinistra: poco 2,3-BPG, Hb più affine all'O₂", "La curva si sposta a destra", "Non cambia nulla", "L'eritrocita produce più lattato"], 0,
   "Se la glicolisi non parte si forma poco 1,3-BPG e quindi poco 2,3-BPG.")
 q("m2p-06", T, "a", "64 e seguenti (pagine non numerate)", "Nell'intolleranza ereditaria al fruttosio, perché il fegato va in sofferenza?", [

@@ -238,69 +238,6 @@ q("navetta-fad", "m2-navette", "54", "Nel sistema navetta del glicerolo fosfato:
 q("navetta-atp", "m2-navette", "47, 54", "Se la riossidazione del NADH produce 2,5 ATP e quella del FADH₂ 1,5 ATP, quante ATP si formano in totale da glucosio a piruvato se il sistema navetta è quello del glicerolo fosfato?",
   ["3", "4", "5", "7"], 2, "2 ATP netti + 2 NADH citosolici che, con la navetta del glicerolo fosfato, diventano FADH₂: 2 + 2 × 1,5 = 5.")
 
-# ---------------- Piruvato deidrogenasi, ciclo di Krebs, catena respiratoria (foto di novembre 2026) ----------------
-q("fa-glucosio", "m2-pdh", "70–71, 181", "Un aumento della degradazione degli acidi grassi nel mitocondrio provoca:",
-  ["Una diminuzione del flusso del ciclo di Krebs", "Una inibizione della citrato sintasi", "Una diminuzione del catabolismo del glucosio", "Un'attivazione della piruvato deidrogenasi"], 2,
-  "La β-ossidazione produce acetil-CoA e NADH, che inibiscono la PDH; il citrato in eccesso esce nel citosol e inibisce la PFK1. Risultato: si risparmia glucosio. La PDH quindi è inibita, non attivata.",
-  note="Il collegamento β-ossidazione → risparmio di glucosio (ciclo di Randle) non è spiegato in modo esplicito nelle sbobine: si ricava dalla regolazione di PDH e PFK1.")
-q("pdh-lipoico", "m2-pdh", "66–71", "La conversione del piruvato in acetil CoA e CO₂:",
-  ["è reversibile.", "richiede la partecipazione dell'acido lipoico.", "è attivata dalla fosforilazione del complesso della piruvato deidrogenasi da parte di una proteina chinasi in presenza di ATP.", "avviene nel citosol.", "dipende dal coenzima biotina."], 1,
-  "Il lipoato è il braccio flessibile di E2. La reazione è irreversibile, avviene nella matrice, la fosforilazione da parte della PDH chinasi la inattiva e la biotina è il coenzima della piruvato carbossilasi.")
-q("pdh-tiamina", "m2-pdh", "66, 73, 86", "Un neonato di un mese mostra anomalie del sistema nervoso e acidosi lattica. Il dosaggio enzimatico dell'attività della piruvato deidrogenasi (PDH) su estratti di fibroblasti cutanei in coltura mostra un'attività pari al 5% del livello normale quando la concentrazione della tiamina pirofosfato (TPP) è bassa (1 × 10⁻⁴ mM), e un'attività pari all'80% del normale quando la concentrazione della TPP è elevata (0,4 mM). Quale delle seguenti affermazioni riguardo al paziente è la più corretta?",
-  ["Un livello elevato di lattato e di piruvato nel sangue sono segni chiari di una carenza di PDH.", "Ci si aspetta che il paziente presenti delle alterazioni nella degradazione degli acidi grassi.", "Questo paziente potrebbe trarre giovamento da una dieta ricca di carboidrati.", "Ci si può aspettare che la concentrazione di alanina nel sangue sia inferiore al normale.", "La somministrazione della tiamina dovrebbe ridurre la concentrazione del lattato nel siero e portare a un miglioramento del quadro clinico."], 4,
-  "L'E1 mutato ha bassa affinità per la TPP: con molta TPP l'attività torna all'80%, quindi la tiamina ad alte dosi aiuta. Lattato e piruvato alti non sono specifici (anche ipossia), la β-ossidazione è normale, i carboidrati peggiorano l'acidosi e l'alanina sale (il piruvato si accumula).",
-  note="Il caso clinico del deficit di PDH sensibile alla tiamina non è nelle sbobine (Lippincott); si ragiona su E1 e TPP.")
-q("anapl", "m3-krebs", "87", "Una reazione anaplerotica può formare:",
-  ["NADH", "Piruvato", "Ossalacetato", "GTP"], 2,
-  "Le reazioni anaplerotiche riforniscono il ciclo di intermedi: la principale è piruvato → ossalacetato (piruvato carbossilasi).")
-q("pc-biotina", "m3-krebs", "87, 143", "Quale delle seguenti affermazioni è vera per la piruvato carbossilasi?",
-  ["E' un enzima citosolico", "Richiede la biotina", "E' regolato dal NADH", "Non si formano intermedi di reazione"], 1,
-  "È mitocondriale, usa la biotina (si forma l'intermedio carbossibiotina) ed è attivata dall'acetil-CoA, non regolata dal NADH.")
-q("acoa-allost", "m3-krebs", "48, 70, 87", "Di quale tra questi enzimi l'acetilCoA non è un effettore allosterico?",
-  ["Piruvato deidrogenasi", "Citrato sintasi", "Piruvato chinasi", "Piruvato carbossilasi"], 1,
-  "Per la citrato sintasi l'acetil-CoA è un substrato. Inibisce la PDH e la piruvato chinasi, attiva la piruvato carbossilasi.")
-q("lattacidemia", "m3-krebs", "73, 86", "Quali di questi eventi producono una lattacidemia?",
-  ["Deficit di tiamina", "Avvelenamento da arsenico", "Avvelenamento da mercurio", "Tutti e tre gli eventi"], 3,
-  "Tutti bloccano la PDH: la tiamina (TPP) serve a E1, arsenico e mercurio legano i gruppi SH del lipoato. Il piruvato non ossidato diventa lattato.")
-q("krebs-nadh", "m3-krebs", "84–85", "Quale delle seguenti condizioni fa diminuire l'ossidazione dell'acetil CoA attraverso il ciclo dell'acido citrico?",
-  ["Un rapporto ATP/ADP basso.", "Un basso livello del NADH dovuto alla rapida ossidazione a NAD⁺ attraverso la catena respiratoria.", "Un rapporto NAD⁺/NADH basso.", "Una concentrazione elevata dell'AMP.", "Un rapporto GTP/GDP basso."], 2,
-  "Con poco NAD⁺ le deidrogenasi del ciclo (isocitrato, α-chetoglutarato, malato DH) rallentano e il NADH le inibisce. Le altre condizioni segnalano bisogno di energia e accelerano il ciclo.")
-q("krebs-3tappe", "m3-krebs", "81–83", "La seguente equazione è la somma di tre tappe del ciclo dell'acido citrico: A + B + FAD + H₂O ⇌ C + FADH₂ + NADH. Quale combinazione è corretta (Reagente A, Reagente B, Prodotto C)?",
-  ["A: succinil CoA; B: GDP; C: succinato", "A: succinato; B: NAD⁺; C: ossalacetato", "A: fumarato; B: NAD⁺; C: ossalacetato", "A: succinato; B: NAD⁺; C: malato", "A: fumarato; B: GTP; C: malato"], 1,
-  "Succinato → fumarato (FAD), fumarato + H₂O → malato, malato → ossalacetato (NAD⁺). Partendo dal fumarato mancherebbe il FAD.")
-q("mito-falsa", "m2-navette", "54, 74", "Quale affermazione è falsa riguardo ai mitocondri?",
-  ["Sono presenti in copie multiple all'interno della cellula", "La matrice mitocondriale contiene DNA", "La membrana mitocondriale interna è impermeabile agli ioni", "Il NADH può entrare all'interno della matrice"], 3,
-  "La membrana interna è impermeabile al NADH: entrano solo i suoi elettroni, tramite le navette del glicerolo fosfato e del malato-aspartato.")
-q("pila-nad", "m3-catena", "91–92", "La seguente reazione: NAD⁺ + 2H⁺ + 2e → NADH + H⁺ ha un ΔE°' di −0,32 V. Questo significa che in una pila ad idrogeno:",
-  ["gli elettroni migrano verso la semicella che contiene NAD", "la pressione dell'H₂ diminuisce", "il pH della semicella ad idrogeno diminuisce", "nessuna delle tre"], 3,
-  "Potenziale negativo: il NADH cede elettroni, che vanno verso l'elettrodo a idrogeno. Lì gli H⁺ si riducono a H₂: la pressione dell'H₂ aumenta e il pH sale. Quindi A, B e C sono tutte false.")
-q("de-positivo", "m3-catena", "91–92, 99", "Se il ΔE°' è > 0 la reazione:",
-  ["procederà verso destra", "la direzione dipenderà dalle concentrazioni delle specie", "procederà verso sinistra", "la reazione è all'equilibrio"], 0,
-  "ΔG°' = −nFΔE°': con ΔE°' positivo il ΔG°' è negativo e la reazione è spontanea verso destra (in condizioni standard).",
-  note="Risposta da confermare con quella data a lezione: in condizioni reali la direzione dipende anche dalle concentrazioni (equazione di Nernst), come per ΔG e ΔG°'. Se il docente ha indicato la B, segnalalo.")
-q("pompe-h", "m3-catena", "93–99", "Quale di queste affermazioni è vera per le pompe protoniche?",
-  ["Sono bidirezionali", "Sono presenti in tutti i complessi", "Sono attivate dall'energia ossidoriduttiva", "Depolarizzano la membrana mitocondriale interna"], 2,
-  "I complessi I, III e IV pompano protoni sfruttando l'energia del trasferimento di elettroni. Il complesso II non pompa; il pompaggio è vettoriale (matrice → spazio intermembrana) e polarizza la membrana.")
-q("fes", "m3-catena", "93, 96", "Le proteine ferro-zolfo sono:",
-  ["componenti esclusivi dei complessi della catena respiratoria", "proteine che contengono sempre un motivo strutturale formato da 4 residui di cisteina", "proteine che contengono sempre ioni ferrosi", "hanno un ΔE°' inferiore a quello del NAD"], 1,
-  "Secondo la sbobina le 4 cisteine sono sempre presenti; il ferro passa da Fe²⁺ a Fe³⁺ (non è sempre ferroso) e l'aconitasi del ciclo di Krebs ha un centro Fe-S (non sono esclusive della catena).",
-  note="Sbobina di Biochimica II, p. 93: c'è scritto che le 4 cisteine «permangono sempre». Non è vero per la proteina di Rieske del complesso III (2 cisteine e 2 istidine, citata a p. 96). Risposta da confermare con quella data a lezione.", pending=True)
-q("coq-falsa", "m3-catena", "93–96", "Quali tra queste affermazioni riguardo il coenzima Q è falsa?",
-  ["E' ridotto dai complessi contenenti coenzimi flavinici", "Presenta una coda isoprenoide idrofobica", "Puo' assumere una forma semichinonica", "Riduce le proteine ferro-zolfo del complesso I"], 3,
-  "Il Q riceve gli elettroni dai centri Fe-S del complesso I (e dai complessi con FAD), non li cede a loro. Ha 10 unità isopreniche e passa per il semichinone.")
-q("flavinico", "m3-catena", "66, 87, 93", "Quali dei seguenti complessi/enzimi non contiene un derivato flavinico?",
-  ["Glicerolo fosfato deidrogenasi mitocondriale", "Complesso I", "Piruvato carbossilasi", "Piruvato deidrogenasi"], 2,
-  "La piruvato carbossilasi usa la biotina. Glicerolo fosfato DH mitocondriale (FAD), complesso I (FMN) e PDH (FAD su E3) contengono flavine.")
-q("inib-c3", "m3-catena", "104", "Se un inibitore blocca il complesso III:",
-  ["Il complesso 1 è ossidato", "Il complesso 2 è ridotto", "Il citocromo c è ridotto", "Il rapporto Q/QH2 è alto"], 1,
-  "A monte del blocco i trasportatori restano ridotti (complessi I e II, QH₂ alto, quindi Q/QH₂ basso); a valle restano ossidati (citocromo c, complesso IV).")
-q("c3-falsa", "m3-catena", "96–97", "Quali delle seguenti affermazioni è falsa riguardo al complesso III?",
-  ["Serve a riossidare l'ubichinolo", "Contiene la proteina di Rieske", "Gli elettroni passano dal citocromo b_L al citocromo c₁", "I gruppi eme dei citocromi c1 e c vengono a stretto contatto"], 2,
-  "Dal QH₂ un elettrone va alla proteina di Rieske → citocromo c₁ → citocromo c; l'altro va al citocromo b_L → b_H e torna a un Q (ciclo del Q). Il b_L non cede a c₁.")
-q("ubichinone", "m3-catena", "93–95", "Una diminuita sintesi dell'ubichinone produrrà:",
-  ["incremento del ciclo di Krebs", "aumento di lattato", "maggiore consumo di ossigeno", "aumento dell'attività della piruvato DH"], 1,
-  "Senza Q la catena si blocca: il NADH non si riossida, Krebs e PDH rallentano, cala il consumo di O₂ e il piruvato viene ridotto a lattato.")
-
 LEVELS = dict(
   eq="f", **{"dg-dg0": "f", "atp-ph": "m", "atp-legami": "m", "slp-def": "m", "ndpk": "a", "carica": "a", "no-atp": "f",
   "legami-energia": "l", "pk-base": "m", "etanolo-nad": "m", "chetoacido": "m", "elettroni-glc": "a", "ox-carbossile": "m",
@@ -312,10 +249,7 @@ LEVELS = dict(
   "glut5": "a", "gapdh-legame": "l", "gapdh-cys": "m", "gapdh-nadh": "a", "slp-reazione": "f", "dg-negativo": "m",
   "bpg-falsa": "a", "non-glicolisi": "m", "doppio-legame": "m", "ga3p-fbp": "a", "fbp-f6p": "a", "ferm-irrev": "m",
   "etanolo-vera": "a", "etanolo-falsa": "a", "ldh-fattore": "a", "ldh-falsa": "m", "ldh1": "m", "ldh-struttura": "a",
-  "cori": "m", "anion-gap": "a", "dhap-rid": "m", "navetta-fad": "m", "navetta-atp": "a",
-  "fa-glucosio": "a", "pdh-lipoico": "f", "pdh-tiamina": "a", "anapl": "f", "pc-biotina": "f", "acoa-allost": "m",
-  "lattacidemia": "m", "krebs-nadh": "m", "krebs-3tappe": "a", "mito-falsa": "f", "pila-nad": "a", "de-positivo": "m",
-  "pompe-h": "m", "fes": "l", "coq-falsa": "m", "flavinico": "m", "inib-c3": "a", "c3-falsa": "l", "ubichinone": "a"})
+  "cori": "m", "anion-gap": "a", "dhap-rid": "m", "navetta-fad": "m", "navetta-atp": "a"})
 for x in Q:
     x["level"] = LEVELS[x["id"]]
 
@@ -391,26 +325,10 @@ EXTRA = {
     "dhap-rid": "Glicerolo libero",
     "navetta-fad": "Il glicerolo fosfato è ossidato dal NAD⁺ mitocondriale",
     "navetta-atp": "6",
-    "fa-glucosio": "Un'attivazione della fosfofruttochinasi 1",
-    "anapl": "Acetil-CoA",
-    "pc-biotina": "È inibita dall'acetil-CoA",
-    "acoa-allost": "Piruvato deidrogenasi chinasi",
-    "lattacidemia": "Nessuno dei tre eventi",
-    "mito-falsa": "La membrana esterna è permeabile alle piccole molecole",
-    "pila-nad": "il NAD⁺ della semicella viene ridotto a NADH",
-    "de-positivo": "il ΔG°' della reazione sarà positivo",
-    "pompe-h": "Consumano ATP per trasportare i protoni",
-    "fes": "sono presenti solo nel complesso I",
-    "coq-falsa": "Diffonde nel doppio strato della membrana interna",
-    "flavinico": "Succinato deidrogenasi",
-    "inib-c3": "Il complesso 4 è ridotto",
-    "c3-falsa": "Pompa protoni nello spazio intermembrana",
-    "ubichinone": "aumento della sintesi di ATP",
 }
 RENAME = {("idrolasi", "Tutte e tre"): "Proteasi, amilasi e lipasi", ("lento", "Nessuno dei tre"): "Nessuno di questi"}
 for x in Q:
     x["opts"] = [RENAME.get((x["id"], o), o) for o in x["opts"]]
-    if len(x["opts"]) == 5: assert x["id"] not in EXTRA, x["id"]; continue
     assert x["id"] in EXTRA, ("manca la quinta opzione", x["id"])
     assert EXTRA[x["id"]] not in x["opts"], x["id"]
     x["opts"].append(EXTRA[x["id"]])

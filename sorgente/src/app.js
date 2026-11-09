@@ -371,7 +371,7 @@
     const d = today(); if (S.lastPing === d) return;
     try {
       await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify({ kind: "ping", device: S.device, version: C.version, platform: platform(), standalone: standalone() }) });
+        body: JSON.stringify({ kind: "ping", device: S.device, version: "v" + C.version, platform: platform(), standalone: standalone() }) });
       S.lastPing = d; save();
     } catch (e) { }
   }
@@ -395,6 +395,7 @@
     const inp = card.querySelector(".write input");
     let correct = right ? right.textContent : "", given = wrong ? wrong.textContent : right ? right.textContent : "";
     if (c.kind === "mol") correct = MOL[c.mol].name;
+    if (c.kind === "ex") correct = c.ex.opts[c.ex.ans];   // anche se la segnalazione arriva prima di rispondere
     if (inp && inp.value) given = inp.value;
     const q = card.querySelector(".q");
     return { cardId, topic: (c.topics || [])[0] || "", question: (q ? q.textContent : "") + (c.kind === "mol" || c.kind === "mv" ? ` [${MOL[c.mol].name}]` : ""), options: opts, correct, given: card.classList.contains("answered") ? given : "" };
@@ -415,7 +416,7 @@
     const note = h("textarea", { id: "report-note", rows: "3", maxlength: "800", placeholder: "Cosa non torna? Se puoi, scrivi la versione giusta e la pagina della sbobina." });
     const err = h("div", { class: "field-err", role: "alert" }); err.hidden = true;
     send.addEventListener("click", () => {
-      const r = Object.assign({ reportId: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), ts: new Date().toISOString(), version: C.version, device: S.device, reason, note: note.value.trim(),
+      const r = Object.assign({ reportId: Date.now().toString(36) + Math.random().toString(36).slice(2, 7), ts: new Date().toISOString(), version: "v" + C.version, device: S.device, reason, note: note.value.trim(),
         mode: S.mode, platform: platform() }, snap);
       const all = loadReports(); all.push(r); saveReports(all);
       close();

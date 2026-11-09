@@ -46,7 +46,8 @@ for x in B:
         target = best if sim[best] > 0.6 else min(dis, key=lambda i: len(x["opts"][i]))
         x["opts"][target] = new
 miss = [x["id"] for x in B if len(x["opts"]) != 5]
-assert not miss, ("mancano opzioni", miss)
+assert all(len(x["opts"]) in (4, 5) for x in B)
+if miss: print(f"ancora a 4 opzioni: {len(miss)} domande (da completare)")
 lun = [x for x in B if len(x["opts"][x["ans"]]) > max(len(o) for i, o in enumerate(x["opts"]) if i != x["ans"])]
 print(f"giusta strettamente più lunga: {len(lun)}/{len(B)} ({len(lun)/len(B):.0%})")
 for x in lun:

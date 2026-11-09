@@ -1,5 +1,5 @@
 {
- "version": "0.7.0",
+ "version": "1.0.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -338,11 +338,617 @@
   },
   {
    "subject": "Biologia molecolare",
-   "blocks": []
+   "blocks": [
+    {
+     "name": "Principi di comunicazione cellulare",
+     "pages": "lezione 1",
+     "topics": [
+      {
+       "id": "bm1-comunicazione",
+       "name": "Tipi di comunicazione",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm1-recettore-ligando",
+       "name": "Interazione recettore-ligando",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm1-intra-superficie",
+       "name": "Recettori, ligandi ed effettori",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Recettori di membrana",
+     "pages": "lezione 2",
+     "topics": [
+      {
+       "id": "bm2-canali",
+       "name": "Recettori canale",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm2-rtk",
+       "name": "Recettori tirosin-chinasici e via di Ras",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm2-terapia",
+       "name": "Recettori come bersaglio terapeutico",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm2-sertre",
+       "name": "Recettori serin/treonin-chinasici",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm2-citochine",
+       "name": "Recettori per le citochine",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Recettori accoppiati a proteine G",
+     "pages": "lezione 3",
+     "topics": [
+      {
+       "id": "bm3-gpcr",
+       "name": "Struttura dei GPCR e proteine G",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm3-camp",
+       "name": "Via del cAMP",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm3-spegnimento",
+       "name": "Spegnimento e desensibilizzazione",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm3-cgmp",
+       "name": "Via del cGMP",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Calcio e fosfolipidi",
+     "pages": "lezione 4",
+     "topics": [
+      {
+       "id": "bm4-calcio",
+       "name": "Calcio come secondo messaggero",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm4-calmodulina",
+       "name": "Calmodulina",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm4-fosfoinositidi",
+       "name": "Via dei fosfoinositidi",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm4-asse",
+       "name": "Asse ipotalamo-ipofisi",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Ormoni pancreatici",
+     "pages": "lezione 5",
+     "topics": [
+      {
+       "id": "bm5-insulina",
+       "name": "Insulina",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "bm5-glucagone",
+       "name": "Glucagone e somatostatina"
+      }
+     ]
+    },
+    {
+     "name": "Volemia e recettori intracellulari",
+     "pages": "lezione 6",
+     "topics": [
+      {
+       "id": "bm6-vasopressina",
+       "name": "Vasopressina"
+      },
+      {
+       "id": "bm6-anp",
+       "name": "Peptide natriuretico atriale"
+      },
+      {
+       "id": "bm6-raa",
+       "name": "Sistema renina-angiotensina-aldosterone"
+      },
+      {
+       "id": "bm6-idrofobici",
+       "name": "Ormoni idrofobici"
+      }
+     ]
+    },
+    {
+     "name": "Recettori nucleari e organi di senso",
+     "pages": "lezione 7",
+     "topics": [
+      {
+       "id": "bm7-vitd",
+       "name": "Vitamina D3 e VDR"
+      },
+      {
+       "id": "bm7-vista",
+       "name": "Vista"
+      },
+      {
+       "id": "bm7-olfatto",
+       "name": "Olfatto"
+      },
+      {
+       "id": "bm7-gusto",
+       "name": "Gusto"
+      },
+      {
+       "id": "bm7-nucleotidi",
+       "name": "Nucleotidi: struttura e nomenclatura"
+      }
+     ]
+    },
+    {
+     "name": "Sintesi delle purine",
+     "pages": "lezione 8",
+     "topics": [
+      {
+       "id": "bm8-denovo",
+       "name": "Sintesi de novo"
+      },
+      {
+       "id": "bm8-folato",
+       "name": "Acido folico e THF"
+      },
+      {
+       "id": "bm8-regolazione",
+       "name": "Regolazione e farmaci"
+      }
+     ]
+    },
+    {
+     "name": "Degradazione delle purine e vie di salvataggio",
+     "pages": "lezione 9",
+     "topics": [
+      {
+       "id": "bm9-degradazione",
+       "name": "Degradazione"
+      },
+      {
+       "id": "bm9-salvataggio",
+       "name": "Vie di salvataggio"
+      },
+      {
+       "id": "bm9-gotta",
+       "name": "Gotta"
+      },
+      {
+       "id": "bm9-scid",
+       "name": "SCID"
+      }
+     ]
+    },
+    {
+     "name": "Pirimidine e deossiribonucleotidi",
+     "pages": "lezione 10",
+     "topics": [
+      {
+       "id": "bm10-sintesi",
+       "name": "Sintesi de novo delle pirimidine"
+      },
+      {
+       "id": "bm10-degradazione",
+       "name": "Degradazione delle pirimidine"
+      },
+      {
+       "id": "bm10-rnr",
+       "name": "Ribonucleotide reduttasi"
+      },
+      {
+       "id": "bm10-timidilato",
+       "name": "Timidilato sintasi e chemioterapici"
+      }
+     ]
+    },
+    {
+     "name": "Metabolismo del ferro",
+     "pages": "lezione 11",
+     "topics": [
+      {
+       "id": "bm11-ferro",
+       "name": "Funzioni, tossicità, biodisponibilità"
+      },
+      {
+       "id": "bm11-proteine",
+       "name": "Proteine del ferro"
+      },
+      {
+       "id": "bm11-cellule",
+       "name": "Cellule che rilasciano ferro"
+      },
+      {
+       "id": "bm11-ireirp",
+       "name": "Regolazione cellulare (IRE/IRP)"
+      },
+      {
+       "id": "bm11-epcidina",
+       "name": "Regolazione sistemica (epcidina)"
+      }
+     ]
+    }
+   ]
   },
   {
    "subject": "Biochimica I",
-   "blocks": []
+   "blocks": [
+    {
+     "name": "Ripasso di propedeutica",
+     "pages": "6–10",
+     "topics": [
+      {
+       "id": "d1-chimica",
+       "name": "Fondamenti di chimica",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d1-acqua",
+       "name": "L'acqua",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d1-metabolismo",
+       "name": "Metabolismo e catabolismo",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Amminoacidi e peptidi",
+     "pages": "11–23",
+     "topics": [
+      {
+       "id": "d2-strutturali",
+       "name": "Proprietà strutturali",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d2-classificazione",
+       "name": "Classificazione",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d2-acidobase",
+       "name": "Proprietà acido-base",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d2-nutrizionale",
+       "name": "Classificazione nutrizionale e amminoacidi non comuni",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d2-peptidico",
+       "name": "Legame peptidico",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Struttura delle proteine",
+     "pages": "24–67",
+     "topics": [
+      {
+       "id": "d3-primaria",
+       "name": "Struttura primaria",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-secondaria",
+       "name": "Struttura secondaria",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-collagene",
+       "name": "Proteine fibrose e collagene",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-terziaria",
+       "name": "Struttura terziaria e proteine globulari",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-folding",
+       "name": "Folding",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-quaternaria",
+       "name": "Struttura quaternaria",
+       "ready": true,
+       "added": "2026-11-04"
+      },
+      {
+       "id": "d3-tecniche",
+       "name": "Tecniche per lo studio delle proteine",
+       "ready": true,
+       "added": "2026-11-04"
+      }
+     ]
+    },
+    {
+     "name": "Mioglobina ed emoglobina",
+     "pages": "68–94",
+     "topics": [
+      {
+       "id": "d4-eme",
+       "name": "Eme e mioglobina"
+      },
+      {
+       "id": "d4-hbmb",
+       "name": "Differenze Hb vs Mb"
+      },
+      {
+       "id": "d4-legame",
+       "name": "Legame dell'O₂ all'Hb"
+      },
+      {
+       "id": "d4-modulatori",
+       "name": "Modulatori allosterici"
+      },
+      {
+       "id": "d4-hbf",
+       "name": "HbF e geni delle globine"
+      },
+      {
+       "id": "d4-mutazioni",
+       "name": "Mutazioni dell'emoglobina"
+      }
+     ]
+    },
+    {
+     "name": "Tecniche di purificazione e analisi",
+     "pages": "95–108",
+     "topics": [
+      {
+       "id": "d5-purificazione",
+       "name": "Purificazione"
+      },
+      {
+       "id": "d5-analisi",
+       "name": "Analisi"
+      }
+     ]
+    },
+    {
+     "name": "Enzimi",
+     "pages": "109–155",
+     "topics": [
+      {
+       "id": "d6-classificazione",
+       "name": "Classificazione e termodinamica"
+      },
+      {
+       "id": "d6-caratteristiche",
+       "name": "Caratteristiche e riconoscimento enzima-substrato"
+      },
+      {
+       "id": "d6-cinetica",
+       "name": "Cinetica enzimatica"
+      },
+      {
+       "id": "d6-marcatori",
+       "name": "Localizzazione delle vie ed enzimi come marcatori"
+      },
+      {
+       "id": "d6-meccanismi",
+       "name": "Meccanismi catalitici"
+      },
+      {
+       "id": "d6-inibizione",
+       "name": "Inibizione"
+      },
+      {
+       "id": "d6-regolazione",
+       "name": "Regolazione"
+      }
+     ]
+    },
+    {
+     "name": "Vitamine e coenzimi",
+     "pages": "155–168",
+     "topics": [
+      {
+       "id": "d7-coenzimi",
+       "name": "Coenzimi idrosolubili"
+      }
+     ]
+    },
+    {
+     "name": "Coagulazione del sangue",
+     "pages": "169–181",
+     "topics": [
+      {
+       "id": "d8-cascata",
+       "name": "Cascata coagulativa e piastrine"
+      },
+      {
+       "id": "d8-fibrina",
+       "name": "Formazione del coagulo di fibrina"
+      },
+      {
+       "id": "d8-vitk",
+       "name": "Vitamina K"
+      },
+      {
+       "id": "d8-fibrinolisi",
+       "name": "Inibitori della coagulazione e fibrinolisi"
+      }
+     ]
+    },
+    {
+     "name": "Carboidrati",
+     "pages": "182–197",
+     "topics": [
+      {
+       "id": "d9-mono",
+       "name": "Monosaccaridi"
+      },
+      {
+       "id": "d9-glicosidico",
+       "name": "Legame glicosidico e disaccaridi"
+      },
+      {
+       "id": "d9-poli",
+       "name": "Polisaccaridi"
+      },
+      {
+       "id": "d9-glicoproteine",
+       "name": "Glicoproteine"
+      }
+     ]
+    },
+    {
+     "name": "Lipidi e membrane",
+     "pages": "198–216",
+     "topics": [
+      {
+       "id": "d10-acidigrassi",
+       "name": "Acidi grassi"
+      },
+      {
+       "id": "d10-membrana",
+       "name": "Lipidi di membrana"
+      },
+      {
+       "id": "d10-steroidi",
+       "name": "Terpeni, steroidi e derivati del colesterolo"
+      },
+      {
+       "id": "d10-trasporto",
+       "name": "Membrane e trasporto"
+      }
+     ]
+    },
+    {
+     "name": "Vitamine liposolubili",
+     "pages": "217–218",
+     "topics": [
+      {
+       "id": "d11-vitad",
+       "name": "Vitamina A e vitamina D"
+      }
+     ]
+    },
+    {
+     "name": "Digestione e trasporto dei grassi",
+     "pages": "219–222",
+     "topics": [
+      {
+       "id": "d12-digestione",
+       "name": "Digestione, assorbimento, deposito e trasporto"
+      },
+      {
+       "id": "d12-lipoproteine",
+       "name": "Lipoproteine"
+      }
+     ]
+    },
+    {
+     "name": "Biologia molecolare",
+     "pages": "223–283",
+     "topics": [
+      {
+       "id": "d13-acidi",
+       "name": "Acidi nucleici"
+      },
+      {
+       "id": "d13-studio",
+       "name": "Studio del DNA"
+      },
+      {
+       "id": "d13-topologia",
+       "name": "Topologia del DNA"
+      },
+      {
+       "id": "d13-duplicazione",
+       "name": "Duplicazione"
+      },
+      {
+       "id": "d13-trascrizione",
+       "name": "Trascrizione"
+      },
+      {
+       "id": "d13-espressione",
+       "name": "Controllo dell'espressione genica"
+      },
+      {
+       "id": "d13-rna",
+       "name": "RNA"
+      },
+      {
+       "id": "d13-clonaggio",
+       "name": "Clonaggio genico"
+      },
+      {
+       "id": "d13-pcr",
+       "name": "PCR e applicazioni"
+      },
+      {
+       "id": "d13-editing",
+       "name": "Editing del DNA"
+      }
+     ]
+    }
+   ]
   }
  ],
  "reactions": [

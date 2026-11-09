@@ -385,6 +385,7 @@ button { font: inherit; color: inherit; }
 .lv-chip.lvc-m[aria-pressed="true"] { background: var(--tile-sky); border-color: var(--lv-m); color: var(--lv-m); }
 .lv-chip.lvc-a[aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
 .lv-chip.lvc-l[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--surface); }
+.lv-chip.lvc-h[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 
 /* Modalità di studio */
 #view-feed { display: flex; flex-direction: column; }

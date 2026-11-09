@@ -6,7 +6,7 @@
   const C = D.content;
   // Indirizzo della web app di Google Apps Script che scrive le segnalazioni nel foglio Google.
   // Vuoto = le segnalazioni restano sul telefono e si possono copiare da Altro.
-  const REPORT_URL = "";
+  const REPORT_URL = "https://script.google.com/macros/s/AKfycbx201q-0i5Qu-i0NqqgYbbw6YqdEmhC2zHkL0TAYYYj_l8PksMI1V5xpO2wg7bJxSxKOw/exec";
   const REPORT_KEY = "bq.reports";
   const STORE_KEY = "bq.v1";
   const $ = (s, el = document) => el.querySelector(s);
@@ -47,7 +47,7 @@
   const svgIcon = n => { const s = h("span", { html: ICON[n] }); return s.firstChild; };
 
   /* ---------------- Stato locale ---------------- */
-  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true, h: true }, progressive: true, study: "", hardStats: {}, cards: {}, days: {} });
+  const blank = () => ({ selected: [], lastChecked: null, onlyLast: false, mode: "write", theme: "system", welcomed: false, newPerDay: 20, device: "", levels: { f: true, m: true, a: true, l: true }, progressive: true, study: "", hardStats: {}, cards: {}, days: {} });
   let S = blank();
   try { const raw = localStorage.getItem(STORE_KEY); if (raw) S = Object.assign(blank(), JSON.parse(raw)); } catch (e) { /* storage non disponibile */ }
   // dal vecchio sistema a scatole: quelle card ripartono come nuove
@@ -55,7 +55,6 @@
   // modalità di studio: graduale (sblocco al 70%), libera (scegli i livelli), hard (solo domande toste, si scrive)
   if (!["grad", "free", "hard"].includes(S.study)) S.study = S.progressive === false ? "free" : "grad";
   if (!S.hardStats) S.hardStats = {};
-  if (S.levels && S.levels.h === undefined) S.levels.h = true;
   // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
   if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
@@ -83,12 +82,12 @@
   /* ---------------- Livelli ----------------
      Facile → Medio → Alta → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
      quando almeno il 70% delle card del livello precedente è stato imparato (passato in ripasso). */
-  const LEVELS = ["f", "m", "a", "l", "h"];
+  const LEVELS = ["f", "m", "a", "l"];
   const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode", h: "Hard" };
   const STUDY_NAME = { grad: "Graduale", free: "Libera", hard: "Hard mode" };
   const isHard = () => S.study === "hard";
-  // in hard mode: solo le domande Hard, ragionate in stile esame (livello h)
-  const inHard = c => c.kind === "ex" && c.level === "h";
+  // in hard mode: domande Alta e 30 e lode (anche verificate) + molecole e reazioni da scrivere senza opzioni
+  const inHard = c => c.kind === "mol" || c.kind === "rx" || (c.kind === "ex" && (c.level === "a" || c.level === "l"));
   const UNLOCK = 0.7;
   const learned = c => { const x = S.cards[c.id]; return !!x && (x.type === "review" || (x.type === "relearn")); };
   function topicLevelState(tid) {
@@ -260,8 +259,7 @@
     return form;
   }
   const subjectOf = topic => ((TOPICS[topic] || {}).subject || "Biochimica II");
-  const pg = p => (/^\d/.test(String(p)) ? "p. " : "") + p; // le lezioni senza numeri di pagina si citano per nome
-  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, ${pg(page)}` : null;
+  const ref = (subject, page) => page ? `Riferimento: sbobina di ${subject}, p. ${page}` : null;
   // "dal glucosio", "dall'ossalacetato", "sull'1,3-bisfosfoglicerato"
   const prep = (p, id) => { const n = molName(id).toLowerCase(); return /^[aeiou1]|^8|^11/.test(n) ? `${p}ll'${n}` : `${p}l ${n}`; };
   const ALL_ENZYMES = [...new Set([...C.reactions.map(r => r.enzyme), ...C.pathways.flatMap(p => p.steps.map(s => s.enzyme)), ...C.extraEnzymes])];
@@ -468,9 +466,7 @@
     }
     const when = g && !ok ? `Torna tra ${fmtIvl(g.preview(1))}` : g && g.extra ? "Ripasso extra: la programmazione non cambia" : null;
     const pop = h("div", { class: "pop " + (ok ? "ok" : "ko") + (last ? " up" : ""), role: "status" },
-      h("div", { class: "pop-head", role: "button", tabindex: "0", "aria-expanded": "true", title: "Chiudi o riapri la spiegazione" },
-        h("span", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
-        h("span", { class: "pop-toggle" }, h("span", { class: "pop-toggle-l" }, "Nascondi"), svgIcon("down"))),
+      h("div", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
       text ? h("div", { class: "pop-text" }, text) : null,
       meta ? h("div", { class: "pop-meta" }, meta) : null,
       when ? h("div", { class: "pop-meta" }, when) : null,
@@ -478,18 +474,6 @@
         ? h("div", { class: "pop-note" }, h("b", {}, "⚠ " + note.split(":")[0] + ":"), note.slice(note.indexOf(":") + 1))
         : h("div", { class: "pop-note info" }, h("b", {}, "Nota · "), note)) : null,
       rate);
-    // la spiegazione si chiude come un menu a tendina per vedere le opzioni sotto
-    const head = pop.querySelector(".pop-head");
-    const toggle = e => {
-      e.preventDefault(); e.stopPropagation();
-      const closed = pop.classList.toggle("collapsed");
-      head.setAttribute("aria-expanded", String(!closed));
-      anchor.classList.toggle("pop-closed", closed);
-      head.querySelector(".pop-toggle-l").textContent = closed ? "Mostra" : "Nascondi";
-    };
-    head.addEventListener("click", toggle);
-    head.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") toggle(e); });
-    pop.addEventListener("click", e => e.stopPropagation());
     anchor.classList.add("has-pop");
     anchor.append(pop);
     // sotto la risposta se c'è spazio nella card, altrimenti sopra
@@ -687,8 +671,8 @@
   // Domanda verificata (proposta a lezione): opzioni nell'ordine originale (alcune rimandano alle altre: "Tutte e tre", "Nessuno")
   function examCard(c) {
     const x = c.ex;
-    const kicker = c.bank ? (x.level === "h" ? "Domanda Hard · da esame" : x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
-    const { card, body } = shell(c, kicker, c.bank ? (x.level === "h" ? "t-peach" : x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "h" ? "flame" : x.level === "l" ? "star" : "hex") : "board");
+    const kicker = c.bank ? (x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
+    const { card, body } = shell(c, kicker, c.bank ? (x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "l" ? "star" : "hex") : "board");
     const qEl = h("h2", { class: "q ex-q" });
     // evidenzia le negazioni, come si fa a penna sul compito
     x.q.split(/(\bnon\b|\bfalsa\b|\btranne\b)/i).forEach(part => qEl.append(/^(non|falsa|tranne)$/i.test(part) ? h("u", {}, part) : part));
@@ -751,7 +735,7 @@
   const MODE_INFO = {
     grad: "Parti dalle domande facili. In ogni argomento il livello successivo si sblocca quando hai imparato il 70% di quello prima.",
     free: "Scegli tu quali livelli includere, tutti già sbloccati.",
-    hard: "Solo domande Hard: ragionate, in stile esame, a 5 opzioni. Servono per capire se hai davvero capito l'argomento. Se sbagli, la domanda torna dopo un minuto.",
+    hard: "Solo domande Alta e 30 e lode, comprese quelle verificate. Molecole e reazioni si scrivono senza opzioni, e se sbagli la domanda torna dopo un minuto.",
   };
   function setStudy(v) {
     S.study = v; S.progressive = v === "grad"; save(); renderModebar(); resetFeed();
@@ -843,7 +827,7 @@
         const head = h("button", { class: "row block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
           h("div", { class: "tile " + tiles[bi % tiles.length] }, h("span", { style: "font-weight:800;font-size:15px" }, String(bi + 1))),
           h("div", { class: "row-text" }, h("div", { class: "row-title" }, b.name),
-            h("div", { class: "row-sub" }, `${pg(b.pages)} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
+            h("div", { class: "row-sub" }, `p. ${b.pages} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
           h("span", { class: "chev", html: ICON.chev }));
         const list = h("div", { class: "topics" }); list.hidden = !readyN;
         head.addEventListener("click", () => { list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden)); });

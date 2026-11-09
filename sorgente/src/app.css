@@ -300,6 +300,16 @@ button { font: inherit; color: inherit; }
 .pop.ok { background: var(--good-soft); border-color: var(--good); }
 .pop.ko { background: var(--bad-soft); border-color: var(--bad); }
 .pop-verdict { font-weight: 800; font-size: 15px; }
+.pop-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; cursor: pointer; margin: -10px -12px 0; padding: 10px 12px 2px; border-radius: 16px; -webkit-tap-highlight-color: transparent; pointer-events: auto; }
+.pop-toggle { display: inline-flex; align-items: center; gap: 4px; font-size: 12.5px; font-weight: 700; color: var(--muted); }
+.pop-toggle svg { width: 16px; height: 16px; transform: rotate(180deg); transition: transform .2s; }
+.pop.collapsed { gap: 0; box-shadow: none; position: static; flex-basis: 100%; margin: 10px 0 0; animation: none; }
+.pop.collapsed::before { display: none; }
+.opt.pop-closed, .write.pop-closed { flex-wrap: wrap; }
+.pop.collapsed .pop-head { padding-bottom: 10px; margin-bottom: -10px; }
+.pop.collapsed > :not(.pop-head) { display: none; }
+.pop.collapsed .pop-toggle svg { transform: none; }
+.pop, .pop * { pointer-events: auto; }
 .pop.ok .pop-verdict { color: var(--good); }
 .pop.ko .pop-verdict { color: var(--bad); }
 .pop-meta { color: var(--muted); font-size: 12.5px; }

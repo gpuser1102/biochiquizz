@@ -468,7 +468,9 @@
     }
     const when = g && !ok ? `Torna tra ${fmtIvl(g.preview(1))}` : g && g.extra ? "Ripasso extra: la programmazione non cambia" : null;
     const pop = h("div", { class: "pop " + (ok ? "ok" : "ko") + (last ? " up" : ""), role: "status" },
-      h("div", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
+      h("div", { class: "pop-head", role: "button", tabindex: "0", "aria-expanded": "true", title: "Chiudi o riapri la spiegazione" },
+        h("span", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
+        h("span", { class: "pop-toggle" }, h("span", { class: "pop-toggle-l" }, "Nascondi"), svgIcon("down"))),
       text ? h("div", { class: "pop-text" }, text) : null,
       meta ? h("div", { class: "pop-meta" }, meta) : null,
       when ? h("div", { class: "pop-meta" }, when) : null,
@@ -476,6 +478,18 @@
         ? h("div", { class: "pop-note" }, h("b", {}, "⚠ " + note.split(":")[0] + ":"), note.slice(note.indexOf(":") + 1))
         : h("div", { class: "pop-note info" }, h("b", {}, "Nota · "), note)) : null,
       rate);
+    // la spiegazione si chiude come un menu a tendina per vedere le opzioni sotto
+    const head = pop.querySelector(".pop-head");
+    const toggle = e => {
+      e.preventDefault(); e.stopPropagation();
+      const closed = pop.classList.toggle("collapsed");
+      head.setAttribute("aria-expanded", String(!closed));
+      anchor.classList.toggle("pop-closed", closed);
+      head.querySelector(".pop-toggle-l").textContent = closed ? "Mostra" : "Nascondi";
+    };
+    head.addEventListener("click", toggle);
+    head.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") toggle(e); });
+    pop.addEventListener("click", e => e.stopPropagation());
     anchor.classList.add("has-pop");
     anchor.append(pop);
     // sotto la risposta se c'è spazio nella card, altrimenti sopra

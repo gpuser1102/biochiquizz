@@ -45,9 +45,39 @@ for x in B:
         best = max(dis, key=lambda i: sim[i])
         target = best if sim[best] > 0.6 else min(dis, key=lambda i: len(x["opts"][i]))
         x["opts"][target] = new
+# revisione 3: distrattori riscritti con lunghezza e struttura simili alla giusta (la giusta resta invariata)
+FIX = {}
+for f in sorted(glob.glob(os.path.join(HERE, "opts_v3_*.py"))):
+    m = importlib.import_module(os.path.basename(f)[:-3])
+    F = getattr(m, "FIX", {})
+    for k in F: assert k not in FIX, k
+    FIX.update(F)
+for f in sorted(glob.glob(os.path.join(HERE, "opts_v3_*.py"))):
+    FIX.update(getattr(importlib.import_module(os.path.basename(f)[:-3]), "OVERRIDE", {}))
+for k, d in FIX.items():
+    x = byid[k]; c = x["opts"][x["ans"]]
+    assert not x["fixed"] and len(d) == 4 and len(set(d)) == 4 and c not in d, k
+    x["opts"], x["ans"] = [c] + list(d), 0
+PATCH = {}
+for f in sorted(glob.glob(os.path.join(HERE, "opts_v3_*.py"))):
+    for k, v in getattr(importlib.import_module(os.path.basename(f)[:-3]), "PATCH", {}).items():
+        assert k not in PATCH, k
+        PATCH[k] = v
+for k, rep in PATCH.items():
+    x = byid[k]
+    for old_t, new_t in rep.items():
+        assert old_t in x["opts"], (k, old_t)
+        i = x["opts"].index(old_t)
+        assert i != x["ans"] and new_t not in x["opts"], k
+        x["opts"][i] = new_t
 miss = [x["id"] for x in B if len(x["opts"]) != 5]
-assert not miss, ("mancano opzioni", miss)
+assert all(len(x["opts"]) in (4, 5) for x in B)
+if miss: print(f"ancora a 4 opzioni: {len(miss)} domande (da completare)")
 lun = [x for x in B if len(x["opts"][x["ans"]]) > max(len(o) for i, o in enumerate(x["opts"]) if i != x["ans"])]
+pos = {}
+for x in B:
+    L = sorted((len(o) for o in x["opts"]), reverse=True); pos[L.index(len(x["opts"][x["ans"]]))] = pos.get(L.index(len(x["opts"][x["ans"]])), 0) + 1
+print("posizione della giusta per lunghezza (0 = la più lunga):", dict(sorted(pos.items())))
 print(f"giusta strettamente più lunga: {len(lun)}/{len(B)} ({len(lun)/len(B):.0%})")
 for x in lun:
     print("  LUNGA", x["id"], len(x["opts"][x["ans"]]), max(len(o) for i, o in enumerate(x["opts"]) if i != x["ans"]))

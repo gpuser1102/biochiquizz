@@ -164,6 +164,7 @@
       S.cards[id] = st;
     };
     apply(r);
+    countAnswer(id, r);
     if (isHard() && CARD[id]) CARD[id].topics.forEach(t => { const x = S.hardStats[t] = S.hardStats[t] || { n: 0, ok: 0 }; x.n++; if (r > 1) x.ok++; });
     pendingNew.delete(id);
     const d = today(); S.days[d] = S.days[d] || { n: 0, ok: 0, new: 0 }; S.days[d].n++; if (r > 1) S.days[d].ok++; if (wasNew) S.days[d].new = (S.days[d].new || 0) + 1;
@@ -367,17 +368,36 @@
   const loadReports = () => { try { return JSON.parse(localStorage.getItem(REPORT_KEY) || "[]"); } catch (e) { return []; } };
   const saveReports = r => { try { localStorage.setItem(REPORT_KEY, JSON.stringify(r)); } catch (e) { } };
   let sending = false;
-  // conteggio anonimo degli accessi: solo codice casuale, versione e sistema
+  // statistiche d'uso anonime: codice casuale, versione, sistema, tempo di studio, risposte per argomento e per tipo
+  const usage = () => (S.usage = S.usage || { sec: 0, n: 0, ok: 0, top: {}, kind: {} });
+  const kindKey = c => c.kind === "ex" ? (c.bank ? "q-" + (c.level || "m") : "ver") : c.kind;
+  function countAnswer(id, r) {
+    const c = CARD[id]; if (!c) return;
+    const u = usage(), ok = r > 1 ? 1 : 0;
+    u.n++; u.ok += ok;
+    const add = (o, k) => { const x = o[k] = o[k] || [0, 0]; x[0]++; x[1] += ok; };
+    add(u.top, (c.topics || [])[0] || "?"); add(u.kind, kindKey(c));
+  }
+  // tempo di studio: conta solo con l'app aperta e usata negli ultimi 2 minuti
+  let lastAct = Date.now();
+  ["pointerdown", "keydown", "scroll", "touchstart"].forEach(e => document.addEventListener(e, () => { lastAct = Date.now(); }, { passive: true, capture: true }));
+  setInterval(() => { if (document.visibilityState === "visible" && Date.now() - lastAct < 120000) { usage().sec += 15; save(); } }, 15000);
+  const pingBody = () => JSON.stringify({ kind: "ping", device: S.device, version: "v" + C.version, platform: platform(), standalone: standalone(), usage: S.usage || null });
+  const pinged = () => { S.lastPing = today(); S.lastPingAt = Date.now(); S.usage = null; save(); };
   async function pingUsage() {
     if (!REPORT_URL || !navigator.onLine) return;
     // al massimo un segnale ogni 30 minuti: il foglio conta i giorni e registra l'ora dell'ultimo accesso
-    const d = today(), now = Date.now();
-    if (S.lastPing === d && now - (S.lastPingAt || 0) < 30 * 60 * 1000) return;
+    if (S.lastPing === today() && Date.now() - (S.lastPingAt || 0) < 30 * 60 * 1000) return;
     try {
-      await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
-        body: JSON.stringify({ kind: "ping", device: S.device, version: "v" + C.version, platform: platform(), standalone: standalone() }) });
-      S.lastPing = d; S.lastPingAt = now; save();
+      await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: pingBody() });
+      pinged();
     } catch (e) { }
+  }
+  // quando si chiude o si lascia l'app, manda subito il tempo e le risposte della sessione
+  function pingOnLeave() {
+    const u = S.usage;
+    if (!REPORT_URL || !u || (u.n === 0 && u.sec < 60) || !navigator.sendBeacon) return;
+    try { if (navigator.sendBeacon(REPORT_URL, new Blob([pingBody()], { type: "text/plain;charset=utf-8" }))) pinged(); } catch (e) { }
   }
   async function flushReports() {
     if (!REPORT_URL || sending || !navigator.onLine) return;
@@ -1008,7 +1028,7 @@
     root.append(h("div", { class: "h2" }, "Privacy"));
     root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-sage" }, svgIcon("check")), h("div", { class: "row-text" },
       h("div", { class: "row-title" }, "Niente account, niente dati personali"),
-      h("div", { class: "row-sub" }, `I progressi restano su questo telefono. Quando la apri, l'app invia solo un codice casuale (${S.device}), la versione e il sistema, per contare quante persone la usano. Le segnalazioni contengono la domanda e la tua nota.`)))));
+      h("div", { class: "row-sub" }, `I progressi restano su questo telefono. Quando la apri e quando la chiudi, l'app invia solo un codice casuale (${S.device}), la versione, il sistema, il tempo di studio e quante risposte hai dato per argomento e per tipo di domanda, per capire come viene usata. Niente nomi. Le segnalazioni contengono la domanda e la tua nota.`)))));
 
     const reps = loadReports(), pending = reps.filter(x => !x.sent);
     root.append(h("div", { class: "h2" }, "Segnalazioni"));
@@ -1146,7 +1166,8 @@
     if ("serviceWorker" in navigator && isHosted()) navigator.serviceWorker.register("sw.js").catch(() => { });
     flushReports(); checkUpdate(); pingUsage();
     window.addEventListener("online", () => { flushReports(); checkUpdate(); pingUsage(); });
-    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { flushReports(); checkUpdate(); pingUsage(); } });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") { flushReports(); checkUpdate(); pingUsage(); } else pingOnLeave(); });
+    window.addEventListener("pagehide", pingOnLeave);
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
 })();

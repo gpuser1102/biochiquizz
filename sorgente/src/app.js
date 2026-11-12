@@ -367,14 +367,16 @@
   const loadReports = () => { try { return JSON.parse(localStorage.getItem(REPORT_KEY) || "[]"); } catch (e) { return []; } };
   const saveReports = r => { try { localStorage.setItem(REPORT_KEY, JSON.stringify(r)); } catch (e) { } };
   let sending = false;
-  // conteggio anonimo degli accessi: al massimo un segnale al giorno, solo codice casuale, versione e sistema
+  // conteggio anonimo degli accessi: solo codice casuale, versione e sistema
   async function pingUsage() {
     if (!REPORT_URL || !navigator.onLine) return;
-    const d = today(); if (S.lastPing === d) return;
+    // al massimo un segnale ogni 30 minuti: il foglio conta i giorni e registra l'ora dell'ultimo accesso
+    const d = today(), now = Date.now();
+    if (S.lastPing === d && now - (S.lastPingAt || 0) < 30 * 60 * 1000) return;
     try {
       await fetch(REPORT_URL, { method: "POST", mode: "no-cors", headers: { "Content-Type": "text/plain;charset=utf-8" },
         body: JSON.stringify({ kind: "ping", device: S.device, version: "v" + C.version, platform: platform(), standalone: standalone() }) });
-      S.lastPing = d; save();
+      S.lastPing = d; S.lastPingAt = now; save();
     } catch (e) { }
   }
   async function flushReports() {
@@ -1006,7 +1008,7 @@
     root.append(h("div", { class: "h2" }, "Privacy"));
     root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-sage" }, svgIcon("check")), h("div", { class: "row-text" },
       h("div", { class: "row-title" }, "Niente account, niente dati personali"),
-      h("div", { class: "row-sub" }, `I progressi restano su questo telefono. Una volta al giorno l'app invia solo un codice casuale (${S.device}), la versione e il sistema, per contare quante persone la usano. Le segnalazioni contengono la domanda e la tua nota.`)))));
+      h("div", { class: "row-sub" }, `I progressi restano su questo telefono. Quando la apri, l'app invia solo un codice casuale (${S.device}), la versione e il sistema, per contare quante persone la usano. Le segnalazioni contengono la domanda e la tua nota.`)))));
 
     const reps = loadReports(), pending = reps.filter(x => !x.sent);
     root.append(h("div", { class: "h2" }, "Segnalazioni"));

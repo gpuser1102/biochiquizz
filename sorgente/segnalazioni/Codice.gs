@@ -4,7 +4,7 @@
  *
  * Fogli:
  *  - Segnalazioni: una riga per ogni errore segnalato dall'app
- *  - Utenti: una riga per telefono (codice casuale anonimo, nessun nome)
+ *  - Utenti: una riga per telefono (codice casuale anonimo, nessun nome), con giorno e ora di prima e ultima visita
  *  - Giorni: per ogni giorno quanti telefoni hanno aperto l'app e quanti erano nuovi
  */
 const FOGLI = {
@@ -57,7 +57,7 @@ function registraAccesso_(r) {
   let nuovo = false, primoOggi = false;
   if (i === -1) {
     nuovo = primoOggi = true;
-    u.appendRow([dev, oggi_(), oggi_(), 1, t_(r.version, 20), t_(r.platform, 20), installata]);
+    u.appendRow([dev, ora_(), ora_(), 1, t_(r.version, 20), t_(r.platform, 20), installata]);
   } else {
     const riga = i + 2;
     const ultima = String(u.getRange(riga, 3).getValue()).slice(0, 10);
@@ -65,7 +65,7 @@ function registraAccesso_(r) {
       primoOggi = true;
       u.getRange(riga, 4).setValue(Number(u.getRange(riga, 4).getValue() || 0) + 1);
     }
-    u.getRange(riga, 3).setValue(oggi_());
+    u.getRange(riga, 3).setValue(ora_());   // giorno e ora dell'ultimo accesso
     u.getRange(riga, 5, 1, 3).setValues([[t_(r.version, 20), t_(r.platform, 20), installata]]);
   }
   if (!primoOggi) return;

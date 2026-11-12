@@ -17336,5 +17336,2627 @@
   "why": "Il fosfato fa sì che gli enzimi distinguano nettamente i due coenzimi.",
   "note": null,
   "fixed": false
+ },
+ {
+  "id": "yb1c-01",
+  "topic": "bm1-comunicazione",
+  "level": "m",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Perché le gap junction permettono le sinapsi elettriche (es. nel miocardio)?",
+  "opts": [
+   "Uniscono direttamente il citosol di due cellule e lasciano passare ioni in tempi brevissimi",
+   "Liberano neurotrasmettitori nello spazio tra le due cellule adiacenti, in tempi brevissimi e mirati",
+   "Lasciano passare proteine e acidi nucleici dal citosol di una cellula a quello dell'altra",
+   "Formano un recettore canale che si apre soltanto quando lega un ligando extracellulare",
+   "Sono pompe ATP-dipendenti che spingono attivamente gli ioni nella cellula accanto"
+  ],
+  "ans": 0,
+  "why": "Il poro del connessone fa passare ioni, amminoacidi, zuccheri e nucleotidi, ma non le proteine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1c-02",
+  "topic": "bm1-comunicazione",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "In un embrione una mutazione impedisce il taglio proteolitico di Notch dopo il legame con Delta. Quale conseguenza è la più coerente?",
+  "opts": [
+   "Il frammento intracellulare non si libera: CSL non viene attivato e i geni bersaglio restano spenti",
+   "Notch resta in membrana ma attiva lo stesso CSL, perché il legame con Delta basta a segnalare",
+   "Delta viene secreto e agisce come segnale paracrino sulle cellule vicine, compensando il difetto",
+   "Il recettore si autofosforila sulle tirosine e attiva al posto di Notch la via di Ras e delle MAPK",
+   "Il frammento extracellulare di Notch entra nel nucleo al posto di quello intracellulare e attiva CSL"
+  ],
+  "ans": 0,
+  "why": "È il taglio a liberare la porzione citosolica di Notch, che passa dai pori nucleari e attiva il fattore di trascrizione CSL.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1c-03",
+  "topic": "bm1-comunicazione",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Perché la presentazione dell'antigene da parte dell'MHC al linfocita T è un esempio di comunicazione juxtacrina?",
+  "opts": [
+   "Il peptide del patogeno resta esposto sulla superficie della cellula e il linfocita lo riconosce per contatto",
+   "Il linfocita T secerne citochine che raggiungono la cellula infetta viaggiando nel circolo sanguigno",
+   "L'antigene digerito dall'immunoproteasoma viene rilasciato nel sangue e poi lega il recettore T",
+   "Cellula infetta e linfocita T si scambiano i peptidi del patogeno attraverso le gap junction",
+   "L'MHC viene tagliato dalle proteasi e il suo frammento intracellulare entra nel nucleo del linfocita T"
+  ],
+  "ans": 0,
+  "why": "Nella comunicazione da contatto il segnale resta sulla cellula che lo produce: qui il complesso MHC-peptide esposto in superficie.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1c-04",
+  "topic": "bm1-comunicazione",
+  "level": "l",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Quale regione della connessina ha un ruolo importante nella regolazione del poro?",
+  "opts": [
+   "Il dominio N-terminale",
+   "Il lungo dominio C-terminale",
+   "I due loop extracellulari",
+   "L'ansa citoplasmatica centrale",
+   "La seconda elica transmembrana"
+  ],
+  "ans": 0,
+  "why": "I due loop extracellulari regolano l'attracco tra gli emicanali; ansa citoplasmatica e coda C-terminale variano molto tra i sottotipi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1r-01",
+  "topic": "bm1-recettore-ligando",
+  "level": "m",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "In una curva di saturazione recettore-ligando, come si riconosce il legame aspecifico?",
+  "opts": [
+   "Cresce lentamente con il ligando aggiunto e non raggiunge mai un plateau",
+   "Cresce molto rapidamente e si satura già a basse concentrazioni di ligando aggiunto",
+   "Raggiunge un plateau che corrisponde al Bmax dei siti del recettore",
+   "Diminuisce man mano che aumenta la concentrazione del ligando libero",
+   "Compare come l'unica retta utile nel grafico di Scatchard del recettore"
+  ],
+  "ans": 0,
+  "why": "Il legame specifico invece sale in fretta e si appiattisce quando tutti i siti sono occupati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1r-02",
+  "topic": "bm1-recettore-ligando",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Nel grafico di Scatchard di un recettore la retta ha pendenza −0,5 nM⁻¹. Quanto vale la Kd?",
+  "opts": [
+   "2 nM",
+   "0,5 nM",
+   "−2 nM",
+   "5 nM",
+   "0,2 nM"
+  ],
+  "ans": 0,
+  "why": "Pendenza = −1/Kd, quindi Kd = 1/0,5 = 2 nM.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1r-03",
+  "topic": "bm1-recettore-ligando",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Due tessuti danno rette di Scatchard parallele, che però incontrano l'asse del legato in punti diversi. Che cosa significa?",
+  "opts": [
+   "Stessa affinità (stessa Kd) ma un numero diverso di recettori (Bmax)",
+   "Affinità diversa ma lo stesso numero di siti di legame per ciascuna cellula",
+   "In uno dei due tessuti il ligando lega solo in modo aspecifico",
+   "Ka diversa ma Kd uguale, perché le due costanti sono indipendenti",
+   "Uno dei due tessuti ha recettori cooperativi con più siti di legame"
+  ],
+  "ans": 0,
+  "why": "La pendenza (−1/Kd) misura l'affinità; il punto d'incontro con l'asse del legato dà Bmax, cioè il numero di siti saturabili.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1r-04",
+  "topic": "bm1-recettore-ligando",
+  "level": "l",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Come si esprime la costante di associazione Ka con le costanti di velocità della reazione R + L ⇄ RL?",
+  "opts": [
+   "k₊₁ / k₋₁",
+   "k₋₁ / k₊₁",
+   "k₊₁ · k₋₁",
+   "1 / k₊₁",
+   "k₋₁ − k₊₁"
+  ],
+  "ans": 0,
+  "why": "Ka = [RL]/[R][L] = k₊₁/k₋₁, e Kd = 1/Ka.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1i-01",
+  "topic": "bm1-intra-superficie",
+  "level": "m",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Arrivato alla cellula bersaglio, perché un ormone steroideo lascia la sua proteina di trasporto?",
+  "opts": [
+   "Ha un'affinità per il recettore così alta da staccarsi dal trasportatore ed entrare",
+   "Il trasportatore viene degradato dalle proteasi presenti sulla membrana bersaglio",
+   "Lega un recettore di superficie che lo stacca dal trasportatore e lo internalizza",
+   "Il trasportatore entra con lui nella cellula e lo rilascia direttamente nel nucleo",
+   "Il pH acido del liquido extracellulare denatura la proteina di trasporto e lo libera"
+  ],
+  "ans": 0,
+  "why": "Una volta dentro, l'ormone lega il recettore nel citosol o nel nucleo e il complesso regola la trascrizione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1i-02",
+  "topic": "bm1-intra-superficie",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Una proteina adattatrice ha un dominio SH2 e un dominio SH3. Che cosa può fare?",
+  "opts": [
+   "Legare una fosfotirosina con SH2 e una sequenza ricca di prolina di un'altra chinasi con SH3",
+   "Legare il fosfatidilinositolo di membrana con SH2 e le fosfotirosine del recettore attivato con SH3",
+   "Fosforilare tirosine con il dominio SH2 e defosforilare serine con il dominio SH3",
+   "Legare il DNA nel nucleo con SH2 e la membrana plasmatica con il dominio SH3",
+   "Riconoscere poliproline con il dominio SH2 e fosfoserine con il dominio SH3"
+  ],
+  "ans": 0,
+  "why": "Così l'adattatore avvicina due partner della cascata: è la funzione scaffold.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1i-03",
+  "topic": "bm1-intra-superficie",
+  "level": "h",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Una proteina della cascata dell'insulina ha un dominio PTB e un dominio PH. Quale combinazione di funzioni ne deriva?",
+  "opts": [
+   "Trattiene una proteina fosforilata in tirosina (PTB) e si ancora alla membrana legando il fosfatidilinositolo (PH)",
+   "Fosforila le tirosine del recettore (PTB) e idrolizza il fosfatidilinositolo bisfosfato della membrana plasmatica (PH)",
+   "Lega le sequenze ricche di prolina (PTB) e i nucleotidi ciclici prodotti dalle ciclasi nel citosol (PH)",
+   "Riconosce le fosfoserine fosforilate dalla PKA (PTB) e il diacilglicerolo liberato in membrana (PH)",
+   "Si ancora alla membrana con il fosfatidilinositolo (PTB) e trattiene le fosfotirosine del recettore (PH)"
+  ],
+  "ans": 0,
+  "why": "PTB = phosphotyrosine-binding; PH riconosce il fosfatidilinositolo e porta la proteina sulla membrana dove sta il recettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb1i-04",
+  "topic": "bm1-intra-superficie",
+  "level": "l",
+  "page": "lezione 1",
+  "src": "Biologia molecolare",
+  "q": "Da quale proteina prendono il nome i domini SH2 e SH3?",
+  "opts": [
+   "SRC",
+   "Ras",
+   "Raf",
+   "Grb2",
+   "JAK"
+  ],
+  "ans": 0,
+  "why": "SH = Src homology: SH2 lega le fosfotirosine, SH3 le sequenze poliproliniche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-01",
+  "topic": "bm2-canali",
+  "level": "m",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Che cosa rende il recettore nicotinico selettivo per i cationi?",
+  "opts": [
+   "Residui acidi carichi negativamente esposti verso il poro dalle cinque subunità",
+   "Residui basici carichi positivamente esposti verso il poro sull'elica 2 di ogni subunità",
+   "Il ponte disolfuro che si trova nella regione N-terminale extracellulare",
+   "Il diametro esterno di 9 nm, troppo largo per far passare gli anioni",
+   "Il legame di due acetilcoline alle interfacce tra le subunità α e β"
+  ],
+  "ans": 0,
+  "why": "Le due acetilcoline si legano alle interfacce α-δ e α-γ; il ponte disolfuro N-terminale fa parte del sito di legame.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-02",
+  "topic": "bm2-canali",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Il recettore GABA-A e il nicotinico hanno un'architettura simile (5 subunità con 4 eliche). Perché il primo inibisce e il secondo eccita?",
+  "opts": [
+   "L'elica 2 del GABA-A è ricca di residui basici e fa entrare Cl⁻; quella del nicotinico ha residui acidi e fa entrare cationi",
+   "Il GABA-A è accoppiato a una proteina G che chiude i canali del Ca²⁺ e apre quelli del K⁺; il nicotinico è un canale che fa entrare Na⁺",
+   "Il GABA-A ha l'elica 2 ricca di residui acidi e fa uscire K⁺; il nicotinico ha residui basici e fa entrare Na⁺",
+   "Il GABA-A è un dimero di subunità a 7 eliche; il nicotinico è un pentamero con il poro rivestito dall'elica 2",
+   "Il GABA-A depolarizza solo i neuroni, mentre il nicotinico iperpolarizza la cellula muscolare a riposo"
+  ],
+  "ans": 0,
+  "why": "L'ingresso di anioni iperpolarizza (inibizione); l'ingresso di Na⁺ e Ca²⁺ depolarizza (eccitazione). Il dimero a 7 eliche è il GABA-B.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-03",
+  "topic": "bm2-canali",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Dopo la succinilcolina compaiono prima fascicolazioni e poi paralisi flaccida. Perché?",
+  "opts": [
+   "È un agonista che resta legato a lungo: prima depolarizza, poi desensibilizza il recettore",
+   "È un antagonista che blocca il recettore, poi viene idrolizzato e libera acetilcolina",
+   "Inibisce l'acetilcolinesterasi: l'acetilcolina si accumula e poi viene ricaptata tutta dal neurone",
+   "Blocca i canali del Ca²⁺ presinaptici, quindi l'acetilcolina non viene più rilasciata",
+   "Apre i canali del Cl⁻ della placca motrice, iperpolarizzando la fibra muscolare"
+  ],
+  "ans": 0,
+  "why": "È il curaro depolarizzante; i curari veri (es. pancuronio) sono invece antagonisti e danno subito paralisi flaccida.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-04",
+  "topic": "bm2-canali",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "L'acetilcolina rallenta il cuore attraverso il recettore muscarinico M2. Quale meccanismo è coerente con le sbobine?",
+  "opts": [
+   "M2 attiva una proteina G che inibisce l'adenilato ciclasi e apre i canali del K⁺, iperpolarizzando",
+   "M2 è un canale per cationi che si apre con l'acetilcolina e depolarizza la cellula cardiaca",
+   "M2 attiva la via dei fosfoinositidi e aumenta il Ca²⁺ citosolico tramite il recettore dell'IP₃ del RE",
+   "M2 attiva la Gs, aumenta il cAMP e così riduce la forza di contrazione del miocardio",
+   "M2 è un recettore tirosin-chinasico che attiva la via di Ras e i fattori fos e jun"
+  ],
+  "ans": 0,
+  "why": "I muscarinici pari (M2, M4) inibiscono l'adenilato ciclasi; i dispari (M1, M3, M5) usano i fosfoinositidi. Nella lezione 3 la Gα attivata dall'acetilcolina apre i canali del K⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-05",
+  "topic": "bm2-canali",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Quali sono il diametro esterno e il diametro del poro del recettore nicotinico?",
+  "opts": [
+   "9 nm e 2 nm",
+   "2 nm e 9 nm",
+   "9 nm e 0,2 nm",
+   "20 nm e 9 nm",
+   "4 nm e 1 nm"
+  ],
+  "ans": 0,
+  "why": "Il poro è rivestito dall'elica 2 di ciascuna delle 5 subunità (2α, β, γ, δ).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2c-06",
+  "topic": "bm2-canali",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Nel recettore GABA-B, quale subunità lega il neurotrasmettitore?",
+  "opts": [
+   "GABA-B1",
+   "GABA-B2",
+   "Entrambe, una molecola ciascuna",
+   "Nessuna: lo lega la proteina G",
+   "La subunità βγ associata"
+  ],
+  "ans": 0,
+  "why": "GABA-B2 serve a formare il dimero funzionale, ha i siti per i modulatori allosterici e il sito per la proteina G.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2r-01",
+  "topic": "bm2-rtk",
+  "level": "m",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto in genere un recettore tirosin-chinasico?",
+  "opts": [
+   "Dominio extracellulare di legame, una sola α-elica transmembrana, dominio tirosin chinasico citosolico",
+   "Sette α-eliche transmembrana, con il loop citosolico C3 che interagisce con la proteina G trimerica",
+   "Cinque subunità con quattro eliche ciascuna, che formano un poro selettivo per i cationi",
+   "Dominio extracellulare di legame, una sola elica transmembrana, coda citosolica senza attività enzimatica",
+   "Quattro subunità con sei eliche ciascuna, nella membrana del reticolo endoplasmatico"
+  ],
+  "ans": 0,
+  "why": "Il recettore senza enzima che recluta una chinasi è quello per le citochine (JAK). Di solito l'RTK è un monomero che dimerizza col ligando; quello dell'insulina è già un tetramero.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2r-02",
+  "topic": "bm2-rtk",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "In un tumore il recettore dell'EGF dimerizza anche senza ligando. Quale passaggio serve comunque perché si attivi la MAP chinasi?",
+  "opts": [
+   "Il reclutamento di SOS tramite un adattatore SH2 e lo scambio del GDP con GTP su Ras",
+   "Il legame dell'EGF, senza il quale la cascata a valle del recettore non procede comunque",
+   "La fosforilazione diretta di Ras da parte del recettore su un residuo di tirosina",
+   "Il taglio proteolitico del recettore e l'ingresso della sua coda nel nucleo della cellula",
+   "L'attivazione di JAK, che fosforila direttamente Ras e poi MEK sulle loro tirosine"
+  ],
+  "ans": 0,
+  "why": "Dimerizzazione → autofosforilazione → adattatore SH2 → SOS (GEF) → Ras-GTP → Raf → MEK → MAPK.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2r-03",
+  "topic": "bm2-rtk",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Che cosa succede alle regioni switch I e switch II di Ras quando il GTP viene idrolizzato?",
+  "opts": [
+   "Perdono i legami a H con il fosfato γ, si allontanano e Ras non lega più i bersagli a valle",
+   "Si avvicinano tra loro e permettono a Ras di legare Raf con un'affinità molto più alta di prima",
+   "Vengono fosforilate da GAP e diventano il sito di legame per la proteina SOS",
+   "Si staccano dalla membrana, perché l'idrolisi rimuove la coda prenilica di Ras",
+   "Restano immobili, mentre a cambiare conformazione è soltanto il sito del Mg²⁺"
+  ],
+  "ans": 0,
+  "why": "Con il GTP la Thr35 e la Gly60 legano il fosfato γ e la struttura è «tesa»; con il GDP collassa e diventa più lassa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2r-04",
+  "topic": "bm2-rtk",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Perché GEF e GAP non possono agire su Ras nello stesso momento?",
+  "opts": [
+   "Legano Ras nella stessa posizione: agisce o l'una o l'altra",
+   "La GAP degrada la GEF ogni volta che Ras è legata al GDP",
+   "La GEF lavora solo nel nucleo e la GAP solo in membrana",
+   "Agiscono in sequenze obbligate separate da un'ora",
+   "Una lega il GTP libero e l'altra il GDP libero, non Ras"
+  ],
+  "ans": 0,
+  "why": "La GEF (SOS) favorisce l'ingresso del GTP al posto del GDP; la GAP accende l'attività GTPasica di Ras.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2r-05",
+  "topic": "bm2-rtk",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Quali residui di Ras legano il fosfato γ del GTP e quale residuo ne determina la specificità per il GTP?",
+  "opts": [
+   "Thr35 e Gly60; Ala146",
+   "Thr183 e Tyr185; Ala146",
+   "Thr35 e Gly60; Ser14",
+   "Gly12 e Gln61; Thr35",
+   "Ser32 e Gly60; Ala146"
+  ],
+  "ans": 0,
+  "why": "Se l'Ala146 è mutata Ras può legare ATP. Thr183 e Tyr185 sono invece i residui fosforilati della MAP chinasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2t-01",
+  "topic": "bm2-terapia",
+  "level": "m",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Che cosa accomuna i recettori della famiglia HER (erb)?",
+  "opts": [
+   "Sono recettori tirosin-chinasici per fattori simili all'EGF, mutati in diversi tumori",
+   "Sono recettori serin/treonin-chinasici per il TGF-β, mutati in diversi tumori",
+   "Sono GPCR per le chemochine, sfruttati dal virus HIV per richiamare e infettare i leucociti",
+   "Sono recettori per le citochine che usano la via JAK-STAT nelle cellule tumorali",
+   "Sono recettori canale per il Ca²⁺, iperespressi nelle cellule del glioblastoma"
+  ],
+  "ans": 0,
+  "why": "HER1 (vescica, seno, rene, prostata, glioblastoma), HER2 (forma eterodimeri), HER3 (mammella), HER4 (ovaio).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2t-02",
+  "topic": "bm2-terapia",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "In un carcinoma mammario con HER2 iperespresso, perché bloccare HER2 riduce anche la segnalazione partita da HER1 e HER3?",
+  "opts": [
+   "HER2 attiva gli altri HER formando eterodimeri: senza HER2 quei dimeri non segnalano",
+   "HER2 è il recettore che lega l'EGF e poi lo passa a HER1 e HER3 come se fosse un trasportatore",
+   "L'anticorpo anti-HER2 riconosce anche HER1 e HER3, che hanno lo stesso epitopo",
+   "HER2 fosforila il fattore di crescita, che solo così riesce a legare HER1 e HER3",
+   "Bloccando HER2 la cellula smette di trascrivere i geni di HER1 e di HER3"
+  ],
+  "ans": 0,
+  "why": "HER2 non lega fattori di crescita ma dimerizza con HER1, HER3 e HER4 e li attiva: per questo è il bersaglio del trastuzumab.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2t-03",
+  "topic": "bm2-terapia",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Secondo la sbobina, a quale tumore è associato HER4?",
+  "opts": [
+   "Al tumore dell'ovaio",
+   "Al carcinoma mammario",
+   "Al glioblastoma",
+   "Al cancro della vescica",
+   "Al tumore della prostata"
+  ],
+  "ans": 0,
+  "why": "HER3 è associato al carcinoma mammario; HER1 a vescica, seno, rene, prostata e glioblastomi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2s-01",
+  "topic": "bm2-sertre",
+  "level": "m",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto un recettore serin/treonin-chinasico per il TGF-β?",
+  "opts": [
+   "Una sola elica transmembrana, N-terminale extracellulare che lega il fattore, C-terminale catalitico",
+   "Sette eliche transmembrana, N-terminale extracellulare che lega il fattore, loop C3 per la proteina G",
+   "Una sola elica transmembrana, N-terminale citosolico catalitico, C-terminale che lega il fattore",
+   "Cinque subunità con quattro eliche ciascuna, che formano un canale per anioni dopo il legame",
+   "Un tetramero 2α + 2β già assemblato senza ligando, con attività chinasica sulle tirosine"
+  ],
+  "ans": 0,
+  "why": "Col ligando dimerizza e si autofosforila su serina e treonina, poi fosforila le Smad.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2s-02",
+  "topic": "bm2-sertre",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Una mutazione impedisce alle Smad fosforilate di formare eterodimeri. Che effetto ha sulla risposta al TGF-β?",
+  "opts": [
+   "Le Smad restano a bassa affinità per il DNA e i geni bersaglio non vengono attivati",
+   "Le Smad entrano nel nucleo e attivano i geni anche senza essere fosforilate",
+   "Il recettore non dimerizza più e smette di autofosforilarsi su serina e treonina",
+   "Il segnale passa alla via JAK-STAT, che attiva gli stessi geni al posto delle Smad",
+   "Le Smad diventano chinasi e fosforilano il recettore, che così resta sempre acceso"
+  ],
+  "ans": 0,
+  "why": "Fosforilazione ed eterodimerizzazione aumentano molto l'affinità delle Smad per il DNA; poi migrano nel nucleo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2s-03",
+  "topic": "bm2-sertre",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Che cosa hanno in comune recettori del TGF-β e recettori tirosin-chinasici, e che cosa li distingue?",
+  "opts": [
+   "Entrambi dimerizzano e si autofosforilano col ligando, ma su serina/treonina anziché su tirosina",
+   "Entrambi usano JAK per fosforilarsi, ma uno attiva le STAT e l'altro attiva le proteine Smad nel citosol",
+   "Entrambi sono già dimeri senza ligando, ma uno fosforila tirosine e l'altro serine e treonine",
+   "Entrambi attivano Ras tramite SOS, ma uno agisce nel nucleo e l'altro solo nel citosol",
+   "Entrambi hanno sette eliche transmembrana, ma solo uno è accoppiato a una proteina G"
+  ],
+  "ans": 0,
+  "why": "Il TGF-β passa il segnale alle Smad; gli RTK reclutano proteine con domini SH2 (es. via di Ras).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2s-04",
+  "topic": "bm2-sertre",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Che cosa sono le BMP, ligandi dei recettori serin/treonin-chinasici?",
+  "opts": [
+   "Bone morphogenetic proteins",
+   "Basic membrane proteins",
+   "Binding motif peptides",
+   "Bone matrix phosphatases",
+   "B-cell maturation proteins"
+  ],
+  "ans": 0,
+  "why": "Insieme al TGF-β (transforming growth factor-β). Mutazioni di questi recettori favoriscono alcuni tumori.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2k-01",
+  "topic": "bm2-citochine",
+  "level": "m",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatto un recettore per le citochine nella forma attiva?",
+  "opts": [
+   "Un complesso etero-oligomerico di subunità con una sola elica transmembrana ciascuna",
+   "Un monomero con sette eliche transmembrana accoppiato a una proteina G trimerica",
+   "Un omodimero con un dominio tirosin chinasico intrinseco nella porzione citosolica",
+   "Un pentamero di subunità a quattro eliche che forma un canale per i cationi",
+   "Un tetramero 2α + 2β tenuto insieme da ponti disolfuro, come il recettore dell'insulina"
+  ],
+  "ans": 0,
+  "why": "La porzione citosolica non ha attività enzimatica: ha domini di interazione che reclutano le chinasi JAK.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2k-02",
+  "topic": "bm2-citochine",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "Perché la via JAK-STAT può dare risposte molto diverse in cellule diverse?",
+  "opts": [
+   "Recettori diversi usano JAK diverse, che fosforilano STAT diverse capaci di formare eterodimeri",
+   "Ogni cellula ha una sola JAK, ma questa fosforila in modo casuale tutte le STAT disponibili nel citosol",
+   "Le STAT entrano nel nucleo senza essere fosforilate e scelgono i geni in base al pH del nucleo",
+   "Il recettore cambia ligando a seconda del tessuto, mentre JAK e STAT restano sempre le stesse",
+   "JAK attiva Ras in alcune cellule e la PKA in altre, mentre STAT non partecipa mai al segnale"
+  ],
+  "ans": 0,
+  "why": "La combinazione ligando-recettore-JAK-STAT rende selettiva l'espressione del gene nella cellula specifica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2k-03",
+  "topic": "bm2-citochine",
+  "level": "h",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "In un paziente con poca eritropoietina, quale passaggio della via manca nei precursori dei globuli rossi?",
+  "opts": [
+   "Senza ligando il recettore non dimerizza, JAK non lo fosforila e STAT non attiva i geni del ciclo cellulare",
+   "Il recettore non si autofosforila sulle tirosine e quindi non recluta Grb2 e SOS né attiva la via di Ras",
+   "La proteina Gs non scambia il GDP con il GTP e l'adenilato ciclasi non produce cAMP",
+   "Le Smad non vengono fosforilate e non riescono a entrare nel nucleo dei precursori",
+   "Il recettore canale resta chiuso e il Ca²⁺ non entra nei precursori dei globuli rossi"
+  ],
+  "ans": 0,
+  "why": "Il recettore dell'eritropoietina segue la via JAK-STAT e controlla la proliferazione dei globuli rossi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb2k-04",
+  "topic": "bm2-citochine",
+  "level": "l",
+  "page": "lezione 2",
+  "src": "Biologia molecolare",
+  "q": "In quali processi è coinvolta la via JAK-STAT secondo la sbobina?",
+  "opts": [
+   "Processi immunitari, controllo della divisione cellulare e, se deregolata, tumori",
+   "Glicogenolisi epatica, contrazione cardiaca e, se deregolata, diabete di tipo 1",
+   "Trasmissione sinaptica, visione e, se deregolata, malattie neurodegenerative gravi",
+   "Controllo della pressione, volume ematico e, se deregolata, ipertensione",
+   "Coagulazione, riparazione delle ferite e, se deregolata, malattie del collagene"
+  ],
+  "ans": 0,
+  "why": "Le citochine (interleuchine, interferoni) agiscono in modo autocrino e paracrino come regolatori di crescita e differenziamento.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3g-01",
+  "topic": "bm3-gpcr",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quali sono i due principali effettori attivati dai GPCR secondo la sbobina?",
+  "opts": [
+   "Adenilato ciclasi e fosfolipasi C",
+   "Guanilato ciclasi e fosfolipasi A2",
+   "PKA e PKC",
+   "Ras e la MAP chinasi",
+   "JAK e STAT"
+  ],
+  "ans": 0,
+  "why": "L'adenilato ciclasi apre la via del cAMP, la fosfolipasi C quella di IP₃ e DAG.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3g-02",
+  "topic": "bm3-gpcr",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Dopo lo scambio GDP/GTP la Gα si separa da βγ. Come raggiunge l'adenilato ciclasi?",
+  "opts": [
+   "Scorre sul versante citosolico della membrana, a cui resta ancorata dalla coda prenilica",
+   "Diffonde liberamente nel citosol fino al reticolo, dove si trova l'adenilato ciclasi",
+   "Viene trasportata dalla β-arrestina fino all'effettore scorrendo lungo il citoscheletro",
+   "Resta legata al recettore, che la porta all'adenilato ciclasi con un'endocitosi",
+   "Entra nel nucleo, dove attiva la trascrizione del gene dell'adenilato ciclasi"
+  ],
+  "ans": 0,
+  "why": "α e γ hanno un'ancora prenilica; β resta in membrana legata a γ. Così tutto il sistema rimane sulla membrana.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3g-03",
+  "topic": "bm3-gpcr",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Le affinità dei GPCR per i loro ligandi vanno dal nanomolare al millimolare. Perché?",
+  "opts": [
+   "Mediano segnali sinaptici, autocrini, paracrini ed endocrini, con concentrazioni locali molto diverse",
+   "Sono tutti recettori endocrini, ma i ligandi più grandi e idrofilici si legano con un'affinità più bassa",
+   "L'affinità dipende soltanto dal tipo di proteina G accoppiata, non dalla distanza del segnale",
+   "Sono tutti recettori sinaptici, e l'affinità cambia con la frequenza dei potenziali d'azione",
+   "L'affinità cresce con il numero di eliche transmembrana, che varia molto tra i diversi GPCR"
+  ],
+  "ans": 0,
+  "why": "Più il segnale viaggia e si diluisce (endocrino), più serve affinità alta; nelle sinapsi la concentrazione locale è alta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3g-04",
+  "topic": "bm3-gpcr",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quale classe di GPCR è indicata come bersaglio terapeutico contro l'HIV?",
+  "opts": [
+   "I recettori per le chemochine",
+   "I recettori β-adrenergici",
+   "I recettori muscarinici",
+   "I recettori della rodopsina",
+   "I recettori della dopamina"
+  ],
+  "ans": 0,
+  "why": "Le chemochine sono citochine chemotattiche che richiamano i leucociti; il virus le sfrutta e si cercano farmaci antirecettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3c-01",
+  "topic": "bm3-camp",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Come forma il cAMP l'adenilato ciclasi?",
+  "opts": [
+   "Lega il fosfato α dell'ATP al suo 3'-OH, ciclizzandolo e liberando pirofosfato",
+   "Lega il fosfato γ dell'ATP al suo 5'-OH, ciclizzandolo e liberando ADP",
+   "Lega il fosfato α del GTP al suo 3'-OH, ciclizzandolo e liberando il pirofosfato",
+   "Lega il fosfato dell'AMP al suo 2'-OH, ciclizzandolo e liberando acqua",
+   "Lega il fosfato β dell'ATP al suo 3'-OH, ciclizzandolo e liberando fosfato"
+  ],
+  "ans": 0,
+  "why": "La fosfodiesterasi spegne il segnale rompendo il legame 3'-fosfato: il cAMP diventa AMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3c-02",
+  "topic": "bm3-camp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Nella sonda FRET per l'attività della PKA (CFP sulla sequenza bersaglio, YFP sul dominio che lega le fosfoserine), eccitando a 433 nm si vede emissione a 527 nm. Che cosa indica?",
+  "opts": [
+   "La PKA è attiva: ha fosforilato la serina e il dominio di legame ha avvicinato le due sonde",
+   "La PKA è inattiva: la serina non è fosforilata e la sonda ciano emette nell'azzurro senza trasferimento",
+   "Il cAMP è basso: subunità regolatrice e catalitica sono rimaste associate tra loro",
+   "La PKA ha fosforilato la sonda gialla, che emette direttamente quando viene eccitata",
+   "Una fosfatasi ha staccato il fosfato e le due sonde fluorescenti si sono allontanate"
+  ],
+  "ans": 0,
+  "why": "Con la serina fosforilata CFP e YFP sono vicine: la luce emessa dalla CFP eccita la YFP, che emette nel giallo (527 nm).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3c-03",
+  "topic": "bm3-camp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quante molecole di cAMP servono per liberare entrambe le subunità catalitiche della PKA, e come si legano?",
+  "opts": [
+   "Quattro, due per ogni subunità regolatrice, con legame cooperativo",
+   "Due, una per ogni subunità regolatrice, con legame indipendente",
+   "Quattro, due per ogni subunità catalitica, con legame competitivo",
+   "Una sola, che si lega tra le due subunità regolatrici del tetramero",
+   "Otto, due per ognuna delle quattro subunità, con legame cooperativo"
+  ],
+  "ans": 0,
+  "why": "Legato il cAMP, la subunità regolatrice passa da una forma «a manubrio» a una forma «a conca» e perde affinità per la catalitica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3c-04",
+  "topic": "bm3-camp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "La PKA controlla in modo reciproco il metabolismo del glicogeno. Quale combinazione è corretta?",
+  "opts": [
+   "Fosforila la fosforilasi chinasi (degradazione attivata) e la glicogeno sintasi (sintesi inattivata)",
+   "Fosforila la glicogeno sintasi (sintesi attivata) e la fosforilasi chinasi (degradazione inattivata)",
+   "Defosforila la glicogeno fosforilasi (degradazione attivata) e la glicogeno sintasi (sintesi attivata)",
+   "Fosforila direttamente la glicogeno fosforilasi sulla Ser14 e attiva la PP1 sul granulo",
+   "Fosforila la PP1, che a sua volta attiva sia la glicogeno sintasi sia la glicogeno fosforilasi"
+  ],
+  "ans": 0,
+  "why": "Tra i bersagli della PKA ci sono anche la piruvato chinasi e il fattore di trascrizione CREB.",
+  "note": "Sbobina di Biologia molecolare, lezione 3: mette la glicogeno sintasi tra le proteine «attivate» dalla PKA; la fosforilazione la inattiva (lo dicono le lezioni 4 e 5).",
+  "fixed": false
+ },
+ {
+  "id": "yb3c-05",
+  "topic": "bm3-camp",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quanti segmenti transmembrana ha l'adenilato ciclasi e dove si forma il sito catalitico?",
+  "opts": [
+   "12; dall'incontro del loop tra le eliche 6 e 7 con la porzione C-terminale",
+   "7; dall'incontro del loop citosolico C3 con la porzione C-terminale",
+   "12; dall'incontro delle estremità N- e C-terminali, entrambe extracellulari",
+   "1; nel dominio citosolico che segue l'unica elica transmembrana",
+   "6; dall'incontro del loop tra le eliche 2 e 3 con la porzione N-terminale"
+  ],
+  "ans": 0,
+  "why": "Le estremità N- e C-terminali sono entrambe citosoliche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3c-06",
+  "topic": "bm3-camp",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quali residui compaiono di solito nelle sequenze consenso fosforilate dalla PKA?",
+  "opts": [
+   "Una serina, con residui basici (arginina) e piccoli apolari (alanina, glicina) vicini",
+   "Una tirosina, con residui acidi (aspartato) e aromatici (fenilalanina) vicini",
+   "Una treonina, con residui di prolina che la precedono e la seguono",
+   "Una serina, preceduta da una fosfoserina di innesco messa in precedenza dalla caseina chinasi II",
+   "Una cisteina, con residui basici (lisina) e una glicina in posizione −1"
+  ],
+  "ans": 0,
+  "why": "La fosfoserina di innesco della caseina chinasi II serve invece alla GSK3 (lezione 5).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3s-01",
+  "topic": "bm3-spegnimento",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quali meccanismi spengono la segnalazione dei GPCR secondo la sbobina?",
+  "opts": [
+   "Attività GTPasica della Gα, fosforilazione del recettore con β-arrestina, fosfatasi richiamate vicino alla PKA",
+   "Idrolisi del GTP da parte di GAP, taglio proteolitico del recettore, esportazione del cAMP fuori dalla cellula",
+   "Defosforilazione della Gα, internalizzazione dell'adenilato ciclasi, degradazione della PKA nel proteasoma",
+   "Legame della calmodulina al recettore, chiusura dei canali del Ca²⁺, sintesi di nuovo GDP nel citosol",
+   "Ubiquitinazione dell'agonista, fosforilazione delle subunità βγ, apertura dei canali del K⁺"
+  ],
+  "ans": 0,
+  "why": "A questi si aggiungono l'inattivazione dell'agonista e la fosfodiesterasi che degrada il cAMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3s-02",
+  "topic": "bm3-spegnimento",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Perché la β-arrestina impedisce l'attivazione della proteina G anche se l'adrenalina resta legata al recettore?",
+  "opts": [
+   "Si lega sulla stessa superficie citosolica del recettore a cui dovrebbe legarsi la proteina G",
+   "Idrolizza il GTP della Gα appena questa si stacca dalle subunità β e γ del trimero inattivo in membrana",
+   "Sposta l'adrenalina dal sito di legame extracellulare e prende il suo posto",
+   "Fosforila la Gα sulla coda prenilica e la stacca dalla membrana plasmatica",
+   "Lega l'adenilato ciclasi e la tiene lontana dalla Gα attivata dal recettore"
+  ],
+  "ans": 0,
+  "why": "Il recettore fosforilato dalla βARK lega la β-arrestina, viene endocitato e poi riciclato in membrana o degradato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3s-03",
+  "topic": "bm3-spegnimento",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Dopo l'idrolisi del GTP, perché la Gα torna ad associarsi a βγ?",
+  "opts": [
+   "Persa il fosfato γ, la sua affinità per βγ aumenta moltissimo e si riforma il trimero inattivo",
+   "La β-arrestina riporta βγ sulla Gα e le lega con un legame covalente in membrana",
+   "Le subunità βγ vengono fosforilate dalla PKA e così riacquistano affinità per la Gα",
+   "La Gα-GDP si stacca dalla membrana e βγ la cattura nel citosol prima che diffonda",
+   "Il recettore, agendo da GEF, lega insieme Gα e βγ dopo aver rimosso il GDP dalla Gα attivata"
+  ],
+  "ans": 0,
+  "why": "È il meccanismo di spegnimento intrinseco della proteina G: la stessa Gα che scambia il nucleotide lo idrolizza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3s-04",
+  "topic": "bm3-spegnimento",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quale meccanismo di spegnimento agisce a livello dell'agonista?",
+  "opts": [
+   "La sua inattivazione o metabolizzazione, come per l'acetilcolina",
+   "La sua fosforilazione da parte della βARK sulla coda C-terminale",
+   "Il suo legame alla β-arrestina, che lo porta nella vescicola",
+   "La sua ADP-ribosilazione da parte di una tossina batterica",
+   "Il suo trasporto nel nucleo, dove regola la sintesi del recettore"
+  ],
+  "ans": 0,
+  "why": "Gli altri livelli sono il recettore (desensibilizzazione, internalizzazione) e la proteina G (GTPasi).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3m-01",
+  "topic": "bm3-cgmp",
+  "level": "m",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quali processi controlla il cGMP secondo la sbobina?",
+  "opts": [
+   "Contrattilità muscolare, visione, omeostasi del volume ematico",
+   "Glicogenolisi epatica, lipolisi, secrezione di insulina",
+   "Proliferazione dei globuli rossi, risposta immunitaria, apoptosi",
+   "Trasmissione sinaptica eccitatoria, memoria, sonno",
+   "Sintesi del collagene, coagulazione, riparazione delle ferite"
+  ],
+  "ans": 0,
+  "why": "Si forma dal GTP per opera della guanilato ciclasi (di membrana o citosolica) e attiva la PKG.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3m-02",
+  "topic": "bm3-cgmp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Quali effetti della PKG concorrono al rilassamento della muscolatura liscia dei vasi?",
+  "opts": [
+   "Riduce il Ca²⁺ dal RE, attiva la fosfatasi delle catene leggere della miosina e apre canali K⁺",
+   "Aumenta il Ca²⁺ dal RE, attiva la chinasi delle catene leggere della miosina e chiude canali K⁺",
+   "Riduce il cAMP, inibisce la fosfatasi delle catene leggere della miosina e apre canali Cl⁻",
+   "Aumenta l'IP₃, fosforila le catene leggere della miosina e apre i canali del Ca²⁺ di membrana",
+   "Riduce il cGMP, attiva la PKA nel citosol e apre i canali del Ca²⁺ voltaggio-dipendenti"
+  ],
+  "ans": 0,
+  "why": "L'apertura dei canali K⁺ iperpolarizza e inibisce i canali del Ca²⁺ voltaggio-dipendenti: altro Ca²⁺ in meno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3m-03",
+  "topic": "bm3-cgmp",
+  "level": "h",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Cellule stimolate con NO e ristimolate un'ora dopo producono molto meno cGMP. Quale intervento ripristinerebbe meglio la risposta?",
+  "opts": [
+   "Un inibitore della fosfodiesterasi del cGMP, che la PKG ha attivato durante la prima stimolazione",
+   "Un inibitore della guanilato ciclasi solubile, per evitare che si desensibilizzi una seconda volta",
+   "Un attivatore della PKA, perché il cAMP stimola direttamente la guanilato ciclasi solubile",
+   "Un chelante del ferro, per liberare il sito dell'eme e far legare più molecole di NO",
+   "Un inibitore della PKG, così il cGMP prodotto resta libero e non viene usato dalla chinasi"
+  ],
+  "ans": 0,
+  "why": "La fosfodiesterasi attivata resta attiva anche dopo la desensibilizzazione: è lo stesso principio del sildenafil (PDE5).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb3m-04",
+  "topic": "bm3-cgmp",
+  "level": "l",
+  "page": "lezione 3",
+  "src": "Biologia molecolare",
+  "q": "Com'è fatta la PKG?",
+  "opts": [
+   "Un omodimero, in due isoforme (PKG-1 e PKG-2), con tre domini funzionali per subunità",
+   "Un tetramero di due subunità catalitiche e due regolatrici che legano il cGMP, come la PKA",
+   "Un monomero con un dominio PH che la ancora al fosfatidilinositolo",
+   "Un eterodimero di una subunità che lega il cGMP e una catalitica",
+   "Un omotrimero con un gruppo eme per subunità che lega l'NO"
+  ],
+  "ans": 0,
+  "why": "L'eme che lega l'NO sta nella guanilato ciclasi solubile, non nella PKG.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4c-01",
+  "topic": "bm4-calcio",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Perché il Ca²⁺ libero nel citosol è bassissimo a riposo?",
+  "opts": [
+   "È pompato fuori e negli organelli, e quello rimasto è legato da proteine leganti il calcio",
+   "Il Ca²⁺ non attraversa mai la membrana plasmatica, nemmeno attraverso i canali",
+   "Viene trasformato in un secondo messaggero organico, come l'IP₃, appena entra nel citosol",
+   "È tutto legato all'ATP, che lo trasporta nei mitocondri senza consumare energia",
+   "Il reticolo endoplasmatico lo rilascia solo quando il citosol è già molto alcalino"
+  ],
+  "ans": 0,
+  "why": "Ca²⁺-ATPasi di membrana e del reticolo, antiporto Na⁺/Ca²⁺ e Calcium Binding Proteins mantengono l'omeostasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4c-02",
+  "topic": "bm4-calcio",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Il Ca²⁺ è ≈10⁻³ M fuori dalla cellula e nel RE, ≈10⁻⁷ M nel citosol. Quale conseguenza funzionale ha questo gradiente?",
+  "opts": [
+   "Basta aprire dei canali per far salire rapidamente il Ca²⁺ citosolico e generare il segnale",
+   "Serve sempre ATP per far entrare il Ca²⁺ nel citosol quando arriva un segnale",
+   "Il Ca²⁺ entra nella cellula solo per diffusione semplice attraverso il doppio strato fosfolipidico",
+   "Il segnale nasce dalla diminuzione del Ca²⁺ citosolico, non dal suo aumento",
+   "Il Ca²⁺ si muove solo dal citosol verso il RE, mai nella direzione opposta"
+  ],
+  "ans": 0,
+  "why": "Sono i secondi messaggeri a variare: la variazione del Ca²⁺ citosolico è ciò che innesca la risposta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4c-03",
+  "topic": "bm4-calcio",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che differenza c'è tra recettore per l'IP₃ e recettore per la rianodina nel modo in cui si aprono?",
+  "opts": [
+   "Il primo si apre legando l'IP₃; il secondo è aperto fisiologicamente dal Ca²⁺ stesso",
+   "Il primo si apre legando il Ca²⁺; il secondo è aperto fisiologicamente dalla rianodina",
+   "Il primo si apre con il DAG in membrana; il secondo con l'IP₃ che diffonde nel citosol",
+   "Il primo si apre quando la membrana si depolarizza; il secondo con il legame della calmodulina",
+   "Entrambi si aprono solo legando l'IP₃, ma il secondo si trova nella membrana plasmatica"
+  ],
+  "ans": 0,
+  "why": "La rianodina è un alcaloide vegetale, non una molecola endogena. Anche la Ca²⁺-calmodulina favorisce la riapertura del recettore per la rianodina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4c-04",
+  "topic": "bm4-calcio",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Che cos'è la rianodina?",
+  "opts": [
+   "Un alcaloide vegetale con attività insetticida",
+   "Un peptide endogeno del reticolo sarcoplasmatico",
+   "Un fosfolipide di membrana derivato dal PIP₂",
+   "Una tossina batterica che ADP-ribosila la Gq",
+   "Un nucleotide ciclico prodotto dalle cellule muscolari"
+  ],
+  "ans": 0,
+  "why": "A basse concentrazioni blocca il canale semiaperto (contrazione massiva), a concentrazioni µM lo chiude (paralisi).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4m-01",
+  "topic": "bm4-calmodulina",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Con quali enzimi interagisce direttamente la Ca²⁺-calmodulina secondo la sbobina?",
+  "opts": [
+   "Fosfodiesterasi, adenilato ciclasi, Ca²⁺-ATPasi, chinasi delle catene leggere, fosforilasi chinasi",
+   "Guanilato ciclasi, PKA, Na⁺/K⁺-ATPasi, fosfatasi delle catene leggere della miosina, glicogeno fosforilasi",
+   "Fosfolipasi C, PI3-chinasi, PKB, glicogeno sintasi chinasi 3, proteina fosfatasi 1",
+   "Adenilato ciclasi, Ras, Raf, MEK, MAP chinasi, fattori di trascrizione fos e jun",
+   "Esochinasi, fosfofruttochinasi, piruvato chinasi, piruvato deidrogenasi, citrato sintasi"
+  ],
+  "ans": 0,
+  "why": "Così il Ca²⁺ controlla nucleotidi ciclici, trasporto del Ca²⁺, contrazione liscia e metabolismo del glicogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4m-02",
+  "topic": "bm4-calmodulina",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "In una cellula sale il Ca²⁺ citosolico. Quale catena porta alla trascrizione di geni specifici?",
+  "opts": [
+   "Ca²⁺-calmodulina → CaM chinasi → fosforilazione di CREB → trascrizione",
+   "Ca²⁺-calmodulina → PKA → fosforilazione delle Smad → trascrizione",
+   "Ca²⁺ → PKC → fosforilazione di STAT → dimerizzazione di STAT → trascrizione",
+   "Ca²⁺-calmodulina → adenilato ciclasi → cAMP → STAT → trascrizione",
+   "Ca²⁺ → guanilato ciclasi → cGMP → fos e jun → trascrizione"
+  ],
+  "ans": 0,
+  "why": "CREB è lo stesso fattore fosforilato dalla PKA nella via del cAMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4m-03",
+  "topic": "bm4-calmodulina",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Perché la calmodulina può amplificare un segnale partito dall'IP₃?",
+  "opts": [
+   "Legata al Ca²⁺ si lega ai recettori per la rianodina e ne favorisce la riapertura",
+   "Legata al Ca²⁺ attiva la fosfolipasi C e fa produrre altro IP₃ dal PIP₂",
+   "Senza Ca²⁺ chiude le pompe Ca²⁺-ATPasi, così il Ca²⁺ resta nel citosol",
+   "Legata al Ca²⁺ si lega al recettore dell'IP₃ e lo trasforma in un canale aperto per il Na⁺",
+   "Senza Ca²⁺ attiva la PKC, che fosforila e apre i canali del Ca²⁺ di membrana"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ uscito dal recettore dell'IP₃ attiva i recettori per la rianodina e i canali voltaggio-dipendenti: il segnale si amplifica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4m-04",
+  "topic": "bm4-calmodulina",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Nel loop della mano EF, quanti legami di coordinazione forma il Ca²⁺ e con che geometria?",
+  "opts": [
+   "7, bipiramide pentagonale",
+   "6, ottaedrica",
+   "4, tetraedrica",
+   "7, prisma trigonale",
+   "8, antiprisma quadrato"
+  ],
+  "ans": 0,
+  "why": "I legami si formano con altrettanti residui acidi; la calmodulina ha due domini EF, ognuno lega 2 Ca²⁺ (4 in tutto).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4p-01",
+  "topic": "bm4-fosfoinositidi",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Quale legame taglia ciascuna fosfolipasi?",
+  "opts": [
+   "A1: estere al C1; A2: estere al C2; C: tra C3 e fosfato; D: libera la testa polare",
+   "A1: estere al C2; A2: estere al C1; C: libera la testa polare; D: tra C3 e fosfato",
+   "A1: tra C3 e fosfato; A2: estere al C2; C: estere al C1; D: libera la testa polare",
+   "A1: estere al C1; A2: tra C3 e fosfato; C: estere al C2; D: libera la testa polare",
+   "A1: estere al C1; A2: estere al C2; C: libera la testa polare; D: tra C3 e fosfato"
+  ],
+  "ans": 0,
+  "why": "La PLC sul PIP₂ libera DAG (resta in membrana) e IP₃; la PLD lascia l'acido fosfatidico; la A2 di solito libera l'arachidonato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4p-02",
+  "topic": "bm4-fosfoinositidi",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come si attiva la PKC passo per passo?",
+  "opts": [
+   "Il Ca²⁺ la porta in membrana sulla fosfatidilserina; lì il DAG le scopre il sito catalitico",
+   "Il DAG la porta in membrana sulla fosfatidilserina; lì il Ca²⁺ le scopre il sito catalitico",
+   "Il cAMP libera le sue subunità catalitiche, che poi si legano al DAG nella membrana",
+   "L'IP₃ la lega nel citosol e la trasporta nel reticolo, dove viene fosforilata dal Ca²⁺",
+   "Il PIP₃ la richiama con il dominio PH e la PI3-chinasi la fosforila in membrana"
+  ],
+  "ans": 0,
+  "why": "Servono entrambi i secondi messaggeri: il Ca²⁺ liberato dall'IP₃ e il DAG, presente solo se la PLC è stata attivata.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4p-03",
+  "topic": "bm4-fosfoinositidi",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "PIP₃ e IP₃ derivano entrambi dal PIP₂. Che differenza c'è tra i due?",
+  "opts": [
+   "Il PIP₃ resta in membrana, non è substrato della PLC e attiva la PKB; l'IP₃ diffonde e libera Ca²⁺",
+   "Il PIP₃ diffonde nel citosol e libera Ca²⁺ dal RE; l'IP₃ resta in membrana e attiva la PKB",
+   "Il PIP₃ nasce dal taglio della PLC sul PIP₂; l'IP₃ dalla fosforilazione del PIP₂ in posizione 3",
+   "Entrambi restano in membrana, ma il PIP₃ attiva la PKC e l'IP₃ attiva la PKA",
+   "Il PIP₃ è prodotto dalla PLCγ degli RTK; l'IP₃ dalla PI3-chinasi attivata dalla Gq"
+  ],
+  "ans": 0,
+  "why": "La PI3-chinasi aggiunge un fosfato in posizione 3 dell'inositolo; la PLC taglia tra C3 del glicerolo e fosfato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4p-04",
+  "topic": "bm4-fosfoinositidi",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Oltre che dalla Gq, da che cosa può essere attivata la PLCβ?",
+  "opts": [
+   "Dal dimero βγ delle proteine Gi",
+   "Dalla fosforilazione da parte degli RTK",
+   "Dal legame del PIP₃ al dominio PH",
+   "Dalla PKA attivata dal cAMP",
+   "Dal Ca²⁺-calmodulina"
+  ],
+  "ans": 0,
+  "why": "La PLCγ è quella attivata per fosforilazione dai recettori tirosin-chinasici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4a-01",
+  "topic": "bm4-asse",
+  "level": "m",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Su quale bersaglio agiscono, nell'ordine, ACTH, TSH e LH/FSH secondo la sbobina?",
+  "opts": [
+   "Corteccia surrenale, tiroide, ovaio",
+   "Midollare del surrene, tiroide, utero",
+   "Tiroide, corteccia surrenale, ovaio",
+   "Corteccia surrenale, ipotalamo, ghiandola mammaria",
+   "Fegato, tiroide, ovaio"
+  ],
+  "ans": 0,
+  "why": "Ne derivano cortisolo, T3/T4 e progesterone. La midollare del surrene (adrenalina) è controllata direttamente dal SNC.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4a-02",
+  "topic": "bm4-asse",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Un paziente assume da mesi cortisolo ad alte dosi. Che cosa ti aspetti per l'ACTH e per l'ormone ipotalamico che lo regola?",
+  "opts": [
+   "Entrambi ridotti, per il feedback lungo dell'ormone periferico su ipofisi e ipotalamo",
+   "Entrambi aumentati, perché il cortisolo stimola ipofisi e ipotalamo a produrre di più",
+   "ACTH ridotto ma ormone ipotalamico aumentato, perché il feedback agisce solo sull'ipofisi",
+   "ACTH aumentato ma ormone ipotalamico ridotto, per il solo feedback ultrabreve",
+   "Nessuna variazione, perché il cortisolo esogeno non partecipa ai circuiti di feedback"
+  ],
+  "ans": 0,
+  "why": "Gli ormoni periferici agiscono con feedback a lungo termine su ipofisi e ipotalamo, come T3/T4 su TSH e TRH.",
+  "note": "Il caso del cortisolo farmacologico non è nella sbobina: applica il feedback lungo spiegato con gli ormoni tiroidei.",
+  "fixed": false
+ },
+ {
+  "id": "yb4a-03",
+  "topic": "bm4-asse",
+  "level": "h",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Nel dosaggio radioimmunologico, perché il rapporto tra ormone marcato legato e libero cala aggiungendo ormone non marcato?",
+  "opts": [
+   "L'ormone non marcato compete per lo stesso anticorpo e sposta quello radioattivo",
+   "L'ormone non marcato degrada l'anticorpo e libera così l'ormone radioattivo legato",
+   "L'ormone radioattivo decade più in fretta quando aumenta la concentrazione totale",
+   "L'ormone non marcato si lega a un secondo anticorpo che porta un enzima colorato",
+   "L'anticorpo lega con più affinità l'ormone non marcato perché è più piccolo"
+  ],
+  "ans": 0,
+  "why": "Con una curva standard si legge la concentrazione di un campione ignoto dal valore del rapporto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb4a-04",
+  "topic": "bm4-asse",
+  "level": "l",
+  "page": "lezione 4",
+  "src": "Biologia molecolare",
+  "q": "Come si forma il piroglutammato all'N-terminale del TRH?",
+  "opts": [
+   "Legame ammidico intramolecolare tra il carbossile laterale e l'α-ammino del glutammato",
+   "Legame estere tra il carbossile laterale del glutammato e l'ossidrile dell'istidina",
+   "Decarbossilazione del glutammato seguita da chiusura ad anello sul carbonio γ",
+   "Legame ammidico tra l'α-carbossile del glutammato e l'azoto dell'istidina vicina",
+   "Ossidazione del glutammato a chetone e successiva ciclizzazione con l'ammoniaca libera"
+  ],
+  "ans": 0,
+  "why": "Il TRH è piroglutammato-istidina-prolina ammidata; la sua scoperta è valsa il Nobel a Guillemin e Schally.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-01",
+  "topic": "bm5-insulina",
+  "level": "m",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quale sequenza porta il glucosio a far secernere insulina dalla cellula β?",
+  "opts": [
+   "GLUT2 → glucochinasi → ↑ATP → chiusura dei canali K⁺-ATP → depolarizzazione → ingresso di Ca²⁺",
+   "GLUT4 → esochinasi I → ↓ATP → apertura dei canali K⁺-ATP → iperpolarizzazione → ingresso di Ca²⁺",
+   "GLUT2 → glucochinasi → ↑ATP → apertura dei canali K⁺-ATP → depolarizzazione → uscita di Ca²⁺",
+   "GLUT2 → glucochinasi → ↑cAMP → PKA → fosforilazione dei granuli → esocitosi senza Ca²⁺",
+   "GLUT4 → glucochinasi → ↑ATP → chiusura dei canali Na⁺ → iperpolarizzazione → ingresso di Ca²⁺"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ entrato stimola, attraverso i recettori rianodinici, il rilascio di altro Ca²⁺ e l'esocitosi dei granuli.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-02",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Come fa la PKB a inattivare la GSK3?",
+  "opts": [
+   "Fosforila un sito di pseudosubstrato N-terminale che la GSK3 lega al posto del substrato, mascherando il sito catalitico",
+   "Fosforila il sito catalitico della GSK3, che così non riesce più a legare l'ATP necessario alla fosforilazione dei substrati",
+   "Lega la GSK3 con il dominio PH e la trasporta nel nucleo, lontano dalla glicogeno sintasi",
+   "Defosforila la serina di innesco messa dalla caseina chinasi II sulla glicogeno sintasi",
+   "Attiva la PP1, che stacca dalla GSK3 i fosfati necessari alla sua attività catalitica"
+  ],
+  "ans": 0,
+  "why": "La GSK3 riconosce i substrati tramite una fosfoserina di innesco; fosforilata dalla PKB si richiude su sé stessa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-03",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Durante uno stress acuto la glicemia sale ma l'insulina non aumenta come ci si aspetterebbe. Quale spiegazione è coerente con la sbobina?",
+  "opts": [
+   "Fibre simpatiche e adrenalina della midollare surrenale inibiscono il rilascio di insulina",
+   "L'adrenalina degrada l'insulina già secreta nel sangue tramite la PKA epatica",
+   "Lo stress chiude i GLUT2 della cellula β, che non riesce più a percepire il glucosio",
+   "Il parasimpatico, attivo nello stress, blocca l'esocitosi tramite l'acetilcolina",
+   "L'iperglicemia da stress inibisce la glucochinasi e abbassa così l'ATP prodotto nella cellula β"
+  ],
+  "ans": 0,
+  "why": "Il parasimpatico (acetilcolina, IP₃, Ca²⁺) stimola invece la secrezione durante la digestione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-04",
+  "topic": "bm5-insulina",
+  "level": "h",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Quale di questi effetti dell'insulina è mediato dalla PKB nella via Ras-indipendente?",
+  "opts": [
+   "Traslocazione di GLUT4 in membrana nel muscolo e nel tessuto adiposo",
+   "Attivazione dei fattori fos e jun da parte della MAP chinasi nel nucleo",
+   "Fosforilazione di IRS1 da parte del recettore su residui di tirosina",
+   "Reclutamento di Grb2 e SOS sulla IRS1 fosforilata in membrana",
+   "Fosforilazione della glicogeno sintasi, che diventa così più attiva"
+  ],
+  "ans": 0,
+  "why": "La PKB inibisce anche la GSK3, attiva la PP1 e una fosfodiesterasi del cAMP. IRS1 fosforilata è comune alle due vie.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-05",
+  "topic": "bm5-insulina",
+  "level": "l",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Qual è la massa del substrato 1 del recettore dell'insulina (IRS1)?",
+  "opts": [
+   "≈ 130 kDa",
+   "≈ 5,8 kDa",
+   "≈ 51 kDa",
+   "≈ 30 kDa",
+   "≈ 300 kDa"
+  ],
+  "ans": 0,
+  "why": "5,8 kDa (5.808) è invece il peso molecolare dell'insulina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yb5i-06",
+  "topic": "bm5-insulina",
+  "level": "l",
+  "page": "lezione 5",
+  "src": "Biologia molecolare",
+  "q": "Secondo la sbobina, come si dividono in percentuale il diabete insulino-dipendente e quello non insulino-dipendente?",
+  "opts": [
+   "10% e 90%",
+   "90% e 10%",
+   "50% e 50%",
+   "30% e 70%",
+   "1% e 99%"
+  ],
+  "ans": 0,
+  "why": "Il primo (giovanile) è da bassa secrezione di insulina; il secondo (età adulta) è legato al recettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1c-01",
+  "topic": "d1-chimica",
+  "level": "m",
+  "page": "7",
+  "src": "Biochimica I",
+  "q": "Da che cosa dipende soprattutto la solubilità in acqua di una biomolecola?",
+  "opts": [
+   "Dai gruppi funzionali, che decidono se può formare legami a idrogeno con l'acqua",
+   "Dal numero di atomi di carbonio, indipendentemente dai gruppi funzionali legati",
+   "Dalla presenza di centri chirali, che rendono la molecola otticamente attiva",
+   "Dal peso molecolare: le molecole sotto i 500 Da sono sempre solubili in acqua",
+   "Dai doppi legami, che rendono la molecola rigida e quindi più facile da idratare"
+  ],
+  "ans": 0,
+  "why": "Un alcano non forma legami a idrogeno: non è né reattivo né solubile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1c-02",
+  "topic": "d1-chimica",
+  "level": "h",
+  "page": "7",
+  "src": "Biochimica I",
+  "q": "Quale sequenza ordina correttamente lo stato di ossidazione del carbonio, dal meno al più ossidato?",
+  "opts": [
+   "Alcano → alcol primario → aldeide → acido carbossilico",
+   "Alcano → aldeide → alcol primario → acido carbossilico",
+   "Alcol primario → alcano → aldeide → acido carbossilico",
+   "Alcano → alcol secondario → aldeide → chetone",
+   "Acido carbossilico → aldeide → alcol primario → alcano"
+  ],
+  "ans": 0,
+  "why": "Ogni ossidazione toglie due elettroni, ceduti a NAD⁺ o FAD. Un alcol secondario si ossida a chetone.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1c-03",
+  "topic": "d1-chimica",
+  "level": "h",
+  "page": "8",
+  "src": "Biochimica I",
+  "q": "Una molecola ha 4 centri chirali. Quanti stereoisomeri ha, e uno di essi quanti enantiomeri e diastereoisomeri ha?",
+  "opts": [
+   "16 stereoisomeri; 1 enantiomero e 14 diastereoisomeri",
+   "8 stereoisomeri; 1 enantiomero e 6 diastereoisomeri",
+   "16 stereoisomeri; 2 enantiomeri e 13 diastereoisomeri",
+   "16 stereoisomeri; 4 enantiomeri e 11 diastereoisomeri",
+   "4 stereoisomeri; 1 enantiomero e 2 diastereoisomeri"
+  ],
+  "ans": 0,
+  "why": "2ⁿ = 2⁴ = 16. L'immagine speculare è una sola; tutti gli altri 14 sono diastereoisomeri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1c-04",
+  "topic": "d1-chimica",
+  "level": "l",
+  "page": "8",
+  "src": "Biochimica I",
+  "q": "Quale conformazione attorno a un legame singolo C–C è la più stabile?",
+  "opts": [
+   "Sfalsata",
+   "Eclissata",
+   "Cis",
+   "Trans",
+   "Gauche eclissata"
+  ],
+  "ans": 0,
+  "why": "Nella sfalsata i sostituenti sono alla massima distanza; cis e trans riguardano invece i doppi legami (configurazione).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1c-05",
+  "topic": "d1-chimica",
+  "level": "l",
+  "page": "7",
+  "src": "Biochimica I",
+  "q": "Secondo la sbobina, oltre quale peso molecolare si parla di macromolecole e quanto pesano in genere i loro monomeri?",
+  "opts": [
+   "Oltre 5000; monomeri ≤ 500",
+   "Oltre 500; monomeri ≤ 50",
+   "Oltre 50.000; monomeri ≤ 5000",
+   "Oltre 1000; monomeri ≤ 110",
+   "Oltre 5000; monomeri ≤ 110"
+  ],
+  "ans": 0,
+  "why": "I polimeri più corti si chiamano oligomeri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1a-01",
+  "topic": "d1-acqua",
+  "level": "m",
+  "page": "9",
+  "src": "Biochimica I",
+  "q": "Perché l'acqua scioglie bene il cloruro di sodio?",
+  "opts": [
+   "Idrata e stabilizza Na⁺ e Cl⁻, indebolendo le interazioni elettrostatiche tra loro",
+   "Forma legami covalenti con Na⁺ e Cl⁻ che sostituiscono il legame ionico del cristallo",
+   "Forma clatrati ordinati attorno a Na⁺ e Cl⁻, aumentando la propria entropia",
+   "Cede protoni al Cl⁻ e prende elettroni dal Na⁺, neutralizzando le due cariche",
+   "È apolare e si inserisce tra gli ioni del cristallo grazie alle forze di van der Waals"
+  ],
+  "ans": 0,
+  "why": "I clatrati si formano invece attorno ai soluti apolari e sono sfavoriti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1a-02",
+  "topic": "d1-acqua",
+  "level": "h",
+  "page": "8–9",
+  "src": "Biochimica I",
+  "q": "Perché l'acqua ha punti di fusione e di ebollizione così alti nonostante il legame a idrogeno sia debole?",
+  "opts": [
+   "I legami a idrogeno sono numerosissimi e serve molta energia per romperne abbastanza",
+   "Ogni legame a idrogeno è più forte di un legame covalente C–C e richiede molta energia",
+   "L'acqua forma clatrati con sé stessa che si sciolgono solo ad alta temperatura",
+   "La molecola d'acqua è lineare e simmetrica, quindi le sue molecole si impaccano bene",
+   "L'ossigeno forma con l'idrogeno un doppio legame che richiede molta energia per rompersi"
+  ],
+  "ans": 0,
+  "why": "Ogni molecola può formare legami a H con altre quattro (geometria quasi tetraedrica, completa nel ghiaccio).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1a-03",
+  "topic": "d1-acqua",
+  "level": "h",
+  "page": "9",
+  "src": "Biochimica I",
+  "q": "La CO₂ è un gas apolare poco solubile in acqua. In che forma è trasportata soprattutto nel sangue, e perché?",
+  "opts": [
+   "Come bicarbonato, molto solubile, dopo essere diventata acido carbonico",
+   "Legata al ferro dell'eme dell'emoglobina, che ha un sito apposito per la CO₂",
+   "Disciolta come gas, perché nel plasma i clatrati la stabilizzano",
+   "Come carbonato di calcio, che precipita e viene poi riassorbito",
+   "Legata all'albumina, che trasporta tutte le molecole apolari"
+  ],
+  "ans": 0,
+  "why": "L'O₂, anch'esso poco solubile, viaggia invece legato a emoglobina e mioglobina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1a-04",
+  "topic": "d1-acqua",
+  "level": "l",
+  "page": "8",
+  "src": "Biochimica I",
+  "q": "Quanta energia contiene un legame a idrogeno secondo la sbobina?",
+  "opts": [
+   "≈ 22 kJ",
+   "≈ 2,2 kJ",
+   "≈ 220 kJ",
+   "≈ 350 kJ",
+   "≈ 0,6 kJ"
+  ],
+  "ans": 0,
+  "why": "È debole, ma i legami a idrogeno sono molto numerosi e si rompono e riformano di continuo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1m-01",
+  "topic": "d1-metabolismo",
+  "level": "m",
+  "page": "10",
+  "src": "Biochimica I",
+  "q": "Che rapporto c'è tra catabolismo e anabolismo?",
+  "opts": [
+   "Il catabolismo degrada i nutrienti e produce ATP, che l'anabolismo usa per le biosintesi",
+   "L'anabolismo degrada i nutrienti e produce ATP, che il catabolismo usa per le biosintesi",
+   "Sono vie indipendenti: il catabolismo produce calore e l'anabolismo produce ATP",
+   "Il catabolismo sintetizza le macromolecole consumando l'ATP prodotto dall'anabolismo",
+   "Entrambi producono ATP, ma l'anabolismo avviene solo nel tessuto adiposo"
+  ],
+  "ans": 0,
+  "why": "L'ATP serve anche alla contrazione muscolare e al mantenimento del potenziale di membrana.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1m-02",
+  "topic": "d1-metabolismo",
+  "level": "h",
+  "page": "7–8",
+  "src": "Biochimica I",
+  "q": "Che cosa hanno in comune le reazioni con cui si formano proteine, acidi nucleici e polisaccaridi?",
+  "opts": [
+   "Uniscono monomeri perdendo una molecola d'acqua e danno polimeri con due estremità diverse",
+   "Uniscono monomeri liberando CO₂ e danno polimeri simmetrici senza un verso di lettura",
+   "Uniscono monomeri con legami a idrogeno e danno polimeri che si sciolgono a 37 °C",
+   "Uniscono monomeri aggiungendo una molecola d'acqua e danno polimeri con due estremità identiche",
+   "Uniscono monomeri senza consumare energia e danno polimeri ramificati"
+  ],
+  "ans": 0,
+  "why": "Acidi nucleici 5'/3', proteine N/C-terminale, polisaccaridi estremità riducente/non riducente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd1m-03",
+  "topic": "d1-metabolismo",
+  "level": "l",
+  "page": "7",
+  "src": "Biochimica I",
+  "q": "Come si chiama l'insieme delle molecole che contengono lipidi in una cellula?",
+  "opts": [
+   "Lipidoma",
+   "Glicoma",
+   "Proteoma",
+   "Metaboloma",
+   "Lipoproteoma"
+  ],
+  "ans": 0,
+  "why": "Proteoma: proteine funzionanti; glicoma: molecole con carboidrati; genoma: l'intera sequenza del DNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2s-01",
+  "topic": "d2-strutturali",
+  "level": "m",
+  "page": "11",
+  "src": "Biochimica I",
+  "q": "Per trasformare un L-amminoacido nel suo enantiomero D che cosa bisogna fare?",
+  "opts": [
+   "Rompere e riformare un legame del carbonio α, invertendone la configurazione",
+   "Ruotare la molecola di 180° attorno al legame tra carbonio α e carbossile",
+   "Ruotare il piano della luce polarizzata facendola passare in un polarimetro",
+   "Protonare il gruppo amminico, che passa così dal lato sinistro al lato destro",
+   "Cambiare la conformazione attorno ai legami singoli della catena laterale"
+  ],
+  "ans": 0,
+  "why": "La configurazione cambia solo rompendo legami; la conformazione cambia per rotazione attorno ai legami singoli.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2s-02",
+  "topic": "d2-strutturali",
+  "level": "h",
+  "page": "15",
+  "src": "Biochimica I",
+  "q": "La parete batterica contiene D-amminoacidi, ma i ribosomi non li incorporano mai. Come si spiega?",
+  "opts": [
+   "La sintesi ribosomiale è stereospecifica; i D-amminoacidi della parete li inseriscono altri enzimi",
+   "I D-amminoacidi vengono convertiti in L dai ribosomi batterici durante la traduzione",
+   "I batteri hanno tRNA speciali per i D-amminoacidi, che i ribosomi umani invece non riconoscono affatto",
+   "I D-amminoacidi si formano solo dopo la morte della cellula, per racemizzazione spontanea",
+   "I ribosomi incorporano D-amminoacidi solo nei peptidi con meno di 50 residui"
+  ],
+  "ans": 0,
+  "why": "D-amminoacidi si trovano solo in pochi piccoli peptidi, come quelli della parete batterica e alcuni antibiotici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2s-03",
+  "topic": "d2-strutturali",
+  "level": "h",
+  "page": "14",
+  "src": "Biochimica I",
+  "q": "Rispetto alla L-isoleucina, la L-alloisoleucina è:",
+  "opts": [
+   "Un diastereoisomero, con configurazione diversa al solo carbonio β",
+   "Un enantiomero, con configurazione opposta a entrambi i centri chirali",
+   "Un isomero geometrico cis-trans attorno al legame tra carbonio α e β",
+   "Un conformero, che si forma per rotazione attorno al legame Cα–Cβ",
+   "Lo stesso composto, perché entrambi i centri chirali restano di tipo S"
+  ],
+  "ans": 0,
+  "why": "Ile e Thr hanno due centri chirali (α e β). Allo-Ile e allo-Thr non sono nelle proteine, se non per modificazioni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2s-04",
+  "topic": "d2-strutturali",
+  "level": "l",
+  "page": "13",
+  "src": "Biochimica I",
+  "q": "Su quale molecola di riferimento si basa la convenzione D/L di Fischer (1891)?",
+  "opts": [
+   "Gliceraldeide",
+   "Alanina",
+   "Glucosio",
+   "Acido lattico",
+   "Diidrossiacetone"
+  ],
+  "ans": 0,
+  "why": "Il gruppo amminico a sinistra in proiezione di Fischer indica la serie L.",
+  "note": "Sbobina di Biochimica I, p. 13: c'è scritto che Fischer «assegnò alla gliceraldeide l'isomeria L». Fischer assegnò arbitrariamente la configurazione D alla (+)-gliceraldeide; l'altra è la L.",
+  "fixed": false
+ },
+ {
+  "id": "yd2c-01",
+  "topic": "d2-classificazione",
+  "level": "m",
+  "page": "16",
+  "src": "Biochimica I",
+  "q": "Perché la tirosina può essere classificata anche tra gli amminoacidi polari?",
+  "opts": [
+   "Per il gruppo -OH sull'anello della catena laterale",
+   "Per il gruppo amminico in più sulla catena laterale",
+   "Per l'atomo di zolfo all'interno della catena laterale",
+   "Per il gruppo carbossilico in più sulla catena laterale",
+   "Perché assorbe la luce UV a 280 nm"
+  ],
+  "ans": 0,
+  "why": "È aromatica come fenilalanina e triptofano.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2c-02",
+  "topic": "d2-classificazione",
+  "level": "h",
+  "page": "16",
+  "src": "Biochimica I",
+  "q": "Secondo la sbobina, perché la prolina non partecipa ad α-eliche e foglietti β?",
+  "opts": [
+   "Il suo gruppo amminico è chiuso in un anello con la catena laterale: è un imminoacido",
+   "La sua catena laterale è troppo grande e ingombra lo spazio al centro dell'elica",
+   "Ha due centri chirali e non può assumere gli angoli φ e ψ tipici dell'α-elica e del foglietto",
+   "La sua catena laterale è carica a pH 7 e respinge i residui vicini",
+   "Forma sempre un ponte disolfuro con le cisteine vicine e blocca la catena"
+  ],
+  "ans": 0,
+  "why": "L'azoto legato covalentemente alla catena laterale non ha l'H per il legame a idrogeno. La prolina è invece frequente nei ripiegamenti β.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2c-03",
+  "topic": "d2-classificazione",
+  "level": "h",
+  "page": "16",
+  "src": "Biochimica I",
+  "q": "In un nucleo idrofobico una leucina viene sostituita da una metionina. Che effetto è più probabile?",
+  "opts": [
+   "Piccolo: lo zolfo della metionina è interno alla catena e il residuo resta apolare",
+   "Grave: lo zolfo forma subito un ponte disolfuro con la cisteina più vicina",
+   "Grave: la metionina è carica a pH fisiologico e destabilizza il nucleo idrofobico",
+   "Piccolo, ma solo perché la metionina ha la stessa catena laterale ramificata",
+   "Grave: la metionina è un imminoacido come la prolina e interrompe le strutture secondarie"
+  ],
+  "ans": 0,
+  "why": "La metionina è un tioetere, senza gruppo -SH libero: si comporta da apolare.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2c-04",
+  "topic": "d2-classificazione",
+  "level": "l",
+  "page": "16",
+  "src": "Biochimica I",
+  "q": "Come sono costruite le sigle a tre lettere degli amminoacidi?",
+  "opts": [
+   "Con le prime tre lettere del nome inglese",
+   "Con le prime tre lettere del nome italiano",
+   "Con le iniziali dei gruppi della catena laterale",
+   "Con le prime tre lettere del nome latino",
+   "Con la prima, la terza e l'ultima lettera del nome"
+  ],
+  "ans": 0,
+  "why": "Es. Trp (tryptophan), Gln (glutamine).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2a-01",
+  "topic": "d2-acidobase",
+  "level": "m",
+  "page": "19",
+  "src": "Biochimica I",
+  "q": "A un pH superiore al suo punto isoelettrico, che carica netta ha un amminoacido?",
+  "opts": [
+   "Negativa",
+   "Positiva",
+   "Zero",
+   "Dipende solo dalla catena laterale",
+   "Positiva se il pH supera 7"
+  ],
+  "ans": 0,
+  "why": "Sopra il pI prevalgono i gruppi deprotonati; sotto il pI la carica netta è positiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2a-02",
+  "topic": "d2-acidobase",
+  "level": "h",
+  "page": "18–19",
+  "src": "Biochimica I",
+  "q": "Glutammato: pK₁ (α-COOH) = 2,2, pKR (COOH laterale) = 4,3, pK₂ (α-NH₃⁺) = 9,7. Qual è il pI?",
+  "opts": [
+   "≈ 3,25",
+   "≈ 5,95",
+   "≈ 6,95",
+   "≈ 7,00",
+   "≈ 5,40"
+  ],
+  "ans": 0,
+  "why": "Per un amminoacido acido si fa la media tra i due pK dei carbossili: (2,2 + 4,3)/2 = 3,25.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2a-03",
+  "topic": "d2-acidobase",
+  "level": "h",
+  "page": "19",
+  "src": "Biochimica I",
+  "q": "Perché serina, treonina e cisteina sono considerate «eccezioni» tra le catene laterali ionizzabili?",
+  "opts": [
+   "Dissociano solo a pH molto alti, ma in certi contesti proteici il loro -OH o -SH può dissociarsi",
+   "Hanno un pKa vicino a 6, quindi a pH fisiologico cedono e accettano protoni con grande facilità",
+   "Sono sempre cariche negativamente a pH 7, come aspartato e glutammato",
+   "Sono sempre protonate a pH 7, come lisina e arginina, ma senza carica positiva",
+   "Non hanno gruppi ionizzabili, ma diventano ionizzabili dopo modificazione post-traduzionale"
+  ],
+  "ans": 0,
+  "why": "Il pKa vicino a 6 è quello dell'istidina, che per questo è versatile nella catalisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2a-04",
+  "topic": "d2-acidobase",
+  "level": "l",
+  "page": "19",
+  "src": "Biochimica I",
+  "q": "A pH 7, come si trovano le catene laterali di Asp/Glu e di Lys/Arg?",
+  "opts": [
+   "Asp e Glu deprotonati (carica −), Lys e Arg protonati (carica +)",
+   "Asp e Glu protonati (carica 0), Lys e Arg deprotonati (carica 0)",
+   "Asp e Glu deprotonati (carica −), Lys e Arg deprotonati (carica 0)",
+   "Asp e Glu protonati (carica +), Lys e Arg protonati (carica +)",
+   "Tutti e quattro neutri, perché a pH 7 sono in forma di zwitterione"
+  ],
+  "ans": 0,
+  "why": "Il pI di un amminoacido basico si calcola con la media dei due pK dei gruppi amminici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2n-01",
+  "topic": "d2-nutrizionale",
+  "level": "m",
+  "page": "20",
+  "src": "Biochimica I",
+  "q": "Che cosa sono gli amminoacidi condizionalmente essenziali?",
+  "opts": [
+   "Sintetizzabili, ma da assumere anche con la dieta in alcune fasi, come la crescita",
+   "Non sintetizzabili in nessuna fase della vita, quindi sempre da assumere con la dieta",
+   "Ricavati da altri amminoacidi, se questi sono introdotti a sufficienza con la dieta",
+   "Sintetizzabili solo dalla flora intestinale, che li cede poi all'organismo",
+   "Necessari soltanto negli anziani, quando la sintesi proteica è rallentata"
+  ],
+  "ans": 0,
+  "why": "I semiessenziali (cisteina, tirosina) si ricavano da altri amminoacidi: la cisteina dalla metionina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2n-02",
+  "topic": "d2-nutrizionale",
+  "level": "h",
+  "page": "20",
+  "src": "Biochimica I",
+  "q": "Una dieta è povera sia di metionina sia di cisteina. Quale amminoacido rischia di mancare oltre alla metionina?",
+  "opts": [
+   "La cisteina, che è semiessenziale e si ricava dalla metionina",
+   "La tirosina, che si ricava dalla metionina per transaminazione",
+   "L'alanina, che si forma dal piruvato solo in presenza di metionina",
+   "La glicina, che deriva dalla demetilazione della metionina",
+   "Il glutammato, che cede il gruppo amminico alla metionina"
+  ],
+  "ans": 0,
+  "why": "La tirosina è l'altro semiessenziale, ma si ricava dalla fenilalanina (non è nelle sbobine, è nel Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2n-03",
+  "topic": "d2-nutrizionale",
+  "level": "h",
+  "page": "20–21",
+  "src": "Biochimica I",
+  "q": "Perché idrossiprolina e idrossilisina non hanno un codone nel codice genetico?",
+  "opts": [
+   "Si formano per modificazione post-traduzionale di residui già inseriti nella catena",
+   "Vengono inserite dal ribosoma con un tRNA speciale che legge il codone di stop",
+   "Sono D-amminoacidi e i ribosomi non li incorporano, quindi servono enzimi della parete",
+   "Si formano nel sangue per ossidazione spontanea di prolina e lisina libere",
+   "Sono assorbite già idrossilate dalla dieta e inserite durante la sintesi proteica"
+  ],
+  "ans": 0,
+  "why": "Lo stesso vale per il γ-carbossiglutammato della protrombina e la 6-N-metillisina della miosina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2n-04",
+  "topic": "d2-nutrizionale",
+  "level": "l",
+  "page": "21",
+  "src": "Biochimica I",
+  "q": "In quale proteina si trova la 6-N-metillisina?",
+  "opts": [
+   "Miosina",
+   "Collagene",
+   "Protrombina",
+   "Elastina",
+   "Istoni"
+  ],
+  "ans": 0,
+  "why": "Collagene: 4-idrossiprolina e 5-idrossilisina; protrombina: γ-carbossiglutammato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2p-01",
+  "topic": "d2-peptidico",
+  "level": "m",
+  "page": "22",
+  "src": "Biochimica I",
+  "q": "Perché la formazione del legame peptidico richiede energia?",
+  "opts": [
+   "L'uscita del gruppo -OH dal carbonio carbonilico è sfavorita: l'amminoacido va attivato sul tRNA",
+   "L'azoto non ha doppietti liberi e quindi non può attaccare il carbonio carbonilico senza consumare ATP",
+   "Si forma un doppio legame C=N stabile che richiede energia per essere spezzato",
+   "Bisogna prima deprotonare il carbossile, che a pH 7 è sempre nella forma -COOH",
+   "La reazione libera acqua, che deve essere pompata fuori dalla cellula con ATP"
+  ],
+  "ans": 0,
+  "why": "L'azoto può attaccare il carbonio carbonilico grazie al suo doppietto, ma il gruppo uscente non se ne va facilmente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2p-02",
+  "topic": "d2-peptidico",
+  "level": "h",
+  "page": "22–23",
+  "src": "Biochimica I",
+  "q": "Quali cariche parziali crea la risonanza del legame peptidico, e con quale conseguenza?",
+  "opts": [
+   "δ+ sull'azoto e δ− sull'ossigeno: il legame è planare, dipolare e non ruota",
+   "δ− sull'azoto e δ+ sull'ossigeno: il legame è planare, apolare e ruota liberamente",
+   "δ+ sul carbonio α e δ− sull'azoto: il legame è tetraedrico e ruota liberamente",
+   "δ+ sull'ossigeno e δ− sul carbonio: il legame è un doppio C=O non planare",
+   "Nessuna carica: la risonanza rende il legame un singolo C–N che ruota"
+  ],
+  "ans": 0,
+  "why": "La coppia di elettroni dell'azoto si delocalizza verso l'ossigeno carbonilico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2p-03",
+  "topic": "d2-peptidico",
+  "level": "h",
+  "page": "23",
+  "src": "Biochimica I",
+  "q": "Una proteina pesa ≈ 55 kDa. Quanti residui contiene circa?",
+  "opts": [
+   "≈ 500",
+   "≈ 50",
+   "≈ 250",
+   "≈ 1100",
+   "≈ 5000"
+  ],
+  "ans": 0,
+  "why": "Peso medio di un residuo ≈ 110 Da: 55.000/110 ≈ 500.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd2p-04",
+  "topic": "d2-peptidico",
+  "level": "l",
+  "page": "23",
+  "src": "Biochimica I",
+  "q": "Che cosa sono le metalloproteine?",
+  "opts": [
+   "Proteine coniugate il cui gruppo prostetico è un metallo",
+   "Proteasi che tagliano i legami peptidici con un metallo",
+   "Proteine che legano metalli solo nel plasma per trasportarli",
+   "Proteine che contengono amminoacidi con zolfo nel sito attivo",
+   "Proteine fibrose rinforzate da ioni metallici tra le catene"
+  ],
+  "ans": 0,
+  "why": "Lo stesso vale per lipoproteine (lipidi) e glicoproteine (carboidrati).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3p-01",
+  "topic": "d3-primaria",
+  "level": "m",
+  "page": "25",
+  "src": "Biochimica I",
+  "q": "Che informazioni dà conoscere la sequenza amminoacidica di una proteina?",
+  "opts": [
+   "Su struttura tridimensionale, funzione, localizzazione cellulare ed evoluzione",
+   "Solo sul peso molecolare e sul numero di ponti disolfuro della proteina",
+   "Solo sulla funzione, perché la struttura 3D non dipende dalla sequenza",
+   "Sulla quantità di proteina presente in una cellula in un dato momento",
+   "Solo sulla localizzazione cellulare, tramite la sequenza segnale N-terminale"
+  ],
+  "ans": 0,
+  "why": "Dalla somiglianza tra sequenze si identificano famiglie di proteine con struttura e funzione comuni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3p-02",
+  "topic": "d3-primaria",
+  "level": "h",
+  "page": "26",
+  "src": "Biochimica I",
+  "q": "Si trattano l'insulina con un agente riducente in eccesso. Che cosa si ottiene?",
+  "opts": [
+   "Catene A e B separate, perché sono unite solo dai due ponti disolfuro intercatena",
+   "Un'unica catena di 51 aa, perché i ponti disolfuro sono tutti intracatena",
+   "Le catene restano unite, perché A e B sono legate da legami peptidici",
+   "Proinsulina con il peptide C, che si riforma quando si rompono i ponti disolfuro",
+   "Catene A e B separate, ma solo se prima si taglia il peptide C con una proteasi"
+  ],
+  "ans": 0,
+  "why": "Ponti intercatena A7–B7 e A20–B19; intracatena A6–A11.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3p-03",
+  "topic": "d3-primaria",
+  "level": "h",
+  "page": "25",
+  "src": "Biochimica I",
+  "q": "Una malattia genetica è dovuta alla sostituzione di un solo amminoacido. Perché la funzione può crollare?",
+  "opts": [
+   "La sequenza determina il ripiegamento tridimensionale, da cui dipende la funzione",
+   "Ogni sostituzione introduce un codone di stop e la proteina resta tronca",
+   "La sostituzione cambia il codice genetico e quindi tutte le proteine della cellula",
+   "Un amminoacido diverso impedisce sempre la formazione dei legami peptidici vicini",
+   "La sostituzione rende la proteina un D-polipeptide che i ribosomi non riconoscono"
+  ],
+  "ans": 0,
+  "why": "Migliaia di malattie genetiche dell'uomo derivano da proteine difettose, spesso per un solo residuo sostituito.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3p-04",
+  "topic": "d3-primaria",
+  "level": "l",
+  "page": "26",
+  "src": "Biochimica I",
+  "q": "Qual è il nome sistematico del glutatione?",
+  "opts": [
+   "γ-Glutammil-cisteinil-glicina",
+   "Glicil-cisteinil-glutammato",
+   "α-Glutammil-glicil-cisteina",
+   "Cisteinil-glutammil-glicina",
+   "γ-Glutammil-glicil-cisteina"
+  ],
+  "ans": 0,
+  "why": "N-terminale del glutammato, C-terminale della glicina. Due glutationi si uniscono con un ponte disolfuro tra le cisteine.",
+  "note": "Sbobina di Biochimica I, p. 26: lo chiama «glutammil-cisteil glicina». Il glutammato è legato alla cisteina con il carbossile γ della catena laterale, non con l'α-carbossile: per questo il nome corretto è γ-glutammil-cisteinil-glicina (Lehninger).",
+  "fixed": false
+ },
+ {
+  "id": "yd3s-01",
+  "topic": "d3-secondaria",
+  "level": "m",
+  "page": "30",
+  "src": "Biochimica I",
+  "q": "Perché nell'α-elica le catene laterali puntano tutte verso l'esterno?",
+  "opts": [
+   "Il legame peptidico è in trans e la catena occupa lo spazio nel modo migliore",
+   "Le catene laterali formano i legami a idrogeno che stabilizzano l'elica",
+   "Il centro dell'elica è occupato dai ponti disolfuro tra le cisteine",
+   "Le catene laterali sono tutte idrofiliche e cercano il contatto con l'acqua",
+   "Il legame peptidico è in cis e spinge tutti i gruppi R lontano dall'asse dell'elica"
+  ],
+  "ans": 0,
+  "why": "I legami a idrogeno coinvolgono solo C=O e N–H dello scheletro; il centro dell'elica è vuoto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3s-02",
+  "topic": "d3-secondaria",
+  "level": "h",
+  "page": "30",
+  "src": "Biochimica I",
+  "q": "Con passo 5,4 Å e 3,6 residui per giro, di quanto sale l'α-elica per ogni residuo?",
+  "opts": [
+   "≈ 1,5 Å",
+   "≈ 3,6 Å",
+   "≈ 5,4 Å",
+   "≈ 0,67 Å",
+   "≈ 19,4 Å"
+  ],
+  "ans": 0,
+  "why": "5,4/3,6 = 1,5 Å. Per questo 153 residui in α-elica danno un bastoncello di ≈ 230 Å.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3s-03",
+  "topic": "d3-secondaria",
+  "level": "h",
+  "page": "31",
+  "src": "Biochimica I",
+  "q": "Che cosa distingue un ripiegamento β di tipo I da uno di tipo II?",
+  "opts": [
+   "L'orientamento del C=O tra secondo e terzo residuo; nel tipo II in terza posizione c'è tipicamente glicina",
+   "Il numero di residui: il tipo I ne ha 4 e il tipo II ne ha 6, con prolina in quarta posizione",
+   "Il legame a idrogeno: nel tipo I è tra il residuo i e i+3, nel tipo II tra il residuo i e il residuo i+4 della catena",
+   "Il tipo I si trova nei foglietti paralleli, il tipo II solo in quelli antiparalleli",
+   "Il tipo I ha il legame peptidico in trans, il tipo II ha tutti i legami peptidici in cis"
+  ],
+  "ans": 0,
+  "why": "In entrambi il legame a H unisce il C=O del primo residuo e l'N–H del quarto (i → i+3).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3s-04",
+  "topic": "d3-secondaria",
+  "level": "l",
+  "page": "29–30",
+  "src": "Biochimica I",
+  "q": "Con quale residuo forma il legame a idrogeno il C=O del residuo i in un'α-elica?",
+  "opts": [
+   "Con l'N–H del residuo i+4",
+   "Con l'N–H del residuo i+3",
+   "Con l'N–H del residuo i+2",
+   "Con l'N–H del residuo i+5",
+   "Con la catena laterale del residuo i+4"
+  ],
+  "ans": 0,
+  "why": "Nella sbobina: «a 3 legami peptidici di distanza». L'anello chiuso dal legame a H comprende 13 atomi; ogni giro ha 3,6 residui.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3c-01",
+  "topic": "d3-collagene",
+  "level": "m",
+  "page": "40–41",
+  "src": "Biochimica I",
+  "q": "Dove avvengono l'idrossilazione e la rimozione dei domini globulari del procollagene?",
+  "opts": [
+   "Idrossilazione nel reticolo endoplasmatico; rimozione dei domini fuori dalla cellula",
+   "Idrossilazione fuori dalla cellula; rimozione dei domini nel reticolo endoplasmatico",
+   "Entrambe nel Golgi, prima che le tre catene si avvolgano nella tripla elica",
+   "Entrambe fuori dalla cellula, ad opera delle metalloproteasi della matrice",
+   "Idrossilazione nel citosol; rimozione dei domini nei lisosomi dei fibroblasti"
+  ],
+  "ans": 0,
+  "why": "Le procollagene peptidasi extracellulari tagliano i domini N- e C-terminali; poi si formano fibrille e legami crociati.",
+  "note": "Sbobina di Biochimica I, p. 41: (1) dice che la glicosilazione avviene «a livello di Pro o OH-Pro»: avviene sull'idrossilisina, come dice la stessa sbobina a p. 38; (2) dice che il procollagene è secreto «nello spazio extracellulare (citosol)»: lo spazio extracellulare non è il citosol.",
+  "fixed": false
+ },
+ {
+  "id": "yd3c-02",
+  "topic": "d3-collagene",
+  "level": "h",
+  "page": "45",
+  "src": "Biochimica I",
+  "q": "Una persona ha mangiato a lungo legumi contenenti una sostanza tossica e ha fibre di collagene lasse. Quale meccanismo è più probabile?",
+  "opts": [
+   "Latirismo: la tossina blocca la lisil ossidasi e non si formano i legami crociati",
+   "Scorbuto: la tossina distrugge la vitamina C e la prolina non viene idrossilata",
+   "Osteogenesi imperfetta: la tossina muta il gene del collagene di tipo I",
+   "Ehlers-Danlos: la tossina impedisce la glicosilazione delle idrossilisine del collagene",
+   "La tossina attiva la collagenasi della matrice e il collagene viene degradato"
+  ],
+  "ans": 0,
+  "why": "Il latirismo dà problemi agli arti inferiori per alterazioni del midollo spinale e disturbi neurologici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3c-03",
+  "topic": "d3-collagene",
+  "level": "h",
+  "page": "42",
+  "src": "Biochimica I",
+  "q": "Perché l'idrossiprolina nelle urine è un indice del metabolismo del collagene?",
+  "opts": [
+   "Non viene metabolizzata: quella liberata dalla degradazione finisce nelle urine",
+   "Viene sintetizzata dal rene solo quando il collagene osseo è in eccesso nel sangue",
+   "È un amminoacido essenziale che si elimina quando la dieta ne è ricca",
+   "Si forma nelle urine per ossidazione della prolina libera filtrata",
+   "È prodotta dalla collagenasi batterica solo durante le infezioni"
+  ],
+  "ans": 0,
+  "why": "Il turnover del collagene è lento (60–70 giorni) e dipende da stato nutrizionale e ormoni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3c-04",
+  "topic": "d3-collagene",
+  "level": "h",
+  "page": "42",
+  "src": "Biochimica I",
+  "q": "Come fa il batterio della gangrena gassosa a invadere i muscoli?",
+  "opts": [
+   "Produce una collagenasi che degrada il collagene dei tessuti",
+   "Produce una tossina che ADP-ribosila il collagene fibrillare",
+   "Blocca la lisil ossidasi e impedisce i legami crociati",
+   "Produce una gelatinasi che degrada solo il collagene fetale",
+   "Inibisce la prolil-idrossilasi sottraendo la vitamina C"
+  ],
+  "ans": 0,
+  "why": "È un clostridio anaerobio. Nell'uomo collagenasi e gelatinasi sono metalloproteasi della matrice.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3c-05",
+  "topic": "d3-collagene",
+  "level": "l",
+  "page": "43",
+  "src": "Biochimica I",
+  "q": "Come si chiama il legame crociato che si forma riducendo la base di Schiff tra una lisina e un'allisina?",
+  "opts": [
+   "Lisinonorleucina",
+   "Idrossipiridinio",
+   "Desmosina",
+   "Aldolo di allisina",
+   "Idrossilisinonorleucina"
+  ],
+  "ans": 0,
+  "why": "Due allisine danno invece una condensazione aldolica; idrossipiridinio da una lisina e due idrossilisine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3c-06",
+  "topic": "d3-collagene",
+  "level": "l",
+  "page": "44",
+  "src": "Biochimica I",
+  "q": "Quali tipi di collagene sono i più glicosilati, e quindi più idratati?",
+  "opts": [
+   "Il tipo II e il tipo IV",
+   "Il tipo I e il tipo III",
+   "Il tipo I e il tipo II",
+   "I FACIT di tipo IX e XII",
+   "Il tipo III e il tipo IV"
+  ],
+  "ans": 0,
+  "why": "Hanno più idrossilisine glicosilabili; il tipo I (anche nell'osso) e il III sono meno glicosilati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3t-01",
+  "topic": "d3-terziaria",
+  "level": "m",
+  "page": "33",
+  "src": "Biochimica I",
+  "q": "Perché le proteine a bastoncello, tutte α-elica, sono poco adatte a funzioni come la catalisi?",
+  "opts": [
+   "Sono rigide e non fanno i cambi conformazionali che servono alla funzione",
+   "Non contengono amminoacidi aromatici e non assorbono la luce a 280 nm",
+   "Hanno tutte le catene laterali rivolte all'interno e non riescono a legare i substrati",
+   "Sono troppo idrofiliche e si sciolgono senza mantenere la struttura",
+   "Non hanno legami a idrogeno e la loro struttura si disfa a 37 °C"
+  ],
+  "ans": 0,
+  "why": "Hanno per lo più funzione strutturale; la forma globulare è più compatta e funzionale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3t-02",
+  "topic": "d3-terziaria",
+  "level": "h",
+  "page": "33",
+  "src": "Biochimica I",
+  "q": "Se i 153 residui della mioglobina fossero tutti in α-elica, quanto sarebbe lungo il bastoncello?",
+  "opts": [
+   "≈ 230 Å",
+   "≈ 540 Å",
+   "≈ 826 Å",
+   "≈ 153 Å",
+   "≈ 42 Å"
+  ],
+  "ans": 0,
+  "why": "153/3,6 × 5,4 Å ≈ 230 Å. In conformazione β sarebbe ≈ 540 Å.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3t-03",
+  "topic": "d3-terziaria",
+  "level": "h",
+  "page": "48",
+  "src": "Biochimica I",
+  "q": "Che cos'è il ripiegamento «a chiave greca»?",
+  "opts": [
+   "Un ripiegamento di soli filamenti β uniti da connessioni lunghe, senza α-eliche",
+   "Un ripiegamento di sole α-eliche avvolte a coppie in un coiled coil sinistrorso",
+   "Un barile di filamenti β paralleli alternati ad α-eliche che si richiude su sé stesso",
+   "Un motivo con due α-eliche unite da un'ansa che lega il Ca²⁺",
+   "Un foglietto piatto di filamenti paralleli che fa da superficie di contatto"
+  ],
+  "ans": 0,
+  "why": "Il barile α/β nasce invece da più cappi β-α-β (crossover connection) ripetuti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3t-04",
+  "topic": "d3-terziaria",
+  "level": "l",
+  "page": "47",
+  "src": "Biochimica I",
+  "q": "Quanto è lungo in genere un dominio secondo la sbobina?",
+  "opts": [
+   "Da 40 a 100 residui",
+   "Da 5 a 10 residui",
+   "Da 300 a 500 residui",
+   "Da 10 a 20 residui",
+   "Più di 1000 residui"
+  ],
+  "ans": 0,
+  "why": "Il dominio è l'unità fondamentale della struttura terziaria e anche un'unità funzionale; si può scomporre in motivi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-01",
+  "topic": "d3-folding",
+  "level": "m",
+  "page": "50",
+  "src": "Biochimica I",
+  "q": "Perché i residui polari contribuiscono poco all'energia libera del folding in acqua?",
+  "opts": [
+   "Interagiscono con l'acqua sia nella proteina denaturata sia in quella nativa: non liberano acqua",
+   "Formano ponti disolfuro solo dopo il folding e quindi non contano nel bilancio",
+   "Sono sempre all'interno della proteina, dove l'acqua non arriva mai",
+   "Si caricano solo a pH acido e a pH 7 si comportano come residui apolari",
+   "Rompono i clatrati che si formano attorno ai residui apolari e annullano così il loro contributo entropico"
+  ],
+  "ans": 0,
+  "why": "A guidare il folding è il collasso idrofobico: l'acqua liberata dai clatrati aumenta la sua entropia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-02",
+  "topic": "d3-folding",
+  "level": "h",
+  "page": "61",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra la proteina disolfuro isomerasi ridotta e quella ossidata nel loro ciclo?",
+  "opts": [
+   "La ridotta riarrangia ponti sbagliati ed esce ridotta; l'ossidata forma ponti ed esce ridotta, va riossidata",
+   "La ridotta forma nuovi ponti disolfuro ed esce ossidata; l'ossidata rompe i ponti ed esce ridotta, va riossidata",
+   "La ridotta lavora nel citosol e l'ossidata nei mitocondri, ed escono entrambe ossidate",
+   "La ridotta lega le zone idrofobiche esposte, l'ossidata idrolizza ATP per rilasciare la proteina",
+   "Entrambe formano un disolfuro misto, ma solo la ridotta ha bisogno di agenti ossidanti"
+  ],
+  "ans": 0,
+  "why": "Agisce nel reticolo endoplasmatico formando un disolfuro misto con la proteina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-03",
+  "topic": "d3-folding",
+  "level": "h",
+  "page": "58",
+  "src": "Biochimica I",
+  "q": "Come agiscono i detergenti come denaturanti, e perché la denaturazione è reversibile?",
+  "opts": [
+   "Si dispongono attorno alle catene apolari come l'urea; tolti, la proteina può ripiegarsi",
+   "Rompono i legami peptidici dello scheletro; tolti, la proteina viene risintetizzata",
+   "Riducono i ponti disolfuro come il β-mercaptoetanolo; tolti, i ponti si riformano a caso",
+   "Ossidano le cisteine ad acido cisteico; tolti, le cisteine tornano ridotte da sole",
+   "Legano il sito attivo come inibitori competitivi; tolti, il sito torna libero"
+  ],
+  "ans": 0,
+  "why": "Con la parte polare interagiscono anche con le catene laterali cariche. Si denatura anche con calore e pH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-04",
+  "topic": "d3-folding",
+  "level": "l",
+  "page": "57",
+  "src": "Biochimica I",
+  "q": "Che effetto ha l'acido performico sulle cisteine?",
+  "opts": [
+   "Le ossida ad acido cisteico (-SO₃⁻) e impedisce per sempre i ponti disolfuro",
+   "Le carbossimetila covalentemente e impedisce per sempre i ponti disolfuro",
+   "Le riduce e rompe i ponti disolfuro, che però possono riformarsi",
+   "Le converte in cistina formando ponti disolfuro stabili tra le cisteine vicine",
+   "Le deamina ad allisina, che forma poi legami crociati tra le catene"
+  ],
+  "ans": 0,
+  "why": "Lo iodoacetato le carbossimetila; β-mercaptoetanolo e DTT sono riducenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-05",
+  "topic": "d3-folding",
+  "level": "l",
+  "page": "61",
+  "src": "Biochimica I",
+  "q": "Quante molecole di ATP consuma un ciclo completo di GroEL/GroES che rilascia una proteina ripiegata?",
+  "opts": [
+   "14",
+   "7",
+   "1",
+   "21",
+   "2"
+  ],
+  "ans": 0,
+  "why": "7 ATP per anello di GroEL. Se la proteina non è ripiegata, il ciclo ricomincia nella camera opposta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3f-06",
+  "topic": "d3-folding",
+  "level": "l",
+  "page": "60",
+  "src": "Biochimica I",
+  "q": "Quanto sono lunghe le subunità di GroEL e di GroES?",
+  "opts": [
+   "GroEL 547 aa, GroES 97 aa",
+   "GroEL 97 aa, GroES 547 aa",
+   "GroEL 124 aa, GroES 97 aa",
+   "GroEL 547 aa, GroES 153 aa",
+   "GroEL 700 aa, GroES 70 aa"
+  ],
+  "ans": 0,
+  "why": "124 aa è la ribonucleasi A di Anfinsen; 153 la mioglobina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3q-01",
+  "topic": "d3-quaternaria",
+  "level": "m",
+  "page": "64",
+  "src": "Biochimica I",
+  "q": "Quali interazioni tengono insieme le subunità nella struttura quaternaria?",
+  "opts": [
+   "Interazioni deboli (legami a H, salini), interazioni idrofobiche e talvolta ponti disolfuro",
+   "Solo legami peptidici tra l'estremità C-terminale di una subunità e l'N-terminale dell'altra",
+   "Solo ponti disolfuro, perché le interazioni deboli non bastano a tenere unite le catene",
+   "Solo legami a idrogeno tra C=O e N–H degli scheletri delle diverse subunità",
+   "Legami glicosidici tra zuccheri legati alla superficie delle varie subunità"
+  ],
+  "ans": 0,
+  "why": "Se l'interfaccia è idrofobica, come accade di solito, la struttura è molto più compatta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3q-02",
+  "topic": "d3-quaternaria",
+  "level": "h",
+  "page": "66",
+  "src": "Biochimica I",
+  "q": "Un anticorpo viene trattato con un riducente in condizioni denaturanti. Che cosa si ottiene?",
+  "opts": [
+   "Catene pesanti e leggere separate, perché unite da ponti disolfuro intermolecolari",
+   "Un'unica catena lunga, perché pesanti e leggere sono unite da legami peptidici",
+   "L'anticorpo intatto, perché le catene sono tenute insieme solo da interazioni idrofobiche",
+   "Quattro catene identiche, perché l'anticorpo è un omo-oligomero tetramerico",
+   "Due catene ibride pesante-leggera, perché si rompono solo i ponti intracatena"
+  ],
+  "ans": 0,
+  "why": "È un etero-oligomero: due catene pesanti e due leggere, uguali a due a due.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3q-03",
+  "topic": "d3-quaternaria",
+  "level": "h",
+  "page": "65",
+  "src": "Biochimica I",
+  "q": "Da che cosa deriva un tetramero isologo?",
+  "opts": [
+   "Da due associazioni isologhe, con un dimero ruotato rispetto all'altro",
+   "Da quattro associazioni eterologhe in fila lungo un asse, senza chiusura",
+   "Da due subunità speculari, una di L- e una di D-amminoacidi",
+   "Da un'associazione eterologa chiusa di quattro subunità diverse tra loro",
+   "Da un dimero che si duplica per taglio proteolitico in quattro catene"
+  ],
+  "ans": 0,
+  "why": "Nell'associazione isologa due subunità si affacciano con la stessa superficie in modo complementare.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3q-04",
+  "topic": "d3-quaternaria",
+  "level": "l",
+  "page": "65",
+  "src": "Biochimica I",
+  "q": "In quale tipo di simmetria due subunità sono poste a 180° per rotazione attorno a un asse?",
+  "opts": [
+   "Ciclica",
+   "Diedrica",
+   "Speculare",
+   "Di inversione",
+   "Elicoidale"
+  ],
+  "ans": 0,
+  "why": "La diedrica (D2 la più comune) aggiunge un secondo asse di ordine 2 perpendicolare. Simmetrie speculari o di inversione sono impossibili con L-amminoacidi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3x-01",
+  "topic": "d3-tecniche",
+  "level": "m",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Che cosa si separa con una centrifuga comune, rispetto all'ultracentrifuga?",
+  "opts": [
+   "Particelle che sedimentano in fretta: cellule, frammenti, organelli grandi, proteine precipitate",
+   "Macromolecole e organelli piccoli, che richiedono fino a 600.000 g e una camera del rotore sotto vuoto",
+   "Solo le proteine solubili, separate in base al loro punto isoelettrico",
+   "Solo gli acidi nucleici, separati in base alla loro carica netta negativa",
+   "Molecole piccole come sali e zuccheri, che passano attraverso una membrana"
+  ],
+  "ans": 0,
+  "why": "L'ultracentrifuga (≈ 80.000 rpm, refrigerata e blindata) serve per organelli più piccoli e macromolecole.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3x-02",
+  "topic": "d3-tecniche",
+  "level": "h",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Hai fatto precipitare una proteina con solfato d'ammonio. Che cosa basta per raccoglierla?",
+  "opts": [
+   "Una centrifuga comune: il precipitato sedimenta rapidamente",
+   "Un'ultracentrifuga a 600.000 g per molte ore con il rotore sotto vuoto",
+   "Una dialisi, che trattiene il precipitato sulla membrana",
+   "Uno spettrofotometro, che misura l'assorbanza a 280 nm",
+   "Un polarimetro, che separa le molecole otticamente attive"
+  ],
+  "ans": 0,
+  "why": "Il solfato d'ammonio sfrutta la solubilità: la proteina precipitata si comporta come una particella pesante.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3x-03",
+  "topic": "d3-tecniche",
+  "level": "h",
+  "page": "23",
+  "src": "Biochimica I",
+  "q": "In una preparazione proteica vuoi eliminare sali e piccole molecole senza perdere la proteina. Quale tecnica usi?",
+  "opts": [
+   "La dialisi, che sfrutta le dimensioni maggiori delle proteine",
+   "La precipitazione selettiva, che sfrutta il cambio di temperatura",
+   "La centrifugazione a 500 g, che sedimenta le piccole molecole",
+   "L'elettroforesi su strato sottile di silice idrofobica",
+   "La riduzione con β-mercaptoetanolo dei ponti disolfuro"
+  ],
+  "ans": 0,
+  "why": "Le piccole molecole attraversano la membrana; la proteina resta dentro.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "yd3x-04",
+  "topic": "d3-tecniche",
+  "level": "l",
+  "page": "54",
+  "src": "Biochimica I",
+  "q": "Nella procedura descritta, dopo la centrifugazione a 500 g per 10 minuti, che cosa resta nel sopranatante?",
+  "opts": [
+   "Le membrane e le molecole solubili",
+   "Le cellule non lisate",
+   "I frammenti cellulari grossolani e i nuclei",
+   "Solo i nuclei",
+   "Nulla: sedimenta tutto"
+  ],
+  "ans": 0,
+  "why": "Una centrifugazione più forte separa poi i mitocondri; tempi ancora più lunghi separano microsomi e citosol.",
+  "note": "Sbobina di Biochimica I, p. 54: indica 100.000 g per 20 minuti per separare i mitocondri. Di solito i mitocondri sedimentano già a ≈ 15.000–20.000 g; 100.000 g servono per i microsomi (Lehninger). La sequenza delle frazioni resta corretta.",
+  "fixed": false
  }
 ]

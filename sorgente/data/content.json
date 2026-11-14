@@ -1,5 +1,5 @@
 {
- "version": "1.2.0",
+ "version": "1.3.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -535,7 +535,9 @@
       },
       {
        "id": "bm5-glucagone",
-       "name": "Glucagone e somatostatina"
+       "name": "Glucagone e somatostatina",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
@@ -544,20 +546,34 @@
      "pages": "lezione 6",
      "topics": [
       {
+       "id": "bm6-adrenalina",
+       "name": "Adrenalina e istamina",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
        "id": "bm6-vasopressina",
-       "name": "Vasopressina"
+       "name": "Vasopressina",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm6-anp",
-       "name": "Peptide natriuretico atriale"
+       "name": "Peptide natriuretico atriale",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm6-raa",
-       "name": "Sistema renina-angiotensina-aldosterone"
+       "name": "Sistema renina-angiotensina-aldosterone",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm6-idrofobici",
-       "name": "Ormoni idrofobici"
+       "name": "Ormoni idrofobici",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
@@ -567,23 +583,33 @@
      "topics": [
       {
        "id": "bm7-vitd",
-       "name": "Vitamina D3 e VDR"
+       "name": "Vitamina D3 e VDR",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm7-vista",
-       "name": "Vista"
+       "name": "Vista",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm7-olfatto",
-       "name": "Olfatto"
+       "name": "Olfatto",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm7-gusto",
-       "name": "Gusto"
+       "name": "Gusto",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm7-nucleotidi",
-       "name": "Nucleotidi: struttura e nomenclatura"
+       "name": "Nucleotidi: struttura e nomenclatura",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },

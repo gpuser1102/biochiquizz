@@ -1,5 +1,5 @@
 {
- "version": "1.3.0",
+ "version": "1.4.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -619,15 +619,21 @@
      "topics": [
       {
        "id": "bm8-denovo",
-       "name": "Sintesi de novo"
+       "name": "Sintesi de novo",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm8-folato",
-       "name": "Acido folico e THF"
+       "name": "Acido folico e THF",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm8-regolazione",
-       "name": "Regolazione e farmaci"
+       "name": "Regolazione e farmaci",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
@@ -637,19 +643,27 @@
      "topics": [
       {
        "id": "bm9-degradazione",
-       "name": "Degradazione"
+       "name": "Degradazione",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm9-salvataggio",
-       "name": "Vie di salvataggio"
+       "name": "Vie di salvataggio",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm9-gotta",
-       "name": "Gotta"
+       "name": "Gotta",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm9-scid",
-       "name": "SCID"
+       "name": "SCID",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
@@ -659,45 +673,81 @@
      "topics": [
       {
        "id": "bm10-sintesi",
-       "name": "Sintesi de novo delle pirimidine"
+       "name": "Sintesi de novo delle pirimidine",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm10-degradazione",
-       "name": "Degradazione delle pirimidine"
+       "name": "Degradazione delle pirimidine",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm10-rnr",
-       "name": "Ribonucleotide reduttasi"
+       "name": "Ribonucleotide reduttasi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm10-timidilato",
-       "name": "Timidilato sintasi e chemioterapici"
+       "name": "Timidilato sintasi e chemioterapici",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "bm10-farmaci",
+       "name": "Antimetaboliti e antivirali",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
     {
-     "name": "Metabolismo del ferro",
+     "name": "Eme e metabolismo del ferro",
      "pages": "lezione 11",
      "topics": [
       {
+       "id": "bm11-eme",
+       "name": "Sintesi dell'eme e porfirie",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "bm11-bilirubina",
+       "name": "Catabolismo dell'eme e bilirubina",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
        "id": "bm11-ferro",
-       "name": "Funzioni, tossicità, biodisponibilità"
+       "name": "Funzioni, tossicità, biodisponibilità",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm11-proteine",
-       "name": "Proteine del ferro"
+       "name": "Proteine del ferro",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm11-cellule",
-       "name": "Cellule che rilasciano ferro"
+       "name": "Cellule che rilasciano ferro",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm11-ireirp",
-       "name": "Regolazione cellulare (IRE/IRP)"
+       "name": "Regolazione cellulare (IRE/IRP)",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "bm11-epcidina",
-       "name": "Regolazione sistemica (epcidina)"
+       "name": "Regolazione sistemica (epcidina)",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     }

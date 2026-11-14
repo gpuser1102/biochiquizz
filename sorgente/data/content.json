@@ -1,5 +1,5 @@
 {
- "version": "1.0.7",
+ "version": "1.1.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -242,39 +242,57 @@
      "topics": [
       {
        "id": "m7-digestione",
-       "name": "Digestione"
+       "name": "Digestione",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-trasporto",
-       "name": "Trasporto e mobilizzazione"
+       "name": "Trasporto e mobilizzazione",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-betaox",
-       "name": "β-ossidazione"
+       "name": "β-ossidazione",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-chetoni",
-       "name": "Corpi chetonici"
+       "name": "Corpi chetonici",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-biosintesi",
-       "name": "Biosintesi degli acidi grassi"
+       "name": "Biosintesi degli acidi grassi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-tg",
-       "name": "Trigliceridi"
+       "name": "Trigliceridi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-fosfolipidi",
-       "name": "Fosfolipidi"
+       "name": "Fosfolipidi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-colesterolo",
-       "name": "Colesterolo"
+       "name": "Colesterolo",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m7-lipoproteine",
-       "name": "Lipoproteine"
+       "name": "Lipoproteine",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },

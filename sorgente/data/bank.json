@@ -8923,6 +8923,3749 @@
   "fixed": false
  },
  {
+  "id": "m8d-01",
+  "topic": "m8-digestione",
+  "level": "f",
+  "page": "226",
+  "src": "Biochimica II",
+  "q": "Perché le proteasi digestive vengono sintetizzate come zimogeni?",
+  "opts": [
+   "Per non digerire la cellula che le produce prima di essere secrete",
+   "Per poter attraversare la membrana con un trasportatore specifico",
+   "Per resistere all'acidità dello stomaco durante la secrezione",
+   "Per legare il calcio necessario alla loro attività catalitica",
+   "Per essere riconosciute dai recettori della mucosa intestinale"
+  ],
+  "ans": 0,
+  "why": "Si attivano solo per proteolisi, fuori dalla cellula. Un'attivazione intracellulare distrugge il pancreas (pancreatite).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-02",
+  "topic": "m8-digestione",
+  "level": "f",
+  "page": "227",
+  "src": "Biochimica II",
+  "q": "Quale triade catalitica ha la chimotripsina?",
+  "opts": [
+   "Serina, istidina, aspartato",
+   "Cisteina, istidina, asparagina",
+   "Serina, lisina, glutammato",
+   "Aspartato, aspartato, acqua",
+   "Treonina, istidina, aspartato"
+  ],
+  "ans": 0,
+  "why": "L'istidina prende il protone della serina, che attacca il carbonio carbonilico del legame peptidico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-03",
+  "topic": "m8-digestione",
+  "level": "f",
+  "page": "228",
+  "src": "Biochimica II",
+  "q": "Quali cellule producono il pepsinogeno?",
+  "opts": [
+   "Le cellule principali",
+   "Le cellule parietali",
+   "Le cellule G dell'antro",
+   "Le cellule mucose del colletto",
+   "Le cellule enterocromaffini"
+  ],
+  "ans": 0,
+  "why": "Le cellule parietali producono HCl, le cellule G la gastrina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-04",
+  "topic": "m8-digestione",
+  "level": "m",
+  "page": "228",
+  "src": "Biochimica II",
+  "q": "Quale non è una funzione dell'acidità gastrica?",
+  "opts": [
+   "Attivare la tripsina",
+   "Denaturare le proteine",
+   "Uccidere i batteri",
+   "Attivare il pepsinogeno",
+   "Esporre i legami peptidici"
+  ],
+  "ans": 0,
+  "why": "La tripsina si attiva nell'intestino (enteropeptidasi), a pH circa 8 dopo la neutralizzazione con il bicarbonato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-05",
+  "topic": "m8-digestione",
+  "level": "m",
+  "page": "230",
+  "src": "Biochimica II",
+  "q": "Come forma l'HCl la cellula parietale?",
+  "opts": [
+   "L'H⁺ esce con una pompa H⁺/K⁺ ATP-dipendente e il Cl⁻ lo segue; il bicarbonato va nel sangue",
+   "L'H⁺ esce con un antiporto Na⁺/H⁺ e il Cl⁻ entra dal lume; il bicarbonato va nel lume gastrico",
+   "L'H⁺ esce con una pompa Na⁺/K⁺ e il Cl⁻ esce con un canale; il bicarbonato resta nella cellula",
+   "L'HCl si forma nel sangue e viene secreto intero per esocitosi dalla cellula parietale",
+   "L'H⁺ deriva dall'idrolisi dell'ATP e il Cl⁻ dal pepsinogeno attivato nel lume"
+  ],
+  "ans": 0,
+  "why": "L'anidrasi carbonica forma H₂CO₃ → H⁺ + HCO₃⁻; il bicarbonato esce in scambio con Cl⁻. Gli inibitori di pompa (omeprazolo) bloccano la H⁺/K⁺-ATPasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-06",
+  "topic": "m8-digestione",
+  "level": "m",
+  "page": "229",
+  "src": "Biochimica II",
+  "q": "Perché, secondo la sbobina, un pasto proteico ricco di grassi rallenta la digestione?",
+  "opts": [
+   "I grassi legano il cuore idrofobico delle proteine denaturate e frenano la pepsina",
+   "I grassi neutralizzano l'acido cloridrico e il pepsinogeno non si attiva più",
+   "I grassi inibiscono la secrezione di gastrina da parte delle cellule G",
+   "I grassi stimolano la secrezione di bicarbonato e alzano troppo il pH gastrico",
+   "I grassi competono con le proteine per il sito attivo della pepsina"
+  ],
+  "ans": 0,
+  "why": "Denaturando, la proteina espone il suo cuore idrofobico, che lega i lipidi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-07",
+  "topic": "m8-digestione",
+  "level": "a",
+  "page": "229",
+  "src": "Biochimica II",
+  "q": "Bere molta acqua durante il pasto rallenta la digestione gastrica soprattutto perché:",
+  "opts": [
+   "Diluisce la pepsina e ne abbassa la velocità massima",
+   "Alza molto il pH gastrico e il pepsinogeno smette di attivarsi del tutto",
+   "Inibisce la secrezione di gastrina attraverso i recettori di stiramento",
+   "Diluisce i substrati e la pepsina lavora sotto la sua Km",
+   "Stimola lo svuotamento gastrico prima che la pepsina agisca"
+  ],
+  "ans": 0,
+  "why": "Vmax = kcat [E]: diluire l'enzima abbassa la velocità. Un paio di bicchieri invece non cambiano molto il pH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-08",
+  "topic": "m8-digestione",
+  "level": "a",
+  "page": "231–232",
+  "src": "Biochimica II",
+  "q": "Secondo la sbobina, quale apporto proteico è raccomandato a un adulto di 70 kg?",
+  "opts": [
+   "Circa 56 g al giorno (0,8 g/kg)",
+   "Circa 140 g al giorno (2 g/kg)",
+   "Circa 105 g al giorno (1,5 g/kg)",
+   "Circa 35 g al giorno (0,5 g/kg)",
+   "Circa 84 g al giorno (1,2 g/kg)"
+  ],
+  "ans": 0,
+  "why": "Gli sportivi agonisti arrivano a 1–1,2 g/kg; negli anziani 0,9–1 g/kg.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-09",
+  "topic": "m8-digestione",
+  "level": "l",
+  "page": "229",
+  "src": "Biochimica II",
+  "q": "Quale forma di gastrina è un prodotto di degradazione, secondo la sbobina?",
+  "opts": [
+   "Gastrina 14",
+   "Gastrina 17",
+   "Gastrina 34",
+   "Progastrina",
+   "Pre-progastrina"
+  ],
+  "ans": 0,
+  "why": "Le forme funzionali sono la 34 e la 17 (numero di residui).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-10",
+  "topic": "m8-digestione",
+  "level": "l",
+  "page": "226",
+  "src": "Biochimica II",
+  "q": "Come si chiamano le proteasi con un residuo di cisteina nel sito attivo?",
+  "opts": [
+   "Cisteinil proteasi",
+   "Serin proteasi",
+   "Aspartil proteasi",
+   "Metalloproteasi",
+   "Treonin proteasi"
+  ],
+  "ans": 0,
+  "why": "Le quattro classi della sbobina: serin, aspartil, cisteinil e metallo proteasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8d-11",
+  "topic": "m8-digestione",
+  "level": "h",
+  "page": "230–231",
+  "src": "Biochimica II",
+  "q": "Quale abbinamento tra secrezione e funzione nella digestione delle proteine è corretto?",
+  "opts": [
+   "Bicarbonato pancreatico – porta il pH intorno a 8, adatto alla tripsina",
+   "Pepsina – taglia preferenzialmente dopo lisina e arginina, come la tripsina",
+   "Gastrina – idrolizza i legami peptidici dei residui aromatici nello stomaco",
+   "Amminopeptidasi – attivano il pepsinogeno nel lume gastrico",
+   "HCl – attiva direttamente il tripsinogeno nel duodeno"
+  ],
+  "ans": 0,
+  "why": "La pepsina preferisce residui idrofobici; la tripsina taglia dopo Lys e Arg; gli oligopeptidi residui li finiscono le peptidasi dell'orletto a spazzola.",
+  "note": "Sbobina di Biochimica II, p. 231: c'è scritto che la colecistochinina «favorisce il nuovo pH dell'intestino». Nei testi di riferimento è la secretina a stimolare il bicarbonato; la CCK stimola la secrezione di enzimi pancreatici e la contrazione della colecisti.",
+  "fixed": false
+ },
+ {
+  "id": "m8d-12",
+  "topic": "m8-digestione",
+  "level": "h",
+  "page": "232",
+  "src": "Biochimica II",
+  "q": "Che cosa succede agli amminoacidi assorbiti in eccesso rispetto al fabbisogno per la sintesi proteica?",
+  "opts": [
+   "Vengono deaminati e gli scheletri usati per energia o per fare grassi",
+   "Vengono immagazzinati in proteine di riserva muscolari pronte per il digiuno",
+   "Vengono eliminati intatti con le urine dal tubulo renale prossimale",
+   "Restano liberi nel plasma fino al pasto successivo, in un pool di riserva",
+   "Vengono trasformati tutti in glucosio e depositati come glicogeno epatico"
+  ],
+  "ans": 0,
+  "why": "Non esistono proteine di deposito: dopo il pasto gli amminoacidi liberi sono pochissimi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-01",
+  "topic": "m8-lisosomi",
+  "level": "f",
+  "page": "233",
+  "src": "Biochimica II",
+  "q": "Quale residuo dell'ubiquitina forma il legame con la proteina bersaglio?",
+  "opts": [
+   "La glicina C-terminale",
+   "La lisina 48",
+   "La serina N-terminale",
+   "La cisteina del sito attivo",
+   "La metionina iniziale"
+  ],
+  "ans": 0,
+  "why": "Il carbossile della Gly C-terminale forma un legame isopeptidico con una lisina del bersaglio; la Lys48 serve a formare le catene di ubiquitina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-02",
+  "topic": "m8-lisosomi",
+  "level": "f",
+  "page": "234",
+  "src": "Biochimica II",
+  "q": "Quanti enzimi servono per legare l'ubiquitina a una proteina?",
+  "opts": [
+   "Tre: E1, E2 ed E3",
+   "Due: E1 ed E2",
+   "Uno solo: l'ubiquitina ligasi",
+   "Quattro: E1, E2, E3 e la deubiquitinasi",
+   "Tre: E1, E2 e il proteasoma 19S"
+  ],
+  "ans": 0,
+  "why": "Un gene per E1, pochi per E2, moltissimi per E3: è E3 a riconoscere il bersaglio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-03",
+  "topic": "m8-lisosomi",
+  "level": "f",
+  "page": "236",
+  "src": "Biochimica II",
+  "q": "A che pH lavorano le proteasi lisosomiali?",
+  "opts": [
+   "Circa 4",
+   "Circa 7,4",
+   "Circa 8",
+   "Circa 2",
+   "Circa 6,5"
+  ],
+  "ans": 0,
+  "why": "Una pompa protonica ATP-dipendente acidifica il lisosoma.",
+  "note": "La sbobina indica pH 4; molti testi riportano un pH lisosomiale intorno a 4,5–5.",
+  "fixed": false
+ },
+ {
+  "id": "m8l-04",
+  "topic": "m8-lisosomi",
+  "level": "m",
+  "page": "234",
+  "src": "Biochimica II",
+  "q": "Come viene attivata l'ubiquitina da E1?",
+  "opts": [
+   "ATP → ubiquitina-AMP + PPi, poi tioestere con una cisteina di E1",
+   "ATP → ubiquitina fosforilata + ADP, poi l'ubiquitina passa a una serina di E1",
+   "GTP → ubiquitina-GMP + PPi, poi l'ubiquitina passa a una lisina di E1",
+   "L'ubiquitina viene tagliata da una proteasi e il frammento attivo si lega a E1",
+   "ATP → ubiquitina-ADP + Pi, poi l'ubiquitina passa direttamente al bersaglio"
+  ],
+  "ans": 0,
+  "why": "Stessa logica dell'acil-CoA sintetasi: adenilato e poi tioestere. Il passaggio a E2 resta un tioestere.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-05",
+  "topic": "m8-lisosomi",
+  "level": "m",
+  "page": "234",
+  "src": "Biochimica II",
+  "q": "Qual è il segnale che porta una proteina al proteasoma?",
+  "opts": [
+   "Almeno 4 ubiquitine legate tramite la lisina 48",
+   "Una singola ubiquitina legata alla lisina N-terminale",
+   "Un residuo di acido sialico esposto sulla superficie",
+   "Una fosforilazione su serina da parte della PKA",
+   "Un ponte disolfuro tra due cisteine vicine"
+  ],
+  "ans": 0,
+  "why": "Legame isopeptidico tra il carbossile della Gly C-terminale di un'ubiquitina e l'ε-ammino della Lys48 della successiva.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-06",
+  "topic": "m8-lisosomi",
+  "level": "m",
+  "page": "235",
+  "src": "Biochimica II",
+  "q": "Come è organizzata la parte catalitica 20S del proteasoma?",
+  "opts": [
+   "4 anelli eptamerici α-β-β-α; l'attività è nelle subunità β, con una treonina catalitica",
+   "4 anelli esamerici α-α-β-β; l'attività è nelle subunità α, con una serina catalitica",
+   "2 anelli eptamerici β-β; l'attività è nelle subunità β, con una cisteina catalitica",
+   "4 anelli eptamerici β-α-α-β; l'attività è nelle subunità α, con un'istidina catalitica",
+   "Un unico anello di 28 subunità identiche, ciascuna con un aspartato catalitico"
+  ],
+  "ans": 0,
+  "why": "Il 19S (regolatore) ha ATPasi AAA che denaturano il bersaglio e una isopeptidasi che ricicla l'ubiquitina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-07",
+  "topic": "m8-lisosomi",
+  "level": "a",
+  "page": "233",
+  "src": "Biochimica II",
+  "q": "Secondo la «regola dell'N-terminale», da che cosa dipende l'emivita di una proteina?",
+  "opts": [
+   "Dal tipo di residuo N-terminale, stabilizzante o no",
+   "Dalla lunghezza della catena: le proteine più lunghe durano di più",
+   "Dal numero di ponti disolfuro: più ponti, emivita più breve",
+   "Dal residuo C-terminale, che viene riconosciuto dal proteasoma",
+   "Dalla quantità di acido sialico legato al residuo N-terminale"
+  ],
+  "ans": 0,
+  "why": "Contano anche le sequenze PEST, che accelerano la degradazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-08",
+  "topic": "m8-lisosomi",
+  "level": "a",
+  "page": "236",
+  "src": "Biochimica II",
+  "q": "Perché il pH acido del lisosoma favorisce il rilascio delle LDL dal loro recettore?",
+  "opts": [
+   "A pH 4 si protonano gli aspartati del recettore e si perde il ponte salino",
+   "A pH 4 si denatura l'ApoB-100 e il colesterolo si stacca dal recettore",
+   "A pH 4 si attiva l'ACAT, che esterifica il colesterolo e lo stacca dal recettore",
+   "A pH 4 il recettore viene fosforilato e perde affinità per l'ApoE",
+   "A pH 4 si protonano le lisine dell'ApoB-100, che diventano negative"
+  ],
+  "ans": 0,
+  "why": "Il recettore torna in membrana, la lipoproteina viene degradata.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-09",
+  "topic": "m8-lisosomi",
+  "level": "a",
+  "page": "237",
+  "src": "Biochimica II",
+  "q": "Che vantaggio ha per la cellula che le proteasi lisosomiali lavorino solo a pH acido?",
+  "opts": [
+   "Se il lisosoma si rompe, nel citosol sono poco attive",
+   "Possono essere sintetizzate già attive nel reticolo endoplasmatico",
+   "Non hanno bisogno di essere sintetizzate come zimogeni",
+   "Possono degradare anche le proteine ubiquitinate nel citosol",
+   "Funzionano anche senza la pompa protonica della membrana lisosomiale"
+  ],
+  "ans": 0,
+  "why": "È probabilmente un sistema di sicurezza contro l'autodigestione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-10",
+  "topic": "m8-lisosomi",
+  "level": "l",
+  "page": "235",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi hanno circa i frammenti rilasciati dal proteasoma?",
+  "opts": [
+   "7–9",
+   "2–3",
+   "20–30",
+   "50–60",
+   "Un solo amminoacido"
+  ],
+  "ans": 0,
+  "why": "Sono anche i frammenti presentati sul complesso maggiore di istocompatibilità.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-11",
+  "topic": "m8-lisosomi",
+  "level": "l",
+  "page": "235",
+  "src": "Biochimica II",
+  "q": "Che cosa sono le proteine AAA del complesso 19S?",
+  "opts": [
+   "ATPasi che srotolano il bersaglio",
+   "Proteasi a treonina",
+   "Ubiquitina ligasi di tipo E3",
+   "Chaperonine che ripiegano il bersaglio",
+   "Fosfatasi che rimuovono i fosfati"
+  ],
+  "ans": 0,
+  "why": "ATPases Associated with diverse cellular Activities: probabilmente denaturano il substrato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8l-12",
+  "topic": "m8-lisosomi",
+  "level": "h",
+  "page": "234",
+  "src": "Biochimica II",
+  "q": "La sbobina definisce l'unità Svedberg dicendo «maggiore è S, minore è la densità». Che cosa è corretto?",
+  "opts": [
+   "Un S maggiore indica una sedimentazione più veloce",
+   "Un S maggiore indica una particella più leggera e meno densa",
+   "Il valore S si somma: 20S + 19S fanno un complesso 39S",
+   "Il valore S misura la carica elettrica della particella",
+   "Il valore S dipende solo dalla forma, non dalla massa"
+  ],
+  "ans": 0,
+  "why": "Il coefficiente di sedimentazione cresce con massa e densità e non è additivo (il proteasoma completo è 26S).",
+  "note": "Sbobina di Biochimica II, p. 234: c'è scritto che «maggiore è questo [S] minore è la densità». È il contrario: S maggiore = sedimentazione più veloce.",
+  "fixed": false
+ },
+ {
+  "id": "m8l-13",
+  "topic": "m8-lisosomi",
+  "level": "h",
+  "page": "237–238",
+  "src": "Biochimica II",
+  "q": "Che cosa succede nell'autofagia durante un digiuno prolungato?",
+  "opts": [
+   "Organelli e aggregati, avvolti da una doppia membrana, finiscono nei lisosomi",
+   "Le proteine citosoliche vengono secrete e digerite nel lume intestinale",
+   "I mitocondri vengono degradati dal proteasoma 26S dopo ubiquitinazione",
+   "Le proteasi lisosomiali vengono rilasciate nel citosol per degradare le proteine",
+   "I lisosomi si fondono con la membrana plasmatica e rilasciano amminoacidi"
+  ],
+  "ans": 0,
+  "why": "Il fagoforo si chiude in autofagosoma, che si fonde con il lisosoma; gli amminoacidi tornano al metabolismo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-01",
+  "topic": "m8-transaminazione",
+  "level": "f",
+  "page": "239",
+  "src": "Biochimica II",
+  "q": "Quale vitamina dà il coenzima delle transaminasi?",
+  "opts": [
+   "Vitamina B6 (piridossina)",
+   "Vitamina B1 (tiamina)",
+   "Vitamina B2 (riboflavina)",
+   "Vitamina B12 (cobalamina)",
+   "Vitamina B9 (folato)"
+  ],
+  "ans": 0,
+  "why": "Il coenzima è il piridossal 5'-fosfato (PLP).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-02",
+  "topic": "m8-transaminazione",
+  "level": "f",
+  "page": "240",
+  "src": "Biochimica II",
+  "q": "Qual è l'accettore generale dei gruppi amminici nella degradazione degli amminoacidi?",
+  "opts": [
+   "α-chetoglutarato",
+   "Ossalacetato",
+   "Piruvato",
+   "Fumarato",
+   "Glutammina"
+  ],
+  "ans": 0,
+  "why": "Si forma glutammato, che poi viene deaminato dalla glutammato deidrogenasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-03",
+  "topic": "m8-transaminazione",
+  "level": "f",
+  "page": "240",
+  "src": "Biochimica II",
+  "q": "Che cosa si forma dalla transaminazione tra alanina e α-chetoglutarato?",
+  "opts": [
+   "Piruvato e glutammato",
+   "Ossalacetato e glutammato",
+   "Piruvato e glutammina",
+   "Lattato e aspartato",
+   "Acetil-CoA e glutammato"
+  ],
+  "ans": 0,
+  "why": "Ogni amminoacido diventa il suo α-chetoacido corrispondente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-04",
+  "topic": "m8-transaminazione",
+  "level": "m",
+  "page": "242",
+  "src": "Biochimica II",
+  "q": "Come è legato il PLP all'enzima a riposo?",
+  "opts": [
+   "Con una base di Schiff tra l'aldeide e una lisina",
+   "Con un legame estere tra il suo fosfato e una serina dell'enzima",
+   "Con un ponte disolfuro tra il PLP e una cisteina del sito attivo",
+   "Con un legame ammidico tra il suo carbossile e una lisina",
+   "Non è legato covalentemente: si lega solo insieme al substrato"
+  ],
+  "ans": 0,
+  "why": "Quando entra l'amminoacido si forma l'aldimmina esterna con il suo gruppo amminico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-05",
+  "topic": "m8-transaminazione",
+  "level": "m",
+  "page": "243",
+  "src": "Biochimica II",
+  "q": "Perché la transaminazione è una reazione «a ping-pong»?",
+  "opts": [
+   "Il primo prodotto esce prima che entri il secondo substrato",
+   "Entrambi i substrati si legano insieme e formano un complesso ternario con l'enzima",
+   "L'enzima oscilla tra forma fosforilata e defosforilata a ogni ciclo",
+   "Il gruppo amminico passa avanti e indietro tra i due substrati legati",
+   "Il PLP si stacca e si riattacca all'enzima a ogni ciclo catalitico"
+  ],
+  "ans": 0,
+  "why": "Alanina → piruvato (si forma PMP); poi α-chetoglutarato → glutammato (torna il PLP).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-06",
+  "topic": "m8-transaminazione",
+  "level": "m",
+  "page": "244",
+  "src": "Biochimica II",
+  "q": "Che cosa catalizza la glutammato deidrogenasi?",
+  "opts": [
+   "La deaminazione ossidativa del glutammato, con NAD(P)⁺",
+   "La transaminazione del glutammato con l'ossalacetato, con PLP",
+   "La sintesi di glutammina dal glutammato e dall'ammoniaca, con ATP",
+   "La decarbossilazione del glutammato a GABA, con PLP",
+   "L'idrolisi della glutammina a glutammato e NH₄⁺, senza coenzimi"
+  ],
+  "ans": 0,
+  "why": "Avviene nei mitocondri epatici; è una delle poche reazioni che usa sia NAD⁺ sia NADP⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-07",
+  "topic": "m8-transaminazione",
+  "level": "m",
+  "page": "245",
+  "src": "Biochimica II",
+  "q": "Come viene regolata allostericamente la glutammato deidrogenasi?",
+  "opts": [
+   "Attivata dall'ADP, inibita dal GTP",
+   "Attivata dal GTP, inibita dall'ADP",
+   "Attivata dall'AMP, inibita dall'ATP",
+   "Attivata dal NADH, inibita dal NAD⁺",
+   "Attivata dal glutammato, inibita dall'ammoniaca"
+  ],
+  "ans": 0,
+  "why": "ADP alto = serve energia: anche gli amminoacidi vengono ossidati. GTP alto (dalla succinil-CoA sintetasi) = ciclo di Krebs a pieno regime.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-08",
+  "topic": "m8-transaminazione",
+  "level": "a",
+  "page": "245",
+  "src": "Biochimica II",
+  "q": "La somma di transaminazione e glutammato deidrogenasi si chiama transdeaminazione. Qual è il bilancio per l'alanina?",
+  "opts": [
+   "Alanina + NAD⁺ + H₂O → piruvato + NADH + NH₄⁺",
+   "Alanina + α-chetoglutarato → piruvato + glutammato",
+   "Alanina + NADH → lattato + NAD⁺ + NH₄⁺",
+   "Alanina + ATP + NH₃ → glutammina + ADP",
+   "Alanina + O₂ → piruvato + H₂O₂ + NH₄⁺"
+  ],
+  "ans": 0,
+  "why": "L'α-chetoglutarato si consuma e si riforma: il risultato netto è un'ossidazione con liberazione di ammonio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-09",
+  "topic": "m8-transaminazione",
+  "level": "a",
+  "page": "243",
+  "src": "Biochimica II",
+  "q": "Perché le transaminasi non sono un buon marker precoce di infarto?",
+  "opts": [
+   "Aumentano nel sangue solo 24–48 ore dopo l'evento",
+   "Non sono presenti nel tessuto cardiaco",
+   "Aumentano solo nelle epatiti virali",
+   "Vengono degradate subito dal proteasoma plasmatico",
+   "Sono identiche a quelle muscolari e non si distinguono"
+  ],
+  "ans": 0,
+  "why": "Marker precoci sono CK-MB e troponina. Le transaminasi restano ottimi indici di danno epatico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-10",
+  "topic": "m8-transaminazione",
+  "level": "a",
+  "page": "241",
+  "src": "Biochimica II",
+  "q": "Perché la reazione dell'aspartato transaminasi (Asp + α-KG → OAA + Glu) viene definita anaplerotica?",
+  "opts": [
+   "Perché produce ossalacetato, un intermedio del ciclo di Krebs",
+   "Perché consuma α-chetoglutarato e svuota il ciclo di Krebs",
+   "Perché produce ATP con una fosforilazione a livello del substrato",
+   "Perché libera ammoniaca nel mitocondrio epatico",
+   "Perché è irreversibile e controlla il flusso del ciclo"
+  ],
+  "ans": 0,
+  "why": "Le transaminasi hanno ruoli energetici, glucogenetici e anaplerotici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-11",
+  "topic": "m8-transaminazione",
+  "level": "l",
+  "page": "242",
+  "src": "Biochimica II",
+  "q": "Quale intermedio si forma nel meccanismo della transaminasi dopo la perdita dell'H⁺ dall'aldimmina esterna?",
+  "opts": [
+   "Intermedio chinonoide",
+   "Chetimmina",
+   "Aldimmina interna",
+   "Piridossammina fosfato",
+   "Carbinolammina"
+  ],
+  "ans": 0,
+  "why": "Aldimmina esterna → chinonoide → chetimmina → idrolisi: α-chetoacido + PMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-12",
+  "topic": "m8-transaminazione",
+  "level": "l",
+  "page": "240",
+  "src": "Biochimica II",
+  "q": "Oltre agli enzimi del metabolismo amminoacidico, quale enzima usa il PLP secondo la sbobina?",
+  "opts": [
+   "Glicogeno fosforilasi",
+   "Piruvato carbossilasi",
+   "Transchetolasi",
+   "Acetil-CoA carbossilasi",
+   "Glucosio 6-fosfatasi"
+  ],
+  "ans": 0,
+  "why": "Nella fosforilasi il fosfato del PLP partecipa come acido/base nella fosforolisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8t-13",
+  "topic": "m8-transaminazione",
+  "level": "h",
+  "page": "244",
+  "src": "Biochimica II",
+  "q": "La sbobina dice che la glutammato deidrogenasi è «presente esclusivamente nel mitocondrio delle cellule epatiche», ma poco dopo che serve anche nel cervello. Come va inteso?",
+  "opts": [
+   "Nel fegato serve all'ureogenesi; nel cervello riforma soprattutto glutammato",
+   "Nel cervello esiste una glutammato deidrogenasi citosolica che usa solo FAD",
+   "Il cervello riceve la glutammato deidrogenasi dal fegato attraverso il sangue",
+   "Nel cervello la reazione è catalizzata dalla glutammina sintetasi, non dalla GDH",
+   "È un errore: la GDH è solo cerebrale e il fegato usa le transaminasi"
+  ],
+  "ans": 0,
+  "why": "La GDH è presente in molti tessuti; nel fegato il suo ruolo è fornire NH₄⁺ al ciclo dell'urea.",
+  "note": "Sbobina di Biochimica II, p. 244: le due frasi si contraddicono. La GDH non è esclusiva del fegato; la sbobina enfatizza il ruolo epatico.",
+  "fixed": false
+ },
+ {
+  "id": "m8t-14",
+  "topic": "m8-transaminazione",
+  "level": "h",
+  "page": "241",
+  "src": "Biochimica II",
+  "q": "Quale affermazione sulle transaminasi è corretta?",
+  "opts": [
+   "Lavorano solo sugli L-amminoacidi",
+   "Eliminano il gruppo amminico come ammoniaca libera",
+   "Usano NAD⁺ per ossidare l'amminoacido ad α-chetoacido",
+   "Sono attive solo nel fegato e nel rene",
+   "Formano sempre aspartato come prodotto finale"
+  ],
+  "ans": 0,
+  "why": "Trasferiscono il gruppo amminico senza eliminarlo; a staccarlo come NH₄⁺ è la GDH.",
+  "note": "Sbobina di Biochimica II, p. 241: si dice che esistono 20 transaminasi, una per ogni amminoacido. È una semplificazione: alcune transaminasi accettano più substrati e alcuni amminoacidi (es. lisina, treonina) non vengono transaminati.",
+  "fixed": false
+ },
+ {
+  "id": "m8u-01",
+  "topic": "m8-urea",
+  "level": "f",
+  "page": "246",
+  "src": "Biochimica II",
+  "q": "Quale enzima organica l'ammoniaca all'inizio del ciclo dell'urea?",
+  "opts": [
+   "Carbamil fosfato sintetasi I",
+   "Carbamil fosfato sintetasi II",
+   "Ornitina transcarbamilasi",
+   "Glutammina sintetasi",
+   "Arginasi"
+  ],
+  "ans": 0,
+  "why": "NH₄⁺ + HCO₃⁻ + 2 ATP → carbamil fosfato. È mitocondriale ed epatica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-02",
+  "topic": "m8-urea",
+  "level": "f",
+  "page": "249",
+  "src": "Biochimica II",
+  "q": "Quale enzima libera l'urea?",
+  "opts": [
+   "Arginasi",
+   "Argininosuccinato liasi",
+   "Ornitina transcarbamilasi",
+   "Ureasi",
+   "Argininosuccinato sintetasi"
+  ],
+  "ans": 0,
+  "why": "Arginina + H₂O → urea + ornitina, che rientra nel mitocondrio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-03",
+  "topic": "m8-urea",
+  "level": "f",
+  "page": "246",
+  "src": "Biochimica II",
+  "q": "Come elimina l'azoto in eccesso l'uomo?",
+  "opts": [
+   "Come urea (ureotelico)",
+   "Come ammoniaca (ammoniotelico)",
+   "Come acido urico (uricotelico)",
+   "Come creatinina soprattutto",
+   "Come glutammina nelle feci"
+  ],
+  "ans": 0,
+  "why": "L'uomo produce acido urico dalle purine, ma è poco solubile: in eccesso dà gotta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-04",
+  "topic": "m8-urea",
+  "level": "m",
+  "page": "248–249",
+  "src": "Biochimica II",
+  "q": "Da dove vengono i due atomi di azoto dell'urea?",
+  "opts": [
+   "Uno dall'NH₄⁺, l'altro dall'aspartato",
+   "Entrambi dall'NH₄⁺ liberato dalla glutammato deidrogenasi",
+   "Uno dalla glutammina e l'altro dall'asparagina",
+   "Uno dall'ornitina e l'altro dalla citrullina",
+   "Entrambi dall'arginina della dieta"
+  ],
+  "ans": 0,
+  "why": "Ma l'aspartato prende il suo azoto dal glutammato per transaminazione: alla fine il glutammato è il donatore di entrambi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-05",
+  "topic": "m8-urea",
+  "level": "m",
+  "page": "247",
+  "src": "Biochimica II",
+  "q": "Quale molecola attiva allostericamente la carbamil fosfato sintetasi I?",
+  "opts": [
+   "N-acetilglutammato",
+   "Arginina",
+   "Ornitina",
+   "ATP",
+   "Glutammina"
+  ],
+  "ans": 0,
+  "why": "Lo forma l'N-acetilglutammato sintasi (glutammato + acetil-CoA), che a sua volta è attivata dall'arginina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-06",
+  "topic": "m8-urea",
+  "level": "m",
+  "page": "248",
+  "src": "Biochimica II",
+  "q": "Quale differenza tra CPS I e CPS II è corretta?",
+  "opts": [
+   "CPS I: mitocondrio epatico, NH₄⁺, ciclo dell'urea. CPS II: citosol, glutammina, pirimidine",
+   "CPS I: citosol, glutammina, pirimidine. CPS II: mitocondrio epatico, NH₄⁺, ciclo dell'urea",
+   "CPS I: mitocondrio, glutammina, purine. CPS II: citosol, NH₄⁺, ciclo dell'urea",
+   "CPS I: tutti i tessuti, NH₄⁺, pirimidine. CPS II: solo fegato, glutammina, urea",
+   "Sono lo stesso enzima in due compartimenti, con gli stessi regolatori"
+  ],
+  "ans": 0,
+  "why": "CPS I attivata da N-acetilglutammato; CPS II attivata da ATP e inibita da UTP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-07",
+  "topic": "m8-urea",
+  "level": "m",
+  "page": "248",
+  "src": "Biochimica II",
+  "q": "In quale ordine lavorano gli enzimi del ciclo dell'urea dopo la CPS I?",
+  "opts": [
+   "Ornitina transcarbamilasi → argininosuccinato sintetasi → argininosuccinato liasi → arginasi",
+   "Argininosuccinato sintetasi → ornitina transcarbamilasi → arginasi → argininosuccinato liasi",
+   "Arginasi → ornitina transcarbamilasi → argininosuccinato liasi → argininosuccinato sintetasi",
+   "Ornitina transcarbamilasi → arginasi → argininosuccinato sintetasi → argininosuccinato liasi",
+   "Argininosuccinato liasi → argininosuccinato sintetasi → ornitina transcarbamilasi → arginasi"
+  ],
+  "ans": 0,
+  "why": "Citrullina (mitocondrio) → esce → argininosuccinato (con Asp e ATP) → arginina + fumarato → urea + ornitina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-08",
+  "topic": "m8-urea",
+  "level": "a",
+  "page": "250",
+  "src": "Biochimica II",
+  "q": "Quanti legami ad alta energia costa la sintesi di una molecola di urea?",
+  "opts": [
+   "4: due per la CPS I e due per l'argininosuccinato sintetasi",
+   "3: un ATP per ciascuno dei tre enzimi citosolici del ciclo",
+   "2: solo i due ATP della carbamil fosfato sintetasi I",
+   "6: due ATP per ciascuna delle tre reazioni che consumano energia",
+   "1: l'argininosuccinato sintetasi, perché la CPS I usa il GTP"
+  ],
+  "ans": 0,
+  "why": "3 ATP, ma uno perde due legami fosfoanidridici (il PPi viene idrolizzato).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-09",
+  "topic": "m8-urea",
+  "level": "a",
+  "page": "251–252",
+  "src": "Biochimica II",
+  "q": "Come sono collegati ciclo dell'urea e ciclo di Krebs?",
+  "opts": [
+   "Il fumarato diventa ossalacetato, che transaminato rigenera aspartato",
+   "Il citrato del ciclo di Krebs cede il suo azoto alla citrullina per formare arginina",
+   "L'α-chetoglutarato del ciclo di Krebs viene carbossilato per formare carbamil fosfato",
+   "Il succinil-CoA del ciclo di Krebs fornisce il gruppo carbamilico all'ornitina",
+   "L'ossalacetato viene trasformato direttamente in ornitina nel mitocondrio"
+  ],
+  "ans": 0,
+  "why": "È lo shunt aspartato-argininosuccinato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-10",
+  "topic": "m8-urea",
+  "level": "a",
+  "page": "252–253",
+  "src": "Biochimica II",
+  "q": "Come arriva al fegato l'ammoniaca prodotta nei tessuti periferici?",
+  "opts": [
+   "Come glutammina, che la glutamminasi epatica scinde",
+   "Come ammoniaca libera legata all'albumina, che la cede agli epatociti",
+   "Come urea, già sintetizzata nei tessuti periferici e solo filtrata dal fegato",
+   "Come carbamil fosfato, prodotto dalla CPS II di tutte le cellule",
+   "Come aspartato, che il fegato deamina con la glutammato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Dal muscolo arriva anche come alanina (ciclo glucosio-alanina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-11",
+  "topic": "m8-urea",
+  "level": "a",
+  "page": "253",
+  "src": "Biochimica II",
+  "q": "Di notte il rene usa la glutammina proveniente dal fegato. A che cosa serve?",
+  "opts": [
+   "Libera NH₄⁺ nelle urine e rigenera bicarbonato contro l'acidosi",
+   "Forma urea con la glutamminasi renale, perché il rene ha un ciclo dell'urea completo",
+   "Forma glutammato che il rene secerne come neurotrasmettitore",
+   "Fornisce azoto per sintetizzare creatinina e acido urico",
+   "Viene ossidata a CO₂ per fornire tutta l'energia al tubulo prossimale"
+  ],
+  "ans": 0,
+  "why": "L'α-chetoglutarato residuo va in gluconeogenesi renale, che produce bicarbonato.",
+  "note": "Sbobina di Biochimica II, p. 253: c'è scritto che nel rene la glutammina viene metabolizzata dalla glutamminasi «e si forma urea». Il rene non sintetizza urea: libera NH₄⁺, che viene escreto come tale.",
+  "fixed": false
+ },
+ {
+  "id": "m8u-12",
+  "topic": "m8-urea",
+  "level": "a",
+  "page": "254",
+  "src": "Biochimica II",
+  "q": "Perché l'iperammoniemia danneggia il cervello? Indica il meccanismo descritto dalla sbobina.",
+  "opts": [
+   "Per smaltire NH₄⁺ i neuroni sottraggono α-chetoglutarato al ciclo di Krebs",
+   "L'ammoniaca inibisce la glicolisi bloccando l'esochinasi neuronale",
+   "L'ammoniaca si lega all'emoglobina e riduce il trasporto di ossigeno al cervello",
+   "L'ammoniaca blocca il recettore dell'insulina e il glucosio non entra nei neuroni",
+   "L'ammoniaca forma urea nel cervello, che richiama acqua e causa edema"
+  ],
+  "ans": 0,
+  "why": "Altri meccanismi: troppo glutammato (e GABA) alterano la trasmissione; l'NH₃ attraversa le membrane.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-13",
+  "topic": "m8-urea",
+  "level": "l",
+  "page": "248",
+  "src": "Biochimica II",
+  "q": "Come si chiama l'amminoacido non proteico che esce dal mitocondrio nel ciclo dell'urea?",
+  "opts": [
+   "Citrullina",
+   "Ornitina",
+   "Argininosuccinato",
+   "Carbamil fosfato",
+   "Omoserina"
+  ],
+  "ans": 0,
+  "why": "Ornitina + carbamil fosfato → citrullina (ornitina transcarbamilasi).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-14",
+  "topic": "m8-urea",
+  "level": "l",
+  "page": "254",
+  "src": "Biochimica II",
+  "q": "Qual è il range normale dell'ammoniaca nel sangue indicato dalla sbobina?",
+  "opts": [
+   "5–50 µmol/L",
+   "5–50 mmol/L",
+   "0,5–5 µmol/L",
+   "50–500 µmol/L",
+   "1–2 mol/L"
+  ],
+  "ans": 0,
+  "why": "Sopra questi valori l'ammoniaca supera la barriera ematoencefalica e dà tremori, sonnolenza, edema cerebrale, fino al coma.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-15",
+  "topic": "m8-urea",
+  "level": "h",
+  "page": "254",
+  "src": "Biochimica II",
+  "q": "Quale intervento è indicato dalla sbobina per ridurre l'ammoniaca in un paziente con iperammoniemia?",
+  "opts": [
+   "Dieta ipoproteica e lassativi contro i batteri intestinali",
+   "Dieta iperproteica per fornire più arginina al ciclo dell'urea",
+   "Somministrazione di ureasi per trasformare l'urea in ammoniaca nel fegato",
+   "Digiuno prolungato per attivare la gluconeogenesi da amminoacidi",
+   "Inibitori di pompa protonica per alzare il pH gastrico"
+  ],
+  "ans": 0,
+  "why": "Meno proteine = meno NH₄⁺ dagli amminoacidi; meno batteri = meno NH₃ da ureasi intestinale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8u-16",
+  "topic": "m8-urea",
+  "level": "h",
+  "page": "247–249",
+  "src": "Biochimica II",
+  "q": "Un neonato ha iperammoniemia grave con citrullina plasmatica molto bassa. Quale enzima è più probabilmente difettoso?",
+  "opts": [
+   "Ornitina transcarbamilasi",
+   "Argininosuccinato sintetasi",
+   "Argininosuccinato liasi",
+   "Arginasi",
+   "Glutamminasi renale"
+  ],
+  "ans": 0,
+  "why": "Se manca un enzima a monte della citrullina, la citrullina non si forma. Nei difetti a valle (sintetasi) la citrullina si accumula.",
+  "note": "Il ragionamento sui metaboliti accumulati non è nella sbobina, che dice solo che i difetti del ciclo dell'urea danno iperammoniemia nelle prime settimane e ritardo mentale.",
+  "fixed": false
+ },
+ {
+  "id": "m8s-01",
+  "topic": "m8-scheletri",
+  "level": "f",
+  "page": "257",
+  "src": "Biochimica II",
+  "q": "Quali amminoacidi sono esclusivamente chetogenetici?",
+  "opts": [
+   "Leucina e lisina",
+   "Alanina e serina",
+   "Isoleucina e fenilalanina",
+   "Glutammato e aspartato",
+   "Valina e metionina"
+  ],
+  "ans": 0,
+  "why": "Danno solo acetil-CoA o acetoacetil-CoA, che non possono diventare glucosio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-02",
+  "topic": "m8-scheletri",
+  "level": "f",
+  "page": "255",
+  "src": "Biochimica II",
+  "q": "Quale amminoacido trasporta azoto e scheletro carbonioso dal muscolo al fegato di notte?",
+  "opts": [
+   "Alanina",
+   "Glutammato",
+   "Lisina",
+   "Leucina",
+   "Glicina"
+  ],
+  "ans": 0,
+  "why": "Ciclo glucosio-alanina: nel fegato l'alanina dà piruvato per la gluconeogenesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-03",
+  "topic": "m8-scheletri",
+  "level": "f",
+  "page": "258",
+  "src": "Biochimica II",
+  "q": "Da quale intermedio della glicolisi deriva la serina?",
+  "opts": [
+   "3-fosfoglicerato",
+   "Piruvato",
+   "Diidrossiacetone fosfato",
+   "Fosfoenolpiruvato",
+   "Glucosio 6-fosfato"
+  ],
+  "ans": 0,
+  "why": "3-P-glicerato → (NAD⁺) 3-fosfoidrossipiruvato → (transaminazione) 3-fosfoserina → serina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-04",
+  "topic": "m8-scheletri",
+  "level": "m",
+  "page": "255",
+  "src": "Biochimica II",
+  "q": "Come favorisce il cortisolo la gluconeogenesi da amminoacidi?",
+  "opts": [
+   "Induce ubiquitina ligasi E3 nel muscolo e accelera la proteolisi",
+   "Inibisce il proteasoma muscolare e libera gli amminoacidi già presenti",
+   "Attiva le proteasi lisosomiali del fegato, che digeriscono l'albumina",
+   "Blocca la transaminazione nel muscolo e fa uscire gli amminoacidi intatti",
+   "Stimola la secrezione di glucagone, che scinde direttamente l'actina"
+  ],
+  "ans": 0,
+  "why": "Agisce come fattore di trascrizione attraverso il suo recettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-05",
+  "topic": "m8-scheletri",
+  "level": "m",
+  "page": "255",
+  "src": "Biochimica II",
+  "q": "Nel muscolo che cosa succede ai gruppi amminici degli amminoacidi liberati dalle proteine?",
+  "opts": [
+   "Passano al glutammato e poi al piruvato: escono come alanina",
+   "Vengono liberati come NH₄⁺ dalla glutammato deidrogenasi muscolare",
+   "Formano urea con il ciclo dell'urea muscolare",
+   "Vengono trasferiti all'ossalacetato ed escono come aspartato",
+   "Restano sugli amminoacidi, che escono intatti nel sangue"
+  ],
+  "ans": 0,
+  "why": "Il muscolo non ha la GDH: l'NH₄⁺ non viene liberato (la sbobina avverte che le figure su questo sono sbagliate).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-06",
+  "topic": "m8-scheletri",
+  "level": "m",
+  "page": "256",
+  "src": "Biochimica II",
+  "q": "Qual è la reazione anaplerotica del muscolo secondo la sbobina?",
+  "opts": [
+   "Il ciclo dei nucleotidi purinici, che produce fumarato",
+   "La piruvato carbossilasi: piruvato → ossalacetato",
+   "L'enzima malico: piruvato → malato",
+   "La glutammato deidrogenasi: glutammato → α-chetoglutarato",
+   "La propionil-CoA carbossilasi: propionil-CoA → succinil-CoA"
+  ],
+  "ans": 0,
+  "why": "L'AMP deaminasi libera NH₄⁺ (smaltito come glutammina); l'aspartato si lega all'IMP con GTP; il fumarato rifornisce il ciclo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-07",
+  "topic": "m8-scheletri",
+  "level": "a",
+  "page": "255",
+  "src": "Biochimica II",
+  "q": "Da dove viene il piruvato che il muscolo transamina ad alanina durante la notte?",
+  "opts": [
+   "Dalla glicolisi del glicogeno muscolare, stimolata dall'AMP",
+   "Dal lattato del sangue, riossidato dalla LDH muscolare",
+   "Dalla β-ossidazione degli acidi grassi, che produce piruvato",
+   "Dalla gluconeogenesi muscolare, attivata dal glucagone",
+   "Dalla degradazione dei corpi chetonici nel mitocondrio"
+  ],
+  "ans": 0,
+  "why": "L'acil-CoA sintetasi libera AMP, che attiva la fosforilasi b (T → R). Il glicogeno muscolare non risponde al glucagone.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-08",
+  "topic": "m8-scheletri",
+  "level": "a",
+  "page": "257",
+  "src": "Biochimica II",
+  "q": "Perché isoleucina e fenilalanina sono sia glucogenetiche sia chetogenetiche?",
+  "opts": [
+   "Lo scheletro si divide: una parte dà acetil-CoA, l'altra un intermedio di Krebs",
+   "Possono essere transaminate con due diversi α-chetoacidi a seconda del tessuto",
+   "Il fegato le usa per la gluconeogenesi e il cervello per i corpi chetonici",
+   "Danno piruvato, che può diventare sia ossalacetato sia acetil-CoA",
+   "Vengono prima convertite in leucina, che è glucogenetica e chetogenetica"
+  ],
+  "ans": 0,
+  "why": "Fenilalanina → fumarato + acetoacetil-CoA; isoleucina → succinil-CoA + acetil-CoA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-09",
+  "topic": "m8-scheletri",
+  "level": "a",
+  "page": "256",
+  "src": "Biochimica II",
+  "q": "A quale intermedio del metabolismo convergono glutammina, prolina, arginina e istidina?",
+  "opts": [
+   "Glutammato",
+   "Piruvato",
+   "Succinil-CoA",
+   "Fumarato",
+   "Acetoacetil-CoA"
+  ],
+  "ans": 0,
+  "why": "Alanina, serina, cisteina, treonina, glicina e triptofano convergono invece sul piruvato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-10",
+  "topic": "m8-scheletri",
+  "level": "l",
+  "page": "258",
+  "src": "Biochimica II",
+  "q": "Quale enzima forma l'asparagina dall'aspartato, e con quale prodotto secondario?",
+  "opts": [
+   "Asparagina sintetasi, con formazione di AMP",
+   "Asparaginasi, con formazione di NH₄⁺",
+   "Aspartato transaminasi, con formazione di glutammato",
+   "Glutammina sintetasi, con formazione di ADP",
+   "Asparagina sintetasi, con formazione di GDP"
+  ],
+  "ans": 0,
+  "why": "L'ATP viene scisso in AMP + PPi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-11",
+  "topic": "m8-scheletri",
+  "level": "l",
+  "page": "256",
+  "src": "Biochimica II",
+  "q": "Come si chiama il composto che si forma unendo IMP e aspartato nel ciclo dei nucleotidi purinici?",
+  "opts": [
+   "Adenilosuccinato",
+   "Argininosuccinato",
+   "Succinil-AMP",
+   "Aspartil-IMP",
+   "Fumaril-AMP"
+  ],
+  "ans": 0,
+  "why": "La reazione usa GTP; la scissione dell'adenilosuccinato libera fumarato e AMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8s-12",
+  "topic": "m8-scheletri",
+  "level": "h",
+  "page": "257",
+  "src": "Biochimica II",
+  "q": "La sbobina dice che «metionina, valina e isoleucina, amminoacidi a catena ramificata» convergono sul succinil-CoA. Che cosa è corretto?",
+  "opts": [
+   "Convergono sul succinil-CoA, ma la metionina non è ramificata",
+   "Convergono sull'acetil-CoA, e sono tutti e tre a catena ramificata",
+   "Convergono sul fumarato, e la valina non è a catena ramificata",
+   "Convergono sull'ossalacetato, e l'isoleucina è solo chetogenetica",
+   "Convergono sul piruvato, e la metionina è a catena ramificata"
+  ],
+  "ans": 0,
+  "why": "Anche la treonina contribuisce al succinil-CoA (via propionil-CoA).",
+  "note": "Sbobina di Biochimica II, p. 257: la metionina è inclusa tra gli amminoacidi a catena ramificata. I ramificati sono valina, leucina e isoleucina, come dice la stessa sbobina a p. 262.",
+  "fixed": false
+ },
+ {
+  "id": "m8s-13",
+  "topic": "m8-scheletri",
+  "level": "h",
+  "page": "255",
+  "src": "Biochimica II",
+  "q": "Perché il ciclo glucosio-alanina è vantaggioso rispetto al solo ciclo di Cori?",
+  "opts": [
+   "Porta al fegato anche l'azoto, destinato al ciclo dell'urea",
+   "Produce più ATP nel muscolo perché l'alanina non richiede NADH per formarsi",
+   "Non richiede la gluconeogenesi epatica perché l'alanina diventa direttamente glucosio",
+   "Funziona anche senza fegato, perché il rene può usare l'alanina",
+   "Evita la glicolisi muscolare, che di notte è completamente spenta"
+  ],
+  "ans": 0,
+  "why": "Il ciclo di Cori riporta solo carbonio (lattato); quello dell'alanina anche i gruppi amminici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-01",
+  "topic": "m8-difetti",
+  "level": "f",
+  "page": "260",
+  "src": "Biochimica II",
+  "q": "Quale enzima è carente nella forma più frequente di fenilchetonuria?",
+  "opts": [
+   "Fenilalanina idrossilasi",
+   "Tirosina idrossilasi",
+   "Omogentisato 1,2-diossigenasi",
+   "Tirosinasi",
+   "Fenilalanina transaminasi"
+  ],
+  "ans": 0,
+  "why": "Altre cause: difetti di sintesi o di rigenerazione della tetraidrobiopterina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-02",
+  "topic": "m8-difetti",
+  "level": "f",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Che cosa caratterizza l'alcaptonuria?",
+  "opts": [
+   "Urine scure e artrite delle grandi articolazioni",
+   "Urine con odore di sciroppo d'acero e ritardo mentale",
+   "Calcoli renali di cistina e coliche ricorrenti",
+   "Fotosensibilità e sintomi simili alla pellagra",
+   "Assenza di melanina in cute, capelli e occhi"
+  ],
+  "ans": 0,
+  "why": "Manca l'omogentisato 1,2-diossigenasi, nella degradazione di fenilalanina e tirosina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-03",
+  "topic": "m8-difetti",
+  "level": "f",
+  "page": "262",
+  "src": "Biochimica II",
+  "q": "Quali amminoacidi sono coinvolti nella malattia delle urine a sciroppo d'acero?",
+  "opts": [
+   "Valina, leucina e isoleucina",
+   "Fenilalanina e tirosina",
+   "Cistina, lisina, arginina e ornitina",
+   "Triptofano e istidina",
+   "Metionina e cisteina"
+  ],
+  "ans": 0,
+  "why": "Manca il complesso deidrogenasico degli α-chetoacidi a catena ramificata.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-04",
+  "topic": "m8-difetti",
+  "level": "m",
+  "page": "260",
+  "src": "Biochimica II",
+  "q": "Perché nella PKU la tirosina diventa essenziale?",
+  "opts": [
+   "Perché la tirosina si forma solo dalla fenilalanina",
+   "Perché la tirosina viene tutta trasformata in fenilpiruvato nella PKU",
+   "Perché la tirosina viene eliminata con le urine insieme al fenillattato",
+   "Perché la tirosina inibisce la fenilalanina idrossilasi residua",
+   "Perché la tirosina serve a sintetizzare la tetraidrobiopterina"
+  ],
+  "ans": 0,
+  "why": "Dalla fenilalanina si ricava tirosina, non il contrario.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-05",
+  "topic": "m8-difetti",
+  "level": "m",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Quali metaboliti si accumulano nelle urine nella PKU?",
+  "opts": [
+   "Fenilpiruvato e fenillattato",
+   "Omogentisato e benzochinone acetato",
+   "α-chetoacidi a catena ramificata",
+   "Cistina e ornitina",
+   "Acido urico e xantina"
+  ],
+  "ans": 0,
+  "why": "La fenilalanina in eccesso viene transaminata a fenilpiruvato, che dà fenillattato e fenilacetato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-06",
+  "topic": "m8-difetti",
+  "level": "m",
+  "page": "262",
+  "src": "Biochimica II",
+  "q": "Perché un difetto della E3 del complesso degli α-chetoacidi ramificati è più grave di uno della E1?",
+  "opts": [
+   "Perché la E3 è in comune con PDH e α-chetoglutarato DH",
+   "Perché la E3 contiene la TPP, che è necessaria anche alla transchetolasi",
+   "Perché la E3 è l'unico enzima che riconosce la leucina",
+   "Perché la E3 è codificata dal DNA mitocondriale",
+   "Perché senza E3 si accumula ammoniaca nel fegato"
+  ],
+  "ans": 0,
+  "why": "E1 riconosce gli α-chetoacidi ramificati, E2 il loro acile; la E3 (diidrolipoil deidrogenasi) è la stessa nei tre complessi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-07",
+  "topic": "m8-difetti",
+  "level": "a",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Perché lo screening della PKU si fa nei primi giorni di vita, anche se alla nascita il bambino può sembrare sano?",
+  "opts": [
+   "Perché prima della nascita la fenilalanina in eccesso la smaltisce la madre",
+   "Perché la fenilalanina idrossilasi si inattiva solo dopo alcune settimane di vita",
+   "Perché alla nascita il bambino non ha ancora proteine plasmatiche che contengano fenilalanina",
+   "Perché i sintomi neurologici compaiono solo dopo la mielinizzazione completa",
+   "Perché il latte materno contiene un inibitore della fenilalanina idrossilasi"
+  ],
+  "ans": 0,
+  "why": "La dieta controllata va mantenuta tutta la vita: anche da adulti la fenilalanina alta abbassa il quoziente intellettivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-08",
+  "topic": "m8-difetti",
+  "level": "a",
+  "page": "259",
+  "src": "Biochimica II",
+  "q": "Perché la malattia di Hartnup dà sintomi simili alla pellagra?",
+  "opts": [
+   "Si assorbe poco triptofano, da cui si forma una parte della niacina",
+   "Manca la fenilalanina idrossilasi e la tirosina non forma niacina",
+   "Il triptofano si accumula e inibisce l'assorbimento intestinale della niacina",
+   "Manca il trasportatore della niacina nel rene e nell'intestino",
+   "Il triptofano viene tutto trasformato in serotonina e ne resta poco per le proteine"
+  ],
+  "ans": 0,
+  "why": "Si cura dando nicotinammide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-09",
+  "topic": "m8-difetti",
+  "level": "a",
+  "page": "259",
+  "src": "Biochimica II",
+  "q": "Nella cistinuria, quali amminoacidi non vengono riassorbiti nel tubulo prossimale?",
+  "opts": [
+   "Cistina e amminoacidi basici",
+   "Solo la cistina",
+   "Amminoacidi neutri, triptofano compreso",
+   "Amminoacidi ramificati",
+   "Amminoacidi acidi (aspartato, glutammato)"
+  ],
+  "ans": 0,
+  "why": "La cistina è poco solubile e precipita in calcoli che ostruiscono le vie urinarie.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8x-10",
+  "topic": "m8-difetti",
+  "level": "l",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Quale enzima della sintesi della melanina manca nell'albinismo?",
+  "opts": [
+   "Tirosinasi",
+   "Fenilalanina idrossilasi",
+   "Tirosina idrossilasi",
+   "Dopa decarbossilasi",
+   "Omogentisato ossidasi"
+  ],
+  "ans": 0,
+  "why": "La tirosinasi dei melanociti ossida la tirosina a DOPA e dopachinone.",
+  "note": "Sbobina di Biochimica II, p. 261: l'enzima è chiamato «tirosina monoossigenasi» e l'albinismo è attribuito alla «via di degradazione della fenilalanina». L'enzima è la tirosinasi, e la melanina si forma in una via di sintesi, non di degradazione.",
+  "fixed": false
+ },
+ {
+  "id": "m8x-11",
+  "topic": "m8-difetti",
+  "level": "l",
+  "page": "260",
+  "src": "Biochimica II",
+  "q": "Quale enzima rigenera la tetraidrobiopterina dopo la reazione della fenilalanina idrossilasi?",
+  "opts": [
+   "Diidropteridina reduttasi",
+   "Diidrofolato reduttasi",
+   "Biopterina sintasi",
+   "Pterina-4a-carbinolammina deidratasi da sola",
+   "Tetraidrofolato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "La riduzione usa NAD(P)H. La BH₄ si sintetizza dal GTP: non è una vitamina.",
+  "note": "Sbobina di Biochimica II, p. 260: l'enzima è chiamato «diidrobiopterina reduttasi» e il coenzima indicato è il NADPH. Il nome corretto è diidropteridina reduttasi; nel Lehninger usa NADH.",
+  "fixed": false
+ },
+ {
+  "id": "m8x-12",
+  "topic": "m8-difetti",
+  "level": "h",
+  "page": "260",
+  "src": "Biochimica II",
+  "q": "La sbobina dice che il fumarato prodotto dalla degradazione della fenilalanina «può essere considerato chetogenetico». Che cosa è corretto?",
+  "opts": [
+   "Il fumarato è glucogenetico; chetogenetico è l'acetoacetato",
+   "Il fumarato è chetogenetico: diventa acetil-CoA attraverso la fumarasi",
+   "Il fumarato non è né glucogenetico né chetogenetico, perché viene escreto",
+   "Il fumarato è chetogenetico perché nel fegato forma direttamente acetoacetato",
+   "Il fumarato è glucogenetico solo nel rene, chetogenetico nel fegato"
+  ],
+  "ans": 0,
+  "why": "Per questo la fenilalanina è sia glucogenetica sia chetogenetica.",
+  "note": "Sbobina di Biochimica II, p. 260: il fumarato è definito chetogenetico perché forma ossalacetato. Formare ossalacetato significa proprio essere glucogenetico.",
+  "fixed": false
+ },
+ {
+  "id": "m8x-13",
+  "topic": "m8-difetti",
+  "level": "h",
+  "page": "262",
+  "src": "Biochimica II",
+  "q": "In quali complessi enzimatici si trova la tiamina pirofosfato, secondo la sbobina?",
+  "opts": [
+   "PDH, α-chetoglutarato DH, BCKDH e transchetolasi",
+   "Piruvato DH, piruvato carbossilasi, propionil-CoA carbossilasi e transchetolasi",
+   "Piruvato DH, glutammato DH, α-chetoglutarato DH e transaldolasi",
+   "Solo piruvato DH e α-chetoglutarato DH",
+   "Transaminasi, decarbossilasi e glicogeno fosforilasi"
+  ],
+  "ans": 0,
+  "why": "Le carbossilasi usano biotina; transaminasi, decarbossilasi e fosforilasi usano PLP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-01",
+  "topic": "m8-folato",
+  "level": "f",
+  "page": "263",
+  "src": "Biochimica II",
+  "q": "Da quali tre parti è formato l'acido folico?",
+  "opts": [
+   "Pteridina, PABA, glutammato",
+   "Pteridina, ribosio, adenina",
+   "Pirimidina, tiazolo, pirofosfato",
+   "Isoallossazina, ribitolo, fosfato",
+   "Corrina, cobalto, deossiadenosina"
+  ],
+  "ans": 0,
+  "why": "Non sappiamo sintetizzare il PABA: il folato va assunto con la dieta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-02",
+  "topic": "m8-folato",
+  "level": "f",
+  "page": "264",
+  "src": "Biochimica II",
+  "q": "Quale enzima forma il tetraidrofolato?",
+  "opts": [
+   "Diidrofolato reduttasi (NADPH)",
+   "Timidilato sintasi",
+   "Serina idrossimetiltransferasi",
+   "Metionina sintasi",
+   "Folilpoliglutammato sintetasi"
+  ],
+  "ans": 0,
+  "why": "THF è il donatore di unità monocarboniose; gli azoti attivi sono N5 e N10.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-03",
+  "topic": "m8-folato",
+  "level": "f",
+  "page": "268",
+  "src": "Biochimica II",
+  "q": "Quale vitamina serve alla metionina sintasi?",
+  "opts": [
+   "Vitamina B12",
+   "Vitamina B6",
+   "Vitamina C",
+   "Biotina",
+   "Riboflavina"
+  ],
+  "ans": 0,
+  "why": "È la seconda reazione B12-dipendente della sbobina, dopo la metilmalonil-CoA mutasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-04",
+  "topic": "m8-folato",
+  "level": "m",
+  "page": "264",
+  "src": "Biochimica II",
+  "q": "Perché la cellula aggiunge fino a circa 10 glutammati al folato?",
+  "opts": [
+   "Le cariche negative lo trattengono nella cellula",
+   "I glutammati sono il gruppo che trasporta le unità monocarboniose",
+   "I glutammati legano la vitamina B12 per la metionina sintasi",
+   "Serve a trasportare il folato nel nucleo per la sintesi del DNA",
+   "Serve a proteggere il folato dalla diidrofolato reduttasi"
+  ],
+  "ans": 0,
+  "why": "È uno dei motivi per cui il fabbisogno è basso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-05",
+  "topic": "m8-folato",
+  "level": "m",
+  "page": "265",
+  "src": "Biochimica II",
+  "q": "Come si carica il THF con l'unità monocarboniosa a partire dalla serina?",
+  "opts": [
+   "La serina idrossimetiltransferasi dà glicina + N5,N10-metilen-THF",
+   "La serina idrossilasi trasferisce un metile: serina → alanina + N5-metil-THF",
+   "La serina transaminasi trasferisce un formile: serina → piruvato + N10-formil-THF",
+   "La serina deidratasi trasferisce un CH: serina → piruvato + N5,N10-metenil-THF",
+   "La serina decarbossilasi trasferisce CO₂: serina → etanolammina + formil-THF"
+  ],
+  "ans": 0,
+  "why": "Anche l'enzima di scissione della glicina carica il THF come metilen-THF, liberando NH₄⁺ e CO₂.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-06",
+  "topic": "m8-folato",
+  "level": "m",
+  "page": "267",
+  "src": "Biochimica II",
+  "q": "Come si forma la S-adenosilmetionina?",
+  "opts": [
+   "Metionina + ATP, con perdita di tutti e tre i fosfati",
+   "Metionina + ADP: l'adenosina si lega al carbossile e si libera un fosfato",
+   "Omocisteina + N5-metil-THF: il metile si lega allo zolfo",
+   "Metionina + acetil-CoA: l'acetile si lega all'azoto",
+   "Cisteina + ATP: l'adenosina si lega al gruppo tiolico"
+  ],
+  "ans": 0,
+  "why": "Dopo aver donato il metile diventa S-adenosilomocisteina; un'idrolasi stacca l'adenosina e resta l'omocisteina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-07",
+  "topic": "m8-folato",
+  "level": "m",
+  "page": "268",
+  "src": "Biochimica II",
+  "q": "Che cosa catalizza la cistationina β-sintasi?",
+  "opts": [
+   "Omocisteina + serina → cistationina",
+   "Cistationina → cisteina + α-chetobutirrato",
+   "Omocisteina + N5-metil-THF → metionina",
+   "Metionina + ATP → S-adenosilmetionina",
+   "Cisteina + glutammato → γ-glutamilcisteina"
+  ],
+  "ans": 0,
+  "why": "Poi la cistationina liasi (PLP) libera cisteina, α-chetobutirrato e NH₄⁺. La carenza della sintasi dà omocistinuria.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-08",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Che cos'è la «trappola dei folati»?",
+  "opts": [
+   "Senza B12 il folato resta bloccato come N5-metil-THF",
+   "Senza folato la B12 si accumula come metilcobalamina e non può essere usata dalla mutasi",
+   "Senza B6 la serina non carica il THF e il folato resta come diidrofolato",
+   "L'eccesso di folato satura la diidrofolato reduttasi e blocca la sintesi del DNA",
+   "Il folato viene intrappolato nel fegato legato alla proteina R e non circola"
+  ],
+  "ans": 0,
+  "why": "La metilen-THF reduttasi è irreversibile: la carenza di B12 diventa una carenza funzionale di folato, con anemia megaloblastica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-09",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Perché trattare con solo folato un'anemia megaloblastica da carenza di B12 è pericoloso?",
+  "opts": [
+   "Corregge l'anemia ma non ferma i danni neurologici",
+   "Peggiora l'anemia perché il folato compete con la B12 per il fattore intrinseco",
+   "Causa omocistinuria perché il folato inibisce la cistationina β-sintasi",
+   "Blocca la sintesi del DNA perché il folato inibisce la timidilato sintasi",
+   "Non ha effetti, perché senza B12 il folato non viene assorbito"
+  ],
+  "ans": 0,
+  "why": "L'anemia della B12 si chiama perniciosa proprio per i sintomi neuropsichiatrici (atassia, perdita di sensibilità).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-10",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "269",
+  "src": "Biochimica II",
+  "q": "Quali carenze possono far aumentare l'omocisteina plasmatica?",
+  "opts": [
+   "B12, folato o cistationina β-sintasi",
+   "Vitamina C, vitamina D o ferro",
+   "Biotina, tiamina o niacina",
+   "Vitamina K, vitamina E o zinco",
+   "Ferro, rame o vitamina A"
+  ],
+  "ans": 0,
+  "why": "B12 e folato servono alla rimetilazione a metionina; la cistationina β-sintasi alla trasformazione in cisteina (con B6).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-11",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Perché la carenza di folato in gravidanza aumenta il rischio di spina bifida?",
+  "opts": [
+   "Senza folato si sintetizza poco DNA e la divisione cellulare rallenta",
+   "Il folato serve alla sintesi del collagene, necessario alla chiusura del tubo neurale",
+   "Il folato serve alla mielinizzazione dei neuroni del midollo spinale",
+   "Il folato serve all'assorbimento del calcio per le vertebre fetali",
+   "Il folato serve a produrre la melatonina che regola lo sviluppo del midollo"
+  ],
+  "ans": 0,
+  "why": "Per questo alle donne in gravidanza si dà un integratore di folato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-12",
+  "topic": "m8-folato",
+  "level": "l",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Quale mutazione frequente della metilen-THF reduttasi descrive la sbobina?",
+  "opts": [
+   "Alanina → valina, che facilita la perdita del FAD",
+   "Glutammato → valina, che causa polimerizzazione",
+   "Glicina → serina, che blocca il NADPH",
+   "Arginina → cisteina, che forma ponti disolfuro",
+   "Valina → alanina, che aumenta la Km per il folato"
+  ],
+  "ans": 0,
+  "why": "È un polimorfismo diffuso; un apporto maggiore di folato stabilizza l'enzima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-13",
+  "topic": "m8-folato",
+  "level": "l",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Quali proteine servono all'assorbimento della vitamina B12?",
+  "opts": [
+   "Proteina R e fattore intrinseco",
+   "Transferrina e ferritina",
+   "Albumina e transtiretina",
+   "Fattore intrinseco e ceruloplasmina",
+   "Proteina R e lattoferrina"
+  ],
+  "ans": 0,
+  "why": "La quantità di fattore intrinseco limita l'assorbimento; le scorte epatiche bastano per circa tre anni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8f-14",
+  "topic": "m8-folato",
+  "level": "h",
+  "page": "264",
+  "src": "Biochimica II",
+  "q": "Come agiscono i sulfamidici?",
+  "opts": [
+   "Bloccano la sintesi del folato, che i batteri producono da sé",
+   "Inibiscono la diidrofolato reduttasi umana e batterica allo stesso modo",
+   "Inibiscono la timidilato sintasi batterica legandosi al dUMP",
+   "Bloccano l'assorbimento intestinale del folato alimentare",
+   "Sequestrano la vitamina B12 necessaria ai batteri"
+  ],
+  "ans": 0,
+  "why": "Noi assumiamo il folato con la dieta; i batteri devono sintetizzarlo.",
+  "note": "La sbobina dice che i sulfamidici inibiscono la sintesi del PABA. Più precisamente, sono analoghi del PABA e inibiscono la diidropteroato sintasi, l'enzima che lo incorpora nel folato.",
+  "fixed": false
+ },
+ {
+  "id": "m8f-15",
+  "topic": "m8-folato",
+  "level": "h",
+  "page": "263, 271",
+  "src": "Biochimica II",
+  "q": "Quale confronto tra folato e vitamina B12 è coerente con la sbobina?",
+  "opts": [
+   "Folato: da vegetali, termolabile. B12: da batteri, serve il fattore intrinseco",
+   "Folato: solo da carne, termostabile. B12: sintetizzata dalle piante, assorbita senza proteine",
+   "Folato: sintetizzato dall'uomo dal PABA. B12: sintetizzata dall'uomo dal cobalto",
+   "Folato: assorbito con il fattore intrinseco. B12: trattenuta con la poliglutammazione",
+   "Folato: fabbisogno di grammi. B12: fabbisogno di milligrammi"
+  ],
+  "ans": 0,
+  "why": "Fabbisogni nell'ordine dei microgrammi per entrambe.",
+  "note": "La sbobina indica un fabbisogno di folato di circa 200 µg/die; le raccomandazioni attuali per l'adulto sono circa 400 µg/die.",
+  "fixed": false
+ },
+ {
+  "id": "m8v-01",
+  "topic": "m8-vie",
+  "level": "f",
+  "page": "273",
+  "src": "Biochimica II",
+  "q": "Da quale amminoacido derivano le catecolammine?",
+  "opts": [
+   "Tirosina",
+   "Triptofano",
+   "Istidina",
+   "Glutammato",
+   "Arginina"
+  ],
+  "ans": 0,
+  "why": "Tirosina → L-DOPA → dopamina → noradrenalina → adrenalina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-02",
+  "topic": "m8-vie",
+  "level": "f",
+  "page": "274",
+  "src": "Biochimica II",
+  "q": "Quale amminoacido dà il GABA?",
+  "opts": [
+   "Glutammato",
+   "Glicina",
+   "Aspartato",
+   "Glutammina",
+   "Alanina"
+  ],
+  "ans": 0,
+  "why": "Glutammato decarbossilasi (PLP). Il GABA è il principale neurotrasmettitore inibitorio del SNC.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-03",
+  "topic": "m8-vie",
+  "level": "f",
+  "page": "274",
+  "src": "Biochimica II",
+  "q": "Da quale amminoacido derivano serotonina e melatonina?",
+  "opts": [
+   "Triptofano",
+   "Tirosina",
+   "Fenilalanina",
+   "Istidina",
+   "Serina"
+  ],
+  "ans": 0,
+  "why": "Triptofano → 5-idrossitriptofano → serotonina → N-acetilserotonina → melatonina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-04",
+  "topic": "m8-vie",
+  "level": "m",
+  "page": "273",
+  "src": "Biochimica II",
+  "q": "Quali cofattori servono nella sintesi dell'adrenalina, nell'ordine delle reazioni?",
+  "opts": [
+   "BH₄ e O₂ → PLP → ascorbato e O₂ → S-adenosilmetionina",
+   "PLP → BH₄ e O₂ → S-adenosilmetionina → ascorbato e O₂",
+   "Ascorbato e O₂ → PLP → BH₄ e O₂ → S-adenosilmetionina",
+   "BH₄ e O₂ → ascorbato e O₂ → PLP → N5-metil-THF",
+   "NADPH → PLP → FAD → S-adenosilmetionina"
+  ],
+  "ans": 0,
+  "why": "Tirosina idrossilasi, dopa decarbossilasi, dopamina β-idrossilasi, feniletanolammina N-metiltransferasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-05",
+  "topic": "m8-vie",
+  "level": "m",
+  "page": "273",
+  "src": "Biochimica II",
+  "q": "Dove si ferma la sintesi delle catecolammine nei diversi tessuti?",
+  "opts": [
+   "SNC: dopamina; ortosimpatico: noradrenalina; midollare del surrene: adrenalina",
+   "SNC: adrenalina; ortosimpatico: dopamina; midollare del surrene: noradrenalina",
+   "SNC: noradrenalina; ortosimpatico: adrenalina; midollare del surrene: dopamina",
+   "Ovunque fino all'adrenalina, che poi viene demetilata nei tessuti",
+   "SNC: L-DOPA; ortosimpatico: dopamina; corticale del surrene: adrenalina"
+  ],
+  "ans": 0,
+  "why": "La metilazione noradrenalina → adrenalina avviene nella midollare del surrene.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-06",
+  "topic": "m8-vie",
+  "level": "m",
+  "page": "266",
+  "src": "Biochimica II",
+  "q": "Che cosa decide quale legame del carbonio α viene rotto da un enzima a PLP?",
+  "opts": [
+   "La proteina, che orienta perpendicolare all'anello del PLP il legame da rompere",
+   "Il pH del compartimento in cui si trova l'enzima",
+   "La forma del PLP: piridossale per le decarbossilasi, piridossammina per le transaminasi",
+   "Il numero di gruppi fosfato legati al piridossale",
+   "Il metallo legato al sito attivo dell'enzima"
+  ],
+  "ans": 0,
+  "why": "Transaminasi: H del Cα; decarbossilasi: COO⁻; serina idrossimetiltransferasi: catena laterale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-07",
+  "topic": "m8-vie",
+  "level": "a",
+  "page": "274",
+  "src": "Biochimica II",
+  "q": "Perché un inibitore suicida della GABA transaminasi riduce le crisi epilettiche?",
+  "opts": [
+   "Blocca la degradazione del GABA, che così aumenta",
+   "Blocca la sintesi del glutammato, riducendo l'eccitazione neuronale",
+   "Aumenta la sintesi di serotonina a partire dal triptofano",
+   "Inibisce la glutammato decarbossilasi e riduce il GABA in eccesso",
+   "Attiva i recettori del GABA legandosi al loro sito allosterico"
+  ],
+  "ans": 0,
+  "why": "L'epilessia può dipendere da poca sintesi o da troppa degradazione di GABA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-08",
+  "topic": "m8-vie",
+  "level": "a",
+  "page": "275",
+  "src": "Biochimica II",
+  "q": "Come è stato sfruttato l'enzima ornitina decarbossilasi contro la malattia del sonno?",
+  "opts": [
+   "Un inibitore suicida lo blocca in entrambi, ma nell'uomo l'enzima si rinnova in fretta",
+   "Un inibitore competitivo lo blocca solo nel parassita, perché l'enzima umano non lega l'ornitina",
+   "Un attivatore lo stimola nel parassita, che accumula poliammine tossiche e muore",
+   "Un anticorpo lo neutralizza nel sangue, dove il parassita lo secerne",
+   "Un analogo dell'ornitina lo blocca nell'uomo, privando il parassita delle poliammine dell'ospite"
+  ],
+  "ans": 0,
+  "why": "Senza poliammine (spermidina, spermina) il parassita non si divide. È un esempio di come l'emivita delle proteine guida la farmacologia.",
+  "note": "Sbobina di Biochimica II, p. 275: si parla dell'ornitina decarbossilasi «della mosca». L'enzima a emivita lunga è quello del parassita (il tripanosoma), che la mosca trasmette; più avanti la sbobina stessa parla del parassita.",
+  "fixed": false
+ },
+ {
+  "id": "m8v-09",
+  "topic": "m8-vie",
+  "level": "a",
+  "page": "276",
+  "src": "Biochimica II",
+  "q": "Come si forma la creatina?",
+  "opts": [
+   "Glicina + arginina → guanidinoacetato, poi metilazione con SAM",
+   "Glicina + succinil-CoA → aminolevulinato, poi condensazione con arginina",
+   "Arginina + ornitina → citrullina, poi metilazione con N5-metil-THF",
+   "Serina + metionina → cistationina, poi fosforilazione con ATP",
+   "Glutammina + aspartato → carbamil aspartato, poi metilazione"
+  ],
+  "ans": 0,
+  "why": "La creatina chinasi la fosforila vicino al mitocondrio, usando l'ATP appena uscito dalla traslocasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-10",
+  "topic": "m8-vie",
+  "level": "l",
+  "page": "273",
+  "src": "Biochimica II",
+  "q": "Quale vitamina serve alla dopamina β-idrossilasi?",
+  "opts": [
+   "Vitamina C",
+   "Vitamina B6",
+   "Vitamina B12",
+   "Vitamina E",
+   "Vitamina K"
+  ],
+  "ans": 0,
+  "why": "Dopamina + O₂ + ascorbato → noradrenalina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-11",
+  "topic": "m8-vie",
+  "level": "l",
+  "page": "276",
+  "src": "Biochimica II",
+  "q": "Quali molecole si condensano nel primo passaggio della sintesi dell'eme?",
+  "opts": [
+   "Succinil-CoA e glicina",
+   "Acetil-CoA e glicina",
+   "Succinil-CoA e serina",
+   "Glicina e arginina",
+   "Fumarato e glutammato"
+  ],
+  "ans": 0,
+  "why": "Si forma δ-aminolevulinato, poi porfobilinogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-12",
+  "topic": "m8-vie",
+  "level": "l",
+  "page": "275",
+  "src": "Biochimica II",
+  "q": "Da quale amminoacido derivano le poliammine spermidina e spermina?",
+  "opts": [
+   "Ornitina",
+   "Lisina",
+   "Arginina",
+   "Metionina",
+   "Glutammina"
+  ],
+  "ans": 0,
+  "why": "Ornitina decarbossilasi → putrescina; la SAM decarbossilata fornisce i gruppi amminopropilici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-13",
+  "topic": "m8-vie",
+  "level": "h",
+  "page": "274–275",
+  "src": "Biochimica II",
+  "q": "Quale affermazione sulle ammine biogene è corretta secondo la sbobina?",
+  "opts": [
+   "Istamina, GABA e serotonina si formano per decarbossilazione",
+   "La melatonina si forma dalla serotonina per idrossilazione con BH₄",
+   "L'istamina deriva dal triptofano per decarbossilazione",
+   "La serotonina viene prodotta solo nel SNC, non in periferia",
+   "Il GABA si forma dal glutammato per transaminazione"
+  ],
+  "ans": 0,
+  "why": "La melatonina si forma per acetilazione e metilazione (SAM); la serotonina è prodotta anche dalle piastrine; l'istamina deriva dall'istidina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m8v-14",
+  "topic": "m8-vie",
+  "level": "h",
+  "page": "278",
+  "src": "Biochimica II",
+  "q": "Oltre al ruolo metabolico, quale funzione regolatoria del rapporto acetil-CoA/CoA ricorda la sbobina?",
+  "opts": [
+   "Influenza l'acetilazione degli istoni e quindi l'espressione genica",
+   "Controlla la fosforilazione dei recettori tirosina chinasici",
+   "Regola la velocità della catena respiratoria legandosi al complesso I",
+   "Determina l'emivita delle proteine tramite il residuo N-terminale",
+   "Regola il pH del lisosoma attivando la pompa protonica"
+  ],
+  "ans": 0,
+  "why": "Un metabolita può fare da segnale per la regolazione del metabolismo stesso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-01",
+  "topic": "m9-neuroipofisi",
+  "level": "f",
+  "page": "279",
+  "src": "Biochimica II",
+  "q": "Quali ormoni rilascia la neuroipofisi?",
+  "opts": [
+   "ADH e ossitocina",
+   "GH e prolattina",
+   "ACTH e TSH",
+   "FSH e LH",
+   "TRH e CRH"
+  ],
+  "ans": 0,
+  "why": "Sono sintetizzati nei neuroni ipotalamici e liberati dagli assoni nella neuroipofisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-02",
+  "topic": "m9-neuroipofisi",
+  "level": "f",
+  "page": "279–280",
+  "src": "Biochimica II",
+  "q": "Che cosa hanno in comune vasopressina e ossitocina?",
+  "opts": [
+   "Sono nonapeptidi con un ponte disolfuro e differiscono per due residui",
+   "Sono glicoproteine con una subunità α comune e una β specifica",
+   "Sono derivati della tirosina e agiscono su recettori nucleari",
+   "Sono steroidi a 21 atomi di carbonio prodotti dalla corticale",
+   "Sono tripeptidi modificati alle estremità per resistere alle peptidasi"
+  ],
+  "ans": 0,
+  "why": "Hanno struttura primaria molto simile: i recettori distinguono i due residui diversi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-03",
+  "topic": "m9-neuroipofisi",
+  "level": "f",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "Quale acquaporina viene portata sulla membrana del tubulo dalla vasopressina?",
+  "opts": [
+   "Acquaporina 2",
+   "Acquaporina 3",
+   "Acquaporina 1",
+   "Acquaporina 4",
+   "Acquagliceroporina 7"
+  ],
+  "ans": 0,
+  "why": "L'AQP2 sta in vescicole; l'AQP3 è costitutiva sulla membrana basolaterale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-04",
+  "topic": "m9-neuroipofisi",
+  "level": "m",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "Come sono fatte le acquaporine?",
+  "opts": [
+   "Omotetrameri di subunità da circa 28 kDa",
+   "Monomeri da 12 eliche, come i GLUT",
+   "Dimeri di subunità da 250 kDa, come l'acido grasso sintasi",
+   "Eterotrimeri con una subunità α che lega il GTP",
+   "Pentameri attorno a un poro carico negativamente"
+  ],
+  "ans": 0,
+  "why": "Ne esistono 12–15 isoforme: alcune trasportano anche glicerolo (acquagliceroporine) o urea.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-05",
+  "topic": "m9-neuroipofisi",
+  "level": "m",
+  "page": "282",
+  "src": "Biochimica II",
+  "q": "Quali stimoli aumentano la secrezione di vasopressina?",
+  "opts": [
+   "Osmolarità plasmatica alta e pressione arteriosa bassa",
+   "Calo dell'osmolarità plasmatica e aumento della volemia",
+   "Aumento della glicemia e della concentrazione di insulina",
+   "Calo della calcemia e aumento del paratormone",
+   "Aumento del cortisolo e calo della concentrazione di ACTH"
+  ],
+  "ans": 0,
+  "why": "Gli osmocettori ipotalamici sentono l'osmolarità; se la vasopressina non basta compare la sete.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-06",
+  "topic": "m9-neuroipofisi",
+  "level": "m",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "Che cos'è la neurofisina?",
+  "opts": [
+   "Il frammento che accompagna l'ormone lungo l'assone",
+   "Il recettore della vasopressina sul tubulo renale",
+   "L'enzima che forma il ponte disolfuro dell'ossitocina",
+   "La proteasi che taglia la pre-pro-vasopressina nel nucleo",
+   "Il canale che fa uscire l'ormone dalla terminazione nervosa"
+  ],
+  "ans": 0,
+  "why": "Dalla pre-pro-forma si ottengono l'ormone, la neurofisina e un glicopeptide.",
+  "note": "Sbobina di Biochimica II, p. 281: c'è scritto che la glicoproteina deriva dalla pre-pro-ossitocina. Nei testi di riferimento il glicopeptide C-terminale (copeptina) deriva dalla pre-pro-vasopressina.",
+  "fixed": false
+ },
+ {
+  "id": "m9n-07",
+  "topic": "m9-neuroipofisi",
+  "level": "a",
+  "page": "282",
+  "src": "Biochimica II",
+  "q": "Una ragazza dopo un trauma cranico urina moltissimo, con urine diluite e glicemia normale. Che cosa è più probabile?",
+  "opts": [
+   "Diabete insipido, per danno alla neuroipofisi",
+   "Diabete mellito di tipo 1, per danno al pancreas",
+   "Iperaldosteronismo, per danno alla corticale",
+   "Sindrome da inappropriata secrezione di ADH",
+   "Ipertiroidismo, per danno all'adenoipofisi"
+  ],
+  "ans": 0,
+  "why": "Senza vasopressina manca il riassorbimento facoltativo di acqua. «Insipido» perché le urine non sono dolci.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-08",
+  "topic": "m9-neuroipofisi",
+  "level": "a",
+  "page": "282",
+  "src": "Biochimica II",
+  "q": "Quale di questi meccanismi non causa diabete insipido?",
+  "opts": [
+   "Eccesso di acquaporina 2 in membrana",
+   "Mancata produzione di vasopressina",
+   "Mancata secrezione di vasopressina",
+   "Mutazione del recettore della vasopressina",
+   "Difetto funzionale dell'acquaporina 2"
+  ],
+  "ans": 0,
+  "why": "Lo schema vale per ogni ormone: produzione, secrezione, recettore, trasduzione, effettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-09",
+  "topic": "m9-neuroipofisi",
+  "level": "a",
+  "page": "288",
+  "src": "Biochimica II",
+  "q": "Quali secondi messaggeri usano vasopressina (sul rene) e ossitocina?",
+  "opts": [
+   "Vasopressina cAMP; ossitocina IP₃/DAG",
+   "Vasopressina IP₃/DAG; ossitocina cAMP",
+   "Entrambe cGMP",
+   "Entrambe JAK/STAT",
+   "Vasopressina Ras/MAPK; ossitocina cAMP"
+  ],
+  "ans": 0,
+  "why": "L'ossitocina contrae la muscolatura liscia con il Ca²⁺ liberato dall'IP₃.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-10",
+  "topic": "m9-neuroipofisi",
+  "level": "l",
+  "page": "282",
+  "src": "Biochimica II",
+  "q": "Sopra quale glicemia indicativa compare glicosuria nel diabete mellito?",
+  "opts": [
+   "Circa 180 mg/dl",
+   "Circa 80 mg/dl",
+   "Circa 126 mg/dl",
+   "Circa 400 mg/dl",
+   "Circa 18 mg/dl"
+  ],
+  "ans": 0,
+  "why": "È la soglia renale: il glucosio nelle urine trascina acqua (poliuria).",
+  "note": "Sbobina di Biochimica II, p. 282: c'è scritto «180 mg/L». L'unità corretta è mg/dl (180 mg/L sarebbe un'ipoglicemia grave).",
+  "fixed": false
+ },
+ {
+  "id": "m9n-11",
+  "topic": "m9-neuroipofisi",
+  "level": "l",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "In quali nuclei ipotalamici si sintetizzano vasopressina e ossitocina secondo la sbobina?",
+  "opts": [
+   "Paraventricolari",
+   "Arcuato",
+   "Soprachiasmatico",
+   "Ventromediale",
+   "Laterale"
+  ],
+  "ans": 0,
+  "why": "Non è nella sbobina, ma si sintetizzano anche nei nuclei sopraottici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9n-12",
+  "topic": "m9-neuroipofisi",
+  "level": "h",
+  "page": "283",
+  "src": "Biochimica II",
+  "q": "Quale effetto dell'ossitocina non è citato dalla sbobina?",
+  "opts": [
+   "Riassorbimento di acqua nel dotto collettore",
+   "Contrazione dell'utero durante il parto",
+   "Eiezione del latte durante l'allattamento",
+   "Aumento della fiducia negli altri",
+   "Facilitazione del trasporto degli spermatozoi"
+  ],
+  "ans": 0,
+  "why": "Il riassorbimento di acqua è della vasopressina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-01",
+  "topic": "m9-adenoipofisi",
+  "level": "f",
+  "page": "279",
+  "src": "Biochimica II",
+  "q": "Quale fattore ipotalamico è un tripeptide modificato alle estremità?",
+  "opts": [
+   "TRH",
+   "GnRH",
+   "CRH",
+   "GHRH",
+   "Somatostatina"
+  ],
+  "ans": 0,
+  "why": "pGlu-His-Pro-NH₂: le modifiche lo proteggono dalle peptidasi. GnRH 10, CRH 41, GHRH 44 residui.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-02",
+  "topic": "m9-adenoipofisi",
+  "level": "f",
+  "page": "284",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi ha l'ormone della crescita?",
+  "opts": [
+   "191",
+   "84",
+   "44",
+   "9",
+   "51"
+  ],
+  "ans": 0,
+  "why": "È un polipeptide dell'adenoipofisi; agisce con JAK/STAT.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-03",
+  "topic": "m9-adenoipofisi",
+  "level": "f",
+  "page": "285",
+  "src": "Biochimica II",
+  "q": "Da quale precursore deriva l'ACTH?",
+  "opts": [
+   "POMC",
+   "Proinsulina",
+   "Tireoglobulina",
+   "Angiotensinogeno",
+   "Pre-pro-vasopressina"
+  ],
+  "ans": 0,
+  "why": "Dalla POMC si ottengono anche β-lipotropina, α-MSH e γ-MSH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-04",
+  "topic": "m9-adenoipofisi",
+  "level": "m",
+  "page": "288",
+  "src": "Biochimica II",
+  "q": "Che cosa hanno in comune TSH, LH e FSH?",
+  "opts": [
+   "Una subunità α identica; la specificità sta nella subunità β",
+   "Una subunità β identica; la specificità sta nella subunità α",
+   "Lo stesso recettore, distinto solo dalla concentrazione",
+   "La stessa sequenza, ma glicosilazioni diverse",
+   "Il fatto di agire tutti con JAK/STAT"
+  ],
+  "ans": 0,
+  "why": "Sono glicoproteine eterodimeriche; le subunità separate non hanno effetto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-05",
+  "topic": "m9-adenoipofisi",
+  "level": "m",
+  "page": "284",
+  "src": "Biochimica II",
+  "q": "Quale effetto metabolico ha l'ormone della crescita?",
+  "opts": [
+   "Iperglicemizzante, anabolico, aumenta l'ossidazione dei grassi",
+   "Ipoglicemizzante, catabolico proteico, aumenta la sintesi dei grassi",
+   "Ipoglicemizzante, anabolico proteico, riduce l'ossidazione dei grassi",
+   "Iperglicemizzante, catabolico proteico, riduce la lipolisi",
+   "Nessun effetto metabolico: agisce solo sulla cartilagine"
+  ],
+  "ans": 0,
+  "why": "Agisce in sinergia con il glucagone sulla glicemia; stimola condrociti e mioblasti (crescita lineare).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-06",
+  "topic": "m9-adenoipofisi",
+  "level": "m",
+  "page": "280",
+  "src": "Biochimica II",
+  "q": "Perché una terapia ormonale prolungata va sospesa gradualmente?",
+  "opts": [
+   "Perché l'ormone esogeno spegne la produzione endogena con il feedback negativo",
+   "Perché l'ormone esogeno si accumula nel tessuto adiposo e viene rilasciato lentamente",
+   "Perché i recettori aumentano di numero e servono dosi crescenti",
+   "Perché il fegato smette di degradare l'ormone dopo alcune settimane",
+   "Perché l'ormone esogeno induce anticorpi che bloccano quello endogeno"
+  ],
+  "ans": 0,
+  "why": "Una sospensione brusca lascia l'organismo senza ormone finché la ghiandola non riprende.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-07",
+  "topic": "m9-adenoipofisi",
+  "level": "m",
+  "page": "288",
+  "src": "Biochimica II",
+  "q": "Quale via di segnalazione usano i fattori di rilascio ipotalamici per liberare gli ormoni ipofisari?",
+  "opts": [
+   "Gq → IP₃/DAG: il Ca²⁺ favorisce l'esocitosi delle vescicole",
+   "Gs → cAMP: la PKA fosforila le vescicole e ne causa la fusione",
+   "Recettore nucleare: il complesso attiva la trascrizione dell'ormone",
+   "JAK/STAT: STAT fosforilato attiva l'esocitosi",
+   "Canale ionico: l'ingresso di Na⁺ depolarizza la cellula"
+  ],
+  "ans": 0,
+  "why": "Il GHRH usa anche la via del cAMP (CREB).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-08",
+  "topic": "m9-adenoipofisi",
+  "level": "a",
+  "page": "288",
+  "src": "Biochimica II",
+  "q": "Quale abbinamento ormone – via di trasduzione è corretto?",
+  "opts": [
+   "Prolattina – JAK/STAT",
+   "ACTH – JAK/STAT",
+   "TSH – IP₃/DAG",
+   "GH – cAMP",
+   "LH – recettore nucleare"
+  ],
+  "ans": 0,
+  "why": "ACTH, TSH, FSH e LH usano cAMP; prolattina e GH usano JAK/STAT (il GH anche Ras).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-09",
+  "topic": "m9-adenoipofisi",
+  "level": "a",
+  "page": "285",
+  "src": "Biochimica II",
+  "q": "Quale effetto viene attribuito all'ACTH nella sbobina ma nei testi di riferimento è proprio della prolattina?",
+  "opts": [
+   "Sviluppo mammario e produzione di latte",
+   "Stimolazione della produzione di cortisolo",
+   "Stimolazione dei melanociti",
+   "Derivazione dalla proopiomelanocortina",
+   "Controllo da parte del CRH ipotalamico"
+  ],
+  "ans": 0,
+  "why": "L'ACTH stimola la corticale (cortisolo) e, come l'α-MSH, i melanociti.",
+  "note": "Sbobina di Biochimica II, p. 285: tra gli effetti dell'ACTH c'è «sviluppo della ghiandola mammaria e produzione di latte». È l'azione tipica della prolattina, non dell'ACTH.",
+  "fixed": false
+ },
+ {
+  "id": "m9a-10",
+  "topic": "m9-adenoipofisi",
+  "level": "a",
+  "page": "279",
+  "src": "Biochimica II",
+  "q": "Quali ormoni non sono controllati dall'asse ipotalamo-ipofisi secondo la sbobina?",
+  "opts": [
+   "Insulina e glucagone, regolati dalla glicemia",
+   "Cortisolo e ormoni tiroidei, regolati dal feedback",
+   "Testosterone ed estradiolo, regolati dalle gonadotropine",
+   "GH e prolattina, regolati dai fattori di rilascio",
+   "Vasopressina e ossitocina, regolate dai nuclei ipotalamici"
+  ],
+  "ans": 0,
+  "why": "L'adrenalina dipende dal SNC ma non dall'ipotalamo; anche paratormone e aldosterone sono fuori dall'asse.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-11",
+  "topic": "m9-adenoipofisi",
+  "level": "l",
+  "page": "279",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi ha il CRH?",
+  "opts": [
+   "41",
+   "3",
+   "10",
+   "44",
+   "191"
+  ],
+  "ans": 0,
+  "why": "TRH 3, GnRH 10, CRH 41, GHRH 44.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-12",
+  "topic": "m9-adenoipofisi",
+  "level": "l",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Perché l'ACTH prodotto dai cheratinociti esposti al sole scurisce la pelle?",
+  "opts": [
+   "Perché stimola i melanociti a produrre melanina",
+   "Perché inibisce la tirosinasi epidermica",
+   "Perché stimola la corticale a produrre cortisolo",
+   "Perché aumenta la vitamina D cutanea",
+   "Perché ossida la melanina già presente"
+  ],
+  "ans": 0,
+  "why": "Per lo stesso motivo nel morbo di Addison autoimmune, con ACTH alto, la pelle si pigmenta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9a-13",
+  "topic": "m9-adenoipofisi",
+  "level": "h",
+  "page": "284",
+  "src": "Biochimica II",
+  "q": "Quale uso dell'ormone della crescita è citato dalla sbobina?",
+  "opts": [
+   "Il GH ricombinante nella carenza e il GH per il latte delle mucche",
+   "Il GH per ridurre la glicemia nei diabetici insulino-resistenti",
+   "Il GH per ridurre la massa muscolare negli atleti con miopatia",
+   "Il GH per bloccare l'acromegalia negli adulti con adenoma",
+   "Il GH per aumentare la sintesi di cortisolo nell'iposurrenalismo"
+  ],
+  "ans": 0,
+  "why": "Carenza → nanismo; eccesso → gigantismo (prima della chiusura delle cartilagini) o acromegalia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-01",
+  "topic": "m9-adipochine",
+  "level": "f",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Quale ormone prodotto dal tessuto adiposo segnala la sazietà?",
+  "opts": [
+   "Leptina",
+   "Grelina",
+   "Neuropeptide Y",
+   "Insulina",
+   "Glucagone"
+  ],
+  "ans": 0,
+  "why": "La produce l'adipocita ricco di trigliceridi; il topo ob/ob, senza leptina, ingrassa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-02",
+  "topic": "m9-adipochine",
+  "level": "f",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Quale peptide ipotalamico stimola l'assunzione di cibo?",
+  "opts": [
+   "Neuropeptide Y",
+   "α-MSH",
+   "Leptina",
+   "CART",
+   "GLP-1"
+  ],
+  "ans": 0,
+  "why": "Leptina e insulina, tramite la POMC e l'α-MSH, ne bloccano la produzione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-03",
+  "topic": "m9-adipochine",
+  "level": "m",
+  "page": "287",
+  "src": "Biochimica II",
+  "q": "Con quale via di segnalazione agisce la leptina?",
+  "opts": [
+   "JAK/STAT",
+   "Gs/cAMP",
+   "Gq/IP₃",
+   "Recettore nucleare",
+   "Canale ionico"
+  ],
+  "ans": 0,
+  "why": "È la stessa via di GH e prolattina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-04",
+  "topic": "m9-adipochine",
+  "level": "m",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Come aumenta la leptina il consumo di energia nel tessuto adiposo?",
+  "opts": [
+   "Attiva il simpatico: la noradrenalina sui β3 accende lipolisi e disaccoppiamento",
+   "Attiva il parasimpatico: l'acetilcolina inibisce la lipasi ormone-sensibile",
+   "Agisce direttamente sull'adipocita bloccando la lipoproteina lipasi",
+   "Inibisce l'insulina nel pancreas, sbloccando la gluconeogenesi",
+   "Aumenta il neuropeptide Y, che stimola la termogenesi da brivido"
+  ],
+  "ans": 0,
+  "why": "Termogenesi senza brivido: il calore prodotto smaltisce l'eccesso di grassi.",
+  "note": "Sbobina di Biochimica II, p. 286: c'è scritto che la leptina «stimola il sistema parasimpatico con la produzione di noradrenalina». La noradrenalina è il mediatore del sistema simpatico; i recettori β3 dell'adipocita sono adrenergici.",
+  "fixed": false
+ },
+ {
+  "id": "m9k-05",
+  "topic": "m9-adipochine",
+  "level": "m",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Dove agiscono insieme leptina e insulina per ridurre la fame?",
+  "opts": [
+   "Sui neuroni del nucleo arcuato, che producono POMC e quindi α-MSH",
+   "Sulle cellule β del pancreas, che riducono la secrezione di glucagone",
+   "Sugli adipociti, che riducono la produzione di leptina",
+   "Sullo stomaco, dove inibiscono la secrezione di gastrina",
+   "Sulla neuroipofisi, che riduce la secrezione di ossitocina"
+  ],
+  "ans": 0,
+  "why": "L'α-MSH blocca il neuropeptide Y.",
+  "note": "La sbobina dice che la POMC viene prodotta «nell'ipofisi»; nella regolazione dell'appetito la POMC che conta è quella dei neuroni del nucleo arcuato.",
+  "fixed": false
+ },
+ {
+  "id": "m9k-06",
+  "topic": "m9-adipochine",
+  "level": "a",
+  "page": "286–287",
+  "src": "Biochimica II",
+  "q": "Perché il topo con mutazione del gene ob, a parità di cibo, ingrassa?",
+  "opts": [
+   "Manca il segnale di sazietà e la termogenesi non si attiva",
+   "Senza leptina l'adipocita non riesce a idrolizzare i trigliceridi",
+   "Senza leptina il pancreas produce troppo glucagone",
+   "Senza leptina il neuropeptide Y non viene più prodotto",
+   "Senza leptina l'intestino assorbe più trigliceridi"
+  ],
+  "ans": 0,
+  "why": "Mangia di più e brucia meno grassi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-07",
+  "topic": "m9-adipochine",
+  "level": "a",
+  "page": "287",
+  "src": "Biochimica II",
+  "q": "Perché cocaina e anfetamine riducono l'appetito, secondo la sbobina?",
+  "opts": [
+   "Agiscono sui trascritti CART, che frenano il neuropeptide Y",
+   "Bloccano la secrezione di grelina da parte dello stomaco",
+   "Aumentano direttamente la produzione di leptina negli adipociti",
+   "Inibiscono il recettore della leptina nel nucleo arcuato",
+   "Stimolano la secrezione di insulina dal pancreas"
+  ],
+  "ans": 0,
+  "why": "CART = cocaine- and amphetamine-regulated transcript.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9k-08",
+  "topic": "m9-adipochine",
+  "level": "l",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Come si chiama il gene della leptina, mutato nei topi obesi?",
+  "opts": [
+   "OB",
+   "DB",
+   "POMC",
+   "NPY",
+   "UCP1"
+  ],
+  "ans": 0,
+  "why": "Il topo db/db ha invece il recettore della leptina mutato.",
+  "note": "Il topo db/db non è nella sbobina.",
+  "fixed": false
+ },
+ {
+  "id": "m9k-09",
+  "topic": "m9-adipochine",
+  "level": "h",
+  "page": "286",
+  "src": "Biochimica II",
+  "q": "Quale catena di eventi dopo un pasto ricco porta a ridurre l'assunzione di cibo?",
+  "opts": [
+   "Più trigliceridi → leptina → arcuato → α-MSH → meno neuropeptide Y",
+   "Più trigliceridi nell'adipe → grelina → arcuato → più neuropeptide Y → sazietà",
+   "Più glucosio nel sangue → glucagone → ipofisi → ACTH → meno cortisolo",
+   "Più leptina → parasimpatico → acetilcolina → più lipogenesi nell'adipe",
+   "Più insulina → nucleo arcuato → meno POMC → più neuropeptide Y"
+  ],
+  "ans": 0,
+  "why": "In parallelo la leptina attiva il simpatico verso l'adipe (lipolisi e calore).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-01",
+  "topic": "m9-tiroide",
+  "level": "f",
+  "page": "289",
+  "src": "Biochimica II",
+  "q": "Da quale amminoacido derivano gli ormoni tiroidei?",
+  "opts": [
+   "Tirosina",
+   "Triptofano",
+   "Fenilalanina",
+   "Istidina",
+   "Glicina"
+  ],
+  "ans": 0,
+  "why": "Vengono sintetizzati su residui di tirosina della tireoglobulina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-02",
+  "topic": "m9-tiroide",
+  "level": "f",
+  "page": "290",
+  "src": "Biochimica II",
+  "q": "Quale enzima iodina le tirosine della tireoglobulina?",
+  "opts": [
+   "Tiroide perossidasi",
+   "Deiodinasi",
+   "Tirosina idrossilasi",
+   "Glutatione perossidasi",
+   "Pendrina"
+  ],
+  "ans": 0,
+  "why": "È una perossidasi con ferro (eme) che usa H₂O₂; la pendrina trasporta lo ioduro nella colloide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-03",
+  "topic": "m9-tiroide",
+  "level": "f",
+  "page": "289",
+  "src": "Biochimica II",
+  "q": "Quale ormone tiroideo è più potente?",
+  "opts": [
+   "T3",
+   "T4 (tiroxina)",
+   "Reverse T3",
+   "Diiodotirosina",
+   "Monoiodotirosina"
+  ],
+  "ans": 0,
+  "why": "Il T4 viene in gran parte convertito in T3 nei tessuti (soprattutto fegato).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-04",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "289–290",
+  "src": "Biochimica II",
+  "q": "Come entra lo ioduro nella cellula follicolare?",
+  "opts": [
+   "In simporto con il Na⁺, grazie alla Na⁺/K⁺-ATPasi",
+   "Con una pompa ATP-dipendente specifica per lo ioduro sulla membrana basale",
+   "Per diffusione semplice, perché lo ioduro è liposolubile",
+   "In antiporto con il cloruro, come il bicarbonato nella cellula parietale",
+   "Per endocitosi legato alla tireoglobulina circolante"
+  ],
+  "ans": 0,
+  "why": "È un trasporto attivo secondario molto efficiente.",
+  "note": "La sbobina definisce il trasporto «neutro». Nei testi di riferimento il simportatore (NIS) porta 2 Na⁺ per ogni I⁻, quindi è elettrogenico.",
+  "fixed": false
+ },
+ {
+  "id": "m9t-05",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "290",
+  "src": "Biochimica II",
+  "q": "Perché la tiroide fa la via dei pentoso fosfati?",
+  "opts": [
+   "Per il NADPH che serve a produrre H₂O₂ per la perossidasi",
+   "Per il ribosio 5-P necessario alla sintesi della tireoglobulina",
+   "Per il NADPH che riduce lo iodio a ioduro prima della captazione",
+   "Per l'eritrosio 4-P che fornisce l'anello aromatico della tiroxina",
+   "Per il NADPH che serve alla deiodinasi per staccare lo iodio"
+  ],
+  "ans": 0,
+  "why": "Lo ioduro va ossidato per poter sostituire gli idrogeni delle tirosine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-06",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "292",
+  "src": "Biochimica II",
+  "q": "Dove si trova il recettore degli ormoni tiroidei e come agisce?",
+  "opts": [
+   "Nel nucleo, come TR-RXR: l'ormone stacca il corepressore",
+   "Nel citosol legato a Hsp70: l'ormone lo libera e il recettore entra nel nucleo",
+   "Sulla membrana: attiva una Gs e il cAMP",
+   "Sulla membrana: è un recettore tirosina chinasi come quello dell'insulina",
+   "Nel mitocondrio: lega direttamente le proteine disaccoppianti"
+  ],
+  "ans": 0,
+  "why": "Il legame al DNA avviene con dita di zinco.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-07",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "292",
+  "src": "Biochimica II",
+  "q": "Quale proteina trasporta la maggior parte degli ormoni tiroidei nel sangue?",
+  "opts": [
+   "TBG",
+   "Transtiretina",
+   "Albumina",
+   "Transcortina",
+   "Transferrina"
+  ],
+  "ans": 0,
+  "why": "Circa il 75%; il resto transtiretina e un po' di albumina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-08",
+  "topic": "m9-tiroide",
+  "level": "a",
+  "page": "293",
+  "src": "Biochimica II",
+  "q": "Perché un paziente ipertiroideo ha sempre caldo?",
+  "opts": [
+   "Più Na⁺/K⁺-ATPasi e più proteine disaccoppianti",
+   "Più glicogeno epatico, la cui sintesi libera calore",
+   "Meno acidi grassi ossidati e più glucosio bruciato in glicolisi anaerobica",
+   "Più colesterolo nelle membrane, che le rende meno permeabili al calore",
+   "Più insulina, che stimola la termogenesi nel tessuto adiposo bianco"
+  ],
+  "ans": 0,
+  "why": "Il rapporto ATP/O scende: parte dell'energia si dissipa come calore. Aumenta il metabolismo basale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-09",
+  "topic": "m9-tiroide",
+  "level": "a",
+  "page": "293",
+  "src": "Biochimica II",
+  "q": "Come abbassano il colesterolo plasmatico gli ormoni tiroidei?",
+  "opts": [
+   "Aumentano i recettori per le LDL nel fegato",
+   "Inibiscono la HMG-CoA reduttasi in modo competitivo",
+   "Bloccano l'assorbimento intestinale tramite NPC1L1",
+   "Aumentano l'attività della LCAT sulle HDL",
+   "Inibiscono la sintesi delle VLDL epatiche"
+  ],
+  "ans": 0,
+  "why": "Per questo l'ipotiroidismo può dare ipercolesterolemia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-10",
+  "topic": "m9-tiroide",
+  "level": "a",
+  "page": "293",
+  "src": "Biochimica II",
+  "q": "Quale abbinamento malattia – meccanismo è corretto?",
+  "opts": [
+   "Graves – autoanticorpi che attivano il recettore del TSH",
+   "Hashimoto – autoanticorpi che attivano il recettore del TSH",
+   "Graves-Basedow – autoanticorpi contro la tiroide perossidasi",
+   "Cretinismo – eccesso di ormoni tiroidei nello sviluppo",
+   "Gozzo da carenza di iodio – eccesso di T3 circolante"
+  ],
+  "ans": 0,
+  "why": "Hashimoto: anticorpi contro tireoglobulina o perossidasi → ipotiroidismo (mixedema, gozzo, cretinismo nel bambino).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-11",
+  "topic": "m9-tiroide",
+  "level": "l",
+  "page": "291",
+  "src": "Biochimica II",
+  "q": "Quale microelemento contengono le deiodinasi?",
+  "opts": [
+   "Selenio",
+   "Zinco",
+   "Rame",
+   "Molibdeno",
+   "Manganese"
+  ],
+  "ans": 0,
+  "why": "Il selenio è anche nella glutatione perossidasi. Lo zinco serve alle dita di zinco del recettore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-12",
+  "topic": "m9-tiroide",
+  "level": "l",
+  "page": "291",
+  "src": "Biochimica II",
+  "q": "Che cosa si forma se la deiodinasi toglie lo iodio dall'anello interno del T4?",
+  "opts": [
+   "Reverse T3, inattivo",
+   "T3 attivo",
+   "T2 attivo",
+   "Monoiodotirosina",
+   "Tireoglobulina iodinata"
+  ],
+  "ans": 0,
+  "why": "Togliendo lo iodio in 5' (anello esterno) si forma il T3 attivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9t-13",
+  "topic": "m9-tiroide",
+  "level": "h",
+  "page": "290",
+  "src": "Biochimica II",
+  "q": "La sbobina dice che dopo un incidente nucleare la tiroide viene danneggiata perché capta il cesio. Che cosa è corretto?",
+  "opts": [
+   "Il vero pericolo è lo iodio-131, captato come lo iodio stabile",
+   "Il cesio-137 è l'unico radionuclide captato dal simportatore dello ioduro",
+   "Il cesio sostituisce il selenio nelle deiodinasi e le inattiva",
+   "L'uranio viene captato direttamente dalla tiroide come lo iodio",
+   "Il cesio si lega alla tireoglobulina al posto dello iodio"
+  ],
+  "ans": 0,
+  "why": "Per questo si somministra iodio stabile (ioduro di potassio): satura la captazione.",
+  "note": "Sbobina di Biochimica II, p. 290: c'è scritto che l'uranio decade in cesio e che la tiroide capta il cesio. Il radionuclide che la tiroide concentra è lo iodio-131; il cesio-137 si distribuisce soprattutto nei tessuti molli.",
+  "fixed": false
+ },
+ {
+  "id": "m9t-14",
+  "topic": "m9-tiroide",
+  "level": "h",
+  "page": "292–293",
+  "src": "Biochimica II",
+  "q": "Quale effetto metabolico degli ormoni tiroidei è descritto correttamente?",
+  "opts": [
+   "Aumentano la mobilizzazione e l'ossidazione dei grassi",
+   "Riducono la gluconeogenesi e sono ipoglicemizzanti",
+   "Riducono la sintesi proteica come ormoni catabolici",
+   "Riducono l'espressione della Na⁺/K⁺-ATPasi e il metabolismo basale",
+   "Aumentano le LDL plasmatiche riducendo i recettori epatici"
+  ],
+  "ans": 0,
+  "why": "Sono anche iperglicemizzanti (gluconeogenesi e glicogenolisi) e anabolici proteici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-01",
+  "topic": "m9-calcio",
+  "level": "f",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Quale ormone viene secreto quando la calcemia scende?",
+  "opts": [
+   "Paratormone",
+   "Calcitonina",
+   "Aldosterone",
+   "Insulina",
+   "Ossitocina"
+  ],
+  "ans": 0,
+  "why": "Le paratiroidi hanno un recettore che sente il calcio; non dipendono dall'ipofisi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-02",
+  "topic": "m9-calcio",
+  "level": "f",
+  "page": "295",
+  "src": "Biochimica II",
+  "q": "Dove avvengono le due idrossilazioni che attivano la vitamina D?",
+  "opts": [
+   "25 nel fegato, 1 nel rene",
+   "1 nel fegato, 25 nel rene",
+   "Entrambe nel rene",
+   "Entrambe nella pelle",
+   "25 nell'intestino, 1 nel fegato"
+  ],
+  "ans": 0,
+  "why": "Si forma il calcitriolo (1,25-diidrossicolecalciferolo); le idrossilasi sono citocromi P450.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-03",
+  "topic": "m9-calcio",
+  "level": "f",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi ha il paratormone?",
+  "opts": [
+   "84",
+   "34",
+   "191",
+   "9",
+   "51"
+  ],
+  "ans": 0,
+  "why": "Agisce con il cAMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-04",
+  "topic": "m9-calcio",
+  "level": "m",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Come libera calcio dall'osso l'osteoclasto?",
+  "opts": [
+   "Una ATPasi di tipo V acidifica la lacuna e scioglie i cristalli",
+   "Una fosfatasi alcalina idrolizza il fosfato dell'idrossiapatite",
+   "Una pompa Ca²⁺ ATP-dipendente estrae il calcio dai cristalli",
+   "Il collagene viene idrolizzato e i cristalli si sciolgono da soli",
+   "La calcitonina attiva una proteasi che scioglie i cristalli"
+  ],
+  "ans": 0,
+  "why": "La stessa ATPasi di tipo V acidifica i lisosomi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-05",
+  "topic": "m9-calcio",
+  "level": "m",
+  "page": "295",
+  "src": "Biochimica II",
+  "q": "Quali effetti ha il paratormone per alzare la calcemia?",
+  "opts": [
+   "Mobilizza calcio dall'osso e fa attivare la vitamina D nel rene",
+   "Aumenta l'assorbimento intestinale direttamente e inibisce la vitamina D",
+   "Aumenta l'escrezione renale e deposita calcio nelle ossa",
+   "Inibisce gli osteoclasti e attiva la calcitonina",
+   "Fa idrossilare la vitamina D in posizione 25 nel fegato"
+  ],
+  "ans": 0,
+  "why": "La vitamina D attiva aumenta poi l'assorbimento intestinale del calcio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-06",
+  "topic": "m9-calcio",
+  "level": "m",
+  "page": "296",
+  "src": "Biochimica II",
+  "q": "Come agisce il calcitriolo?",
+  "opts": [
+   "Su un recettore intracellulare che regola la trascrizione",
+   "Su un recettore di membrana accoppiato a Gs",
+   "Su un recettore tirosina chinasi dell'enterocita",
+   "Legandosi direttamente al calcio nel lume intestinale",
+   "Attivando la PKA nel citosol degli osteoclasti"
+  ],
+  "ans": 0,
+  "why": "Controlla circa 300 proteine: pompe del calcio intestinali, ma anche un enzima della sintesi della serotonina e proteine immunitarie.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-07",
+  "topic": "m9-calcio",
+  "level": "a",
+  "page": "297–298",
+  "src": "Biochimica II",
+  "q": "Come aumentano la forza di contrazione cardiaca i glicosidi cardiaci?",
+  "opts": [
+   "Inibiscono la Na⁺/K⁺-ATPasi, così esce meno calcio",
+   "Attivano la Na⁺/K⁺-ATPasi: con meno Na⁺ dentro, entra più calcio dai canali",
+   "Aprono direttamente i canali del calcio di tipo L della membrana",
+   "Inibiscono la pompa del calcio del reticolo sarcoplasmatico",
+   "Aumentano il cAMP, che fosforila i canali del calcio"
+  ],
+  "ans": 0,
+  "why": "Il gradiente di Na⁺ ridotto rallenta l'estrusione di Ca²⁺ in scambio con Na⁺, quindi il calcio intracellulare sale.",
+  "note": "Sbobina di Biochimica II, p. 298: c'è scritto che con più sodio dentro «viene favorito il rilascio del sodio all'esterno e quindi l'entrata del calcio». Più precisamente, il sodio alto riduce la forza che spinge lo scambiatore a far uscire il calcio.",
+  "fixed": false
+ },
+ {
+  "id": "m9c-08",
+  "topic": "m9-calcio",
+  "level": "a",
+  "page": "298",
+  "src": "Biochimica II",
+  "q": "Che cosa fa il calcio quando entra nel mitocondrio durante la contrazione?",
+  "opts": [
+   "Attiva PDH, isocitrato DH e α-chetoglutarato DH",
+   "Inibisce l'ATP sintasi per risparmiare ATP durante la contrazione",
+   "Attiva la PDH chinasi e riduce l'ingresso del piruvato nel ciclo",
+   "Disaccoppia la catena respiratoria e produce calore",
+   "Attiva la carnitina aciltrasferasi e blocca la glicolisi"
+  ],
+  "ans": 0,
+  "why": "Il calcio entra grazie al potenziale di membrana generato dalla catena respiratoria.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-09",
+  "topic": "m9-calcio",
+  "level": "a",
+  "page": "296",
+  "src": "Biochimica II",
+  "q": "Perché insieme alla vitamina D si somministra spesso vitamina K2?",
+  "opts": [
+   "Per evitare che il calcio si depositi nei tessuti molli",
+   "Perché la vitamina K2 serve all'idrossilazione in 1 della vitamina D",
+   "Perché la vitamina K2 aumenta l'assorbimento intestinale della vitamina D",
+   "Per evitare l'ipercoagulabilità causata dal calcio in eccesso",
+   "Perché la vitamina D inattiva la vitamina K nel fegato"
+  ],
+  "ans": 0,
+  "why": "La dieta fornisce solo circa il 10% della vitamina D: il resto si forma nella pelle.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-10",
+  "topic": "m9-calcio",
+  "level": "l",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Quanti amminoacidi ha la calcitonina?",
+  "opts": [
+   "32",
+   "84",
+   "191",
+   "9",
+   "14"
+  ],
+  "ans": 0,
+  "why": "Ha effetto opposto al paratormone: abbassa la calcemia.",
+  "note": "Sbobina di Biochimica II, p. 294: la calcitonina è indicata come 34 amminoacidi. La calcitonina umana ne ha 32.",
+  "fixed": false
+ },
+ {
+  "id": "m9c-11",
+  "topic": "m9-calcio",
+  "level": "l",
+  "page": "295",
+  "src": "Biochimica II",
+  "q": "Come si chiama la forma non attiva della vitamina D3 sintetizzata dal colesterolo?",
+  "opts": [
+   "Colecalciferolo",
+   "Calcitriolo",
+   "Ergocalciferolo",
+   "Calcidiolo",
+   "7-deidrocolesterolo"
+  ],
+  "ans": 0,
+  "why": "Colecalciferolo → (fegato) 25-idrossicolecalciferolo → (rene) calcitriolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9c-12",
+  "topic": "m9-calcio",
+  "level": "h",
+  "page": "295",
+  "src": "Biochimica II",
+  "q": "La sbobina paragona l'ATPasi di tipo V all'«ATPasi di tipo 0» della fosforilazione ossidativa. Che cosa è corretto?",
+  "opts": [
+   "È simile all'ATP sintasi di tipo F, che lavora al contrario",
+   "È identica alla Na⁺/K⁺-ATPasi di tipo P, che si fosforila durante il ciclo",
+   "È simile alla H⁺/K⁺-ATPasi gastrica, che pompa anche potassio",
+   "È una pompa ABC, come il trasportatore ABCA1 del colesterolo",
+   "È simile al complesso IV, che pompa protoni senza ATP"
+  ],
+  "ans": 0,
+  "why": "Le ATPasi V e F hanno architettura rotatoria simile: la V consuma ATP per pompare H⁺, la F sintetizza ATP sfruttando il flusso di H⁺.",
+  "note": "Sbobina di Biochimica II, p. 295: scrive «ATPasi di tipo 0». La classe giusta è il tipo F; «F₀» è il nome della sola parte di membrana.",
+  "fixed": false
+ },
+ {
+  "id": "m9c-13",
+  "topic": "m9-calcio",
+  "level": "h",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Quale ruolo del calcio non è tra quelli elencati dalla sbobina?",
+  "opts": [
+   "Cofattore della glutatione perossidasi",
+   "Attivatore della fosforilasi chinasi",
+   "Attivatore della PDH fosfatasi",
+   "Fattore della coagulazione del sangue",
+   "Segnale per l'esocitosi delle vescicole"
+  ],
+  "ans": 0,
+  "why": "La glutatione perossidasi contiene selenio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-01",
+  "topic": "m9-steroidi",
+  "level": "f",
+  "page": "299",
+  "src": "Biochimica II",
+  "q": "Quanti atomi di carbonio hanno cortisolo, testosterone ed estradiolo?",
+  "opts": [
+   "21, 19, 18",
+   "27, 21, 19",
+   "19, 21, 18",
+   "21, 18, 19",
+   "18, 19, 21"
+  ],
+  "ans": 0,
+  "why": "Il colesterolo ne ha 27: glucocorticoidi e mineralcorticoidi 21, androgeni 19, estrogeni 18.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-02",
+  "topic": "m9-steroidi",
+  "level": "f",
+  "page": "299",
+  "src": "Biochimica II",
+  "q": "Qual è il primo ormone steroideo che si forma dal colesterolo?",
+  "opts": [
+   "Pregnenolone",
+   "Progesterone",
+   "Cortisolo",
+   "Testosterone",
+   "Aldosterone"
+  ],
+  "ans": 0,
+  "why": "Idrossilazioni in 20 e 22 e taglio della catena laterale (desmolasi), con NADPH e P450 mitocondriali.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-03",
+  "topic": "m9-steroidi",
+  "level": "f",
+  "page": "302",
+  "src": "Biochimica II",
+  "q": "Quale proteina trasporta il cortisolo nel sangue?",
+  "opts": [
+   "Transcortina",
+   "TBG",
+   "Albumina",
+   "Transferrina",
+   "Aptoglobina"
+  ],
+  "ans": 0,
+  "why": "Lega circa il 90% del cortisolo (corticosteroid-binding globulin).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-04",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "301",
+  "src": "Biochimica II",
+  "q": "Quale effetto metabolico ha il cortisolo?",
+  "opts": [
+   "Stimola la gluconeogenesi e blocca i GLUT4",
+   "Stimola la glicolisi muscolare e aumenta i GLUT4 in membrana",
+   "Inibisce la proteolisi muscolare e la mobilizzazione degli acidi grassi",
+   "Stimola la sintesi di glicogeno muscolare come l'insulina",
+   "Riduce l'acidità gastrica per proteggere la mucosa"
+  ],
+  "ans": 0,
+  "why": "Mobilizza amminoacidi e acidi grassi; per questo la terapia cortisonica riduce la sensibilità all'insulina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-05",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "302",
+  "src": "Biochimica II",
+  "q": "Perché nelle cellule renali l'aldosterone non viene «coperto» dal cortisolo, molto più abbondante?",
+  "opts": [
+   "Un enzima inattiva il cortisolo trasformandolo in cortisone",
+   "Il cortisolo non attraversa la membrana delle cellule renali",
+   "Il recettore dei mineralcorticoidi non lega mai il cortisolo",
+   "La transcortina trattiene tutto il cortisolo nel sangue",
+   "Il cortisolo viene coniugato con glucuronato nel rene"
+  ],
+  "ans": 0,
+  "why": "È la 11β-idrossisteroide deidrogenasi di tipo 2 (il nome non è nella sbobina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-06",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "302",
+  "src": "Biochimica II",
+  "q": "Qual è la sequenza del sistema renina-angiotensina-aldosterone?",
+  "opts": [
+   "Renina: angiotensinogeno → angiotensina I; ACE: angiotensina I → angiotensina II → aldosterone",
+   "ACE: angiotensinogeno → angiotensina I; renina: angiotensina I → angiotensina II → aldosterone",
+   "Renina: angiotensina II → angiotensina I; ACE: angiotensina I → aldosterone",
+   "Aldosterone → renina → angiotensinogeno → angiotensina II",
+   "ACE2: angiotensinogeno → angiotensina II; renina: angiotensina II → aldosterone"
+  ],
+  "ans": 0,
+  "why": "Parte quando cala la pressione; l'angiotensina I è un decapeptide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-07",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "301–302",
+  "src": "Biochimica II",
+  "q": "Quali idrossilazioni distinguono cortisolo, aldosterone e testosterone?",
+  "opts": [
+   "Cortisolo 11, 17, 21; aldosterone 11, 21; testosterone 17",
+   "Cortisolo 11, 21; aldosterone 11, 17, 21; testosterone solo 11",
+   "Cortisolo solo 17; aldosterone 11, 17; testosterone 11, 21",
+   "Cortisolo 17, 21; aldosterone solo 11; testosterone 17, 21",
+   "Tutti e tre sono idrossilati in 11, 17 e 21"
+  ],
+  "ans": 0,
+  "why": "Un deficit di uno di questi P450 sposta la sintesi verso altri ormoni, con effetti patologici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-08",
+  "topic": "m9-steroidi",
+  "level": "a",
+  "page": "303",
+  "src": "Biochimica II",
+  "q": "Perché nel morbo di Addison autoimmune la pelle si pigmenta?",
+  "opts": [
+   "Senza cortisolo l'ipofisi produce molto ACTH",
+   "Senza aldosterone il potassio alto stimola i melanociti",
+   "Senza cortisolo la tirosinasi non è più inibita",
+   "Gli autoanticorpi stimolano direttamente i melanociti",
+   "Senza ormoni surrenalici aumenta la vitamina D cutanea"
+  ],
+  "ans": 0,
+  "why": "Si associano iposodiemia, iperkaliemia, ipotensione e ipoglicemia grave.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-09",
+  "topic": "m9-steroidi",
+  "level": "a",
+  "page": "303",
+  "src": "Biochimica II",
+  "q": "Quale quadro è tipico della sindrome di Cushing?",
+  "opts": [
+   "Iperglicemia, perdita muscolare e infezioni",
+   "Ipoglicemia, aumento della massa muscolare, iperpigmentazione",
+   "Iposodiemia, iperkaliemia, ipotensione grave",
+   "Ipocalcemia, tetania, aumento del paratormone",
+   "Poliuria con urine diluite e glicemia normale"
+  ],
+  "ans": 0,
+  "why": "Sono gli stessi effetti di una terapia cortisonica prolungata.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-10",
+  "topic": "m9-steroidi",
+  "level": "a",
+  "page": "304",
+  "src": "Biochimica II",
+  "q": "Che cosa succede in un neonato geneticamente maschio senza 5α-reduttasi?",
+  "opts": [
+   "I genitali esterni maschili non si sviluppano",
+   "Si sviluppano genitali femminili interni, perché manca il testosterone",
+   "I genitali sono normali, ma alla pubertà manca l'aromatasi",
+   "Lo sviluppo è normale, perché il testosterone basta in ogni fase",
+   "Si ha iperplasia surrenalica per eccesso di ACTH"
+  ],
+  "ans": 0,
+  "why": "Il DHT agisce nello sviluppo embrionale, il testosterone alla pubertà. L'enzima usa NADPH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-11",
+  "topic": "m9-steroidi",
+  "level": "l",
+  "page": "304",
+  "src": "Biochimica II",
+  "q": "Quale enzima forma l'estradiolo dal testosterone?",
+  "opts": [
+   "Aromatasi",
+   "5α-reduttasi",
+   "Desmolasi",
+   "17α-idrossilasi",
+   "21-idrossilasi"
+  ],
+  "ans": 0,
+  "why": "Crea l'anello A aromatico: è l'unico caso in cui sappiamo formare un anello aromatico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9s-12",
+  "topic": "m9-steroidi",
+  "level": "l",
+  "page": "300",
+  "src": "Biochimica II",
+  "q": "Con quale proteina è legato nel citosol il recettore degli steroidi, secondo la sbobina?",
+  "opts": [
+   "Una chaperon",
+   "La calmodulina",
+   "La β-arrestina",
+   "Una proteina G",
+   "La clatrina"
+  ],
+  "ans": 0,
+  "why": "Legato l'ormone, il recettore dimerizza e si lega a sequenze palindromiche del DNA con le dita di zinco.",
+  "note": "La sbobina cita Hsp70; nei testi di riferimento la chaperon tipica dei recettori steroidei è Hsp90 (con Hsp70 come cochaperon).",
+  "fixed": false
+ },
+ {
+  "id": "m9s-13",
+  "topic": "m9-steroidi",
+  "level": "h",
+  "page": "303",
+  "src": "Biochimica II",
+  "q": "Quale affermazione sull'angiotensina e sui suoi enzimi è corretta?",
+  "opts": [
+   "L'ACE2 inattiva l'angiotensina II ed è il recettore di SARS-CoV-2",
+   "L'ACE attiva la bradichinina, che causa vasocostrizione",
+   "L'ACE2 converte l'angiotensina I in angiotensina II nei polmoni",
+   "La renina è una carbossipeptidasi che agisce sull'angiotensina II",
+   "Gli ACE-inibitori bloccano la sintesi dell'angiotensinogeno nel fegato"
+  ],
+  "ans": 0,
+  "why": "L'ACE degrada anche la bradichinina, un vasodilatatore.",
+  "note": "Sbobina di Biochimica II, p. 303: l'angiotensina III è definita un prodotto inattivo. Nei testi di riferimento l'angiotensina III conserva attività biologica (stimola l'aldosterone).",
+  "fixed": false
+ },
+ {
+  "id": "m9s-14",
+  "topic": "m9-steroidi",
+  "level": "h",
+  "page": "305",
+  "src": "Biochimica II",
+  "q": "Un deficit di un citocromo P450 della steroidogenesi surrenalica (per esempio la 21-idrossilasi) causa tipicamente:",
+  "opts": [
+   "Poco cortisolo, ACTH alto, troppi androgeni",
+   "Molto cortisolo, ACTH basso e atrofia della corticale",
+   "Poco cortisolo, ACTH basso e assenza di androgeni",
+   "Molto aldosterone, renina alta e ipotensione",
+   "Nessun effetto, perché le vie sono intercambiabili"
+  ],
+  "ans": 0,
+  "why": "Le vie sono intercambiabili e gli intermedi hanno attività biologica: un blocco ne fa accumulare alcuni.",
+  "note": "Sbobina di Biochimica II, p. 305: la conseguenza è chiamata genericamente «insufficienza surrenalica». Il quadro tipico è l'iperplasia surrenalica congenita; il dettaglio della 21-idrossilasi non è nella sbobina.",
+  "fixed": false
+ },
+ {
+  "id": "m9l-01",
+  "topic": "m9-locali",
+  "level": "f",
+  "page": "306",
+  "src": "Biochimica II",
+  "q": "Da quale amminoacido si forma l'ossido nitrico?",
+  "opts": [
+   "Arginina",
+   "Citrullina",
+   "Ornitina",
+   "Glutammina",
+   "Lisina"
+  ],
+  "ans": 0,
+  "why": "NO sintasi: arginina + O₂ + NADPH → citrullina + NO.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-02",
+  "topic": "m9-locali",
+  "level": "f",
+  "page": "306",
+  "src": "Biochimica II",
+  "q": "Quale ormone gastrointestinale stimola la fame?",
+  "opts": [
+   "Grelina",
+   "GLP-1",
+   "Leptina",
+   "GLP-2",
+   "Colecistochinina"
+  ],
+  "ans": 0,
+  "why": "GLP-1 e GLP-2 sono prodotti dall'intestino e danno sazietà.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-03",
+  "topic": "m9-locali",
+  "level": "f",
+  "page": "308",
+  "src": "Biochimica II",
+  "q": "Da quale acido grasso deriva l'acido arachidonico?",
+  "opts": [
+   "Acido linoleico (ω-6, 18 C)",
+   "Acido linolenico (ω-3, 18 C)",
+   "Acido oleico (ω-9, 18 C)",
+   "Acido palmitico (16 C)",
+   "Acido stearico (18 C)"
+  ],
+  "ans": 0,
+  "why": "L'acido arachidonico ha 20 atomi di carbonio; l'acido linoleico è essenziale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-04",
+  "topic": "m9-locali",
+  "level": "m",
+  "page": "306",
+  "src": "Biochimica II",
+  "q": "Perché l'NO agisce solo localmente?",
+  "opts": [
+   "È un radicale libero con emivita molto breve",
+   "È un peptide degradato subito dalle peptidasi",
+   "È idrofilico e non attraversa le membrane",
+   "Viene legato dall'albumina appena prodotto",
+   "Viene secreto solo nelle sinapsi nervose"
+  ],
+  "ans": 0,
+  "why": "Rilassa la muscolatura liscia: abbassa la pressione e permette l'erezione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-05",
+  "topic": "m9-locali",
+  "level": "m",
+  "page": "307",
+  "src": "Biochimica II",
+  "q": "Quale enzima libera l'acido arachidonico dai fosfolipidi di membrana?",
+  "opts": [
+   "Fosfolipasi A2, che taglia in posizione 2",
+   "Fosfolipasi C, che libera inositolo trisfosfato",
+   "Lipasi ormone-sensibile, che taglia i diacilgliceroli",
+   "Lipoproteina lipasi, che taglia i trigliceridi",
+   "Fosfolipasi D, che libera la testa polare"
+  ],
+  "ans": 0,
+  "why": "Dall'arachidonato si formano prostaglandine, trombossani e leucotrieni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-06",
+  "topic": "m9-locali",
+  "level": "m",
+  "page": "307",
+  "src": "Biochimica II",
+  "q": "Perché i FANS che inibiscono la COX-1 possono danneggiare lo stomaco?",
+  "opts": [
+   "La COX-1 gastrica fa prostaglandine che stimolano il muco",
+   "La COX-1 gastrica inibisce la pompa protonica e riduce l'acidità",
+   "La COX-1 gastrica produce leucotrieni che proteggono la mucosa",
+   "L'inibizione della COX-1 aumenta la produzione di gastrina",
+   "L'inibizione della COX-1 attiva il pepsinogeno nella mucosa"
+  ],
+  "ans": 0,
+  "why": "La COX-2 è invece specifica dell'infiammazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-07",
+  "topic": "m9-locali",
+  "level": "a",
+  "page": "308",
+  "src": "Biochimica II",
+  "q": "Che cosa significa che un acido grasso è ω-3?",
+  "opts": [
+   "Il primo doppio legame è al C3 dall'estremità metilica",
+   "Il primo doppio legame è al terzo carbonio contando dal carbossile",
+   "Ha tre doppi legami in tutta la catena",
+   "Ha 3 atomi di carbonio in meno dell'acido grasso di origine",
+   "Il terzo carbonio porta un gruppo ossidrile"
+  ],
+  "ans": 0,
+  "why": "L'acido linolenico (ω-3) dà EPA e DHA, importanti per il SNC.",
+  "note": "La sbobina dice «a partire da C-terminale»: si intende l'estremità metilica (carbonio ω), non quella carbossilica.",
+  "fixed": false
+ },
+ {
+  "id": "m9l-08",
+  "topic": "m9-locali",
+  "level": "a",
+  "page": "308–309",
+  "src": "Biochimica II",
+  "q": "Quale rapporto tra ω-6 e ω-3 indica la sbobina come ideale?",
+  "opts": [
+   "Circa 4:1",
+   "Circa 1:4",
+   "Circa 20:1",
+   "Circa 1:1 esatto",
+   "Circa 50:1"
+  ],
+  "ans": 0,
+  "why": "Nella dieta occidentale prevalgono di molto gli ω-6; l'olio d'oliva ha circa 11:1, quello di lino è ricco di ω-3.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-09",
+  "topic": "m9-locali",
+  "level": "a",
+  "page": "309",
+  "src": "Biochimica II",
+  "q": "Quali grassi alimentari peggiorano di più il profilo LDL/HDL secondo la sbobina?",
+  "opts": [
+   "Gli acidi grassi trans",
+   "Gli acidi grassi monoinsaturi",
+   "Gli acidi grassi ω-3",
+   "Gli acidi grassi a catena media",
+   "Gli acidi grassi polinsaturi ω-6"
+  ],
+  "ans": 0,
+  "why": "Si formano anche con fritture prolungate. I monoinsaturi (olio d'oliva) riducono le LDL.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-10",
+  "topic": "m9-locali",
+  "level": "l",
+  "page": "307",
+  "src": "Biochimica II",
+  "q": "Quale isoforma della cicloossigenasi è specifica dell'infiammazione?",
+  "opts": [
+   "COX-2",
+   "COX-1",
+   "COX-3",
+   "Lipossigenasi 5",
+   "Trombossano sintasi"
+  ],
+  "ans": 0,
+  "why": "L'aspirina inibisce la COX-1 (in modo irreversibile).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "m9l-11",
+  "topic": "m9-locali",
+  "level": "h",
+  "page": "307",
+  "src": "Biochimica II",
+  "q": "Quale affermazione sulle NO sintasi è corretta secondo i testi di riferimento?",
+  "opts": [
+   "Quella dei macrofagi non dipende dal calcio; quella endoteliale sì",
+   "L'isoforma dei macrofagi dipende dal calcio; quella endoteliale ne è indipendente",
+   "Tutte le isoforme sono indipendenti dal calcio e costitutive",
+   "L'isoforma dei macrofagi usa NADH invece di NADPH",
+   "L'NO dei macrofagi si forma dalla citrullina"
+  ],
+  "ans": 0,
+  "why": "L'NO dei macrofagi, con il superossido della NADPH ossidasi, uccide i batteri.",
+  "note": "Sbobina di Biochimica II, p. 307: l'isoforma dei macrofagi è indicata come calcio-dipendente e quella epiteliale come calcio-indipendente. È il contrario: iNOS (macrofagi) è calcio-indipendente, eNOS e nNOS dipendono dal calcio-calmodulina.",
+  "fixed": false
+ },
+ {
+  "id": "m9l-12",
+  "topic": "m9-locali",
+  "level": "h",
+  "page": "310",
+  "src": "Biochimica II",
+  "q": "Secondo la sbobina, che effetto hanno gli ω-3 sul rischio coronarico?",
+  "opts": [
+   "Lo riducono, ma non agiscono su LDL e HDL",
+   "Lo aumentano, perché riducono le HDL",
+   "Lo riducono abbassando direttamente le LDL",
+   "Non hanno alcun effetto sul rischio coronarico",
+   "Lo aumentano, perché favoriscono l'infiammazione"
+  ],
+  "ans": 0,
+  "why": "Gli ω-6 invece aumentano l'infiammazione e hanno un effetto negativo sulle HDL.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "b1c-01",
   "topic": "bm1-comunicazione",
   "level": "f",

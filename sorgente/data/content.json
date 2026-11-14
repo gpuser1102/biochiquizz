@@ -1,5 +1,5 @@
 {
- "version": "1.1.0",
+ "version": "1.2.0",
  "topics": [
   {
    "subject": "Biochimica II",
@@ -302,53 +302,99 @@
      "topics": [
       {
        "id": "m8-digestione",
-       "name": "Digestione delle proteine"
+       "name": "Digestione delle proteine",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-lisosomi",
-       "name": "Degradazione intracellulare"
+       "name": "Degradazione intracellulare",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-transaminazione",
-       "name": "Transaminazione"
+       "name": "Transaminazione",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-urea",
-       "name": "Ciclo dell'urea"
+       "name": "Ciclo dell'urea",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-scheletri",
-       "name": "Scheletri carboniosi"
+       "name": "Scheletri carboniosi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-difetti",
-       "name": "Difetti del metabolismo amminoacidico"
+       "name": "Difetti del metabolismo amminoacidico",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-folato",
-       "name": "Folato e B12"
+       "name": "Folato e B12",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m8-vie",
-       "name": "Vie specializzate"
+       "name": "Vie specializzate",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     },
     {
      "name": "Ormoni",
-     "pages": "279–309",
+     "pages": "279–310",
      "topics": [
       {
        "id": "m9-neuroipofisi",
-       "name": "Ormoni della neuroipofisi"
+       "name": "Ormoni della neuroipofisi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m9-adenoipofisi",
-       "name": "Ormoni dell'adenoipofisi"
+       "name": "Ormoni dell'adenoipofisi",
+       "ready": true,
+       "added": "2026-11-14"
       },
       {
        "id": "m9-adipochine",
-       "name": "Adipochine"
+       "name": "Adipochine",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "m9-tiroide",
+       "name": "Ormoni tiroidei",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "m9-calcio",
+       "name": "Calcio, paratormone e vitamina D",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "m9-steroidi",
+       "name": "Ormoni steroidei",
+       "ready": true,
+       "added": "2026-11-14"
+      },
+      {
+       "id": "m9-locali",
+       "name": "Mediatori locali ed eicosanoidi",
+       "ready": true,
+       "added": "2026-11-14"
       }
      ]
     }

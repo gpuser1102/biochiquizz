@@ -948,19 +948,27 @@
       },
       {
        "id": "d6-marcatori",
-       "name": "Localizzazione delle vie ed enzimi come marcatori"
+       "name": "Localizzazione delle vie ed enzimi come marcatori",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-meccanismi",
-       "name": "Meccanismi catalitici"
+       "name": "Meccanismi catalitici",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-inibizione",
-       "name": "Inibizione"
+       "name": "Inibizione",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-regolazione",
-       "name": "Regolazione"
+       "name": "Regolazione",
+       "ready": true,
+       "added": "2026-11-17"
       }
      ]
     },

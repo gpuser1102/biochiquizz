@@ -28928,6 +28928,614 @@
   "fixed": false
  },
  {
+  "id": "u1117-124",
+  "topic": "d6-marcatori",
+  "level": "f",
+  "page": "128",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento via metabolica – compartimento è corretto?",
+  "opts": [
+   "Ciclo di Krebs – mitocondrio",
+   "Sintesi degli acidi grassi – mitocondrio",
+   "Glicolisi – mitocondrio",
+   "Ossidazione degli acidi grassi – citosol",
+   "Via dei pentoso fosfati – lisosoma"
+  ],
+  "ans": 0,
+  "why": "Mitocondrio: Krebs, β-ossidazione, decarbossilazione del piruvato. Citosol: glicolisi, via dei pentoso fosfati (HMP), sintesi degli acidi grassi. Lisosomi: degradazione delle biomolecole complesse.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-125",
+  "topic": "d6-marcatori",
+  "level": "a",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Perché nel sospetto di un infarto si dosano insieme creatina chinasi e lattato deidrogenasi?",
+  "opts": [
+   "La CK sale presto e sparisce in circa due giorni, la LDH resta più a lungo: insieme datano l'evento",
+   "La CK è specifica del cuore e la LDH del fegato: insieme dicono quale dei due organi è stato danneggiato",
+   "La CK sale solo dopo una settimana e la LDH subito: insieme coprono le prime ore dall'evento",
+   "La CK misura l'estensione dell'infarto e la LDH la sua sede: servono entrambe per la terapia",
+   "La CK e la LDH salgono e scendono insieme: il doppio dosaggio serve solo a confermare il dato"
+  ],
+  "ans": 0,
+  "why": "Se si dosasse solo la CK, un infarto avvenuto due giorni prima potrebbe sfuggire.",
+  "note": "Sbobina di Biochimica I, p. 129–130: scrive «cheratinachinasi». L'enzima è la creatina chinasi (CK).",
+  "fixed": false
+ },
+ {
+  "id": "u1117-126",
+  "topic": "d6-marcatori",
+  "level": "f",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Perché l'aumento di un enzima nel sangue può indicare il danno di un organo?",
+  "opts": [
+   "Molti enzimi sono tipici di certi tessuti e passano nel sangue quando le cellule si danneggiano",
+   "Gli enzimi sono prodotti dal fegato solo quando un altro organo è danneggiato",
+   "Gli enzimi plasmatici vengono attivati dall'infiammazione e quindi la loro quantità nel sangue cresce",
+   "Il danno d'organo blocca l'eliminazione renale degli enzimi, che si accumulano",
+   "Gli enzimi nel sangue sono anticorpi diretti contro le proteine del tessuto danneggiato"
+  ],
+  "ans": 0,
+  "why": "Anche il normale ricambio cellulare riversa enzimi nel sangue; un danno ne aumenta i livelli.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-127",
+  "topic": "d6-marcatori",
+  "level": "a",
+  "page": "130",
+  "src": "Biochimica I",
+  "q": "Come aiutano le isoforme della creatina chinasi (CK1, CK2, CK3) a localizzare un danno?",
+  "opts": [
+   "Sono distribuite in quantità diverse nei tessuti: l'isoforma che sale indica l'organo",
+   "Hanno Km diverse: quella più alta indica da quanti giorni è avvenuto il danno al tessuto",
+   "Sono prodotte in tempi diversi: la prima che compare indica un danno cerebrale",
+   "Hanno pH ottimali diversi: quella attiva nel sangue indica il tessuto più acido",
+   "Sono tutte uguali nei tessuti: servono solo a confermare il dosaggio della LDH"
+  ],
+  "ans": 0,
+  "why": "Lo stesso vale per gli isoenzimi della LDH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-128",
+  "topic": "d6-meccanismi",
+  "level": "f",
+  "page": "130",
+  "src": "Biochimica I",
+  "q": "Che cosa caratterizza la catalisi covalente?",
+  "opts": [
+   "Si forma un legame covalente transitorio tra enzima e substrato",
+   "Il metallo del sito attivo forma un legame stabile con il prodotto",
+   "Il substrato resta legato all'enzima in modo permanente e lo inattiva",
+   "Si trasferiscono solo protoni, senza alcun legame con l'enzima",
+   "L'enzima si lega covalentemente a un coenzima che fa la reazione"
+  ],
+  "ans": 0,
+  "why": "Spesso è accompagnata da catalisi acido-base, come nelle serin-proteasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-129",
+  "topic": "d6-meccanismi",
+  "level": "h",
+  "page": "131",
+  "src": "Biochimica I",
+  "q": "Con un estere del p-nitrofenolo la chimotripsina libera subito un «burst» di p-nitrofenolo, poi la reazione rallenta a velocità costante. Che cosa dimostra?",
+  "opts": [
+   "Si forma un intermedio acil-enzima, e la sua idrolisi da parte dell'acqua è la tappa lenta",
+   "Il p-nitrofenolo inibisce la chimotripsina, che si ferma dopo i primi cicli catalitici",
+   "La chimotripsina è allosterica e dopo il primo ciclo passa dalla forma R alla forma T",
+   "Il substrato si esaurisce dopo pochi millisecondi e resta solo l'idrolisi spontanea",
+   "L'enzima libera prima la parte acile e poi lega il p-nitrofenolo in modo covalente e stabile"
+  ],
+  "ans": 0,
+  "why": "È uno studio di cinetica pre-stazionaria: la sola cinetica dello stato stazionario non avrebbe rivelato l'ordine dei passaggi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-130",
+  "topic": "d6-meccanismi",
+  "level": "a",
+  "page": "132",
+  "src": "Biochimica I",
+  "q": "Nel meccanismo della chimotripsina, che cosa stabilizza il «buco dell'ossianione»?",
+  "opts": [
+   "La carica negativa sull'ossigeno carbonilico nell'intermedio tetraedrico",
+   "La carica positiva sull'istidina 57 dopo che ha strappato il protone",
+   "La carica negativa dell'aspartato 102, che è sempre deprotonato",
+   "La carica positiva dell'azoto del legame peptidico prima del taglio",
+   "La carica negativa del gruppo carbossilico C-terminale del prodotto rilasciato"
+  ],
+  "ans": 0,
+  "why": "L'intermedio tetraedrico si forma due volte: nell'acilazione e nella deacilazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-131",
+  "topic": "d6-meccanismi",
+  "level": "h",
+  "page": "133",
+  "src": "Biochimica I",
+  "q": "Dopo la prima fase del meccanismo della chimotripsina, quale parte del substrato resta legata all'enzima, e come?",
+  "opts": [
+   "La parte N-terminale, il cui carbonile forma un estere con la Ser195 (acil-enzima)",
+   "La parte C-terminale, legata alla Ser195 con un legame ammidico stabile",
+   "La parte N-terminale, legata alla Ser195 con un ponte disolfuro reversibile",
+   "La parte C-terminale, legata covalentemente all'azoto dell'His57",
+   "Nessuna: il legame peptidico è idrolizzato direttamente da una molecola d'acqua attivata"
+  ],
+  "ans": 0,
+  "why": "La parte C-terminale (dopo l'azoto del legame) esce subito; poi l'acqua, attivata dall'His57, idrolizza l'acil-enzima (fase lenta).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-132",
+  "topic": "d6-meccanismi",
+  "level": "m",
+  "page": "135",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento proteasi – residuo riconosciuto prima del legame tagliato è corretto?",
+  "opts": [
+   "Elastasi – residui piccoli come alanina e glicina",
+   "Tripsina – residui aromatici come la fenilalanina",
+   "Chimotripsina – residui basici come lisina e arginina",
+   "Elastasi – residui basici come lisina e arginina",
+   "Tripsina – residui piccoli come alanina e valina"
+  ],
+  "ans": 0,
+  "why": "Tripsina: lisina e arginina (tasca profonda con carica negativa); chimotripsina: aromatici; elastasi: piccoli e idrofobici. Sono tutte serin-proteasi.",
+  "note": "Sbobina di Biochimica I, p. 132 e 153: in due punti attribuisce alla tripsina il riconoscimento di residui idrofobici o aromatici. Questa è la specificità della chimotripsina; la tripsina taglia dopo lisina e arginina, come dice correttamente la sbobina a p. 135.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-133",
+  "topic": "d6-meccanismi",
+  "level": "h",
+  "page": "136",
+  "src": "Biochimica I",
+  "q": "Nella subtilisina, sostituendo con alanina la serina catalitica, la kcat crolla di circa un milione di volte, ma l'enzima resta comunque migliaia di volte più veloce della reazione non catalizzata. Che cosa dimostra?",
+  "opts": [
+   "Anche senza triade il sito attivo favorisce la reazione, ad esempio legando e orientando il substrato",
+   "La serina non partecipa alla catalisi: il calo di kcat dipende solo dalla perdita di struttura dell'enzima",
+   "La reazione non catalizzata è in realtà più veloce di quella dell'enzima con la serina",
+   "L'alanina sostituisce la serina come nucleofilo, ma con una velocità più bassa",
+   "Il sito attivo mutato usa un metallo al posto della triade per attivare l'acqua"
+  ],
+  "ans": 0,
+  "why": "Mutando tutti e tre i residui della triade il calo resta di circa 10⁶–10⁷ volte.",
+  "note": "Sbobina di Biochimica I, p. 136: scrive «più veloce rispetto alla reazione catalizzata»; si intende la reazione non catalizzata.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-134",
+  "topic": "d6-meccanismi",
+  "level": "a",
+  "page": "136",
+  "src": "Biochimica I",
+  "q": "Nella subtilisina, mutando in alanina l'aspartato della triade, la kcat cala di circa 10⁴ volte. Che cosa indica?",
+  "opts": [
+   "L'aspartato, pur senza attaccare il substrato, rende l'istidina capace di strappare il protone alla serina",
+   "L'aspartato è il nucleofilo che attacca il carbonile del substrato, e senza di lui la reazione si ferma del tutto",
+   "L'aspartato lega il substrato nella tasca di specificità, e senza di lui il substrato non entra",
+   "L'aspartato stabilizza l'ossianione, e senza di lui l'intermedio tetraedrico non si forma",
+   "L'aspartato coordina un metallo del sito attivo, e senza di lui l'acqua non viene attivata"
+  ],
+  "ans": 0,
+  "why": "Nella chimotripsina sono Asp102, His57 e Ser195: lontani nella sequenza, vicini nel ripiegamento.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-135",
+  "topic": "d6-meccanismi",
+  "level": "m",
+  "page": "137–138",
+  "src": "Biochimica I",
+  "q": "Che cosa distingue le aspartil proteasi dalle serin-proteasi?",
+  "opts": [
+   "Attivano l'acqua con due aspartati, senza intermedio covalente con l'enzima",
+   "Attivano l'acqua con uno ione zinco, senza intermedio covalente con l'enzima",
+   "Formano un acil-enzima su un aspartato, come la chimotripsina sulla serina",
+   "Usano una triade Asp–His–Ser identica, ma lavorano solo a pH basico",
+   "Tagliano solo dopo residui di aspartato, grazie a una tasca carica positiva"
+  ],
+  "ans": 0,
+  "why": "Sono un esempio di catalisi acido-base generale: pepsina, catepsina D, renina, proteasi dell'HIV.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-136",
+  "topic": "d6-meccanismi",
+  "level": "a",
+  "page": "137–138",
+  "src": "Biochimica I",
+  "q": "Com'è fatto il sito attivo della proteasi dell'HIV?",
+  "opts": [
+   "È un omodimero: ogni subunità porta un Asp25, uno protonato e uno deprotonato",
+   "È un monomero con una triade Asp–His–Ser identica a quella della chimotripsina",
+   "È un omodimero: ogni subunità porta una Ser195 e un'His57 affacciate",
+   "È un monomero con uno ione zinco coordinato da tre residui di istidina",
+   "È un eterodimero: una subunità lega il substrato, l'altra lo idrolizza"
+  ],
+  "ans": 0,
+  "why": "Il contesto del sito attivo dà ai due aspartati pKa diversi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-137",
+  "topic": "d6-meccanismi",
+  "level": "h",
+  "page": "138",
+  "src": "Biochimica I",
+  "q": "Nella proteasi dell'HIV, che ruolo ha l'Asp25 deprotonato?",
+  "opts": [
+   "Strappa un protone all'acqua, che attacca il carbonile del legame Phe–Pro",
+   "Attacca direttamente il carbonile del legame Phe–Pro e forma un acil-enzima",
+   "Dona un protone all'azoto del legame Phe–Pro e lo rende un buon gruppo uscente",
+   "Coordina uno ione zinco che polarizza il carbonile del legame Phe–Pro",
+   "Stabilizza la carica positiva del carbocatione che si forma sulla prolina"
+  ],
+  "ans": 0,
+  "why": "L'Asp25 protonato dell'altra subunità stabilizza l'ossianione. L'intermedio tetraedrico si forma solo con l'acqua, non con l'enzima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-138",
+  "topic": "d6-meccanismi",
+  "level": "m",
+  "page": "142",
+  "src": "Biochimica I",
+  "q": "Quali residui partecipano alla catalisi del lisozima?",
+  "opts": [
+   "Glu35 e Asp52",
+   "Ser195 e His57",
+   "Asp25 di due subunità",
+   "His57 e Asp102",
+   "Glu35 e His57"
+  ],
+  "ans": 0,
+  "why": "Il Glu35 fa da acido e poi da base; l'Asp52 stabilizza il carbocatione o forma l'intermedio covalente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-139",
+  "topic": "d6-meccanismi",
+  "level": "a",
+  "page": "142",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra il meccanismo SN1 e il meccanismo SN2 proposti per il lisozima?",
+  "opts": [
+   "Nell'SN2 l'Asp52 forma un intermedio covalente; nell'SN1 si forma un carbocatione stabilizzato",
+   "Nell'SN1 l'Asp52 forma un intermedio covalente; nell'SN2 si forma un carbocatione stabilizzato",
+   "Nell'SN2 il Glu35 forma un intermedio covalente; nell'SN1 è l'acqua ad attaccare il NAG",
+   "Nell'SN1 non serve l'acqua; nell'SN2 l'acqua attacca il carbonio 4 del NAG",
+   "Nell'SN2 si forma un acil-enzima su una serina; nell'SN1 serve uno ione zinco"
+  ],
+  "ans": 0,
+  "why": "In entrambi il primo passaggio è lo stesso: il Glu35 dona un protone all'ossigeno del legame glicosidico e il NAG si stacca.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-140",
+  "topic": "d6-meccanismi",
+  "level": "f",
+  "page": "140–141",
+  "src": "Biochimica I",
+  "q": "Quale legame idrolizza il lisozima?",
+  "opts": [
+   "Il legame glicosidico tra NAM e NAG del peptidoglicano",
+   "Il legame peptidico tra gli amminoacidi del peptidoglicano",
+   "Il legame fosfodiestere tra i nucleotidi del DNA batterico",
+   "Il legame estere tra glicerolo e acidi grassi della membrana",
+   "Il legame glicosidico α(1→4) del glicogeno batterico"
+  ],
+  "ans": 0,
+  "why": "Ha azione antibatterica: si trova nell'albume e nelle lacrime. Nella sua fessura si collocano sei unità di zucchero.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-141",
+  "topic": "d6-meccanismi",
+  "level": "h",
+  "page": "142",
+  "src": "Biochimica I",
+  "q": "Nel lisozima il Glu35 si comporta prima da acido e poi da base. Perché?",
+  "opts": [
+   "Prima dona H⁺ all'ossigeno glicosidico, poi toglie H⁺ all'acqua che attacca il C1 del NAM",
+   "Prima toglie H⁺ all'acqua, poi dona H⁺ all'ossigeno glicosidico del NAG che così si stacca",
+   "Prima dona H⁺ all'Asp52, poi lo riprende quando l'Asp52 lascia il carbocatione",
+   "Prima forma un estere con il NAM, poi lo idrolizza togliendo H⁺ alla serina vicina",
+   "Prima dona H⁺ al carbocatione, poi toglie H⁺ al gruppo acetile del NAG"
+  ],
+  "ans": 0,
+  "why": "È catalisi acido-base generale: alla fine il residuo torna nello stato di partenza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-142",
+  "topic": "d6-meccanismi",
+  "level": "a",
+  "page": "143",
+  "src": "Biochimica I",
+  "q": "Come agisce lo Zn²⁺ nel sito attivo dell'anidrasi carbonica?",
+  "opts": [
+   "Lega l'acqua e ne favorisce la dissociazione: l'OH⁻ attacca il carbonio della CO₂",
+   "Lega la CO₂ e la riduce: l'acqua si somma poi al carbonio ridotto",
+   "Lega il bicarbonato e lo trattiene finché non arriva una molecola di CO₂",
+   "Forma un legame covalente con la CO₂ e poi la cede all'istidina del sito attivo",
+   "Lega l'acqua e ne dona i protoni all'ossigeno della CO₂, senza mai dissociarla"
+  ],
+  "ans": 0,
+  "why": "Lo zinco è coordinato da residui di istidina. Il carbonio della CO₂, tra due ossigeni, è un buon elettrofilo.",
+  "note": "Sbobina di Biochimica I, p. 142: presenta l'anidrasi carbonica come esempio di «metallo-proteasi». È un esempio di catalisi da ioni metallici, ma non è una proteasi: catalizza CO₂ + H₂O ⇌ HCO₃⁻ + H⁺.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-143",
+  "topic": "d6-inibizione",
+  "level": "m",
+  "page": "146",
+  "src": "Biochimica I",
+  "q": "Come modifica Km e Vmax un inibitore incompetitivo?",
+  "opts": [
+   "Le abbassa entrambe",
+   "Aumenta la Km e lascia uguale la Vmax",
+   "Abbassa la Vmax e lascia uguale la Km",
+   "Le aumenta entrambe",
+   "Non le modifica"
+  ],
+  "ans": 0,
+  "why": "Si lega solo al complesso ES e forma ESI, che non dà prodotto. Nei doppi reciproci le rette sono parallele.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-144",
+  "topic": "d6-inibizione",
+  "level": "a",
+  "page": "147",
+  "src": "Biochimica I",
+  "q": "Un inibitore non competitivo puro (α = α') come modifica Km e Vmax?",
+  "opts": [
+   "Abbassa la Vmax e lascia invariata la Km",
+   "Aumenta la Km e lascia invariata la Vmax",
+   "Abbassa sia la Vmax sia la Km in proporzione",
+   "Aumenta la Vmax e abbassa la Km",
+   "Aumenta sia la Km sia la Vmax"
+  ],
+  "ans": 0,
+  "why": "Lega con la stessa affinità l'enzima libero e il complesso ES: è un caso particolare di inibizione mista.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-145",
+  "topic": "d6-inibizione",
+  "level": "f",
+  "page": "145",
+  "src": "Biochimica I",
+  "q": "Il malonato inibisce la succinato deidrogenasi. Che tipo di inibitore è, e perché?",
+  "opts": [
+   "Competitivo: è simile al succinato e occupa il sito attivo",
+   "Incompetitivo: si lega solo al complesso enzima-succinato già formato",
+   "Irreversibile: forma un legame covalente con il FAD",
+   "Allosterico: si lega a un sito lontano dal sito attivo",
+   "Non competitivo: si lega al succinato e lo inattiva"
+  ],
+  "ans": 0,
+  "why": "Ha tre atomi di carbonio, uno meno del succinato, e due gruppi carbossilici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-146",
+  "topic": "d6-inibizione",
+  "level": "h",
+  "page": "144–147",
+  "src": "Biochimica I",
+  "q": "In presenza di un inibitore, nel grafico dei doppi reciproci ottieni una retta parallela a quella senza inibitore. Che tipo di inibizione è?",
+  "opts": [
+   "Incompetitiva",
+   "Competitiva",
+   "Non competitiva pura",
+   "Irreversibile",
+   "Allosterica omotropica"
+  ],
+  "ans": 0,
+  "why": "Competitiva: le rette si incontrano sull'asse y (Vmax uguale). Non competitiva pura: si incontrano sull'asse x (Km uguale).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-147",
+  "topic": "d6-inibizione",
+  "level": "a",
+  "page": "147–148",
+  "src": "Biochimica I",
+  "q": "Perché il DIPF (diisopropilfluorofosfato) inibisce in modo irreversibile l'acetilcolinesterasi?",
+  "opts": [
+   "La serina del sito attivo attacca il fosforo, il fluoro esce e resta un legame covalente stabile",
+   "Il fluoro si lega all'istidina del sito attivo e la blocca con un legame a idrogeno molto forte e stabile",
+   "Il DIPF somiglia all'acetilcolina e occupa il sito attivo con un legame non covalente",
+   "Il DIPF si lega a un sito allosterico e porta l'enzima nella forma T in modo permanente",
+   "Il fosforo del DIPF ossida la serina del sito attivo e la trasforma in alanina"
+  ],
+  "ans": 0,
+  "why": "L'acetilcolina non viene idrolizzata e resta alta, con attivazione continua dei canali ionici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-148",
+  "topic": "d6-inibizione",
+  "level": "a",
+  "page": "144",
+  "src": "Biochimica I",
+  "q": "Perché con un inibitore competitivo la Vmax resta la stessa?",
+  "opts": [
+   "A [S] molto alta il substrato sposta l'inibitore, e il complesso ES procede normalmente",
+   "L'inibitore si lega solo al complesso ES e lascia libero l'enzima che non ha ancora substrato",
+   "L'inibitore abbassa la Km, e questo compensa esattamente la perdita di enzima attivo",
+   "L'inibitore si lega in un sito lontano e non tocca il sito attivo dell'enzima",
+   "L'inibitore viene trasformato in prodotto e quindi non sottrae enzima alla reazione"
+  ],
+  "ans": 0,
+  "why": "Cambia solo la Km apparente (aumenta di un fattore α, che dipende da [I] e dalla Ki).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-149",
+  "topic": "d6-regolazione",
+  "level": "a",
+  "page": "149",
+  "src": "Biochimica I",
+  "q": "Che effetto ha il CTP sull'aspartato transcarbamilasi?",
+  "opts": [
+   "È un inibitore allosterico eterotropico: sposta la sigmoide verso destra",
+   "È un inibitore allosterico omotropico: sposta la sigmoide verso sinistra",
+   "È un attivatore allosterico eterotropico: sposta la sigmoide verso sinistra",
+   "È un inibitore competitivo: occupa il sito del carbamil fosfato",
+   "È un inibitore irreversibile: si lega in modo covalente alle catalitiche"
+  ],
+  "ans": 0,
+  "why": "Il CTP è il prodotto finale della via (retroinibizione); l'ATP è invece un effettore positivo.",
+  "note": "Sbobina di Biochimica I, p. 149: dice che la curva spostata «verso sinistra» mostra l'effetto del CTP. Con il CTP la curva si sposta a destra: servono più substrato per la stessa velocità, come spiega la sbobina subito dopo.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-150",
+  "topic": "d6-regolazione",
+  "level": "h",
+  "page": "150",
+  "src": "Biochimica I",
+  "q": "Come inibisce il CTP l'aspartato transcarbamilasi a livello strutturale?",
+  "opts": [
+   "Si lega alle subunità regolatrici e avvicina le catalitiche, chiudendo l'accesso ai substrati",
+   "Si lega alle subunità catalitiche e le allontana tra loro, aprendo troppo la cavità centrale",
+   "Si lega al sito attivo delle subunità catalitiche al posto dell'aspartato",
+   "Fa dissociare le subunità regolatrici, che si legano ai substrati e li sequestrano lontano dal sito",
+   "Fosforila le subunità regolatrici, che bloccano le catalitiche nella forma R"
+  ],
+  "ans": 0,
+  "why": "L'enzima ha 6 subunità catalitiche e 6 regolatrici. Senza CTP le regolatrici tengono distanziate le catalitiche: stato R, attivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-151",
+  "topic": "d6-regolazione",
+  "level": "h",
+  "page": "152–153",
+  "src": "Biochimica I",
+  "q": "Quale sequenza di tagli porta il chimotripsinogeno ad α-chimotripsina?",
+  "opts": [
+   "La tripsina taglia Arg15–Ile16 (π-chimotripsina), poi l'autolisi toglie i dipeptidi 14–15 e 147–148",
+   "L'enteropeptidasi taglia Lys6–Ile7 (π-chimotripsina), poi la tripsina toglie il dipeptide 14–15",
+   "La tripsina taglia Lys6–Ile7 (α-chimotripsina) e libera un esapeptide N-terminale",
+   "La π-chimotripsina taglia Arg15–Ile16, poi la tripsina toglie i due dipeptidi 14–15 e 147–148",
+   "La pepsina taglia Arg15–Ile16 nello stomaco, poi l'autolisi completa l'attivazione nel duodeno"
+  ],
+  "ans": 0,
+  "why": "La π-chimotripsina è già attiva. Dopo i tagli restano tre catene (A, B, C) unite da ponti disolfuro.",
+  "note": "Sbobina di Biochimica I, p. 153: dice che la tripsina «riconosce legami peptidici contenenti aa aromatici» e poi taglia Arg15–Ile16. La tripsina taglia dopo lisina e arginina: proprio per questo taglia dopo l'Arg15.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-152",
+  "topic": "d6-regolazione",
+  "level": "a",
+  "page": "153",
+  "src": "Biochimica I",
+  "q": "Da quante catene è formata l'α-chimotripsina, e come restano unite?",
+  "opts": [
+   "Tre catene (A, B e C) unite da ponti disolfuro",
+   "Due catene (A e B) unite da ponti salini",
+   "Una sola catena, con due ponti disolfuro interni",
+   "Tre catene (A, B e C) unite da legami peptidici",
+   "Quattro catene uguali unite da interazioni idrofobiche"
+  ],
+  "ans": 0,
+  "why": "Il chimotripsinogeno ha 245 aa; l'autolisi elimina i dipeptidi Ser14–Arg15 e Thr147–Asn148.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-153",
+  "topic": "d6-regolazione",
+  "level": "a",
+  "page": "153",
+  "src": "Biochimica I",
+  "q": "Quale legame del tripsinogeno taglia l'enteropeptidasi, e che cosa la guida?",
+  "opts": [
+   "Lys6–Ile7, preceduto da quattro aspartati: si libera un esapeptide",
+   "Arg15–Ile16, preceduto da quattro glutammati: si libera un dipeptide",
+   "Lys6–Ile7, preceduto da quattro lisine: si libera un tetrapeptide",
+   "Arg15–Ile16, preceduto da una tasca aromatica: si libera un esapeptide",
+   "Tyr146–Thr147, preceduto da due asparagine: si libera un dipeptide"
+  ],
+  "ans": 0,
+  "why": "Basta poca enteropeptidasi: la tripsina formata attiva altro tripsinogeno, chimotripsinogeno, procarbossipeptidasi e proelastasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1117-154",
+  "topic": "d6-regolazione",
+  "level": "a",
+  "page": "148, 152–154",
+  "src": "Biochimica I",
+  "q": "Perché la fosforilazione è una regolazione reversibile e l'attivazione degli zimogeni no?",
+  "opts": [
+   "Il fosfato viene tolto da una fosfatasi; un taglio proteolitico non si può annullare",
+   "Il fosfato si stacca da solo in pochi secondi; il taglio proteolitico richiede ATP",
+   "La fosforilazione cambia la sequenza dell'enzima; il taglio cambia solo la conformazione",
+   "Il fosfato è legato in modo non covalente; il taglio forma un nuovo legame covalente",
+   "La fosforilazione avviene solo nel nucleo; i tagli proteolitici solo nel lume intestinale"
+  ],
+  "ans": 0,
+  "why": "Esempio: glicogeno fosforilasi a (fosforilata, più attiva) e b (defosforilata). Altre modifiche reversibili: adenilazione, uridilazione, ADP-ribosilazione, metilazione.",
+  "note": "Sbobina di Biochimica I, p. 154: dice che le fosforilazioni «permettono l'attivazione dell'enzima». Dipende dall'enzima: la fosforilazione attiva la glicogeno fosforilasi ma inattiva, ad esempio, la glicogeno sintasi.",
+  "fixed": false
+ },
+ {
+  "id": "u1117-155",
+  "topic": "d6-regolazione",
+  "level": "f",
+  "page": "148",
+  "src": "Biochimica I",
+  "q": "Che cos'è l'inibizione a feedback (retroinibizione)?",
+  "opts": [
+   "Il prodotto finale di una via inibisce un enzima della stessa via",
+   "Il substrato iniziale di una via inibisce l'ultimo enzima della via",
+   "Un ormone inibisce la sintesi dell'enzima che lo produce",
+   "Un enzima inibisce sé stesso tagliandosi in modo autocatalitico",
+   "Il prodotto di una via attiva il primo enzima della via opposta"
+  ],
+  "ans": 0,
+  "why": "Esempio: il CTP che inibisce l'aspartato transcarbamilasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

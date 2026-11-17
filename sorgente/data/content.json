@@ -870,27 +870,39 @@
      "topics": [
       {
        "id": "d4-eme",
-       "name": "Eme e mioglobina"
+       "name": "Eme e mioglobina",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d4-hbmb",
-       "name": "Differenze Hb vs Mb"
+       "name": "Differenze Hb vs Mb",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d4-legame",
-       "name": "Legame dell'O₂ all'Hb"
+       "name": "Legame dell'O₂ all'Hb",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d4-modulatori",
-       "name": "Modulatori allosterici"
+       "name": "Modulatori allosterici",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d4-hbf",
-       "name": "HbF e geni delle globine"
+       "name": "HbF e geni delle globine",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d4-mutazioni",
-       "name": "Mutazioni dell'emoglobina"
+       "name": "Mutazioni dell'emoglobina",
+       "ready": true,
+       "added": "2026-11-17"
       }
      ]
     },

@@ -912,11 +912,15 @@
      "topics": [
       {
        "id": "d5-purificazione",
-       "name": "Purificazione"
+       "name": "Purificazione",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d5-analisi",
-       "name": "Analisi"
+       "name": "Analisi",
+       "ready": true,
+       "added": "2026-11-17"
       }
      ]
     },
@@ -926,15 +930,21 @@
      "topics": [
       {
        "id": "d6-classificazione",
-       "name": "Classificazione e termodinamica"
+       "name": "Classificazione e termodinamica",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-caratteristiche",
-       "name": "Caratteristiche e riconoscimento enzima-substrato"
+       "name": "Caratteristiche e riconoscimento enzima-substrato",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-cinetica",
-       "name": "Cinetica enzimatica"
+       "name": "Cinetica enzimatica",
+       "ready": true,
+       "added": "2026-11-17"
       },
       {
        "id": "d6-marcatori",

@@ -26658,7 +26658,7 @@
    "Tiene fuori l'acqua: l'eme non si perde e lega l'O₂ in modo reversibile",
    "Attira i protoni: favorisce l'effetto Bohr e la cessione dell'O₂ ai tessuti",
    "Lega la CO₂: forma i carbammati e abbassa l'affinità per l'O₂",
-   "Ossida il ferro: lo porta a Fe³⁺ e permette il sesto legame",
+   "Ossida il ferro: lo porta a Fe³⁺ e permette così il sesto legame con l'O₂",
    "Fa uscire l'eme: ne permette il ricambio a ogni ossigenazione"
   ],
   "ans": 0,
@@ -26677,8 +26677,8 @@
    "L'istidina distale e i residui vicini ostacolano il legame del CO perpendicolare all'eme",
    "Nella mioglobina il CO ossida il ferro a Fe³⁺ e si stacca subito dopo essersi legato all'eme",
    "La globina lega il CO sul gruppo N-terminale, lontano dalla tasca dell'eme",
-   "L'istidina prossimale cede il suo legame col ferro all'O₂ ma non al CO",
-   "La tasca idrofobica respinge il CO, che è una molecola più polare dell'O₂"
+   "L'istidina prossimale cede il suo legame col ferro all'O₂ ma mai al monossido di carbonio",
+   "La tasca idrofobica respinge il CO, che è una molecola molto più polare dell'O₂ legato"
   ],
   "ans": 0,
   "why": "Il CO preferisce legarsi a 90° rispetto al piano dell'eme, l'O₂ a circa 120°: l'ingombro sterico della globina sfavorisce il CO.",
@@ -27056,7 +27056,7 @@
   "opts": [
    "Asp94 della catena β e Lys40 della catena α",
    "Asp126 e Lys127 della catena α",
-   "Arg141 della catena α e Val34",
+   "Arg141 della catena α e Val34 della catena β",
    "His143 e Lys82 della catena β",
    "Asp94 della catena α e Lys40 della catena β"
   ],
@@ -27702,7 +27702,7 @@
   "opts": [
    "L'aspartato è sempre negativo a pH fisiologico e non cambia protonazione",
    "L'aspartato è sempre positivo a pH fisiologico e lega troppo forte il 2,3-BPG",
-   "L'aspartato coordina il ferro dell'eme e lo ossida a Fe³⁺",
+   "L'aspartato coordina il ferro dell'eme e lo ossida a Fe³⁺ in modo stabile",
    "L'aspartato rende la tasca dell'eme polare e fa perdere l'eme",
    "L'aspartato forma un ponte disolfuro che blocca la forma T"
   ],
@@ -27778,7 +27778,7 @@
   "opts": [
    "Resta in forma R: lega bene l'O₂ ma non lo cede, senza cooperatività né effetto Bohr",
    "Resta in forma T: non lega l'O₂ nei polmoni e non mostra cooperatività né effetto Bohr",
-   "Polimerizza in fibre come l'HbS e deforma gli eritrociti nei capillari",
+   "Polimerizza in fibre come l'HbS e deforma gli eritrociti quando passano nei capillari",
    "Ha il ferro ossidato a Fe³⁺ e causa cianosi, come le emoglobine M",
    "Lega il 2,3-BPG in modo irreversibile e non si satura mai di O₂"
   ],
@@ -27911,7 +27911,7 @@
   "opts": [
    "Prima aumenta (salting in), poi diminuisce fino a farla precipitare (salting out)",
    "Prima diminuisce (salting out), poi aumenta fino a scioglierla del tutto (salting in)",
-   "Aumenta sempre, perché gli ioni schermano le cariche della proteina",
+   "Aumenta sempre, perché gli ioni schermano le cariche della proteina e la idratano",
    "Diminuisce sempre, perché gli ioni denaturano la proteina",
    "Non cambia, perché la solubilità dipende solo dal pH della soluzione"
   ],
@@ -27949,7 +27949,7 @@
   "opts": [
    "No: precipita perché il sale le sottrae l'acqua, ma resta nella conformazione nativa",
    "Sì: il sale rompe i legami a idrogeno interni e la proteina perde la sua struttura nativa",
-   "Sì: il sale riduce i ponti disolfuro e la catena si srotola del tutto",
+   "Sì: il sale riduce i ponti disolfuro e la catena polipeptidica si srotola del tutto",
    "No: precipita perché il sale la porta al suo punto isoelettrico",
    "Dipende: si denatura solo se il sale usato è il solfato d'ammonio"
   ],
@@ -28006,7 +28006,7 @@
   "opts": [
    "Le His sono quasi neutre, ma Lys, Arg e N-terminale danno 15 cariche positive contro 11 negative",
    "Le His sono tutte protonate e danno 18 cariche positive contro le 10 negative delle catene laterali acide",
-   "A pH 7 i residui acidi sono ancora protonati e quindi non portano carica negativa",
+   "A pH 7 i residui acidi sono ancora protonati e quindi non portano nessuna carica negativa netta",
    "Il C-terminale è protonato a pH 7 e si somma alle cariche positive delle catene laterali",
    "A pH 7 tutti i gruppi sono neutri tranne le arginine, che restano sempre positive"
   ],
@@ -28196,7 +28196,7 @@
   "opts": [
    "L'SDS denatura la proteina e la riveste di cariche negative: il rapporto carica/massa è costante",
    "L'SDS neutralizza tutte le cariche: la proteina migra solo per diffusione verso il polo positivo",
-   "L'SDS porta ogni proteina al suo punto isoelettrico, dove la carica netta diventa nulla",
+   "L'SDS porta ogni proteina al suo punto isoelettrico, dove la carica netta diventa nulla e non migra",
    "L'SDS rompe i legami peptidici e lascia frammenti tutti della stessa lunghezza",
    "L'SDS lega solo le regioni idrofobiche: migra di più la proteina più idrofobica"
   ],
@@ -28272,7 +28272,7 @@
   "opts": [
    "Fosfatasi alcalina o perossidasi di rafano",
    "Tripsina o chimotripsina",
-   "Luciferasi o glucosio ossidasi",
+   "Luciferasi di lucciola o glucosio ossidasi",
    "DNA polimerasi o trascrittasi inversa virale",
    "Anidrasi carbonica o catalasi"
   ],
@@ -28387,7 +28387,7 @@
    "Assorbe l'energia del laser e la dissipa: la proteina si ionizza senza rompersi",
    "Lega la proteina in modo covalente e la libera solo quando arriva vicino al detector",
    "Separa le proteine per dimensione prima che entrino nell'analizzatore",
-   "Fornisce gli elettroni che riducono i ponti disolfuro della proteina",
+   "Fornisce gli elettroni che riducono i ponti disolfuro della proteina prima del volo",
    "Raffredda la proteina e la fa cristallizzare per l'analisi ai raggi X"
   ],
   "ans": 0,
@@ -28557,7 +28557,7 @@
   "opts": [
    "Rompe il legame senza usare l'acqua come secondo substrato",
    "Rompe il legame usando l'acqua e producendo così due prodotti",
-   "Rompe il legame usando l'ATP come fonte di energia",
+   "Rompe il legame usando l'idrolisi dell'ATP come fonte di energia",
    "Sposta un gruppo all'interno della stessa molecola",
    "Trasferisce il gruppo carbossilico a un coenzima"
   ],
@@ -28652,7 +28652,7 @@
   "opts": [
    "Il resto della catena dà forma al sito attivo e permette i cambi conformazionali della catalisi",
    "Il resto della catena serve solo a rendere l'enzima solubile e non ha ruolo nella reazione chimica",
-   "Il resto della catena contiene altri siti attivi identici che lavorano a turno",
+   "Il resto della catena contiene altri siti attivi identici che lavorano a turno con il primo",
    "Il resto della catena lega l'ATP che serve a ogni ciclo catalitico",
    "Il resto della catena serve solo a far riconoscere l'enzima dal proteasoma"
   ],
@@ -28691,7 +28691,7 @@
    "Cambia la protonazione dei residui che legano il substrato o catalizzano; a pH estremi la proteina si denatura",
    "Cambia la forza ionica della soluzione, che fa precipitare l'enzima ma non ne altera i residui catalitici del sito",
    "Il substrato si idrolizza da solo fuori dall'optimum e l'enzima non trova più niente da trasformare",
-   "Il pH cambia il ΔG della reazione, che diventa positivo appena ci si allontana dall'optimum",
+   "Il pH cambia il ΔG della reazione, che diventa positivo appena ci si allontana dall'optimum di pH dell'enzima",
    "Il pH ossida i ponti disolfuro del sito attivo e ne aumenta la Vmax, ma non l'affinità"
   ],
   "ans": 0,
@@ -28708,7 +28708,7 @@
   "q": "Da dove viene in parte l'energia che favorisce la formazione del complesso enzima-substrato?",
   "opts": [
    "Dalle interazioni enzima-substrato e dalle molecole d'acqua che si liberano",
-   "Dall'idrolisi di una molecola di ATP per ogni substrato legato",
+   "Dall'idrolisi di una molecola di ATP per ogni molecola di substrato legata",
    "Dall'aumento di temperatura locale nel sito attivo dell'enzima",
    "Dalla rottura di un legame covalente tra enzima e prodotto",
    "Dal ΔG negativo della reazione, ceduto all'enzima prima che inizi la catalisi"
@@ -28804,8 +28804,8 @@
   "opts": [
    "Meccanismo a doppio spostamento: i due substrati non sono mai insieme nel sito attivo",
    "Meccanismo sequenziale ordinato: si forma sempre un complesso ternario con i due substrati",
-   "Meccanismo sequenziale casuale: i substrati entrano in ordine qualsiasi",
-   "Inibizione da substrato: S2 in eccesso blocca il legame di S1",
+   "Meccanismo sequenziale casuale: i substrati entrano nel sito attivo in ordine qualsiasi",
+   "Inibizione da substrato: S2 in eccesso blocca il legame di S1 al sito attivo",
    "Cinetica allosterica: S2 è un effettore positivo che cambia la Vmax"
   ],
   "ans": 0,
@@ -28842,7 +28842,7 @@
   "opts": [
    "Deidrogenasi NAD-dipendenti",
    "Transaminasi PLP-dipendenti",
-   "Serin-proteasi",
+   "Serin-proteasi pancreatiche",
    "Aspartil proteasi",
    "Metalloproteasi"
   ],
@@ -28976,7 +28976,7 @@
    "Molti enzimi sono tipici di certi tessuti e passano nel sangue quando le cellule si danneggiano",
    "Gli enzimi sono prodotti dal fegato solo quando un altro organo è danneggiato",
    "Gli enzimi plasmatici vengono attivati dall'infiammazione e quindi la loro quantità nel sangue cresce",
-   "Il danno d'organo blocca l'eliminazione renale degli enzimi, che si accumulano",
+   "Il danno d'organo blocca l'eliminazione renale degli enzimi, che si accumulano nel plasma",
    "Gli enzimi nel sangue sono anticorpi diretti contro le proteine del tessuto danneggiato"
   ],
   "ans": 0,
@@ -29108,8 +29108,8 @@
   "opts": [
    "Anche senza triade il sito attivo favorisce la reazione, ad esempio legando e orientando il substrato",
    "La serina non partecipa alla catalisi: il calo di kcat dipende solo dalla perdita di struttura dell'enzima",
-   "La reazione non catalizzata è in realtà più veloce di quella dell'enzima con la serina",
-   "L'alanina sostituisce la serina come nucleofilo, ma con una velocità più bassa",
+   "La reazione non catalizzata è in realtà più veloce di quella dell'enzima naturale con la serina",
+   "L'alanina sostituisce la serina come nucleofilo, ma con una velocità molto più bassa",
    "Il sito attivo mutato usa un metallo al posto della triade per attivare l'acqua"
   ],
   "ans": 0,
@@ -29127,7 +29127,7 @@
   "opts": [
    "L'aspartato, pur senza attaccare il substrato, rende l'istidina capace di strappare il protone alla serina",
    "L'aspartato è il nucleofilo che attacca il carbonile del substrato, e senza di lui la reazione si ferma del tutto",
-   "L'aspartato lega il substrato nella tasca di specificità, e senza di lui il substrato non entra",
+   "L'aspartato lega il substrato nella tasca di specificità, e senza di lui il substrato non entra nel sito",
    "L'aspartato stabilizza l'ossianione, e senza di lui l'intermedio tetraedrico non si forma",
    "L'aspartato coordina un metallo del sito attivo, e senza di lui l'acqua non viene attivata"
   ],
@@ -29374,7 +29374,7 @@
   "opts": [
    "La serina del sito attivo attacca il fosforo, il fluoro esce e resta un legame covalente stabile",
    "Il fluoro si lega all'istidina del sito attivo e la blocca con un legame a idrogeno molto forte e stabile",
-   "Il DIPF somiglia all'acetilcolina e occupa il sito attivo con un legame non covalente",
+   "Il DIPF somiglia all'acetilcolina e occupa il sito attivo con un legame non covalente reversibile",
    "Il DIPF si lega a un sito allosterico e porta l'enzima nella forma T in modo permanente",
    "Il fosforo del DIPF ossida la serina del sito attivo e la trasforma in alanina"
   ],

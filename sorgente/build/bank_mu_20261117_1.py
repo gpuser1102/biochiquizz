@@ -34,7 +34,7 @@ q("u1117-004", T, "m", "72", "Perché è importante che la tasca dell'eme sia id
   "Tiene fuori l'acqua: l'eme non si perde e lega l'O₂ in modo reversibile",
   "Attira i protoni: favorisce l'effetto Bohr e la cessione dell'O₂ ai tessuti",
   "Lega la CO₂: forma i carbammati e abbassa l'affinità per l'O₂",
-  "Ossida il ferro: lo porta a Fe³⁺ e permette il sesto legame",
+  "Ossida il ferro: lo porta a Fe³⁺ e permette così il sesto legame con l'O₂",
   "Fa uscire l'eme: ne permette il ricambio a ogni ossigenazione",
   ], 0,
   "In un ambiente polare e idratato l'eme verrebbe perso e il ferro si ossiderebbe.")
@@ -42,8 +42,8 @@ q("u1117-005", T, "a", "72", "L'eme libero lega il CO molto più dell'O₂, ma n
   "L'istidina distale e i residui vicini ostacolano il legame del CO perpendicolare all'eme",
   "Nella mioglobina il CO ossida il ferro a Fe³⁺ e si stacca subito dopo essersi legato all'eme",
   "La globina lega il CO sul gruppo N-terminale, lontano dalla tasca dell'eme",
-  "L'istidina prossimale cede il suo legame col ferro all'O₂ ma non al CO",
-  "La tasca idrofobica respinge il CO, che è una molecola più polare dell'O₂",
+  "L'istidina prossimale cede il suo legame col ferro all'O₂ ma mai al monossido di carbonio",
+  "La tasca idrofobica respinge il CO, che è una molecola molto più polare dell'O₂ legato",
   ], 0,
   "Il CO preferisce legarsi a 90° rispetto al piano dell'eme, l'O₂ a circa 120°: l'ingombro sterico della globina sfavorisce il CO.",
   note="Sbobina di Biochimica I, p. 72: c'è scritto che il CO si lega «in modo irreversibile». Il legame è reversibile, ma con un'affinità così alta che il CO si stacca molto lentamente (Lehninger). Lehninger indica circa 20.000 volte per l'eme libero; la sbobina dice 25.000.")
@@ -169,7 +169,7 @@ q("u1117-024", T, "m", "76, 88", "Quali contatti tra subunità cambiano nella tr
 q("u1117-025", T, "l", "77", "Nella forma T, con quali residui forma ponti salini l'His146 C-terminale delle catene β?", [
   "Asp94 della catena β e Lys40 della catena α",
   "Asp126 e Lys127 della catena α",
-  "Arg141 della catena α e Val34",
+  "Arg141 della catena α e Val34 della catena β",
   "His143 e Lys82 della catena β",
   "Asp94 della catena α e Lys40 della catena β",
   ], 0,
@@ -424,7 +424,7 @@ q("u1117-058", T, "a", "93", "Perché gli eterozigoti per l'HbS sono protetti da
 q("u1117-059", T, "a", "89", "Perché la sostituzione His146 → Asp nelle catene β riduce l'effetto Bohr?", [
   "L'aspartato è sempre negativo a pH fisiologico e non cambia protonazione",
   "L'aspartato è sempre positivo a pH fisiologico e lega troppo forte il 2,3-BPG",
-  "L'aspartato coordina il ferro dell'eme e lo ossida a Fe³⁺",
+  "L'aspartato coordina il ferro dell'eme e lo ossida a Fe³⁺ in modo stabile",
   "L'aspartato rende la tasca dell'eme polare e fa perdere l'eme",
   "L'aspartato forma un ponte disolfuro che blocca la forma T",
   ], 0,
@@ -451,7 +451,7 @@ q("u1117-062", T, "h", "89", "In una variante instabile la Phe42 (CD1) delle cat
 q("u1117-063", T, "h", "94", "In un paziente tre dei quattro geni α non funzionano e si forma HbH (β4). Perché non serve ai tessuti?", [
   "Resta in forma R: lega bene l'O₂ ma non lo cede, senza cooperatività né effetto Bohr",
   "Resta in forma T: non lega l'O₂ nei polmoni e non mostra cooperatività né effetto Bohr",
-  "Polimerizza in fibre come l'HbS e deforma gli eritrociti nei capillari",
+  "Polimerizza in fibre come l'HbS e deforma gli eritrociti quando passano nei capillari",
   "Ha il ferro ossidato a Fe³⁺ e causa cianosi, come le emoglobine M",
   "Lega il 2,3-BPG in modo irreversibile e non si satura mai di O₂",
   ], 0,

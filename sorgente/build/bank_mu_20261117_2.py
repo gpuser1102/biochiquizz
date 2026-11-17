@@ -31,7 +31,7 @@ q("u1117-069", T, "f", "96", "Perché l'omogenato cellulare si prepara a circa 4
 q("u1117-070", T, "f", "97", "Che cosa succede alla solubilità di una proteina aumentando via via la forza ionica?", [
   "Prima aumenta (salting in), poi diminuisce fino a farla precipitare (salting out)",
   "Prima diminuisce (salting out), poi aumenta fino a scioglierla del tutto (salting in)",
-  "Aumenta sempre, perché gli ioni schermano le cariche della proteina",
+  "Aumenta sempre, perché gli ioni schermano le cariche della proteina e la idratano",
   "Diminuisce sempre, perché gli ioni denaturano la proteina",
   "Non cambia, perché la solubilità dipende solo dal pH della soluzione",
   ], 0,
@@ -47,7 +47,7 @@ q("u1117-071", T, "m", "97", "Perché per il salting out si usa soprattutto il s
 q("u1117-072", T, "m", "97", "Una proteina fatta precipitare con il salting out è denaturata?", [
   "No: precipita perché il sale le sottrae l'acqua, ma resta nella conformazione nativa",
   "Sì: il sale rompe i legami a idrogeno interni e la proteina perde la sua struttura nativa",
-  "Sì: il sale riduce i ponti disolfuro e la catena si srotola del tutto",
+  "Sì: il sale riduce i ponti disolfuro e la catena polipeptidica si srotola del tutto",
   "No: precipita perché il sale la porta al suo punto isoelettrico",
   "Dipende: si denatura solo se il sale usato è il solfato d'ammonio",
   ], 0,
@@ -66,7 +66,7 @@ q("u1117-074", T, "m", "99", "Tre proteine da 150, 60 e 15 kDa passano su una co
 q("u1117-075", T, "h", "101", "La ribonucleasi ha 10 residui acidi e 18 basici (10 Lys, 4 Arg, 4 His). Perché a pH 7 ha carica netta positiva?", [
   "Le His sono quasi neutre, ma Lys, Arg e N-terminale danno 15 cariche positive contro 11 negative",
   "Le His sono tutte protonate e danno 18 cariche positive contro le 10 negative delle catene laterali acide",
-  "A pH 7 i residui acidi sono ancora protonati e quindi non portano carica negativa",
+  "A pH 7 i residui acidi sono ancora protonati e quindi non portano nessuna carica negativa netta",
   "Il C-terminale è protonato a pH 7 e si somma alle cariche positive delle catene laterali",
   "A pH 7 tutti i gruppi sono neutri tranne le arginine, che restano sempre positive",
   ], 0,
@@ -140,7 +140,7 @@ q("u1117-084", T, "f", "105", "In base a quale proprietà l'SDS-PAGE separa le p
 q("u1117-085", T, "m", "105", "Perché nell'SDS-PAGE la migrazione dipende solo dalla massa?", [
   "L'SDS denatura la proteina e la riveste di cariche negative: il rapporto carica/massa è costante",
   "L'SDS neutralizza tutte le cariche: la proteina migra solo per diffusione verso il polo positivo",
-  "L'SDS porta ogni proteina al suo punto isoelettrico, dove la carica netta diventa nulla",
+  "L'SDS porta ogni proteina al suo punto isoelettrico, dove la carica netta diventa nulla e non migra",
   "L'SDS rompe i legami peptidici e lascia frammenti tutti della stessa lunghezza",
   "L'SDS lega solo le regioni idrofobiche: migra di più la proteina più idrofobica",
   ], 0,
@@ -172,7 +172,7 @@ q("u1117-088", T, "m", "106", "Nel Western blot, che cosa riconosce l'anticorpo 
 q("u1117-089", T, "f", "107", "Quali enzimi sono legati di solito all'anticorpo secondario nel Western blot?", [
   "Fosfatasi alcalina o perossidasi di rafano",
   "Tripsina o chimotripsina",
-  "Luciferasi o glucosio ossidasi",
+  "Luciferasi di lucciola o glucosio ossidasi",
   "DNA polimerasi o trascrittasi inversa virale",
   "Anidrasi carbonica o catalasi",
   ], 0,
@@ -221,7 +221,7 @@ q("u1117-095", T, "a", "108", "A che cosa serve la matrice nel MALDI?", [
   "Assorbe l'energia del laser e la dissipa: la proteina si ionizza senza rompersi",
   "Lega la proteina in modo covalente e la libera solo quando arriva vicino al detector",
   "Separa le proteine per dimensione prima che entrino nell'analizzatore",
-  "Fornisce gli elettroni che riducono i ponti disolfuro della proteina",
+  "Fornisce gli elettroni che riducono i ponti disolfuro della proteina prima del volo",
   "Raffredda la proteina e la fa cristallizzare per l'analisi ai raggi X",
   ], 0,
   "Nell'ESI invece la proteina è nebulizzata in goccioline attraverso un capillare sotto voltaggio.")
@@ -272,7 +272,7 @@ q("u1117-103", T, "f", "112", "Quale classe di enzimi forma nuovi legami usando 
 q("u1117-104", T, "a", "112", "La piruvato decarbossilasi scinde un legame C–C e libera CO₂ e acetaldeide. Perché è una liasi e non un'idrolasi?", [
   "Rompe il legame senza usare l'acqua come secondo substrato",
   "Rompe il legame usando l'acqua e producendo così due prodotti",
-  "Rompe il legame usando l'ATP come fonte di energia",
+  "Rompe il legame usando l'idrolisi dell'ATP come fonte di energia",
   "Sposta un gruppo all'interno della stessa molecola",
   "Trasferisce il gruppo carbossilico a un coenzima",
   ], 0,
@@ -315,7 +315,7 @@ q("u1117-108", T, "f", "116", "Che cosa dice il modello dell'adattamento indotto
 q("u1117-109", T, "h", "116", "Il sito attivo occupa spesso meno del 5% della superficie dell'enzima. Perché serve comunque tutta la catena?", [
   "Il resto della catena dà forma al sito attivo e permette i cambi conformazionali della catalisi",
   "Il resto della catena serve solo a rendere l'enzima solubile e non ha ruolo nella reazione chimica",
-  "Il resto della catena contiene altri siti attivi identici che lavorano a turno",
+  "Il resto della catena contiene altri siti attivi identici che lavorano a turno con il primo",
   "Il resto della catena lega l'ATP che serve a ogni ciclo catalitico",
   "Il resto della catena serve solo a far riconoscere l'enzima dal proteasoma",
   ], 0,
@@ -327,14 +327,14 @@ q("u1117-111", T, "h", "117–118", "La pepsina lavora al meglio a pH molto acid
   "Cambia la protonazione dei residui che legano il substrato o catalizzano; a pH estremi la proteina si denatura",
   "Cambia la forza ionica della soluzione, che fa precipitare l'enzima ma non ne altera i residui catalitici del sito",
   "Il substrato si idrolizza da solo fuori dall'optimum e l'enzima non trova più niente da trasformare",
-  "Il pH cambia il ΔG della reazione, che diventa positivo appena ci si allontana dall'optimum",
+  "Il pH cambia il ΔG della reazione, che diventa positivo appena ci si allontana dall'optimum di pH dell'enzima",
   "Il pH ossida i ponti disolfuro del sito attivo e ne aumenta la Vmax, ma non l'affinità",
   ], 0,
   "Nella catalisi acido-base i residui del sito attivo donano o accettano protoni solo se hanno lo stato di protonazione giusto.",
   note="Sbobina di Biochimica I, p. 139: indica per la pepsina un optimum «di circa pH 5», mentre a p. 117 dice pH 2. L'optimum della pepsina è intorno a pH 2 (Lehninger).")
 q("u1117-112", T, "a", "115", "Da dove viene in parte l'energia che favorisce la formazione del complesso enzima-substrato?", [
   "Dalle interazioni enzima-substrato e dalle molecole d'acqua che si liberano",
-  "Dall'idrolisi di una molecola di ATP per ogni substrato legato",
+  "Dall'idrolisi di una molecola di ATP per ogni molecola di substrato legata",
   "Dall'aumento di temperatura locale nel sito attivo dell'enzima",
   "Dalla rottura di un legame covalente tra enzima e prodotto",
   "Dal ΔG negativo della reazione, ceduto all'enzima prima che inizi la catalisi",
@@ -374,8 +374,8 @@ q("u1117-116", T, "a", "125", "Nel grafico dei doppi reciproci (Lineweaver-Burk)
 q("u1117-117", T, "h", "127–128", "Studiando una reazione a due substrati, variando la concentrazione fissa di S2 ottieni nel grafico dei doppi reciproci rette parallele. Che cosa concludi?", [
   "Meccanismo a doppio spostamento: i due substrati non sono mai insieme nel sito attivo",
   "Meccanismo sequenziale ordinato: si forma sempre un complesso ternario con i due substrati",
-  "Meccanismo sequenziale casuale: i substrati entrano in ordine qualsiasi",
-  "Inibizione da substrato: S2 in eccesso blocca il legame di S1",
+  "Meccanismo sequenziale casuale: i substrati entrano nel sito attivo in ordine qualsiasi",
+  "Inibizione da substrato: S2 in eccesso blocca il legame di S1 al sito attivo",
   "Cinetica allosterica: S2 è un effettore positivo che cambia la Vmax",
   ], 0,
   "Nei meccanismi sequenziali (ternari) le rette si incontrano in un punto a sinistra dell'asse y.")
@@ -388,7 +388,7 @@ q("u1117-118", T, "m", "126", "In un meccanismo sequenziale ordinato, in che ord
   ], 0,
   "Il primo substrato entrato è l'ultimo prodotto a uscire.")
 q("u1117-119", T, "l", "126", "In quale gruppo di enzimi il meccanismo sequenziale ordinato è particolarmente comune?", [
-  "Deidrogenasi NAD-dipendenti", "Transaminasi PLP-dipendenti", "Serin-proteasi", "Aspartil proteasi", "Metalloproteasi"], 0,
+  "Deidrogenasi NAD-dipendenti", "Transaminasi PLP-dipendenti", "Serin-proteasi pancreatiche", "Aspartil proteasi", "Metalloproteasi"], 0,
   "Le transaminasi seguono invece il meccanismo a doppio spostamento (ping-pong).")
 q("u1117-120", T, "a", "125–126", "Perché per confrontare l'efficienza di due enzimi non basta il numero di turnover (kcat)?", [
   "Conta anche la Km: a [S] sotto la Km l'efficienza è data da kcat/Km",

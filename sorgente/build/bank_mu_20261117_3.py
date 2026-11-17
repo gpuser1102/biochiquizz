@@ -33,7 +33,7 @@ q("u1117-126", T, "f", "129", "Perché l'aumento di un enzima nel sangue può in
   "Molti enzimi sono tipici di certi tessuti e passano nel sangue quando le cellule si danneggiano",
   "Gli enzimi sono prodotti dal fegato solo quando un altro organo è danneggiato",
   "Gli enzimi plasmatici vengono attivati dall'infiammazione e quindi la loro quantità nel sangue cresce",
-  "Il danno d'organo blocca l'eliminazione renale degli enzimi, che si accumulano",
+  "Il danno d'organo blocca l'eliminazione renale degli enzimi, che si accumulano nel plasma",
   "Gli enzimi nel sangue sono anticorpi diretti contro le proteine del tessuto danneggiato",
   ], 0,
   "Anche il normale ricambio cellulare riversa enzimi nel sangue; un danno ne aumenta i livelli.")
@@ -92,8 +92,8 @@ q("u1117-132", T, "m", "135", "Quale abbinamento proteasi – residuo riconosciu
 q("u1117-133", T, "h", "136", "Nella subtilisina, sostituendo con alanina la serina catalitica, la kcat crolla di circa un milione di volte, ma l'enzima resta comunque migliaia di volte più veloce della reazione non catalizzata. Che cosa dimostra?", [
   "Anche senza triade il sito attivo favorisce la reazione, ad esempio legando e orientando il substrato",
   "La serina non partecipa alla catalisi: il calo di kcat dipende solo dalla perdita di struttura dell'enzima",
-  "La reazione non catalizzata è in realtà più veloce di quella dell'enzima con la serina",
-  "L'alanina sostituisce la serina come nucleofilo, ma con una velocità più bassa",
+  "La reazione non catalizzata è in realtà più veloce di quella dell'enzima naturale con la serina",
+  "L'alanina sostituisce la serina come nucleofilo, ma con una velocità molto più bassa",
   "Il sito attivo mutato usa un metallo al posto della triade per attivare l'acqua",
   ], 0,
   "Mutando tutti e tre i residui della triade il calo resta di circa 10⁶–10⁷ volte.",
@@ -101,7 +101,7 @@ q("u1117-133", T, "h", "136", "Nella subtilisina, sostituendo con alanina la ser
 q("u1117-134", T, "a", "136", "Nella subtilisina, mutando in alanina l'aspartato della triade, la kcat cala di circa 10⁴ volte. Che cosa indica?", [
   "L'aspartato, pur senza attaccare il substrato, rende l'istidina capace di strappare il protone alla serina",
   "L'aspartato è il nucleofilo che attacca il carbonile del substrato, e senza di lui la reazione si ferma del tutto",
-  "L'aspartato lega il substrato nella tasca di specificità, e senza di lui il substrato non entra",
+  "L'aspartato lega il substrato nella tasca di specificità, e senza di lui il substrato non entra nel sito",
   "L'aspartato stabilizza l'ossianione, e senza di lui l'intermedio tetraedrico non si forma",
   "L'aspartato coordina un metallo del sito attivo, e senza di lui l'acqua non viene attivata",
   ], 0,
@@ -194,7 +194,7 @@ q("u1117-146", T, "h", "144–147", "In presenza di un inibitore, nel grafico de
 q("u1117-147", T, "a", "147–148", "Perché il DIPF (diisopropilfluorofosfato) inibisce in modo irreversibile l'acetilcolinesterasi?", [
   "La serina del sito attivo attacca il fosforo, il fluoro esce e resta un legame covalente stabile",
   "Il fluoro si lega all'istidina del sito attivo e la blocca con un legame a idrogeno molto forte e stabile",
-  "Il DIPF somiglia all'acetilcolina e occupa il sito attivo con un legame non covalente",
+  "Il DIPF somiglia all'acetilcolina e occupa il sito attivo con un legame non covalente reversibile",
   "Il DIPF si lega a un sito allosterico e porta l'enzima nella forma T in modo permanente",
   "Il fosforo del DIPF ossida la serina del sito attivo e la trasforma in alanina",
   ], 0,

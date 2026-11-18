@@ -59,8 +59,8 @@ q("m4r-01", T, "f", "124", "La glicogeno fosforilasi è più attiva quando è:",
   "La fosforilasi chinasi la fosforila su una serina.")
 q("m4r-02", T, "f", "126", "La glicogeno sintasi è più attiva quando è:", ["Defosforilata", "Fosforilata", "Legata al cAMP", "Legata all'AMP"], 0,
   "Fosforilazione e defosforilazione hanno effetti opposti su sintasi e fosforilasi.")
-q("m4r-03", T, "m", "125", "Nel muscolo, quale regolatore allosterico attiva la fosforilasi b anche senza fosforilazione?", ["AMP", "ATP", "Glucosio 6-fosfato", "Glucosio"], 0,
-  "AMP alto = poca energia. ATP e glucosio 6-P la inibiscono.")
+q("m4r-03", T, "m", "119–120", "Nel muscolo la fosforilasi b (defosforilata) sta di solito nello stato T, poco attivo. Quale molecola la porta nello stato R, attivandola senza fosforilarla?", ["AMP", "ATP", "Glucosio 6-fosfato", "Glucosio"], 0,
+  "La fosforilasi resta nella forma b (non diventa a): cambia solo conformazione, da T a R. L'AMP alto segnala poca energia nel muscolo; ATP e glucosio 6-P la riportano in T. Il passaggio b → a è un'altra cosa: è la fosforilazione da parte della fosforilasi chinasi.")
 q("m4r-04", T, "m", "125", "Nel fegato, quale molecola inattiva la fosforilasi a?", ["Glucosio", "AMP", "Ca²⁺", "cAMP"], 0,
   "Il glucosio la porta nello stato T ed espone le serine alla fosfatasi PP1: il fegato è un sensore della glicemia.")
 q("m4r-05", T, "m", "126", "Come agisce l'insulina sulla glicogeno sintasi?", [

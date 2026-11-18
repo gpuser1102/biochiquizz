@@ -4069,9 +4069,9 @@
   "id": "m4r-03",
   "topic": "m4-regolazione",
   "level": "m",
-  "page": "125",
+  "page": "119–120",
   "src": "Biochimica II",
-  "q": "Nel muscolo, quale regolatore allosterico attiva la fosforilasi b anche senza fosforilazione?",
+  "q": "Nel muscolo la fosforilasi b (defosforilata) sta di solito nello stato T, poco attivo. Quale molecola la porta nello stato R, attivandola senza fosforilarla?",
   "opts": [
    "AMP",
    "ATP",
@@ -4080,7 +4080,7 @@
    "Ca²⁺ da solo"
   ],
   "ans": 0,
-  "why": "AMP alto = poca energia. ATP e glucosio 6-P la inibiscono.",
+  "why": "La fosforilasi resta nella forma b (non diventa a): cambia solo conformazione, da T a R. L'AMP alto segnala poca energia nel muscolo; ATP e glucosio 6-P la riportano in T. Il passaggio b → a è un'altra cosa: è la fosforilazione da parte della fosforilasi chinasi.",
   "note": null,
   "fixed": false
  },

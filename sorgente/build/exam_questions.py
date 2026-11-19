@@ -93,8 +93,8 @@ q("k05-neg", "m1-enzimologia", "28", "La K0,5 (KM apparente) di un enzima allost
   ["Non subisce variazioni", "Diminuisce", "Aumenta", "Dipende dalla concentrazione del substrato"], 2,
   "L'effettore negativo sposta l'equilibrio verso T: la sigmoide va a destra e la K0,5 aumenta.", times=2)
 q("t-r", "m1-enzimologia", "28", "In un enzima allosterico la transizione dalla forma T alla forma R è inibita da:",
-  ["Effettore omotropico negativo", "Effettore eterotropico negativo", "Effettore eterotropico positivo", "Gli effettori allosterici non hanno influenza"], 1,
-  "La inibisce un effettore negativo diverso dal substrato (eterotropico). L'effettore omotropico è il substrato stesso e di solito è positivo.")
+  ["Effettore omotropico positivo", "Effettore eterotropico negativo", "Effettore eterotropico positivo", "Gli effettori allosterici non hanno influenza"], 1,
+  "Un effettore negativo sposta l'equilibrio verso T, quindi ostacola il passaggio a R; eterotropico vuol dire diverso dal substrato (es. il CTP sull'aspartato transcarbamilasi). Gli effettori positivi, omotropici (il substrato stesso) o eterotropici (es. l'ATP), favoriscono invece la forma R.")
 q("s-km", "m1-enzimologia", "27", "Quando la concentrazione di substrato è uguale alla KM:",
   ["La velocità è uguale alla velocità massima", "Tutto l'enzima è legato al substrato", "La velocità è metà della velocità massima", "Diminuisce la formazione del prodotto"], 2,
   "È la definizione di KM: la concentrazione di substrato a cui v = ½ Vmax.")
@@ -346,7 +346,7 @@ EXTRA = {
     "piu-enzima": "Diminuzione della Vmax",
     "km-unita": "M s⁻¹",
     "k05-neg": "Si annulla",
-    "t-r": "Substrato in concentrazione saturante",
+    "t-r": "La rimozione dell'effettore negativo",
     "s-km": "La velocità è un quarto della velocità massima",
     "serina": "Glicina",
     "lento": "Inibizione da prodotto",

@@ -486,14 +486,14 @@
   "src": "Biochimica II",
   "q": "In un enzima allosterico la transizione dalla forma T alla forma R è inibita da:",
   "opts": [
-   "Effettore omotropico negativo",
+   "Effettore omotropico positivo",
    "Effettore eterotropico negativo",
    "Effettore eterotropico positivo",
    "Gli effettori allosterici non hanno influenza",
-   "Substrato in concentrazione saturante"
+   "La rimozione dell'effettore negativo"
   ],
   "ans": 1,
-  "why": "La inibisce un effettore negativo diverso dal substrato (eterotropico). L'effettore omotropico è il substrato stesso e di solito è positivo.",
+  "why": "Un effettore negativo sposta l'equilibrio verso T, quindi ostacola il passaggio a R; eterotropico vuol dire diverso dal substrato (es. il CTP sull'aspartato transcarbamilasi). Gli effettori positivi, omotropici (il substrato stesso) o eterotropici (es. l'ATP), favoriscono invece la forma R.",
   "note": null,
   "times": 1,
   "pending": false,

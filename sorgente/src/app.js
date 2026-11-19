@@ -22,6 +22,10 @@
     for (const kid of kids.flat()) if (kid != null && kid !== false) el.append(kid.nodeType ? kid : document.createTextNode(kid));
     return el;
   };
+  // Logo: stessa geometria dell'icona (build_app.py, LOGO)
+  const LOGO_SVG = '<svg viewBox="0 0 100 100"><defs><filter id="lg-b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter><linearGradient id="lg-o" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ff8c32"/><stop offset="1" stop-color="#f56914"/></linearGradient></defs><path d="M50.00 22.50 L74.25 36.50 L74.25 64.50 L50.00 78.50 L25.75 64.50 L25.75 36.50Z" transform="translate(0 3)" fill="none" stroke="#140c5a" stroke-width="6" stroke-linejoin="round" opacity=".3" filter="url(#lg-b)"/><path d="M50.00 22.50 L74.25 36.50 L74.25 64.50 L50.00 78.50 L25.75 64.50 L25.75 36.50Z" fill="#fff" fill-opacity=".09" stroke="#fff" stroke-width="4.8" stroke-linejoin="round"/><circle cx="50" cy="50.5" r="11.3" fill="none" stroke="url(#lg-o)" stroke-width="5.4"/></svg>';
+  // spunta "verificata" a rosetta, stile Instagram
+  const VERIFIED_SVG = '<svg viewBox="0 0 24 24"><path d="M12.00 1.40 L14.38 3.11 L17.30 2.82 L18.51 5.49 L21.18 6.70 L20.89 9.62 L22.60 12.00 L20.89 14.38 L21.18 17.30 L18.51 18.51 L17.30 21.18 L14.38 20.89 L12.00 22.60 L9.62 20.89 L6.70 21.18 L5.49 18.51 L2.82 17.30 L3.11 14.38 L1.40 12.00 L3.11 9.62 L2.82 6.70 L5.49 5.49 L6.70 2.82 L9.62 3.11Z" fill="#0095f6" stroke="#0095f6" stroke-width="1.6" stroke-linejoin="round"/><path d="M7.6 12.3l3 3 5.8-6.2" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
   const ICON = {
     feed: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="4"/><path d="M9 9h6M9 13h4"/></svg>',
     topics: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h2M4 12h2M4 18h2M10 6h10M10 12h10M10 18h10"/></svg>',
@@ -56,6 +60,8 @@
   if (!["grad", "free", "hard"].includes(S.study)) S.study = S.progressive === false ? "free" : "grad";
   if (!S.hardStats) S.hardStats = {};
   if (S.levels && S.levels.h === undefined) S.levels.h = true;
+  // guida al primo utilizzo: chi usava già l'app non la rivede
+  if (S.tour === undefined) S.tour = !!S.welcomed;
   // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
   if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
@@ -81,11 +87,11 @@
     return S.selected.filter(t => TOPICS[t] && TOPICS[t].ready);
   };
   /* ---------------- Livelli ----------------
-     Facile → Medio → Alta → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
+     Facile → Intermedio → Avanzato → 30 e lode. In modalità progressiva, per ogni argomento il livello successivo si sblocca
      quando almeno il 70% delle card del livello precedente è stato imparato (passato in ripasso). */
   const LEVELS = ["f", "m", "a", "l", "h"];
-  const LEVEL_NAME = { f: "Facile", m: "Medio", a: "Alta", l: "30 e lode", h: "Hard" };
-  const STUDY_NAME = { grad: "Graduale", free: "Libera", hard: "Hard mode" };
+  const LEVEL_NAME = { f: "Facile", m: "Intermedio", a: "Avanzato", l: "30 e lode", h: "Difficile" };
+  const STUDY_NAME = { grad: "Graduale", free: "Libera", hard: "Difficili" };
   const isHard = () => S.study === "hard";
   // in hard mode: solo le domande Hard, ragionate in stile esame (livello h)
   const inHard = c => c.kind === "ex" && c.level === "h";
@@ -468,14 +474,14 @@
     body.append(h("div", { class: "card-head" },
       h("div", { class: "tile " + tileClass }, svgIcon(icon)),
       h("div", { style: "flex:1;min-width:0" }, h("div", { class: "card-kicker" }, kicker), h("div", { class: "card-topic" }, topicLabel(c))),
-      isHard() && (c.kind === "mol" || c.kind === "rx") ? h("span", { class: "lv lv-h" }, "Hard")
+      isHard() && (c.kind === "mol" || c.kind === "rx") ? h("span", { class: "lv lv-h" }, "Difficile")
         : c.level ? h("span", { class: "lv lv-" + c.level }, LEVEL_NAME[c.level]) : null));
     const foot = h("div", { class: "card-foot" }, reportLink(c.id), h("span", { class: "next-hint" }, "Scorri", svgIcon("down")));
     card.append(body, foot);
     return { card, body };
   }
   function noteEl(text) { return h("div", { class: "note" }, h("div", {}, h("b", {}, "⚠ Sbobina · "), text)); }
-  // Feedback a pop-up: si apre dalla risposta toccata e si sovrappone un po' alle opzioni sotto
+  // Feedback: riquadro con la spiegazione sotto le opzioni (si può chiudere a tendina)
   function finish(card, anchor, ok, text, meta, note, g) {
     card.classList.add("answered");
     const last = false;
@@ -494,12 +500,13 @@
       h("div", { class: "pop-head", role: "button", tabindex: "0", "aria-expanded": "true", title: "Chiudi o riapri la spiegazione" },
         h("span", { class: "pop-verdict" }, ok ? "Giusto" : "Sbagliato"),
         h("span", { class: "pop-toggle" }, h("span", { class: "pop-toggle-l" }, "Nascondi"), svgIcon("down"))),
-      text ? h("div", { class: "pop-text" }, text) : null,
-      meta ? h("div", { class: "pop-meta" }, meta) : null,
-      when ? h("div", { class: "pop-meta" }, when) : null,
-      note ? (/^Sbobina /.test(note)
-        ? h("div", { class: "pop-note" }, h("b", {}, "⚠ " + note.split(":")[0] + ":"), note.slice(note.indexOf(":") + 1))
-        : h("div", { class: "pop-note info" }, h("b", {}, "Nota · "), note)) : null,
+      h("div", { class: "pop-body" },
+        text ? h("div", { class: "pop-text" }, text) : null,
+        meta ? h("div", { class: "pop-meta" }, meta) : null,
+        when ? h("div", { class: "pop-meta" }, when) : null,
+        note ? (/^Sbobina /.test(note)
+          ? h("div", { class: "pop-note" }, h("b", {}, "⚠ " + note.split(":")[0] + ":"), note.slice(note.indexOf(":") + 1))
+          : h("div", { class: "pop-note info" }, h("b", {}, "Nota · "), note)) : null),
       rate);
     // la spiegazione si chiude come un menu a tendina per vedere le opzioni sotto
     const head = pop.querySelector(".pop-head");
@@ -507,20 +514,20 @@
       e.preventDefault(); e.stopPropagation();
       const closed = pop.classList.toggle("collapsed");
       head.setAttribute("aria-expanded", String(!closed));
-      anchor.classList.toggle("pop-closed", closed);
+      if (!pop.classList.contains("below")) anchor.classList.toggle("pop-closed", closed);
       head.querySelector(".pop-toggle-l").textContent = closed ? "Mostra" : "Nascondi";
     };
     head.addEventListener("click", toggle);
     head.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") toggle(e); });
     pop.addEventListener("click", e => e.stopPropagation());
-    anchor.classList.add("has-pop");
-    anchor.append(pop);
-    // sotto la risposta se c'è spazio nella card, altrimenti sopra
+    // la spiegazione va sotto le opzioni, nello spazio libero della card: non copre più le risposte
     const body = card.querySelector(".card-body");
-    if (body) {
-      const pr = pop.getBoundingClientRect(), br = body.getBoundingClientRect(), ar = anchor.getBoundingClientRect();
-      if (pr.bottom > br.bottom - 4 && ar.top - br.top > br.bottom - ar.bottom) pop.classList.add("up");
-    }
+    pop.classList.add("below");
+    if (body) body.append(pop); else { anchor.classList.add("has-pop"); anchor.append(pop); }
+    // vibrazione breve (solo dove il browser la permette, cioè Android) e animazione sulla risposta giusta
+    try { if (navigator.vibrate) navigator.vibrate(ok ? 14 : [28, 45, 28]); } catch (e) { /* niente vibrazione */ }
+    if (ok) { anchor.classList.add("just-right"); setTimeout(() => anchor.classList.remove("just-right"), 900); }
+    else { anchor.classList.add("just-wrong"); setTimeout(() => anchor.classList.remove("just-wrong"), 500); }
   }
   function optionList(opts, correct, onDone) {
     const wrap = h("div", { class: "options", role: "group" });
@@ -710,7 +717,8 @@
   // Domanda verificata (proposta a lezione): opzioni nell'ordine originale (alcune rimandano alle altre: "Tutte e tre", "Nessuno")
   function examCard(c) {
     const x = c.ex;
-    const kicker = c.bank ? (x.level === "h" ? "Domanda Hard · da esame" : x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda") : (x.times > 1 ? `Domanda verificata · uscita ${x.times} volte` : "Domanda verificata");
+    const kicker = c.bank ? (x.level === "h" ? "Domanda in stile esame" : x.level === "l" ? "Rifinitura da 30 e lode" : "Domanda")
+      : h("span", { class: "verified" }, "Verificata", h("span", { class: "vbadge", role: "img", "aria-label": "verificata", html: VERIFIED_SVG }), x.times > 1 ? ` · uscita ${x.times} volte` : "");
     const { card, body } = shell(c, kicker, c.bank ? (x.level === "h" ? "t-peach" : x.level === "l" ? "t-lilac" : "t-rose") : "t-sky", c.bank ? (x.level === "h" ? "flame" : x.level === "l" ? "star" : "hex") : "board");
     const qEl = h("h2", { class: "q ex-q" });
     // evidenzia le negazioni, come si fa a penna sul compito
@@ -774,7 +782,7 @@
   const MODE_INFO = {
     grad: "Parti dalle domande facili. In ogni argomento il livello successivo si sblocca quando hai imparato il 70% di quello prima.",
     free: "Scegli tu quali livelli includere, tutti già sbloccati.",
-    hard: "Solo domande Hard: ragionate, in stile esame, a 5 opzioni. Servono per capire se hai davvero capito l'argomento. Se sbagli, la domanda torna dopo un minuto.",
+    hard: "Solo domande difficili: ragionate, in stile esame, a 5 opzioni. Servono per capire se hai davvero capito l'argomento. Se sbagli, la domanda torna dopo un minuto.",
   };
   function setStudy(v) {
     S.study = v; S.progressive = v === "grad"; save(); renderModebar(); resetFeed();
@@ -824,7 +832,7 @@
     const seg = h("div", { class: "seg", role: "group", "aria-label": "Modalità di studio" },
       ...["grad", "free", "hard"].map(v => {
         const b = h("button", { type: "button", class: v === "hard" ? "hard-b" : "", "aria-pressed": String(S.study === v) },
-          v === "hard" ? svgIcon("flame") : null, v === "free" && S.study === "free" ? "Libera ▾" : v === "hard" ? "Hard" : STUDY_NAME[v]);
+          v === "hard" ? svgIcon("flame") : null, v === "free" && S.study === "free" ? "Libera ▾" : STUDY_NAME[v]);
         b.addEventListener("click", () => { if (v === S.study) openModeSheet(); else { setStudy(v); if (v === "free") openModeSheet(); else toast(STUDY_NAME[v] + (v === "hard" ? ": solo domande toste" : ": livelli a sblocco")); } });
         return b;
       }));
@@ -863,13 +871,30 @@
       sub.blocks.forEach((b, bi) => {
         const readyN = b.topics.filter(t => t.ready).length;
         const selN = b.topics.filter(t => S.selected.includes(t.id)).length;
-        const head = h("button", { class: "row block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
+        const head = h("button", { class: "block-head", type: "button", "aria-expanded": readyN ? "true" : "false" },
           h("div", { class: "tile " + tiles[bi % tiles.length] }, h("span", { style: "font-weight:800;font-size:15px" }, String(bi + 1))),
           h("div", { class: "row-text" }, h("div", { class: "row-title" }, b.name),
-            h("div", { class: "row-sub" }, `${pg(b.pages)} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`)),
-          h("span", { class: "chev", html: ICON.chev }));
+            h("div", { class: "row-sub" }, `${pg(b.pages)} · ${readyN ? `${selN}/${readyN} spuntati` : "domande in arrivo"}`),
+            readyN ? (p => h("div", { class: "bar two blk", title: `${p.seen}/${p.tot} card viste` },
+              h("i", { style: `width:${p.tot ? Math.round(p.mature / p.tot * 100) : 0}%` }),
+              h("i", { class: "young", style: `width:${p.tot ? Math.round(p.young / p.tot * 100) : 0}%` })))(progressOf(b.topics.filter(t => t.ready).map(t => t.id))) : null));
+        const chev = h("button", { class: "chev-b", type: "button", "aria-label": "Mostra o nascondi gli argomenti", "aria-expanded": readyN ? "true" : "false" }, h("span", { class: "chev", html: ICON.chev }));
         const list = h("div", { class: "topics" }); list.hidden = !readyN;
-        head.addEventListener("click", () => { list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden)); });
+        const toggle = () => { list.hidden = !list.hidden; [head, chev].forEach(x => x.setAttribute("aria-expanded", String(!list.hidden))); };
+        head.addEventListener("click", toggle); chev.addEventListener("click", toggle);
+        // spunta unica sul titolo del macroargomento: seleziona o toglie tutti i suoi argomenti pronti
+        const ready = b.topics.filter(t => t.ready).map(t => t.id);
+        const all = readyN && selN === readyN, some = selN > 0 && !all;
+        const allB = readyN ? h("button", { class: "check all-check" + (all ? " on" : some ? " some" : ""), type: "button", role: "checkbox",
+          "aria-checked": all ? "true" : some ? "mixed" : "false", "aria-label": (all ? "Togli tutto: " : "Spunta tutto: ") + b.name,
+          html: all ? ICON.check : some ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M7 12h10"/></svg>' : ICON.check }) : null;
+        if (allB) allB.addEventListener("click", () => {
+          S.selected = S.selected.filter(x => !ready.includes(x));
+          if (!all) { S.selected.push(...ready); S.lastChecked = ready[ready.length - 1]; }
+          else if (ready.includes(S.lastChecked)) S.lastChecked = S.selected[S.selected.length - 1] || null;
+          save(); renderTopics(); resetFeed();
+        });
+        const headRow = h("div", { class: "row block-row" }, head, allB, chev);
         b.topics.forEach(t => {
           const id = "tp-" + t.id;
           if (!t.ready) { list.append(h("div", { class: "topic soon" }, h("span", { class: "check" }), h("span", { class: "tname" }, t.name), h("span", { class: "tmeta" }, "presto"))); return; }
@@ -885,10 +910,40 @@
           list.append(h("label", { class: "topic", for: id }, cb, h("span", { class: "check", html: ICON.check }),
             h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, topicMeta(t.id))));
         });
-        box.append(head, list);
+        box.append(headRow, list);
       });
       root.append(box);
     });
+  }
+
+  /* ---------------- Avanzamento (statistiche e pagina Argomenti) ---------------- */
+  const dayKey = t => { const d = new Date(t); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+  // card viste / in studio / mature su un insieme di argomenti (una card in più argomenti conta una volta)
+  function progressOf(topicIds) {
+    const ids = new Set(topicIds), cs = CARDS.filter(c => c.topics.some(t => ids.has(t)));
+    let mature = 0, young = 0;
+    cs.forEach(c => { const s = S.cards[c.id]; if (!s || s.type === "new") return; if (s.type === "review" && s.ivl >= CFG.mature) mature++; else young++; });
+    return { tot: cs.length, mature, young, seen: mature + young };
+  }
+  function ring(pct, size, stroke, label) {
+    const r = (size - stroke) / 2, cf = 2 * Math.PI * r, p = Math.max(0, Math.min(1, pct));
+    return h("div", { class: "ring", style: `width:${size}px;height:${size}px`, html:
+      `<svg viewBox="0 0 ${size} ${size}"><circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="var(--surface-2)" stroke-width="${stroke}"/>` +
+      (p > 0 ? `<circle cx="${size / 2}" cy="${size / 2}" r="${r}" fill="none" stroke="var(--accent)" stroke-width="${stroke}" stroke-linecap="round" stroke-dasharray="${(cf * p).toFixed(1)} ${cf.toFixed(1)}" transform="rotate(-90 ${size / 2} ${size / 2})"/>` : "") + `</svg>` +
+      `<span class="ring-l">${label}</span>` });
+  }
+  function heatmap() {
+    const weeks = 15, t0 = dayStart(Date.now()), dow = (new Date(t0).getDay() + 6) % 7; // lunedì = 0
+    const start = t0 - (dow + (weeks - 1) * 7) * DAY;
+    const grid = h("div", { class: "heat", role: "img", "aria-label": "Giorni di studio delle ultime 15 settimane" });
+    let active = 0, total = 0;
+    for (let w = 0; w < weeks; w++) for (let d = 0; d < 7; d++) {
+      const t = start + (w * 7 + d) * DAY, x = S.days[dayKey(t)], n = x ? x.n : 0;
+      if (t > t0) { grid.append(h("i", { class: "fut" })); continue; }
+      if (n) { active++; total += n; }
+      grid.append(h("i", { class: "l" + (n === 0 ? 0 : n < 10 ? 1 : n < 30 ? 2 : n < 60 ? 3 : 4) + (t === t0 ? " today" : ""), title: `${dayKey(t)}: ${n} risposte` }));
+    }
+    return { grid, active, total };
   }
 
   /* ---------------- Statistiche ---------------- */
@@ -914,6 +969,31 @@
         h("div", { class: "stat" }, h("div", { class: "num" }, String(tot)), h("div", { class: "lbl" }, "risposte in tutto")),
         h("div", { class: "stat" }, h("div", { class: "num" }, tot ? Math.round(ok / tot * 100) + "%" : "–"), h("div", { class: "lbl" }, "corrette")),
         h("div", { class: "stat" }, h("div", { class: "num" }, String(st.filter(s => s.leech).length)), h("div", { class: "lbl" }, "ostiche"))));
+    // quanto programma hai coperto (sugli argomenti pronti)
+    const readyIds = Object.values(TOPICS).filter(t => t.ready).map(t => t.id), all = progressOf(readyIds);
+    const sel = progressOf(S.selected);
+    root.append(h("div", { class: "box cover" },
+      ring(all.tot ? all.seen / all.tot : 0, 92, 10, `${all.tot ? Math.round(all.seen / all.tot * 100) : 0}%`),
+      h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Programma coperto"),
+        h("div", { class: "row-sub" }, `${all.seen} card viste su ${all.tot} · ${all.mature} mature`),
+        S.selected.length ? h("div", { class: "row-sub" }, `Negli argomenti spuntati: ${sel.tot ? Math.round(sel.seen / sel.tot * 100) : 0}%`) : null,
+        h("div", { class: "row-sub" }, all.tot - all.seen > 0 ? `Mancano ${all.tot - all.seen} card da vedere almeno una volta` : "Hai visto tutte le card: ora conta il ripasso"))));
+    // calendario dei giorni di studio
+    const hm = heatmap();
+    root.append(h("div", { class: "h2" }, "Giorni di studio"), h("div", { class: "box heat-box" },
+      h("div", { class: "heat-wrap" }, h("div", { class: "heat-days", "aria-hidden": "true" }, ...["L", "", "M", "", "V", "", "D"].map(x => h("span", {}, x))), hm.grid),
+      h("div", { class: "heat-foot" }, h("span", {}, `${hm.active} giorni attivi · ${hm.total} risposte`),
+        h("span", { class: "heat-leg", "aria-hidden": "true" }, "meno", ...[0, 1, 2, 3, 4].map(l => h("i", { class: "l" + l })), "più"))));
+    // anelli per macroargomento
+    root.append(h("div", { class: "h2" }, "Per macroargomento"));
+    const rings = h("div", { class: "rings" });
+    C.topics.forEach(sub => sub.blocks.forEach((b, bi) => {
+      const ids = b.topics.filter(t => t.ready).map(t => t.id); if (!ids.length) return;
+      const p = progressOf(ids), pct = p.tot ? p.seen / p.tot : 0;
+      rings.append(h("div", { class: "ring-card" }, ring(pct, 58, 7, `${Math.round(pct * 100)}%`),
+        h("div", { class: "ring-name" }, b.name), h("div", { class: "ring-sub" }, `${p.seen}/${p.tot} card`)));
+    }));
+    root.append(rings);
     root.append(h("div", { class: "h2" }, "Per argomento"));
     const box = h("div", { class: "box" });
     Object.values(TOPICS).filter(t => t.ready).forEach(t => {
@@ -925,7 +1005,7 @@
       const ls = topicLevelState(t.id);
       const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.study === "grad" && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
       const hs = S.hardStats[t.id];
-      if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Hard ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
+      if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Difficili ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
       box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
         h("div", { class: "row-title" }, t.name), lvRow,
         h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
@@ -1100,19 +1180,80 @@
     return box;
   }
 
+  /* Avviso a comparsa: chi tocca "Inizia" senza aver installato l'app vede perché conviene farlo */
+  function installNudge(pf, onSkip, welcomeInner) {
+    const wrap = h("div", { class: "nudge-wrap", role: "dialog", "aria-modal": "true", "aria-label": "Installa l'app" });
+    const close = () => wrap.remove();
+    const perk = (ico, title, sub) => h("div", { class: "perk" }, h("div", { class: "perk-ico", html: ico }), h("div", {}, h("div", { class: "perk-t" }, title), h("div", { class: "perk-s" }, sub)));
+    const P = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">';
+    const box = h("div", { class: "nudge" },
+      h("div", { class: "nudge-logo", html: LOGO_SVG }),
+      h("div", { class: "nudge-title" }, "Prima di iniziare: installala"),
+      h("p", { class: "nudge-lead" }, "Ci vogliono 10 secondi e studi meglio:"),
+      perk(P + '<path d="M3 7l9 6 9-6"/><path d="M2 2l20 20"/><path d="M8.5 5H19a2 2 0 012 2v9"/><path d="M17 19H5a2 2 0 01-2-2V7"/></svg>', "Funziona anche senza rete", "In aula, in treno, in biblioteca col Wi-Fi che non va."),
+      perk(P + '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>', "Si apre dall'icona, come un'app", "A schermo intero, senza barre del browser: un tocco e ripassi."),
+      perk(P + '<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>', "I tuoi progressi più al sicuro",
+        pf === "ios" ? "Da Safari, se non apri il sito per qualche giorno, iPhone può cancellare i dati salvati. Dall'app installata no."
+          : "I ripassi restano legati all'app e non li perdi pulendo le schede o la cronologia del browser."),
+      h("div", { class: "nudge-btns" },
+        h("button", { class: "btn btn-primary", type: "button", onclick: async () => {
+          close();
+          if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; return; }
+          const st = welcomeInner && welcomeInner.querySelector(".steps");
+          if (st) { st.scrollIntoView({ behavior: "smooth", block: "center" }); st.classList.remove("flash"); void st.offsetWidth; st.classList.add("flash"); }
+        } }, deferredPrompt ? "Installa ora" : "Ok, ti seguo: come si fa?"),
+        h("button", { class: "nudge-skip", type: "button", onclick: () => { close(); onSkip(); } }, "Continua dal browser")));
+    wrap.addEventListener("click", e => { if (e.target === wrap) close(); });
+    wrap.append(box); document.body.append(wrap);
+    box.querySelector(".btn").focus({ preventScroll: true });
+  }
+
+  /* ---------------- Guida al primo utilizzo (3 schermate) ---------------- */
+  function showTour(done) {
+    const P = '<svg viewBox="0 0 120 120" fill="none" stroke-linecap="round" stroke-linejoin="round">';
+    const pages = [
+      { t: "Una domanda per schermata", s: "Rispondi, leggi la spiegazione sotto le opzioni e scorri verso l'alto per la domanda dopo.",
+        art: P + '<rect x="30" y="8" width="60" height="104" rx="14" stroke="currentColor" stroke-width="4"/><rect x="40" y="22" width="40" height="7" rx="3.5" fill="var(--ink)" opacity=".8"/>' +
+          '<rect x="40" y="38" width="40" height="10" rx="5" fill="var(--surface-2)"/><rect x="40" y="52" width="40" height="10" rx="5" fill="var(--good-soft)" stroke="var(--good)" stroke-width="2"/><rect x="40" y="66" width="40" height="10" rx="5" fill="var(--surface-2)"/>' +
+          '<path class="t-swipe" d="M60 104V84M52 92l8-8 8 8" stroke="var(--accent-2)" stroke-width="5"/></svg>' },
+      { t: "Le sbagliate tornano presto", s: "Se sbagli, la card ricompare dopo pochi minuti. Quelle che sai tornano sempre più di rado, così ripassi solo dove serve.",
+        art: P + '<path d="M86 42a32 32 0 10 6 30" stroke="currentColor" stroke-width="6"/><path d="M96 28v18H78" stroke="currentColor" stroke-width="6"/>' +
+          '<circle cx="60" cy="60" r="13" fill="var(--bad-soft)" stroke="var(--bad)" stroke-width="3"/><path d="M55 55l10 10M65 55L55 65" stroke="var(--bad)" stroke-width="3.5"/></svg>' },
+      { t: "Spunta cosa hai studiato", s: "Le domande escono solo dagli argomenti spuntati. Con la spunta sul titolo prendi un macroargomento intero.",
+        art: P + '<rect x="18" y="20" width="84" height="80" rx="16" stroke="currentColor" stroke-width="4"/>' +
+          [36, 56, 76].map((y, i) => `<rect x="30" y="${y - 7}" width="14" height="14" rx="4" fill="${i < 2 ? "var(--accent)" : "none"}" stroke="var(--accent)" stroke-width="2.5"/>` +
+            (i < 2 ? `<path d="M33.5 ${y}l3 3 5-6" stroke="#fff" stroke-width="2.5"/>` : "") + `<rect x="52" y="${y - 4}" width="${i === 1 ? 30 : 40}" height="8" rx="4" fill="var(--surface-2)"/>`).join("") + '</svg>' },
+    ];
+    let i = 0;
+    const wrap = h("div", { class: "tour", role: "dialog", "aria-modal": "true", "aria-label": "Come funziona" });
+    const finish = () => { S.tour = true; save(); wrap.classList.add("out"); setTimeout(() => wrap.remove(), 200); done(); };
+    const draw = () => {
+      const p = pages[i];
+      wrap.innerHTML = "";
+      wrap.append(h("div", { class: "tour-inner" },
+        h("button", { class: "tour-skip", type: "button", onclick: finish }, "Salta"),
+        h("div", { class: "tour-art", html: p.art }),
+        h("div", { class: "tour-text" }, h("div", { class: "tour-step" }, `${i + 1} di ${pages.length}`), h("h2", { class: "h1 tour-t" }, p.t), h("p", { class: "lead" }, p.s)),
+        h("div", { class: "tour-dots", "aria-hidden": "true" }, ...pages.map((_, k) => h("i", { class: k === i ? "on" : "" }))),
+        h("button", { class: "btn btn-primary", type: "button", onclick: () => { if (i < pages.length - 1) { i++; draw(); } else finish(); } }, i < pages.length - 1 ? "Avanti" : "Ho capito, iniziamo")));
+    };
+    draw(); document.body.append(wrap);
+  }
+
   /* ---------------- Benvenuto ---------------- */
   function showWelcome() {
     const w = h("div", { class: "welcome", role: "dialog", "aria-modal": "true", "aria-label": "Benvenuto" });
     const inner = h("div", { class: "welcome-inner" });
     const pf = platform();
-    inner.append(h("div", { class: "hero-mark", html: ICON.flask }),
-      h("h1", { class: "h1" }, "Ripassa Biochimica dalle sbobine"),
+    inner.append(h("div", { class: "hero-mark", html: LOGO_SVG }),
+      h("h1", { class: "h1" }, "Ripassa ", h("span", { class: "hl" }, "Biochimica"), " dalle sbobine"),
       h("p", { class: "lead" }, "Una domanda per schermata: rispondi e scorri giù. Le card che sbagli tornano più spesso. I progressi restano solo sul tuo telefono, senza account."));
     if (!standalone()) {
       inner.append(h("div", { class: "h2" }, pf === "ios" ? "Installala su iPhone" : pf === "android" ? "Installala su Android" : "Installala sul telefono"), installSteps(pf));
       if (/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) inner.append(h("p", { class: "lead", style: "font-size:13px" }, "Questa è l'anteprima di prova: l'installazione con funzionamento offline sarà attiva nella versione pubblicata."));
     }
-    inner.append(h("button", { class: "btn btn-primary", type: "button", onclick: () => { S.welcomed = true; save(); w.remove(); go(S.selected.length ? "feed" : "topics"); } }, "Inizia"));
+    const start = () => { S.welcomed = true; save(); w.remove(); const goOn = () => go(S.selected.length ? "feed" : "topics"); if (S.tour) goOn(); else showTour(goOn); };
+    inner.append(h("button", { class: "btn btn-primary", type: "button", onclick: () => standalone() || /claude\.(ai|site)|claudeusercontent/.test(location.hostname) ? start() : installNudge(pf, start, inner) }, "Inizia"));
     w.append(inner); document.body.append(w);
   }
 
@@ -1127,9 +1268,12 @@
   function applyTheme() {
     if (S.theme === "system") delete document.documentElement.dataset.theme;
     else document.documentElement.dataset.theme = S.theme;
-    const meta = $('meta[name="theme-color"]'); if (meta) meta.content = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+    // colore della barra di stato/del browser sempre uguale allo sfondo del tema in uso
+    const bg = getComputedStyle(document.documentElement).getPropertyValue("--bg").trim();
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => { m.content = bg; m.removeAttribute("media"); });
     redrawMolecules();
   }
+  try { matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (S.theme === "system") applyTheme(); }); } catch (e) { /* browser vecchio */ }
   function renderAll() { renderModebar(); renderTopics(); resetFeed(); go(S.selected.length ? "feed" : "topics"); }
 
   /* ---------------- Aggiornamenti (solo app installata / GitHub Pages) ---------------- */

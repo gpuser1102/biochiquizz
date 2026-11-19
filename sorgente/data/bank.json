@@ -30581,6 +30581,937 @@
   "fixed": false
  },
  {
+  "id": "u1119-056",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "182",
+  "src": "Biochimica I",
+  "q": "Quale formula empirica vale per la maggior parte dei carboidrati?",
+  "opts": [
+   "(CH₂O)n",
+   "(CHO)n",
+   "(CH₂)nO",
+   "(CH₃O)n",
+   "Cn(H₂O)2n"
+  ],
+  "ans": 0,
+  "why": "Da qui «idrati di carbonio». Non vale per tutti: alcuni contengono anche N, P o S.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-057",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "182",
+  "src": "Biochimica I",
+  "q": "Quali sono i monosaccaridi più piccoli?",
+  "opts": [
+   "I triosi, come gliceraldeide e diidrossiacetone",
+   "I tetrosi, come l'eritrosio e il chetoso eritrulosio",
+   "I pentosi, come ribosio e ribulosio",
+   "I diosi, come la glicolaldeide e l'acetone",
+   "Gli esosi, come glucosio e fruttosio"
+  ],
+  "ans": 0,
+  "why": "Dalla D-gliceraldeide derivano gli aldosi, dal diidrossiacetone i chetosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-058",
+  "topic": "d9-mono",
+  "level": "m",
+  "page": "182",
+  "src": "Biochimica I",
+  "q": "Come si stabilisce se un monosaccaride appartiene alla serie D?",
+  "opts": [
+   "Dall'OH del carbonio chirale più lontano dal carbonile, a destra nella proiezione di Fischer",
+   "Dall'OH del carbonio anomerico, che nella proiezione di Fischer si trova a destra",
+   "Dal segno della rotazione della luce polarizzata, che è positivo per tutti gli zuccheri D",
+   "Dall'OH del C2, che nella proiezione di Fischer degli zuccheri D si trova sempre a destra",
+   "Dal carbonile, che negli zuccheri D si trova in basso nella proiezione di Fischer"
+  ],
+  "ans": 0,
+  "why": "È il penultimo carbonio. La serie D/L non dice nulla sul verso della rotazione (destrogiro o levogiro). Quasi tutti i monosaccaridi naturali sono D.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-059",
+  "topic": "d9-mono",
+  "level": "m",
+  "page": "183",
+  "src": "Biochimica I",
+  "q": "Che cosa sono due epimeri?",
+  "opts": [
+   "Stereoisomeri che differiscono per la configurazione di un solo carbonio, non quello che definisce la serie D/L",
+   "Enantiomeri che differiscono per la configurazione di tutti i carboni chirali e sono immagini speculari",
+   "Stereoisomeri che differiscono solo per la configurazione del penultimo carbonio, quello che definisce la serie D/L",
+   "Isomeri di struttura che differiscono per la posizione del gruppo carbonilico, come aldosi e chetosi",
+   "Forme cicliche dello stesso zucchero che differiscono per la posizione dell'OH sul carbonio anomerico"
+  ],
+  "ans": 0,
+  "why": "Esempio: glucosio e galattosio, che differiscono solo al C4. Le forme che differiscono al carbonio anomerico sono gli anomeri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-060",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "188",
+  "src": "Biochimica I",
+  "q": "Di quale carbonio il galattosio è epimero rispetto al glucosio?",
+  "opts": [
+   "C4",
+   "C2",
+   "C3",
+   "C5",
+   "C1"
+  ],
+  "ans": 0,
+  "why": "Cambia solo la posizione dell'OH sul C4.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-061",
+  "topic": "d9-mono",
+  "level": "l",
+  "page": "183",
+  "src": "Biochimica I",
+  "q": "Qual è il primo chetoso che ha un centro chirale?",
+  "opts": [
+   "Eritrulosio",
+   "Diidrossiacetone",
+   "Ribulosio",
+   "Xilulosio",
+   "Gliceraldeide"
+  ],
+  "ans": 0,
+  "why": "Il diidrossiacetone (3 C) non ha centri chirali; l'eritrulosio (4 C) ne ha uno. La gliceraldeide è un aldoso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-062",
+  "topic": "d9-mono",
+  "level": "m",
+  "page": "184",
+  "src": "Biochimica I",
+  "q": "Nella ciclizzazione del glucosio a glucopiranosio, quali gruppi reagiscono e che cosa si forma?",
+  "opts": [
+   "Il C1 aldeidico e l'OH del C5: si forma un emiacetale",
+   "Il C1 aldeidico e l'OH del C4: si forma un emiacetale",
+   "Il C1 aldeidico e l'OH del C6: si forma un acetale",
+   "Il C2 chetonico e l'OH del C5: si forma un emichetale",
+   "Il C1 aldeidico e l'OH del C5: si forma un acetale"
+  ],
+  "ans": 0,
+  "why": "L'OH del penultimo carbonio attacca il carbonio aldeidico, che da sp² diventa sp³ e un nuovo stereocentro (anomeri α e β).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-063",
+  "topic": "d9-mono",
+  "level": "a",
+  "page": "184",
+  "src": "Biochimica I",
+  "q": "Nella formula di Haworth del D-glucopiranosio, come riconosci l'anomero α?",
+  "opts": [
+   "L'OH del C1 è dal lato opposto rispetto al C6 (in basso)",
+   "L'OH del C1 è dallo stesso lato del gruppo CH₂OH del C6 (in alto)",
+   "L'OH del C1 giace sul piano dell'anello",
+   "Il C6 è sotto il piano dell'anello",
+   "L'OH del C2 è dallo stesso lato del C6"
+  ],
+  "ans": 0,
+  "why": "Nel β l'OH anomerico sta dallo stesso lato del C6. Gli OH a destra nella proiezione di Fischer vanno in basso nella formula di Haworth.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-064",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "184",
+  "src": "Biochimica I",
+  "q": "Quale anomero del D-glucosio prevale in soluzione acquosa?",
+  "opts": [
+   "Il β, circa due terzi",
+   "L'α, circa due terzi",
+   "Sono al 50% ciascuno",
+   "La forma lineare aperta",
+   "La forma furanosica"
+  ],
+  "ans": 0,
+  "why": "Eppure è l'anomero α quello che più comunemente forma i polimeri (amido, glicogeno).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-065",
+  "topic": "d9-mono",
+  "level": "h",
+  "page": "184",
+  "src": "Biochimica I",
+  "q": "Sciogli in acqua α-D-glucosio puro: la rotazione specifica parte da circa +112° e scende fino a +52,7°. Perché?",
+  "opts": [
+   "L'anello si apre e si richiude di continuo finché α e β raggiungono l'equilibrio (mutarotazione)",
+   "Il glucosio si ossida lentamente ad acido gluconico, che ruota la luce polarizzata molto meno",
+   "Il glucosio si isomerizza a fruttosio fino all'equilibrio, perché il fruttosio è levogiro",
+   "L'anello piranosico si trasforma via via in quello furanosico, che ha un potere rotatorio minore",
+   "Le molecole si associano tra loro con legami glicosidici e formano disaccaridi meno attivi"
+  ],
+  "ans": 0,
+  "why": "All'equilibrio circa 1/3 α (+112,2°) e 2/3 β (+18,7°) danno +52,7°.",
+  "note": "Sbobina di Biochimica I, p. 184: dà all'α-D-glucopiranosio una rotazione di +122°. Il valore corretto è +112,2° (le proporzioni corrette sono circa 36% α e 64% β; la sbobina arrotonda a 30/70).",
+  "fixed": false
+ },
+ {
+  "id": "u1119-066",
+  "topic": "d9-mono",
+  "level": "m",
+  "page": "184",
+  "src": "Biochimica I",
+  "q": "Come ciclizza il fruttosio nel β-D-fruttofuranosio?",
+  "opts": [
+   "Il carbonio chetonico C2 reagisce con l'OH del C5: si forma un emichetale",
+   "Il carbonio chetonico C1 reagisce con l'OH del C4: si forma un emichetale",
+   "Il carbonio aldeidico C1 reagisce con l'OH del C5: si forma un emiacetale",
+   "Il carbonio chetonico C2 reagisce con l'OH del C5: si forma un chetale",
+   "Il carbonio chetonico C3 reagisce con l'OH del C6: si forma un emichetale"
+  ],
+  "ans": 0,
+  "why": "Il nuovo stereocentro è il C2, su cui si formano gli anomeri α e β.",
+  "note": "Sbobina di Biochimica I, p. 184: scrive che nei chetosi il gruppo chetonico «sta in posizione 1». Nel fruttosio il carbonile è sul C2, come la sbobina stessa dice subito dopo.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-067",
+  "topic": "d9-mono",
+  "level": "a",
+  "page": "185",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra il passaggio sedia → barca e il passaggio α → β di un glucopiranosio?",
+  "opts": [
+   "Sedia/barca è un cambio di conformazione senza rottura di legami; α/β cambia la configurazione e richiede l'apertura dell'anello",
+   "Sedia/barca cambia la configurazione e richiede l'apertura dell'anello; α/β è un cambio di conformazione senza rottura di legami",
+   "Sono entrambi cambi di conformazione per rotazione attorno ai legami singoli, senza rompere nessun legame covalente dell'anello",
+   "Sono entrambi cambi di configurazione che richiedono di rompere un legame covalente e di riformarlo dal lato opposto",
+   "Sedia/barca richiede un enzima specifico (una mutarotasi), mentre α/β avviene spontaneamente senza rottura di legami"
+  ],
+  "ans": 0,
+  "why": "La sedia è la conformazione più comune; la barca si trova soprattutto nei polisaccaridi con sostituenti ingombranti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-068",
+  "topic": "d9-mono",
+  "level": "m",
+  "page": "185",
+  "src": "Biochimica I",
+  "q": "Che cosa si ottiene ossidando in condizioni blande il C1 del glucosio?",
+  "opts": [
+   "L'acido gluconico, un acido aldonico",
+   "L'acido glucuronico, un acido aldonico",
+   "L'acido gluconico, un acido uronico",
+   "L'acido glucarico, un acido aldarico",
+   "Il sorbitolo, un polialcol"
+  ],
+  "ans": 0,
+  "why": "Ossidando il C6 si ha un acido uronico (glucuronico); ossidando C1 e C6 un acido aldarico (glucarico). Il sorbitolo si ottiene invece per riduzione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-069",
+  "topic": "d9-mono",
+  "level": "l",
+  "page": "186",
+  "src": "Biochimica I",
+  "q": "Che cosa si ottiene ossidando sia il C1 sia il C6 del glucosio con ossidanti forti?",
+  "opts": [
+   "Acido glucarico",
+   "Acido glucuronico",
+   "Acido gluconico",
+   "Glucono-δ-lattone",
+   "Acido glicolico"
+  ],
+  "ans": 0,
+  "why": "Gli acidi aldarici hanno due gruppi carbossilici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-070",
+  "topic": "d9-mono",
+  "level": "l",
+  "page": "185",
+  "src": "Biochimica I",
+  "q": "Come si chiama il lattone che si forma quando l'acido gluconico ciclizza perdendo acqua?",
+  "opts": [
+   "δ-gluconolattone",
+   "γ-gluconolattone",
+   "β-gluconolattone",
+   "ε-gluconolattone",
+   "α-gluconolattone"
+  ],
+  "ans": 0,
+  "why": "δ perché il legame coinvolge l'ossigeno del carbonio δ, cioè il C5. È il prodotto della glucosio ossidasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-071",
+  "topic": "d9-mono",
+  "level": "a",
+  "page": "186",
+  "src": "Biochimica I",
+  "q": "Come funziona il dosaggio enzimatico del glucosio in sangue e urine descritto nella sbobina?",
+  "opts": [
+   "La glucosio ossidasi ossida il C1 producendo H₂O₂, che una perossidasi usa per colorare un substrato incolore",
+   "La glucosio ossidasi riduce il C1 consumando H₂O₂, e una perossidasi decolora un indicatore già colorato",
+   "Il Cu²⁺ ossida il glucosio e si riduce a Cu⁺, che una perossidasi accoppiata trasforma in un composto colorato",
+   "La perossidasi ossida direttamente il glucosio a gluconato e libera un colorante legato al glucosio",
+   "La glucosio ossidasi produce NADH, che riduce un sale di rame e fa comparire un precipitato rosso"
+  ],
+  "ans": 0,
+  "why": "L'intensità del colore è proporzionale al glucosio presente. Ha sostituito la reazione di Fehling, semiquantitativa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-072",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "186",
+  "src": "Biochimica I",
+  "q": "Su quale principio si basa la reazione di Fehling per rilevare il glucosio?",
+  "opts": [
+   "Il glucosio si ossida e riduce il Cu²⁺ a Cu⁺",
+   "Il glucosio si riduce e ossida il Cu⁺ a Cu²⁺",
+   "Il glucosio lega il Cu²⁺ e forma un complesso blu",
+   "Il Cu²⁺ idrolizza il glucosio in due triosi",
+   "Il glucosio precipita con il Cu²⁺ come sale"
+  ],
+  "ans": 0,
+  "why": "È la proprietà riducente del carbonio aldeidico (anomerico libero).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-073",
+  "topic": "d9-mono",
+  "level": "f",
+  "page": "187",
+  "src": "Biochimica I",
+  "q": "Che cos'è la N-acetilglucosammina?",
+  "opts": [
+   "Un glucosio con un gruppo amminico al posto di un OH, acetilato sull'azoto",
+   "Un glucosio con un gruppo acetile al posto del gruppo aldeidico",
+   "Un glucosio legato con un legame glicosidico a una molecola di acetilcolina",
+   "Una glucosammina con un gruppo fosfato aggiunto sull'azoto amminico",
+   "Un amminoacido acetilato legato al carbonio anomerico del glucosio"
+  ],
+  "ans": 0,
+  "why": "Glucosio → glucosammina (OH sostituito da un'ammina) → N-acetilglucosammina (NAG).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-074",
+  "topic": "d9-glicosidico",
+  "level": "f",
+  "page": "187",
+  "src": "Biochimica I",
+  "q": "Che tipo di gruppo funzionale è il legame glicosidico?",
+  "opts": [
+   "Un acetale, formato dal gruppo emiacetalico con un altro alcol",
+   "Un emiacetale, formato da un gruppo aldeidico con un altro alcol",
+   "Un estere, formato da un acido con un gruppo alcolico",
+   "Un'anidride, formata da due gruppi carbossilici",
+   "Un'ammide, formata da un'ammina con un carbossile"
+  ],
+  "ans": 0,
+  "why": "Si forma con perdita di una molecola d'acqua; il carbonio anomerico coinvolto non è più ossidabile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-075",
+  "topic": "d9-glicosidico",
+  "level": "m",
+  "page": "187",
+  "src": "Biochimica I",
+  "q": "Nel nome di un disaccaride, che cosa indica il suffisso «-il» (es. α-D-glucopiranosil-)?",
+  "opts": [
+   "Il residuo il cui carbonio anomerico è impegnato nel legame, all'estremità non riducente",
+   "Il residuo che conserva il carbonio anomerico libero e ossidabile, all'estremità riducente",
+   "Il residuo legato con un legame β invece che α, a qualunque estremità",
+   "Il residuo che porta la ramificazione α(1→6) nel punto di diramazione",
+   "Il residuo in forma furanosica, che si trova all'estremità non riducente"
+  ],
+  "ans": 0,
+  "why": "Come negli amminoacidi, l'ultimo residuo della sequenza (qui quello riducente) è indicato con il nome intero.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-076",
+  "topic": "d9-glicosidico",
+  "level": "a",
+  "page": "188",
+  "src": "Biochimica I",
+  "q": "Perché il maltosio è uno zucchero riducente e il saccarosio no?",
+  "opts": [
+   "Nel maltosio il C1 del secondo glucosio è libero; nel saccarosio sono impegnati entrambi i carboni anomerici",
+   "Nel maltosio il legame è α, nel saccarosio è β, e i legami β impediscono l'ossidazione del carbonio",
+   "Il saccarosio contiene fruttosio, e i chetosi non possono mai ridurre il rame della reazione di Fehling",
+   "Nel maltosio il legame è α(1→6), che lascia libero il C1; nel saccarosio è α(1→4), che lo impegna",
+   "Il maltosio si apre in due glucosi liberi in acqua, mentre il saccarosio resta intatto in soluzione"
+  ],
+  "ans": 0,
+  "why": "Saccarosio: C1 del glucosio e C2 del fruttosio sono legati tra loro, nessun emiacetale resta libero.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-077",
+  "topic": "d9-glicosidico",
+  "level": "m",
+  "page": "188",
+  "src": "Biochimica I",
+  "q": "Quale legame unisce galattosio e glucosio nel lattosio?",
+  "opts": [
+   "β(1→4)",
+   "α(1→4)",
+   "β(1→6)",
+   "α(1→6)",
+   "α(1→2)β"
+  ],
+  "ans": 0,
+  "why": "Il C1 del galattosio in β è legato al C4 del glucosio; il C1 del glucosio resta libero, quindi il lattosio è riducente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-078",
+  "topic": "d9-glicosidico",
+  "level": "l",
+  "page": "188",
+  "src": "Biochimica I",
+  "q": "Quali carboni sono impegnati nel legame glicosidico del saccarosio?",
+  "opts": [
+   "Il C1 del glucosio e il C2 del fruttosio",
+   "Il C1 del glucosio e il C1 del fruttosio",
+   "Il C1 del glucosio e il C4 del fruttosio",
+   "Il C2 del glucosio e il C1 del fruttosio",
+   "Il C1 del glucosio e il C6 del fruttosio"
+  ],
+  "ans": 0,
+  "why": "Sono i due carboni anomerici: per questo il saccarosio non è riducente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-079",
+  "topic": "d9-glicosidico",
+  "level": "h",
+  "page": "188",
+  "src": "Biochimica I",
+  "q": "Un disaccaride formato da due glucosi non riduce il reattivo di Fehling. Come sono legati i due glucosi?",
+  "opts": [
+   "Con un legame tra i due C1 anomerici (α1↔α1)",
+   "Con un legame α(1→4), come nel maltosio",
+   "Con un legame β(1→4), come nel cellobiosio",
+   "Con un legame α(1→6), come nell'isomaltosio",
+   "Con un legame β(1→6), come nel gentiobiosio"
+  ],
+  "ans": 0,
+  "why": "Per non essere riducente nessun carbonio anomerico deve restare libero, come nel saccarosio. È il trealosio, che non è nelle sbobine: il principio è quello di p. 188.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-080",
+  "topic": "d9-glicosidico",
+  "level": "f",
+  "page": "189",
+  "src": "Biochimica I",
+  "q": "In un punto di ramificazione del glicogeno, come continua la nuova catena?",
+  "opts": [
+   "Un solo legame α(1→6) al punto di ramificazione, poi legami α(1→4)",
+   "Solo legami α(1→6), uno per ogni glucosio della nuova catena",
+   "Un legame β(1→6) al punto di ramificazione, poi legami β(1→4)",
+   "Un legame α(1→4) al punto di ramificazione, poi solo legami α(1→6)",
+   "Un legame α(1→6) ogni due residui lungo tutta la nuova catena"
+  ],
+  "ans": 0,
+  "why": "Il legame 1,6 è possibile grazie all'OH del C6, che reagisce con il carbonio anomerico di un altro glucosio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-081",
+  "topic": "d9-poli",
+  "level": "f",
+  "page": "189",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra omopolisaccaridi ed eteropolisaccaridi?",
+  "opts": [
+   "Gli omopolisaccaridi ripetono lo stesso zucchero, gli eteropolisaccaridi zuccheri diversi",
+   "Gli omopolisaccaridi sono lineari, gli eteropolisaccaridi sono sempre ramificati",
+   "Gli omopolisaccaridi sono di riserva, gli eteropolisaccaridi solo di origine batterica",
+   "Gli omopolisaccaridi hanno legami α, gli eteropolisaccaridi solo legami β",
+   "Gli omopolisaccaridi sono vegetali, gli eteropolisaccaridi solo animali"
+  ],
+  "ans": 0,
+  "why": "Entrambi possono essere lineari o ramificati. Negli eteropolisaccaridi spesso si ripete un'unità disaccaridica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-082",
+  "topic": "d9-poli",
+  "level": "m",
+  "page": "190",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra amilosio e amilopectina?",
+  "opts": [
+   "L'amilosio è lineare con legami α(1→4) e forma un'elica; l'amilopectina è ramificata con legami α(1→6)",
+   "L'amilosio è ramificato con legami α(1→6); l'amilopectina è lineare con legami α(1→4) e forma un'elica",
+   "L'amilosio ha legami β(1→4) come la cellulosa; l'amilopectina ha legami α(1→4) e α(1→6) come il glicogeno",
+   "Sono entrambi ramificati, ma l'amilosio ha un'estremità riducente in più per ogni punto di ramificazione",
+   "L'amilosio è la riserva delle piante, l'amilopectina è la riserva degli animali al posto del glicogeno"
+  ],
+  "ans": 0,
+  "why": "Sono le due forme dell'amido, la riserva di glucosio delle piante (e di alcuni batteri e cianobatteri).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-083",
+  "topic": "d9-poli",
+  "level": "a",
+  "page": "190",
+  "src": "Biochimica I",
+  "q": "In che cosa differiscono soprattutto l'amilopectina e il glicogeno?",
+  "opts": [
+   "Nella frequenza delle ramificazioni: ogni 24–30 residui nell'amilopectina, ogni 8–12 nel glicogeno",
+   "Nel tipo di legame: l'amilopectina ha legami β(1→4), il glicogeno legami α(1→4) e α(1→6)",
+   "Nel numero di estremità riducenti: molte nell'amilopectina, una sola per molecola di glicogeno",
+   "Nella frequenza delle ramificazioni: ogni 8–12 residui nell'amilopectina, ogni 24–30 nel glicogeno",
+   "Nel monomero: l'amilopectina è un polimero di fruttosio, il glicogeno un polimero di glucosio"
+  ],
+  "ans": 0,
+  "why": "Entrambi hanno una sola estremità riducente e molte non riducenti, su cui agiscono gli enzimi che aggiungono o staccano glucosio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-084",
+  "topic": "d9-poli",
+  "level": "f",
+  "page": "191",
+  "src": "Biochimica I",
+  "q": "Perché l'uomo non può usare la cellulosa come fonte di glucosio?",
+  "opts": [
+   "Non ha la cellulasi, l'enzima che scinde i legami β(1→4)",
+   "Non ha l'amilasi, l'enzima che scinde i legami α(1→4)",
+   "Non ha l'isomaltasi, che scinde i legami α(1→6) della cellulosa",
+   "La cellulosa contiene galattosio, che l'intestino non assorbe",
+   "La cellulosa è troppo ramificata per essere attaccata dagli enzimi"
+  ],
+  "ans": 0,
+  "why": "Batteri, funghi e alcuni insetti hanno la cellulasi; noi no.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-085",
+  "topic": "d9-poli",
+  "level": "a",
+  "page": "191",
+  "src": "Biochimica I",
+  "q": "Perché la cellulosa forma fibre insolubili mentre l'amilosio si avvolge in un'elica?",
+  "opts": [
+   "Con i legami β(1→4) ogni sedia è ruotata di 180°: catene diritte che si associano con legami H",
+   "Con i legami α(1→4) ogni sedia è ruotata di 180°: catene diritte che si associano con legami H",
+   "La cellulosa è molto ramificata e le ramificazioni si intrecciano formando fibre insolubili",
+   "La cellulosa ha gruppi carbossilici che si legano al calcio e formano fibre insolubili",
+   "La cellulosa è formata da fruttosio, che non può formare le eliche tipiche del glucosio"
+  ],
+  "ans": 0,
+  "why": "I tanti legami H tra catene adiacenti danno insolubilità e resistenza meccanica, utili per la funzione strutturale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-086",
+  "topic": "d9-poli",
+  "level": "f",
+  "page": "191",
+  "src": "Biochimica I",
+  "q": "Da quali unità sono formati i glicosamminoglicani?",
+  "opts": [
+   "Da unità disaccaridiche ripetute di un acido uronico e di N-acetilglucosammina o N-acetilgalattosammina",
+   "Da unità disaccaridiche ripetute di glucosio e galattosio, unite da legami β(1→4) come nel lattosio",
+   "Da catene di N-acetilglucosammina e acido sialico legate a una ceramide nella membrana",
+   "Da unità ripetute di NAG e NAM unite da brevi peptidi con D-amminoacidi, come nei batteri",
+   "Da catene ramificate di mannosio legate a un'asparagina della proteina tramite il dolicolo"
+  ],
+  "ans": 0,
+  "why": "Sono anche detti mucopolisaccaridi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-087",
+  "topic": "d9-poli",
+  "level": "m",
+  "page": "191",
+  "src": "Biochimica I",
+  "q": "Perché i glicosamminoglicani sono catene anioniche?",
+  "opts": [
+   "A pH neutro i loro gruppi acidi (carbossili degli acidi uronici) sono deprotonati",
+   "A pH neutro i loro gruppi amminici liberi perdono il protone e diventano negativi",
+   "Legano molti ioni cloruro, che si fissano agli ossidrili degli zuccheri",
+   "Contengono molti residui di aspartato e glutammato nella catena polisaccaridica",
+   "Contengono fosfati sul carbonio anomerico di ogni unità che si ripete"
+  ],
+  "ans": 0,
+  "why": "Per questo i loro nomi finiscono in «-ato». I gruppi solfato, che aggiungono altre cariche negative, non sono nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-088",
+  "topic": "d9-poli",
+  "level": "m",
+  "page": "192",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra un proteoglicano e una glicoproteina?",
+  "opts": [
+   "Nel proteoglicano prevale la parte glucidica (fino al 95%), nella glicoproteina quella proteica",
+   "Nel proteoglicano prevale la parte proteica, nella glicoproteina quella glucidica (fino al 95%)",
+   "Il proteoglicano ha solo O-glicosilazioni, la glicoproteina solo N-glicosilazioni sull'asparagina",
+   "Il proteoglicano si trova nelle membrane, la glicoproteina solo nel plasma come proteina circolante",
+   "Il proteoglicano contiene eteropolisaccaridi lipidici, la glicoproteina solo oligosaccaridi di glucosio"
+  ],
+  "ans": 0,
+  "why": "Nei proteoglicani i glicosamminoglicani costituiscono circa il 95% della massa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-089",
+  "topic": "d9-poli",
+  "level": "l",
+  "page": "192",
+  "src": "Biochimica I",
+  "q": "Negli aggregati di proteoglicani, quale molecola fa da asse centrale e quale è la proteina nucleo?",
+  "opts": [
+   "Acido ialuronico come asse, aggrecano come proteina nucleo",
+   "Aggrecano come asse, acido ialuronico come proteina nucleo",
+   "Condroitin solfato come asse, collagene come proteina nucleo",
+   "Eparina come asse, fibronectina come proteina nucleo",
+   "Cellulosa come asse, elastina come proteina nucleo"
+  ],
+  "ans": 0,
+  "why": "Sulla proteina nucleo si attaccano le catene di glicosamminoglicani.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-090",
+  "topic": "d9-poli",
+  "level": "f",
+  "page": "192",
+  "src": "Biochimica I",
+  "q": "Quale di queste NON è una funzione dei proteoglicani?",
+  "opts": [
+   "Riserva di glucosio per i tessuti",
+   "Lubrificazione",
+   "Componente strutturale del connettivo",
+   "Adesione delle cellule alla matrice",
+   "Legame di fattori di crescita"
+  ],
+  "ans": 0,
+  "why": "La riserva di glucosio è il glicogeno (amido nelle piante).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-091",
+  "topic": "d9-poli",
+  "level": "m",
+  "page": "195",
+  "src": "Biochimica I",
+  "q": "Che cosa ha di particolare il tetrapeptide del peptidoglicano?",
+  "opts": [
+   "Contiene D-amminoacidi: D-glutammato e D-alanina",
+   "Contiene solo L-amminoacidi, come le proteine umane",
+   "Contiene idrossiprolina e idrossilisina, come il collagene",
+   "Contiene cisteine che formano ponti disolfuro tra catene",
+   "È legato al NAG con un legame N-glicosidico sull'asparagina"
+  ],
+  "ans": 0,
+  "why": "Sequenza L-Ala, D-Glu, L-Lys, D-Ala. Il ribosoma non può usare D-amminoacidi: li inseriscono enzimi specifici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-092",
+  "topic": "d9-poli",
+  "level": "a",
+  "page": "196",
+  "src": "Biochimica I",
+  "q": "Come differisce il legame crociato del peptidoglicano tra Gram-positivi e Gram-negativi?",
+  "opts": [
+   "Gram+: ponte di pentaglicina tra D-Ala e L-Lys; Gram−: la Lys (o il DAP) lega direttamente la D-Ala vicina",
+   "Gram+: la Lys lega direttamente la D-Ala vicina; Gram−: ponte di pentaglicina tra D-Ala e L-Lys",
+   "Gram+: ponte disolfuro tra cisteine; Gram−: legame isopeptidico tra lisina e glutammina adiacenti",
+   "Gram+: ponte di pentaglicina tra due NAM; Gram−: legame glicosidico β(1→4) tra NAG di catene vicine",
+   "Gram+ e Gram− hanno lo stesso ponte di pentaglicina, ma nei Gram− il peptidoglicano è molto più spesso"
+  ],
+  "ans": 0,
+  "why": "Nei Gram− il peptidoglicano è sottile e sta nello spazio periplasmatico, tra membrana interna ed esterna.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-093",
+  "topic": "d9-poli",
+  "level": "l",
+  "page": "196",
+  "src": "Biochimica I",
+  "q": "Che cos'è il DAP che può sostituire la lisina nel peptidoglicano dei Gram-negativi?",
+  "opts": [
+   "L'acido diamminopimelico: come la lisina, con un carbonio in più che porta un'ammina e un carbossile",
+   "Il diamminopropano: una lisina accorciata di due carboni che ha perso anche il gruppo carbossilico",
+   "Il diidrossiacetone fosfato: un trioso che lega la D-alanina con un legame estere",
+   "La diamminopurina: una base azotata che fa da ponte tra due catene di NAM",
+   "L'acido diaminopropionico: una D-alanina con un secondo gruppo amminico sul carbonio β"
+  ],
+  "ans": 0,
+  "why": "Ha due gruppi amminici e due carbossilici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-094",
+  "topic": "d9-poli",
+  "level": "h",
+  "page": "196",
+  "src": "Biochimica I",
+  "q": "I batteri convertono la L-alanina in D-alanina con una racemasi, possibile bersaglio di antibiotici. Quale coenzima ti aspetti in questo enzima?",
+  "opts": [
+   "Piridossal fosfato (vitamina B6)",
+   "Tiamina pirofosfato (vitamina B1)",
+   "Biotina (vitamina B7)",
+   "FAD (vitamina B2)",
+   "Tetraidrofolato (vitamina B9)"
+  ],
+  "ans": 0,
+  "why": "Il PLP forma una base di Schiff con l'amminoacido e permette di togliere e rimettere il protone sul carbonio α, invertendone la configurazione. Noi non abbiamo D-amminoacidi nelle proteine, quindi l'enzima è un bersaglio selettivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-095",
+  "topic": "d9-poli",
+  "level": "a",
+  "page": "197",
+  "src": "Biochimica I",
+  "q": "Perché la penicillina blocca la formazione della parete batterica?",
+  "opts": [
+   "Somiglia al dipeptide D-Ala-D-Ala e inattiva in modo irreversibile la transpeptidasi dei legami crociati",
+   "Somiglia al NAM e inibisce in modo reversibile l'enzima che lega gli zuccheri della catena glicanica",
+   "Inibisce la racemasi batterica, che non produce più la D-alanina necessaria al tetrapeptide della parete",
+   "Idrolizza i legami glicosidici tra NAG e NAM come il lisozima, sciogliendo la parete già formata",
+   "Lega il ponte di pentaglicina e impedisce che si stacchi dalla lisina del tetrapeptide vicino"
+  ],
+  "ans": 0,
+  "why": "La transpeptidasi stacca la D-Ala terminale (all'inizio le D-Ala sono due) e lega la glicina del ponte: è il passaggio bloccato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-096",
+  "topic": "d9-glicoproteine",
+  "level": "f",
+  "page": "192",
+  "src": "Biochimica I",
+  "q": "Su quali residui avvengono la N-glicosilazione e la O-glicosilazione?",
+  "opts": [
+   "N: asparagina; O: serina o treonina",
+   "N: glutammina; O: serina o tirosina",
+   "N: lisina; O: serina o treonina",
+   "N: asparagina; O: tirosina o cisteina",
+   "N: arginina; O: treonina o idrossiprolina"
+  ],
+  "ans": 0,
+  "why": "N-glicosidico sull'azoto ammidico dell'Asn; O-glicosidico sull'ossidrile di Ser o Thr.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-097",
+  "topic": "d9-glicoproteine",
+  "level": "m",
+  "page": "192",
+  "src": "Biochimica I",
+  "q": "Dove si trovano gli enzimi delle N- e delle O-glicosilazioni?",
+  "opts": [
+   "N-glicosilazioni nel RE e nel Golgi; O-glicosilazioni solo nel Golgi",
+   "N-glicosilazioni solo nel Golgi; O-glicosilazioni nel RE e nel Golgi",
+   "Entrambe solo nel citosol, durante la traduzione sui ribosomi liberi",
+   "N-glicosilazioni nei lisosomi; O-glicosilazioni nel reticolo liscio",
+   "Entrambe solo nel RE rugoso, prima dell'arrivo della proteina al Golgi"
+  ],
+  "ans": 0,
+  "why": "Sono modifiche post-traduzionali; il Golgi poi smista le proteine in base all'informazione dei carboidrati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-098",
+  "topic": "d9-glicoproteine",
+  "level": "a",
+  "page": "194",
+  "src": "Biochimica I",
+  "q": "Come viene aggiunto l'oligosaccaride nella N-glicosilazione?",
+  "opts": [
+   "Si costruisce sul dolicolo fosfato, che passa dal lato citosolico al lume del RE, poi è trasferito in blocco a un'Asn",
+   "Si aggiunge uno zucchero alla volta direttamente sull'asparagina, nel citosol, mentre la proteina viene tradotta dal ribosoma",
+   "Si costruisce su un fosfolipide del Golgi e viene trasferito in blocco a una serina della proteina",
+   "Si costruisce sull'UDP-glucosio nel lume del RE e viene trasferito a una lisina della proteina",
+   "Si costruisce sul dolicolo fosfato nel lume del lisosoma e viene trasferito a una treonina"
+  ],
+  "ans": 0,
+  "why": "Al dolicolo fosfato si aggiungono NAG e mannosio sul lato citosolico; con il flip-flop si affaccia nel lume, dove si aggiungono altri mannosi ed eventualmente glucosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-099",
+  "topic": "d9-glicoproteine",
+  "level": "l",
+  "page": "194",
+  "src": "Biochimica I",
+  "q": "Quanti residui ha l'oligosaccaride che il dolicolo trasferisce in blocco sull'asparagina?",
+  "opts": [
+   "14",
+   "9",
+   "12",
+   "7",
+   "20"
+  ],
+  "ans": 0,
+  "why": "Glc₃Man₉GlcNAc₂ (la composizione non è nelle sbobine, Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-100",
+  "topic": "d9-glicoproteine",
+  "level": "m",
+  "page": "193",
+  "src": "Biochimica I",
+  "q": "Quale segnale indirizza le idrolasi acide verso i lisosomi?",
+  "opts": [
+   "Residui di mannosio 6-fosfato",
+   "Residui di acido sialico terminali",
+   "Residui di glucosio 6-fosfato",
+   "Una sequenza KDEL al C-terminale",
+   "Una catena di ubiquitine sulla lisina 48"
+  ],
+  "ans": 0,
+  "why": "Il Golgi fosforila il mannosio in due tappe: fosfotransferasi, poi fosfodiesterasi che stacca la N-acetilglucosammina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-101",
+  "topic": "d9-glicoproteine",
+  "level": "l",
+  "page": "193",
+  "src": "Biochimica I",
+  "q": "Quale molecola fornisce la N-acetilglucosammina fosfato nella prima tappa della marcatura del mannosio?",
+  "opts": [
+   "UDP-N-acetilglucosammina",
+   "CMP-acido sialico",
+   "GDP-mannosio",
+   "Dolicolo fosfato",
+   "UDP-N-acetilgalattosammina"
+  ],
+  "ans": 0,
+  "why": "La fosfotransferasi rilascia UMP e lega la GlcNAc-fosfato al mannosio; poi la fosfodiesterasi stacca la GlcNAc e lascia il mannosio 6-fosfato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-102",
+  "topic": "d9-glicoproteine",
+  "level": "h",
+  "page": "193",
+  "src": "Biochimica I",
+  "q": "Nella mucolipidosi di tipo II (I-cell disease) i lisosomi sono pieni di materiale non degradato e le idrolasi acide si trovano nel sangue. Qual è il difetto?",
+  "opts": [
+   "Manca la fosfotransferasi della prima tappa: senza mannosio 6-fosfato le idrolasi vengono secrete",
+   "Manca il recettore del mannosio 6-fosfato sulla membrana plasmatica, che di solito le recupera",
+   "Manca il dolicolo fosfato: le idrolasi non sono glicosilate e il Golgi non le riconosce più",
+   "La pompa protonica dei lisosomi è difettosa e le idrolasi escono dai lisosomi verso il sangue",
+   "Le idrolasi hanno troppo acido sialico e il fegato non le cattura più dal circolo sanguigno"
+  ],
+  "ans": 0,
+  "why": "Si accumulano glicosamminoglicani e glicolipidi non degradati, perché gli enzimi non arrivano a destinazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-103",
+  "topic": "d9-glicoproteine",
+  "level": "a",
+  "page": "194",
+  "src": "Biochimica I",
+  "q": "Come controlla l'acido sialico la vita media delle glicoproteine plasmatiche?",
+  "opts": [
+   "Finché è presente, il recettore epatico non lega la proteina; quando viene rimosso, la proteina viene catturata ed eliminata",
+   "Finché è presente, il recettore epatico lega e protegge la proteina; quando viene rimosso, la proteina resta libera nel plasma",
+   "Viene aggiunto progressivamente in circolo: più acido sialico porta la proteina, prima viene degradata nel lisosoma",
+   "Lega gli ioni calcio del plasma: quando li perde, la proteina precipita e viene filtrata dal rene",
+   "Marca le proteine con un segnale di ubiquitinazione che il proteasoma del plasma riconosce dopo la sua rimozione"
+  ],
+  "ans": 0,
+  "why": "Gli enzimi sulla parete dei vasi rimuovono l'acido sialico, che sta all'estremità delle ramificazioni; l'asialoglicoproteina espone gli zuccheri sottostanti riconosciuti dai recettori del fegato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-104",
+  "topic": "d9-glicoproteine",
+  "level": "f",
+  "page": "195",
+  "src": "Biochimica I",
+  "q": "In quale di queste interazioni gli oligosaccaridi di superficie NON sono indicati come mediatori?",
+  "opts": [
+   "Legame dell'ossigeno all'emoglobina",
+   "Adesione dei batteri all'epitelio",
+   "Riconoscimento della cellula ospite da parte dei virus",
+   "Migrazione dei linfociti nei tessuti",
+   "Riconoscimento delle proteine circolanti da parte del fegato"
+  ],
+  "ans": 0,
+  "why": "Batterio-epitelio, virus-ospite, linfocita-tessuto; e, con l'acido sialico, la rimozione delle glicoproteine plasmatiche.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

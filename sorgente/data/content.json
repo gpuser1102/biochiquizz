@@ -1020,19 +1020,27 @@
           "topics": [
             {
               "id": "d9-mono",
-              "name": "Monosaccaridi"
+              "name": "Monosaccaridi",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d9-glicosidico",
-              "name": "Legame glicosidico e disaccaridi"
+              "name": "Legame glicosidico e disaccaridi",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d9-poli",
-              "name": "Polisaccaridi"
+              "name": "Polisaccaridi",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d9-glicoproteine",
-              "name": "Glicoproteine"
+              "name": "Glicoproteine",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },

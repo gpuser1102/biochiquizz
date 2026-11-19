@@ -29536,6 +29536,1051 @@
   "fixed": false
  },
  {
+  "id": "u1119-001",
+  "topic": "d7-coenzimi",
+  "level": "f",
+  "page": "155",
+  "src": "Biochimica I",
+  "q": "Da quale tipo di vitamine derivano i coenzimi come TPP, FAD, NAD, CoA e PLP?",
+  "opts": [
+   "Dalle vitamine idrosolubili",
+   "Dalle vitamine liposolubili",
+   "Dagli amminoacidi essenziali",
+   "Dagli acidi grassi essenziali",
+   "Dai nucleotidi della dieta"
+  ],
+  "ans": 0,
+  "why": "Le vitamine idrosolubili vengono modificate chimicamente (fosforilate, legate a nucleotidi) per diventare coenzimi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-002",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "155",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra un cosubstrato e un gruppo prostetico?",
+  "opts": [
+   "Il cosubstrato si associa all'enzima solo temporaneamente, il gruppo prostetico in modo permanente",
+   "Il cosubstrato è sempre uno ione metallico, il gruppo prostetico è sempre una molecola organica",
+   "Il cosubstrato deriva da vitamine liposolubili, il gruppo prostetico da vitamine idrosolubili",
+   "Il cosubstrato si lega al sito allosterico, il gruppo prostetico al sito attivo dell'enzima",
+   "Il cosubstrato è legato con un legame covalente, il gruppo prostetico con legami deboli"
+  ],
+  "ans": 0,
+  "why": "Metalli e coenzimi sono entrambi cofattori; cosubstrato e gruppo prostetico si distinguono per quanto restano legati (es. NAD⁺ cosubstrato, biotina e lipoato gruppi prostetici legati a una lisina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-003",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "155",
+  "src": "Biochimica I",
+  "q": "Come si calcola la dose consigliata di una vitamina?",
+  "opts": [
+   "Fabbisogno medio più due deviazioni standard",
+   "Fabbisogno medio più una deviazione standard",
+   "Fabbisogno medio moltiplicato per due",
+   "Fabbisogno massimo osservato nella popolazione",
+   "Fabbisogno medio meno due deviazioni standard"
+  ],
+  "ans": 0,
+  "why": "Aggiungere 2 DS al fabbisogno medio copre quasi tutta la popolazione (circa il 97–98%).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-004",
+  "topic": "d7-coenzimi",
+  "level": "l",
+  "page": "156",
+  "src": "Biochimica I",
+  "q": "Quale enzima trasforma la tiamina nel coenzima tiamina pirofosfato?",
+  "opts": [
+   "Tiamina pirofosfochinasi",
+   "Tiamina pirofosfatasi",
+   "Tiaminasi",
+   "Flavochinasi",
+   "Tiamina sintetasi"
+  ],
+  "ans": 0,
+  "why": "Aggiunge i due fosfati (come pirofosfato). La tiaminasi invece degrada la tiamina: è quella della flora intestinale alterata negli alcolisti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-005",
+  "topic": "d7-coenzimi",
+  "level": "h",
+  "page": "157",
+  "src": "Biochimica I",
+  "q": "Nella decarbossilazione del piruvato da parte della TPP, quale sequenza di eventi è corretta?",
+  "opts": [
+   "Il carbanione della TPP attacca il carbonile del piruvato, esce CO₂ e si forma l'idrossietil-TPP",
+   "Il piruvato libero perde CO₂, poi il carbanione della TPP lega l'acetaldeide come idrossietil-TPP",
+   "Il carbanione della TPP attacca il carbossile del piruvato, esce acetaldeide e la CO₂ resta legata",
+   "Il piruvato forma una base di Schiff con la TPP, poi esce CO₂ e viene liberato subito l'acetil-CoA",
+   "Il carbanione della TPP attacca il metile del piruvato, esce CO₂ e si forma il lattil-TPP stabile"
+  ],
+  "ans": 0,
+  "why": "L'attacco nucleofilo sul carbonio carbonilico dà un intermedio tetraedrico; la decarbossilazione dà un intermedio stabilizzato per risonanza che, protonato, è l'idrossietil-TPP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-006",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "157",
+  "src": "Biochimica I",
+  "q": "Nel lievito, quale enzima che usa la TPP trasforma il piruvato in acetaldeide?",
+  "opts": [
+   "Piruvato decarbossilasi",
+   "Piruvato deidrogenasi",
+   "Alcol deidrogenasi",
+   "Piruvato carbossilasi",
+   "Lattato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "Poi l'alcol deidrogenasi riduce l'acetaldeide a etanolo con il NADH.",
+  "note": "Sbobina di Biochimica I, p. 157: scrive «nel lievito la piruvato deidrogenasi dà luogo ad acetaldeide». È la piruvato decarbossilasi; la piruvato deidrogenasi forma acetil-CoA.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-007",
+  "topic": "d7-coenzimi",
+  "level": "a",
+  "page": "157",
+  "src": "Biochimica I",
+  "q": "Perché l'alcolismo predispone alla carenza di tiamina (encefalopatia di Wernicke-Korsakoff)?",
+  "opts": [
+   "Altera la flora intestinale (tiaminasi) e il danno epatico riduce la conversione in TPP",
+   "L'etanolo lega la tiamina in un complesso inattivo che viene eliminato con le urine",
+   "L'acetaldeide inibisce in modo irreversibile la tiamina pirofosfochinasi dell'intestino",
+   "L'alcol consuma tutta la TPP disponibile nella reazione dell'alcol deidrogenasi epatica",
+   "L'alcol stimola la sintesi epatica di fosfatasi che staccano il pirofosfato dalla TPP"
+  ],
+  "ans": 0,
+  "why": "Sono le due cause indicate nella sbobina: meno tiamina disponibile e minore attivazione nel fegato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-008",
+  "topic": "d7-coenzimi",
+  "level": "f",
+  "page": "157",
+  "src": "Biochimica I",
+  "q": "Che cosa distingue il beriberi umido da quello secco?",
+  "opts": [
+   "Alla polineurite si aggiungono edema diffuso e insufficienza respiratoria",
+   "Manca la polineurite periferica e compaiono solo disturbi intestinali cronici",
+   "È dovuto alla carenza di riboflavina invece che di tiamina",
+   "Colpisce solo il sistema nervoso centrale e non quello periferico",
+   "Compare solo nei bambini allattati con latte materno carente"
+  ],
+  "ans": 0,
+  "why": "Beriberi secco: polineurite periferica cronica. Umido: polineurite + edema diffuso e insufficienza respiratoria. È tipico di chi mangia riso brillato, privato della cuticola che contiene la B1.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-009",
+  "topic": "d7-coenzimi",
+  "level": "a",
+  "page": "157",
+  "src": "Biochimica I",
+  "q": "Un alcolista ha confusione e disturbi dei movimenti oculari. Quale enzima dei globuli rossi si dosa per confermare la carenza di tiamina?",
+  "opts": [
+   "Transchetolasi",
+   "Piruvato deidrogenasi",
+   "Transaldolasi",
+   "Glucosio 6-fosfato deidrogenasi",
+   "Lattato deidrogenasi"
+  ],
+  "ans": 0,
+  "why": "È l'enzima TPP-dipendente della via dei pentoso fosfati, presente nei globuli rossi; la PDH no, perché i globuli rossi non hanno mitocondri. Il test sull'attività della transchetolasi non è nelle sbobine (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-010",
+  "topic": "d7-coenzimi",
+  "level": "l",
+  "page": "158",
+  "src": "Biochimica I",
+  "q": "Quale polialcol, derivato per riduzione del ribosio, è legato all'anello isoallosazinico nella riboflavina?",
+  "opts": [
+   "Ribitolo",
+   "Sorbitolo",
+   "Inositolo",
+   "Glicerolo",
+   "Xilitolo"
+  ],
+  "ans": 0,
+  "why": "L'anello è la 7,8-dimetilisoallosazina; sul ribitolo vengono aggiunti il fosfato (FMN) e poi l'AMP (FAD).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-011",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "158",
+  "src": "Biochimica I",
+  "q": "Come si forma il FAD a partire dalla riboflavina?",
+  "opts": [
+   "La flavochinasi la fosforila a FMN, poi la FAD sintetasi aggiunge un AMP",
+   "La FAD sintetasi aggiunge un AMP, poi la flavochinasi fosforila il prodotto",
+   "La flavochinasi aggiunge un pirofosfato, poi una ligasi aggiunge l'adenosina",
+   "Una reduttasi riduce il ribosio a ribitolo, poi una chinasi aggiunge un ATP",
+   "La FAD sintetasi aggiunge un ADP, poi la flavochinasi toglie un fosfato"
+  ],
+  "ans": 0,
+  "why": "Entrambe le tappe usano ATP: la prima cede un fosfato, la seconda un AMP (con rilascio di pirofosfato).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-012",
+  "topic": "d7-coenzimi",
+  "level": "a",
+  "page": "159",
+  "src": "Biochimica I",
+  "q": "Che cosa può fare il FAD che il NAD⁺ non può fare?",
+  "opts": [
+   "Accettare un elettrone alla volta, passando per la forma semichinonica",
+   "Accettare uno ione idruro sul C4 dell'anello piridinico della nicotinamide",
+   "Legarsi all'enzima solo temporaneamente, come fa un cosubstrato",
+   "Trasportare gruppi acilici legandoli con un legame tioestere",
+   "Trasportare unità monocarboniose a diversi stati di ossidazione"
+  ],
+  "ans": 0,
+  "why": "FAD e FMN accettano 1 o 2 elettroni (FADH· poi FADH₂); il NAD⁺ accetta sempre la coppia di elettroni insieme, come idruro.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-013",
+  "topic": "d7-coenzimi",
+  "level": "l",
+  "page": "159",
+  "src": "Biochimica I",
+  "q": "Su quale atomo della flavina si lega l'idrogeno nella forma semichinonica (FADH· o FMNH·)?",
+  "opts": [
+   "N5",
+   "N1",
+   "N3",
+   "N10",
+   "C4"
+  ],
+  "ans": 0,
+  "why": "Il legame dell'H all'N5 rompe il doppio legame C4a–N5 e dà la specie semichinonica; con il secondo elettrone si arriva a FADH₂.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-014",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "159",
+  "src": "Biochimica I",
+  "q": "Su quale atomo il NAD⁺ accetta lo ione idruro?",
+  "opts": [
+   "Sul C4 dell'anello della nicotinamide",
+   "Sull'azoto dell'anello della nicotinamide",
+   "Sul C2' del ribosio legato all'adenina",
+   "Sull'azoto 6 dell'anello dell'adenina",
+   "Sull'ossigeno del gruppo carbossammidico"
+  ],
+  "ans": 0,
+  "why": "Il C4 accetta i due elettroni con un protone (idruro); l'altro protone va in soluzione: NADH + H⁺.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-015",
+  "topic": "d7-coenzimi",
+  "level": "f",
+  "page": "160",
+  "src": "Biochimica I",
+  "q": "In che cosa differisce il NADP⁺ dal NAD⁺?",
+  "opts": [
+   "Ha un fosfato in più sul C2' del ribosio legato all'adenina",
+   "Ha un fosfato in più sul C3' del ribosio legato alla nicotinamide",
+   "Ha l'acido nicotinico al posto della nicotinamide",
+   "Ha una guanina al posto dell'adenina",
+   "Ha un ribitolo al posto del secondo ribosio"
+  ],
+  "ans": 0,
+  "why": "Il NAD⁺ è un ADP legato a un secondo ribosio che porta la nicotinamide; il NADP⁺ è fosforilato in 2' sul ribosio dell'adenosina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-016",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "160",
+  "src": "Biochimica I",
+  "q": "Da quali due componenti è formato l'acido pantotenico (vitamina B5)?",
+  "opts": [
+   "Acido pantoico e β-alanina",
+   "Acido pantoico e cisteamina",
+   "β-alanina e cisteamina",
+   "Acido pantoico e glicina",
+   "β-alanina e adenosina"
+  ],
+  "ans": 0,
+  "why": "L'acido pantoico perde un OH e si lega con legame ammidico alla β-alanina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-017",
+  "topic": "d7-coenzimi",
+  "level": "a",
+  "page": "160",
+  "src": "Biochimica I",
+  "q": "Quale gruppo del coenzima A forma il legame tioestere con l'acile?",
+  "opts": [
+   "Il tiolo della β-mercaptoetilammina",
+   "Il tiolo di una cisteina dell'enzima",
+   "L'ossidrile dell'acido pantoico",
+   "Il gruppo amminico della β-alanina",
+   "Il fosfato in 3' del ribosio dell'ADP"
+  ],
+  "ans": 0,
+  "why": "Il CoA è formato da ADP 3'-fosfato, acido pantotenico e β-mercaptoetilammina (cisteamina); il tioestere con l'acile è ricco di energia.",
+  "note": "Sbobina di Biochimica I, p. 160: scrive «β-mercaptoetilalanina» e mette il gruppo acetile tra i componenti del CoA. È la β-mercaptoetilammina, e l'acile non fa parte del CoA: è il gruppo che il CoA trasporta.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-018",
+  "topic": "d7-coenzimi",
+  "level": "l",
+  "page": "161",
+  "src": "Biochimica I",
+  "q": "Come si chiama il passaggio in cui l'amminoacido substrato prende il posto della lisina dell'enzima nel legame con il PLP?",
+  "opts": [
+   "Transaldiminazione",
+   "Transaminazione",
+   "Transamidazione",
+   "Tautomerizzazione",
+   "Transesterificazione"
+  ],
+  "ans": 0,
+  "why": "Si passa dall'aldimina interna (PLP–lisina) a una base di Schiff tra il PLP e l'amminoacido (aldimina esterna), da cui parte la reazione.",
+  "note": "Sbobina di Biochimica I, p. 161: descrive la piridossina con un «anello pirimidinico». È un anello piridinico (da cui il nome).",
+  "fixed": false
+ },
+ {
+  "id": "u1119-019",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "162",
+  "src": "Biochimica I",
+  "q": "Come è legata la biotina all'enzima nella biocitina?",
+  "opts": [
+   "Con un legame ammidico tra il carbossile del valerato e l'ε-NH₂ di una lisina",
+   "Con un legame estere tra il carbossile del valerato e l'OH di una serina",
+   "Con una base di Schiff tra un'aldeide della biotina e una lisina dell'enzima",
+   "Con un legame tioestere tra il carbossile del valerato e una cisteina",
+   "Con un ponte disolfuro tra lo zolfo dell'anello e una cisteina dell'enzima"
+  ],
+  "ans": 0,
+  "why": "È un legame isopeptidico con la catena laterale della lisina; sull'N1' dell'anello si lega poi la CO₂ (carbossibiotina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-020",
+  "topic": "d7-coenzimi",
+  "level": "h",
+  "page": "165",
+  "src": "Biochimica I",
+  "q": "Biotina, S-adenosilmetionina e tetraidrofolato trasferiscono tutti unità a un carbonio. Come si dividono i compiti?",
+  "opts": [
+   "Biotina il carbonio più ossidato (CO₂), SAM il più ridotto (metile), THF gli altri stati e anche il metile",
+   "Biotina il carbonio più ridotto (metile), SAM il più ossidato (CO₂), THF gli altri stati e anche il formile",
+   "Biotina e SAM gli stati intermedi (metilene e formile), THF solo il carbonio più ossidato sotto forma di CO₂",
+   "Biotina il formile, SAM il metilene, THF solo il carbonio più ossidato (CO₂) e quello più ridotto (metile)",
+   "Tutti e tre il metile, ma la biotina lo cede ai carbossili, la SAM alle ammine e il THF solo alle purine"
+  ],
+  "ans": 0,
+  "why": "La biotina serve alle carbossilazioni, la SAM dona metili, il THF trasporta metile, metilene, metenile, formile e formimino.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-021",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "163",
+  "src": "Biochimica I",
+  "q": "A quale parte del folato somiglia la sulfanilamide?",
+  "opts": [
+   "Al p-amminobenzoato, con un gruppo sulfonammidico al posto del carbossile",
+   "All'anello pteridinico, con un gruppo sulfonammidico al posto di un azoto",
+   "Al glutammato, con un gruppo sulfonammidico al posto del carbossile γ",
+   "Al diidrofolato intero, con un atomo di zolfo al posto dell'azoto 5",
+   "Alla β-alanina, con un gruppo sulfonammidico al posto del carbossile"
+  ],
+  "ans": 0,
+  "why": "Per questo impedisce ai batteri di incorporare il p-amminobenzoato e di sintetizzare il folato; noi il folato lo prendiamo con la dieta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-022",
+  "topic": "d7-coenzimi",
+  "level": "a",
+  "page": "165",
+  "src": "Biochimica I",
+  "q": "Quale serie di unità monocarboniose trasportate dal THF va dalla più ridotta alla più ossidata?",
+  "opts": [
+   "Metile → metilene → metenile → formile",
+   "Metilene → metile → formile → metenile",
+   "Formile → metenile → metilene → metile",
+   "Metile → metenile → metilene → formile",
+   "Metenile → metile → metilene → formile"
+  ],
+  "ans": 0,
+  "why": "N5-metil-THF; N5,N10-metilen-THF; N5,N10-metenil-THF; N5- o N10-formil-THF. Il formimino deriva dal formile che reagisce con l'ammoniaca.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-023",
+  "topic": "d7-coenzimi",
+  "level": "f",
+  "page": "167",
+  "src": "Biochimica I",
+  "q": "Quale metallo si trova al centro dell'anello corrinico della vitamina B12?",
+  "opts": [
+   "Cobalto",
+   "Ferro",
+   "Zinco",
+   "Magnesio",
+   "Rame"
+  ],
+  "ans": 0,
+  "why": "Il Co³⁺ è coordinato dagli azoti dell'anello corrinico e del dimetilbenzimidazolo; il sesto ligando è un metile, un cianuro o un 5'-deossiadenosile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-024",
+  "topic": "d7-coenzimi",
+  "level": "m",
+  "page": "167",
+  "src": "Biochimica I",
+  "q": "Che cosa causa l'anemia perniciosa?",
+  "opts": [
+   "Il mancato assorbimento della vitamina B12 per mancanza di fattore intrinseco",
+   "La carenza alimentare di acido folico nelle diete povere di verdure a foglia verde",
+   "La carenza di ferro dovuta a perdite croniche di sangue intestinali",
+   "La carenza di vitamina B6 che blocca la sintesi dell'eme nel midollo",
+   "L'emolisi dei globuli rossi dovuta al deficit di G6PD dopo le fave"
+  ],
+  "ans": 0,
+  "why": "Il fattore intrinseco è prodotto dalle cellule parietali dello stomaco e serve all'assorbimento della B12 nell'ileo.",
+  "note": "Sbobina di Biochimica I, p. 167: scrive che anche la carenza di acido folico dà l'anemia perniciosa. Folato e B12 danno entrambi l'anemia megaloblastica; «perniciosa» indica solo quella da B12 per mancanza di fattore intrinseco.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-025",
+  "topic": "d7-coenzimi",
+  "level": "l",
+  "page": "168",
+  "src": "Biochimica I",
+  "q": "Quali carboni dell'acido lipoico portano i due gruppi tiolici?",
+  "opts": [
+   "C6 e C8",
+   "C1 e C8",
+   "C2 e C3",
+   "C4 e C6",
+   "C7 e C8"
+  ],
+  "ans": 0,
+  "why": "L'acido lipoico ha 8 carboni: i tioli su C6 e C8 formano il ponte disolfuro nella forma ossidata. Il C1 è il carbossile che si lega alla lisina (lipoammide).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-026",
+  "topic": "d8-cascata",
+  "level": "f",
+  "page": "169",
+  "src": "Biochimica I",
+  "q": "Che cosa forma il primo tappo dopo la lesione di un vaso, prima della rete di fibrina?",
+  "opts": [
+   "Le piastrine, che formano il trombo bianco",
+   "I globuli rossi, che formano il trombo rosso",
+   "La fibrina, che forma subito una rete stabile",
+   "Il collagene, che chiude la lesione da solo",
+   "I leucociti, che formano il tappo infiammatorio"
+  ],
+  "ans": 0,
+  "why": "Sequenza: vasocostrizione e tappo piastrinico (trombo bianco), poi la fibrina intrappola le cellule (trombo rosso), infine la riparazione del tessuto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-027",
+  "topic": "d8-cascata",
+  "level": "f",
+  "page": "170",
+  "src": "Biochimica I",
+  "q": "In quale fattore convergono la via intrinseca e la via estrinseca della coagulazione?",
+  "opts": [
+   "Fattore X",
+   "Fattore VII",
+   "Fattore XII",
+   "Fattore XIII",
+   "Fattore VIII"
+  ],
+  "ans": 0,
+  "why": "Il fattore Xa (con il Va) attiva la protrombina a trombina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-028",
+  "topic": "d8-cascata",
+  "level": "m",
+  "page": "170",
+  "src": "Biochimica I",
+  "q": "Perché la via estrinseca si attiva più rapidamente di quella intrinseca?",
+  "opts": [
+   "Basta l'incontro tra il fattore VII e il fattore tissutale per arrivare al fattore X",
+   "Il fattore X circola già in forma attiva e aspetta solo il contatto con il collagene",
+   "Comprende più tappe enzimatiche, e ogni tappa amplifica il segnale della precedente",
+   "Il fattore tissutale si trova sulle piastrine, che sono le prime ad arrivare sul posto",
+   "Non richiede ioni calcio, che vengono liberati solo più tardi dai tessuti danneggiati"
+  ],
+  "ans": 0,
+  "why": "Il fattore tissutale è esposto da quasi tutte le cellule tranne quelle endoteliali: con la lesione entra subito in contatto con il fattore VII.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-029",
+  "topic": "d8-cascata",
+  "level": "m",
+  "page": "170",
+  "src": "Biochimica I",
+  "q": "Quali cofattori servono, nella cascata, per il passaggio da uno zimogeno al successivo?",
+  "opts": [
+   "Ioni calcio e fosfolipidi, soprattutto fosfatidilserina",
+   "Ioni magnesio e fosfolipidi, soprattutto fosfatidilcolina",
+   "ATP e ioni calcio, che fosforilano gli zimogeni",
+   "Vitamina K e ioni magnesio, legati ai fattori attivi",
+   "Ioni zinco e sfingomielina delle cellule endoteliali"
+  ],
+  "ans": 0,
+  "why": "Il calcio fa da ponte tra i residui Gla dei fattori e i fosfolipidi delle membrane danneggiate.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-030",
+  "topic": "d8-cascata",
+  "level": "a",
+  "page": "171",
+  "src": "Biochimica I",
+  "q": "Quale affermazione sul fattore di von Willebrand è corretta?",
+  "opts": [
+   "Srotolato dal flusso, fa da ponte tra il collagene e la GP Ib-V-IX delle piastrine",
+   "È un vasodilatatore dell'endotelio integro che impedisce la formazione del trombo",
+   "È una serin proteasi della via intrinseca che attiva direttamente il fattore X",
+   "È il recettore piastrinico del fibrinogeno che media l'aggregazione tra piastrine",
+   "È un enzima del plasma che degrada la fibrina e scioglie il coagulo già formato"
+  ],
+  "ans": 0,
+  "why": "Lo shear stress lo srotola ed espone i siti per il collagene e per il recettore piastrinico: serve all'adesione.",
+  "note": "Sbobina di Biochimica I, p. 171: mette il vWF tra le sostanze dell'endotelio che «impediscono la formazione del trombo». Prostaciclina e NO sono antitrombotici; il vWF favorisce invece l'adesione delle piastrine.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-031",
+  "topic": "d8-cascata",
+  "level": "l",
+  "page": "175",
+  "src": "Biochimica I",
+  "q": "Quale fattore della coagulazione viaggia nel sangue legato al fattore di von Willebrand?",
+  "opts": [
+   "Fattore VIII",
+   "Fattore XIII",
+   "Fattore IX",
+   "Fattore V",
+   "Fattore VII"
+  ],
+  "ans": 0,
+  "why": "Il legame al vWF protegge il fattore VIII (antiemofilico A); per questo nella malattia di von Willebrand cala anche il fattore VIII (questo non è nelle sbobine).",
+  "note": "Sbobina di Biochimica I, p. 175: scrive che il vWF viaggia con il fattore XIII («il fattore emofilico»). Il fattore antiemofilico trasportato dal vWF è l'VIII; il XIII è la transglutamminasi.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-032",
+  "topic": "d8-cascata",
+  "level": "l",
+  "page": "171",
+  "src": "Biochimica I",
+  "q": "Quale recettore piastrinico lega direttamente il collagene?",
+  "opts": [
+   "GP Ia-IIa (integrina α2β1)",
+   "GP IIb-IIIa (integrina αIIbβ3)",
+   "GP Ib-V-IX",
+   "P2Y12",
+   "PAR1"
+  ],
+  "ans": 0,
+  "why": "GP Ib-V-IX lega il vWF, GP IIb-IIIa il fibrinogeno, P2Y12 l'ADP, PAR1/PAR4 la trombina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-033",
+  "topic": "d8-cascata",
+  "level": "a",
+  "page": "172",
+  "src": "Biochimica I",
+  "q": "Che cosa succede quando il trombossano A₂ lega il suo recettore sulla piastrina?",
+  "opts": [
+   "Tramite una proteina G attiva la PLCβ: l'IP₃ libera Ca²⁺ e la piastrina rilascia ADP",
+   "Tramite una proteina G attiva l'adenilato ciclasi: l'AMPc libera Ca²⁺ e rilascia ADP",
+   "Apre direttamente un canale del Ca²⁺ della membrana, senza secondi messaggeri",
+   "Attiva la guanilato ciclasi: il GMPc fa uscire ADP dalle vescicole della piastrina",
+   "Entra nel nucleo della piastrina e attiva la trascrizione del gene del fibrinogeno"
+  ],
+  "ans": 0,
+  "why": "Il TxA₂ agisce sulla stessa piastrina che lo produce; il Ca²⁺ attiva chinasi e il rilascio di ADP, che amplifica l'aggregazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-034",
+  "topic": "d8-cascata",
+  "level": "a",
+  "page": "172",
+  "src": "Biochimica I",
+  "q": "Perché prostaciclina e NO si oppongono all'aggregazione delle piastrine?",
+  "opts": [
+   "Aumentano AMPc e GMPc, che riducono il Ca²⁺ e quindi la sintesi di trombossano",
+   "Bloccano il recettore P2Y12, che non può più legare l'ADP liberato dalle piastrine",
+   "Inibiscono in modo irreversibile la cicloossigenasi presente nelle piastrine",
+   "Legano il fibrinogeno e gli impediscono di fare da ponte tra le piastrine",
+   "Degradano il trombossano già formato prima che raggiunga il suo recettore"
+  ],
+  "ans": 0,
+  "why": "Meno Ca²⁺ significa meno attivazione della PLA2, quindi meno acido arachidonico e meno TxA₂.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-035",
+  "topic": "d8-cascata",
+  "level": "m",
+  "page": "173",
+  "src": "Biochimica I",
+  "q": "Come agiscono le tienopiridine, come la ticlopidina?",
+  "opts": [
+   "Bloccano l'interazione tra l'ADP e il suo recettore piastrinico",
+   "Inibiscono in modo irreversibile la cicloossigenasi delle piastrine",
+   "Bloccano la GP IIb-IIIa e il legame del fibrinogeno alle piastrine",
+   "Inibiscono l'enzima che riduce la vitamina K epossido nel fegato",
+   "Attivano il plasminogeno e accelerano la degradazione della fibrina"
+  ],
+  "ans": 0,
+  "why": "Il recettore dell'ADP è il P2Y12; l'aspirina agisce invece sulla cicloossigenasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-036",
+  "topic": "d8-cascata",
+  "level": "l",
+  "page": "173",
+  "src": "Biochimica I",
+  "q": "Quali due attività catalitiche ha la prostaglandina endoperossido sintasi?",
+  "opts": [
+   "Ciclossigenasica e idroperossidasica",
+   "Lipossigenasica e ciclossigenasica",
+   "Fosfolipasica e ciclossigenasica",
+   "Idroperossidasica e trombossano sintasica",
+   "Epossidasica e reduttasica"
+  ],
+  "ans": 0,
+  "why": "La prima forma PGG₂ con O₂ (due perossidi), la seconda riduce un perossido a OH dando PGH₂, precursore di prostaciclina e trombossano.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-037",
+  "topic": "d8-cascata",
+  "level": "h",
+  "page": "174",
+  "src": "Biochimica I",
+  "q": "Perché una piccola dose di aspirina al giorno riduce l'aggregazione per giorni, anche dopo che il farmaco è stato eliminato?",
+  "opts": [
+   "Inibisce la COX in modo irreversibile e la piastrina, senza nucleo, non può sintetizzarne di nuova",
+   "Si accumula nelle piastrine e viene liberata lentamente, inibendo la COX in modo reversibile",
+   "Blocca in modo irreversibile il recettore dell'ADP sulla piastrina per tutta la durata della sua vita",
+   "Inibisce la prostaciclina dell'endotelio, che poi non può più essere sintetizzata di nuovo",
+   "Acetila il fibrinogeno, che non lega più la GP IIb-IIIa per tutta la durata del coagulo"
+  ],
+  "ans": 0,
+  "why": "L'aspirina è un inibitore irreversibile della cicloossigenasi (acetila il sito attivo). L'endotelio, che ha il nucleo, risintetizza la COX; la piastrina no. Il ruolo dell'assenza del nucleo non è nelle sbobine (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-038",
+  "topic": "d8-cascata",
+  "level": "m",
+  "page": "174",
+  "src": "Biochimica I",
+  "q": "Perché l'aspirina può causare emorragie gastriche?",
+  "opts": [
+   "Inibisce anche la COX-1, che produce le prostaglandine della normale fisiologia",
+   "Inibisce solo la COX-2, che protegge la mucosa gastrica dall'acidità dello stomaco",
+   "Attiva la COX-1, che produce prostaglandine che aumentano la secrezione acida",
+   "Blocca la pompa protonica e altera il pH dello stomaco e la sua mucosa",
+   "Inibisce la vitamina K epossido reduttasi nelle cellule della mucosa gastrica"
+  ],
+  "ans": 0,
+  "why": "La COX-1 è presente quasi ovunque; la COX-2 è indotta nell'infiammazione. Per questo si cercano inibitori selettivi della COX-2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-039",
+  "topic": "d8-cascata",
+  "level": "m",
+  "page": "175",
+  "src": "Biochimica I",
+  "q": "Quale farmaco si usa nella malattia di von Willebrand e come agisce?",
+  "opts": [
+   "Desmopressina, che aumenta il vWF prodotto dalle cellule endoteliali",
+   "Warfarin, che riduce la carbossilazione dei fattori e il rischio di trombi",
+   "Vitamina K, che aumenta la carbossilazione del vWF nelle piastrine",
+   "Eparina, che potenzia l'antitrombina e prolunga la vita del vWF",
+   "Aspirina, che inibisce la COX-1 e aumenta la sintesi di vWF"
+  ],
+  "ans": 0,
+  "why": "La desmopressina è un analogo sintetico della vasopressina. La malattia è la più comune delle anomalie della coagulazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-040",
+  "topic": "d8-fibrina",
+  "level": "f",
+  "page": "175",
+  "src": "Biochimica I",
+  "q": "Da quante catene polipeptidiche è formato il fibrinogeno?",
+  "opts": [
+   "Sei: due α, due β e due γ",
+   "Quattro: due α e due β",
+   "Tre: una α, una β e una γ",
+   "Due: una α e una β",
+   "Otto: due α, due β, due γ e due δ"
+  ],
+  "ans": 0,
+  "why": "Le catene sono tenute insieme da ponti disolfuro; le α e le β portano all'N-terminale i fibrinopeptidi A e B.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-041",
+  "topic": "d8-fibrina",
+  "level": "m",
+  "page": "176",
+  "src": "Biochimica I",
+  "q": "Perché il fibrinogeno, molto abbondante nel sangue, non polimerizza spontaneamente?",
+  "opts": [
+   "I fibrinopeptidi della regione centrale sono carichi negativamente e le molecole si respingono",
+   "È legato all'antitrombina, che lo tiene inattivo finché la trombina non lo stacca dal complesso",
+   "Manca il calcio, che viene liberato solo dalle cellule dei tessuti danneggiati",
+   "Le sue catene α sono glicosilate e la glicosilazione impedisce ogni contatto",
+   "Il fattore XIII circola già legato alle sue estremità e ne blocca i contatti"
+  ],
+  "ans": 0,
+  "why": "I fibrinopeptidi sono ricchi di residui acidi e modificati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-042",
+  "topic": "d8-fibrina",
+  "level": "a",
+  "page": "176",
+  "src": "Biochimica I",
+  "q": "Che cosa cambia nella molecola quando la trombina rimuove i fibrinopeptidi?",
+  "opts": [
+   "La regione centrale diventa positiva e si associa alle estremità negative di altre molecole, sfalsate di mezza molecola",
+   "Le estremità diventano positive e si legano tra loro testa-testa, formando lunghi filamenti lineari senza sfalsamento",
+   "La molecola si scinde in sei catene libere, che si riassociano poi con ponti disolfuro in una rete casuale",
+   "Si forma subito un legame isopeptidico tra le catene centrali, che rende il coagulo stabile senza altri enzimi",
+   "La molecola perde tutte le cariche e precipita, intrappolando i globuli rossi senza un'organizzazione precisa"
+  ],
+  "ans": 0,
+  "why": "Le estremità restano negative (−4 nella sbobina); è l'attrazione tra centro positivo ed estremità negative a guidare la polimerizzazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-043",
+  "topic": "d8-fibrina",
+  "level": "h",
+  "page": "177",
+  "src": "Biochimica I",
+  "q": "In un paziente con deficit di fattore XIII la trombina e la fibrina si formano normalmente, ma il coagulo è fragile e sanguina dopo giorni. Perché?",
+  "opts": [
+   "La fibrina polimerizza ma mancano i legami isopeptidici lisina-glutammina che stabilizzano il coagulo",
+   "Senza fattore XIII i fibrinopeptidi non vengono rimossi e la fibrina resta solubile nel plasma",
+   "Il fattore XIII è il cofattore del fattore Xa e senza di esso la trombina si forma troppo lentamente",
+   "Il fattore XIII inibisce la plasmina, quindi in sua assenza la fibrina viene degradata subito",
+   "Il fattore XIII forma i ponti disolfuro tra le catene del fibrinogeno, che senza di essi si separano"
+  ],
+  "ans": 0,
+  "why": "Il fattore XIIIa è una transglutamminasi: lega la catena laterale di una lisina a quella di una glutammina di un'altra fibrina e libera NH₄⁺; il coagulo passa da lasso a stabile. Il quadro clinico non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-044",
+  "topic": "d8-fibrina",
+  "level": "m",
+  "page": "177",
+  "src": "Biochimica I",
+  "q": "Quali cofattori non enzimatici accelerano rispettivamente il fattore IXa e il fattore Xa?",
+  "opts": [
+   "Il fattore VIIIa accelera il IXa, il fattore Va accelera il Xa",
+   "Il fattore Va accelera il IXa, il fattore VIIIa accelera il Xa",
+   "Il fattore XIIIa accelera il IXa, il fattore VIIa accelera il Xa",
+   "Il fattore tissutale accelera il IXa, il fattore VIIIa il Xa",
+   "La proteina S accelera il IXa, la proteina C accelera il Xa"
+  ],
+  "ans": 0,
+  "why": "VIII = antiemofilico A; V = proaccelerina, che accelera di migliaia di volte la reazione del fattore X.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-045",
+  "topic": "d8-fibrina",
+  "level": "l",
+  "page": "178",
+  "src": "Biochimica I",
+  "q": "Quale porzione della protrombina contiene i residui di γ-carbossiglutammato?",
+  "opts": [
+   "La regione N-terminale, che viene staccata dal fattore Xa durante l'attivazione",
+   "La porzione serin proteasica C-terminale, che taglia i fibrinopeptidi",
+   "Il peptide di 49 aa trattenuto dal ponte disolfuro con la porzione serin proteasica",
+   "Tutta la catena, con i residui Gla distribuiti in modo regolare",
+   "Solo il sito attivo, dove i residui Gla legano il fibrinogeno"
+  ],
+  "ans": 0,
+  "why": "La regione Gla (nei primi 274 aa) lega il calcio e richiama la protrombina sulle membrane; la serin proteasi attiva sono gli ultimi 259 aa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-046",
+  "topic": "d8-vitk",
+  "level": "f",
+  "page": "180",
+  "src": "Biochimica I",
+  "q": "Quale enzima dipende dalla vitamina K?",
+  "opts": [
+   "γ-glutammil carbossilasi",
+   "Prolil idrossilasi",
+   "Transglutamminasi",
+   "Glutammato decarbossilasi",
+   "Lisil ossidasi"
+  ],
+  "ans": 0,
+  "why": "Nel fegato aggiunge una CO₂ come carbossile sul carbonio γ dei glutammati, formando il Gla.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-047",
+  "topic": "d8-vitk",
+  "level": "m",
+  "page": "180",
+  "src": "Biochimica I",
+  "q": "Qual è la forma attiva della vitamina K e in che cosa si trasforma durante la carbossilazione?",
+  "opts": [
+   "L'idrochinone (ridotto), che si ossida a epossido",
+   "Il chinone (ossidato), che si riduce a idrochinone",
+   "L'epossido, che si riduce a idrochinone",
+   "L'idrochinone, che si ossida a chinone senza ossigeno",
+   "Il menachinone, che si trasforma in filochinone"
+  ],
+  "ans": 0,
+  "why": "La reazione richiede O₂. Poi la vitamina K epossido reduttasi (nella sbobina «vitamina K ossidoreduttasi») la riporta a chinone e a idrochinone.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-048",
+  "topic": "d8-vitk",
+  "level": "a",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Come agisce il warfarin?",
+  "opts": [
+   "Inibisce la reduttasi che rigenera l'idrochinone dall'epossido di vitamina K",
+   "Inibisce la γ-carbossilasi competendo con la CO₂ per il sito attivo",
+   "Lega il Ca²⁺ del plasma e impedisce ai fattori di legarsi alle membrane",
+   "Inibisce direttamente la trombina, come fa l'eparina con l'antitrombina",
+   "Blocca l'assorbimento della vitamina K nell'ileo e la sua produzione nel colon"
+  ],
+  "ans": 0,
+  "why": "Ha una struttura simile alla vitamina K; senza idrochinone le carbossilazioni si fermano. Il dicumarolo, di origine naturale (trifoglio dolce), agisce allo stesso modo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-049",
+  "topic": "d8-vitk",
+  "level": "h",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Un paziente prende warfarin. Quali fattori della coagulazione risultano poco funzionanti e perché?",
+  "opts": [
+   "II, VII, IX e X: escono dal fegato senza Gla e non legano bene Ca²⁺ e fosfolipidi",
+   "Solo la trombina: è l'unico fattore che ha residui Gla nella regione N-terminale",
+   "V e VIII: sono cofattori che devono essere carbossilati per accelerare la cascata",
+   "Fibrinogeno e XIII: senza carbossilazione non possono più polimerizzare",
+   "VII e XII: il warfarin blocca il fattore tissutale e il contatto con il collagene"
+  ],
+  "ans": 0,
+  "why": "Oltre alla protrombina, VII, IX e X hanno bisogno della γ-carbossilazione vitamina K-dipendente per concentrarsi nel sito della lesione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-050",
+  "topic": "d8-vitk",
+  "level": "l",
+  "page": "180",
+  "src": "Biochimica I",
+  "q": "Come si chiama la vitamina K1 e da dove proviene?",
+  "opts": [
+   "Filochinone: di origine vegetale, assorbito nell'ileo",
+   "Menachinone: di origine vegetale, assorbito nell'ileo",
+   "Filochinone: prodotto dai batteri intestinali nel colon",
+   "Menachinone: prodotto dalle cellule del fegato",
+   "Menadione: prodotto dalle piastrine attivate"
+  ],
+  "ans": 0,
+  "why": "La K2 (menachinone) è prodotta dai batteri nel colon. Entrambe hanno una catena laterale isoprenica (terpenica).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-051",
+  "topic": "d8-fibrinolisi",
+  "level": "f",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Quale enzima degrada la rete di fibrina?",
+  "opts": [
+   "Plasmina",
+   "Trombina",
+   "Fattore XIIIa",
+   "Antitrombina",
+   "Fattore Xa"
+  ],
+  "ans": 0,
+  "why": "È una serin proteasi che si forma dal plasminogeno; i frammenti vengono eliminati dal fegato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-052",
+  "topic": "d8-fibrinolisi",
+  "level": "m",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Come agisce l'antitrombina?",
+  "opts": [
+   "Inattiva la trombina e i fattori IXa e Xa; l'eparina ne potenzia l'azione",
+   "Degrada la fibrina già formata e scioglie il coagulo; l'eparina la attiva",
+   "Attiva la proteina C legandosi alla trombomodulina dell'endotelio",
+   "Inibisce la vitamina K epossido reduttasi come fa il warfarin",
+   "Lega gli ioni calcio e impedisce il legame dei fattori alle membrane"
+  ],
+  "ans": 0,
+  "why": "È uno degli inibitori fisiologici che impediscono alla coagulazione di partire quando non serve.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-053",
+  "topic": "d8-fibrinolisi",
+  "level": "a",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Come viene attivata la proteina C e che cosa fa?",
+  "opts": [
+   "Dal complesso trombina-trombomodulina; con la proteina S taglia i fattori Va e VIIIa",
+   "Dal fattore Xa; con la proteina S taglia la fibrina e scioglie il coagulo già formato",
+   "Dalla plasmina; con la proteina S inattiva la trombina e il fattore XIIIa circolanti",
+   "Dal t-PA; con l'antitrombina inattiva i fattori IXa e Xa sulla superficie endoteliale",
+   "Dal fattore XIIIa; con la proteina S rimuove i legami crociati della fibrina"
+  ],
+  "ans": 0,
+  "why": "È una proteolisi limitata dei cofattori che accelerano i fattori IX e X: la trombina, legata alla trombomodulina, contribuisce a spegnere la cascata.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-054",
+  "topic": "d8-fibrinolisi",
+  "level": "h",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Una mutazione rende il fattore Va resistente al taglio della proteina C attivata. Che cosa ti aspetti?",
+  "opts": [
+   "Tendenza alla trombosi, perché il Va resta attivo e continua ad accelerare il fattore Xa",
+   "Tendenza alle emorragie, perché il Va mutato non riesce più ad accelerare il fattore Xa",
+   "Tendenza alla trombosi, perché il Va mutato attiva direttamente il fibrinogeno a fibrina",
+   "Nessun effetto, perché l'antitrombina inattiva comunque il fattore Va al posto della proteina C",
+   "Tendenza alle emorragie, perché la proteina C si accumula e taglia di più il fattore VIIIa"
+  ],
+  "ans": 0,
+  "why": "È il caso del fattore V di Leiden, che non è nelle sbobine: il ragionamento segue dal ruolo della proteina C descritto a p. 181.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-055",
+  "topic": "d8-fibrinolisi",
+  "level": "l",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Quale attivatore del plasminogeno è di origine batterica?",
+  "opts": [
+   "Streptochinasi",
+   "Urochinasi",
+   "t-PA",
+   "Trombomodulina",
+   "Proteina S"
+  ],
+  "ans": 0,
+  "why": "Il t-PA è l'attivatore fisiologico tissutale; l'urochinasi è prodotta dai reni.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

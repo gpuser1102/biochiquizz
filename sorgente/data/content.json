@@ -978,7 +978,9 @@
           "topics": [
             {
               "id": "d7-coenzimi",
-              "name": "Coenzimi idrosolubili"
+              "name": "Coenzimi idrosolubili",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },
@@ -988,19 +990,27 @@
           "topics": [
             {
               "id": "d8-cascata",
-              "name": "Cascata coagulativa e piastrine"
+              "name": "Cascata coagulativa e piastrine",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d8-fibrina",
-              "name": "Formazione del coagulo di fibrina"
+              "name": "Formazione del coagulo di fibrina",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d8-vitk",
-              "name": "Vitamina K"
+              "name": "Vitamina K",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d8-fibrinolisi",
-              "name": "Inibitori della coagulazione e fibrinolisi"
+              "name": "Inibitori della coagulazione e fibrinolisi",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },

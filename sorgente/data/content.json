@@ -1050,11 +1050,15 @@
           "topics": [
             {
               "id": "d10-acidigrassi",
-              "name": "Acidi grassi"
+              "name": "Acidi grassi",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d10-membrana",
-              "name": "Lipidi di membrana"
+              "name": "Lipidi di membrana",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d10-steroidi",
@@ -1062,7 +1066,9 @@
             },
             {
               "id": "d10-trasporto",
-              "name": "Membrane e trasporto"
+              "name": "Membrane e trasporto",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },
@@ -1072,7 +1078,9 @@
           "topics": [
             {
               "id": "d11-vitad",
-              "name": "Vitamina A e vitamina D"
+              "name": "Vitamina A e vitamina D",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },
@@ -1082,11 +1090,15 @@
           "topics": [
             {
               "id": "d12-digestione",
-              "name": "Digestione, assorbimento, deposito e trasporto"
+              "name": "Digestione, assorbimento, deposito e trasporto",
+              "ready": true,
+              "added": "2026-11-19"
             },
             {
               "id": "d12-lipoproteine",
-              "name": "Lipoproteine"
+              "name": "Lipoproteine",
+              "ready": true,
+              "added": "2026-11-19"
             }
           ]
         },

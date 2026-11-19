@@ -31512,6 +31512,994 @@
   "fixed": false
  },
  {
+  "id": "u1119-105",
+  "topic": "d10-acidigrassi",
+  "level": "f",
+  "page": "198",
+  "src": "Biochimica I",
+  "q": "Quale proprietà accomuna tutti i lipidi?",
+  "opts": [
+   "L'insolubilità in acqua",
+   "La presenza di glicerolo",
+   "La presenza di acidi grassi",
+   "La funzione di riserva energetica",
+   "La presenza di un gruppo fosfato"
+  ],
+  "ans": 0,
+  "why": "Sono un gruppo eterogeneo: lipidi con acidi grassi (trigliceridi, lipidi di membrana) e colesterolo con i suoi derivati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-106",
+  "topic": "d10-acidigrassi",
+  "level": "f",
+  "page": "199",
+  "src": "Biochimica I",
+  "q": "Che cosa significa che un acido grasso è saturo?",
+  "opts": [
+   "Tutti i carboni della coda sono sp³, senza doppi legami",
+   "Ha il gruppo carbossilico esterificato con il glicerolo",
+   "Ha il numero massimo di doppi legami possibile",
+   "È legato all'albumina e non può legarne altri",
+   "Ha una catena di almeno 24 atomi di carbonio"
+  ],
+  "ans": 0,
+  "why": "I carboni sono al massimo stato di riduzione. L'acido stearico (18:0) fonde a circa 70 °C: i grassi saturi a temperatura ambiente sono solidi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-107",
+  "topic": "d10-acidigrassi",
+  "level": "m",
+  "page": "201",
+  "src": "Biochimica I",
+  "q": "Da che cosa dipende il punto di fusione di un acido grasso?",
+  "opts": [
+   "Sale con la lunghezza della catena e scende con il numero di doppi legami",
+   "Scende con la lunghezza della catena e sale con il numero di doppi legami",
+   "Dipende solo dalla carica del gruppo carbossilico al pH della cellula",
+   "Sale sia con la lunghezza della catena sia con il numero di doppi legami",
+   "Dipende solo dalla lunghezza della catena e non dai doppi legami"
+  ],
+  "ans": 0,
+  "why": "Grado di saturazione e lunghezza della catena dettano il punto di fusione: più la molecola è satura e lunga, più è alto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-108",
+  "topic": "d10-acidigrassi",
+  "level": "a",
+  "page": "201",
+  "src": "Biochimica I",
+  "q": "Perché un doppio legame cis abbassa il punto di fusione di un acido grasso?",
+  "opts": [
+   "Piega la catena e impedisce alle molecole di impacchettarsi in modo compatto",
+   "Rende la catena più polare, quindi più solubile e meno compatta in acqua",
+   "Aumenta la carica negativa della testa e fa respingere le molecole tra loro",
+   "Mantiene la catena lineare ma più corta, quindi con meno interazioni",
+   "Forma legami a idrogeno con le catene vicine, che sono più deboli"
+  ],
+  "ans": 0,
+  "why": "Un doppio legame trans lascia la catena quasi lineare. La piega dei cis dà fluidità alle membrane.",
+  "note": "Sbobina di Biochimica I, p. 201: dice che il doppio legame cis crea una piega «di circa 109°». La deviazione della catena è di circa 30°.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-109",
+  "topic": "d10-acidigrassi",
+  "level": "f",
+  "page": "200",
+  "src": "Biochimica I",
+  "q": "Dove si trova di solito il primo doppio legame di un acido grasso insaturo?",
+  "opts": [
+   "Tra il C9 e il C10",
+   "Tra il C2 e il C3",
+   "Tra il C5 e il C6",
+   "Tra il C12 e il C13",
+   "Sul carbonio ω"
+  ],
+  "ans": 0,
+  "why": "La numerazione parte dal carbonio carbossilico (C1). L'eccezione più nota è l'acido arachidonico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-110",
+  "topic": "d10-acidigrassi",
+  "level": "l",
+  "page": "201",
+  "src": "Biochimica I",
+  "q": "Quale acido grasso ha il primo doppio legame sul C5 invece che sul C9?",
+  "opts": [
+   "Acido arachidonico",
+   "Acido oleico",
+   "Acido linoleico",
+   "Acido palmitoleico",
+   "Acido α-linolenico"
+  ],
+  "ans": 0,
+  "why": "L'acido arachidonico (20:4) ha i doppi legami in 5, 8, 11 e 14.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-111",
+  "topic": "d10-acidigrassi",
+  "level": "f",
+  "page": "199",
+  "src": "Biochimica I",
+  "q": "Con quale lettera si indica l'ultimo carbonio della catena di un acido grasso, il più lontano dal carbossile?",
+  "opts": [
+   "ω (omega)",
+   "α (alfa)",
+   "β (beta)",
+   "Δ (delta)",
+   "γ (gamma)"
+  ],
+  "ans": 0,
+  "why": "Da qui la classificazione ω-3 e ω-6, in base alla distanza del doppio legame dal carbonio ω.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-112",
+  "topic": "d10-acidigrassi",
+  "level": "m",
+  "page": "201",
+  "src": "Biochimica I",
+  "q": "Perché i trigliceridi sono detti «grassi neutri»?",
+  "opts": [
+   "Gli OH del glicerolo e i carbossili degli acidi grassi sono impegnati in esteri: non restano cariche",
+   "Contengono un gruppo fosfato neutralizzato da una colina, che bilancia esattamente la sua carica negativa",
+   "Hanno solo acidi grassi saturi, che non hanno cariche, al contrario degli acidi insaturi",
+   "Viaggiano sempre legati all'albumina, che ne neutralizza la carica nel plasma",
+   "Il glicerolo porta una carica positiva che bilancia quella dell'unico acido grasso"
+  ],
+  "ans": 0,
+  "why": "Il glicerolo è esterificato con tre acidi grassi, uguali (trigliceridi semplici) o diversi (misti).",
+  "note": "Sbobina di Biochimica I, p. 201: scrive «glicerolo triacetilato». Il glicerolo è triacilato (esterificato con tre acidi grassi), non legato a gruppi acetile.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-113",
+  "topic": "d10-membrana",
+  "level": "f",
+  "page": "202",
+  "src": "Biochimica I",
+  "q": "Qual è il glicerofosfolipide più semplice, da cui derivano tutti gli altri?",
+  "opts": [
+   "Acido fosfatidico",
+   "Fosfatidilcolina",
+   "Diacilglicerolo",
+   "Cardiolipina",
+   "Sfingomielina"
+  ],
+  "ans": 0,
+  "why": "Glicerolo + due acidi grassi esterificati + fosfato sul C3. Aggiungendo un alcol al fosfato (colina, etanolammina, serina, inositolo) si hanno gli altri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-114",
+  "topic": "d10-membrana",
+  "level": "l",
+  "page": "202",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento tra nome tradizionale e glicerofosfolipide è corretto?",
+  "opts": [
+   "Lecitine = fosfatidilcoline; cefaline = fosfatidiletanolammina e fosfatidilserina",
+   "Lecitine = fosfatidiletanolammine; cefaline = fosfatidilcolina e fosfatidilserina",
+   "Lecitine = fosfatidilserine; cefaline = fosfatidilcolina e fosfatidilinositolo",
+   "Lecitine = sfingomieline; cefaline = fosfatidilcolina e fosfatidiletanolammina",
+   "Lecitine = cardiolipine; cefaline = fosfatidilglicerolo e fosfatidilinositolo"
+  ],
+  "ans": 0,
+  "why": "La lecitina è anche il donatore dell'acile per l'esterificazione del colesterolo nelle lipoproteine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-115",
+  "topic": "d10-membrana",
+  "level": "a",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Che cosa distingue il PAF (fattore di attivazione delle piastrine) da un comune glicerofosfolipide?",
+  "opts": [
+   "Sul C1 ha un alcol a lunga catena legato con un legame etere e sul C2 un acetile",
+   "Sul C1 ha un acetile legato con un estere e sul C2 un alcol a lunga catena con un etere",
+   "Non ha il gruppo fosfato e porta la colina legata direttamente al C3 del glicerolo",
+   "Ha la sfingosina al posto del glicerolo e un acido grasso legato con un legame ammidico",
+   "Ha due gruppi fosfato e due colina, uno su C1 e uno su C3, e un acido grasso sul C2"
+  ],
+  "ans": 0,
+  "why": "È un lipide etere con fosfocolina sul C3.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-116",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Quale di queste NON è un'azione del PAF?",
+  "opts": [
+   "Inibisce l'aggregazione delle piastrine",
+   "Stimola il rilascio di serotonina",
+   "Media l'infiammazione",
+   "Viene rilasciato dai basofili dopo stimolazione antigenica",
+   "Favorisce l'impianto dell'uovo fecondato"
+  ],
+  "ans": 0,
+  "why": "Il PAF stimola, non inibisce, l'aggregazione piastrinica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-117",
+  "topic": "d10-membrana",
+  "level": "f",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Quale molecola prende il posto del glicerolo negli sfingolipidi?",
+  "opts": [
+   "La sfingosina, un amminoalcol a lunga catena",
+   "Il colesterolo, uno steroide con un ossidrile",
+   "L'inositolo, un polialcol ciclico",
+   "La ceramide, un acido grasso con due ammine",
+   "Il dolicolo, un lipide isoprenico"
+  ],
+  "ans": 0,
+  "why": "La sfingosina ha 18 C, un doppio legame trans e i primi 3 C con gruppi funzionali simili al glicerolo, con un gruppo amminico al posto di un OH. La ceramide è la sfingosina con un acido grasso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-118",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Che cos'è la ceramide?",
+  "opts": [
+   "Sfingosina con un acido grasso legato con un legame ammidico al gruppo amminico",
+   "Sfingosina con un acido grasso legato con un legame estere all'ossidrile del C1",
+   "Glicerolo con un acido grasso sul C1 e un alcol a lunga catena legato sul C2",
+   "Sfingosina con una fosfocolina legata con un legame fosfoestere al C1",
+   "Sfingosina con uno zucchero legato con un legame glicosidico all'azoto"
+  ],
+  "ans": 0,
+  "why": "È la base di tutti gli sfingolipidi: l'OH del C1 resta libero per legare fosfocolina o zuccheri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-119",
+  "topic": "d10-membrana",
+  "level": "a",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Che cosa si lega all'OH del C1 della ceramide per formare la sfingomielina e un glicosfingolipide?",
+  "opts": [
+   "Fosfocolina per la sfingomielina; uno zucchero, con legame glicosidico, per il glicosfingolipide",
+   "Uno zucchero per la sfingomielina; una fosfocolina, con legame fosfoestere, per il glicosfingolipide",
+   "Un secondo acido grasso per la sfingomielina; un fosfato, con legame fosfoestere, per il glicosfingolipide",
+   "Fosfoserina per la sfingomielina; un acido sialico, con legame ammidico, per il glicosfingolipide",
+   "Glicerolo 3-fosfato per la sfingomielina; il colesterolo, con legame estere, per il glicosfingolipide"
+  ],
+  "ans": 0,
+  "why": "La sfingomielina è lo sfingofosfolipide più noto; con più zuccheri e acido sialico si hanno i gangliosidi.",
+  "note": "Sbobina di Biochimica I, p. 203: chiama «glicerosfingolipide» la ceramide legata a uno zucchero. Il termine è glicosfingolipide: negli sfingolipidi il glicerolo non c'è.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-120",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "204",
+  "src": "Biochimica I",
+  "q": "Che cosa caratterizza i gangliosidi?",
+  "opts": [
+   "Sono glicosfingolipidi con un oligosaccaride carico negativamente, abbondanti nella sostanza grigia",
+   "Sono glicerofosfolipidi con un etere sul C1, abbondanti nella membrana mitocondriale interna",
+   "Sono sfingofosfolipidi con la fosfocolina, abbondanti nella guaina mielinica dei nervi periferici",
+   "Sono esteri del colesterolo con un acido grasso, abbondanti nelle placche ateromatose",
+   "Sono glicoproteine con molto acido sialico, abbondanti nel plasma e rimosse dal fegato"
+  ],
+  "ans": 0,
+  "why": "La carica negativa viene dall'acido sialico dell'oligosaccaride. I gangliosidi della sostanza grigia fanno parte di siti recettoriali (neurotrasmettitori, ormoni, tossine batteriche).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-121",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "205",
+  "src": "Biochimica I",
+  "q": "Che cosa determina gli antigeni dei gruppi sanguigni sulla superficie dei globuli rossi?",
+  "opts": [
+   "La parte oligosaccaridica di glicolipidi, legata a una ceramide",
+   "La sequenza amminoacidica di una proteina integrale di membrana",
+   "Il tipo di acido grasso presente nella fosfatidilcolina",
+   "La quantità di colesterolo nel foglietto esterno della membrana",
+   "La fosfatidilserina esposta sul foglietto esterno della membrana"
+  ],
+  "ans": 0,
+  "why": "È la componente glucidica a conferire le proprietà antigeniche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-122",
+  "topic": "d10-membrana",
+  "level": "l",
+  "page": "206",
+  "src": "Biochimica I",
+  "q": "Quale fosfolipasi stacca la testa polare ma lascia il fosfato sul lipide, producendo acido fosfatidico?",
+  "opts": [
+   "Fosfolipasi D",
+   "Fosfolipasi C",
+   "Fosfolipasi A2",
+   "Fosfolipasi A1",
+   "Sfingomielinasi"
+  ],
+  "ans": 0,
+  "why": "La C stacca la testa polare insieme al fosfato (es. IP₃ dal PIP₂, lasciando il DAG); la A2 stacca l'acido grasso in posizione 2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-123",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "207",
+  "src": "Biochimica I",
+  "q": "Quale di queste molecole NON deriva da unità isopreniche?",
+  "opts": [
+   "Acido palmitico",
+   "Coenzima Q",
+   "Vitamina K",
+   "Vitamina E",
+   "Squalene"
+  ],
+  "ans": 0,
+  "why": "L'isoprene ha 5 C e due doppi legami. I terpeni comprendono le vitamine A, E, K, il coenzima Q e lo squalene, da cui deriva il colesterolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-124",
+  "topic": "d10-membrana",
+  "level": "l",
+  "page": "207",
+  "src": "Biochimica I",
+  "q": "Quanti atomi di carbonio ha il colesterolo e come si chiama il suo sistema di quattro anelli?",
+  "opts": [
+   "27; ciclopentanoperidrofenantrene",
+   "30; ciclopentanoperidrofenantrene",
+   "27; tetraidronaftalene",
+   "24; ciclopentanoperidrofenantrene",
+   "18; isoallosazina"
+  ],
+  "ans": 0,
+  "why": "Lo squalene e il lanosterolo hanno 30 C; gli acidi biliari 24.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-125",
+  "topic": "d10-membrana",
+  "level": "m",
+  "page": "207",
+  "src": "Biochimica I",
+  "q": "Perché il colesterolo è una molecola anfipatica?",
+  "opts": [
+   "Ha un solo gruppo polare, l'OH in C3, mentre anelli e catena laterale sono idrofobici",
+   "Ha un gruppo fosfato sulla catena laterale, mentre i quattro anelli sono idrofobici",
+   "Ha due gruppi carbossilici agli estremi della molecola, separati dagli anelli idrofobici",
+   "È legato a una colina sul C3, che forma una testa polare come nei fosfolipidi",
+   "Ha una catena laterale polare con molti ossidrili, mentre gli anelli sono idrofobici"
+  ],
+  "ans": 0,
+  "why": "Nella membrana l'OH sta verso le teste polari dei fosfolipidi. Gli esteri del colesterolo, senza OH libero, sono completamente insolubili.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-126",
+  "topic": "d10-membrana",
+  "level": "f",
+  "page": "210",
+  "src": "Biochimica I",
+  "q": "Quale lipide è il principale regolatore della fluidità delle membrane animali?",
+  "opts": [
+   "Colesterolo",
+   "Sfingomielina",
+   "Fosfatidilinositolo",
+   "Cardiolipina",
+   "Triacilglicerolo"
+  ],
+  "ans": 0,
+  "why": "Il colesterolo si dispone in entrambi i foglietti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-127",
+  "topic": "d10-trasporto",
+  "level": "f",
+  "page": "208",
+  "src": "Biochimica I",
+  "q": "In quale foglietto della membrana plasmatica si trova soprattutto il fosfatidilinositolo?",
+  "opts": [
+   "Nel foglietto interno, verso il citosol",
+   "Nel foglietto esterno, verso il lato extracellulare",
+   "In egual misura nei due foglietti",
+   "Solo nei raft del foglietto esterno",
+   "Nel nucleo idrofobico tra i due foglietti"
+  ],
+  "ans": 0,
+  "why": "La distribuzione dei lipidi tra i due foglietti non è casuale: il PI e i suoi derivati servono alla segnalazione intracellulare.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-128",
+  "topic": "d10-trasporto",
+  "level": "a",
+  "page": "210",
+  "src": "Biochimica I",
+  "q": "Perché l'asimmetria tra i due foglietti della membrana può durare a lungo?",
+  "opts": [
+   "Il flip-flop spontaneo di un fosfolipide è lentissimo rispetto alla diffusione laterale e avviene soprattutto grazie alle flippasi",
+   "Il flip-flop è impossibile per qualunque lipide, perché la testa polare non può mai attraversare il nucleo idrofobico",
+   "I fosfolipidi non si muovono affatto nel piano della membrana, perché sono legati stabilmente alle proteine del citoscheletro",
+   "Il colesterolo forma legami covalenti con i fosfolipidi di ciascun foglietto e li blocca per sempre nella loro posizione iniziale",
+   "La diffusione laterale è più lenta del flip-flop, ma le flippasi riportano subito ogni lipide al suo foglietto"
+  ],
+  "ans": 0,
+  "why": "Il flip-flop richiede ore; la diffusione laterale è molto rapida. Anche le proteine diffondono lateralmente, se non sono vincolate.",
+  "note": "Sbobina di Biochimica I, p. 210: indica per la diffusione laterale una velocità di «1 mm/s». L'ordine di grandezza corretto è circa 1 µm/s.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-129",
+  "topic": "d10-trasporto",
+  "level": "m",
+  "page": "210",
+  "src": "Biochimica I",
+  "q": "Come si ancorano alla membrana le proteine lipidate?",
+  "opts": [
+   "Con un lipide (acido grasso o unità isoprenica) legato covalentemente alla proteina",
+   "Con una lunga α-elica idrofobica che attraversa più volte tutto il doppio strato",
+   "Con legami ionici tra residui di lisina e l'ossidrile del colesterolo della membrana",
+   "Con un ponte disolfuro tra una cisteina e la testa della fosfatidilserina",
+   "Con un oligosaccaride che si inserisce tra le code dei fosfolipidi"
+  ],
+  "ans": 0,
+  "why": "L'ancora lipidica si inserisce nel doppio strato; queste proteine si concentrano spesso nei raft, coinvolti nella segnalazione.",
+  "note": "Sbobina di Biochimica I, p. 210: dice che il lipide si lega alla proteina sempre con un legame estere. Dipende dall'ancora: tioestere per il palmitoile, ammide per il miristoile, tioetere per i gruppi isoprenici (Lehninger).",
+  "fixed": false
+ },
+ {
+  "id": "u1119-130",
+  "topic": "d10-trasporto",
+  "level": "m",
+  "page": "211",
+  "src": "Biochimica I",
+  "q": "Che cosa permette a una proteina integrale di stare stabilmente nel doppio strato?",
+  "opts": [
+   "Le sue eliche o i suoi filamenti β espongono ai lipidi un lato almeno in parte idrofobico",
+   "È legata covalentemente alle teste polari dei fosfolipidi di entrambi i foglietti",
+   "Ha molti residui carichi che interagiscono direttamente con le code idrocarburiche dei lipidi",
+   "È stabilizzata da ponti disolfuro con il colesterolo del foglietto interno",
+   "Si lega alle code dei fosfolipidi tramite un oligosaccaride idrofobico esterno"
+  ],
+  "ans": 0,
+  "why": "Gli elementi di struttura secondaria nella membrana devono essere in parte anfipatici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-131",
+  "topic": "d10-trasporto",
+  "level": "f",
+  "page": "211",
+  "src": "Biochimica I",
+  "q": "A quali sostanze il doppio strato lipidico è intrinsecamente impermeabile?",
+  "opts": [
+   "Agli ioni e alle molecole polari",
+   "Ai gas apolari come O₂ e CO₂",
+   "Agli steroidi e alle molecole idrofobiche",
+   "Alle piccole molecole apolari",
+   "Ai lipidi e alle vitamine liposolubili"
+  ],
+  "ans": 0,
+  "why": "Per questo il loro trasporto è mediato da proteine, secondo o contro gradiente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-132",
+  "topic": "d10-trasporto",
+  "level": "f",
+  "page": "212",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra simporto e antiporto?",
+  "opts": [
+   "Nel simporto due molecole vanno nella stessa direzione, nell'antiporto in direzioni opposte",
+   "Nel simporto una sola molecola attraversa la membrana, nell'antiporto due insieme",
+   "Il simporto è sempre passivo, mentre l'antiporto usa sempre direttamente l'idrolisi dell'ATP",
+   "Nel simporto le molecole vanno in direzioni opposte, nell'antiporto nella stessa",
+   "Il simporto riguarda solo ioni, l'antiporto solo molecole organiche come il glucosio"
+  ],
+  "ans": 0,
+  "why": "Sono due forme di cotrasporto; l'uniporto trasporta una sola molecola.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-133",
+  "topic": "d10-trasporto",
+  "level": "l",
+  "page": "213",
+  "src": "Biochimica I",
+  "q": "Che cosa indica la «P» delle ATPasi di tipo P, come la pompa Na⁺/K⁺?",
+  "opts": [
+   "Che si fosforilano durante il ciclo di trasporto",
+   "Che si trovano solo sulla membrana plasmatica",
+   "Che trasportano solo protoni",
+   "Che sono formate da quattro subunità a forma di poro",
+   "Che usano il pirofosfato al posto dell'ATP"
+  ],
+  "ans": 0,
+  "why": "Il fosfato dell'ATP si lega temporaneamente alla pompa (un aspartato) e la fosforilazione ne cambia la conformazione. Le V sono vacuolari, le F sono i fattori di accoppiamento come l'ATP sintasi.",
+  "note": "Sbobina di Biochimica I, p. 213: spiega la P come «plasmatiche, costituite da 4 subunità». La P sta per fosforilazione: si trovano anche in membrane interne (es. pompa del calcio del reticolo).",
+  "fixed": false
+ },
+ {
+  "id": "u1119-134",
+  "topic": "d10-trasporto",
+  "level": "a",
+  "page": "213",
+  "src": "Biochimica I",
+  "q": "Che effetto ha la pompa Na⁺/K⁺ sul potenziale di membrana, a ogni ciclo?",
+  "opts": [
+   "Esporta 3 Na⁺ e importa 2 K⁺: esce una carica positiva netta e l'interno resta negativo",
+   "Esporta 2 Na⁺ e importa 3 K⁺: entra una carica positiva netta e l'interno diventa positivo",
+   "Importa 3 Na⁺ ed esporta 2 K⁺: entra una carica positiva netta e l'interno diventa positivo",
+   "Esporta 1 Na⁺ e importa 1 K⁺: lo scambio è elettroneutro e non influenza il potenziale",
+   "Esporta 3 K⁺ e importa 2 Na⁺: esce una carica positiva netta e l'interno resta negativo"
+  ],
+  "ans": 0,
+  "why": "Ogni ciclo idrolizza un ATP; la defosforilazione chiude il ciclo e riporta la pompa alla conformazione iniziale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-135",
+  "topic": "d10-trasporto",
+  "level": "a",
+  "page": "214",
+  "src": "Biochimica I",
+  "q": "Come distingui sperimentalmente la diffusione facilitata dalla diffusione semplice?",
+  "opts": [
+   "La velocità della facilitata raggiunge un massimo (saturazione), quella della semplice cresce in proporzione alla concentrazione",
+   "La velocità della semplice raggiunge un massimo (saturazione), quella della facilitata cresce in proporzione alla concentrazione",
+   "La facilitata consuma ATP e si blocca con gli inibitori della glicolisi, la semplice non consuma energia",
+   "La facilitata avviene contro gradiente, la semplice solo secondo gradiente di concentrazione",
+   "La facilitata riguarda solo gli ioni, la semplice solo le molecole organiche come il glucosio"
+  ],
+  "ans": 0,
+  "why": "Il trasportatore si comporta come un enzima: quando è tutto occupato, la velocità non può crescere oltre.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-136",
+  "topic": "d10-trasporto",
+  "level": "l",
+  "page": "214",
+  "src": "Biochimica I",
+  "q": "Quanti amminoacidi servono, almeno, perché un'α-elica attraversi tutto il doppio strato?",
+  "opts": [
+   "Circa 20 (5–6 giri d'elica)",
+   "Circa 7 (2 giri d'elica)",
+   "Circa 50 (14 giri d'elica)",
+   "Circa 100 (28 giri d'elica)",
+   "Circa 3 (un solo giro d'elica)"
+  ],
+  "ans": 0,
+  "why": "La sbobina dice almeno 21 aa. I GLUT hanno 12 eliche transmembrana.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-137",
+  "topic": "d10-trasporto",
+  "level": "a",
+  "page": "214",
+  "src": "Biochimica I",
+  "q": "Perché il GLUT1 si considera un trasportatore e non un canale?",
+  "opts": [
+   "Lega il glucosio e cambia conformazione per spostarlo, quindi mostra una velocità massima di saturazione",
+   "Usa l'ATP per spostare il glucosio contro gradiente, mentre un canale lavora solo secondo gradiente",
+   "Trasporta il glucosio in simporto con il Na⁺, mentre un canale trasporta una sola specie alla volta",
+   "Resta sempre aperto, mentre un canale si apre solo in risposta a un ligando o al voltaggio",
+   "Lascia passare ioni e glucosio insieme, mentre un canale è sempre selettivo per un solo tipo di ione"
+  ],
+  "ans": 0,
+  "why": "Il GLUT1 fa diffusione facilitata (secondo gradiente) con cinetica di saturazione; nei globuli rossi il glucosio entra solo così. Un canale lascia fluire rapidamente gli ioni attraverso un poro.",
+  "note": "Sbobina di Biochimica I, p. 214: scrive che il GLUT1 trasporta il glucosio secondo gradiente «in quanto canale». I GLUT sono trasportatori (carrier), non canali, anche se lavorano secondo gradiente.",
+  "fixed": false
+ },
+ {
+  "id": "u1119-138",
+  "topic": "d10-trasporto",
+  "level": "m",
+  "page": "215",
+  "src": "Biochimica I",
+  "q": "Quale di queste NON è una caratteristica dei canali ionici?",
+  "opts": [
+   "Usano ATP per spostare gli ioni contro gradiente",
+   "Sono molto selettivi per particolari ioni",
+   "Esistono in uno stato aperto e in uno chiuso",
+   "Tornano spontaneamente allo stato chiuso",
+   "Si aprono per un ligando o per il voltaggio"
+  ],
+  "ans": 0,
+  "why": "I canali permettono la libera diffusione secondo gradiente; contro gradiente lavorano le pompe.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-139",
+  "topic": "d10-trasporto",
+  "level": "h",
+  "page": "216",
+  "src": "Biochimica I",
+  "q": "Che cosa succede nel poro del recettore nicotinico quando lega l'acetilcolina?",
+  "opts": [
+   "Le eliche M2 ruotano: le leucine che occludevano il poro si spostano e verso il canale si affacciano residui polari",
+   "Le eliche M2 si allungano: i residui polari che occludevano il poro escono e verso il canale si affacciano residui di leucina",
+   "Le due subunità α si staccano dal pentamero e lasciano un foro centrale tra le subunità β, γ e δ restanti",
+   "Il recettore si fosforila sulle leucine delle eliche M2, che diventano cariche e respingono le altre",
+   "L'acetilcolina entra nel poro e si lega alle leucine, trascinando con sé gli ioni sodio nella cellula"
+  ],
+  "ans": 0,
+  "why": "Il cambiamento conformazionale si trasmette a tutte e 5 le subunità (α₂βγδ, ognuna con 4 eliche): le leucine vanno a contatto con le subunità adiacenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-140",
+  "topic": "d11-vitad",
+  "level": "l",
+  "page": "217",
+  "src": "Biochimica I",
+  "q": "Come si passa dal β-carotene al retinolo?",
+  "opts": [
+   "Una diossigenasi lo taglia in due molecole di retinale, ridotte poi a retinolo con NADPH",
+   "Una idrolasi lo taglia in due molecole di acido retinoico, ridotte poi a retinolo con il NADH",
+   "Una monoossigenasi P450 lo ossida a retinolo in un solo passaggio, senza intermedi",
+   "Una diossigenasi lo taglia in due molecole di retinolo, ossidate poi a retinale con NAD⁺",
+   "Una reduttasi lo riduce a retinale con NADPH, poi una diossigenasi lo taglia a metà"
+  ],
+  "ans": 0,
+  "why": "Il retinale ha un gruppo aldeidico; viene assorbito e conservato come estere del retinolo (es. con l'acido palmitico).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-141",
+  "topic": "d11-vitad",
+  "level": "f",
+  "page": "217",
+  "src": "Biochimica I",
+  "q": "Perché le vitamine liposolubili, a differenza delle idrosolubili, possono essere accumulate?",
+  "opts": [
+   "Possono essere depositate nei tessuti, ad esempio il retinolo nel fegato",
+   "Vengono eliminate più rapidamente con le urine e servono dosi maggiori",
+   "Si legano all'emoglobina e restano nei globuli rossi per tutta la loro vita",
+   "Sono sintetizzate dall'organismo e quindi non devono essere introdotte",
+   "Non hanno bisogno di essere attivate e quindi restano sempre in circolo"
+  ],
+  "ans": 0,
+  "why": "Il retinolo viene portato nei siti di deposito del fegato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-142",
+  "topic": "d11-vitad",
+  "level": "f",
+  "page": "217",
+  "src": "Biochimica I",
+  "q": "Quale proteina trasporta il retinolo nel sangue verso i tessuti?",
+  "opts": [
+   "La retinol binding protein",
+   "La transferrina plasmatica",
+   "La ceruloplasmina",
+   "La ferritina",
+   "L'emopessina"
+  ],
+  "ans": 0,
+  "why": "È specifica per il retinolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-143",
+  "topic": "d11-vitad",
+  "level": "l",
+  "page": "218",
+  "src": "Biochimica I",
+  "q": "Come si chiamano le vitamine D3 e D2?",
+  "opts": [
+   "D3 colecalciferolo, D2 ergocalciferolo",
+   "D3 ergocalciferolo, D2 colecalciferolo",
+   "D3 calcitriolo, D2 calcidiolo",
+   "D3 calcidiolo, D2 calcitriolo",
+   "D3 colecalciferolo, D2 calcitriolo"
+  ],
+  "ans": 0,
+  "why": "La D3 deriva dal colesterolo (7-deidrocolesterolo). Il calcidiolo (25-OH) e il calcitriolo (1,25-(OH)₂) sono le forme idrossilate.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-144",
+  "topic": "d12-digestione",
+  "level": "f",
+  "page": "219",
+  "src": "Biochimica I",
+  "q": "Come vengono trasportati nel sangue gli acidi grassi liberati dal tessuto adiposo?",
+  "opts": [
+   "Legati all'albumina",
+   "Dentro i chilomicroni",
+   "Legati all'emoglobina",
+   "Liberi, disciolti nel plasma",
+   "Dentro le HDL"
+  ],
+  "ans": 0,
+  "why": "I chilomicroni (di origine intestinale) portano i grassi della dieta, le VLDL (epatiche) quelli sintetizzati dal fegato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-145",
+  "topic": "d12-lipoproteine",
+  "level": "a",
+  "page": "221",
+  "src": "Biochimica I",
+  "q": "Come è organizzata una lipoproteina?",
+  "opts": [
+   "Un monostrato di fosfolipidi con le teste verso l'esterno e le apoproteine inserite; dentro trigliceridi ed esteri del colesterolo",
+   "Un doppio strato di fosfolipidi come una membrana, con le apoproteine nel lume acquoso interno e il colesterolo libero nel centro",
+   "Un nucleo di fosfolipidi e colesterolo libero circondato da uno strato di trigliceridi e da apoproteine globulari",
+   "Un monostrato di trigliceridi con le code verso l'esterno; dentro le apoproteine e i fosfolipidi a contatto con l'acqua",
+   "Un aggregato di apoproteine che legano singole molecole di colesterolo libero, senza nessuno strato di fosfolipidi"
+  ],
+  "ans": 0,
+  "why": "Le apoproteine abbracciano il nucleo lipidico grazie alle loro eliche anfipatiche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-146",
+  "topic": "d12-lipoproteine",
+  "level": "f",
+  "page": "220",
+  "src": "Biochimica I",
+  "q": "Quale serie di lipoproteine è ordinata per densità crescente?",
+  "opts": [
+   "Chilomicroni < VLDL < LDL < HDL",
+   "HDL < LDL < VLDL < chilomicroni",
+   "VLDL < chilomicroni < HDL < LDL",
+   "LDL < VLDL < HDL < chilomicroni",
+   "Chilomicroni < LDL < VLDL < HDL"
+  ],
+  "ans": 0,
+  "why": "Più lipidi e meno proteine, densità più bassa: i chilomicroni sono le meno dense, le HDL le più dense (alto contenuto proteico).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-147",
+  "topic": "d9-mono",
+  "level": "h",
+  "page": "186",
+  "src": "Biochimica I",
+  "q": "Le urine di un bambino danno la reazione di Fehling positiva, ma la striscia alla glucosio ossidasi è negativa. Come interpreti il risultato?",
+  "opts": [
+   "C'è uno zucchero riducente diverso dal glucosio (es. galattosio), che la glucosio ossidasi non riconosce",
+   "C'è glucosio in piccola quantità, che la glucosio ossidasi non rileva ma il reattivo di Fehling sì",
+   "C'è saccarosio, che riduce il rame della reazione di Fehling ma non viene ossidato dall'enzima",
+   "C'è un eccesso di perossidasi nelle urine, che consuma l'acqua ossigenata prodotta dalla glucosio ossidasi",
+   "C'è acido glucuronico, che riduce il rame e inibisce in modo competitivo la glucosio ossidasi"
+  ],
+  "ans": 0,
+  "why": "Fehling rileva qualsiasi zucchero con il carbonio anomerico libero; la glucosio ossidasi è specifica per il glucosio. La specificità dell'enzima e l'esempio clinico (galattosemia) non sono nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-148",
+  "topic": "d9-glicosidico",
+  "level": "h",
+  "page": "190",
+  "src": "Biochimica I",
+  "q": "Una molecola di glicogeno ha 50 punti di ramificazione. Quante estremità riducenti e non riducenti ha?",
+  "opts": [
+   "1 riducente e 51 non riducenti",
+   "51 riducenti e 1 non riducente",
+   "1 riducente e 50 non riducenti",
+   "50 riducenti e 50 non riducenti",
+   "2 riducenti e 50 non riducenti"
+  ],
+  "ans": 0,
+  "why": "Una catena lineare ha un'estremità riducente e una non riducente; ogni ramificazione aggiunge un'estremità non riducente. L'estremità riducente resta una sola, ed è l'unica su cui gli enzimi non agiscono.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-149",
+  "topic": "d7-coenzimi",
+  "level": "h",
+  "page": "167",
+  "src": "Biochimica I",
+  "q": "Un paziente ha omocisteina plasmatica alta e acido metilmalonico nelle urine. Quale carenza è più probabile?",
+  "opts": [
+   "Vitamina B12, che serve sia alla metionina sintasi sia alla metilmalonil-CoA mutasi",
+   "Acido folico, che serve sia alla metionina sintasi sia alla metilmalonil-CoA mutasi",
+   "Vitamina B6, che serve alla cistationina sintasi e alla propionil-CoA carbossilasi",
+   "Biotina, che serve alla propionil-CoA carbossilasi e alla rimetilazione dell'omocisteina",
+   "Tiamina, che serve alla decarbossilazione del metilmalonil-CoA e al ciclo della metionina"
+  ],
+  "ans": 0,
+  "why": "Le due reazioni B12-dipendenti sono proprio queste. La carenza di folato alza l'omocisteina ma non l'acido metilmalonico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-150",
+  "topic": "d8-vitk",
+  "level": "h",
+  "page": "180",
+  "src": "Biochimica I",
+  "q": "Perché ai neonati si somministra vitamina K alla nascita?",
+  "opts": [
+   "L'intestino non è ancora colonizzato dai batteri che producono menachinone e le riserve sono scarse",
+   "Il fegato del neonato non produce ancora fibrinogeno e la vitamina K ne stimola la sintesi epatica",
+   "Le piastrine del neonato non producono trombossano senza vitamina K e non aggregano",
+   "Il neonato ha troppa plasmina e la vitamina K serve a inibirla finché il fegato matura",
+   "Il neonato non produce fattore di von Willebrand e la vitamina K ne aumenta il rilascio"
+  ],
+  "ans": 0,
+  "why": "Senza vitamina K i fattori II, VII, IX e X escono dal fegato senza Gla. La profilassi neonatale non è nelle sbobine; la sbobina dice che la K2 è prodotta dai batteri nel colon.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-151",
+  "topic": "d8-fibrinolisi",
+  "level": "h",
+  "page": "181",
+  "src": "Biochimica I",
+  "q": "Perché l'eparina agisce in pochi minuti, mentre l'effetto del warfarin compare solo dopo alcuni giorni?",
+  "opts": [
+   "L'eparina potenzia subito l'antitrombina; il warfarin blocca solo i fattori nuovi e quelli già carbossilati restano attivi",
+   "L'eparina inibisce subito la vitamina K epossido reduttasi; il warfarin deve prima essere attivato nel rene e nel fegato",
+   "L'eparina degrada subito la fibrina; il warfarin deve prima accumularsi nelle piastrine per bloccare la COX",
+   "L'eparina blocca subito la γ-carbossilasi; il warfarin agisce solo dopo aver inattivato tutta la protrombina",
+   "L'eparina chela subito il calcio del plasma; il warfarin agisce solo quando la vitamina K della dieta si esaurisce"
+  ],
+  "ans": 0,
+  "why": "Il warfarin agisce sulla sintesi (rigenerazione dell'idrochinone), quindi bisogna aspettare che i fattori già in circolo vengano eliminati. Il confronto dei tempi non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-152",
+  "topic": "d10-acidigrassi",
+  "level": "h",
+  "page": "201",
+  "src": "Biochimica I",
+  "q": "Confronta l'acido oleico (18:1 cis) e il suo isomero elaidico (18:1 trans). Quale ha il punto di fusione più alto e perché?",
+  "opts": [
+   "L'elaidico: la catena trans resta quasi lineare e si impacchetta come quella di un acido saturo",
+   "L'oleico: la piega del doppio legame cis permette alle catene di incastrarsi più strettamente",
+   "Sono uguali: hanno lo stesso numero di carboni e lo stesso numero di doppi legami",
+   "L'oleico: il doppio legame cis rende la catena più polare e aumenta i legami a idrogeno",
+   "L'elaidico: il doppio legame trans rende la testa carbossilica più carica e più attratta"
+  ],
+  "ans": 0,
+  "why": "Non conta solo il numero di doppi legami ma anche la loro geometria: i grassi trans si comportano in parte come i saturi. Il nome acido elaidico non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-153",
+  "topic": "d10-trasporto",
+  "level": "h",
+  "page": "214",
+  "src": "Biochimica I",
+  "q": "Misuri l'ingresso del glucosio nei globuli rossi a concentrazioni crescenti: la velocità si appiattisce oltre una certa concentrazione. Un analogo del glucosio sposta la curva verso destra senza cambiare il valore massimo. Che cosa concludi?",
+  "opts": [
+   "Il trasporto è mediato da un trasportatore saturabile e l'analogo compete con il glucosio per il sito di legame",
+   "Il trasporto è una diffusione semplice e l'analogo riduce la permeabilità della membrana ai soluti polari",
+   "Il trasporto è mediato da un trasportatore e l'analogo lo inibisce in modo non competitivo legando un altro sito",
+   "Il trasporto è attivo primario e l'analogo riduce l'ATP disponibile per la pompa del glucosio",
+   "Il trasporto avviene tramite un canale e l'analogo ne chiude il poro solo alle basse concentrazioni"
+  ],
+  "ans": 0,
+  "why": "Saturazione = trasportatore (diffusione facilitata, GLUT1). Spostamento a destra con lo stesso massimo = come un inibitore competitivo: aumenta la costante apparente, non la velocità massima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-154",
+  "topic": "d10-membrana",
+  "level": "h",
+  "page": "206",
+  "src": "Biochimica I",
+  "q": "Il veleno di alcuni serpenti contiene una fosfolipasi A2 secretoria. Che cosa produce dalla fosfatidilcolina delle membrane dei globuli rossi?",
+  "opts": [
+   "Un acido grasso e una lisofosfatidilcolina, che agisce da detergente e danneggia la membrana",
+   "Un diacilglicerolo e la fosfocolina, che attiva la protein chinasi C e fa aggregare i globuli rossi",
+   "Acido fosfatidico e colina libera, che aumenta l'acetilcolina e blocca la contrazione muscolare",
+   "Glicerolo 3-fosfato e due acidi grassi, che vengono ossidati subito nei globuli rossi",
+   "Una ceramide e la fosfocolina, che si accumulano nella membrana e la rendono rigida"
+  ],
+  "ans": 0,
+  "why": "La PLA2 stacca solo l'acido grasso in posizione 2; resta un fosfolipide con una sola coda (liso-), che destabilizza il doppio strato. Il nome lisofosfatidilcolina e l'effetto emolitico non sono nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-155",
+  "topic": "d9-poli",
+  "level": "h",
+  "page": "195",
+  "src": "Biochimica I",
+  "q": "Perché il lisozima e la penicillina agiscono meglio sui batteri Gram-positivi che sui Gram-negativi?",
+  "opts": [
+   "Nei Gram+ il peptidoglicano è spesso ed esterno; nei Gram− è sottile e protetto dalla membrana esterna",
+   "Nei Gram+ il peptidoglicano contiene D-amminoacidi; nei Gram− contiene solo L-amminoacidi",
+   "Nei Gram− il peptidoglicano non ha NAM, quindi lisozima e penicillina non trovano il loro bersaglio",
+   "Nei Gram− il legame crociato è un ponte di pentaglicina, che la transpeptidasi non riconosce",
+   "Nei Gram+ manca la transpeptidasi, quindi la parete si forma solo per via spontanea e fragile"
+  ],
+  "ans": 0,
+  "why": "Nei Gram− il peptidoglicano sta nello spazio periplasmatico, tra membrana interna ed esterna. L'effetto della membrana esterna sull'accesso dei farmaci non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1119-156",
+  "topic": "d10-membrana",
+  "level": "h",
+  "page": "203",
+  "src": "Biochimica I",
+  "q": "Sfingomielina e fosfatidilcolina hanno scheletri diversi ma si comportano in modo simile nella membrana. Perché?",
+  "opts": [
+   "Entrambe hanno la fosfocolina come testa polare e due code idrofobiche",
+   "Entrambe hanno il glicerolo come scheletro e due acidi grassi legati con legame estere, ma teste polari diverse",
+   "Entrambe sono prive di testa polare e si dispongono nel nucleo idrofobico della membrana, come il colesterolo",
+   "Entrambe hanno uno zucchero come testa polare e una sola coda idrofobica, legata con legame ammidico",
+   "Entrambe hanno una coda sola e un gruppo fosfato libero, quindi formano micelle invece del doppio strato"
+  ],
+  "ans": 0,
+  "why": "Nella sfingomielina la sfingosina fornisce una coda e l'acido grasso (legato con legame ammidico) l'altra; i primi tre carboni della sfingosina ricordano il glicerolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

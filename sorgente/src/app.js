@@ -851,11 +851,41 @@
   }
 
   /* ---------------- Argomenti ---------------- */
+  // ricerca: senza accenti e maiuscole; resta attiva anche quando la pagina si ridisegna (spunte)
+  let topicQuery = "", topicIndex = [];
+  const normQ = s => String(s).toLowerCase().replace(/α/g, "alfa").replace(/β/g, "beta").replace(/γ/g, "gamma").replace(/ω/g, "omega")
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[-‐–—'’/,.()]+/g, " ");
+  function filterTopics() {
+    const q = normQ(topicQuery.trim()), words = q.split(/\s+/).filter(Boolean);
+    const hit = txt => words.every(w => normQ(txt).includes(w));
+    let found = 0;
+    topicIndex.forEach(sec => {
+      let secHits = 0;
+      sec.blocks.forEach(b => {
+        if (!words.length) { b.row.hidden = false; b.list.hidden = b.closed(); b.topics.forEach(t => { t.el.hidden = false; }); secHits++; return; }
+        const whole = hit(b.name);
+        let n = 0;
+        b.topics.forEach(t => { const ok = whole || hit(t.name); t.el.hidden = !ok; if (ok) n++; });
+        b.row.hidden = !n; b.list.hidden = !n;
+        if (n) { secHits++; found += n; }
+      });
+      sec.title.hidden = sec.box.hidden = !!words.length && !secHits;
+    });
+    const none = $("#topics-none"); if (none) none.hidden = !words.length || found > 0;
+  }
   function renderTopics() {
-    const root = $("#topics-inner"); root.innerHTML = "";
+    const root = $("#topics-inner"); root.innerHTML = ""; topicIndex = [];
     const last = S.lastChecked && TOPICS[S.lastChecked];
     root.append(h("h1", { class: "h1" }, "Argomenti"),
       h("p", { class: "lead" }, "Spunta quello che hai già studiato. Le domande escono solo da qui."));
+    const q = h("input", { type: "search", class: "search-in", placeholder: "Cerca un argomento", "aria-label": "Cerca un argomento", autocomplete: "off", enterkeyhint: "search" });
+    q.value = topicQuery;
+    const clr = h("button", { type: "button", class: "search-x", "aria-label": "Cancella la ricerca", html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>' });
+    clr.hidden = !topicQuery;
+    q.addEventListener("input", () => { topicQuery = q.value; clr.hidden = !q.value; filterTopics(); });
+    q.addEventListener("keydown", e => { if (e.key === "Enter") q.blur(); if (e.key === "Escape") { q.value = ""; q.dispatchEvent(new Event("input")); } });
+    clr.addEventListener("click", () => { q.value = ""; q.dispatchEvent(new Event("input")); q.focus(); });
+    root.append(h("div", { class: "search" }, h("span", { class: "search-ic", "aria-hidden": "true", html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>' }), q, clr));
     const onlyLast = h("input", { type: "checkbox", id: "only-last", role: "switch", "aria-label": "Solo l'ultimo argomento spuntato" });
     onlyLast.checked = !!S.onlyLast;
     onlyLast.addEventListener("change", () => { S.onlyLast = onlyLast.checked; save(); resetFeed(); });
@@ -865,9 +895,11 @@
       h("label", { class: "switch" }, onlyLast, h("span")))));
     const tiles = ["t-rose", "t-peach", "t-sage", "t-sky", "t-lilac"];
     C.topics.forEach(sub => {
-      root.append(h("div", { class: "h2" }, sub.subject));
-      if (!sub.blocks.length) { root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-lilac" }, svgIcon("book")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "In preparazione"), h("div", { class: "row-sub" }, "Arriva dopo Biochimica II"))))); return; }
+      const title = h("div", { class: "h2" }, sub.subject);
+      root.append(title);
+      if (!sub.blocks.length) { const ph = h("div", {}); topicIndex.push({ title, box: ph, blocks: [] }); root.append(h("div", { class: "box" }, h("div", { class: "row" }, h("div", { class: "tile t-lilac" }, svgIcon("book")), h("div", { class: "row-text" }, h("div", { class: "row-title" }, "In preparazione"), h("div", { class: "row-sub" }, "Arriva dopo Biochimica II"))))); return; }
       const box = h("div", { class: "box" });
+      const sec = { title, box, blocks: [] }; topicIndex.push(sec);
       sub.blocks.forEach((b, bi) => {
         const readyN = b.topics.filter(t => t.ready).length;
         const selN = b.topics.filter(t => S.selected.includes(t.id)).length;
@@ -880,7 +912,8 @@
               h("i", { class: "young", style: `width:${p.tot ? Math.round(p.young / p.tot * 100) : 0}%` })))(progressOf(b.topics.filter(t => t.ready).map(t => t.id))) : null));
         const chev = h("button", { class: "chev-b", type: "button", "aria-label": "Mostra o nascondi gli argomenti", "aria-expanded": readyN ? "true" : "false" }, h("span", { class: "chev", html: ICON.chev }));
         const list = h("div", { class: "topics" }); list.hidden = !readyN;
-        const toggle = () => { list.hidden = !list.hidden; [head, chev].forEach(x => x.setAttribute("aria-expanded", String(!list.hidden))); };
+        let closed = !readyN;
+        const toggle = () => { list.hidden = !list.hidden; if (!topicQuery.trim()) closed = list.hidden; [head, chev].forEach(x => x.setAttribute("aria-expanded", String(!list.hidden))); };
         head.addEventListener("click", toggle); chev.addEventListener("click", toggle);
         // spunta unica sul titolo del macroargomento: seleziona o toglie tutti i suoi argomenti pronti
         const ready = b.topics.filter(t => t.ready).map(t => t.id);
@@ -895,9 +928,10 @@
           save(); renderTopics(); resetFeed();
         });
         const headRow = h("div", { class: "row block-row" }, head, allB, chev);
+        const ent = { name: b.name, row: headRow, list, closed: () => closed, topics: [] }; sec.blocks.push(ent);
         b.topics.forEach(t => {
           const id = "tp-" + t.id;
-          if (!t.ready) { list.append(h("div", { class: "topic soon" }, h("span", { class: "check" }), h("span", { class: "tname" }, t.name), h("span", { class: "tmeta" }, "presto"))); return; }
+          if (!t.ready) { const el = h("div", { class: "topic soon" }, h("span", { class: "check" }), h("span", { class: "tname" }, t.name), h("span", { class: "tmeta" }, "presto")); ent.topics.push({ name: t.name, el }); list.append(el); return; }
           const cb = h("input", { type: "checkbox", id });
           cb.checked = S.selected.includes(t.id);
           cb.addEventListener("change", () => {
@@ -907,13 +941,17 @@
             save(); renderTopics(); resetFeed();
           });
           const isNew = t.added && (Date.now() - new Date(t.added).getTime()) < 14 * DAY;
-          list.append(h("label", { class: "topic", for: id }, cb, h("span", { class: "check", html: ICON.check }),
-            h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, topicMeta(t.id))));
+          const el = h("label", { class: "topic", for: id }, cb, h("span", { class: "check", html: ICON.check }),
+            h("span", { class: "tname" }, t.name), isNew ? h("span", { class: "badge new" }, "nuovo") : null, h("span", { class: "tmeta" }, topicMeta(t.id)));
+          ent.topics.push({ name: t.name, el }); list.append(el);
         });
         box.append(headRow, list);
       });
       root.append(box);
     });
+    root.append(h("div", { class: "box", id: "topics-none", hidden: "" }, h("div", { class: "row" }, h("div", { class: "row-text" },
+      h("div", { class: "row-title" }, "Nessun argomento trovato"), h("div", { class: "row-sub" }, "Prova con un'altra parola, per esempio un enzima o una via metabolica.")))));
+    filterTopics();
   }
 
   /* ---------------- Avanzamento (statistiche e pagina Argomenti) ---------------- */
@@ -984,36 +1022,33 @@
       h("div", { class: "heat-wrap" }, h("div", { class: "heat-days", "aria-hidden": "true" }, ...["L", "", "M", "", "V", "", "D"].map(x => h("span", {}, x))), hm.grid),
       h("div", { class: "heat-foot" }, h("span", {}, `${hm.active} giorni attivi · ${hm.total} risposte`),
         h("span", { class: "heat-leg", "aria-hidden": "true" }, "meno", ...[0, 1, 2, 3, 4].map(l => h("i", { class: "l" + l })), "più"))));
-    // anelli per macroargomento
-    root.append(h("div", { class: "h2" }, "Per macroargomento"));
-    const rings = h("div", { class: "rings" });
-    C.topics.forEach(sub => sub.blocks.forEach((b, bi) => {
-      const ids = b.topics.filter(t => t.ready).map(t => t.id); if (!ids.length) return;
-      const p = progressOf(ids), pct = p.tot ? p.seen / p.tot : 0;
-      rings.append(h("div", { class: "ring-card" }, ring(pct, 58, 7, `${Math.round(pct * 100)}%`),
-        h("div", { class: "ring-name" }, b.name), h("div", { class: "ring-sub" }, `${p.seen}/${p.tot} card`)));
-    }));
-    root.append(rings);
+    // per argomento, raggruppati per macroargomento (una sola barra per argomento, niente anelli doppi)
     root.append(h("div", { class: "h2" }, "Per argomento"));
-    const box = h("div", { class: "box" });
-    Object.values(TOPICS).filter(t => t.ready).forEach(t => {
-      const cs = CARDS.filter(c => c.topics.includes(t.id));
-      const s_ = c => S.cards[c.id];
-      const mature = cs.filter(c => s_(c) && s_(c).type === "review" && s_(c).ivl >= CFG.mature).length;
-      const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
-      const nnew = cs.length - mature - young;
-      const ls = topicLevelState(t.id);
-      const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.study === "grad" && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
-      const hs = S.hardStats[t.id];
-      if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Difficili ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
-      box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
-        h("div", { class: "row-title" }, t.name), lvRow,
-        h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
-        h("div", { class: "bar two", "aria-hidden": "true" },
-          h("i", { style: `width:${Math.round(mature / cs.length * 100)}%` }),
-          h("i", { class: "young", style: `width:${Math.round(young / cs.length * 100)}%` })))));
-    });
-    root.append(box);
+    C.topics.forEach(sub => sub.blocks.forEach(b => {
+      const ready = b.topics.filter(t => t.ready); if (!ready.length) return;
+      const p = progressOf(ready.map(t => t.id));
+      const box = h("div", { class: "box" }, h("div", { class: "row stat-block" }, h("div", { class: "row-text" },
+        h("div", { class: "row-title" }, b.name),
+        h("div", { class: "row-sub" }, `${p.tot ? Math.round(p.seen / p.tot * 100) : 0}% visto · ${p.seen}/${p.tot} card · ${p.mature} mature`))));
+      ready.forEach(t => {
+        const cs = CARDS.filter(c => c.topics.includes(t.id));
+        const s_ = c => S.cards[c.id];
+        const mature = cs.filter(c => s_(c) && s_(c).type === "review" && s_(c).ivl >= CFG.mature).length;
+        const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
+        const nnew = cs.length - mature - young;
+        const ls = topicLevelState(t.id);
+        const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.study === "grad" && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
+        const hs = S.hardStats[t.id];
+        if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Difficili ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
+        box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
+          h("div", { class: "row-title" }, t.name), lvRow,
+          h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
+          h("div", { class: "bar two", "aria-hidden": "true" },
+            h("i", { style: `width:${cs.length ? Math.round(mature / cs.length * 100) : 0}%` }),
+            h("i", { class: "young", style: `width:${cs.length ? Math.round(young / cs.length * 100) : 0}%` })))));
+      });
+      root.append(box);
+    }));
     const weak = Object.entries(S.cards).filter(([id, s]) => CARD[id] && (s.lapses > 0 || s.wrong > 0))
       .sort((a, b) => (b[1].lapses - a[1].lapses) || (a[1].ease - b[1].ease) || (b[1].wrong - a[1].wrong)).slice(0, 6);
     if (weak.length) {

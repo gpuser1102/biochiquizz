@@ -985,6 +985,8 @@
   }
 
   /* ---------------- Statistiche ---------------- */
+  const statsOpen = new Set(); // macroargomenti aperti nelle statistiche (solo per questa sessione)
+  const LEVEL_SHORT = { m: "Interm." };
   function renderStats() {
     const root = $("#stats-inner"); root.innerHTML = "";
     const pool = eligible(), now = Date.now(), eod = dayStart(now) + DAY;
@@ -1011,44 +1013,52 @@
     const readyIds = Object.values(TOPICS).filter(t => t.ready).map(t => t.id), all = progressOf(readyIds);
     const sel = progressOf(S.selected);
     root.append(h("div", { class: "box cover" },
-      ring(all.tot ? all.seen / all.tot : 0, 92, 10, `${all.tot ? Math.round(all.seen / all.tot * 100) : 0}%`),
+      ring(all.tot ? all.seen / all.tot : 0, 72, 8, `${all.tot ? Math.round(all.seen / all.tot * 100) : 0}%`),
       h("div", { class: "row-text" }, h("div", { class: "row-title" }, "Programma coperto"),
         h("div", { class: "row-sub" }, `${all.seen} card viste su ${all.tot} · ${all.mature} mature`),
-        S.selected.length ? h("div", { class: "row-sub" }, `Negli argomenti spuntati: ${sel.tot ? Math.round(sel.seen / sel.tot * 100) : 0}%`) : null,
-        h("div", { class: "row-sub" }, all.tot - all.seen > 0 ? `Mancano ${all.tot - all.seen} card da vedere almeno una volta` : "Hai visto tutte le card: ora conta il ripasso"))));
+        S.selected.length ? h("div", { class: "row-sub" }, `Negli argomenti spuntati: ${sel.tot ? Math.round(sel.seen / sel.tot * 100) : 0}%`) : null)));
     // calendario dei giorni di studio
     const hm = heatmap();
     root.append(h("div", { class: "h2" }, "Giorni di studio"), h("div", { class: "box heat-box" },
       h("div", { class: "heat-wrap" }, h("div", { class: "heat-days", "aria-hidden": "true" }, ...["L", "", "M", "", "V", "", "D"].map(x => h("span", {}, x))), hm.grid),
       h("div", { class: "heat-foot" }, h("span", {}, `${hm.active} giorni attivi · ${hm.total} risposte`),
         h("span", { class: "heat-leg", "aria-hidden": "true" }, "meno", ...[0, 1, 2, 3, 4].map(l => h("i", { class: "l" + l })), "più"))));
-    // per argomento, raggruppati per macroargomento (una sola barra per argomento, niente anelli doppi)
+    // per argomento: macroargomenti chiusi (una riga con % e barra), si aprono al tocco; righe argomento compatte
     root.append(h("div", { class: "h2" }, "Per argomento"));
+    const pc = (n, d) => d ? Math.round(n / d * 100) : 0;
+    const twoBar = (m, y, n) => h("div", { class: "bar two", "aria-hidden": "true" }, h("i", { style: `width:${pc(m, n)}%` }), h("i", { class: "young", style: `width:${pc(y, n)}%` }));
+    const tbox = h("div", { class: "box" });
     C.topics.forEach(sub => sub.blocks.forEach(b => {
       const ready = b.topics.filter(t => t.ready); if (!ready.length) return;
       const p = progressOf(ready.map(t => t.id));
-      const box = h("div", { class: "box" }, h("div", { class: "row stat-block" }, h("div", { class: "row-text" },
-        h("div", { class: "row-title" }, b.name),
-        h("div", { class: "row-sub" }, `${p.tot ? Math.round(p.seen / p.tot * 100) : 0}% visto · ${p.seen}/${p.tot} card · ${p.mature} mature`))));
+      const open = statsOpen.has(b.name);
+      const list = h("div", { class: "st-list" }); list.hidden = !open;
+      const head = h("button", { type: "button", class: "block-head st-head", "aria-expanded": String(open) },
+        h("div", { class: "row-text" },
+          h("div", { class: "st-top" }, h("span", { class: "row-title" }, b.name), h("span", { class: "st-pct", title: `${p.seen}/${p.tot} card viste · ${p.mature} mature` }, pc(p.seen, p.tot) + "%")),
+          twoBar(p.mature, p.young, p.tot)),
+        h("span", { class: "chev", html: ICON.chev }));
+      head.addEventListener("click", () => {
+        list.hidden = !list.hidden; head.setAttribute("aria-expanded", String(!list.hidden));
+        list.hidden ? statsOpen.delete(b.name) : statsOpen.add(b.name);
+      });
       ready.forEach(t => {
         const cs = CARDS.filter(c => c.topics.includes(t.id));
         const s_ = c => S.cards[c.id];
         const mature = cs.filter(c => s_(c) && s_(c).type === "review" && s_(c).ivl >= CFG.mature).length;
         const young = cs.filter(c => s_(c) && s_(c).type !== "new" && !(s_(c).type === "review" && s_(c).ivl >= CFG.mature)).length;
-        const nnew = cs.length - mature - young;
         const ls = topicLevelState(t.id);
-        const lvRow = h("div", { class: "lv-row" }, ...LEVELS.filter(l => ls.by[l].n).map((l, i) => h("span", { class: "lv lv-" + l + (S.study === "grad" && LEVELS.indexOf(l) > ls.open ? " locked" : "") }, `${LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`)));
+        const lv = LEVELS.filter(l => ls.by[l].n).map(l => `${LEVEL_SHORT[l] || LEVEL_NAME[l]} ${ls.by[l].ok}/${ls.by[l].n}`);
         const hs = S.hardStats[t.id];
-        if (hs && hs.n) lvRow.append(h("span", { class: "lv lv-h" }, `Difficili ${Math.round(hs.ok / hs.n * 100)}% su ${hs.n}`));
-        box.append(h("div", { class: "row" }, h("div", { class: "row-text" },
-          h("div", { class: "row-title" }, t.name), lvRow,
-          h("div", { class: "row-sub" }, `${nnew} nuove · ${young} in studio · ${mature} mature`),
-          h("div", { class: "bar two", "aria-hidden": "true" },
-            h("i", { style: `width:${cs.length ? Math.round(mature / cs.length * 100) : 0}%` }),
-            h("i", { class: "young", style: `width:${cs.length ? Math.round(young / cs.length * 100) : 0}%` })))));
+        if (hs && hs.n) lv.push(`Diff. ${pc(hs.ok, hs.n)}%`);
+        list.append(h("div", { class: "st-row" },
+          h("div", { class: "st-top" }, h("span", { class: "st-name" }, t.name), h("span", { class: "st-pct" }, pc(mature + young, cs.length) + "%")),
+          twoBar(mature, young, cs.length),
+          h("div", { class: "st-lv" }, lv.join(" · "))));
       });
-      root.append(box);
+      tbox.append(h("div", { class: "st-block" }, head, list));
     }));
+    root.append(tbox);
     const weak = Object.entries(S.cards).filter(([id, s]) => CARD[id] && (s.lapses > 0 || s.wrong > 0))
       .sort((a, b) => (b[1].lapses - a[1].lapses) || (a[1].ease - b[1].ease) || (b[1].wrong - a[1].wrong)).slice(0, 6);
     if (weak.length) {

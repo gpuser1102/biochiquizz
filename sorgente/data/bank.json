@@ -32500,6 +32500,1013 @@
   "fixed": false
  },
  {
+  "id": "u1121-001",
+  "topic": "d13-acidi",
+  "level": "f",
+  "page": "223",
+  "src": "Biochimica I",
+  "q": "Che cosa distingue il deossiribosio dal ribosio?",
+  "opts": [
+   "Il deossiribosio non ha l'OH in posizione 2'",
+   "Il deossiribosio non ha l'OH in posizione 3'",
+   "Il deossiribosio non ha l'OH in posizione 5'",
+   "Il deossiribosio ha un carbonio in meno",
+   "Il deossiribosio è in forma piranosica"
+  ],
+  "ans": 0,
+  "why": "Ribosio e deossiribosio differiscono solo per l'OH in 2'; in entrambi gli acidi nucleici lo zucchero è in forma furanosica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-002",
+  "topic": "d13-acidi",
+  "level": "f",
+  "page": "224",
+  "src": "Biochimica I",
+  "q": "Quale base azotata si trova nel DNA ma non nell'RNA?",
+  "opts": [
+   "Timina",
+   "Uracile",
+   "Citosina",
+   "Adenina",
+   "Guanina"
+  ],
+  "ans": 0,
+  "why": "Pirimidine: citosina, timina (solo DNA), uracile (solo RNA). Purine: adenina e guanina, in entrambi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-003",
+  "topic": "d13-acidi",
+  "level": "m",
+  "page": "225",
+  "src": "Biochimica I",
+  "q": "Quale atomo della base forma il legame N-glicosidico con il C1' dello zucchero?",
+  "opts": [
+   "N1 nelle pirimidine, N9 nelle purine",
+   "N9 nelle pirimidine, N1 nelle purine",
+   "N3 nelle pirimidine, N7 nelle purine",
+   "N1 sia nelle pirimidine sia nelle purine",
+   "C1 della base sia nelle pirimidine sia nelle purine"
+  ],
+  "ans": 0,
+  "why": "Il legame unisce il C1' dello zucchero (OH in β) all'N1 delle pirimidine o all'N9 delle purine.",
+  "note": "Errore nella sbobina (Biochimica I, p. 224): parla di legame «tra il carbonio 1 dello zucchero e il carbonio 1 della base azotata». La base partecipa con un azoto (N1 o N9), come la sbobina stessa dice a p. 225.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-004",
+  "topic": "d13-acidi",
+  "level": "l",
+  "page": "225",
+  "src": "Biochimica I",
+  "q": "Quale coppia base – nucleoside segue la regola dei suffissi -idina e -osina?",
+  "opts": [
+   "Citosina – citidina",
+   "Adenina – adenidina",
+   "Guanina – guanidina",
+   "Timina – timosina",
+   "Uracile – uracosina"
+  ],
+  "ans": 0,
+  "why": "Pirimidine → -idina (citidina, uridina, timidina); purine → -osina (adenosina, guanosina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-005",
+  "topic": "d13-acidi",
+  "level": "f",
+  "page": "226",
+  "src": "Biochimica I",
+  "q": "Che cosa si libera quando un nucleotide trifosfato viene aggiunto a una catena di acido nucleico?",
+  "opts": [
+   "Pirofosfato",
+   "Fosfato inorganico",
+   "AMP",
+   "Una molecola di ATP",
+   "Un nucleoside libero"
+  ],
+  "ans": 0,
+  "why": "Si usano nucleotidi trifosfato: nel legame fosfodiestere restano il fosfato α, mentre β e γ escono come pirofosfato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-006",
+  "topic": "d13-acidi",
+  "level": "m",
+  "page": "225",
+  "src": "Biochimica I",
+  "q": "In che verso procede la polimerizzazione degli acidi nucleici e tra quali gruppi si forma il legame?",
+  "opts": [
+   "5'→3'; tra l'OH in 3' della catena e il fosfato in 5' del nucleotide in arrivo",
+   "3'→5'; tra l'OH in 5' della catena e il fosfato in 3' del nucleotide in arrivo",
+   "5'→3'; tra l'OH in 2' della catena e il fosfato in 5' del nucleotide in arrivo",
+   "3'→5'; tra l'OH in 3' della catena e il fosfato in 5' del nucleotide in arrivo",
+   "5'→3'; tra il fosfato in 3' della catena e l'OH in 5' del nucleotide in arrivo"
+  ],
+  "ans": 0,
+  "why": "La catena cresce all'estremità 3'-OH, che attacca il fosfato α in 5' del nucleotide trifosfato in arrivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-007",
+  "topic": "d13-acidi",
+  "level": "m",
+  "page": "226",
+  "src": "Biochimica I",
+  "q": "Nell'esperimento di Griffith, quale iniezione uccideva i topi?",
+  "opts": [
+   "Batteri R vivi insieme a batteri S uccisi dal calore",
+   "Solo batteri S uccisi dal calore, in dose elevata",
+   "Solo batteri R vivi, in dose elevata",
+   "Batteri R e batteri S, entrambi uccisi dal calore",
+   "Batteri R vivi insieme a proteine estratte dal ceppo R"
+  ],
+  "ans": 0,
+  "why": "Un «fattore di trasformazione» dei batteri S morti trasformava parte dei batteri R vivi nel ceppo virulento S.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-008",
+  "topic": "d13-acidi",
+  "level": "a",
+  "page": "227",
+  "src": "Biochimica I",
+  "q": "Hershey e Chase infettano batteri con fagi T2 marcati con ³⁵S, poi agitano nel frullatore e centrifugano. Dove si ritrova la radioattività?",
+  "opts": [
+   "Soprattutto nel surnatante, con i residui virali rimasti fuori",
+   "Soprattutto nel sedimento, dentro le cellule batteriche",
+   "Divisa in parti uguali tra il surnatante e il sedimento batterico",
+   "Soprattutto nel DNA dei fagi figli liberati dopo la lisi",
+   "Soprattutto legata al cromosoma del batterio infettato"
+  ],
+  "ans": 0,
+  "why": "Lo zolfo marca le proteine (non c'è nel DNA): il rivestimento proteico resta fuori e finisce nel surnatante. Il ³²P (DNA) invece entra nei batteri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-009",
+  "topic": "d13-acidi",
+  "level": "a",
+  "page": "227",
+  "src": "Biochimica I",
+  "q": "Un DNA a doppio filamento contiene il 30% di adenina. Quale percentuale di citosina contiene?",
+  "opts": [
+   "20%",
+   "30%",
+   "40%",
+   "70%",
+   "15%"
+  ],
+  "ans": 0,
+  "why": "Regole di Chargaff: A = T = 30%, quindi G + C = 40% e G = C = 20%.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-010",
+  "topic": "d13-acidi",
+  "level": "l",
+  "page": "228",
+  "src": "Biochimica I",
+  "q": "Nel DNA B, quanto misurano circa il diametro dell'elica e la distanza tra due basi successive?",
+  "opts": [
+   "20 Å e 3,4 Å",
+   "12 Å e 3,4 Å",
+   "20 Å e 34 Å",
+   "34 Å e 3,4 Å",
+   "6 Å e 36 Å"
+  ],
+  "ans": 0,
+  "why": "Diametro 20 Å, basi distanziate di 3,4 Å, un giro completo ogni ~34–36 Å (circa 10,5 basi per giro).",
+  "note": "Imprecisione nella sbobina (Biochimica I, p. 228): definisce il passo dell'elica (36 Å) come «la distanza tra due nucleotidi successivi». Il passo è la lunghezza di un giro completo (~34–36 Å, circa 10,5 bp); la distanza tra basi successive è 3,4 Å.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-011",
+  "topic": "d13-acidi",
+  "level": "m",
+  "page": "228",
+  "src": "Biochimica I",
+  "q": "Perché i gruppi fosfato, carichi negativamente, non destabilizzano la doppia elica?",
+  "opts": [
+   "Stanno all'esterno e interagiscono con cationi come Mg²⁺, che ne schermano la carica",
+   "Stanno all'interno e vengono neutralizzati dai legami a idrogeno con le basi azotate",
+   "Sono protonati a pH fisiologico, quindi nella cellula non portano carica netta",
+   "Formano ponti salini con i gruppi amminici delle basi del filamento complementare",
+   "Sono legati covalentemente agli istoni, che ne annullano la carica in ogni caso"
+  ],
+  "ans": 0,
+  "why": "Le interazioni ioniche con i cationi in soluzione minimizzano la repulsione tra fosfati; al centro ci sono le basi, con interazioni idrofobiche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-012",
+  "topic": "d13-acidi",
+  "level": "h",
+  "page": "228",
+  "src": "Biochimica I",
+  "q": "Quale affermazione sulle forme del DNA è corretta?",
+  "opts": [
+   "Il DNA Z è sinistrorso, si forma in sequenze alternate GC e ha le G ruotate di 180° sul legame glicosidico",
+   "Il DNA A è sinistrorso, si forma negli ibridi DNA-RNA e ha un passo più lungo e un diametro più stretto",
+   "Il DNA B è sinistrorso, è la forma descritta da Watson e Crick e ha circa 10,5 paia di basi per giro",
+   "Il DNA Z è destrorso, si forma in sequenze ricche di A e T e ha un passo più corto e un diametro più largo",
+   "Il DNA A è destrorso, si forma solo nel DNA superavvolto negativo e ha le basi parallele all'asse"
+  ],
+  "ans": 0,
+  "why": "B destrorso (Watson e Crick); A destrorso, passo più corto e diametro più largo (ibridi DNA-RNA); Z sinistrorso. La sbobina chiama il DNA Z «artificiale»: tratti di DNA Z esistono anche nelle cellule (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-013",
+  "topic": "d13-acidi",
+  "level": "h",
+  "page": "227",
+  "src": "Biochimica I",
+  "q": "Un campione di acido nucleico contiene A 25%, U 25%, G 30%, C 20%. Che cosa si può concludere?",
+  "opts": [
+   "È RNA a singolo filamento, perché c'è uracile e G e C non sono uguali",
+   "È DNA a doppio filamento, perché la somma delle purine è il 55%",
+   "È RNA a doppio filamento, perché A e U sono presenti nella stessa quantità",
+   "È DNA a singolo filamento, perché G e C non sono uguali tra loro",
+   "È un ibrido DNA-RNA, perché A e U sono uguali ma G e C no"
+  ],
+  "ans": 0,
+  "why": "L'uracile indica RNA. In un acido nucleico a doppio filamento varrebbero le regole di Chargaff (A = U, G = C): qui G ≠ C, quindi non è appaiato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-014",
+  "topic": "d13-studio",
+  "level": "f",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "A quale lunghezza d'onda assorbono al massimo gli acidi nucleici?",
+  "opts": [
+   "260 nm",
+   "280 nm",
+   "230 nm",
+   "340 nm",
+   "450 nm"
+  ],
+  "ans": 0,
+  "why": "Le basi azotate assorbono a ~260 nm; le proteine a 280 nm (amminoacidi aromatici).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-015",
+  "topic": "d13-studio",
+  "level": "m",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "Che cos'è l'effetto ipercromico?",
+  "opts": [
+   "L'aumento dell'assorbanza a 260 nm quando il DNA si denatura",
+   "La diminuzione dell'assorbanza a 260 nm quando il DNA si denatura",
+   "L'aumento dell'assorbanza a 280 nm quando il DNA lega proteine",
+   "Lo spostamento del massimo di assorbimento da 260 a 280 nm",
+   "L'aumento di fluorescenza quando un intercalante lega il DNA"
+  ],
+  "ans": 0,
+  "why": "Nella doppia elica le basi impilate assorbono meno; separando i filamenti l'assorbanza a 260 nm aumenta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-016",
+  "topic": "d13-studio",
+  "level": "m",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "Quale di questi DNA ha la temperatura di fusione più alta?",
+  "opts": [
+   "Un DNA con il 65% di G + C",
+   "Un DNA con il 65% di A + T",
+   "Un DNA con il 50% di G + C",
+   "Un DNA con il 40% di G + C",
+   "Un DNA con il 25% di G + C"
+  ],
+  "ans": 0,
+  "why": "Le coppie G-C hanno tre legami a idrogeno, le A-T due: più G + C, più alta la temperatura di transizione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-017",
+  "topic": "d13-studio",
+  "level": "a",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "Un campione di DNA diluito 1:10 ha A₂₆₀ = 0,5. Qual è la concentrazione del campione originale?",
+  "opts": [
+   "250 µg/mL",
+   "25 µg/mL",
+   "200 µg/mL",
+   "2500 µg/mL",
+   "500 µg/mL"
+  ],
+  "ans": 0,
+  "why": "1 unità di A₂₆₀ = 50 µg/mL di DNA: 0,5 × 50 × 10 = 250 µg/mL. Con il fattore dell'RNA (40) verrebbero 200 µg/mL.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-018",
+  "topic": "d13-studio",
+  "level": "a",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Un estratto di DNA ha A₂₆₀/A₂₈₀ = 1,3. Che cosa indica?",
+  "opts": [
+   "Il campione è contaminato da proteine",
+   "Il campione è DNA puro, senza contaminanti",
+   "Il campione è contaminato da RNA",
+   "Il campione contiene DNA denaturato",
+   "Il campione contiene DNA frammentato"
+  ],
+  "ans": 0,
+  "why": "Per un DNA puro il rapporto è 1,6–2,0: un valore più basso indica proteine, che assorbono a 280 nm.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-019",
+  "topic": "d13-studio",
+  "level": "m",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "Perché 1 unità di A₂₆₀ corrisponde a 50 µg/mL di DNA ma a 40 µg/mL di RNA?",
+  "opts": [
+   "Perché l'RNA a singolo filamento assorbe di più, quindi ne basta meno per la stessa assorbanza",
+   "Perché il ribosio assorbe a 260 nm, mentre il deossiribosio non assorbe a quella lunghezza d'onda",
+   "Perché l'uracile assorbe molto più della timina, quindi ne basta meno per la stessa assorbanza",
+   "Perché l'RNA è più corto e le estremità della catena assorbono più delle basi interne",
+   "Perché il DNA lega più acqua e lo strato di idratazione riduce l'assorbanza a 260 nm"
+  ],
+  "ans": 0,
+  "why": "È una conseguenza dell'effetto ipercromico: le basi non impilate in una doppia elica assorbono di più.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-020",
+  "topic": "d13-studio",
+  "level": "f",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Verso quale polo migra il DNA nell'elettroforesi su gel e in base a che cosa si separa?",
+  "opts": [
+   "Verso il polo positivo, in base alle dimensioni",
+   "Verso il polo negativo, in base alle dimensioni",
+   "Verso il polo positivo, in base alla carica netta",
+   "Verso il polo negativo, in base al punto isoelettrico",
+   "Verso il polo positivo, in base al contenuto in G + C"
+  ],
+  "ans": 0,
+  "why": "Il DNA è carico negativamente in modo uniforme (fosfati), quindi migra verso l'anodo e il gel separa per lunghezza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-021",
+  "topic": "d13-studio",
+  "level": "m",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Come funzionano i coloranti usati per vedere il DNA nel gel di agarosio?",
+  "opts": [
+   "Si inseriscono tra le basi impilate e diventano fluorescenti solo a contatto con il DNA",
+   "Si legano ai fosfati e assorbono a 260 nm solo dopo che il DNA si è denaturato",
+   "Si legano in modo covalente alle guanine e si colorano solo nel DNA superavvolto",
+   "Si legano al solco minore e spengono la fluorescenza naturale delle basi azotate del DNA",
+   "Si inseriscono tra le basi e tagliano il DNA nei punti in cui si sono intercalati"
+  ],
+  "ans": 0,
+  "why": "Sono agenti intercalanti (anelli aromatici idrofobici): per questo alterano la struttura del DNA e sono potenzialmente cancerogeni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-022",
+  "topic": "d13-studio",
+  "level": "a",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Che cosa NON può dire la fluorimetria, a differenza di spettrofotometria ed elettroforesi?",
+  "opts": [
+   "Se il campione è puro o se il DNA è integro o degradato",
+   "Quanto DNA c'è in un campione mille volte più diluito",
+   "Quanto DNA c'è anche in presenza di proteine contaminanti",
+   "Quanto DNA c'è, usando una curva di taratura con standard",
+   "Se nel campione c'è DNA oppure RNA, con sonde specifiche"
+  ],
+  "ans": 0,
+  "why": "La fluorimetria è ~1000 volte più sensibile e le proteine non interferiscono, ma non dà né il rapporto A₂₆₀/A₂₈₀ né le bande del gel.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-023",
+  "topic": "d13-studio",
+  "level": "h",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Bisogna quantificare circa 5 ng/mL di DNA in un estratto che contiene proteine e capire se il DNA è integro. Quale combinazione è più adatta?",
+  "opts": [
+   "Fluorimetria per la quantità, elettroforesi su gel per l'integrità",
+   "Spettrofotometria a 260 nm per la quantità, rapporto A₂₆₀/A₂₈₀ per l'integrità",
+   "Fluorimetria per la quantità, rapporto A₂₆₀/A₂₈₀ per l'integrità",
+   "Spettrofotometria a 280 nm per la quantità, fluorimetria per l'integrità",
+   "Elettroforesi su gel per la quantità, fluorimetria per l'integrità"
+  ],
+  "ans": 0,
+  "why": "5 ng/mL dà un'A₂₆₀ di circa 0,0001 (1 unità = 50 µg/mL): serve la fluorimetria, su cui le proteine non interferiscono. L'integrità si vede solo dalle bande del gel; A₂₆₀/A₂₈₀ dice la purezza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-024",
+  "topic": "d13-studio",
+  "level": "h",
+  "page": "229",
+  "src": "Biochimica I",
+  "q": "Due DNA vengono scaldati lentamente misurando A₂₆₀: X raggiunge metà dell'aumento a 85 °C, Y a 75 °C. Quale conclusione è corretta?",
+  "opts": [
+   "X è più ricco in G-C di Y, perché le coppie G-C hanno tre legami a idrogeno",
+   "Y è più ricco in G-C di X, perché le coppie G-C si separano a temperatura più bassa",
+   "X è più ricco in A-T di Y, perché le coppie A-T hanno tre legami a idrogeno",
+   "X e Y hanno la stessa composizione, ma X era già a singolo filamento all'inizio",
+   "Y è più ricco in G-C di X, perché il suo aumento di A₂₆₀ è avvenuto prima"
+  ],
+  "ans": 0,
+  "why": "La temperatura di transizione sale con la percentuale di G-C: è anche il modo per stimare la composizione in basi di un genoma.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-025",
+  "topic": "d13-topologia",
+  "level": "f",
+  "page": "230",
+  "src": "Biochimica I",
+  "q": "Quali di queste molecole di DNA sono di solito circolari?",
+  "opts": [
+   "Cromosoma batterico, plasmidi e DNA mitocondriale",
+   "Cromosomi nucleari umani, plasmidi e DNA mitocondriale",
+   "Cromosoma batterico, cromosomi nucleari e telomeri",
+   "Plasmidi, cromosomi di lievito e DNA dei centromeri",
+   "DNA mitocondriale, cromosomi metafasici e telomeri"
+  ],
+  "ans": 0,
+  "why": "Sono circolari cromosomi batterici, plasmidi, DNA mitocondriale e dei cloroplasti e i genomi di molti virus animali.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-026",
+  "topic": "d13-topologia",
+  "level": "m",
+  "page": "231",
+  "src": "Biochimica I",
+  "q": "Perché nel gel il DNA superavvolto corre più veloce dello stesso DNA rilassato?",
+  "opts": [
+   "È più compatto e incontra meno attrito nella maglia del gel",
+   "Ha più cariche negative per unità di lunghezza del rilassato",
+   "Ha meno paia di basi, perché il superavvolgimento ne elimina",
+   "Lega meno colorante intercalante, quindi è più leggero",
+   "Ha tratti a singolo filamento che scivolano meglio nel gel"
+  ],
+  "ans": 0,
+  "why": "Stesso numero di basi e stessa carica, ma forma più compatta: maggiore mobilità elettroforetica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-027",
+  "topic": "d13-topologia",
+  "level": "m",
+  "page": "231",
+  "src": "Biochimica I",
+  "q": "Nella relazione Lk = Tw + Wr, che cosa indicano Tw e Wr?",
+  "opts": [
+   "Tw il numero di giri della doppia elica, Wr il numero di superavvolgimenti",
+   "Tw il numero di superavvolgimenti, Wr il numero di giri della doppia elica",
+   "Tw il numero di paia di basi per giro, Wr il numero di tagli sul filamento",
+   "Tw il numero di tagli della topoisomerasi, Wr il numero di ATP consumati",
+   "Tw il numero di nucleosomi, Wr il numero di giri intorno a ogni ottamero"
+  ],
+  "ans": 0,
+  "why": "Twist e writhe possono cambiare l'uno a spese dell'altro; Lk cambia solo se si taglia un filamento.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-028",
+  "topic": "d13-topologia",
+  "level": "a",
+  "page": "231",
+  "src": "Biochimica I",
+  "q": "Un DNA circolare rilassato è lungo 2080 bp. Quanto vale il suo numero di legame Lk₀?",
+  "opts": [
+   "200",
+   "208",
+   "20",
+   "104",
+   "2000"
+  ],
+  "ans": 0,
+  "why": "Lk₀ = bp / 10,4 = 2080 / 10,4 = 200.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-029",
+  "topic": "d13-topologia",
+  "level": "a",
+  "page": "231",
+  "src": "Biochimica I",
+  "q": "Un DNA circolare rilassato ha Lk = 20; una topoisomerasi lo porta a Lk = 18. Quanto valgono ΔLk e σ?",
+  "opts": [
+   "ΔLk = −2; σ = −0,1",
+   "ΔLk = +2; σ = +0,1",
+   "ΔLk = −2; σ = −0,9",
+   "ΔLk = −18; σ = −0,9",
+   "ΔLk = −2; σ = −10"
+  ],
+  "ans": 0,
+  "why": "ΔLk = Lk − Lk₀ = 18 − 20 = −2; σ = ΔLk / Lk₀ = −2/20 = −0,1: superavvolgimento negativo.",
+  "note": "Refuso nella sbobina (Biochimica I, p. 231): «20 + 2 = 2». Con il superavvolgimento positivo Lk = 22.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-030",
+  "topic": "d13-topologia",
+  "level": "a",
+  "page": "232",
+  "src": "Biochimica I",
+  "q": "Un DNA rilassato di 84 bp ha Lk ≈ 8. Se si toglie un giro (Lk = 7) senza formare superavvolgimenti, ogni quante paia di basi si incrocerebbero i filamenti?",
+  "opts": [
+   "12",
+   "10,4",
+   "9",
+   "7",
+   "14"
+  ],
+  "ans": 0,
+  "why": "84 / 7 = 12 invece di 10,4: è la deformazione che il DNA compensa formando superavvolgimenti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-031",
+  "topic": "d13-topologia",
+  "level": "m",
+  "page": "232",
+  "src": "Biochimica I",
+  "q": "Quale vantaggio funzionale danno i superavvolgimenti negativi?",
+  "opts": [
+   "Facilitano l'apertura della doppia elica per duplicazione e trascrizione",
+   "Impediscono la separazione dei due filamenti durante la duplicazione e la trascrizione",
+   "Proteggono il DNA dagli enzimi di restrizione dei batteri",
+   "Aumentano il numero di paia di basi per giro della doppia elica",
+   "Rendono il DNA più rigido e quindi più difficile da compattare"
+  ],
+  "ans": 0,
+  "why": "Il DNA meno avvolto è predisposto alla fusione (separazione dei filamenti); il superavvolgimento serve anche alla compattazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-032",
+  "topic": "d13-topologia",
+  "level": "h",
+  "page": "232",
+  "src": "Biochimica I",
+  "q": "Quale affermazione sulle DNA topoisomerasi è corretta?",
+  "opts": [
+   "Quelle di tipo I tagliano un solo filamento e non richiedono ATP; quelle di tipo II tagliano entrambi i filamenti",
+   "Quelle di tipo I tagliano entrambi i filamenti e richiedono ATP; quelle di tipo II tagliano un solo filamento",
+   "Tutte introducono superavvolgimenti negativi nel DNA e richiedono l'idrolisi di una molecola di ATP a ogni ciclo",
+   "Cambiano il numero di paia di basi del DNA circolare, lasciando invariato il suo numero di legame",
+   "Quelle di tipo II tagliano un solo filamento e la DNA girasi introduce superavvolgimenti positivi"
+  ],
+  "ans": 0,
+  "why": "Tipo I: taglio di un filamento, Lk cambia di 1, senza ATP. Tipo II: taglio di entrambi, Lk cambia di 2; la DNA girasi batterica introduce superavvolgimenti negativi consumando ATP (Lehninger).",
+  "note": "Errori nella sbobina (Biochimica I, p. 232 e 238): a p. 232 attribuisce a tutte le topoisomerasi l'introduzione di superavvolgimenti negativi con consumo di ATP (vale per la girasi, non per le topoisomerasi di tipo I, che rilassano il DNA senza ATP); a p. 238 scrive «le DNA polimerasi catalizzano la rottura di uno (tipo I) o di due (tipo II) legami fosfodiesterici»: si tratta delle topoisomerasi.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-033",
+  "topic": "d13-topologia",
+  "level": "f",
+  "page": "232",
+  "src": "Biochimica I",
+  "q": "Perché il DNA umano deve essere compattato in cromatina?",
+  "opts": [
+   "Circa 2 m di DNA devono stare in un nucleo di circa 5 µm",
+   "Circa 2 cm di DNA devono stare in un nucleo di circa 5 mm",
+   "Circa 2 mm di DNA devono stare in un nucleo di circa 5 nm",
+   "Circa 20 m di DNA devono stare in un nucleo di circa 5 mm",
+   "Circa 2 µm di DNA devono stare in un nucleo di circa 5 nm"
+  ],
+  "ans": 0,
+  "why": "46 cromosomi × ~5 cm di DNA B ciascuno ≈ 2 m.",
+  "note": "Errore nella sbobina (Biochimica I, p. 232): indica una cellula di 20 mm con un nucleo di 5 mm; le unità corrette sono micrometri (µm).",
+  "fixed": false
+ },
+ {
+  "id": "u1121-034",
+  "topic": "d13-topologia",
+  "level": "f",
+  "page": "233",
+  "src": "Biochimica I",
+  "q": "Quali istoni formano l'ottamero del nucleosoma?",
+  "opts": [
+   "H2A, H2B, H3 e H4, in due copie ciascuno",
+   "H1, H2A, H2B e H3, in due copie ciascuno",
+   "H1, H2A, H3 e H4, in due copie ciascuno",
+   "H2A, H2B, H3 e H4, con quattro copie di H1",
+   "H1 in otto copie, legato al DNA linker"
+  ],
+  "ans": 0,
+  "why": "L'ottamero è (H2A, H2B, H3, H4)₂; H1 sta all'esterno, dove il DNA entra ed esce dal nucleosoma.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-035",
+  "topic": "d13-topologia",
+  "level": "m",
+  "page": "233",
+  "src": "Biochimica I",
+  "q": "Quale ruolo ha l'istone H1?",
+  "opts": [
+   "Lega il DNA dove entra ed esce dal nucleosoma e rende la cromatina più compatta",
+   "Forma il core dell'ottamero intorno a cui il DNA si avvolge con circa due giri",
+   "Acetila le lisine degli altri istoni per rendere la cromatina accessibile",
+   "Taglia il DNA linker tra un nucleosoma e il successivo durante la mitosi",
+   "Lega il DNA solo durante la duplicazione, insieme alle proteine SSB"
+  ],
+  "ans": 0,
+  "why": "Senza H1 i nucleosomi sono molto distanziati e la cromatina è meno compatta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-036",
+  "topic": "d13-topologia",
+  "level": "l",
+  "page": "233",
+  "src": "Biochimica I",
+  "q": "Come si avvolge il DNA intorno all'ottamero istonico?",
+  "opts": [
+   "In senso sinistrorso, con circa due giri",
+   "In senso destrorso, con circa due giri",
+   "In senso sinistrorso, con circa dieci giri",
+   "In senso destrorso, con circa mezzo giro",
+   "In senso destrorso, con circa dieci giri"
+  ],
+  "ans": 0,
+  "why": "Avvolgimento sinistrorso; il valore preciso è ~1,7 giri, circa 147 bp (Lehninger; la sbobina dice «due giri»).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-037",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "234",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento enzima – funzione nella forcella replicativa è corretto?",
+  "opts": [
+   "Elicasi – separa i due filamenti della doppia elica",
+   "Primasi – unisce i frammenti di Okazaki tra loro",
+   "DNA ligasi – sintetizza i primer di RNA",
+   "SSB – rimuove i superavvolgimenti davanti alla forcella",
+   "Topoisomerasi – impedisce che i filamenti singoli si riappaino"
+  ],
+  "ans": 0,
+  "why": "Primasi = primer di RNA; ligasi = saldatura dei frammenti di Okazaki; topoisomerasi = superavvolgimenti; SSB = protezione del singolo filamento.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-038",
+  "topic": "d13-duplicazione",
+  "level": "f",
+  "page": "234",
+  "src": "Biochimica I",
+  "q": "Quali attività hanno tutte e tre le DNA polimerasi di E. coli?",
+  "opts": [
+   "Polimerasi 5'→3' ed esonucleasi 3'→5'",
+   "Polimerasi 3'→5' ed esonucleasi 5'→3'",
+   "Polimerasi 5'→3' ed esonucleasi 5'→3'",
+   "Polimerasi 5'→3' e attività primasica",
+   "Polimerasi 3'→5' e attività elicasica"
+  ],
+  "ans": 0,
+  "why": "Tutte sintetizzano 5'→3' e correggono le bozze con l'esonucleasi 3'→5'; nessuna può iniziare senza primer.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-039",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "234",
+  "src": "Biochimica I",
+  "q": "A che cosa serve l'attività esonucleasica 3'→5' delle DNA polimerasi?",
+  "opts": [
+   "Correzione di bozze: rimuove il nucleotide sbagliato appena aggiunto",
+   "Rimozione dei primer di RNA davanti al frammento di Okazaki",
+   "Allungamento del filamento in ritardo nel verso opposto",
+   "Taglio del DNA davanti alla forcella per eliminare i superavvolgimenti",
+   "Saldatura dei frammenti di Okazaki con un legame fosfodiestere"
+  ],
+  "ans": 0,
+  "why": "L'enzima torna indietro di un passo (verso 3'→5') e idrolizza il legame fosfodiestere del nucleotide errato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-040",
+  "topic": "d13-duplicazione",
+  "level": "a",
+  "page": "235",
+  "src": "Biochimica I",
+  "q": "Quale attività possiede solo la DNA polimerasi I, e a che cosa le serve?",
+  "opts": [
+   "Esonucleasi 5'→3', per rimuovere i primer di RNA che trova davanti",
+   "Esonucleasi 3'→5', per correggere i nucleotidi appena inseriti",
+   "Primasi, per innescare i frammenti di Okazaki sul filamento lento",
+   "Elicasi, per aprire la doppia elica all'origine di replicazione oriC",
+   "Ligasi, per saldare i frammenti di Okazaki al filamento continuo"
+  ],
+  "ans": 0,
+  "why": "L'esonucleasi 5'→3' rimuove nucleotidi nel verso della sintesi: serve a togliere i primer (e tratti errati) e a sostituirli con DNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-041",
+  "topic": "d13-duplicazione",
+  "level": "l",
+  "page": "235",
+  "src": "Biochimica I",
+  "q": "Quale dato indica che la replicasi di E. coli è la DNA polimerasi III e non la I?",
+  "opts": [
+   "È circa 50 volte più veloce, anche se ce ne sono solo 10–20 copie per cellula",
+   "È presente in circa 400 copie per cellula, quindi molte più della polimerasi I",
+   "È l'unica che può iniziare la sintesi senza primer, direttamente all'origine",
+   "È l'unica con esonucleasi 5'→3', che le serve per rimuovere i primer",
+   "È l'unica che polimerizza 3'→5' e può quindi copiare il filamento lento"
+  ],
+  "ans": 0,
+  "why": "In vitro: polimerasi III ~30.000 nucleotidi/min contro ~600 della I; 10–20 molecole di III per cellula contro 400 di I.",
+  "note": "Errore nella sbobina (Biochimica I, p. 235): descrive la DNA polimerasi II come «un retaggio evolutivo» che avrebbe perso le sue funzioni. Secondo il Lehninger la polimerasi II è attiva e partecipa alla riparazione del DNA.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-042",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "236",
+  "src": "Biochimica I",
+  "q": "Quale subunità della DNA polimerasi III ne determina l'alta processività?",
+  "opts": [
+   "La subunità β, che forma un anello intorno al DNA",
+   "La subunità α, che porta il sito attivo polimerasico",
+   "La subunità ε, con l'attività esonucleasica 3'→5'",
+   "La subunità θ, che fa parte del nucleo catalitico",
+   "La subunità σ, che riconosce la sequenza dell'origine"
+  ],
+  "ans": 0,
+  "why": "Due subunità β formano una pinza ad anello che aggancia l'enzima al DNA. α, ε e θ formano il nucleo; σ è dell'RNA polimerasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-043",
+  "topic": "d13-duplicazione",
+  "level": "f",
+  "page": "236",
+  "src": "Biochimica I",
+  "q": "Che cosa si intende per processività di una polimerasi?",
+  "opts": [
+   "Il numero di nucleotidi aggiunti prima che l'enzima si stacchi dal DNA",
+   "Il numero di nucleotidi aggiunti in un secondo, in condizioni di saturazione",
+   "La frazione di nucleotidi sbagliati corretti dall'esonucleasi 3'→5'",
+   "Il numero di forcelle replicative servite insieme da un solo enzima",
+   "La distanza tra l'origine e il punto in cui la duplicazione termina"
+  ],
+  "ans": 0,
+  "why": "Processività = nucleotidi aggiunti senza che la polimerasi si stacchi; nella polimerasi III la garantisce la pinza β.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-044",
+  "topic": "d13-duplicazione",
+  "level": "a",
+  "page": "237",
+  "src": "Biochimica I",
+  "q": "Nell'inizio della duplicazione in E. coli, che cosa fa DnaA?",
+  "opts": [
+   "Lega le ripetizioni di 9 bp di oriC e fa denaturare le vicine sequenze di 13 bp ricche di A=T",
+   "Scorre lungo la doppia elica come esamero e la svolge consumando ATP alla forcella replicativa",
+   "Sintetizza i primer di RNA sulle sequenze di 13 bp ricche di G≡C dell'origine di replicazione",
+   "Lega le ripetizioni di 13 bp e taglia un filamento per avviare la replicazione a cerchio rotante",
+   "Carica la pinza β sul DNA e recluta la DNA polimerasi III sulle ripetizioni di 9 bp di oriC"
+  ],
+  "ans": 0,
+  "why": "Circa 20 DnaA con ATP legano le 4 ripetizioni di 9 bp; le 3 ripetizioni di 13 bp ricche di A=T si aprono; poi entrano gli esameri di DnaB, l'elicasi.",
+  "note": "Imprecisione nella sbobina (Biochimica I, p. 237): chiama DnaA «elicasi». DnaA è la proteina di inizio (fattore di avvio, come la sbobina stessa dice poco dopo); l'elicasi replicativa è DnaB.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-045",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "237",
+  "src": "Biochimica I",
+  "q": "Perché le sequenze di 13 bp di oriC che si aprono per prime sono ricche di A=T?",
+  "opts": [
+   "Le coppie A=T hanno due legami a idrogeno e si separano più facilmente",
+   "Le coppie A=T hanno tre legami a idrogeno e legano meglio la proteina DnaA",
+   "Le coppie A=T sono riconosciute dalla primasi come sito di inizio dei primer",
+   "Le coppie A=T vengono metilate e così si distinguono dal resto del cromosoma",
+   "Le coppie A=T formano DNA Z sinistrorso, che si apre in modo spontaneo"
+  ],
+  "ans": 0,
+  "why": "Due legami a idrogeno contro i tre delle G≡C: le regioni A=T fondono più facilmente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-046",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "239",
+  "src": "Biochimica I",
+  "q": "A che cosa servono le proteine SSB nella duplicazione?",
+  "opts": [
+   "Impediscono che i filamenti singoli si riappaino tra loro",
+   "Aprono la doppia elica rompendo i legami a idrogeno tra le basi",
+   "Rimuovono i superavvolgimenti positivi davanti alla forcella",
+   "Legano la doppia elica neosintetizzata e la proteggono dalle nucleasi",
+   "Sintetizzano brevi primer di RNA sul filamento in ritardo"
+  ],
+  "ans": 0,
+  "why": "Il singolo filamento tende a riassociarsi; le SSB legano solo il singolo filamento perché la loro tasca è troppo piccola per la doppia elica.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-047",
+  "topic": "d13-duplicazione",
+  "level": "a",
+  "page": "238",
+  "src": "Biochimica I",
+  "q": "Perché il filamento in ritardo viene sintetizzato in frammenti di Okazaki?",
+  "opts": [
+   "La polimerasi sintetizza solo 5'→3' e quello stampo si apre nel verso opposto",
+   "La polimerasi sintetizza solo 3'→5' e quello stampo si apre nello stesso verso",
+   "Su quel filamento la primasi è più veloce della polimerasi e la precede",
+   "Su quel filamento le SSB staccano la polimerasi ogni mille basi circa",
+   "Quel filamento è più ricco in A=T e quindi si denatura solo a tratti"
+  ],
+  "ans": 0,
+  "why": "Sul filamento in ritardo la sintesi 5'→3' va in verso opposto all'avanzamento della forcella: si fa a pezzi, ognuno con il suo primer.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-048",
+  "topic": "d13-duplicazione",
+  "level": "h",
+  "page": "238",
+  "src": "Biochimica I",
+  "q": "Come fa la DNA polimerasi III dimerica a copiare contemporaneamente i due filamenti?",
+  "opts": [
+   "Lo stampo del filamento in ritardo forma un'ansa, così entrambi vengono letti nello stesso verso di avanzamento",
+   "La subunità catalitica del filamento in ritardo polimerizza 3'→5', così segue la forcella senza interruzioni",
+   "Il filamento in ritardo viene copiato solo dopo che il filamento guida è stato completato fino al termine",
+   "Le due subunità catalitiche si muovono in direzioni opposte, allontanandosi l'una dall'altra dall'origine",
+   "La primasi sintetizza un unico primer lungo che copre tutto il filamento in ritardo fino alla forcella"
+  ],
+  "ans": 0,
+  "why": "Il filamento in ritardo «fa un giro di 180°» e si dispone nello stesso verso del filamento guida: il dimero procede insieme sui due stampi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-049",
+  "topic": "d13-duplicazione",
+  "level": "l",
+  "page": "240",
+  "src": "Biochimica I",
+  "q": "Quando un frammento di Okazaki è completato, che cosa succede alla pinza β?",
+  "opts": [
+   "Viene sfilata, e una nuova pinza caricata sul primer successivo riporta lì il core catalitico",
+   "Resta sul frammento finito e trascina il core catalitico fino al primer successivo, senza staccarsi",
+   "Viene degradata, e la polimerasi prosegue con bassa processività fino alla fine",
+   "Passa al filamento guida, dove sostituisce la subunità ε nella correzione di bozze",
+   "Si apre e lega la DNA ligasi, che salda subito il frammento a quello precedente"
+  ],
+  "ans": 0,
+  "why": "La pinza viene rilasciata e una nuova pinza, già posizionata, riassocia il core catalitico per il filamento in ritardo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-050",
+  "topic": "d13-duplicazione",
+  "level": "m",
+  "page": "241",
+  "src": "Biochimica I",
+  "q": "Che ruolo ha il PCNA nella DNA polimerasi δ eucariotica?",
+  "opts": [
+   "Lo stesso della subunità β di E. coli, la pinza che aumenta la processività",
+   "Lo stesso della subunità α di E. coli, che porta il sito attivo polimerasico",
+   "Lo stesso della subunità ε di E. coli, con l'esonucleasi di correzione",
+   "Lo stesso della proteina DnaA di E. coli, che riconosce l'origine ori",
+   "Lo stesso della proteina DnaB di E. coli, l'elicasi replicativa principale"
+  ],
+  "ans": 0,
+  "why": "PCNA (antigene nucleare di proliferazione cellulare) è altamente omologo alla subunità β.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-051",
+  "topic": "d13-duplicazione",
+  "level": "l",
+  "page": "241",
+  "src": "Biochimica I",
+  "q": "Quale DNA polimerasi eucariotica ha localizzazione mitocondriale?",
+  "opts": [
+   "γ",
+   "α",
+   "δ",
+   "ε",
+   "β"
+  ],
+  "ans": 0,
+  "why": "Tutte le DNA polimerasi eucariotiche sono nucleari tranne la γ, che duplica il DNA mitocondriale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-052",
+  "topic": "d13-duplicazione",
+  "level": "h",
+  "page": "234",
+  "src": "Biochimica I",
+  "q": "Una mutazione elimina solo l'attività esonucleasica 3'→5' della DNA polimerasi III. Che cosa succede?",
+  "opts": [
+   "La duplicazione procede, ma il tasso di mutazione aumenta molto perché gli errori non vengono corretti",
+   "La duplicazione si blocca, perché senza esonucleasi la polimerasi non riesce ad allungare la catena",
+   "I primer di RNA non vengono più rimossi, quindi i frammenti di Okazaki restano tutti separati",
+   "La processività crolla, perché è l'esonucleasi a tenere agganciato l'enzima al DNA stampo",
+   "Il filamento guida diventa discontinuo e si formano frammenti di Okazaki su entrambi gli stampi"
+  ],
+  "ans": 0,
+  "why": "L'esonucleasi 3'→5' è la correzione di bozze: senza, la sintesi va avanti ma con molti più errori. I primer li toglie l'esonucleasi 5'→3' della polimerasi I; la processività dipende dalla pinza β.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-053",
+  "topic": "d13-duplicazione",
+  "level": "h",
+  "page": "234",
+  "src": "Biochimica I",
+  "q": "Un ceppo di E. coli ha una DNA ligasi che non funziona a 42 °C. Che cosa si accumula a quella temperatura?",
+  "opts": [
+   "Frammenti di Okazaki non saldati sul filamento in ritardo",
+   "Primer di RNA non rimossi all'inizio del filamento guida",
+   "DNA superavvolto positivamente davanti alle due forcelle",
+   "DNA a singolo filamento coperto di SSB su tutto il cromosoma",
+   "Interruzioni ogni 1000–2000 nucleotidi sul filamento guida"
+  ],
+  "ans": 0,
+  "why": "La ligasi salda i frammenti di Okazaki (dopo che la polimerasi I ha sostituito i primer): senza ligasi restano interruzioni sul filamento in ritardo.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

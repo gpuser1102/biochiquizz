@@ -1104,23 +1104,31 @@
         },
         {
           "name": "Biologia molecolare",
-          "pages": "223–283",
+          "pages": "223–289",
           "topics": [
             {
               "id": "d13-acidi",
-              "name": "Acidi nucleici"
+              "name": "Acidi nucleici",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-studio",
-              "name": "Studio del DNA"
+              "name": "Studio del DNA",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-topologia",
-              "name": "Topologia del DNA"
+              "name": "Topologia del DNA",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-duplicazione",
-              "name": "Duplicazione"
+              "name": "Duplicazione",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-trascrizione",

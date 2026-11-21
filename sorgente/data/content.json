@@ -1062,7 +1062,9 @@
             },
             {
               "id": "d10-steroidi",
-              "name": "Terpeni, steroidi e derivati del colesterolo"
+              "name": "Terpeni, steroidi e derivati del colesterolo",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d10-trasporto",
@@ -1132,15 +1134,21 @@
             },
             {
               "id": "d13-trascrizione",
-              "name": "Trascrizione"
+              "name": "Trascrizione",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-espressione",
-              "name": "Controllo dell'espressione genica"
+              "name": "Controllo dell'espressione genica",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-rna",
-              "name": "RNA"
+              "name": "RNA",
+              "ready": true,
+              "added": "2026-11-21"
             },
             {
               "id": "d13-clonaggio",

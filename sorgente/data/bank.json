@@ -33507,6 +33507,1051 @@
   "fixed": false
  },
  {
+  "id": "u1121-054",
+  "topic": "d13-trascrizione",
+  "level": "f",
+  "page": "241",
+  "src": "Biochimica I",
+  "q": "Come si chiama la sequenza di DNA riconosciuta prima del sito di inizio della trascrizione?",
+  "opts": [
+   "Promotore",
+   "Operatore",
+   "Terminatore",
+   "Origine",
+   "Introne"
+  ],
+  "ans": 0,
+  "why": "Il promotore precede il sito di inizio (+1); l'operatore è la sequenza vicina al promotore a cui si legano i regolatori nei batteri.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-055",
+  "topic": "d13-trascrizione",
+  "level": "m",
+  "page": "241",
+  "src": "Biochimica I",
+  "q": "Dove si trovano le regioni conservate dei promotori di E. coli?",
+  "opts": [
+   "A circa −10 e −35 paia di basi dal sito di inizio",
+   "A circa +10 e +35 paia di basi dal sito di inizio",
+   "A circa −25 e −70 paia di basi dal sito di inizio",
+   "Tra −7 e +6 paia di basi rispetto al sito di inizio",
+   "Solo a valle, all'interno della sequenza trascritta"
+  ],
+  "ans": 0,
+  "why": "Due esameri conservati a −10 e −35: se mutati, hanno effetti marcati sulla trascrizione. −25 e −70 sono TATA box e CCAAT box dei promotori dell'RNA polimerasi II.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-056",
+  "topic": "d13-trascrizione",
+  "level": "m",
+  "page": "242",
+  "src": "Biochimica I",
+  "q": "Il nucleo α₂ββ' dell'RNA polimerasi di E. coli ha attività polimerasica ma non inizia la trascrizione nel punto giusto. Perché?",
+  "opts": [
+   "Gli manca σ, che riconosce il promotore e vi porta l'enzima",
+   "Gli manca un'elicasi separata, che deve aprire la doppia elica",
+   "Gli manca un primer di RNA, necessario per iniziare la catena",
+   "Gli manca il fattore ρ, che aggancia l'enzima al sito +1",
+   "Gli manca una pinza ad anello, che gli dà la processività"
+  ],
+  "ans": 0,
+  "why": "α: assemblaggio e interazione con i regolatori; β e β': centro catalitico; σ: riconoscimento del promotore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-057",
+  "topic": "d13-trascrizione",
+  "level": "a",
+  "page": "242",
+  "src": "Biochimica I",
+  "q": "Quale differenza tra RNA polimerasi e DNA polimerasi è corretta?",
+  "opts": [
+   "L'RNA polimerasi svolge da sé la doppia elica e non ha bisogno di un primer",
+   "L'RNA polimerasi ha bisogno di un primer di DNA e di un'elicasi separata",
+   "L'RNA polimerasi sintetizza in direzione 3'→5' e usa desossiribonucleotidi",
+   "L'RNA polimerasi ha un'esonucleasi 5'→3' con cui rimuove i primer",
+   "L'RNA polimerasi copia contemporaneamente i due filamenti dello stesso gene"
+  ],
+  "ans": 0,
+  "why": "Le RNA polimerasi hanno un'attività elicasica intrinseca e incorporano ribonucleotidi trifosfato. Che non serva un primer non è scritto nelle sbobine (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-058",
+  "topic": "d13-trascrizione",
+  "level": "l",
+  "page": "243",
+  "src": "Biochimica I",
+  "q": "Che cosa succede alla subunità σ quando l'RNA polimerasi batterica passa all'allungamento?",
+  "opts": [
+   "Si dissocia, e il nucleo dell'enzima prosegue da solo fino al terminatore",
+   "Resta legata e guida l'enzima fino al terminatore, dove si stacca con ρ",
+   "Viene sostituita dal fattore ρ, che garantisce la processività dell'enzima",
+   "Si lega al promotore successivo e vi attende il nucleo dell'enzima libero",
+   "Viene degradata, e la cellula ne sintetizza una nuova a ogni trascritto"
+  ],
+  "ans": 0,
+  "why": "Secondo la sbobina σ si stacca quando l'RNA nascente è lungo 10–12 nucleotidi; il nucleo α₂ββ' continua fino al sito di terminazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-059",
+  "topic": "d13-trascrizione",
+  "level": "f",
+  "page": "243",
+  "src": "Biochimica I",
+  "q": "Con quale tipo di nucleotide inizia quasi sempre l'mRNA batterico?",
+  "opts": [
+   "Una purina",
+   "Una pirimidina",
+   "Un desossinucleotide",
+   "Un nucleotide metilato",
+   "Una uridina"
+  ],
+  "ans": 0,
+  "why": "L'RNA polimerasi comincia la sintesi quasi sempre con una purina (ATP o GTP).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-060",
+  "topic": "d13-trascrizione",
+  "level": "f",
+  "page": "243",
+  "src": "Biochimica I",
+  "q": "Quale RNA polimerasi eucariotica sintetizza i precursori degli mRNA?",
+  "opts": [
+   "RNA polimerasi II",
+   "RNA polimerasi I",
+   "RNA polimerasi III",
+   "RNA polimerasi mitocondriale",
+   "Primasi"
+  ],
+  "ans": 0,
+  "why": "Pol I: precursori degli rRNA nel nucleolo; pol II: precursori degli mRNA; pol III: tRNA, rRNA 5S e snRNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-061",
+  "topic": "d13-trascrizione",
+  "level": "l",
+  "page": "243",
+  "src": "Biochimica I",
+  "q": "Quale RNA polimerasi eucariotica trascrive tRNA e rRNA 5S, e dove si trova il suo promotore?",
+  "opts": [
+   "La III, con il promotore a valle del sito di inizio",
+   "La I, con il promotore a monte, nel nucleolo",
+   "La II, con il TATA box a circa −25",
+   "La III, con TATA box e CCAAT box a monte",
+   "La I, anche lei con il promotore a valle del sito di inizio"
+  ],
+  "ans": 0,
+  "why": "La pol III ha promotori interni, a valle del sito di inizio; la pol II usa TATA box (−25), CCAAT box (−70) ed enhancer.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-062",
+  "topic": "d13-trascrizione",
+  "level": "m",
+  "page": "244",
+  "src": "Biochimica I",
+  "q": "Che cosa provoca il legame della TBP al TATA box?",
+  "opts": [
+   "Una piega a gomito del DNA, segnale per l'arrivo degli altri fattori",
+   "L'apertura della doppia elica grazie all'idrolisi di ATP",
+   "La fosforilazione della coda C-terminale dell'RNA polimerasi II",
+   "Il distacco del repressore dall'operatore vicino al promotore",
+   "La metilazione del promotore e la conseguente compattazione della cromatina"
+  ],
+  "ans": 0,
+  "why": "La TBP riconosce due solchi maggiori adiacenti e piega il DNA: è il segnale strutturale per l'assemblaggio del complesso di inizio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-063",
+  "topic": "d13-trascrizione",
+  "level": "h",
+  "page": "244",
+  "src": "Biochimica I",
+  "q": "In quale ordine si assemblano i fattori del complesso di pre-inizio dell'RNA polimerasi II, secondo la sbobina?",
+  "opts": [
+   "TBP → TFIIB → TFIIF con la polimerasi → TFIIE → TFIIH",
+   "TFIIB → TBP → TFIIH → TFIIF con la polimerasi → TFIIE",
+   "TBP → TFIIH → TFIIE → TFIIB → TFIIF con la polimerasi",
+   "TFIIF con la polimerasi → TBP → TFIIB → TFIIH → TFIIE",
+   "TBP → TFIIE → TFIIF con la polimerasi → TFIIB → TFIIH"
+  ],
+  "ans": 0,
+  "why": "TBP piega il DNA; TFIIB lega TBP e TFIIF; TFIIF porta la polimerasi; TFIIE recluta per ultimo TFIIH, che fosforila la coda C-terminale.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-064",
+  "topic": "d13-trascrizione",
+  "level": "h",
+  "page": "244",
+  "src": "Biochimica I",
+  "q": "Un farmaco blocca solo l'attività chinasica del TFIIH. Che cosa succede alla trascrizione dei geni dell'RNA polimerasi II?",
+  "opts": [
+   "Il complesso di pre-inizio si forma, ma la polimerasi non parte perché la coda C-terminale resta non fosforilata",
+   "La TBP non riesce più a legare il TATA box, quindi il complesso di pre-inizio non si forma per niente sul promotore",
+   "La polimerasi inizia l'allungamento, ma non riconosce più i segnali di terminazione alla fine del gene",
+   "Il TFIIB non lega più la TBP, quindi la polimerasi viene reclutata su sequenze casuali del genoma",
+   "La polimerasi trascrive normalmente, ma i fattori di trascrizione restano legati al promotore dopo la partenza"
+  ],
+  "ans": 0,
+  "why": "La fosforilazione della coda C-terminale fa disassemblare il complesso di pre-inizio e libera la polimerasi verso l'allungamento.",
+  "note": "Errore nella sbobina (Biochimica I, p. 244): attribuisce al TFIIE l'attività ATPasica ed elicasica che svolge la doppia elica. Secondo Lehninger e Stryer l'elicasi è il TFIIH (che ha anche l'attività chinasica); il TFIIE serve a reclutare il TFIIH.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-065",
+  "topic": "d13-trascrizione",
+  "level": "m",
+  "page": "244",
+  "src": "Biochimica I",
+  "q": "Perché il riconoscimento del promotore eucariotico richiede tanti fattori che si legano in sequenza?",
+  "opts": [
+   "Aumenta la specificità ed evita legami aspecifici della polimerasi al DNA",
+   "Aumenta la velocità con cui la polimerasi allunga l'RNA lungo il gene",
+   "Permette alla polimerasi di sintetizzare il primer di RNA iniziale",
+   "Permette di correggere gli errori di incorporazione dei ribonucleotidi nell'RNA",
+   "Serve a staccare gli istoni da tutto il gene prima della trascrizione"
+  ],
+  "ans": 0,
+  "why": "Più passaggi di riconoscimento riducono il rischio di trascrivere sequenze che non devono essere trascritte.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-066",
+  "topic": "d13-trascrizione",
+  "level": "a",
+  "page": "243",
+  "src": "Biochimica I",
+  "q": "Il complesso chiuso RNA polimerasi-promotore ha KD tra 10⁻⁶ e 10⁻⁹ M, quello aperto 10⁻¹⁴ M. Che cosa significa?",
+  "opts": [
+   "Il complesso aperto, con il DNA svolto, è molto più stabile di quello chiuso",
+   "Il complesso chiuso è il più stabile, perché il DNA non è ancora svolto",
+   "Il complesso aperto si dissocia più facilmente, per permettere l'allungamento",
+   "I due complessi hanno la stessa stabilità, ma il chiuso si forma più in fretta",
+   "Il complesso aperto lega σ con più affinità, ma il DNA con meno affinità"
+  ],
+  "ans": 0,
+  "why": "KD più bassa = affinità più alta: dopo lo svolgimento del DNA al promotore il complesso aperto è molto stabile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-067",
+  "topic": "d13-espressione",
+  "level": "f",
+  "page": "245",
+  "src": "Biochimica I",
+  "q": "Quale fattore σ di E. coli dirige l'espressione dei geni costitutivi (housekeeping)?",
+  "opts": [
+   "σ70",
+   "σ32",
+   "σ54",
+   "σS (σ38)",
+   "ρ"
+  ],
+  "ans": 0,
+  "why": "σ70 è il fattore primario; gli altri sono alternativi e servono a gruppi di geni specifici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-068",
+  "topic": "d13-espressione",
+  "level": "l",
+  "page": "245",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento fattore σ – geni di E. coli è corretto?",
+  "opts": [
+   "σ32 – geni indotti dallo shock termico",
+   "σ54 – geni indotti dalla fase stazionaria",
+   "σ70 – geni del metabolismo dell'azoto",
+   "σS – geni indotti dallo shock termico",
+   "σ32 – geni costitutivi (housekeeping)"
+  ],
+  "ans": 0,
+  "why": "σ70 housekeeping; σ54 metabolismo dell'azoto; σ32 shock termico; σS (σ38) fase stazionaria.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-069",
+  "topic": "d13-espressione",
+  "level": "f",
+  "page": "245",
+  "src": "Biochimica I",
+  "q": "Che cos'è un operone?",
+  "opts": [
+   "Un gruppo di geni per proteine diverse trascritti dallo stesso promotore",
+   "Un gene con più promotori, ciascuno dei quali dà una proteina diversa",
+   "La sequenza vicino al promotore a cui si lega il repressore trascrizionale",
+   "Un gruppo di geni con promotori diversi regolati dalla stessa proteina",
+   "Un mRNA eucariotico maturo che contiene gli esoni di più geni diversi"
+  ],
+  "ans": 0,
+  "why": "Un'unica unità trascrizionale (un solo mRNA) per proteine che di solito lavorano insieme nella stessa via. La sequenza del repressore è l'operatore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-070",
+  "topic": "d13-espressione",
+  "level": "l",
+  "page": "247",
+  "src": "Biochimica I",
+  "q": "Quali proteine codificano i geni lacZ, lacY e lacA?",
+  "opts": [
+   "β-galattosidasi, galattoside permeasi e transacetilasi",
+   "Galattoside permeasi, β-galattosidasi e repressore lac",
+   "Repressore lac, β-galattosidasi e transacetilasi",
+   "Lattasi, galattochinasi e galattoside permeasi",
+   "β-galattosidasi, galattochinasi e repressore lac"
+  ],
+  "ans": 0,
+  "why": "lacZ β-galattosidasi, lacY permeasi, lacA transacetilasi. Il repressore è codificato da lacI, con un suo promotore a monte.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-071",
+  "topic": "d13-espressione",
+  "level": "h",
+  "page": "248",
+  "src": "Biochimica I",
+  "q": "Che effetto ha la delezione del gene lacI in E. coli?",
+  "opts": [
+   "Le proteine dell'operone lac vengono prodotte sempre, anche senza induttore",
+   "Le proteine dell'operone lac non vengono mai prodotte, anche con lattosio",
+   "Le proteine dell'operone lac vengono prodotte solo in presenza di glucosio",
+   "Viene prodotta solo la β-galattosidasi, perché manca il gene della permeasi",
+   "L'operone lac diventa reprimibile e si spegne quando c'è molto lattosio"
+  ],
+  "ans": 0,
+  "why": "lacI codifica il repressore: senza repressore l'operone è espresso in modo costitutivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-072",
+  "topic": "d13-espressione",
+  "level": "m",
+  "page": "248",
+  "src": "Biochimica I",
+  "q": "Perché in presenza di lattosio l'operone lac viene trascritto?",
+  "opts": [
+   "L'induttore lega il repressore e ne cambia la conformazione, così si stacca dall'operatore",
+   "Il lattosio lega direttamente l'operatore e ne spinge via il repressore per semplice competizione",
+   "Il lattosio attiva l'adenilato ciclasi, e il cAMP prodotto stacca il repressore dal DNA",
+   "Il lattosio lega l'RNA polimerasi e ne aumenta l'affinità per il promotore dell'operone",
+   "Il lattosio blocca la trascrizione del gene lacI, quindi il repressore non viene prodotto"
+  ],
+  "ans": 0,
+  "why": "Il repressore legato all'induttore perde affinità per il DNA. La sbobina dice «lattosio»; l'induttore fisiologico è il suo isomero allolattosio (Lehninger): semplificazione accettabile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-073",
+  "topic": "d13-espressione",
+  "level": "m",
+  "page": "249",
+  "src": "Biochimica I",
+  "q": "Nell'operone trp, quando il repressore si lega al DNA?",
+  "opts": [
+   "Solo dopo aver legato triptofano, che fa da corepressore",
+   "Solo quando nella cellula il triptofano è assente",
+   "Sempre, ed è il triptofano legato a staccarlo dal DNA",
+   "Solo dopo aver legato cAMP, quando il glucosio è basso nel terreno",
+   "Solo in presenza di lattosio, che fa da coinduttore"
+  ],
+  "ans": 0,
+  "why": "Operone reprimibile: il repressore (gene trpR) è attivo solo legato al triptofano; senza triptofano i cinque geni vengono trascritti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-074",
+  "topic": "d13-espressione",
+  "level": "h",
+  "page": "249",
+  "src": "Biochimica I",
+  "q": "Quale confronto tra operone lac e operone trp è corretto?",
+  "opts": [
+   "In entrambi il repressore attivo blocca la trascrizione; in lac è attivo da libero, in trp da legato all'effettore",
+   "In entrambi il repressore attivo è quello legato all'effettore; in lac l'effettore è il prodotto, in trp il substrato",
+   "lac è a controllo positivo e trp a controllo negativo, perché in lac il lattosio attiva l'RNA polimerasi",
+   "In entrambi l'effettore aumenta l'affinità del repressore per l'operatore e quindi spegne l'operone",
+   "lac è reprimibile e trp inducibile, perché nelle vie cataboliche l'effettore è il prodotto finale della via"
+  ],
+  "ans": 0,
+  "why": "Entrambi sono controlli negativi. Vie cataboliche: l'effettore è il substrato (lattosio) e stacca il repressore; vie anaboliche: l'effettore è il prodotto finale (triptofano) e attiva il repressore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-075",
+  "topic": "d13-espressione",
+  "level": "h",
+  "page": "250",
+  "src": "Biochimica I",
+  "q": "E. coli cresce in un terreno con glucosio e lattosio. Perché l'operone lac è poco trascritto anche se il repressore è staccato?",
+  "opts": [
+   "Il glucosio abbassa il cAMP, quindi la CRP non può attivare la trascrizione dell'operone",
+   "Il glucosio lega il repressore e lo blocca sull'operatore anche in presenza di molto lattosio",
+   "Il glucosio alza il cAMP, che lega il repressore e lo stabilizza sull'operatore",
+   "Il glucosio sequestra il fattore σ70, che non riconosce più il promotore lac",
+   "Il glucosio attiva il fattore ρ, che termina la trascrizione dopo il gene lacZ"
+  ],
+  "ans": 0,
+  "why": "Repressione da catabolita: il glucosio inibisce indirettamente l'adenilato ciclasi; senza cAMP la CRP (attivatore) non lega e la trascrizione resta bassa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-076",
+  "topic": "d13-espressione",
+  "level": "m",
+  "page": "250",
+  "src": "Biochimica I",
+  "q": "Qual è il segnale della terminazione ρ-indipendente nei batteri?",
+  "opts": [
+   "Una forcina nell'RNA, da sequenze ripetute invertite, seguita da una serie di U",
+   "Una sequenza TATA nel DNA, seguita da una serie di A nel filamento stampo del gene",
+   "Il legame del fattore ρ a una forcina dell'RNA, che consuma ATP per staccarlo",
+   "Una sequenza palindromica nel DNA a cui si lega il repressore dell'operone",
+   "Una coda di poli-A aggiunta all'RNA subito dopo il taglio del trascritto"
+  ],
+  "ans": 0,
+  "why": "La forcina seguita dal poli-U fa perdere affinità alla polimerasi, che rilascia DNA e messaggero. Che la forcina sia ricca in G-C non è nelle sbobine (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-077",
+  "topic": "d13-espressione",
+  "level": "m",
+  "page": "251",
+  "src": "Biochimica I",
+  "q": "Che cos'è il fattore ρ?",
+  "opts": [
+   "Un'elicasi ATP-dipendente che svolge l'ibrido DNA-RNA e libera il trascritto",
+   "Una subunità dell'RNA polimerasi batterica che riconosce il promotore a −10 e −35",
+   "Una nucleasi che taglia l'mRNA subito a valle della sequenza poli-U",
+   "Una proteina che lega il cAMP e attiva la trascrizione degli operoni",
+   "Un repressore che lega l'operatore solo in presenza di triptofano"
+  ],
+  "ans": 0,
+  "why": "È il fattore della terminazione ρ-dipendente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-078",
+  "topic": "d13-espressione",
+  "level": "f",
+  "page": "251",
+  "src": "Biochimica I",
+  "q": "Quale percentuale dei suoi geni esprime, secondo la sbobina, una tipica cellula umana?",
+  "opts": [
+   "3–5%",
+   "30–50%",
+   "80–90%",
+   "Meno dello 0,1%",
+   "Tutti"
+  ],
+  "ans": 0,
+  "why": "Ogni cellula esprime solo una piccola parte dei suoi geni e adatta l'espressione ai segnali.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-079",
+  "topic": "d13-espressione",
+  "level": "a",
+  "page": "251",
+  "src": "Biochimica I",
+  "q": "Perché l'acetilazione degli istoni favorisce la trascrizione?",
+  "opts": [
+   "Neutralizza le lisine, così gli istoni diventano meno basici e legano meno il DNA",
+   "Aggiunge cariche positive alle lisine, così gli istoni legano di più il DNA e lo aprono",
+   "Trasferisce gruppi acetile alle citosine del promotore e così richiama la polimerasi",
+   "Stacca l'istone H1 dal nucleosoma, che così si scioglie e libera completamente il DNA",
+   "Taglia il DNA linker tra i nucleosomi, che così si allontanano lungo la fibra"
+  ],
+  "ans": 0,
+  "why": "L'acetilazione degli amminoacidi basici riduce l'interazione elettrostatica con il DNA acido e facilita l'accesso del macchinario trascrizionale; la metilazione del DNA ha l'effetto opposto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-080",
+  "topic": "d13-espressione",
+  "level": "h",
+  "page": "251",
+  "src": "Biochimica I",
+  "q": "Come può un enhancer, lontano dal promotore, stimolare la trascrizione di un gene?",
+  "opts": [
+   "Lega attivatori che, ripiegando il DNA, vengono portati a contatto con il complesso di inizio",
+   "Viene trascritto in un RNA che si appaia al promotore e lo apre per l'RNA polimerasi II",
+   "Scorre lungo il DNA fino al promotore e trascina con sé l'RNA polimerasi II",
+   "Viene tagliato e riattaccato vicino al promotore, a cui così si avvicina davvero",
+   "Rimuove i metili dal promotore a distanza e lo rende accessibile ai fattori"
+  ],
+  "ans": 0,
+  "why": "Gli attivatori legati agli enhancer interagiscono con la polimerasi grazie a un ripiegamento del DNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-081",
+  "topic": "d13-espressione",
+  "level": "a",
+  "page": "252",
+  "src": "Biochimica I",
+  "q": "Perché le proteine regolatrici riconoscono la sequenza soprattutto nel solco maggiore?",
+  "opts": [
+   "Lì ogni coppia di basi espone una combinazione unica di donatori e accettori di legami a idrogeno",
+   "Lì sono esposti i gruppi fosfato, che formano legami ionici diversi e specifici per ogni coppia di basi",
+   "Lì le basi formano legami covalenti con le catene laterali di asparagina e glutammina",
+   "Lì A-T e T-A appaiono uguali, quindi la proteina deve leggere un numero minore di combinazioni",
+   "Lì non arrivano gli istoni, che occupano invece il solco minore in tutto il genoma"
+  ],
+  "ans": 0,
+  "why": "Nel solco minore A-T non si distingue da T-A (né G-C da C-G): il solco maggiore è più informativo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-082",
+  "topic": "d13-espressione",
+  "level": "l",
+  "page": "252",
+  "src": "Biochimica I",
+  "q": "Quanto è maggiore, secondo la sbobina, l'affinità di una proteina regolatrice per la sua sequenza bersaglio rispetto ad altre sequenze?",
+  "opts": [
+   "10⁴–10⁶ volte",
+   "10–100 volte",
+   "2–3 volte",
+   "10⁹–10¹⁰ volte",
+   "10¹⁵ volte"
+  ],
+  "ans": 0,
+  "why": "Non c'è un codice semplice amminoacido-base: la specificità nasce da molti contatti, soprattutto legami a idrogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-083",
+  "topic": "d13-espressione",
+  "level": "l",
+  "page": "253",
+  "src": "Biochimica I",
+  "q": "Quali catene laterali formano più spesso legami a idrogeno con le basi nel solco maggiore?",
+  "opts": [
+   "Asn, Gln, Lys, Arg",
+   "Leu, Ile, Val, Phe",
+   "Gly, Ala, Pro, Trp",
+   "Met, Cys, Leu, Val",
+   "Phe, Tyr, Trp, Pro"
+  ],
+  "ans": 0,
+  "why": "Catene laterali polari o cariche positivamente, capaci di legami a idrogeno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-084",
+  "topic": "d13-espressione",
+  "level": "h",
+  "page": "253",
+  "src": "Biochimica I",
+  "q": "Quale descrizione dei motivi di legame al DNA è corretta?",
+  "opts": [
+   "Nella cerniera di leucine due eliche dimerizzano con leucine ogni sette residui, e la regione basica N-terminale lega il DNA",
+   "Nell'elica-giro-elica è l'elica 1 a entrare nel solco minore, mentre l'elica 3 media il contatto con altre proteine regolatrici",
+   "Nel dito di zinco dei recettori degli ormoni steroidei lo zinco è coordinato da due cisteine e due istidine",
+   "Nella cerniera di leucine le leucine sono nella regione N-terminale e legano direttamente le basi del DNA",
+   "Nell'elica-ansa-elica è l'ansa a entrare nel solco maggiore, mentre le due eliche legano solo i fosfati"
+  ],
+  "ans": 0,
+  "why": "HTH: l'elica 3 di riconoscimento entra nel solco maggiore. Zinc finger classico: 2 Cys + 2 His; quello dei recettori steroidei: 4 Cys. Leucine zipper ed elica-ansa-elica: eliche per dimerizzare, regione N-terminale basica per il DNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-085",
+  "topic": "d13-rna",
+  "level": "f",
+  "page": "253",
+  "src": "Biochimica I",
+  "q": "Quale combinazione distingue di solito l'RNA dal DNA?",
+  "opts": [
+   "Ribosio, uracile e singolo filamento",
+   "Deossiribosio, uracile e doppio filamento",
+   "Ribosio, timina e singolo filamento",
+   "Ribosio, uracile e doppio filamento",
+   "Deossiribosio, timina e singolo filamento"
+  ],
+  "ans": 0,
+  "why": "L'RNA è in genere corto e a singolo filamento, ma forma strutture secondarie e terziarie; può contenere basi modificate (tRNA).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-086",
+  "topic": "d13-rna",
+  "level": "l",
+  "page": "254",
+  "src": "Biochimica I",
+  "q": "Come si chiama la struttura terziaria dell'RNA che si forma quando regioni complementari invertite, anche distanti, si appaiano tra loro?",
+  "opts": [
+   "Pseudonodo",
+   "Forcina",
+   "Stem-loop",
+   "Trifoglio",
+   "Cruciforme"
+  ],
+  "ans": 0,
+  "why": "Forcina (tratto non appaiato piccolo) e stem-loop (tratto più ampio) sono strutture secondarie; il pseudonodo è terziario.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-087",
+  "topic": "d13-rna",
+  "level": "f",
+  "page": "254",
+  "src": "Biochimica I",
+  "q": "Come appare la struttura del tRNA nel piano e nello spazio?",
+  "opts": [
+   "A trifoglio nel piano, a forma di L nello spazio",
+   "A forma di L nel piano, a trifoglio nello spazio",
+   "A forcina semplice nel piano, a pseudonodo nello spazio",
+   "A doppia elica continua sia nel piano sia nello spazio",
+   "A trifoglio nel piano, a doppia elica lineare nello spazio"
+  ],
+  "ans": 0,
+  "why": "Il trifoglio ha quattro tratti a doppia elica e l'ansa dell'anticodone; nella forma a L l'anticodone non è diametralmente opposto all'amminoacido.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-088",
+  "topic": "d13-rna",
+  "level": "l",
+  "page": "254",
+  "src": "Biochimica I",
+  "q": "Quali rRNA formano la subunità maggiore del ribosoma eucariotico?",
+  "opts": [
+   "28S, 5,8S e 5S",
+   "23S e 5S",
+   "28S, 18S e 5S",
+   "18S e 5,8S",
+   "23S, 5,8S e 5S"
+  ],
+  "ans": 0,
+  "why": "Eucarioti: 28S, 5,8S e 5S nella maggiore, 18S nella minore. Procarioti: 23S e 5S nella maggiore, 16S nella minore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-089",
+  "topic": "d13-rna",
+  "level": "f",
+  "page": "254",
+  "src": "Biochimica I",
+  "q": "Qual è l'RNA più abbondante e più stabile nelle cellule?",
+  "opts": [
+   "rRNA",
+   "mRNA",
+   "tRNA",
+   "snRNA",
+   "miRNA"
+  ],
+  "ans": 0,
+  "why": "L'RNA ribosomiale costituisce le due subunità del ribosoma.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-090",
+  "topic": "d13-rna",
+  "level": "m",
+  "page": "254",
+  "src": "Biochimica I",
+  "q": "Che cosa sono le strutture cruciformi del DNA?",
+  "opts": [
+   "Forcine di sequenze palindromiche, appaiate sullo stesso filamento invece che con l'altro",
+   "Incroci tra due cromosomi omologhi che si formano durante la ricombinazione meiotica nei gameti",
+   "Ibridi DNA-RNA che si formano durante la trascrizione davanti alla polimerasi",
+   "Nodi del DNA circolare creati dalle topoisomerasi di tipo II durante la duplicazione",
+   "Tratti di DNA avvolti a croce intorno a due ottameri istonici adiacenti"
+  ],
+  "ans": 0,
+  "why": "Le ripetizioni invertite complementari si appaiano nello stesso filamento; queste strutture sono riconosciute da enzimi che tagliano il DNA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-091",
+  "topic": "d13-rna",
+  "level": "m",
+  "page": "257",
+  "src": "Biochimica I",
+  "q": "Quale di questi è un RNA catalitico ancora presente nelle cellule?",
+  "opts": [
+   "L'rRNA 23S, che catalizza la formazione del legame peptidico",
+   "L'mRNA, che catalizza la propria traduzione sul ribosoma batterico",
+   "Il tRNA, che catalizza il legame del proprio amminoacido",
+   "Il miRNA, che catalizza l'aggiunta del cap all'mRNA",
+   "L'rRNA 16S, che catalizza la sintesi della coda poli-A"
+  ],
+  "ans": 0,
+  "why": "Ribozimi cellulari: rRNA 23S (peptidil transferasi), snRNA dello spliceosoma, RNasi P, alcuni RNA virali.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-092",
+  "topic": "d13-rna",
+  "level": "l",
+  "page": "257",
+  "src": "Biochimica I",
+  "q": "Che cos'è la RNasi P?",
+  "opts": [
+   "Una ribonucleoproteina con subunità catalitica a RNA che matura l'estremità 5' dei tRNA",
+   "Una proteina con subunità strutturale a RNA che aggiunge la coda poli-A agli mRNA maturi",
+   "Una ribonucleoproteina con subunità catalitica proteica che rimuove gli introni",
+   "Un RNA senza proteine che taglia sé stesso in presenza di ioni piombo",
+   "Una ribonucleasi proteica che degrada gli mRNA privi di cap e di coda"
+  ],
+  "ans": 0,
+  "why": "La subunità a RNA è catalitica, quella proteica strutturale. La sbobina dice solo che «partecipa alla formazione del 5' nei batteri»: che si tratti dei tRNA è dal Lehninger.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-093",
+  "topic": "d13-rna",
+  "level": "a",
+  "page": "255",
+  "src": "Biochimica I",
+  "q": "Quale osservazione sostiene l'ipotesi che l'RNA sia stata la molecola ancestrale della vita?",
+  "opts": [
+   "L'RNA può conservare informazione e catalizzare reazioni, come fanno ancora rRNA e snRNA",
+   "Il DNA è più instabile dell'RNA e non avrebbe potuto conservare l'informazione genetica a lungo",
+   "Le proteine non riescono a catalizzare nessuna reazione sugli acidi nucleici senza RNA",
+   "L'RNA è sempre a doppio filamento e quindi si replica con lo stesso meccanismo del DNA",
+   "L'RNA si forma spontaneamente dalla polimerizzazione degli amminoacidi in acqua"
+  ],
+  "ans": 0,
+  "why": "L'RNA ha strutture terziarie simili a quelle delle proteine; i ribozimi attuali sono considerati fossili molecolari.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-094",
+  "topic": "d13-rna",
+  "level": "m",
+  "page": "257",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento tra acido nucleico terapeutico e meccanismo è corretto?",
+  "opts": [
+   "siRNA – silenziano l'RNA a cui sono complementari",
+   "Aptameri – si appaiano all'mRNA e ne bloccano la traduzione",
+   "RNA antisenso – legano proteine grazie a un folding specifico",
+   "Ribozimi – legano recettori di membrana come gli anticorpi",
+   "Oligonucleotidi antigene – si appaiano all'mRNA nel citosol"
+  ],
+  "ans": 0,
+  "why": "Antisenso: legano l'mRNA. Aptameri: legano molecole bersaglio grazie al folding. Antigene: desossinucleotidi complementari al DNA. Ribozimi: tagliano RNA complementari.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-095",
+  "topic": "d13-rna",
+  "level": "h",
+  "page": "258",
+  "src": "Biochimica I",
+  "q": "Un riboswitch batterico lega la lisina nel suo dominio aptamero. Che cosa succede ai geni a valle quando la lisina è abbondante?",
+  "opts": [
+   "Si forma una forcina seguita da poli-U che termina la trascrizione dell'mRNA",
+   "Si forma una struttura di antiterminazione e l'mRNA viene trascritto e tradotto",
+   "Il riboswitch taglia l'mRNA come un ribozima e ne avvia subito la degradazione",
+   "La lisina attiva un repressore proteico che si lega all'operatore del promotore",
+   "Il riboswitch recluta un fattore σ alternativo per i geni del metabolismo della lisina"
+  ],
+  "ans": 0,
+  "why": "Legato il ligando, l'aptamero cambia struttura secondaria e si forma un terminatore; senza ligando si forma l'antiterminatore e il gene viene espresso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-096",
+  "topic": "d13-rna",
+  "level": "a",
+  "page": "258",
+  "src": "Biochimica I",
+  "q": "Perché i riboswitch sono considerati un possibile bersaglio per nuovi antibiotici?",
+  "opts": [
+   "Regolano geni importanti per i batteri e non sono stati trovati nei mammiferi",
+   "Sono presenti anche nei mammiferi, ma lì legano ligandi molto più grandi e diversi",
+   "Sono proteine batteriche con un sito attivo molto diverso da quelli umani",
+   "Sono già il bersaglio della maggior parte degli antibiotici oggi in uso",
+   "Legano la DNA girasi batterica e ne bloccano l'attività sul cromosoma"
+  ],
+  "ans": 0,
+  "why": "Un farmaco specifico per l'aptamero bloccherebbe geni batterici senza effetti sull'mRNA umano; i riboswitch inoltre legano i ligandi diversamente dalle proteine umane.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-097",
+  "topic": "d13-rna",
+  "level": "m",
+  "page": "258",
+  "src": "Biochimica I",
+  "q": "Perché gli aptameri sono chiamati «anticorpi chimici»?",
+  "opts": [
+   "Legano il loro bersaglio con alta affinità e selettività grazie al loro folding",
+   "Sono prodotti dalle plasmacellule e circolano nel sangue come immunoglobuline",
+   "Hanno la stessa struttura a Y delle immunoglobuline, con due siti di legame",
+   "Attivano la cascata del complemento quando si legano al loro bersaglio",
+   "Sono piccole proteine sintetiche che imitano la regione variabile degli anticorpi"
+  ],
+  "ans": 0,
+  "why": "Sono acidi nucleici facili da sintetizzare, stabili e privi di immunogenicità; possono anche veicolare farmaci o siRNA nelle cellule bersaglio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-098",
+  "topic": "d13-rna",
+  "level": "l",
+  "page": "259",
+  "src": "Biochimica I",
+  "q": "Quale aptamero è stato approvato come farmaco e contro quale bersaglio?",
+  "opts": [
+   "Pegaptanib, contro il VEGF",
+   "Pegaptanib, contro il PDGF",
+   "Bevacizumab, contro il VEGF",
+   "Pegaptanib, contro il fattore V",
+   "Defibrotide, contro il PDGF"
+  ],
+  "ans": 0,
+  "why": "Il pegaptanib è stato poi superato dagli anticorpi monoclonali anti-VEGF.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-099",
+  "topic": "d13-rna",
+  "level": "h",
+  "page": "259",
+  "src": "Biochimica I",
+  "q": "Quale sequenza della biogenesi dei miRNA nei mammiferi è corretta?",
+  "opts": [
+   "Pol II trascrive il pri-miRNA → Drosha lo taglia nel nucleo → l'esportina porta il pre-miRNA nel citosol → Dicer → RISC",
+   "Pol III trascrive il pre-miRNA → Dicer lo taglia nel nucleo → l'esportina porta il pri-miRNA nel citosol → Drosha → RISC",
+   "Pol II trascrive il pre-miRNA → l'esportina lo porta nel citosol → Drosha lo taglia in pri-miRNA → RISC → Dicer",
+   "Pol I trascrive il pri-miRNA → Dicer lo taglia nel nucleo → RISC lo porta nel citosol → Drosha lo rende a singolo filamento",
+   "Pol II trascrive il pri-miRNA → Dicer lo taglia nel nucleo → l'esportina porta il pre-miRNA nel citosol → Drosha → RISC"
+  ],
+  "ans": 0,
+  "why": "Pri-miRNA (pol II) → Drosha (nucleo) → pre-miRNA → esportina → Dicer (citosol) → RISC con Argonauta → miRNA maturo a singolo filamento.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-100",
+  "topic": "d13-rna",
+  "level": "a",
+  "page": "259",
+  "src": "Biochimica I",
+  "q": "Che differenza c'è tra miRNA e siRNA, secondo la sbobina?",
+  "opts": [
+   "I miRNA sono codificati dal nostro genoma, i siRNA derivano da RNA a doppio filamento esogeni",
+   "I miRNA derivano da RNA virali a doppio filamento, i siRNA sono codificati dal nostro stesso genoma",
+   "I miRNA agiscono nel nucleo sul DNA, i siRNA agiscono solo nel citosol sulle proteine",
+   "I miRNA richiedono Dicer e RISC, mentre i siRNA tagliano l'mRNA da soli come ribozimi",
+   "I miRNA attivano la traduzione dei bersagli, mentre i siRNA la bloccano degradandoli"
+  ],
+  "ans": 0,
+  "why": "Entrambi agiscono con Dicer e RISC; i siRNA rispondono a RNA estranei (virus, trasposoni, transgeni).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-101",
+  "topic": "d13-rna",
+  "level": "m",
+  "page": "260",
+  "src": "Biochimica I",
+  "q": "Come può un miRNA legato al suo mRNA bersaglio impedire la sintesi della proteina?",
+  "opts": [
+   "Tagliando l'mRNA, che poi viene degradato, oppure impedendone la traduzione",
+   "Legando il promotore del gene e impedendo il legame dell'RNA polimerasi II al DNA",
+   "Aggiungendo all'mRNA una seconda coda di poli-A che lo rende instabile",
+   "Legando la proteina appena sintetizzata e marcandola per il proteasoma",
+   "Integrandosi nel DNA del gene e interrompendone la sequenza codificante"
+  ],
+  "ans": 0,
+  "why": "L'mRNA tagliato, senza cap o coda poli-A, viene degradato dalle esonucleasi; in alternativa il ribosoma non riesce a procedere.",
+  "note": "Refuso nella sbobina (Biochimica I, p. 260): «non consentono al ribosoma di proseguire la trascrizione»; il ribosoma fa la traduzione.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-102",
+  "topic": "d13-rna",
+  "level": "a",
+  "page": "260",
+  "src": "Biochimica I",
+  "q": "Quale problema limita la somministrazione sistemica dei siRNA come farmaci?",
+  "opts": [
+   "Sono grandi, molto polari e vengono degradati dalle RNasi circolanti",
+   "Sono piccoli e apolari, quindi attraversano tutte le membrane senza selettività",
+   "Vengono riconosciuti come antigeni e neutralizzati dagli anticorpi circolanti",
+   "Si integrano nel genoma delle cellule e causano mutagenesi inserzionale",
+   "Richiedono la trascrittasi inversa della cellula bersaglio per diventare attivi"
+  ],
+  "ans": 0,
+  "why": "Per questo si preferiscono vie topiche (gocce, aerosol, iniezione intratumorale) o nanocarrier; è anche difficile ottenere una distribuzione specifica per tessuto.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-103",
+  "topic": "d10-steroidi",
+  "level": "f",
+  "page": "207",
+  "src": "Biochimica I",
+  "q": "Quanti atomi di carbonio ha l'isoprene, l'unità che compone i terpeni?",
+  "opts": [
+   "5",
+   "6",
+   "10",
+   "15",
+   "27"
+  ],
+  "ans": 0,
+  "why": "L'isoprene è un composto a 5 atomi di carbonio con due doppi legami; i terpeni sono suoi polimeri, molto idrofobici.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-104",
+  "topic": "d10-steroidi",
+  "level": "f",
+  "page": "207",
+  "src": "Biochimica I",
+  "q": "Di quale molecola è precursore il terpene squalene?",
+  "opts": [
+   "Colesterolo",
+   "Coenzima Q",
+   "Vitamina E",
+   "Retinolo",
+   "Acido arachidonico"
+  ],
+  "ans": 0,
+  "why": "Coenzima Q e vitamine A, E, K sono terpeni anch'essi, ma non derivano dallo squalene; l'acido arachidonico è un acido grasso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-105",
+  "topic": "d10-steroidi",
+  "level": "m",
+  "page": "208",
+  "src": "Biochimica I",
+  "q": "Quale di queste molecole NON deriva dal colesterolo?",
+  "opts": [
+   "Il coenzima Q",
+   "Il cortisolo",
+   "La vitamina D",
+   "L'acido colico",
+   "L'estradiolo"
+  ],
+  "ans": 0,
+  "why": "Dal colesterolo derivano sali biliari, ormoni steroidei e vitamina D; il coenzima Q è un terpene che non passa dal colesterolo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-106",
+  "topic": "d10-steroidi",
+  "level": "m",
+  "page": "208",
+  "src": "Biochimica I",
+  "q": "Che funzione hanno i sali biliari come il colico e il taurocolico?",
+  "opts": [
+   "Sono tensioattivi che emulsionano i grassi alimentari e ne favoriscono la digestione",
+   "Sono ormoni che stimolano la secrezione della lipasi pancreatica nel duodeno",
+   "Sono esteri del colesterolo che trasportano i grassi nel sangue dentro le HDL",
+   "Sono enzimi che idrolizzano i trigliceridi a livello dell'interfaccia olio-acqua nell'intestino",
+   "Sono vitamine liposolubili che regolano l'assorbimento intestinale del calcio"
+  ],
+  "ans": 0,
+  "why": "Hanno un lato idrofobico e uno idrofilico: formano micelle che permettono alla lipasi pancreatica di agire.",
+  "note": "Imprecisione nella sbobina (Biochimica I, p. 208): elenca i sali biliari, gli ormoni steroidei e la vitamina D sotto la voce «Esteri del colesterolo». Sono derivati del colesterolo, non esteri.",
+  "fixed": false
+ },
+ {
+  "id": "u1121-107",
+  "topic": "d10-steroidi",
+  "level": "a",
+  "page": "208",
+  "src": "Biochimica I",
+  "q": "Perché gli esteri del colesterolo sono ancora più idrofobici del colesterolo e dove si trovano?",
+  "opts": [
+   "L'OH in C3 è legato a un acido grasso: senza gruppo polare stanno nel core delle lipoproteine e nelle placche",
+   "L'OH in C3 è legato a un fosfato: diventano carichi e si dispongono sulla superficie delle lipoproteine",
+   "Gli anelli sono aperti da un acido grasso: diventano lineari e si inseriscono nel doppio strato lipidico di membrana",
+   "La catena laterale è legata a una glicina: diventano sali biliari e si accumulano nella colecisti",
+   "L'OH in C3 è legato a uno zucchero: diventano glicolipidi e si dispongono sul foglietto esterno"
+  ],
+  "ans": 0,
+  "why": "Esterificando l'unico gruppo polare si ottiene una molecola insolubile: viaggia dentro LDL e HDL ed è il principale costituente delle placche ateromatose. Che l'esterificazione sia sull'OH in C3 è dal Lehninger.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1121-108",
+  "topic": "d10-steroidi",
+  "level": "f",
+  "page": "208",
+  "src": "Biochimica I",
+  "q": "Che cosa sono prednisone e prednisolone?",
+  "opts": [
+   "Farmaci steroidei con potente attività antinfiammatoria",
+   "Sali biliari usati per sciogliere i calcoli della colecisti",
+   "Statine che inibiscono l'HMG-CoA reduttasi nel fegato",
+   "Precursori vegetali della vitamina D attivati dalla luce",
+   "Esteri del colesterolo che viaggiano soprattutto nelle HDL"
+  ],
+  "ans": 0,
+  "why": "Sono derivati sintetici degli ormoni steroidei (glucocorticoidi).",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

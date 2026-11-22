@@ -516,6 +516,9 @@
       head.setAttribute("aria-expanded", String(!closed));
       if (!pop.classList.contains("below")) anchor.classList.toggle("pop-closed", closed);
       head.querySelector(".pop-toggle-l").textContent = closed ? "Mostra" : "Nascondi";
+      // spiegazione chiusa: le opzioni tornano a grandezza piena; riaperta: si ricompattano
+      card.classList.toggle("pop-hidden", closed);
+      fitAnswered(card, pop, !closed);
     };
     head.addEventListener("click", toggle);
     head.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") toggle(e); });
@@ -524,10 +527,27 @@
     const body = card.querySelector(".card-body");
     pop.classList.add("below");
     if (body) body.append(pop); else { anchor.classList.add("has-pop"); anchor.append(pop); }
+    fitAnswered(card, pop, true);
     // vibrazione breve (solo dove il browser la permette, cioè Android) e animazione sulla risposta giusta
     try { if (navigator.vibrate) navigator.vibrate(ok ? 14 : [28, 45, 28]); } catch (e) { /* niente vibrazione */ }
     if (ok) { anchor.classList.add("just-right"); setTimeout(() => anchor.classList.remove("just-right"), 900); }
     else { anchor.classList.add("just-wrong"); setTimeout(() => anchor.classList.remove("just-wrong"), 500); }
+  }
+  // Dopo la risposta le opzioni non scelte si compattano su una riga (CSS .answered) per lasciare spazio alla spiegazione.
+  // Se lo spazio non basta comunque, la card scorre al suo interno e porta in vista la spiegazione.
+  function fitAnswered(card, pop, reveal) {
+    const body = card.querySelector(".card-body"); if (!body) return;
+    requestAnimationFrame(() => {
+      body.classList.remove("scroll");
+      if (body.scrollHeight <= body.clientHeight + 2) { body.scrollTop = 0; return; }
+      body.classList.add("scroll");
+      if (!reveal || !pop || pop.parentNode !== body) return;
+      const popBottom = pop.offsetTop + pop.offsetHeight - body.offsetTop + 10;
+      const need = popBottom - body.clientHeight;
+      const maxUp = pop.offsetTop - body.offsetTop - 12; // non spingere l'inizio della spiegazione fuori dall'alto
+      const top = Math.max(0, Math.min(need, maxUp));
+      try { body.scrollTo({ top, behavior: "smooth" }); } catch (e) { body.scrollTop = top; }
+    });
   }
   function optionList(opts, correct, onDone) {
     const wrap = h("div", { class: "options", role: "group" });

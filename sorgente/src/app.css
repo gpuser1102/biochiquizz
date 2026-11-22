@@ -575,3 +575,16 @@ button { font: inherit; color: inherit; }
 .pop.below .pop-body::-webkit-scrollbar { display: none; }
 .pop.below .rate { flex: none; }
 .pop.collapsed .pop-body { display: none; }
+
+/* Dopo la risposta: spazio alla spiegazione */
+/* le opzioni né giuste né scelte si riducono a una riga (tornano piene se chiudi la spiegazione) */
+.card.answered:not(.pop-hidden) .opt:not(.right):not(.wrong) { padding-block: 5px; font-size: 13px; opacity: .6; }
+.card.answered:not(.pop-hidden) .opt:not(.right):not(.wrong) .opt-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card.answered:not(.pop-hidden) .opt:not(.right):not(.wrong) .key { width: 22px; height: 22px; font-size: 11px; border-radius: 7px; }
+/* la spiegazione non viene più schiacciata: si mostra intera */
+.pop.below { flex: none; min-height: 0; overflow: visible; }
+.pop.below .pop-body { flex: none; overflow: visible; }
+/* se proprio non ci sta, la card scorre al suo interno (poi si passa alla domanda dopo) */
+.card-body.scroll { overflow-y: auto; scrollbar-width: none; overscroll-behavior-y: auto; -webkit-overflow-scrolling: touch; }
+.card-body.scroll::-webkit-scrollbar { display: none; }
+

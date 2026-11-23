@@ -274,9 +274,12 @@
   const ALL_ENZYMES = [...new Set([...C.reactions.map(r => r.enzyme), ...C.pathways.flatMap(p => p.steps.map(s => s.enzyme)), ...C.extraEnzymes])];
   const topicLabel = c => { if (c.kind === "mv") return "Vie metaboliche"; const t = TOPICS[c.topics.find(x => activeTopics().includes(x)) || c.topics[0]]; return t ? t.name : ""; };
   let toastTimer;
-  function toast(msg) {
+  // action facoltativa: { label, fn } mostra un pulsante nel toast (es. "Annulla")
+  function toast(msg, action) {
     let t = $(".toast"); if (!t) { t = h("div", { class: "toast", role: "status" }); document.body.append(t); }
-    t.textContent = msg; t.hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => t.hidden = true, 2600);
+    t.textContent = msg; t.hidden = false; clearTimeout(toastTimer);
+    if (action) t.append(h("button", { class: "toast-act", type: "button", onclick: () => { t.hidden = true; clearTimeout(toastTimer); action.fn(); } }, action.label));
+    toastTimer = setTimeout(() => t.hidden = true, action ? 5000 : 2600);
   }
 
   /* ---------------- Disegno delle molecole ---------------- */
@@ -906,6 +909,16 @@
     q.addEventListener("keydown", e => { if (e.key === "Enter") q.blur(); if (e.key === "Escape") { q.value = ""; q.dispatchEvent(new Event("input")); } });
     clr.addEventListener("click", () => { q.value = ""; q.dispatchEvent(new Event("input")); q.focus(); });
     root.append(h("div", { class: "search" }, h("span", { class: "search-ic", "aria-hidden": "true", html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>' }), q, clr));
+    // togli tutte le spunte con un solo tocco (con "Annulla" nel toast, per i tocchi involontari)
+    const nSel = S.selected.filter(id => TOPICS[id]).length;
+    const clearAll = h("button", { type: "button", class: "sel-clear", disabled: nSel ? null : "" }, "Togli tutti");
+    clearAll.addEventListener("click", () => {
+      const prev = { selected: S.selected.slice(), lastChecked: S.lastChecked };
+      S.selected = []; S.lastChecked = null;
+      save(); renderTopics(); resetFeed();
+      toast("Spunte tolte", { label: "Annulla", fn: () => { S.selected = prev.selected; S.lastChecked = prev.lastChecked; save(); renderTopics(); resetFeed(); } });
+    });
+    root.append(h("div", { class: "sel-bar" }, h("span", { class: "sel-n" }, nSel ? `${nSel} ${nSel === 1 ? "argomento spuntato" : "argomenti spuntati"}` : "Nessun argomento spuntato"), clearAll));
     const onlyLast = h("input", { type: "checkbox", id: "only-last", role: "switch", "aria-label": "Solo l'ultimo argomento spuntato" });
     onlyLast.checked = !!S.onlyLast;
     onlyLast.addEventListener("change", () => { S.onlyLast = onlyLast.checked; save(); resetFeed(); });

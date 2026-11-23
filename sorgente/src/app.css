@@ -305,6 +305,14 @@ button { font: inherit; color: inherit; }
   position: fixed; left: 50%; bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px) + 18px); transform: translateX(-50%);
   background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 14px; font-size: 14px; font-weight: 600; z-index: 60; max-width: calc(100% - 32px);
 }
+.toast { display: flex; align-items: center; gap: 12px; }
+.toast[hidden] { display: none; }
+.toast-act { border: 0; background: none; color: var(--accent-soft); font: inherit; font-weight: 800; padding: 2px 0; cursor: pointer; }
+.sel-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 0 4px; }
+.sel-n { font-size: 14px; color: var(--muted); }
+.sel-clear { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 700; cursor: pointer; }
+.sel-clear:not([disabled]):active { background: var(--surface-2); }
+.sel-clear[disabled] { opacity: .45; cursor: default; }
 .confirm { display: flex; flex-direction: column; gap: 10px; padding: 12px; }
 .confirm .btns { display: flex; gap: 8px; flex-wrap: wrap; }
 

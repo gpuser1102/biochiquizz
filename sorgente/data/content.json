@@ -1,5 +1,5 @@
 {
-  "version": "1.8.2",
+  "version": "1.9.0",
   "topics": [
     {
       "subject": "Biochimica II",
@@ -1152,15 +1152,21 @@
             },
             {
               "id": "d13-clonaggio",
-              "name": "Clonaggio genico"
+              "name": "Clonaggio genico",
+              "ready": true,
+              "added": "2026-11-24"
             },
             {
               "id": "d13-pcr",
-              "name": "PCR e applicazioni"
+              "name": "PCR e applicazioni",
+              "ready": true,
+              "added": "2026-11-24"
             },
             {
               "id": "d13-editing",
-              "name": "Editing del DNA"
+              "name": "Editing del DNA",
+              "ready": true,
+              "added": "2026-11-24"
             }
           ]
         }

@@ -195,7 +195,7 @@ q("h2g-07", T, "h", "45", "Una fosfoglicerato mutasi priva del fosfato sull'isti
   'Dal fosfoenolpiruvato tramite la piruvato chinasi',
   ], 0,
   "L'enzima fosforilato passa il fosfato al C2 e lo riprende dal C3, attraverso il 2,3-BPG intermedio.")
-q("h2g-08", T, "h", "47", "Qual è il bilancio netto della glicolisi per una molecola di glucosio?", [
+q("h2g-08", T, "h", "47", "Una cellula che consuma glucosio in anaerobiosi tiene il conto di ATP, NADH e piruvato. Che bilancio netto ottiene dalla sola glicolisi?", [
   'Glucosio → 2 piruvato + 2 NADH + 2 ATP netti',
   'Glucosio → 2 piruvato + 2 NADH + 4 ATP netti',
   'Glucosio → 2 lattato + 2 NADH + 2 ATP netti',

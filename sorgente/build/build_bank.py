@@ -81,6 +81,25 @@ print("posizione della giusta per lunghezza (0 = la più lunga):", dict(sorted(p
 print(f"giusta strettamente più lunga: {len(lun)}/{len(B)} ({len(lun)/len(B):.0%})")
 for x in lun:
     print("  LUNGA", x["id"], len(x["opts"][x["ans"]]), max(len(o) for i, o in enumerate(x["opts"]) if i != x["ans"]))
+# controllo doppioni: domande quasi identiche nello stesso argomento
+import difflib as _dl, itertools as _it, re as _re
+def _norm(t):
+    t = _re.sub(r"[^a-zà-ÿ0-9 ]", " ", t.lower())
+    return " ".join(t.split())
+_bytopic = {}
+for x in B: _bytopic.setdefault(x["topic"], []).append(x)
+_dups = []
+for _t, _xs in _bytopic.items():
+    for _a, _c in _it.combinations(_xs, 2):
+        _r = _dl.SequenceMatcher(None, _norm(_a["q"]), _norm(_c["q"])).ratio()
+        if _r > 0.88:
+            _dups.append((round(_r, 2), _t, _a["id"], _c["id"], _a["q"][:60]))
+if _dups:
+    print(f"ATTENZIONE: {len(_dups)} coppie di domande quasi identiche nello stesso argomento")
+    for _d in sorted(_dups, reverse=True): print("  DOPPIONE?", *_d)
+else:
+    print("nessun doppione sospetto")
+
 json.dump(B, open(os.path.join(os.path.dirname(HERE), "data", "bank.json"), "w"), ensure_ascii=False, indent=1)
 from collections import Counter
 print(len(B), "domande", dict(Counter(x["level"] for x in B)))

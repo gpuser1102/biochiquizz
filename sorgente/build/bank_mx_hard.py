@@ -6,7 +6,7 @@ q("x1c-01", T, "a", "6–7", "Dopo un pasto, a che cosa servono soprattutto il N
   "A sostenere le biosintesi riduttive (anabolismo), che consumano ATP e potere riducente", "A produrre altro glucosio", "A essere eliminati con le urine", "A ridurre l'ossigeno nel citosol"], 0,
   "Catabolismo ossidativo e anabolismo riduttivo sono accoppiati da ATP e coenzimi ridotti.",
   note="Sbobina di Biochimica II, p. 6: c'è scritto che per potere riducente delle biosintesi si intende «soprattutto NADH». Il coenzima delle biosintesi riduttive è il NADPH; il NADH serve soprattutto al catabolismo (lo dice la stessa sbobina a p. 159).")
-q("x1c-02", T, "a", "6", "Perché vitamine e sali minerali sono indispensabili pur non fornendo energia?", [
+q("x1c-02", T, "a", "6", "Una dieta copre perfettamente calorie, proteine e grassi ma è povera di vitamine. Perché il metabolismo energetico si blocca lo stesso?", [
   "Perché da molte vitamine derivano i coenzimi (es. NAD, FAD) delle reazioni di ossidoriduzione", "Perché vengono ossidati nel ciclo di Krebs", "Perché formano ATP direttamente", "Perché sono metaboliti terminali"], 0,
   "Sono micronutrienti: servono in piccole quantità come cofattori.")
 q("x1c-03", T, "l", "6", "Come viene eliminato l'azoto in eccesso degli amminoacidi, secondo lo schema del catabolismo?", [

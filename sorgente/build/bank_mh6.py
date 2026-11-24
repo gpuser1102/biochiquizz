@@ -86,7 +86,7 @@ q("h6g-02", T, "h", "165", "In un epatocita dopo un pasto ricco di carboidrati, 
   'Non cambia nulla, perché la via è regolata solo dagli ormoni',
   ], 0,
   "Il NADPH viene consumato dalla sintesi degli acidi grassi e il flusso del G6P nella via aumenta. Non è nelle sbobine che l'insulina aumenta anche la sintesi di G6PD.")
-q("h6g-03", T, "h", "159", "In quali tessuti la via dei pentoso fosfati è particolarmente attiva e perché?", [
+q("h6g-03", T, "h", "159", "Un tessuto consuma molto NADPH per la sintesi dei grassi o per difendersi dai radicali. Dove ti aspetti quindi una via dei pentoso fosfati molto attiva?", [
   'Fegato, adiposo, mammella, surrene, eritrociti, tessuti proliferanti',
   'Solo muscolo scheletrico e cuore',
   'Solo cervello e retina',

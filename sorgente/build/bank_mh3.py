@@ -137,7 +137,7 @@ q("h3c-08", T, "h", "98–99", "Nel complesso IV, quale affermazione sui protoni
   note="Sbobina di Biochimica II, p. 99: c'è scritto «8 protoni in totale vengono pompati». Gli 8 H⁺ sono prelevati dalla matrice, ma ne vengono pompati solo 4; gli altri 4 si combinano con l'O₂.")
 
 T = "m3-atpsintasi"
-q("h3s-01", T, "h", "100", "Quali due componenti formano la forza motrice protonica?", [
+q("h3s-01", T, "h", "100", "I protoni pompati fuori dalla matrice si accumulano come energia utilizzabile. In quali due componenti si scompone questa energia?", [
   'Un gradiente elettrico e un gradiente di pH',
   'Un gradiente di ATP e uno di ADP',
   'Un gradiente di Na⁺ e uno di K⁺',

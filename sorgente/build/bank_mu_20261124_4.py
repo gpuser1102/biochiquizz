@@ -133,13 +133,3 @@ q("u1124-168", M, "a", "129", "Un paziente arriva riferendo un forte dolore tora
   "La creatina chinasi delle urine, più stabile di quella del sangue",
   ], 0,
   "La CK può essere già rientrata a 48 ore: accoppiando la LDH, che permane, si può datare l'evento anche a distanza di giorni.")
-
-q("u1124-169", M, "h", "128", "Quale abbinamento via metabolica – compartimento è corretto secondo la sbobina?", [
-  "Sintesi degli acidi grassi – citosol",
-  "Sintesi degli acidi grassi – matrice mitocondriale",
-  "Ciclo di Krebs – citosol",
-  "Ossidazione degli acidi grassi – lisosomi",
-  "Decarbossilazione del piruvato – citosol",
-  ], 0,
-  "Nei mitocondri: ciclo di Krebs, ossidazione degli acidi grassi e decarbossilazione del piruvato. Nel citosol: glicolisi, via dell'HMP e sintesi degli acidi grassi. Nei lisosomi: degradazione di biomolecole complesse.",
-  fixed=False)

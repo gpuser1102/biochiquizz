@@ -22929,7 +22929,7 @@
   "level": "h",
   "page": "47",
   "src": "Biochimica II",
-  "q": "Qual è il bilancio netto della glicolisi per una molecola di glucosio?",
+  "q": "Una cellula che consuma glucosio in anaerobiosi tiene il conto di ATP, NADH e piruvato. Che bilancio netto ottiene dalla sola glicolisi?",
   "opts": [
    "Glucosio → 2 piruvato + 2 NADH + 2 ATP netti",
    "Glucosio → 2 piruvato + 2 NADH + 4 ATP netti",
@@ -24012,7 +24012,7 @@
   "level": "h",
   "page": "100",
   "src": "Biochimica II",
-  "q": "Quali due componenti formano la forza motrice protonica?",
+  "q": "I protoni pompati fuori dalla matrice si accumulano come energia utilizzabile. In quali due componenti si scompone questa energia?",
   "opts": [
    "Un gradiente elettrico e un gradiente di pH",
    "Un gradiente di ATP e uno di ADP tra i due lati",
@@ -26330,7 +26330,7 @@
   "level": "h",
   "page": "159",
   "src": "Biochimica II",
-  "q": "In quali tessuti la via dei pentoso fosfati è particolarmente attiva e perché?",
+  "q": "Un tessuto consuma molto NADPH per la sintesi dei grassi o per difendersi dai radicali. Dove ti aspetti quindi una via dei pentoso fosfati molto attiva?",
   "opts": [
    "Fegato, adiposo, mammella, surrene, eritrociti, tessuti proliferanti",
    "Solo muscolo scheletrico e cuore, per l'alto consumo di ATP",
@@ -37706,25 +37706,6 @@
   "fixed": false
  },
  {
-  "id": "u1124-169",
-  "topic": "d6-marcatori",
-  "level": "h",
-  "page": "128",
-  "src": "Biochimica I",
-  "q": "Quale abbinamento via metabolica – compartimento è corretto secondo la sbobina?",
-  "opts": [
-   "Sintesi degli acidi grassi – citosol",
-   "Sintesi degli acidi grassi – matrice mitocondriale",
-   "Ciclo di Krebs – citosol",
-   "Ossidazione degli acidi grassi – lisosomi",
-   "Decarbossilazione del piruvato – citosol"
-  ],
-  "ans": 0,
-  "why": "Nei mitocondri: ciclo di Krebs, ossidazione degli acidi grassi e decarbossilazione del piruvato. Nel citosol: glicolisi, via dell'HMP e sintesi degli acidi grassi. Nei lisosomi: degradazione di biomolecole complesse.",
-  "note": null,
-  "fixed": false
- },
- {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",
@@ -37749,7 +37730,7 @@
   "level": "a",
   "page": "6",
   "src": "Biochimica II",
-  "q": "Perché vitamine e sali minerali sono indispensabili pur non fornendo energia?",
+  "q": "Una dieta copre perfettamente calorie, proteine e grassi ma è povera di vitamine. Perché il metabolismo energetico si blocca lo stesso?",
   "opts": [
    "Da molte vitamine derivano i coenzimi (es. NAD, FAD) delle ossidoriduzioni",
    "Vengono ossidati nel ciclo di Krebs e forniscono elettroni alla catena respiratoria",

@@ -4385,7 +4385,7 @@
   ],
   "ans": 0,
   "why": "Serve mangiare carboidrati, subito dopo lo sforzo e poi a intervalli regolari nelle 24 ore successive.",
-  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». L'enzima irreversibile tra piruvato e acetil-CoA è la piruvato deidrogenasi.",
+  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». La piruvato carbossilasi è irreversibile, ma porta il piruvato a ossalacetato: la tappa che non si può percorrere all'indietro, e che impedisce di tornare al piruvato, è quella della piruvato deidrogenasi.",
   "fixed": false
  },
  {
@@ -23974,7 +23974,7 @@
   "level": "h",
   "page": "96–97",
   "src": "Biochimica II",
-  "q": "A che cosa serve il ciclo Q nel complesso III?",
+  "q": "L'ubichinolo cede due elettroni alla volta, il citocromo c ne accetta uno solo. Come risolve il complesso III questa incompatibilità?",
   "opts": [
    "A passare un elettrone alla volta al citocromo c pompando più protoni",
    "A ridurre direttamente l'O₂ ad acqua nel complesso III, senza il complesso IV",
@@ -24639,7 +24639,7 @@
   "level": "h",
   "page": "124",
   "src": "Biochimica II",
-  "q": "Che cosa fa la glicogenina?",
+  "q": "La glicogeno sintasi non sa iniziare una catena da zero: ha bisogno di un innesco già pronto. Chi glielo fornisce, e in che modo?",
   "opts": [
    "Si autoglucosila su una tirosina e forma il primer per la sintasi",
    "Crea le ramificazioni α-1,6 nelle catene in crescita prodotte dalla sintasi",
@@ -24725,7 +24725,7 @@
   ],
   "ans": 0,
   "why": "La PDH è irreversibile: non c'è sintesi netta di glucosio dai grassi. Servono carboidrati, meglio subito dopo lo sforzo.",
-  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che dall'acetil-CoA non si riottiene il piruvato perché «la reazione della piruvato carbossilasi è irreversibile». L'irreversibile in questione è la piruvato deidrogenasi (piruvato → acetil-CoA).",
+  "note": "Sbobina di Biochimica II, p. 135: c'è scritto che dall'acetil-CoA non si riottiene il piruvato perché «la reazione della piruvato carbossilasi è irreversibile». Anche la piruvato carbossilasi è irreversibile, ma porta il piruvato a ossalacetato: la tappa che blocca il ritorno dall'acetil-CoA al piruvato è quella della piruvato deidrogenasi.",
   "fixed": false
  },
  {
@@ -24848,7 +24848,7 @@
   "level": "h",
   "page": "126",
   "src": "Biochimica II",
-  "q": "Come agisce l'insulina sulla glicogeno sintasi?",
+  "q": "Dopo un pasto ricco di carboidrati il muscolo riempie le riserve di glicogeno. Attraverso quale catena di eventi l'insulina ottiene questo effetto sulla sintasi?",
   "opts": [
    "Attiva la PKB, che inattiva la GSK3: la sintasi resta defosforilata",
    "Attiva la GSK3, che fosforila la glicogeno sintasi e la porta nella forma attiva",
@@ -25133,7 +25133,7 @@
   "level": "h",
   "page": "135",
   "src": "Biochimica II",
-  "q": "Che cos'è la supercompensazione del glicogeno?",
+  "q": "Un maratoneta svuota le riserve con un allenamento lungo e nei giorni successivi mangia molti carboidrati. Che cosa succede al glicogeno del suo muscolo?",
   "opts": [
    "Il glicogeno, dopo l'esaurimento, sale oltre i valori iniziali con molti carboidrati",
    "La sintesi di glicogeno muscolare a partire dagli acidi grassi della dieta dopo uno sforzo",
@@ -25437,7 +25437,7 @@
   "level": "h",
   "page": "140",
   "src": "Biochimica II",
-  "q": "Dove avviene la gluconeogenesi?",
+  "q": "Dopo un digiuno prolungato il glucosio circolante è tutto di produzione endogena. Quali organi lo producono, e in che proporzione?",
   "opts": [
    "Fegato (circa 90%) e rene (circa 10%)",
    "Muscolo scheletrico e cuore",
@@ -25475,7 +25475,7 @@
   "level": "h",
   "page": "149",
   "src": "Biochimica II",
-  "q": "Su quali tessuti agisce il cortisolo per favorire la gluconeogenesi?",
+  "q": "Un paziente in terapia cronica con cortisonici sviluppa iperglicemia e perdita di massa muscolare. Su quali tessuti sta agendo l'ormone per sostenere la gluconeogenesi?",
   "opts": [
    "Fegato, muscolo e tessuto adiposo",
    "Solo fegato, sugli enzimi",
@@ -36680,25 +36680,6 @@
   "fixed": false
  },
  {
-  "id": "u1124-113",
-  "topic": "d8-fibrina",
-  "level": "a",
-  "page": "175",
-  "src": "Biochimica I",
-  "q": "Con quale fattore della coagulazione viaggia nel sangue il fattore di von Willebrand?",
-  "opts": [
-   "Con il fattore VIII, il fattore antiemofilico",
-   "Con il fattore XIII, la transglutamminasi del coagulo",
-   "Con il fattore X, punto di convergenza delle due vie",
-   "Con il fattore VII, attivato dal fattore tissutale",
-   "Con il fattore V, cofattore della protrombinasi"
-  ],
-  "ans": 0,
-  "why": "Il vWF fa da proteina trasportatrice del fattore VIII e ne impedisce la degradazione precoce nel plasma.",
-  "note": "Errore nella sbobina (Biochimica I, p. 175): dice che il fattore di von Willebrand «viaggia con il fattore XIII (il fattore emofilico)». Il fattore antiemofilico trasportato dal vWF è il fattore VIII; il fattore XIII è la transglutamminasi che stabilizza il coagulo.",
-  "fixed": false
- },
- {
   "id": "u1124-114",
   "topic": "d8-fibrina",
   "level": "h",
@@ -37418,25 +37399,6 @@
   "ans": 0,
   "why": "Per questo viene legato nel citosol dalla perossiredossina I, che ne limita la citotossicità; l'eccesso induce la sintesi di proteine che lo incorporano e viene poi degradato.",
   "note": null,
-  "fixed": false
- },
- {
-  "id": "u1124-152",
-  "topic": "bm11-eme",
-  "level": "a",
-  "page": "lezione 11",
-  "src": "Biologia molecolare",
-  "q": "La sbobina definisce la porfiria eritropoietica congenita «la più diffusa». Che cosa è corretto sapere?",
-  "opts": [
-   "È in realtà fra le più rare; la porfiria più frequente è la cutanea tarda",
-   "È davvero la più diffusa, ma solo nella popolazione pediatrica",
-   "È la più diffusa fra le porfirie acute, non fra quelle cutanee",
-   "È la più diffusa perché è l'unica a trasmissione autosomica dominante",
-   "È la più diffusa anche nei testi di riferimento, che la chiamano porfiria di Doss"
-  ],
-  "ans": 0,
-  "why": "Il deficit di uroporfirinogeno III cosintasi dà la malattia di Günther, con accumulo di uroporfirinogeno I, anemia, debolezza, fotosensibilità e pallore: quadro grave ma rarissimo.",
-  "note": "Errore nella sbobina (Biologia molecolare, lezione sull'eme): la porfiria eritropoietica congenita è indicata come «la più diffusa». Nei testi di riferimento è una delle porfirie più rare; la più frequente è la porfiria cutanea tarda, da deficit di uroporfirinogeno decarbossilasi.",
   "fixed": false
  },
  {

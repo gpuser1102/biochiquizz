@@ -75,16 +75,6 @@ q("u1124-112", F, "l", "175", "Quali sono le caratteristiche genetiche del fatto
   ], 0,
   "È sintetizzata da cellule endoteliali e megacariociti. I tipi 1 e 2 della malattia sono autosomici dominanti, il tipo 3 autosomico recessivo.", src=S1)
 
-q("u1124-113", F, "a", "175", "Con quale fattore della coagulazione viaggia nel sangue il fattore di von Willebrand?", [
-  "Con il fattore VIII, il fattore antiemofilico",
-  "Con il fattore XIII, la transglutamminasi del coagulo",
-  "Con il fattore X, punto di convergenza delle due vie",
-  "Con il fattore VII, attivato dal fattore tissutale",
-  "Con il fattore V, cofattore della protrombinasi",
-  ], 0,
-  "Il vWF fa da proteina trasportatrice del fattore VIII e ne impedisce la degradazione precoce nel plasma.", src=S1,
-  note="Errore nella sbobina (Biochimica I, p. 175): dice che il fattore di von Willebrand «viaggia con il fattore XIII (il fattore emofilico)». Il fattore antiemofilico trasportato dal vWF è il fattore VIII; il fattore XIII è la transglutamminasi che stabilizza il coagulo.")
-
 q("u1124-114", F, "h", "176", "Perché il fibrinogeno circola in grande quantità senza formare coaguli spontanei?", [
   "Ha carica netta negativa e le molecole si respingono fra loro",
   "È legato all'albumina, che ne impedisce l'associazione in fibre",
@@ -452,16 +442,6 @@ q("u1124-151", CE, "h", "lezione 11", "Perché l'eme libero nel citosol è un pr
 
 # ── Sintesi e degradazione dell'eme (Biologia molecolare) ───────────────────
 EM = "bm11-eme"
-
-q("u1124-152", EM, "a", "lezione 11", "La sbobina definisce la porfiria eritropoietica congenita «la più diffusa». Che cosa è corretto sapere?", [
-  "È in realtà fra le più rare; la porfiria più frequente è la cutanea tarda",
-  "È davvero la più diffusa, ma solo nella popolazione pediatrica",
-  "È la più diffusa fra le porfirie acute, non fra quelle cutanee",
-  "È la più diffusa perché è l'unica a trasmissione autosomica dominante",
-  "È la più diffusa anche nei testi di riferimento, che la chiamano porfiria di Doss",
-  ], 0,
-  "Il deficit di uroporfirinogeno III cosintasi dà la malattia di Günther, con accumulo di uroporfirinogeno I, anemia, debolezza, fotosensibilità e pallore: quadro grave ma rarissimo.", src=S2,
-  note="Errore nella sbobina (Biologia molecolare, lezione sull'eme): la porfiria eritropoietica congenita è indicata come «la più diffusa». Nei testi di riferimento è una delle porfirie più rare; la più frequente è la porfiria cutanea tarda, da deficit di uroporfirinogeno decarbossilasi.")
 
 q("u1124-153", EM, "m", "lezione 11", "Quali prodotti libera l'eme ossigenasi?", [
   "Ferro, monossido di carbonio e biliverdina",

@@ -26,7 +26,7 @@ q("h5f-03", T, "h", "140–141", "Quali sono i principali precursori della gluco
   'Colesterolo, glicerolo e acidi grassi a catena pari',
   ], 0,
   "Il lattato viene da eritrociti e muscolo, l'alanina dalle proteine muscolari, il glicerolo dai trigliceridi del tessuto adiposo. Gli acidi grassi a catena pari non danno glucosio netto.")
-q("h5f-04", T, "h", "140", "Dove avviene la gluconeogenesi?", [
+q("h5f-04", T, "h", "140", "Dopo un digiuno prolungato il glucosio circolante è tutto di produzione endogena. Quali organi lo producono, e in che proporzione?", [
   'Fegato (circa 90%) e rene (circa 10%)',
   'Muscolo scheletrico e cuore',
   'Cervello e midollo spinale',
@@ -43,7 +43,7 @@ q("h5f-05", T, "h", "142", "Perché il cortisolo è legato al ritmo della glucon
   ], 0,
   'Ha un minimo verso mezzanotte. Come ormone steroideo agisce tramite un recettore nucleare sulla trascrizione: effetti lenti.',
   note="Sbobina di Biochimica II, p. 142: il cortisolo è definito «ormone anabolizzante» perché fa sintetizzare proteine. Nel metabolismo il cortisolo è catabolico per le proteine muscolari (le degrada per dare amminoacidi alla gluconeogenesi, come dice la stessa sbobina a p. 149); induce la sintesi di specifici enzimi epatici.")
-q("h5f-06", T, "h", "149", "Su quali tessuti agisce il cortisolo per favorire la gluconeogenesi?", [
+q("h5f-06", T, "h", "149", "Un paziente in terapia cronica con cortisonici sviluppa iperglicemia e perdita di massa muscolare. Su quali tessuti sta agendo l'ormone per sostenere la gluconeogenesi?", [
   'Fegato, muscolo e tessuto adiposo',
   'Solo fegato',
   'Pancreas e cervello',

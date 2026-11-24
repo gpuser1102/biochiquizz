@@ -108,7 +108,7 @@ q("m4e-03", T, "a", "135", "Perché con una dieta ricca di grassi e povera di ca
   "Gli acidi grassi danno acetil-CoA, ma la piruvato deidrogenasi è irreversibile: dall'acetil-CoA non si torna al piruvato e quindi al glucosio",
   "Perché i grassi inibiscono la glicogeno sintasi", "Perché gli acidi grassi non entrano nel muscolo", "Perché i grassi consumano tutto l'ATP"], 0,
   "Serve mangiare carboidrati, subito dopo lo sforzo e poi a intervalli regolari nelle 24 ore successive.",
-  note="Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». L'enzima irreversibile tra piruvato e acetil-CoA è la piruvato deidrogenasi.")
+  note="Sbobina di Biochimica II, p. 135: c'è scritto che «la reazione della piruvato carbossilasi è irreversibile». La piruvato carbossilasi è irreversibile, ma porta il piruvato a ossalacetato: la tappa che non si può percorrere all'indietro, e che impedisce di tornare al piruvato, è quella della piruvato deidrogenasi.")
 q("m4e-04", T, "l", "134", "Quanto dura indicativamente la riserva di fosfocreatina in uno sforzo massimale?", ["Pochi secondi", "Circa 10 minuti", "Circa un'ora", "Un giorno"], 0,
   "Dopo pochi secondi subentra la glicolisi anaerobia.")
 

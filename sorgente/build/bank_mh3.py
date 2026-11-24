@@ -118,7 +118,7 @@ q("h3c-06", T, "h", "95", "Quale caratteristica rende il coenzima Q adatto a rac
   'Accetta elettroni solo dal NADH tramite il FMN del complesso I',
   ], 0,
   'La coda isoprenica lo tiene nella membrana interna. Il citocromo c invece è una proteina solubile dello spazio intermembrana.')
-q("h3c-07", T, "h", "96–97", "A che cosa serve il ciclo Q nel complesso III?", [
+q("h3c-07", T, "h", "96–97", "L'ubichinolo cede due elettroni alla volta, il citocromo c ne accetta uno solo. Come risolve il complesso III questa incompatibilità?", [
   'A passare un elettrone alla volta al citocromo c pompando più protoni',
   "A ridurre direttamente l'O₂ ad acqua nel complesso III",
   'A trasferire gli elettroni dal NADH al FMN del complesso I',

@@ -77,7 +77,7 @@ q("h4s-01", T, "h", "124", "Qual è il donatore di glucosio per la glicogeno sin
   'CDP-glucosio, da glucosio 6-fosfato + CTP',
   ], 0,
   "La UDP-glucosio pirofosforilasi forma UDP-glucosio + PPi; l'idrolisi del PPi rende la reazione irreversibile. L'UTP è il nucleotide delle biosintesi dei carboidrati.")
-q("h4s-02", T, "h", "124", "Che cosa fa la glicogenina?", [
+q("h4s-02", T, "h", "124", "La glicogeno sintasi non sa iniziare una catena da zero: ha bisogno di un innesco già pronto. Chi glielo fornisce, e in che modo?", [
   'Si autoglucosila su una tirosina e forma il primer per la sintasi',
   'Crea le ramificazioni α-1,6 nelle catene in crescita prodotte dalla sintasi',
   "Degrada il glicogeno all'interno dei lisosomi",
@@ -117,7 +117,7 @@ q("h4s-06", T, "h", "135", "Perché una dieta ricca di grassi e povera di carboi
   "Senza carboidrati l'insulina non viene mai secreta",
   ], 0,
   "La PDH è irreversibile: non c'è sintesi netta di glucosio dai grassi. Servono carboidrati, meglio subito dopo lo sforzo.",
-  note="Sbobina di Biochimica II, p. 135: c'è scritto che dall'acetil-CoA non si riottiene il piruvato perché «la reazione della piruvato carbossilasi è irreversibile». L'irreversibile in questione è la piruvato deidrogenasi (piruvato → acetil-CoA).")
+  note="Sbobina di Biochimica II, p. 135: c'è scritto che dall'acetil-CoA non si riottiene il piruvato perché «la reazione della piruvato carbossilasi è irreversibile». Anche la piruvato carbossilasi è irreversibile, ma porta il piruvato a ossalacetato: la tappa che blocca il ritorno dall'acetil-CoA al piruvato è quella della piruvato deidrogenasi.")
 q("h4s-07", T, "h", "124–125", "Quale coppia di enzimi va regolata in modo reciproco per evitare un ciclo futile nel metabolismo del glicogeno?", [
   'Glicogeno sintasi e glicogeno fosforilasi',
   'Glicogeno sintasi e glicogenina',
@@ -168,7 +168,7 @@ q("h4r-04", T, "h", "130", "Nel fegato, come fa il glucosio ad attivare anche la
   'Il glucosio attiva la PKA, che defosforila la glicogeno sintasi',
   ], 0,
   'La fosforilasi a in R lega e inibisce la PP1; il glucosio la porta in T, la PP1 si libera, la defosforila (→ b) e poi defosforila la glicogeno sintasi.')
-q("h4r-05", T, "h", "126", "Come agisce l'insulina sulla glicogeno sintasi?", [
+q("h4r-05", T, "h", "126", "Dopo un pasto ricco di carboidrati il muscolo riempie le riserve di glicogeno. Attraverso quale catena di eventi l'insulina ottiene questo effetto sulla sintasi?", [
   'Attiva la PKB, che inattiva la GSK3: la sintasi resta defosforilata',
   'Attiva la GSK3, che fosforila la glicogeno sintasi e la porta nella forma attiva',
   'Attiva la PKA, che fosforila direttamente la glicogeno sintasi',
@@ -296,7 +296,7 @@ q("h4a-03", T, "h", "135", "Qual è la strategia migliore per ricostituire il gl
   'Carboidrati solo dopo 48 ore di riposo',
   ], 0,
   'Subito dopo lo sforzo la sintesi di glicogeno è particolarmente attiva.')
-q("h4a-04", T, "h", "135", "Che cos'è la supercompensazione del glicogeno?", [
+q("h4a-04", T, "h", "135", "Un maratoneta svuota le riserve con un allenamento lungo e nei giorni successivi mangia molti carboidrati. Che cosa succede al glicogeno del suo muscolo?", [
   "Il glicogeno, dopo l'esaurimento, sale oltre i valori iniziali con molti carboidrati",
   'La sintesi di glicogeno muscolare a partire dagli acidi grassi della dieta dopo uno sforzo',
   'La degradazione molto rapida del glicogeno durante lo sforzo intenso',

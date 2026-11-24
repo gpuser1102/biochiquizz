@@ -875,7 +875,7 @@
 
   /* ---------------- Argomenti ---------------- */
   // ricerca: senza accenti e maiuscole; resta attiva anche quando la pagina si ridisegna (spunte)
-  let topicQuery = "", topicIndex = [];
+  let topicQuery = "", topicScope = "*", topicIndex = [];
   const normQ = s => String(s).toLowerCase().replace(/α/g, "alfa").replace(/β/g, "beta").replace(/γ/g, "gamma").replace(/ω/g, "omega")
     .normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[-‐–—'’/,.()]+/g, " ");
   function filterTopics() {
@@ -919,6 +919,31 @@
       toast("Spunte tolte", { label: "Annulla", fn: () => { S.selected = prev.selected; S.lastChecked = prev.lastChecked; save(); renderTopics(); resetFeed(); } });
     });
     root.append(h("div", { class: "sel-bar" }, h("span", { class: "sel-n" }, nSel ? `${nSel} ${nSel === 1 ? "argomento spuntato" : "argomenti spuntati"}` : "Nessun argomento spuntato"), clearAll));
+    // spunta in blocco: tutti gli argomenti, oppure quelli di una sola materia
+    const scopeSel = h("select", { class: "scope-sel", "aria-label": "Quali argomenti spuntare" },
+      h("option", { value: "*" }, "Tutti gli argomenti"),
+      ...C.topics.map(sub => h("option", { value: sub.subject }, "Solo " + sub.subject)));
+    scopeSel.value = topicScope;
+    const scopeIds = () => C.topics
+      .filter(sub => topicScope === "*" || sub.subject === topicScope)
+      .flatMap(sub => sub.blocks.flatMap(b => b.topics.filter(t => t.ready).map(t => t.id)));
+    const checkAll = h("button", { type: "button", class: "sel-all" }, "Spunta tutti");
+    const syncScope = () => {
+      const ids = scopeIds();
+      checkAll.disabled = !ids.length || ids.every(id => S.selected.includes(id));
+    };
+    scopeSel.addEventListener("change", () => { topicScope = scopeSel.value; syncScope(); });
+    checkAll.addEventListener("click", () => {
+      const ids = scopeIds();
+      if (!ids.length) return;
+      const prev = { selected: S.selected.slice(), lastChecked: S.lastChecked };
+      S.selected = ids.slice(); S.lastChecked = ids[ids.length - 1];
+      save(); renderTopics(); resetFeed();
+      const what = topicScope === "*" ? "Tutti gli argomenti spuntati" : topicScope + ": argomenti spuntati";
+      toast(`${what} (${ids.length})`, { label: "Annulla", fn: () => { S.selected = prev.selected; S.lastChecked = prev.lastChecked; save(); renderTopics(); resetFeed(); } });
+    });
+    syncScope();
+    root.append(h("div", { class: "sel-bar scope-bar" }, scopeSel, checkAll));
     const onlyLast = h("input", { type: "checkbox", id: "only-last", role: "switch", "aria-label": "Solo l'ultimo argomento spuntato" });
     onlyLast.checked = !!S.onlyLast;
     onlyLast.addEventListener("change", () => { S.onlyLast = onlyLast.checked; save(); resetFeed(); });

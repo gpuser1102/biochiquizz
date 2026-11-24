@@ -313,6 +313,11 @@ button { font: inherit; color: inherit; }
 .sel-clear { border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 700; cursor: pointer; }
 .sel-clear:not([disabled]):active { background: var(--surface-2); }
 .sel-clear[disabled] { opacity: .45; cursor: default; }
+.scope-bar { margin-top: 10px; }
+.scope-sel { flex: 1 1 auto; min-width: 0; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 34px 8px 14px; font-size: 14px; font-weight: 600; font-family: inherit; cursor: pointer; appearance: none; background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 16px; }
+.sel-all { flex: 0 0 auto; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 7px 14px; font-size: 14px; font-weight: 700; font-family: inherit; cursor: pointer; }
+.sel-all:not([disabled]):active { background: var(--surface-2); }
+.sel-all[disabled] { opacity: .45; cursor: default; }
 .confirm { display: flex; flex-direction: column; gap: 10px; padding: 12px; }
 .confirm .btns { display: flex; gap: 8px; flex-wrap: wrap; }
 

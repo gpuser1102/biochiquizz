@@ -37459,6 +37459,272 @@
   "fixed": false
  },
  {
+  "id": "u1124-156",
+  "topic": "d6-caratteristiche",
+  "level": "f",
+  "page": "114",
+  "src": "Biochimica I",
+  "q": "Su che cosa agisce un enzima per accelerare una reazione?",
+  "opts": [
+   "Sull'energia di attivazione, che abbassa",
+   "Sul ΔG della reazione, che rende più negativo",
+   "Sulla costante di equilibrio, che sposta verso i prodotti",
+   "Sull'energia libera dei prodotti, che abbassa fino allo stato basale",
+   "Sulla temperatura del mezzo, che innalza"
+  ],
+  "ans": 0,
+  "why": "L'energia libera della reazione catalizzata è uguale a quella della reazione non catalizzata: la spontaneità non dipende dal catalizzatore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-157",
+  "topic": "d6-caratteristiche",
+  "level": "f",
+  "page": "115",
+  "src": "Biochimica I",
+  "q": "Che cosa succede all'enzima al termine della reazione che catalizza?",
+  "opts": [
+   "Non viene consumato né modificato in modo permanente",
+   "Viene consumato in quantità equimolare al substrato",
+   "Resta legato covalentemente a uno dei due prodotti",
+   "Viene degradato e deve essere risintetizzato ogni volta",
+   "Perde il cofattore, che va rifornito a ogni ciclo catalitico"
+  ],
+  "ans": 0,
+  "why": "Torna nella forma originaria, pronto ad accogliere nuove molecole di substrato.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-158",
+  "topic": "d6-caratteristiche",
+  "level": "m",
+  "page": "115",
+  "src": "Biochimica I",
+  "q": "Quali reazioni può accelerare un enzima?",
+  "opts": [
+   "Solo quelle che avvengono già spontaneamente, anche se molto lentamente",
+   "Solo quelle che hanno un ΔG positivo, rendendole termodinamicamente possibili",
+   "Qualsiasi reazione, anche non spontanea, purché ci sia il cofattore adatto",
+   "Solo quelle in cui i reagenti sono presenti in concentrazione molto elevata",
+   "Solo quelle bimolecolari, in cui due reagenti danno due prodotti distinti"
+  ],
+  "ans": 0,
+  "why": "L'enzima non rende possibile una reazione impossibile: accelera, da 10⁷ a 10¹⁷ volte, una reazione che è già spontanea ma troppo lenta.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-159",
+  "topic": "d6-caratteristiche",
+  "level": "m",
+  "page": "115",
+  "src": "Biochimica I",
+  "q": "Che cos'è l'energia di legame nell'interazione enzima-substrato?",
+  "opts": [
+   "L'energia che si libera quando si formano le interazioni fra enzima e substrato",
+   "L'energia che serve a rompere il legame covalente fra enzima e substrato",
+   "L'energia immagazzinata nei legami chimici del substrato prima della catalisi",
+   "L'energia che l'enzima spende per cambiare la propria conformazione nativa",
+   "L'energia che il substrato cede alle molecole d'acqua che lo circondano"
+  ],
+  "ans": 0,
+  "why": "Entrando nel sito attivo il substrato sostituisce le interazioni che aveva con l'acqua con quelle con l'enzima: la spontaneità del processo è legata anche alla libertà riacquistata dalle molecole d'acqua.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-160",
+  "topic": "d6-caratteristiche",
+  "level": "m",
+  "page": "116",
+  "src": "Biochimica I",
+  "q": "Che cosa comporta l'adattamento indotto per l'idea di «chiave e serratura»?",
+  "opts": [
+   "Vale solo in parte: il sito attivo cambia forma quando lega il substrato",
+   "La conferma pienamente: sito attivo e substrato combaciano già perfettamente",
+   "La smentisce del tutto: il substrato non viene riconosciuto in modo specifico",
+   "Vale solo per gli enzimi allosterici, che hanno più di una subunità",
+   "Vale solo per gli enzimi che lavorano su due substrati contemporaneamente"
+  ],
+  "ans": 0,
+  "why": "Il legame del substrato induce un cambiamento conformazionale che avvicina e orienta i reagenti, favorendo lo stato di transizione: è alla base dell'abbassamento dell'energia di attivazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-161",
+  "topic": "d6-caratteristiche",
+  "level": "a",
+  "page": "117",
+  "src": "Biochimica I",
+  "q": "Perché un pH lontano dall'optimum riduce la velocità di un enzima, anche prima di denaturarlo?",
+  "opts": [
+   "Cambia lo stato di protonazione delle catene laterali del sito attivo",
+   "Cambia la concentrazione del substrato disponibile nella soluzione",
+   "Riduce il numero di molecole di enzima presenti nella cellula",
+   "Abbassa la temperatura ottimale a cui l'enzima può lavorare",
+   "Impedisce al cofattore metallico di legarsi stabilmente al sito attivo dell'enzima"
+  ],
+  "ans": 0,
+  "why": "Nel sito attivo alcune catene laterali donano o strappano protoni: la catalisi acido-base funziona solo a un dato pH. Agli estremi si aggiunge poi la perdita di struttura terziaria o quaternaria.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-162",
+  "topic": "d6-caratteristiche",
+  "level": "a",
+  "page": "116",
+  "src": "Biochimica I",
+  "q": "Perché, pur occupando meno del 5% della superficie, il sito attivo da solo non basta?",
+  "opts": [
+   "L'intera catena deve ripiegarsi e muoversi per rendere possibile la catalisi",
+   "Il resto della proteina serve soltanto a proteggere il sito attivo dall'acqua",
+   "La parte restante lega i cofattori, che non entrano nel sito attivo",
+   "Il resto della superficie serve a legare altre molecole di enzima",
+   "La catena esterna al sito attivo serve solo a dare solubilità alla proteina"
+  ],
+  "ans": 0,
+  "why": "Il sito attivo è una tasca complementare al substrato, ma l'intera catena polipeptidica è necessaria e in genere deve andare incontro a modifiche conformazionali per catalizzare la reazione.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-163",
+  "topic": "d6-caratteristiche",
+  "level": "l",
+  "page": "116",
+  "src": "Biochimica I",
+  "q": "Quali ioni, secondo la sbobina, attivano gli enzimi senza partecipare alla reazione?",
+  "opts": [
+   "Sodio, potassio, calcio e cloro",
+   "Ferro, rame, zinco e manganese",
+   "Magnesio, molibdeno, cobalto e selenio",
+   "Fosfato, solfato, nitrato e carbonato",
+   "Litio, bario, stronzio e alluminio"
+  ],
+  "ans": 0,
+  "why": "Molti cofattori sono invece metalli di transizione, che partecipano direttamente alla catalisi; i cofattori organici si chiamano coenzimi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-164",
+  "topic": "d6-caratteristiche",
+  "level": "h",
+  "page": "115",
+  "src": "Biochimica I",
+  "q": "Due reazioni hanno lo stesso ΔG negativo, ma una è velocissima e l'altra impercettibile. Come se lo spiega?",
+  "opts": [
+   "Hanno energie di attivazione diverse, che il ΔG non dice nulla sulla velocità",
+   "Hanno costanti di equilibrio diverse, quindi diverse quantità di prodotto",
+   "La prima è catalizzata da un enzima, quindi ha un ΔG più favorevole",
+   "La seconda avviene a temperatura più bassa, quindi è termodinamicamente sfavorita",
+   "La prima è esoergonica e la seconda endoergonica, nonostante il ΔG uguale"
+  ],
+  "ans": 0,
+  "why": "Il ΔG dice se la reazione può avvenire, non quanto in fretta: la velocità dipende dalla barriera dell'energia di attivazione, che è ciò su cui agisce l'enzima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-165",
+  "topic": "d6-marcatori",
+  "level": "f",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Quanto a lungo resta elevata nel sangue la creatina chinasi dopo un infarto?",
+  "opts": [
+   "Sale molto rapidamente e nell'arco di 48 ore può scomparire del tutto",
+   "Sale lentamente e resta elevata per almeno due settimane",
+   "Sale rapidamente e resta elevata per circa un mese",
+   "Resta invariata nelle prime 48 ore e poi sale lentamente",
+   "Sale soltanto se l'infarto interessa anche il muscolo scheletrico adiacente"
+  ],
+  "ans": 0,
+  "why": "È proprio la rapidità della discesa a rendere insufficiente il dosaggio della sola CK a distanza di qualche giorno.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-166",
+  "topic": "d6-marcatori",
+  "level": "m",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Quale isoenzima della creatina chinasi è il marcatore cardiaco più usato?",
+  "opts": [
+   "La CK-MB",
+   "La CK-MM",
+   "La CK-BB",
+   "La LDH-5",
+   "La LDH-1"
+  ],
+  "ans": 0,
+  "why": "Viene rilasciato precocemente nel sangue dopo l'infarto del miocardio; si usa insieme alla troponina, anch'essa un buon marcatore precoce.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-167",
+  "topic": "d6-marcatori",
+  "level": "m",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Perché il contenuto enzimatico del sangue aumenta dopo un danno tissutale?",
+  "opts": [
+   "Le cellule danneggiate riversano nel sangue il loro contenuto, enzimi compresi",
+   "Il fegato aumenta la sintesi degli enzimi per riparare il tessuto colpito",
+   "Il rene riduce l'escrezione degli enzimi circolanti durante il danno",
+   "Gli enzimi plasmatici vengono attivati per proteolisi limitata dalle cellule lese",
+   "Il tessuto danneggiato smette di captare gli enzimi normalmente circolanti"
+  ],
+  "ans": 0,
+  "why": "Un certo passaggio avviene già nel normale ricambio cellulare; il danno lo amplifica. Poiché molti enzimi sono tipici di un tessuto, il loro aumento orienta la diagnosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-168",
+  "topic": "d6-marcatori",
+  "level": "a",
+  "page": "129",
+  "src": "Biochimica I",
+  "q": "Un paziente arriva riferendo un forte dolore toracico avuto tre giorni prima. La CK è normale. Che cosa conviene dosare?",
+  "opts": [
+   "La lattato deidrogenasi, che resta elevata più a lungo",
+   "Solo la CK, ripetuta a distanza di qualche ora",
+   "La fosfatasi alcalina, che segue l'andamento della CK",
+   "L'amilasi, che si alza nei danni muscolari tardivi",
+   "La creatina chinasi delle urine, più stabile di quella del sangue"
+  ],
+  "ans": 0,
+  "why": "La CK può essere già rientrata a 48 ore: accoppiando la LDH, che permane, si può datare l'evento anche a distanza di giorni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1124-169",
+  "topic": "d6-marcatori",
+  "level": "h",
+  "page": "128",
+  "src": "Biochimica I",
+  "q": "Quale abbinamento via metabolica – compartimento è corretto secondo la sbobina?",
+  "opts": [
+   "Sintesi degli acidi grassi – citosol",
+   "Sintesi degli acidi grassi – matrice mitocondriale",
+   "Ciclo di Krebs – citosol",
+   "Ossidazione degli acidi grassi – lisosomi",
+   "Decarbossilazione del piruvato – citosol"
+  ],
+  "ans": 0,
+  "why": "Nei mitocondri: ciclo di Krebs, ossidazione degli acidi grassi e decarbossilazione del piruvato. Nel citosol: glicolisi, via dell'HMP e sintesi degli acidi grassi. Nei lisosomi: degradazione di biomolecole complesse.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

@@ -377,8 +377,7 @@ q("u1124-092", V, "l", "217", "Secondo la sbobina, a quale conseguenza porta la 
   "Alla steatosi epatica, per ridotta sintesi delle apolipoproteine",
   "Alla trombofilia, per ridotta sintesi di antitrombina III",
   ], 0,
-  "Il retinolo serve alla sintesi delle glicoproteine; la transferrina è quella che la sbobina porta come esempio.",
-  note="Non è un errore, ma una scelta inconsueta: il segno classico della carenza di vitamina A, nei testi di riferimento, è quello oculare (cecità crepuscolare e xeroftalmia), che in questa sezione della sbobina non viene citato.")
+  "Il retinolo serve alla sintesi delle glicoproteine, fra cui la transferrina. La slide della stessa pagina elenca fra le conseguenze della carenza anche xeroftalmia, cecità crepuscolare e ritardo dell'accrescimento.")
 
 
 # ── Digestione, assorbimento e trasporto dei grassi (p. 219–221) ────────────

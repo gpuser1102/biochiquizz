@@ -62,6 +62,9 @@
   if (S.levels && S.levels.h === undefined) S.levels.h = true;
   // guida al primo utilizzo: chi usava già l'app non la rivede
   if (S.tour === undefined) S.tour = !!S.welcomed;
+  // chi usa già l'app non deve rivedere né il suggerimento sugli argomenti né l'invito a installare
+  if (S.scopeHint === undefined) S.scopeHint = !!S.welcomed;
+  if (S.nudged === undefined) S.nudged = !!S.welcomed;
   // codice casuale del telefono: raggruppa le segnalazioni della stessa persona senza sapere chi è
   if (!S.device) S.device = "T-" + Math.random().toString(36).slice(2, 6).toUpperCase() + Math.random().toString(36).slice(2, 4).toUpperCase();
   const save = () => { try { localStorage.setItem(STORE_KEY, JSON.stringify(S)); } catch (e) { } };
@@ -82,6 +85,8 @@
   C.pathways.forEach(p => p.steps.forEach((st, i) => CARDS.push({ id: `nx:${p.id}:${i}`, kind: "nx", path: p, step: st, idx: i, topics: [st.topic || p.topic], level: "m" })));
   const CARD = Object.fromEntries(CARDS.map(c => [c.id, c]));
 
+  const allReadyIds = () => Object.keys(TOPICS).filter(id => TOPICS[id].ready);
+  const totalAnswers = () => Object.values(S.days || {}).reduce((a, d) => a + (d.n || 0), 0);
   const activeTopics = () => {
     if (S.onlyLast && S.lastChecked && S.selected.includes(S.lastChecked)) return [S.lastChecked];
     return S.selected.filter(t => TOPICS[t] && TOPICS[t].ready);
@@ -860,6 +865,21 @@
         return b;
       }));
     bar.append(seg);
+    // primo avvio: si parte da tutto il programma, ma lo si dice e si offre la scorciatoia per restringere
+    if (!S.scopeHint) {
+      const ready = allReadyIds();
+      const tutto = ready.length && ready.every(id => S.selected.includes(id));
+      if (tutto) {
+        const hint = h("div", { class: "feed-hint" },
+          h("span", {}, "Stai ripassando tutto il programma."),
+          h("button", { type: "button", class: "feed-hint-go" }, "Scegli gli argomenti"),
+          h("button", { type: "button", class: "feed-hint-x", "aria-label": "Nascondi il suggerimento",
+            html: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7L7 17"/></svg>' }));
+        hint.querySelector(".feed-hint-go").addEventListener("click", () => { S.scopeHint = true; save(); renderModebar(); go("topics"); });
+        hint.querySelector(".feed-hint-x").addEventListener("click", () => { S.scopeHint = true; save(); renderModebar(); });
+        bar.append(hint);
+      }
+    }
   }
   function resetFeed() {
     shown = 0; recent = []; extraMode = false; doneShown = false; pendingNew.clear();
@@ -1291,7 +1311,7 @@
     const P = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">';
     const box = h("div", { class: "nudge" },
       h("div", { class: "nudge-logo", html: LOGO_SVG }),
-      h("div", { class: "nudge-title" }, "Prima di iniziare: installala"),
+      h("div", { class: "nudge-title" }, welcomeInner ? "Prima di iniziare: installala" : "Ci sei tornato: installala"),
       h("p", { class: "nudge-lead" }, "Ci vogliono 10 secondi e studi meglio:"),
       perk(P + '<path d="M3 7l9 6 9-6"/><path d="M2 2l20 20"/><path d="M8.5 5H19a2 2 0 012 2v9"/><path d="M17 19H5a2 2 0 01-2-2V7"/></svg>', "Funziona anche senza rete", "In aula, in treno, in biblioteca col Wi-Fi che non va."),
       perk(P + '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>', "Si apre dall'icona, come un'app", "A schermo intero, senza barre del browser: un tocco e ripassi."),
@@ -1303,9 +1323,20 @@
           close();
           if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; return; }
           const st = welcomeInner && welcomeInner.querySelector(".steps");
-          if (st) { st.scrollIntoView({ behavior: "smooth", block: "center" }); st.classList.remove("flash"); void st.offsetWidth; st.classList.add("flash"); }
+          if (st) { st.scrollIntoView({ behavior: "smooth", block: "center" }); st.classList.remove("flash"); void st.offsetWidth; st.classList.add("flash"); return; }
+          // nessun benvenuto sotto: le istruzioni le mostra il riquadro stesso
+          showSteps();
         } }, deferredPrompt ? "Installa ora" : "Ok, ti seguo: come si fa?"),
         h("button", { class: "nudge-skip", type: "button", onclick: () => { close(); onSkip(); } }, "Continua dal browser")));
+    const showSteps = () => {
+      const b2 = h("div", { class: "nudge" },
+        h("div", { class: "nudge-logo", html: LOGO_SVG }),
+        h("div", { class: "nudge-title" }, pf === "ios" ? "Installala su iPhone" : pf === "android" ? "Installala su Android" : "Installala sul telefono"),
+        installSteps(pf),
+        h("div", { class: "nudge-btns" }, h("button", { class: "btn btn-ghost", type: "button", onclick: () => { close(); onSkip(); } }, "Fatto")));
+      wrap.innerHTML = ""; wrap.append(b2);
+      b2.querySelector(".btn").focus({ preventScroll: true });
+    };
     wrap.addEventListener("click", e => { if (e.target === wrap) close(); });
     wrap.append(box); document.body.append(wrap);
     box.querySelector(".btn").focus({ preventScroll: true });
@@ -1343,6 +1374,17 @@
     draw(); document.body.append(wrap);
   }
 
+  // Tour e invito a installare non stanno più sulla strada della prima domanda:
+  // compaiono a una riapertura successiva, quando l'app è già stata provata.
+  function onboardingCheck() {
+    const tot = totalAnswers();
+    if (!S.tour && tot >= 3) { showTour(() => {}); return; }
+    if (!S.nudged && tot >= 8 && !standalone() && !/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) {
+      S.nudged = true; save();
+      installNudge(platform(), () => {}, null);
+    }
+  }
+
   /* ---------------- Benvenuto ---------------- */
   function showWelcome() {
     const w = h("div", { class: "welcome", role: "dialog", "aria-modal": "true", "aria-label": "Benvenuto" });
@@ -1351,12 +1393,14 @@
     inner.append(h("div", { class: "hero-mark", html: LOGO_SVG }),
       h("h1", { class: "h1" }, "Ripassa ", h("span", { class: "hl" }, "Biochimica"), " dalle sbobine"),
       h("p", { class: "lead" }, "Una domanda per schermata: rispondi e scorri giù. Le card che sbagli tornano più spesso. I progressi restano solo sul tuo telefono, senza account."));
-    if (!standalone()) {
-      inner.append(h("div", { class: "h2" }, pf === "ios" ? "Installala su iPhone" : pf === "android" ? "Installala su Android" : "Installala sul telefono"), installSteps(pf));
-      if (/claude\.(ai|site)|claudeusercontent/.test(location.hostname)) inner.append(h("p", { class: "lead", style: "font-size:13px" }, "Questa è l'anteprima di prova: l'installazione con funzionamento offline sarà attiva nella versione pubblicata."));
-    }
-    const start = () => { S.welcomed = true; save(); w.remove(); const goOn = () => go(S.selected.length ? "feed" : "topics"); if (S.tour) goOn(); else showTour(goOn); };
-    inner.append(h("button", { class: "btn btn-primary", type: "button", onclick: () => standalone() || /claude\.(ai|site)|claudeusercontent/.test(location.hostname) ? start() : installNudge(pf, start, inner) }, "Inizia"));
+    const start = () => {
+      S.welcomed = true;
+      // al primo avvio si parte dall'intero programma: la prima cosa che si vede è una domanda,
+      // non una lista di caselle da spuntare. Da Argomenti si restringe poi.
+      if (!S.selected.length) { S.selected = allReadyIds(); S.lastChecked = S.selected[S.selected.length - 1] || null; }
+      save(); w.remove(); renderModebar(); renderTopics(); resetFeed(); go(S.selected.length ? "feed" : "topics");
+    };
+    inner.append(h("button", { class: "btn btn-primary", type: "button", onclick: start }, "Inizia"));
     w.append(inner); document.body.append(w);
   }
 
@@ -1409,7 +1453,7 @@
     matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => { if (S.theme === "system") applyTheme(); });
     applyTheme();
     renderAll();
-    if (!S.welcomed) showWelcome();
+    if (!S.welcomed) showWelcome(); else onboardingCheck();
     if ("serviceWorker" in navigator && isHosted()) navigator.serviceWorker.register("sw.js").catch(() => { });
     flushReports(); checkUpdate(); pingUsage();
     window.addEventListener("online", () => { flushReports(); checkUpdate(); pingUsage(); });

@@ -38561,6 +38561,861 @@
   "fixed": false
  },
  {
+  "id": "u1125-101",
+  "topic": "bm9-gotta",
+  "level": "f",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Quale articolazione colpisce più tipicamente l'attacco di gotta?",
+  "opts": [
+   "La metatarsofalangea alla base dell'alluce",
+   "L'articolazione temporo-mandibolare",
+   "L'articolazione sacro-iliaca",
+   "L'articolazione coxo-femorale dell'anca",
+   "L'articolazione della spalla"
+  ],
+  "ans": 0,
+  "why": "I cristalli di urato si depositano soprattutto alla base dell'alluce, nelle dita, nella tibiotarsica e nel gomito; nell'orecchio si formano i tofi gottosi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-102",
+  "topic": "bm9-gotta",
+  "level": "m",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Come agiscono i farmaci uricosurici nella gotta?",
+  "opts": [
+   "Aumentano l'eliminazione dell'acido urico con le urine",
+   "Bloccano la xantina ossidasi e quindi la produzione di urato",
+   "Bloccano la fagocitosi dei cristalli da parte dei leucociti",
+   "Convertono l'urato in allantoina, più solubile",
+   "Inibiscono la PRPP sintetasi e la sintesi de novo"
+  ],
+  "ans": 0,
+  "why": "Tre strategie nella lezione: colchicina (blocca la fagocitosi dei cristalli, meno infiammazione), uricosurici (più escrezione renale), allopurinolo (blocca la xantina ossidasi).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-103",
+  "topic": "bm9-gotta",
+  "level": "a",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Perché una radioterapia antitumorale estesa può causare iperuricemia?",
+  "opts": [
+   "La distruzione di molte cellule libera nucleotidi da degradare a urato",
+   "Le radiazioni attivano direttamente la xantina ossidasi epatica",
+   "Le radiazioni bloccano l'HGPRT e quindi il salvataggio delle basi puriniche",
+   "Il danno al DNA attiva la PRPP sintetasi in tutte le cellule",
+   "Le radiazioni riducono la solubilità dell'urato nel plasma"
+  ],
+  "ans": 0,
+  "why": "Tra le cause di iperuricemia la lezione cita, oltre alle alterazioni metaboliche, la ridotta escrezione, il danno renale e la terapia radiante, che distrugge cellule e libera grandi quantità di nucleotidi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-104",
+  "topic": "bm9-gotta",
+  "level": "m",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Perché l'uomo, a differenza della maggior parte dei mammiferi, accumula acido urico?",
+  "opts": [
+   "Non ha l'urato ossidasi e non lo converte in allantoina",
+   "Ha una xantina ossidasi molto più attiva degli altri mammiferi",
+   "Non ha la xantina ossidasi e degrada le purine in altro modo",
+   "Ha un rene che non riesce a filtrare l'acido urico",
+   "Sintetizza le purine de novo più in fretta degli altri mammiferi"
+  ],
+  "ans": 0,
+  "why": "L'acido urico è poco solubile e l'uomo non riesce a convertirlo in sostanze più solubili. Il nome dell'enzima mancante (urato ossidasi) e l'allantoina sono nella figura, non nel testo della sbobina (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-105",
+  "topic": "bm9-gotta",
+  "level": "l",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Che cosa distingue strutturalmente l'allopurinolo dall'ipoxantina?",
+  "opts": [
+   "Le posizioni 7 e 8 sono scambiate: l'azoto sta in 8 e il carbonio in 7",
+   "Ha un ossigeno in più in posizione 2, come la xantina",
+   "Ha uno zolfo al posto dell'ossigeno in posizione 6",
+   "Ha un gruppo amminico al posto dell'ossigeno in posizione 6, come l'adenina",
+   "Ha un ribosio legato all'azoto 9, come l'inosina"
+  ],
+  "ans": 0,
+  "why": "L'allopurinolo è un isomero strutturale dell'ipoxantina (pirazolopirimidina): N e C delle posizioni 7 e 8 sono invertiti. Lo zolfo in 6 è della 6-mercaptopurina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-106",
+  "topic": "bm9-gotta",
+  "level": "h",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "La lezione dice che l'ossipurinolo «rimane legato all'ipoxantina e ne blocca l'attività». Che cosa è corretto?",
+  "opts": [
+   "L'ossipurinolo resta legato strettamente alla xantina ossidasi e la inattiva",
+   "L'ossipurinolo resta legato all'ipoxantina e la trasforma più in fretta in acido urico",
+   "L'ossipurinolo lega l'HGPRT e blocca il salvataggio dell'ipoxantina",
+   "L'ossipurinolo lega l'urato e lo rende più solubile nel plasma",
+   "L'ossipurinolo viene subito ossidato ad acido urico e non ha effetto"
+  ],
+  "ans": 0,
+  "why": "⚠️ Errore nella sbobina: l'allopurinolo è un substrato suicida; la xantina ossidasi lo ossida a ossipurinolo, che resta legato al sito attivo (al molibdeno) e blocca l'enzima. L'ipoxantina non è un enzima.",
+  "note": "La sbobina di Biologia molecolare (lezione 9) scrive che l'ossipurinolo rimane legato «all'ipoxantina»: resta legato alla xantina ossidasi.",
+  "fixed": false
+ },
+ {
+  "id": "u1125-107",
+  "topic": "bm9-degradazione",
+  "level": "h",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Nel ciclo dei nucleotidi purinici del muscolo, la lezione dice che l'ossidazione del malato a ossalacetato forma NADPH e 3 ATP. Che cosa è corretto?",
+  "opts": [
+   "Si forma NADH, che nella catena respiratoria rende circa 2,5 ATP",
+   "Si forma NADPH, che nella catena respiratoria rende 3 ATP",
+   "Si forma FADH₂, che nella catena respiratoria rende circa 1,5 ATP",
+   "Si forma NADPH, che serve alla sintesi degli acidi grassi muscolari",
+   "Non si forma alcun coenzima ridotto: la reazione è un'idratazione"
+  ],
+  "ans": 0,
+  "why": "⚠️ Errore nella sbobina: la malato deidrogenasi del ciclo di Krebs usa NAD⁺; con i valori attuali un NADH rende circa 2,5 ATP (3 è il valore storico).",
+  "note": "La sbobina di Biologia molecolare (lezione 9) attribuisce all'ossidazione del malato la formazione di NADPH.",
+  "fixed": false
+ },
+ {
+  "id": "u1125-108",
+  "topic": "bm9-salvataggio",
+  "level": "l",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Che tipo di inibizione esercitano IMP e GMP sull'HGPRT?",
+  "opts": [
+   "Competitiva rispetto al PRPP",
+   "Competitiva rispetto all'ipoxantina",
+   "Allosterica su un sito regolatorio separato",
+   "Non competitiva rispetto a entrambi i substrati",
+   "Covalente, per fosforilazione dell'enzima"
+  ],
+  "ans": 0,
+  "why": "IMP e GMP sono inibitori competitivi per il legame del PRPP sull'HGPRT; l'AMP lo è sull'APRT. I due enzimi non si sovrappongono nei substrati.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-109",
+  "topic": "bm8-regolazione",
+  "level": "l",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Come viene regolata la GMP reduttasi, che riconverte il GMP in IMP?",
+  "opts": [
+   "È attivata dal GTP e inibita in modo competitivo dall'XMP",
+   "È attivata dall'XMP e inibita in modo competitivo dal GTP",
+   "È attivata dall'ATP e inibita dal GTP per retroazione",
+   "È attivata dal K⁺ e inibita dal fosfato inorganico",
+   "È attivata dal PRPP e inibita da AMP e IMP"
+  ],
+  "ans": 0,
+  "why": "Con troppo GTP conviene tornare a IMP: il GTP abbassa la Km per il GMP e aumenta la Vmax. L'XMP, che segnala bisogno di GMP, la inibisce in modo competitivo. K⁺/ATP e Pi regolano invece l'AMP deaminasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-110",
+  "topic": "bm8-regolazione",
+  "level": "a",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Che effetto ha il K⁺ sull'AMP deaminasi?",
+  "opts": [
+   "Abbassa la Km apparente per l'AMP senza cambiare la Vmax",
+   "Aumenta la Vmax senza cambiare la Km per l'AMP",
+   "Rende sigmoide la curva, che senza K⁺ sarebbe iperbolica",
+   "Inibisce l'enzima competendo con l'AMP per il sito attivo",
+   "Non ha effetto: l'enzima è regolato solo da ATP e GTP"
+  ],
+  "ans": 0,
+  "why": "In assenza di K⁺ la curva v/[AMP] è sigmoide; il K⁺ è un effettore allosterico positivo che riduce la Km apparente senza alterare la Vmax.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-111",
+  "topic": "bm9-scid",
+  "level": "f",
+  "page": "lezione 9",
+  "src": "Biologia molecolare",
+  "q": "Perché i bambini affetti da SCID devono vivere in condizioni di sterilità?",
+  "opts": [
+   "Non hanno linfociti funzionanti e qualunque patogeno può essere fatale",
+   "Hanno una pelle molto fragile che si infetta a ogni contatto",
+   "Non producono acido urico, che protegge dai batteri",
+   "Hanno un eccesso di linfociti che reagisce a ogni antigene",
+   "Non sintetizzano anticorpi, anche se hanno linfociti T del tutto normali"
+  ],
+  "ans": 0,
+  "why": "SCID = Severe Combined ImmunoDeficiency: i linfociti non si dividono per mancanza di deossiribonucleotidi, e la risposta immunitaria è assente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-112",
+  "topic": "bm9-scid",
+  "level": "m",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Qual è il limite principale del trapianto di midollo nella SCID, secondo la lezione?",
+  "opts": [
+   "Trovare un donatore compatibile",
+   "Il rischio di anticorpi contro l'enzima",
+   "L'inserzione casuale del gene nel genoma",
+   "La bassa emivita dell'enzima in circolo",
+   "La necessità di iniezioni per tutta la vita"
+  ],
+  "ans": 0,
+  "why": "Se il donatore si trova, il trapianto ricostituisce un sistema immunitario integro. Gli altri limiti appartengono alla terapia enzimatica (anticorpi, iniezioni a vita) e alla terapia genica con retrovirus (inserzione non controllata).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-113",
+  "topic": "bm9-scid",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale abbinamento tra terapia della SCID e suo problema principale è corretto?",
+  "opts": [
+   "Terapia genica con retrovirus – inserzione del gene in un punto non controllato",
+   "Adenosina deaminasi coniugata al PEG – trovare un donatore compatibile",
+   "Trapianto di midollo – sviluppo di anticorpi contro l'enzima somministrato",
+   "Terapia enzimatica sostitutiva – il gene introdotto si integra in modo casuale nel genoma",
+   "Terapia genica con retrovirus – l'enzima va iniettato per tutta la vita"
+  ],
+  "ans": 0,
+  "why": "Enzima-PEG: iniezioni a vita e, a lungo termine, anticorpi neutralizzanti; trapianto: donatore compatibile; retrovirus: basso attecchimento e inserzione non selettiva. Si studia anche un approccio con CRISPR-Cas9.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-114",
+  "topic": "bm9-scid",
+  "level": "a",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "A che cosa serve coniugare al PEG l'adenosina deaminasi usata come farmaco, oltre a nasconderla al sistema immunitario?",
+  "opts": [
+   "Ad aumentarne l'emivita in circolo",
+   "A farla entrare nei linfociti",
+   "A renderla attiva sulla guanosina",
+   "A farla legare al DNA dei linfociti",
+   "A permetterne l'assunzione per bocca"
+  ],
+  "ans": 0,
+  "why": "Il PEG maschera l'enzima e ne allunga l'emivita; resta il rischio, a lungo termine, di anticorpi neutralizzanti.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-115",
+  "topic": "bm10-sintesi",
+  "level": "m",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Come si tratta l'aciduria orotica, secondo la lezione?",
+  "opts": [
+   "Somministrando uridina, che viene fosforilata a UMP",
+   "Somministrando acido orotico, che manca al paziente",
+   "Somministrando allopurinolo, che blocca la xantina ossidasi",
+   "Somministrando vitamina B12 e acido folico",
+   "Somministrando glutammina, donatore dell'azoto 3"
+  ],
+  "ans": 0,
+  "why": "Il blocco è a valle dell'orotato (orotato fosforibosiltransferasi/OMP decarbossilasi): fornendo uridina, le chinasi la convertono in UMP, UDP e UTP, saltando il passaggio difettoso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-116",
+  "topic": "bm10-degradazione",
+  "level": "f",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Che cosa succede alla citosina prima che l'anello pirimidinico venga degradato?",
+  "opts": [
+   "Viene deaminata a uracile",
+   "Viene metilata a timina",
+   "Viene ossidata a acido orotico",
+   "Viene fosforilata a CMP",
+   "Viene ridotta a diidrocitosina"
+  ],
+  "ans": 0,
+  "why": "Tolti fosfato e zucchero, la citosina viene deaminata a uracile; uracile e timina vengono poi degradati allo stesso modo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-117",
+  "topic": "bm10-degradazione",
+  "level": "m",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale coenzima usa la deidrogenasi che riduce uracile e timina a diidropirimidine?",
+  "opts": [
+   "NADPH",
+   "NAD⁺",
+   "FAD",
+   "FMN",
+   "NADH"
+  ],
+  "ans": 0,
+  "why": "La diidropirimidina deidrogenasi elimina il doppio legame 5-6 usando NADPH: la riduzione è il passaggio che permette poi di aprire l'anello.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-118",
+  "topic": "bm10-degradazione",
+  "level": "a",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale enzima apre l'anello della diidropirimidina e quale legame taglia?",
+  "opts": [
+   "La diidropirimidinasi, che idrolizza il legame tra le posizioni 3 e 4",
+   "La diidropirimidina deidrogenasi, che ossida il legame tra 5 e 6",
+   "La diidropirimidinasi, che idrolizza il legame tra le posizioni 1 e 6",
+   "La citosina deaminasi, che idrolizza il legame tra le posizioni 2 e 3",
+   "La β-ureidopropionasi, che idrolizza il legame tra le posizioni 1 e 2 dell'anello"
+  ],
+  "ans": 0,
+  "why": "La diidropirimidinasi apre l'anello per idrolisi tra N3 e C4; dall'uracile si forma un intermedio che poi libera NH₃ e CO₂ dando β-alanina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-119",
+  "topic": "bm10-degradazione",
+  "level": "l",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale intermedio si forma dalla timina dopo l'apertura dell'anello?",
+  "opts": [
+   "N-carbammil-β-amminoisobutirrato",
+   "N-carbammil-β-alanina metilata",
+   "β-amminoisobutirrato libero",
+   "Diidrotimina",
+   "Acido orotico"
+  ],
+  "ans": 0,
+  "why": "Dalla timina si forma N-carbammil-β-amminoisobutirrato, che per idrolisi libera NH₃ e CO₂ e dà β-amminoisobutirrato (dall'uracile, attraverso la N-carbammil-β-alanina, si ottiene la β-alanina).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-120",
+  "topic": "bm10-degradazione",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Un paziente con deficit di diidropirimidina deidrogenasi riceve 5-fluorouracile a dose standard. Che cosa ci si aspetta?",
+  "opts": [
+   "Tossicità grave, perché il 5-FU non viene inattivato e si accumula",
+   "Nessun effetto del farmaco, perché il 5-FU non viene più attivato",
+   "Un effetto normale, perché il 5-FU è eliminato solo dal rene",
+   "Iperuricemia, perché il 5-FU viene degradato ad acido urico",
+   "Resistenza al farmaco, per amplificazione della timidilato sintasi"
+  ],
+  "ans": 0,
+  "why": "Il 5-FU è un analogo dell'uracile e viene catabolizzato dalla stessa via; senza la deidrogenasi il farmaco si accumula e la tossicità è grave. L'applicazione clinica non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-121",
+  "topic": "bm10-timidilato",
+  "level": "f",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale enzima riporta il DHF a THF dopo la reazione della timidilato sintasi?",
+  "opts": [
+   "La DHF reduttasi, con NADPH",
+   "La DHF reduttasi, con NADH",
+   "La serina idrossimetiltransferasi",
+   "La metilen-THF reduttasi, con FAD",
+   "La timidilato sintasi stessa"
+  ],
+  "ans": 0,
+  "why": "La timidilato sintasi ossida il THF a DHF; la DHF reduttasi lo riduce con NADPH a THF, che va poi ricaricato di un'unità monocarboniosa.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-122",
+  "topic": "bm10-timidilato",
+  "level": "m",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Come viene ricaricato il THF di un metilene dopo il ciclo della timidilato sintasi?",
+  "opts": [
+   "Dalla serina idrossimetiltransferasi o dal sistema di taglio della glicina",
+   "Dalla timidilato sintasi stessa, che usa la CO₂ come fonte di carbonio",
+   "Dalla metionina sintasi, che trasferisce al THF un metile dalla vitamina B12",
+   "Dalla DHF reduttasi, che aggiunge il metilene durante la riduzione",
+   "Dalla S-adenosilmetionina, che dona il metile al THF"
+  ],
+  "ans": 0,
+  "why": "Il THF rigenerato si carica di nuovo con la SHMT (serina → glicina) o con il sistema di taglio della glicina, formando N5,N10-metilen-THF.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-123",
+  "topic": "bm10-timidilato",
+  "level": "a",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Nella reazione della timidilato sintasi il metilene diventa metile. Da dove vengono gli elettroni per questa riduzione?",
+  "opts": [
+   "Dallo stesso tetraidrofolato, che si ossida a diidrofolato",
+   "Dal NADPH, che si lega alla timidilato sintasi insieme al dUMP",
+   "Dal FADH₂ legato alla timidilato sintasi come gruppo prostetico",
+   "Dalla tioredossina, come nella ribonucleotide reduttasi",
+   "Dal dUMP, che si ossida durante la metilazione"
+  ],
+  "ans": 0,
+  "why": "Il THF cede sia il metilene sia gli equivalenti riducenti: per questo esce come DHF e serve la DHF reduttasi. Per questo il metotrexato blocca indirettamente la sintesi del dTMP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-124",
+  "topic": "bm10-timidilato",
+  "level": "l",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Quale abbinamento antifolato – bersaglio citato nella lezione è corretto?",
+  "opts": [
+   "DDATHF – glicinammide ribonucleotide formiltransferasi (GART)",
+   "ICI D1694 – DHF reduttasi",
+   "Metotrexato – timidilato sintasi",
+   "DDATHF – timidilato sintasi",
+   "ICI D1694 – glicinammide ribonucleotide formiltransferasi (GART)"
+  ],
+  "ans": 0,
+  "why": "ICI D1694 inibisce la timidilato sintasi; DDATHF la GART della sintesi delle purine; metotrexato la DHF reduttasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-125",
+  "topic": "bm10-timidilato",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Perché una riduzione della folil-poliglutammato sintetasi rende le cellule tumorali resistenti al metotrexato?",
+  "opts": [
+   "Il farmaco non viene poliglutammato e non resta intrappolato nella cellula",
+   "Il farmaco non viene più trasportato dentro la cellula dai trasportatori del folato",
+   "La DHF reduttasi diventa meno sensibile al farmaco per mutazione",
+   "Il gene della DHF reduttasi viene amplificato e l'enzima è in eccesso",
+   "Il farmaco viene poliglutammato troppo e non lega più la DHF reduttasi"
+  ],
+  "ans": 0,
+  "why": "Come il folato, il metotrexato va poliglutammato per essere trattenuto nella cellula e avere il massimo effetto. Gli altri meccanismi di resistenza citati (trasporto, mutazione, amplificazione) sono veri ma non c'entrano con questo enzima.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-126",
+  "topic": "bm10-timidilato",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "La lezione cita il trimetoprim insieme al metotrexato come farmaco per tumori e malattie autoimmuni. Che cosa è corretto?",
+  "opts": [
+   "Il trimetoprim inibisce soprattutto la DHF reduttasi batterica: è un antibatterico",
+   "Il trimetoprim inibisce la timidilato sintasi umana: è un antitumorale",
+   "Il trimetoprim inibisce la DHF reduttasi umana molto più del metotrexato: è un antitumorale",
+   "Il trimetoprim inibisce la ribonucleotide reduttasi, come l'idrossiurea",
+   "Il trimetoprim è un analogo dell'uracile, come il 5-fluorouracile"
+  ],
+  "ans": 0,
+  "why": "⚠️ Imprecisione della sbobina: il trimetoprim ha un'affinità molto più alta per la DHF reduttasi batterica che per quella umana, per questo si usa come antibatterico (con il sulfametossazolo). Non è nelle sbobine (Lehninger).",
+  "note": "La sbobina di Biologia molecolare (lezione 10) mette il trimetoprim tra gli antifolati usati per tumori e malattie autoimmuni: è un antibatterico.",
+  "fixed": false
+ },
+ {
+  "id": "u1125-127",
+  "topic": "bm10-rnr",
+  "level": "f",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Su quale atomo del ribosio agisce la ribonucleotide reduttasi?",
+  "opts": [
+   "Sul C2', da cui toglie l'ossidrile",
+   "Sul C3', da cui toglie l'ossidrile",
+   "Sul C5', da cui toglie il fosfato",
+   "Sul C1', da cui stacca la base",
+   "Sul C4', che viene ridotto"
+  ],
+  "ans": 0,
+  "why": "L'enzima riduce il 2'-OH del ribosio a 2'-H (con eliminazione di una molecola d'acqua), trasformando un NDP in dNDP.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-128",
+  "topic": "bm10-rnr",
+  "level": "m",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Oltre alla tioredossina, quale sistema riporta allo stato ridotto la ribonucleotide reduttasi?",
+  "opts": [
+   "La glutaredossina, ridotta dal glutatione",
+   "La ferredossina, ridotta dal fotosistema I",
+   "La perossiredossina, ridotta dal FADH₂",
+   "Il citocromo b5, ridotto dal NADH",
+   "Il coenzima Q, ridotto dal succinato"
+  ],
+  "ans": 0,
+  "why": "Due vie: tioredossina ← tioredossina reduttasi (FAD) ← NADPH; oppure glutaredossina ← glutatione ← glutatione reduttasi ← NADPH. In entrambe la fonte finale di elettroni è il NADPH.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-129",
+  "topic": "bm10-rnr",
+  "level": "l",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Dove si trovano i siti regolatori della ribonucleotide reduttasi?",
+  "opts": [
+   "Nella subunità R1: per ognuna un sito primario e uno di specificità",
+   "Nella subunità R2: per ognuna un sito primario e uno di specificità",
+   "Nella subunità R1 il sito primario, nella R2 quello di specificità",
+   "Nella subunità R2, vicino al centro diferrico e alla tirosina 122",
+   "Nell'interfaccia tra R1 e R2, con un solo sito per tutto l'enzima"
+  ],
+  "ans": 0,
+  "why": "R1 porta le cisteine del sito catalitico e i due siti regolatori; R2 il centro diferrico che genera il radicale tirosilico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-130",
+  "topic": "bm10-rnr",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "La lezione dice che l'idrossiurea, inibitore della ribonucleotide reduttasi, non si usa come farmaco perché troppo tossica. Che cosa è corretto?",
+  "opts": [
+   "Si usa, per esempio nella leucemia mieloide cronica e nell'anemia falciforme",
+   "Non si usa: la dose efficace sarebbe tossica, come dice la lezione",
+   "Si usa solo come antivirale, perché blocca la trascrittasi inversa dell'HIV",
+   "Si usa solo come antibatterico, perché inibisce la DHF reduttasi",
+   "Si usa solo nella gotta, perché inibisce la xantina ossidasi"
+  ],
+  "ans": 0,
+  "why": "⚠️ Imprecisione della sbobina: l'idrossiurea è un farmaco in uso (spegne il radicale tirosilico di R2); nell'anemia falciforme aumenta anche l'emoglobina fetale. Non è nelle sbobine (Lehninger, Stryer).",
+  "note": "La sbobina di Biologia molecolare (lezione 10) dice che l'idrossiurea non viene usata dal punto di vista farmacologico: è invece un farmaco di uso clinico.",
+  "fixed": false
+ },
+ {
+  "id": "u1125-131",
+  "topic": "bm10-farmaci",
+  "level": "h",
+  "page": "lezione 10",
+  "src": "Biologia molecolare",
+  "q": "Tra le reazioni bloccate dagli antagonisti della glutammina, la lezione cita la «conversione da UTP a GTP», con l'ammino in posizione 6. Che cosa è corretto?",
+  "opts": [
+   "È la conversione da UTP a CTP, con l'ammino in posizione 4",
+   "È la conversione da UTP a GTP, con l'ammino in posizione 6",
+   "È la conversione da IMP a GMP, con l'ammino in posizione 4",
+   "È la conversione da UMP a TMP, con un metile in posizione 5",
+   "È la conversione da XMP a AMP, con l'ammino in posizione 6"
+  ],
+  "ans": 0,
+  "why": "⚠️ Errore nella sbobina: la CTP sintetasi usa la glutammina per mettere l'ammino sul C4 dell'UTP (la stessa lezione lo dice correttamente poco prima). Gli altri bersagli citati: amidotransferasi, FGAM sintetasi, GMP sintetasi (ammino in 2 sull'XMP), CPS II.",
+  "note": "La sbobina di Biologia molecolare (lezione 10) scrive «da UTP a GTP… posizione 6»: è la conversione UTP → CTP sul C4.",
+  "fixed": false
+ },
+ {
+  "id": "u1125-132",
+  "topic": "bm11-epcidina",
+  "level": "f",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Che effetto ha l'epcidina su ferro plasmatico e saturazione della transferrina?",
+  "opts": [
+   "Li abbassa, perché trattiene il ferro dentro le cellule",
+   "Li alza, perché libera il ferro dai depositi epatici",
+   "Li alza, perché aumenta l'assorbimento intestinale",
+   "Li abbassa, perché fa eliminare il ferro in eccesso con le urine",
+   "Non li cambia: agisce solo sulla ferritina cellulare"
+  ],
+  "ans": 0,
+  "why": "Bloccando la ferroportina, l'epcidina riduce l'uscita di ferro da enterociti, macrofagi ed epatociti: calano ferro circolante e saturazione della transferrina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-133",
+  "topic": "bm11-epcidina",
+  "level": "m",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Su quali cellule agisce soprattutto l'epcidina?",
+  "opts": [
+   "Enterociti duodenali e macrofagi, e in parte epatociti",
+   "Eritroblasti del midollo e reticolociti circolanti",
+   "Cellule del tubulo renale e del dotto collettore",
+   "Cellule muscolari scheletriche e cardiomiociti del ventricolo",
+   "Neuroni e cellule della glia del sistema nervoso"
+  ],
+  "ans": 0,
+  "why": "Sono le cellule che rilasciano ferro nel plasma attraverso la ferroportina: assorbimento (enterociti), riciclo dagli eritrociti (macrofagi), depositi (epatociti).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-134",
+  "topic": "bm11-epcidina",
+  "level": "a",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Che cosa succede alla ferroportina quando lega l'epcidina?",
+  "opts": [
+   "Viene internalizzata e degradata, e il ferro resta nella cellula",
+   "Viene fosforilata e trasporta il ferro più in fretta",
+   "Viene ossidata dalla ceruloplasmina e cambia selettività",
+   "Viene staccata dalla membrana e circola legata alla transferrina",
+   "Viene tradotta di più, perché l'epcidina stabilizza l'mRNA"
+  ],
+  "ans": 0,
+  "why": "La lezione dice che il ferro resta intrappolato nella cellula; il meccanismo (internalizzazione e degradazione lisosomiale della ferroportina) non è nelle sbobine (Lehninger).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-135",
+  "topic": "bm11-epcidina",
+  "level": "h",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "In un'infiammazione cronica il paziente ha ferro sierico basso ma ferritina e depositi normali o alti. Quale spiegazione è coerente?",
+  "opts": [
+   "L'infiammazione aumenta l'epcidina, che blocca la ferroportina e sequestra il ferro",
+   "L'infiammazione riduce l'epcidina, che lascia uscire troppo ferro con le urine e la bile",
+   "L'infiammazione blocca la sintesi della transferrina, che non porta più il ferro",
+   "L'infiammazione distrugge la ferritina, che non trattiene più il ferro",
+   "L'infiammazione inibisce il DMT1, ma i macrofagi rilasciano più ferro"
+  ],
+  "ans": 0,
+  "why": "La lezione dice che l'epcidina è regolata da ferro e infiammazione e che abbassare il ferro limita i processi infiammatori: ferro intrappolato in macrofagi ed enterociti, plasma povero di ferro. Il nome «anemia delle malattie croniche» non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-136",
+  "topic": "bm11-ireirp",
+  "level": "m",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Che cosa succede alla IRP2 quando nella cellula c'è molto ferro?",
+  "opts": [
+   "Viene degradata dal proteasoma",
+   "Forma un cluster Fe-S e diventa aconitasi",
+   "Lega gli IRE con affinità maggiore",
+   "Si sposta nel mitocondrio",
+   "Viene secreta nel plasma"
+  ],
+  "ans": 0,
+  "why": "Il ferro fa caricare il cluster Fe-S su IRP1 (che diventa aconitasi citosolica) e attiva la degradazione proteasomale di IRP2. Con poco ferro si accumula IRP1 apo e IRP2 si stabilizza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-137",
+  "topic": "bm11-ireirp",
+  "level": "a",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Con poco ferro, che cosa succede all'mRNA del trasportatore DMT1?",
+  "opts": [
+   "Viene stabilizzato, perché le IRP legano un IRE al 3'",
+   "Viene tradotto di meno, perché le IRP legano un IRE al 5'",
+   "Viene degradato, perché le IRP si staccano dall'IRE",
+   "Non cambia, perché il DMT1 non ha elementi IRE",
+   "Viene tradotto di più, perché l'IRE si apre senza IRP"
+  ],
+  "ans": 0,
+  "why": "Come per il recettore della transferrina, l'IRE al 3' legato dalle IRP stabilizza il messaggero: più DMT1 per far entrare più ferro.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-138",
+  "topic": "bm11-ireirp",
+  "level": "l",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Perché con poco ferro la cellula non traduce l'aconitasi mitocondriale?",
+  "opts": [
+   "Il suo mRNA ha un IRE al 5', e senza ferro non si formerebbe il cluster",
+   "Il suo mRNA ha un IRE al 3', che con poco ferro viene degradato",
+   "Il suo gene è represso da HIF2α, che si accumula nel nucleo quando c'è poco ferro",
+   "La IRP1 apo occupa il ribosoma mitocondriale che la traduce",
+   "L'epcidina blocca il suo trasporto dentro il mitocondrio"
+  ],
+  "ans": 0,
+  "why": "L'aconitasi mitocondriale ha un IRE al 5' (come ferritina, ALAS eritroide, ferroportina e HIF2α): con poco ferro le IRP bloccano la traduzione, inutile perché non si formerebbe il cluster Fe-S.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-139",
+  "topic": "bm11-ireirp",
+  "level": "h",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "In una cellula carente di ferro, quale combinazione di effetti delle IRP è attesa?",
+  "opts": [
+   "Meno ferritina e ferroportina, più recettore della transferrina e DMT1",
+   "Più ferritina e ferroportina, meno recettore della transferrina e DMT1",
+   "Più ferritina e recettore della transferrina, meno ferroportina e DMT1",
+   "Meno ferritina e DMT1, più ferroportina e recettore della transferrina",
+   "Nessuna variazione: le IRP agiscono solo quando il ferro è in eccesso"
+  ],
+  "ans": 0,
+  "why": "Con poco ferro le IRP legano gli IRE: al 5' bloccano la traduzione (ferritina, ferroportina), al 3' stabilizzano il messaggero (TfR1, DMT1). La cellula smette di immagazzinare ed esportare e capta di più.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-140",
+  "topic": "bm11-ireirp",
+  "level": "a",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Quale ruolo metabolico ha l'aconitasi 1 citosolica quando il citrato esce dal mitocondrio?",
+  "opts": [
+   "Forma isocitrato, che l'isocitrato deidrogenasi citosolica ossida producendo NADPH",
+   "Forma isocitrato, che l'isocitrato deidrogenasi citosolica ossida producendo NADH",
+   "Scinde il citrato in acetil-CoA e ossalacetato per la sintesi degli acidi grassi",
+   "Riporta il citrato nel mitocondrio, dove riprende il ciclo di Krebs",
+   "Converte il citrato in malato, che poi dà NADPH con l'enzima malico citosolico"
+  ],
+  "ans": 0,
+  "why": "Con il cluster Fe-S IRP1 è l'aconitasi 1: citrato → isocitrato; l'isocitrato deidrogenasi citosolica lo porta ad α-chetoglutarato con produzione di NADPH, utile alla sintesi dei grassi. La scissione del citrato è dell'ATP-citrato liasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-141",
+  "topic": "bm11-bilirubina",
+  "level": "f",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Quali sono i valori normali di bilirubina totale nel sangue, secondo la lezione?",
+  "opts": [
+   "0,1–1 mg/dl",
+   "1–2,5 mg/dl",
+   "3–7 mg/dl",
+   "10–20 mg/dl",
+   "0,01–0,05 mg/dl"
+  ],
+  "ans": 0,
+  "why": "Totale 0,1–1 mg/dl (indiretta 0,1–1, diretta 0–0,2). Sopra 1,5 mg/dl si parla di subittero (sclere), sopra 2,5 di ittero. 3–7 mg/dl è il range dell'acido urico.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-142",
+  "topic": "bm11-bilirubina",
+  "level": "m",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Quale coenzima usa la biliverdina reduttasi?",
+  "opts": [
+   "NADPH",
+   "NADH",
+   "FADH₂",
+   "Glutatione",
+   "Ascorbato"
+  ],
+  "ans": 0,
+  "why": "Sia l'eme ossigenasi (con O₂) sia la biliverdina reduttasi usano NADPH; la biliverdina IXα viene ridotta a bilirubina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-143",
+  "topic": "bm11-bilirubina",
+  "level": "l",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Quale trasportatore secerne la bilirubina coniugata dall'epatocita nella bile?",
+  "opts": [
+   "MRP2",
+   "DMT1",
+   "CD163",
+   "Ligandina",
+   "Ferroportina"
+  ],
+  "ans": 0,
+  "why": "Nell'epatocita la bilirubina è legata a ligandina e proteina Z, coniugata con due glucuronati dalla UDP-glucuroniltransferasi e secreta nella bile da MRP2.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-144",
+  "topic": "bm11-bilirubina",
+  "level": "a",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Che cosa fanno le β-glucuronidasi dei batteri intestinali?",
+  "opts": [
+   "Staccano il glucuronato e permettono il riassorbimento nel circolo enteroepatico",
+   "Aggiungono glucuronato alla bilirubina per renderla più solubile nella bile",
+   "Ossidano la bilirubina a biliverdina, che dà il tipico colore verde alle feci",
+   "Degradano l'eme in biliverdina, liberando monossido di carbonio",
+   "Legano la bilirubina all'albumina per riportarla nel fegato"
+  ],
+  "ans": 0,
+  "why": "Nell'intestino la bilirubina deconiugata diventa urobilinogeno (in parte riassorbito: circolazione enteroepatica, urobilina nelle urine) e stercobilinogeno/stercobilina nelle feci.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1125-145",
+  "topic": "bm11-bilirubina",
+  "level": "h",
+  "page": "lezione 11",
+  "src": "Biologia molecolare",
+  "q": "Un paziente ha ittero con bilirubina quasi tutta indiretta, urine di colore normale e anemia. Che cosa è più probabile?",
+  "opts": [
+   "Un'emolisi, che produce più bilirubina di quanta il fegato riesca a coniugare",
+   "Un'ostruzione delle vie biliari, che fa refluire bilirubina coniugata nel sangue",
+   "Un difetto di MRP2, che impedisce la secrezione della bilirubina coniugata",
+   "Un eccesso di β-glucuronidasi intestinali, che aumenta la bilirubina diretta",
+   "Una carenza di eme ossigenasi, che fa accumulare bilirubina nel sangue"
+  ],
+  "ans": 0,
+  "why": "La bilirubina indiretta è legata all'albumina e non passa nelle urine; in eccesso indica sovrapproduzione (emolisi) o difetto di coniugazione. Ostruzione e difetti di secrezione aumentano la diretta (urine scure). Il quadro clinico non è nelle sbobine.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

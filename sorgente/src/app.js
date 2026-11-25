@@ -1320,11 +1320,10 @@
           : "I ripassi restano legati all'app e non li perdi pulendo le schede o la cronologia del browser."),
       h("div", { class: "nudge-btns" },
         h("button", { class: "btn btn-primary", type: "button", onclick: async () => {
-          close();
-          if (deferredPrompt) { deferredPrompt.prompt(); deferredPrompt = null; return; }
+          if (deferredPrompt) { close(); deferredPrompt.prompt(); deferredPrompt = null; return; }
           const st = welcomeInner && welcomeInner.querySelector(".steps");
-          if (st) { st.scrollIntoView({ behavior: "smooth", block: "center" }); st.classList.remove("flash"); void st.offsetWidth; st.classList.add("flash"); return; }
-          // nessun benvenuto sotto: le istruzioni le mostra il riquadro stesso
+          if (st) { close(); st.scrollIntoView({ behavior: "smooth", block: "center" }); st.classList.remove("flash"); void st.offsetWidth; st.classList.add("flash"); return; }
+          // nessun benvenuto sotto: le istruzioni le mostra il riquadro stesso, che quindi NON va chiuso prima
           showSteps();
         } }, deferredPrompt ? "Installa ora" : "Ok, ti seguo: come si fa?"),
         h("button", { class: "nudge-skip", type: "button", onclick: () => { close(); onSkip(); } }, "Continua dal browser")));

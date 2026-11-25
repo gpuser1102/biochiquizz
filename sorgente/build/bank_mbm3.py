@@ -81,7 +81,8 @@ q("ba6-02", T, "f", L6, "Da quale amminoacido deriva l'istamina?", [
   "Istidina decarbossilasi (PLP).")
 q("ba6-03", T, "m", L6, "Quale recettore dell'istamina regola la secrezione gastrica e con quale proteina G?", [
   "H2, con una Gs", "H1, con una Gq", "H3, con una Gi", "H4, con una Gi", "H2, con una Gq"], 0,
-  "Gli anti-H2 (ranitidina, cimetidina) riducono l'acidità; gli anti-H1 (loratadina, cetirizina) sono antiallergici.")
+  "Gli anti-H2 (ranitidina, cimetidina) riducono l'acidità; gli anti-H1 (loratadina, cetirizina) sono antiallergici.",
+  note="Segnalato da chi usa l'app: a lezione è stato detto che l'istamina non rientra nel programma d'esame. La domanda resta perché il meccanismo è corretto, ma non è materia su cui ti verrà chiesto conto.")
 q("ba6-04", T, "m", L6, "Quale effetto ha l'adrenalina sui recettori α dei vasi intestinali, cutanei e renali?", [
   "Costrizione delle arteriole e meno sangue a quegli organi",
   "Dilatazione delle arteriole e più sangue a quegli organi",

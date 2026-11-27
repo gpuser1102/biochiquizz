@@ -40746,6 +40746,766 @@
   "fixed": false
  },
  {
+  "id": "u1127-101",
+  "topic": "m9-tiroide",
+  "level": "l",
+  "page": "290",
+  "src": "Biochimica II",
+  "q": "Quale trasportatore porta lo ioduro dalla cellula follicolare alla colloide?",
+  "opts": [
+   "La pendrina",
+   "Il simporto Na⁺/I⁻",
+   "La transtiretina",
+   "La tireoglobulina",
+   "L'acquaporina 3"
+  ],
+  "ans": 0,
+  "why": "Lo ioduro entra dal sangue con il simporto Na⁺/I⁻ (il Na⁺ viene poi espulso dalla Na⁺/K⁺-ATPasi) e passa nella colloide con la pendrina, dove viene ossidato e legato alla tireoglobulina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-102",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "290",
+  "src": "Biochimica II",
+  "q": "Come vengono liberati T3 e T4 dalla tireoglobulina?",
+  "opts": [
+   "La tireoglobulina iodata rientra per endocitosi e viene degradata dalle proteasi lisosomiali",
+   "Una deiodinasi della colloide taglia T3 e T4 dalla proteina e li libera direttamente nel sangue",
+   "La tiroide perossidasi idrolizza i legami peptidici delle tirosine già iodate",
+   "Il TSH si lega alla tireoglobulina e ne stacca gli ormoni sulla membrana apicale",
+   "La tireoglobulina viene secreta intera nel sangue e scissa poi nel fegato"
+  ],
+  "ans": 0,
+  "why": "Nella colloide la tiroide perossidasi iodina e accoppia le tirosine della tireoglobulina; la proteina rientra nella cellula per endocitosi e pinocitosi e viene completamente degradata nei lisosomi, liberando T3 e T4.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-103",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "291",
+  "src": "Biochimica II",
+  "q": "A che cosa serve la deiodinasi della cellula follicolare, oltre a trasformare il T4 in T3?",
+  "opts": [
+   "Recupera lo iodio dalle tirosine iodate che non sono diventate ormoni",
+   "Aggiunge iodio in posizione 3 e 5 alle tirosine della tireoglobulina",
+   "Ossida lo ioduro a iodio usando l'acqua ossigenata prodotta dalla cellula",
+   "Trasforma il T3 in reverse T3 per spegnere l'ormone nella tiroide",
+   "Lega il T4 nel sangue e lo porta ai tessuti insieme alla TBG"
+  ],
+  "ans": 0,
+  "why": "Dalla degradazione della tireoglobulina escono anche tirosine mono- e diiodate non accoppiate: la deiodinasi ne toglie lo iodio, che viene riciclato. La iodinazione è opera della tiroide perossidasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-104",
+  "topic": "m9-tiroide",
+  "level": "h",
+  "page": "292",
+  "src": "Biochimica II",
+  "q": "Per la piena azione degli ormoni tiroidei la sbobina cita tre microelementi. Quale abbinamento è corretto?",
+  "opts": [
+   "Iodio negli ormoni, selenio nelle deiodinasi, zinco nelle dita di zinco del recettore",
+   "Iodio nelle deiodinasi, selenio negli ormoni, zinco nella tiroide perossidasi",
+   "Iodio negli ormoni, zinco nelle deiodinasi, selenio nelle dita di zinco del recettore",
+   "Ferro negli ormoni, selenio nella pendrina, zinco nella tireoglobulina",
+   "Iodio negli ormoni, rame nelle deiodinasi, zinco nella transtiretina"
+  ],
+  "ans": 0,
+  "why": "Lo iodio è nell'ormone; il selenio sta nelle deiodinasi (e nella glutatione perossidasi); lo zinco serve al motivo a dita di zinco con cui il recettore nucleare lega il DNA. Il ferro è nella tiroide perossidasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-105",
+  "topic": "m9-tiroide",
+  "level": "a",
+  "page": "293",
+  "src": "Biochimica II",
+  "q": "Che effetto hanno gli ormoni tiroidei sul rapporto tra ATP prodotto e ossigeno consumato?",
+  "opts": [
+   "Lo abbassano: una parte maggiore dell'energia viene dissipata come calore",
+   "Lo alzano: la catena respiratoria diventa più efficiente e produce meno calore",
+   "Non lo cambiano: aumentano solo la quantità di mitocondri per cellula",
+   "Lo alzano: inibiscono le proteine disaccoppianti UCP2 e UCP3",
+   "Lo abbassano: bloccano l'ATP sintasi e la cellula passa alla glicolisi"
+  ],
+  "ans": 0,
+  "why": "Aumentando UCP2, UCP3 e Na⁺/K⁺-ATPasi, gli ormoni tiroidei riducono l'ATP formato per molecola di O₂ e aumentano il calore: per questo l'ipertiroideo ha caldo e l'ipotiroideo tende ad aumentare di peso.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-106",
+  "topic": "m9-tiroide",
+  "level": "m",
+  "page": "293",
+  "src": "Biochimica II",
+  "q": "Che cosa caratterizza la tiroidite di Hashimoto secondo la sbobina?",
+  "opts": [
+   "Anticorpi contro tireoglobulina o tiroide perossidasi, con ipotiroidismo",
+   "Anticorpi che attivano il recettore del TSH, con ipertiroidismo e gozzo",
+   "Carenza alimentare di iodio, con gozzo e ipertiroidismo",
+   "Anticorpi contro la TBG, con ormoni liberi molto aumentati",
+   "Un adenoma ipofisario che secerne TSH, con ipertiroidismo"
+  ],
+  "ans": 0,
+  "why": "Hashimoto è autoimmune e distrugge la tiroide (ipotiroidismo, mixedema, gozzo). Gli anticorpi che stimolano il recettore del TSH sono quelli del morbo di Graves-Basedow.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-107",
+  "topic": "m9-tiroide",
+  "level": "l",
+  "page": "291",
+  "src": "Biochimica II",
+  "q": "Dove avviene in gran parte la conversione periferica del T4 in T3?",
+  "opts": [
+   "Nel fegato, ad opera di una deiodinasi selenio-dipendente",
+   "Nel rene, ad opera di una deiodinasi zinco-dipendente",
+   "Nel sangue, ad opera della transtiretina che toglie lo iodio",
+   "Nel tessuto adiposo, ad opera della tiroide perossidasi",
+   "Nell'ipofisi, ad opera di una deiodinasi ferro-dipendente"
+  ],
+  "ans": 0,
+  "why": "Una parte del T3 si forma già nella cellula follicolare, ma gran parte della conversione avviene nel fegato. Se la deiodinasi toglie lo iodio dall'anello interno si forma il reverse T3, inattivo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-108",
+  "topic": "m9-calcio",
+  "level": "m",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Come percepiscono le paratiroidi la calcemia e sotto quale soglia secernono il paratormone?",
+  "opts": [
+   "Con un recettore di membrana sensibile al Ca²⁺; sotto circa 1 mM",
+   "Con un recettore nucleare che lega il Ca²⁺ libero; sotto circa 10 mM",
+   "Attraverso l'asse ipotalamo-ipofisi e il TSH; sotto circa 1 mM",
+   "Misurando il fosfato nel sangue; sopra circa 2 mM",
+   "Con un recettore per il calcitriolo; sotto circa 0,1 mM"
+  ],
+  "ans": 0,
+  "why": "Le paratiroidi non dipendono dall'asse ipotalamo-ipofisario: un recettore di membrana sensibile al calcio fa secernere paratormone quando la calcemia scende sotto circa 1 mM.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-109",
+  "topic": "m9-calcio",
+  "level": "f",
+  "page": "294",
+  "src": "Biochimica II",
+  "q": "Con quale secondo messaggero agisce il paratormone?",
+  "opts": [
+   "cAMP",
+   "IP₃ e DAG",
+   "cGMP",
+   "JAK/STAT",
+   "Nessuno: ha un recettore nucleare"
+  ],
+  "ans": 0,
+  "why": "Il paratormone è un ormone peptidico (84 amminoacidi) che agisce su un recettore di membrana con il cAMP come secondo messaggero.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-110",
+  "topic": "m9-calcio",
+  "level": "a",
+  "page": "297",
+  "src": "Biochimica II",
+  "q": "Perché, secondo la sbobina, il calcio non può restare libero nel citoplasma?",
+  "opts": [
+   "Formerebbe sali insolubili con il fosfato ed è un secondo messaggero molto potente",
+   "Inibirebbe la glicolisi legandosi all'ATP e bloccando l'esochinasi",
+   "Attraverserebbe la membrana nucleare e attiverebbe in modo incontrollato la duplicazione del DNA",
+   "Ossiderebbe i gruppi tiolici delle proteine come fa il ferro libero",
+   "Verrebbe subito espulso dalla Na⁺/K⁺-ATPasi insieme al sodio"
+  ],
+  "ans": 0,
+  "why": "Il Ca²⁺ precipiterebbe con il fosfato e, essendo un segnale potente, deve restare compartimentato nel reticolo endoplasmatico e nei mitocondri, da cui viene liberato quando serve.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-111",
+  "topic": "m9-calcio",
+  "level": "m",
+  "page": "296",
+  "src": "Biochimica II",
+  "q": "Quanto contribuisce la dieta alla vitamina D dell'organismo secondo la sbobina?",
+  "opts": [
+   "Circa il 10%: il resto si forma nella pelle a partire dal colesterolo",
+   "Circa il 90%: nella pelle se ne forma solo una piccola parte",
+   "Circa la metà: l'altra metà viene sintetizzata dalla flora intestinale",
+   "Tutta: l'uomo non sa sintetizzare la vitamina D",
+   "Circa il 10%: il resto viene prodotto dal fegato a partire dai carotenoidi"
+  ],
+  "ans": 0,
+  "why": "La vitamina D dei cibi animali copre solo circa il 10%; il resto è colecalciferolo formato nella pelle con la luce. Per questo d'inverno e negli anziani che escono poco i livelli calano.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-112",
+  "topic": "m9-steroidi",
+  "level": "l",
+  "page": "299",
+  "src": "Biochimica II",
+  "q": "Come inizia la steroidogenesi dal colesterolo?",
+  "opts": [
+   "Idrossilazioni in 20 e 22 da un P450 mitocondriale con adrenodossina, poi il taglio della desmolasi",
+   "Riduzione del doppio legame in 5 da una reduttasi citosolica, poi l'aromatasi apre l'anello A",
+   "Idrossilazione in 11 nel reticolo, poi la 21-idrossilasi forma direttamente il cortisolo dal colesterolo",
+   "Esterificazione dell'OH in 3 con un acido grasso, poi una lipasi libera il pregnenolone",
+   "Ossidazione della catena laterale nel perossisoma, poi la tiolasi stacca i carboni in eccesso"
+  ],
+  "ans": 0,
+  "why": "Un citocromo P450 mitocondriale (con adrenodossina e NADPH) idrossila la catena laterale in 20 e 22 e la desmolasi la taglia: si forma il pregnenolone, a 21 atomi di carbonio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-113",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "301",
+  "src": "Biochimica II",
+  "q": "In quali condizioni viene prodotto il cortisolo secondo la sbobina?",
+  "opts": [
+   "Ipoglicemia, dolore, paura, infezione e stress",
+   "Iperglicemia dopo un pasto ricco di carboidrati",
+   "Aumento della calcemia e della vitamina D",
+   "Ipotensione, con l'attivazione della renina",
+   "Esposizione al freddo, tramite il TSH"
+  ],
+  "ans": 0,
+  "why": "Il cortisolo, ormone dello stress, è prodotto tramite l'asse CRH–ACTH in ipoglicemia, dolore, paura, infezione e stress; agisce soprattutto su muscolo, fegato e tessuto adiposo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-114",
+  "topic": "m9-steroidi",
+  "level": "a",
+  "page": "301",
+  "src": "Biochimica II",
+  "q": "Perché il cortisolo aumenta l'acidità gastrica, secondo la sbobina?",
+  "opts": [
+   "Per scindere più proteine e avere amminoacidi per la gluconeogenesi",
+   "Per uccidere i batteri ingeriti durante lo stress e le infezioni",
+   "Per attivare la vitamina B12 e liberarla dalle proteine della dieta",
+   "Per ridurre l'assorbimento del glucosio e abbassare la glicemia",
+   "Per neutralizzare il bicarbonato secreto dal pancreas in eccesso"
+  ],
+  "ans": 0,
+  "why": "Nella lettura della sbobina l'acidità serve a digerire più proteine e mettere a disposizione amminoacidi per la gluconeogenesi; l'effetto collaterale è la gastrite da stress.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-115",
+  "topic": "m9-steroidi",
+  "level": "m",
+  "page": "303",
+  "src": "Biochimica II",
+  "q": "Quale quadro elettrolitico è tipico del morbo di Addison?",
+  "opts": [
+   "Iposodiemia e iperkaliemia, con calo di gittata e pressione",
+   "Ipersodiemia e ipokaliemia, con aumento della pressione arteriosa",
+   "Iposodiemia e ipokaliemia, con pressione normale",
+   "Ipercalcemia e ipofosfatemia, con calcoli renali",
+   "Ipersodiemia e iperkaliemia, con edemi periferici"
+  ],
+  "ans": 0,
+  "why": "Senza aldosterone il rene riassorbe meno Na⁺ e trattiene K⁺: il liquido extracellulare cala con gittata e pressione. Senza cortisolo compare anche ipoglicemia grave.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-116",
+  "topic": "m9-steroidi",
+  "level": "a",
+  "page": "303",
+  "src": "Biochimica II",
+  "q": "Oltre a formare l'angiotensina II, quale altra azione dell'ACE contribuisce all'effetto degli ACE-inibitori?",
+  "opts": [
+   "L'ACE degrada la bradichinina vasodilatatrice, che con l'inibitore resta attiva",
+   "L'ACE produce aldosterone nel surrene, che con l'inibitore non si forma più",
+   "L'ACE attiva la renina con un taglio proteolitico, che con l'inibitore manca del tutto",
+   "L'ACE forma il peptide natriuretico atriale, che con l'inibitore aumenta",
+   "L'ACE degrada l'ossido nitrico nei vasi, che con l'inibitore si accumula"
+  ],
+  "ans": 0,
+  "why": "La bradichinina, antagonista dell'ACE, produce vasodilatazione e viene inattivata dall'ACE stesso: bloccando l'enzima cala l'angiotensina II e sale la bradichinina.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-117",
+  "topic": "m9-steroidi",
+  "level": "l",
+  "page": "304",
+  "src": "Biochimica II",
+  "q": "Che ruoli distingue la sbobina tra diidrotestosterone e testosterone?",
+  "opts": [
+   "Il diidrotestosterone agisce nello sviluppo embrionale, il testosterone alla pubertà",
+   "Il testosterone agisce nello sviluppo embrionale, il diidrotestosterone alla pubertà",
+   "Il diidrotestosterone è inattivo e serve solo come forma di deposito",
+   "Il testosterone agisce solo nelle femmine dopo la conversione in estradiolo",
+   "Hanno lo stesso ruolo e differiscono solo per l'emivita plasmatica"
+  ],
+  "ans": 0,
+  "why": "La 5α-reduttasi (NADPH) forma il diidrotestosterone, necessario allo sviluppo dei genitali esterni maschili nell'embrione; senza di essa si hanno quadri intersessuali. Il testosterone agisce alla pubertà.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-118",
+  "topic": "m9-locali",
+  "level": "f",
+  "page": "306",
+  "src": "Biochimica II",
+  "q": "Quali ormoni intestinali danno il senso di sazietà secondo la sbobina?",
+  "opts": [
+   "GLP-1 e GLP-2",
+   "Grelina e motilina",
+   "Gastrina e secretina",
+   "Leptina e neuropeptide Y",
+   "Somatostatina e grelina"
+  ],
+  "ans": 0,
+  "why": "GLP-1 e GLP-2, prodotti dall'intestino, danno sazietà; la grelina stimola la fame.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-119",
+  "topic": "m9-locali",
+  "level": "l",
+  "page": "309",
+  "src": "Biochimica II",
+  "q": "Quale olio è indicato dalla sbobina come ricco di ω-3?",
+  "opts": [
+   "Olio di semi di lino",
+   "Olio di semi di girasole",
+   "Olio di semi di mais",
+   "Olio di oliva",
+   "Olio di palma"
+  ],
+  "ans": 0,
+  "why": "Gli ω-3 (acido linolenico) abbondano nell'olio di lino e nel grasso di salmone; girasole e mais hanno pochissimi ω-3 e molti ω-6; l'olio d'oliva ha un rapporto ω-6/ω-3 accettabile (circa 11:1).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-120",
+  "topic": "m9-locali",
+  "level": "m",
+  "page": "309",
+  "src": "Biochimica II",
+  "q": "Che effetto hanno grassi saturi e monoinsaturi sulle LDL secondo la sbobina?",
+  "opts": [
+   "I saturi le aumentano, i monoinsaturi le riducono",
+   "I saturi le riducono, i monoinsaturi le aumentano",
+   "Entrambi le aumentano, ma i saturi molto di più",
+   "Nessuno dei due le modifica: agiscono solo sulle HDL",
+   "Entrambi le riducono, ma i monoinsaturi molto di più"
+  ],
+  "ans": 0,
+  "why": "I saturi alzano le LDL e il rischio coronarico; i monoinsaturi (olio d'oliva) le abbassano. I peggiori sono i trans, che alzano le LDL e abbassano le HDL.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-121",
+  "topic": "m9-locali",
+  "level": "f",
+  "page": "307",
+  "src": "Biochimica II",
+  "q": "Quali derivati dell'acido arachidonico agiscono soprattutto nella coagulazione?",
+  "opts": [
+   "I trombossani",
+   "I leucotrieni",
+   "Le prostaglandine gastriche",
+   "Le lipossine",
+   "Gli endocannabinoidi"
+  ],
+  "ans": 0,
+  "why": "Dall'acido arachidonico (liberato dalla fosfolipasi A2) derivano prostaglandine (infiammazione), trombossani (coagulazione) e leucotrieni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-122",
+  "topic": "m9-locali",
+  "level": "l",
+  "page": "308",
+  "src": "Biochimica II",
+  "q": "Quali derivati importanti per il sistema nervoso centrale si formano dall'acido linolenico?",
+  "opts": [
+   "EPA e DHA",
+   "Acido arachidonico e prostaglandine",
+   "Acido oleico e acido palmitoleico",
+   "Ceramide e sfingomielina",
+   "Acido linoleico e leucotrieni"
+  ],
+  "ans": 0,
+  "why": "L'acido linolenico (ω-3, 18 C) forma EPA e DHA, importanti per il sistema nervoso centrale. L'arachidonico deriva invece dal linoleico (ω-6).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-123",
+  "topic": "m9-neuroipofisi",
+  "level": "m",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "Che differenza c'è tra l'acquaporina 2 e l'acquaporina 3 del rene?",
+  "opts": [
+   "La 2 sta su vescicole e va in membrana con la vasopressina; la 3 è basolaterale e costitutiva",
+   "La 3 sta su vescicole e va in membrana con la vasopressina; la 2 è basolaterale e costitutiva",
+   "Sono entrambe costitutive sulla membrana apicale e differiscono solo per la massa",
+   "La 2 trasporta solo urea, la 3 solo acqua, ed entrambe sono regolate dall'aldosterone",
+   "La 2 è nel tubulo prossimale, la 3 nell'ansa di Henle, ed entrambe sono costitutive"
+  ],
+  "ans": 0,
+  "why": "L'acquaporina 2 non è costitutivamente in membrana: è su vescicole che la vasopressina fa fondere con la membrana luminale. L'acquaporina 3 è sulla membrana basolaterale ed è sempre presente.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-124",
+  "topic": "m9-neuroipofisi",
+  "level": "l",
+  "page": "281",
+  "src": "Biochimica II",
+  "q": "Che cos'è la gliceroloporina?",
+  "opts": [
+   "Un'acquaporina che lascia passare anche il glicerolo",
+   "Una lipasi che libera glicerolo dai trigliceridi",
+   "Una chinasi che fosforila il glicerolo nel fegato",
+   "Un trasportatore del glicerolo 3-fosfato nel mitocondrio",
+   "Una proteina che lega il glicerolo nel sangue"
+  ],
+  "ans": 0,
+  "why": "Delle 12–15 acquaporine dei mammiferi alcune trasportano anche altre molecole: la gliceroloporina il glicerolo, altre isoforme l'urea.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-125",
+  "topic": "m9-adenoipofisi",
+  "level": "l",
+  "page": "279",
+  "src": "Biochimica II",
+  "q": "Quale abbinamento tra fattore di rilascio ipotalamico e lunghezza è corretto?",
+  "opts": [
+   "GnRH – 10 amminoacidi",
+   "TRH – 10 amminoacidi",
+   "GHRH – 3 amminoacidi",
+   "CRH – 44 amminoacidi",
+   "GHRH – 41 amminoacidi"
+  ],
+  "ans": 0,
+  "why": "TRH 3 amminoacidi (modificati alle estremità), GnRH 10, CRH 41, GHRH 44.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-126",
+  "topic": "m9-adenoipofisi",
+  "level": "l",
+  "page": "288",
+  "src": "Biochimica II",
+  "q": "Quali vie di segnalazione attiva il GHRH secondo la sbobina?",
+  "opts": [
+   "Sia il cAMP (con CREB) sia IP₃/DAG",
+   "Solo JAK/STAT, come il GH",
+   "Solo il cGMP, tramite una guanilato ciclasi",
+   "Solo IP₃/DAG, come gli altri fattori ipotalamici",
+   "Solo la via di Ras, tramite un recettore tirosin-chinasico"
+  ],
+  "ans": 0,
+  "why": "I fattori di rilascio usano in genere Gq e IP₃/DAG; il GHRH usa due vie, cAMP (con CREB) e IP₃/DAG. GH e prolattina usano invece JAK/STAT e Ras.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-127",
+  "topic": "m9-adenoipofisi",
+  "level": "f",
+  "page": "284",
+  "src": "Biochimica II",
+  "q": "Quali quadri può dare un eccesso di GH secondo la sbobina?",
+  "opts": [
+   "Gigantismo o acromegalia",
+   "Nanismo o cretinismo",
+   "Diabete insipido o mixedema",
+   "Morbo di Addison o di Cushing",
+   "Osteoporosi o rachitismo"
+  ],
+  "ans": 0,
+  "why": "La carenza di GH dà nanismo; l'eccesso dà gigantismo o acromegalia (crescita di ossa di viso e mani). Il GH ricombinante si usa nella carenza.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-128",
+  "topic": "m9-adenoipofisi",
+  "level": "m",
+  "page": "285",
+  "src": "Biochimica II",
+  "q": "Quali frammenti si ottengono dal taglio della proopiomelanocortina (POMC)?",
+  "opts": [
+   "ACTH, β-lipotropina, γ-MSH e α-MSH",
+   "TSH, LH, FSH e prolattina",
+   "Vasopressina, ossitocina e neurofisina",
+   "GH, prolattina e somatostatina",
+   "CRH, ACTH e cortisolo"
+  ],
+  "ans": 0,
+  "why": "La POMC, nell'adenoipofisi, viene tagliata in ACTH, β-lipotropina, γ-MSH e α-MSH. L'α-MSH ha un ruolo nel controllo dell'appetito.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-129",
+  "topic": "m8-difetti",
+  "level": "m",
+  "page": "260",
+  "src": "Biochimica II",
+  "q": "Quali difetti possono causare fenilchetonuria secondo la sbobina?",
+  "opts": [
+   "Della fenilalanina idrossilasi, della sintesi di BH₄ o della diidrobiopterina reduttasi",
+   "Della tirosinasi, della sintesi di melanina o della dopamina β-idrossilasi",
+   "Dell'omogentisato diossigenasi, della fumarilacetoacetasi o della tirosina transaminasi",
+   "Della deidrogenasi degli α-chetoacidi ramificati, della E3 o della tiamina",
+   "Del trasportatore intestinale degli amminoacidi neutri o di quello renale"
+  ],
+  "ans": 0,
+  "why": "La reazione fenilalanina → tirosina richiede l'idrossilasi, la tetraidrobiopterina e la sua rigenerazione da parte della reduttasi (NADPH). La causa più frequente è il deficit dell'idrossilasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-130",
+  "topic": "m8-difetti",
+  "level": "a",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Perché la dieta povera di fenilalanina nella PKU va mantenuta per tutta la vita?",
+  "opts": [
+   "Anche a cervello formato, un aumento di fenilalanina abbassa il quoziente intellettivo",
+   "Dopo l'infanzia l'enzima si riattiva da solo, ma solo se la dieta resta ben controllata",
+   "Serve a evitare l'accumulo di omogentisato nelle articolazioni dell'adulto",
+   "Il fegato adulto non sintetizza più tirosina e senza dieta si sviluppa albinismo",
+   "La fenilalanina in eccesso blocca la sintesi di urea e dà iperammoniemia"
+  ],
+  "ans": 0,
+  "why": "Si è visto che anche dopo lo sviluppo cerebrale completo un aumento della fenilalanina riduce il QI: la dieta, con una quota di fenilalanina non accumulabile, è a vita.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-131",
+  "topic": "m8-difetti",
+  "level": "m",
+  "page": "259",
+  "src": "Biochimica II",
+  "q": "Come si tratta la malattia di Hartnup secondo la sbobina?",
+  "opts": [
+   "Con nicotinammide, perché manca la niacina formata dal triptofano",
+   "Con una dieta povera di triptofano, perché si accumula nel sangue",
+   "Con vitamina B6, perché serve a riassorbire gli amminoacidi neutri",
+   "Con cisteina, perché il difetto riguarda il trasporto della cistina",
+   "Con tetraidrobiopterina, perché il difetto blocca l'idrossilazione"
+  ],
+  "ans": 0,
+  "why": "Nella Hartnup manca il trasportatore intestinale e renale degli amminoacidi neutri: si assorbe poco triptofano, da cui si forma una parte della niacina, e i sintomi ricordano la pellagra. Si somministra nicotinammide.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-132",
+  "topic": "m8-difetti",
+  "level": "l",
+  "page": "261",
+  "src": "Biochimica II",
+  "q": "Quale enzima manca nell'alcaptonuria?",
+  "opts": [
+   "Omogentisato 1,2-diossigenasi",
+   "Fenilalanina idrossilasi",
+   "Tirosina transaminasi",
+   "Fumarilacetoacetato idrolasi",
+   "Diidrobiopterina reduttasi"
+  ],
+  "ans": 0,
+  "why": "Nella via di degradazione della fenilalanina, il deficit di omogentisato 1,2-diossigenasi fa accumulare omogentisato: urine scure e, col tempo, artrite delle grandi articolazioni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-133",
+  "topic": "m8-folato",
+  "level": "l",
+  "page": "271",
+  "src": "Biochimica II",
+  "q": "Per quanto tempo le riserve epatiche possono coprire il fabbisogno di vitamina B12, secondo la sbobina?",
+  "opts": [
+   "Circa tre anni",
+   "Circa tre settimane",
+   "Circa tre mesi",
+   "Circa tre giorni",
+   "Non esistono riserve di B12"
+  ],
+  "ans": 0,
+  "why": "Il fabbisogno è di pochi microgrammi al giorno e la B12 è trattenuta fortemente nelle cellule e riassorbita a livello intestinale: le riserve del fegato bastano per circa tre anni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-134",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "263",
+  "src": "Biochimica II",
+  "q": "Perché l'acido folico va assunto con la dieta, anche se la sua pteridina somiglia alla biopterina che sintetizziamo?",
+  "opts": [
+   "Non sappiamo sintetizzare il PABA, con il suo anello aromatico",
+   "Non sappiamo unire il glutammato alla pteridina con un legame peptidico",
+   "Non sappiamo ridurre il folato a tetraidrofolato senza la flora intestinale",
+   "Non sappiamo trattenere il folato nelle cellule senza assumerlo di continuo",
+   "Non sappiamo formare l'anello pteridinico, che è solo vegetale"
+  ],
+  "ans": 0,
+  "why": "Piante e batteri sintetizzano l'acido p-amminobenzoico; noi no, perché non sappiamo formare quell'anello aromatico. Per questo i sulfamidici, che bloccano la sintesi batterica del PABA, non colpiscono le nostre cellule.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-135",
+  "topic": "m8-folato",
+  "level": "h",
+  "page": "270",
+  "src": "Biochimica II",
+  "q": "Un paziente ha omocisteina alta per la variante alanina → valina della metilen-THF reduttasi. Perché la supplementazione di folato può aiutarlo?",
+  "opts": [
+   "Il folato stabilizza il legame del FAD all'enzima mutato, che torna più efficiente",
+   "Il folato sostituisce la vitamina B12 nella reazione della metionina sintasi",
+   "Il folato attiva la cistationina β-sintasi e smaltisce l'omocisteina in cisteina",
+   "Il folato inibisce la metionina adenosiltransferasi e riduce la formazione di omocisteina",
+   "Il folato rende reversibile la reazione della reduttasi e libera il THF intrappolato"
+  ],
+  "ans": 0,
+  "why": "La mutazione (presente in circa il 47% della popolazione) aumenta la dissociazione del FAD e rende l'enzima meno efficiente; un apporto maggiore di folato ne ripristina le caratteristiche. La reazione resta irreversibile.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-136",
+  "topic": "m8-folato",
+  "level": "a",
+  "page": "272",
+  "src": "Biochimica II",
+  "q": "Perché le infezioni croniche causano anemia, secondo la sbobina?",
+  "opts": [
+   "L'IL-6 fa salire l'epcidina, che trattiene il ferro nei depositi, e cala l'eritropoietina",
+   "L'IL-6 inibisce la metionina sintasi e causa una carenza funzionale di folato nel midollo",
+   "I batteri consumano la vitamina B12 intestinale e manca la sintesi del DNA",
+   "L'infiammazione distrugge il fattore intrinseco e la B12 non viene assorbita",
+   "L'IL-6 blocca la glucosio 6-fosfato deidrogenasi e i globuli rossi si rompono"
+  ],
+  "ans": 0,
+  "why": "Nell'infiammazione cronica l'IL-6 aumenta l'epcidina (il ferro resta nei depositi e non arriva al midollo) e diminuisce l'EPO. Anche l'insufficienza renale riduce l'EPO.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-137",
+  "topic": "m8-vie",
+  "level": "m",
+  "page": "275",
+  "src": "Biochimica II",
+  "q": "Come si forma la melatonina dalla serotonina?",
+  "opts": [
+   "Acetilazione con acetil-CoA e poi metilazione con la S-adenosilmetionina",
+   "Idrossilazione con BH₄ e poi decarbossilazione con il PLP",
+   "Metilazione con il metil-THF e poi ossidazione con una monoamminossidasi",
+   "Transaminazione con l'α-chetoglutarato e poi riduzione con NADPH",
+   "Decarbossilazione con il PLP e poi acetilazione con acetil-CoA"
+  ],
+  "ans": 0,
+  "why": "La serotonina acetiltransferasi la acetila (acetilserotonina), poi la SAM dona un metile: si forma la melatonina, prodotta dall'epifisi soprattutto al buio.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-138",
+  "topic": "m8-vie",
+  "level": "f",
+  "page": "275",
+  "src": "Biochimica II",
+  "q": "Dove si produce la melatonina e quando aumenta?",
+  "opts": [
+   "Nell'epifisi, con il buio",
+   "Nell'ipofisi, con la luce",
+   "Nella retina, durante il giorno",
+   "Nel surrene, durante lo stress",
+   "Nelle piastrine, dopo i pasti"
+  ],
+  "ans": 0,
+  "why": "La melatonina è prodotta dalla ghiandola pineale (epifisi), aumenta con il buio e regola il ritmo sonno-veglia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-139",
+  "topic": "m8-vie",
+  "level": "a",
+  "page": "276",
+  "src": "Biochimica II",
+  "q": "Perché la creatina chinasi del muscolo si trova vicino ai mitocondri?",
+  "opts": [
+   "Usa subito l'ATP appena uscito dalla traslocasi per fosforilare la creatina",
+   "Fosforila l'ADP nella matrice per alimentare direttamente l'ATP sintasi",
+   "Trasporta la creatina nella matrice mitocondriale, dove viene ossidata a CO₂",
+   "Cede il fosfato al citocromo c e accelera la catena respiratoria",
+   "Lega la fosfocreatina alla membrana interna per tenerla di riserva"
+  ],
+  "ans": 0,
+  "why": "La creatina chinasi, la chinasi più abbondante vicino ai mitocondri nel muscolo, capta l'ATP appena esportato dalla traslocasi e forma fosfocreatina, il primo donatore di fosfati ad alta energia.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-140",
+  "topic": "m8-vie",
+  "level": "l",
+  "page": "274",
+  "src": "Biochimica II",
+  "q": "Perché alcuni lavori collegano la vitamina D alla depressione, secondo la sbobina?",
+  "opts": [
+   "Controlla la sintesi di un enzima della via che forma la serotonina",
+   "È il precursore diretto della serotonina nei neuroni del rafe",
+   "Inibisce la monoamminossidasi e alza le catecolammine cerebrali",
+   "Serve come coenzima alla triptofano idrossilasi al posto della BH₄ nel cervello",
+   "Si lega ai recettori della serotonina e ne imita l'effetto"
+  ],
+  "ans": 0,
+  "why": "La sintesi di un enzima della via della serotonina (dal triptofano) è sotto il controllo della vitamina D; una carenza potrebbe ridurre la serotonina. La sbobina lo presenta come ipotesi.",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

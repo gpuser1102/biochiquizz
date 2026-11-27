@@ -41506,6 +41506,215 @@
   "fixed": false
  },
  {
+  "id": "u1127-301",
+  "topic": "m7-biosintesi",
+  "level": "m",
+  "page": "204",
+  "src": "Biochimica II",
+  "q": "Quali sistemi allungano gli acidi grassi oltre il palmitato e con quale donatore di unità bicarboniose?",
+  "opts": [
+   "Il reticolo endoplasmatico con il malonil-CoA e il mitocondrio con l'acetil-CoA",
+   "Il reticolo endoplasmatico con l'acetil-CoA e il mitocondrio con il malonil-CoA",
+   "Solo l'acido grasso sintasi citosolica, che ripete il ciclo con altro malonil-CoA",
+   "Il perossisoma con il propionil-CoA e il citosol con il succinil-CoA",
+   "Il mitocondrio con la carnitina e il reticolo con l'acetoacetil-CoA"
+  ],
+  "ans": 0,
+  "why": "L'acido grasso sintasi si ferma a 16 atomi di carbonio. L'allungamento avviene soprattutto nel reticolo endoplasmatico, con il malonil-CoA come donatore; nel mitocondrio il donatore è l'acetil-CoA.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-302",
+  "topic": "m7-biosintesi",
+  "level": "l",
+  "page": "202",
+  "src": "Biochimica II",
+  "q": "In quale dominio dell'acido grasso sintasi avvengono riduzione, deidratazione e seconda riduzione?",
+  "opts": [
+   "Nel dominio II, dove arriva il gruppo legato all'ACP",
+   "Nel dominio I, dove la KS lega l'acetile alla cisteina",
+   "Nel dominio III, dove agisce la tioesterasi",
+   "Nella regione interdominio, dove si lega il malonil-CoA",
+   "In tutti e tre i domini, uno per ciascuna reazione"
+  ],
+  "ans": 0,
+  "why": "Nel dominio I avvengono il caricamento (MAT) e la condensazione (KS); il braccio fosfopanteteinico dell'ACP porta l'intermedio nel dominio II per le due riduzioni con NADPH e la deidratazione; nel dominio III la tioesterasi libera il prodotto a 16 C.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-303",
+  "topic": "m7-colesterolo",
+  "level": "f",
+  "page": "209",
+  "src": "Biochimica II",
+  "q": "Da quali alimenti si assume il colesterolo?",
+  "opts": [
+   "Solo da cibi animali, come carne, pesce, formaggi e uova",
+   "Soprattutto da cereali e legumi, poco dai cibi animali",
+   "Da tutti gli alimenti, in quantità simili",
+   "Soprattutto da oli vegetali come quello di oliva e di semi",
+   "Solo da frutta e verdura, che contengono fitosteroli"
+  ],
+  "ans": 0,
+  "why": "I vegetali non contengono colesterolo (hanno altri steroli). Quello assunto con la dieta entra nell'enterocita con NPC1L1, viene esterificato e parte con i chilomicroni.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-304",
+  "topic": "bm10-rnr",
+  "level": "l",
+  "page": "appunti 2023/24, p. 85",
+  "src": "Biologia molecolare",
+  "q": "Come generano il radicale alcune ribonucleotide reduttasi di batteri anaerobi, che non possono usare l'ossigeno?",
+  "opts": [
+   "Con un cluster ferro-zolfo o con un centro binucleare a manganese",
+   "Con un radicale tirosilico generato dal centro diferrico e dall'O₂",
+   "Con il NADPH che cede direttamente un elettrone al C2' del ribosio",
+   "Con la tioredossina, che forma il radicale sulle sue due cisteine",
+   "Con una flavina legata all'enzima che si riduce alla luce"
+  ],
+  "ans": 0,
+  "why": "La classe I usa l'O₂ e il centro diferrico di R2 per formare il radicale tirosilico. Altre classi, anche in anaerobiosi, hanno cluster Fe-S o un centro binucleare a manganese.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-305",
+  "topic": "bm1-comunicazione",
+  "level": "l",
+  "page": "appunti 2023/24, p. 7",
+  "src": "Biologia molecolare",
+  "q": "Perché le connessine sono studiate in oncologia e nella cura delle ferite?",
+  "opts": [
+   "La loro sovra- o sottoespressione è legata ad alcuni tumori e la loro espressione può frenare la guarigione",
+   "Sono recettori tirosin-chinasici bersaglio di anticorpi come il trastuzumab nei tumori della mammella umana",
+   "Formano canali per il Ca²⁺ voltaggio-dipendenti che controllano la contrazione dei miofibroblasti",
+   "Producono il segnale Notch che decide il destino delle cellule staminali della cute",
+   "Sono enzimi che degradano la matrice e permettono la migrazione delle cellule tumorali"
+  ],
+  "ans": 0,
+  "why": "Gli appunti ricordano che alterazioni nell'espressione delle connessine sono correlate all'insorgenza di tumori, che la loro espressione può frenare la guarigione delle ferite e che mutazioni del gene sono legate ad anomalie dello sviluppo.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-306",
+  "topic": "bm2-canali",
+  "level": "f",
+  "page": "appunti 2023/24, p. 16",
+  "src": "Biologia molecolare",
+  "q": "Quale farmaco usato in medicina si lega al recettore muscarinico dell'acetilcolina?",
+  "opts": [
+   "Atropina",
+   "Tubocurarina",
+   "Succinilcolina",
+   "Neostigmina",
+   "α-bungarotossina"
+  ],
+  "ans": 0,
+  "why": "L'atropina è un antagonista muscarinico. Tubocurarina e α-bungarotossina bloccano il recettore nicotinico, la succinilcolina è un curaro depolarizzante, la neostigmina inibisce l'acetilcolinesterasi.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-307",
+  "topic": "bm11-bilirubina",
+  "level": "f",
+  "page": "appunti 2023/24, p. 93",
+  "src": "Biologia molecolare",
+  "q": "Dove vengono lisati normalmente i globuli rossi senescenti?",
+  "opts": [
+   "Fuori dai vasi, nei macrofagi di milza, fegato e midollo osseo",
+   "Dentro i vasi, per l'azione del complemento e degli anticorpi nel plasma",
+   "Nel rene, durante la filtrazione glomerulare",
+   "Nei polmoni, per lo stress meccanico dei capillari",
+   "Nell'intestino, dove l'emoglobina viene digerita"
+  ],
+  "ans": 0,
+  "why": "Dopo 60–120 giorni i globuli rossi vengono fagocitati dai macrofagi di milza, fegato (cellule di Kupffer) e midollo; l'emolisi intravascolare avviene solo per cause chimiche, termiche o meccaniche.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-308",
+  "topic": "bm11-eme",
+  "level": "a",
+  "page": "appunti 2023/24, p. 92",
+  "src": "Biologia molecolare",
+  "q": "Che differenza c'è nella regolazione della sintesi dell'eme tra fegato e precursori eritroidi?",
+  "opts": [
+   "Fegato: turnover rapido degli enzimi e feedback sull'ALA sintasi; precursori eritroidi: sintesi alta e sensibile al ferro",
+   "Nel fegato sintesi costante e insensibile all'eme; nei precursori eritroidi forte feedback dell'eme sull'ALA sintasi epatica",
+   "Nel fegato la sintesi dipende dall'eritropoietina; nei precursori eritroidi dipende solo dal citocromo P450",
+   "In entrambi la sintesi è regolata solo dal piombo, che inibisce la porfobilinogeno sintasi",
+   "Nel fegato la sintesi avviene solo nel citosol; nei precursori eritroidi solo nel mitocondrio"
+  ],
+  "ans": 0,
+  "why": "Nel fegato gli enzimi hanno un turnover rapido e l'ALA sintasi è sotto feedback dell'eme, per adattarsi in fretta (es. induzione del P450). Nei precursori eritroidi la sintesi resta alta, sincronizzata con le globine dall'EPO, e dipende dal ferro (IRE sull'ALA sintasi eritroide).",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-309",
+  "topic": "bm4-fosfoinositidi",
+  "level": "m",
+  "page": "appunti 2023/24, p. 35",
+  "src": "Biologia molecolare",
+  "q": "Da che cosa viene attivata la PI3-chinasi secondo gli appunti?",
+  "opts": [
+   "Da recettori tirosin-chinasici, recettori per le citochine e dimeri βγ delle proteine G",
+   "Solo dalla Gq attivata, insieme alla fosfolipasi Cβ, dopo il legame di un ormone al GPCR",
+   "Solo dal Ca²⁺ liberato dal reticolo attraverso il recettore per l'IP₃",
+   "Dal DAG e dalla fosfatidilserina, come la proteina chinasi C",
+   "Dal cAMP, che la stacca da una subunità regolatrice inibitoria come avviene nella PKA"
+  ],
+  "ans": 0,
+  "why": "La PI3-chinasi fosforila il PIP₂ in posizione 3 formando PIP₃, che attiva la PKB. È attivata da RTK (come il recettore dell'insulina tramite IRS1), da recettori per le citochine e da dimeri βγ.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-310",
+  "topic": "bm6-idrofobici",
+  "level": "l",
+  "page": "appunti 2023/24, p. 52",
+  "src": "Biologia molecolare",
+  "q": "Come sono fatte le sequenze HRE riconosciute dai recettori degli ormoni steroidei?",
+  "opts": [
+   "Ripetizioni invertite o dirette, riconosciute dal recettore in forma dimerica",
+   "Sequenze ricche di AT nel solco minore, riconosciute da un recettore monomerico",
+   "Forcine dell'mRNA al 5', riconosciute da proteine regolatrici del ferro",
+   "Sequenze CRE riconosciute da CREB fosforilato dalla PKA",
+   "Sequenze casuali, riconosciute grazie alla sola carica positiva del recettore"
+  ],
+  "ans": 0,
+  "why": "Gli elementi di risposta (ERE, GRE, TRE, VDRE, RARE) sono ripetizioni invertite o dirette, adatte al recettore dimerico che le lega con le dita di zinco nel solco maggiore.",
+  "note": null,
+  "fixed": false
+ },
+ {
+  "id": "u1127-311",
+  "topic": "d1-metabolismo",
+  "level": "f",
+  "page": "10",
+  "src": "Biochimica I",
+  "q": "Perché, secondo la sbobina, le proteine sono le macromolecole biologiche più versatili?",
+  "opts": [
+   "Svolgono funzioni molto diverse: anticorpi, fibrinogeno, enzimi, actina e miosina",
+   "Sono la principale riserva di energia dell'organismo, più dei lipidi",
+   "Sono le uniche molecole che conservano e trasmettono l'informazione genetica",
+   "Si accumulano come riserva nel fegato e nel muscolo, proprio come il glicogeno",
+   "Sono le sole molecole che formano la parte strutturale delle membrane"
+  ],
+  "ans": 0,
+  "why": "Carboidrati e lipidi sono le principali fonti di energia e di riserva; le proteine si sono adattate a moltissime funzioni (difesa, coagulazione, catalisi, contrazione).",
+  "note": null,
+  "fixed": false
+ },
+ {
   "id": "x1c-01",
   "topic": "m1-catabolismo",
   "level": "a",

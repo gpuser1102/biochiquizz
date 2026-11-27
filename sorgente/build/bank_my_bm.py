@@ -272,13 +272,14 @@ q("yb3g-01", T, "m", L3, "Quali sono i due principali effettori attivati dai GPC
   ], 0,
   "L'adenilato ciclasi apre la via del cAMP, la fosfolipasi C quella di IP₃ e DAG.")
 q("yb3g-02", T, "h", L3, "Dopo lo scambio GDP/GTP la Gα si separa da βγ. Come raggiunge l'adenilato ciclasi?", [
-  "Scorre sul versante citosolico della membrana, a cui resta ancorata dalla coda prenilica",
+  "Scorre sul versante citosolico della membrana, a cui resta ancorata da un'ancora lipidica",
   "Diffonde liberamente nel citosol fino al reticolo, dove si trova l'adenilato ciclasi",
   "Viene trasportata dalla β-arrestina fino all'effettore scorrendo lungo il citoscheletro",
   "Resta legata al recettore, che la porta all'adenilato ciclasi con un'endocitosi",
   "Entra nel nucleo, dove attiva la trascrizione del gene dell'adenilato ciclasi",
   ], 0,
-  "α e γ hanno un'ancora prenilica; β resta in membrana legata a γ. Così tutto il sistema rimane sulla membrana.")
+  "α e γ hanno un'ancora lipidica (acile sulla α, prenile sulla γ); β resta in membrana legata a γ. Così tutto il sistema rimane sulla membrana.",
+  note="Sbobina di Biologia molecolare, lezione 3 (e appunti 2023/24, p. 23): parla di ancora prenilica anche per la Gα, che invece è ancorata da palmitoile o miristoile.")
 q("yb3g-03", T, "h", L3, "Le affinità dei GPCR per i loro ligandi vanno dal nanomolare al millimolare. Perché?", [
   "Mediano segnali sinaptici, autocrini, paracrini ed endocrini, con concentrazioni locali molto diverse",
   "Sono tutti recettori endocrini, ma i ligandi più grandi e idrofilici si legano con un'affinità più bassa",

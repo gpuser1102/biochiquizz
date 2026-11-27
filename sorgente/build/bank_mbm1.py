@@ -177,7 +177,7 @@ T = "bm3-gpcr"
 q("b3g-01", T, "f", L3, "Quante eliche transmembrana ha un GPCR?", ["7", "12", "4", "1"], 0,
   "N-terminale extracellulare, C-terminale citosolico.")
 q("b3g-02", T, "f", L3, "Quale subunità della proteina G trimerica lega GDP/GTP?", ["α", "β", "γ", "Tutte e tre"], 0,
-  "β e γ l'accompagnano; α e γ hanno ancore preniliche.")
+  "β e γ l'accompagnano; α e γ hanno ancore lipidiche (acile sulla α, prenile sulla γ).")
 q("b3g-03", T, "m", L3, "Quale loop del GPCR interagisce con la proteina G?", ["Il loop citoplasmatico C3, il più lungo", "Il loop extracellulare E1", "L'N-terminale", "L'elica 7"], 0,
   "Il cambio conformazionale indotto dal ligando lo modifica.")
 q("b3g-04", T, "m", L3, "Che cosa succede quando la Gα scambia GDP con GTP?", [
